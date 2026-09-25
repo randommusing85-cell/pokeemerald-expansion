@@ -54,6 +54,16 @@ Decisions move into the game bible, story outline and character docs once they'r
   mentor. The rival turns a few towns later, after the League plays the death down.
 - **Guide Pokémon is Celebi.** It follows him on the map (not in the party) and dies in the
   final act protecting him from Minato's plan.
+- **Celebi's backstory:** it came from a future where the cycle went wrong and the world
+  ended, to guide him. It has made its one jump and can't jump or fight again; its death is
+  the price of that trip.
+- **Act 4 structure:** Minato's crisis interrupts his League run partway; the Champion
+  fights beside him in the final battle.
+- **His allies at the end:** the Champion, and the person/family who took him in when he
+  arrived (not a trainer; his home in this world).
+- **The professor** dies in Act 3 in a lab disaster while researching the cycle, leaving
+  him the research that explains it.
+- **Region:** Japan-inspired, with a cold, sparse northern mood (aurora skies, a fading world).
 - **Ending:** he saves the world and goes home. He wakes up in a hospital, remembers Nami
   only vaguely, and later bumps into someone who looks exactly like her. The game leaves it
   open whether it's really her, with a small hint for attentive players (a line only Nami
@@ -70,27 +80,23 @@ _(nothing yet)_
 
 ## Open questions
 
-1. Elite Four and the final confrontation with Minato: which comes first.
-2. Why Celebi (a time traveler) can't undo the deaths.
-3. Who is left on his side at the end.
-4. When and how the professor dies.
-5. The region: inspiration and feel.
+1. Region specifics and name.
+2. Why Palkia chose him.
+3. What the door physically is.
+4. Whether the public knows about the cycle.
+5. The rival: personality, name, gender.
+6. Who takes him in when he arrives.
 
 ## Gaps and tensions
 
-- **Celebi travels through time.** Players will ask why it can't undo the deaths; the story
-  needs a reason. It's also a time Pokémon sent by Palkia (space), which wants a line of
-  explanation.
-- **Celebi as a mythical follower that never battles** needs a reason too (weakened, can't
-  fight, or won't).
+- **Sinnoh overlap:** Sinnoh is already based on Hokkaido and is Palkia's home region. A
+  cold northern Japan region needs to feel distinct from it.
 - **Hospital wake-up** invites "was it all a coma dream?" Decide if that ambiguity is
   intended or only the Nami ambiguity is.
 - **Palkia and Arceus:** does Palkia's test serve Arceus, or go against it?
 - **Why Palkia chose *him*** out of everyone in our world.
 - **What "the door" physically is:** a place, a ritual, a machine, Palkia itself.
 - **Does the public know Arceus is fading?** Changes how the League and ordinary people act.
-- **Two of his closest people end up on the villains' side** (love interest and rival), and
-  the professor dies. The good side needs someone left to stand with him at the end.
 - **Fan knowledge in gameplay:** how does "he knows the games" show up for the player?
 - **Engine work for the lead:** remove Emerald's boy/girl choice and give him lines in big
   scenes (small script change, noted for later).
@@ -113,10 +119,11 @@ _(nothing yet)_
   learns Nami is with the villains.
 - **Act 3, The split (gyms 5-8):** the League plays the death down; the rival joins Minato
   openly. He learns about the cycle and Minato's plan to drain other worlds, his own
-  included. Nami tells him she chooses her world over his. The professor dies
-  (`TODO(design)`: when and how). He learns why Palkia brought him.
-- **Act 4, The League and the end:** Elite Four and Champion, and the final confrontation
-  with Minato and the rival (`TODO(design)`: order). Celebi dies protecting him. He helps
+  included. Nami tells him she chooses her world over his. The professor dies in a lab
+  disaster, leaving the research that explains the cycle. He learns why Palkia brought
+  him, and that Celebi came from a future where the world ended.
+- **Act 4, The League and the end:** partway through the Elite Four, Minato's plan starts.
+  The Champion fights beside him against Minato and the rival. Celebi dies protecting him. He helps
   the cycle finish, paying with his memories. Palkia sends him home.
 - **Epilogue:** hospital. Vague memories. The lookalike, with a small hint.
 
