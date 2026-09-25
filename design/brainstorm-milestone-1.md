@@ -35,6 +35,18 @@ and a location doc per map.
 - **Route 1's anti-Ice Pokémon** is an Eien variant with a Rock or Fighting type.
 - **Shiny odds:** 1 in 4,096 (`SHINY_ODDS 16`). The Shiny Charm is a post-game reward.
 - **Fuyumi's team:** Spheal and Bergmite (ace).
+- **Variant budget:** the 9 starter variants are separate from the 5-10 other variants
+  (about 15-19 in total).
+- **Starter variant types:** Torchic line Fire/Ghost, Bulbasaur line Grass/Water, Froakie
+  line Water/Ice. (Pending the balance issue below.)
+- **Starter evolution:** first evolution raised to about Lv 18, so the milestone only needs
+  the first stage of each.
+- **Route 1 variant:** Poochyena, Rock/Dark, a shrine guardian dog (komainu) touched by the
+  fading.
+- **Starters in the story:** Akira takes the one strong against the player's; Haru takes the
+  third (so Haru can be a tag-battle partner later).
+- **Akira:** met at Kashiwagi's lab, battle right after picking starters. A second meeting
+  in Shimotsuki, where he shows the player his mother's gym.
 
 ## Proposed defaults (not asked; change if wrong)
 
@@ -50,19 +62,24 @@ _(nothing yet)_
 
 ## Open questions
 
-1. Do the starter variants count toward the 5-10 variant budget?
-2. Starter variant typings.
-3. Evolution timing vs. the milestone (which stages need art).
-4. The route 1 variant's base species.
-5. Who takes the other two starters.
-6. Where he meets Akira and whether they battle.
-7. Fakemon: none, a few, or decide later (the user is still thinking).
+1. Fixing the starter type triangle (see below).
+2. Gym 1 difficulty now that two starters resist Ice.
+3. How variants are labeled in-game ("Eien Poochyena"?).
+4. Route 1: encounter table feel and trainer count.
+5. The journal's first page.
+6. Fakemon: none, a few, or decide later (the user is still thinking).
 
 ## Gaps and tensions
 
-- **Starter variants vs. the variant budget.** Three starter lines are 9 variants on their
-  own, more than the 5-10 total. The milestone needs at least 4 new sprite sets (3 starter
-  base forms + the route 1 variant), plus middle stages if the player reaches Lv 16.
+- **The starter triangle breaks with these types.** Grass/Water hits both others
+  super-effectively and neither hits it back (Water cancels Fire's advantage over Grass;
+  Water cancels Ice's too). Fire/Ghost hits neither of the others super-effectively. So the
+  Bulbasaur variant is the clear best pick and Torchic the weakest, and "Akira takes the one
+  strong against yours" has no answer if the player picks Bulbasaur.
+- **Gym 1 got easy.** Fire/Ghost takes half damage from Ice, Water/Ice a quarter; only
+  Grass/Water takes normal damage. Fuyumi's Spheal (Ice/Water) is also hit hard by Grass.
+- **The milestone needs 4 new variant sprite sets:** the three starters' first stages and
+  Eien Poochyena, each with a shiny palette.
 - **Ice as gym 1.** Grass starters are weak to Ice; Fire, Fighting, Rock and Steel beat it.
   The starter trio and route 1's wild Pokémon decide whether gym 1 is fair for every pick.
 - **No snow tileset in the engine.** Vanilla Emerald and FRLG have no snowy overworld tiles
