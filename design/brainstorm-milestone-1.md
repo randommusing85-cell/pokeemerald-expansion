@@ -27,6 +27,14 @@ and a location doc per map.
 - **Regional variants:** Eien has its own variants of some existing Pokémon (not all), which
   can have different types.
 - **Shinies are rare**, and both original Pokémon and the variants have shiny forms.
+- **Variant count:** a handful for the whole game (5-10), 1-2 in the first milestone.
+  (Now in tension with the starter choice; see below.)
+- **Variant theme:** mostly "touched by the fading" (Pokémon living where the worlds are thin
+  have shifted, toward Ghost/Psychic/Dark), with some adapted to the cold (Ice/Water).
+- **Starters:** Eien variants of **Torchic, Bulbasaur and Froakie**.
+- **Route 1's anti-Ice Pokémon** is an Eien variant with a Rock or Fighting type.
+- **Shiny odds:** 1 in 4,096 (`SHINY_ODDS 16`). The Shiny Charm is a post-game reward.
+- **Fuyumi's team:** Spheal and Bergmite (ace).
 
 ## Proposed defaults (not asked; change if wrong)
 
@@ -42,16 +50,19 @@ _(nothing yet)_
 
 ## Open questions
 
-1. How many variants, and how many in the first milestone.
-2. Why Eien's variants differ (their theme).
-3. Starter species.
-4. Route 1's anti-Ice Pokémon.
-5. Exact shiny odds, and whether there's a Shiny Charm.
-6. Fakemon: none, a few, or decide later (the user is still thinking).
-7. Fuyumi's two Pokémon.
+1. Do the starter variants count toward the 5-10 variant budget?
+2. Starter variant typings.
+3. Evolution timing vs. the milestone (which stages need art).
+4. The route 1 variant's base species.
+5. Who takes the other two starters.
+6. Where he meets Akira and whether they battle.
+7. Fakemon: none, a few, or decide later (the user is still thinking).
 
 ## Gaps and tensions
 
+- **Starter variants vs. the variant budget.** Three starter lines are 9 variants on their
+  own, more than the 5-10 total. The milestone needs at least 4 new sprite sets (3 starter
+  base forms + the route 1 variant), plus middle stages if the player reaches Lv 16.
 - **Ice as gym 1.** Grass starters are weak to Ice; Fire, Fighting, Rock and Steel beat it.
   The starter trio and route 1's wild Pokémon decide whether gym 1 is fair for every pick.
 - **No snow tileset in the engine.** Vanilla Emerald and FRLG have no snowy overworld tiles
