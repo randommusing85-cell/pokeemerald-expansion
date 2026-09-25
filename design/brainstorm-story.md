@@ -13,6 +13,17 @@ Decisions move into the game bible, story outline and character docs once they'r
   to the trainers, not the Pokémon.
 - **Villains don't see themselves as evil.** They have a coherent point of view, won't
   change their minds, and lose gracefully (not sore losers).
+- **Arrival:** a legendary pulled him into this world on purpose. He learns why late in the game.
+- **He's a Pokémon fan** from our world. He knows type matchups and the games, and the story
+  plays on where the real world differs from the games he knows.
+- **Villains' belief:** other worlds exist (including his), and they want to open a door to
+  them. His existence proves them right.
+- **Romance:** with someone in the villains' group. The romance survives the story.
+- **Betrayal:** the rival comes to agree with the villains and joins them openly.
+- **Deaths:** mostly side effects of the villains' plan (disasters, collapses), not murders,
+  plus a few major deaths shown on-screen.
+- **Pokémon can die.** Major characters' Pokémon die on-screen, showing sacrifice and
+  loyalty; minor NPCs' Pokémon die off-screen.
 
 ## Leaning
 
@@ -20,14 +31,23 @@ _(nothing yet)_
 
 ## Open questions
 
-1. How and why he gets isekai'd, and whether anyone brought him on purpose.
-2. Does he know Pokémon (the games, the anime) from our world?
-3. What the villains believe and want.
-4. Who the romance is with, and how it plays out.
-5. Who betrays whom, and why.
-6. Who dies, how, and how it's shown.
+1. Why the villains want the door open.
+2. Why the legendary brought him, and which legendary it is.
+3. The love interest: role in the group, whether their belief changes, when he finds out.
+4. The rival's betrayal: when and what pushes them.
+5. Which major characters die, and whether the player's own Pokémon can.
+6. How much the protagonist speaks.
 
 ## Gaps and tensions
+
+- **Love interest vs. "villains never change their minds".** If they stay a believer, the
+  romance survives across a real disagreement; if they change sides, they break the
+  villain rule. Needs a choice.
+- **Two of his closest people end up on the villains' side** (love interest and rival).
+  Strong, but the good side needs its own anchors (mentor, friends, gym leaders).
+- **Ending: stay or go home** is now central: the door the villains want could also send
+  him home, and the love interest is tied to it.
+- **Fan knowledge in gameplay:** how does "he knows the games" show up for the player?
 
 - **Player character vs. isekai guy.** Emerald has a silent protagonist and a boy/girl
   choice. An isekai guy with a romance needs a voice and a fixed gender. Decide: fixed
@@ -37,8 +57,6 @@ _(nothing yet)_
 - **Loyal Pokémon on the villains' side.** Their Pokémon love them too. This could be a
   theme ("loyalty doesn't mean they're right") or a problem if the villains' goal harms
   Pokémon. Pick which.
-- **Ending: stay or go home?** Isekai stories usually answer this, and the romance should
-  weigh on it.
 - **Tournament placement:** before the League, after it, or instead of part of it.
 - **Scope.** 8 gyms + Elite Four + tournament + villain plot is a full-size game. The
   first milestone (`design/README.md`) should be a small slice of it.
