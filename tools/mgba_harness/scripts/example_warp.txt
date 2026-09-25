@@ -1,0 +1,11 @@
+# Example: new game, warp to a few maps and screenshot each one.
+#   tools/mgba_harness/run.py tools/mgba_harness/scripts/example_warp.txt
+include new_game.txt
+shot 00_truck
+warp MAP_LITTLEROOT_TOWN
+shot 01_littleroot
+warp MAP_OLDALE_TOWN
+shot 02_oldale
+warp MAP_PETALBURG_CITY
+shot 03_petalburg
+read32 @gSaveBlock1Ptr gSaveBlock1Ptr
