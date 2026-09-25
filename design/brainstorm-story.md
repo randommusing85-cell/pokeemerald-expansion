@@ -63,7 +63,18 @@ Decisions move into the game bible, story outline and character docs once they'r
   arrived (not a trainer; his home in this world).
 - **The professor** dies in Act 3 in a lab disaster while researching the cycle, leaving
   him the research that explains it.
-- **Region:** Japan-inspired, with a cold, sparse northern mood (aurora skies, a fading world).
+- **Region: Eien.** Japan-inspired, based on northern Honshu's Sea of Japan coast (Tohoku,
+  Aomori): snow country, fishing towns, old shrines, a cold sparse mood with aurora skies.
+- **Why Palkia chose him:** because he's a fan. Someone who knows this world from outside
+  sees what locals can't. Celebi saw him in its future and led Palkia to him.
+- **The door:** a place where the worlds are thin (an Osorezan-like volcanic mountain /
+  old shrine). Minato builds a machine there to draw on Palkia's power.
+- **Public knowledge:** the League and scientists know about the cycle and hide it (which is
+  why the League played down the gym leader's death). Ordinary people only have rumors and
+  folk tales: longer winters, "it's happened before".
+- **Rival: Akira** (boy). A cheerful local kid who looks up to the League; the gym leader
+  who dies is his parent.
+- **Who takes him in:** the professor's family. They grieve with him when the professor dies.
 - **Ending:** he saves the world and goes home. He wakes up in a hospital, remembers Nami
   only vaguely, and later bumps into someone who looks exactly like her. The game leaves it
   open whether it's really her, with a small hint for attentive players (a line only Nami
@@ -80,17 +91,16 @@ _(nothing yet)_
 
 ## Open questions
 
-1. Region specifics and name.
-2. Why Palkia chose him.
-3. What the door physically is.
-4. Whether the public knows about the cycle.
-5. The rival: personality, name, gender.
-6. Who takes him in when he arrives.
+1. How his fan knowledge shows up in gameplay.
+2. Nami's signature Pokémon (the ending hint depends on it).
+3. How he first meets Nami.
+4. The Champion.
+5. Akira's parent: which gym, which type, mother or father.
+6. The first milestone (vertical slice) to build.
+7. Names still needed: the hero's default name, the professor, Nami's mentor.
 
 ## Gaps and tensions
 
-- **Sinnoh overlap:** Sinnoh is already based on Hokkaido and is Palkia's home region. A
-  cold northern Japan region needs to feel distinct from it.
 - **Hospital wake-up** invites "was it all a coma dream?" Decide if that ambiguity is
   intended or only the Nami ambiguity is.
 - **Palkia and Arceus:** does Palkia's test serve Arceus, or go against it?
