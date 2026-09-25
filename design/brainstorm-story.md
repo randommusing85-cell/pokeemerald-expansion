@@ -75,6 +75,20 @@ Decisions move into the game bible, story outline and character docs once they'r
 - **Rival: Akira** (boy). A cheerful local kid who looks up to the League; the gym leader
   who dies is his parent.
 - **Who takes him in:** the professor's family. They grieve with him when the professor dies.
+- **Hero's name** is chosen by the player (naming screen stays; boy/girl choice goes).
+- **Professor: Kashiwagi.** **Nami's mentor: Hashimoto.**
+- **Fan knowledge in gameplay:** inner thoughts at key moments ("in the games, this is
+  where..."); moments where his game knowledge is wrong; and a **journal** key item where he
+  records what he knows and what happens. Near the end its pages go blank as his memories
+  are paid away.
+- **Nami's signature Pokémon: Lapras.** The ending hint is a small Lapras charm.
+- **First meeting:** Nami helps him when he's lost or Celebi is struggling; a battle with
+  her comes later.
+- **Champion:** the person who ordered the cover-up of the cycle. They admit it and fight
+  beside him at the end.
+- **Akira's mother is gym 1's leader**, an Ice-type specialist. The player knows her longest.
+- **First milestone:** prologue through gym 1 (the accident, waking in Eien, Celebi, the
+  professor's family, Akira, route 1, the first town and gym 1).
 - **Ending:** he saves the world and goes home. He wakes up in a hospital, remembers Nami
   only vaguely, and later bumps into someone who looks exactly like her. The game leaves it
   open whether it's really her, with a small hint for attentive players (a line only Nami
@@ -91,51 +105,42 @@ _(nothing yet)_
 
 ## Open questions
 
-1. How his fan knowledge shows up in gameplay.
-2. Nami's signature Pokémon (the ending hint depends on it).
-3. How he first meets Nami.
-4. The Champion.
-5. Akira's parent: which gym, which type, mother or father.
-6. The first milestone (vertical slice) to build.
-7. Names still needed: the hero's default name, the professor, Nami's mentor.
+1. Names: gym 1's leader (Akira's mother), the Champion, the professor's family member(s).
+2. Genders for Kashiwagi, Hashimoto and the Champion.
+3. Hashimoto's role and relationship to Nami beyond "mentor".
 
 ## Gaps and tensions
 
 - **Hospital wake-up** invites "was it all a coma dream?" Decide if that ambiguity is
   intended or only the Nami ambiguity is.
 - **Palkia and Arceus:** does Palkia's test serve Arceus, or go against it?
-- **Why Palkia chose *him*** out of everyone in our world.
-- **What "the door" physically is:** a place, a ritual, a machine, Palkia itself.
-- **Does the public know Arceus is fading?** Changes how the League and ordinary people act.
-- **Fan knowledge in gameplay:** how does "he knows the games" show up for the player?
-- **Engine work for the lead:** remove Emerald's boy/girl choice and give him lines in big
-  scenes (small script change, noted for later).
 - **Loyal Pokémon on the villains' side.** Their Pokémon love them too. This could be a
   theme ("loyalty doesn't mean they're right") or a problem if the villains' goal harms
   Pokémon. Pick which.
-- **Scope.** 8 gyms + Elite Four + tournament + villain plot is a full-size game. The
-  first milestone (`design/README.md`) should be a small slice of it.
-- **Region, name, tone** are all still blank in the game bible.
+- **Engine work for the lead:** remove Emerald's boy/girl choice, keep the naming screen,
+  and give him lines in big scenes (small script change, noted for later).
 
 ## Draft outline (proposal, not decided)
 
 - **Prologue (our world):** he's playing a Pokémon game; an accident; Palkia catches him.
-- **Act 1, Arrival (gyms 1-4):** he wakes in the region; Celebi finds him and follows him.
-  Meets the professor and the rival. His fan knowledge helps, and sometimes misleads him.
-  Signs of the fading (small disasters, off-screen losses). He meets Nami as a friendly
-  trainer. The villains appear: principled, gracious when beaten.
+- **Act 1, Arrival (gyms 1-4):** he wakes in Eien; Celebi finds him and follows him.
+  Professor Kashiwagi's family takes him in; he meets Akira. Gym 1 is Akira's mother (Ice).
+  His fan knowledge helps, and sometimes misleads him; he starts the journal. Signs of the
+  fading (small disasters, off-screen losses). Nami helps him when he's lost; they battle
+  later. The villains appear: principled, gracious when beaten.
 - **Act 2, Tournament (midpoint):** Nami is a competitor. The villains move during the
-  event; the disaster kills the gym leader (rival's parent/mentor) and Nami's mentor. He
+  event; the disaster kills Akira's mother and Hashimoto, Nami's mentor. He
   learns Nami is with the villains.
-- **Act 3, The split (gyms 5-8):** the League plays the death down; the rival joins Minato
+- **Act 3, The split (gyms 5-8):** the League plays the death down; Akira joins Minato
   openly. He learns about the cycle and Minato's plan to drain other worlds, his own
   included. Nami tells him she chooses her world over his. The professor dies in a lab
   disaster, leaving the research that explains the cycle. He learns why Palkia brought
   him, and that Celebi came from a future where the world ended.
 - **Act 4, The League and the end:** partway through the Elite Four, Minato's plan starts.
-  The Champion fights beside him against Minato and the rival. Celebi dies protecting him. He helps
+  The Champion (who ordered the cover-up) admits it and fights beside him against Minato
+  and Akira. Celebi dies protecting him. The journal's pages go blank. He helps
   the cycle finish, paying with his memories. Palkia sends him home.
-- **Epilogue:** hospital. Vague memories. The lookalike, with a small hint.
+- **Epilogue:** hospital. Vague memories. The lookalike, with a small Lapras charm.
 
 ## Parked ideas
 
