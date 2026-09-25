@@ -87,7 +87,27 @@ Decisions move into the game bible, story outline and character docs once they'r
 - **Champion:** the person who ordered the cover-up of the cycle. They admit it and fight
   beside him at the end.
 - **Akira's mother is gym 1's leader**, an Ice-type specialist. The player knows her longest.
-- **Friends:** he meets friends along the way who can help him in fights.
+- **Friends:** he meets friends along the way who can help him in fights. They don't
+  follow him around; they have their own battles and lives.
+  - **Two main friends with full arcs:** one from Act 1, one from Act 3.
+  - **A varied cast of smaller friends** tied to parts of the region.
+  - **How they help:** scripted tag battles beside him, and they turn up at the big moments
+    (the tournament disaster, the final battle).
+  - **All the friends survive.** They're the part of his life that holds.
+  - **He says goodbye** to them on-screen before Palkia sends him home.
+- **Names and genders** below were chosen by Claude at the user's request, following the
+  Japanese naming already in use. Change any freely.
+  - **Kashiwagi** (professor): woman. Her husband runs the household that takes him in.
+  - **Haru Kashiwagi** (main friend, Act 1): boy, the professor's son, about the hero's age.
+    Shares the hero's grief when his mother dies.
+  - **Yuki** (main friend, Act 3): girl, a tournament competitor from another town who starts
+    as a rival and becomes a friend after Akira leaves.
+  - **Fuyumi** (gym 1 leader, Ice): Akira's mother.
+  - **Hashimoto** (Nami's mentor): man, older, one of Minato's lieutenants.
+  - **Seiji** (Champion): man; ordered the cover-up of the cycle.
+  - **Smaller friends (proposed):** **Kaede**, a young shrine keeper who knows the old tales of
+    the cycle; **Tetsu**, an old mountain guide near the door mountain; **Ren**, a League
+    trainer who quits after learning about the cover-up.
 - **First milestone:** prologue through gym 1 (the accident, waking in Eien, Celebi, the
   professor's family, Akira, route 1, the first town and gym 1).
 - **Ending:** he saves the world and goes home. He wakes up in a hospital, remembers Nami
@@ -106,10 +126,9 @@ _(nothing yet)_
 
 ## Open questions
 
-1. Names: gym 1's leader (Akira's mother), the Champion, the professor's family member(s).
-2. Genders for Kashiwagi, Hashimoto and the Champion.
-3. Hashimoto's role and relationship to Nami beyond "mentor".
-4. Friends: how many, who, how they help in fights, what happens to them (round 8).
+1. Hashimoto's role and relationship to Nami beyond "mentor".
+2. Where each smaller friend appears, and whether they get tag battles.
+3. The husband's name (Kashiwagi's household).
 
 ## Gaps and tensions
 
@@ -119,6 +138,8 @@ _(nothing yet)_
 - **Loyal Pokémon on the villains' side.** Their Pokémon love them too. This could be a
   theme ("loyalty doesn't mean they're right") or a problem if the villains' goal harms
   Pokémon. Pick which.
+- **Friends vs. romance:** Haru and Yuki live and fight beside him; keep those friendships
+  clearly friendships so the romance stays Nami's.
 - **One walking follower at a time.** The engine's follower NPC system (`include/follower_npc.h`)
   supports a single follower. If Celebi walks behind him, a friend can't walk with him at the
   same time without engine work. Tag battles are supported (`src/data/battle_partners.party`,
@@ -130,22 +151,23 @@ _(nothing yet)_
 
 - **Prologue (our world):** he's playing a Pokémon game; an accident; Palkia catches him.
 - **Act 1, Arrival (gyms 1-4):** he wakes in Eien; Celebi finds him and follows him.
-  Professor Kashiwagi's family takes him in; he meets Akira. Gym 1 is Akira's mother (Ice).
+  Professor Kashiwagi's family takes him in; Haru becomes his first friend. He meets Akira. Gym 1 is Akira's mother (Ice).
   His fan knowledge helps, and sometimes misleads him; he starts the journal. Signs of the
   fading (small disasters, off-screen losses). Nami helps him when he's lost; they battle
   later. The villains appear: principled, gracious when beaten.
-- **Act 2, Tournament (midpoint):** Nami is a competitor. The villains move during the
+- **Act 2, Tournament (midpoint):** Nami and Yuki are competitors. The villains move during the
   event; the disaster kills Akira's mother and Hashimoto, Nami's mentor. He
   learns Nami is with the villains.
 - **Act 3, The split (gyms 5-8):** the League plays the death down; Akira joins Minato
-  openly. He learns about the cycle and Minato's plan to drain other worlds, his own
+  openly. Yuki becomes a friend. He learns about the cycle and Minato's plan to drain other worlds, his own
   included. Nami tells him she chooses her world over his. The professor dies in a lab
   disaster, leaving the research that explains the cycle. He learns why Palkia brought
   him, and that Celebi came from a future where the world ended.
 - **Act 4, The League and the end:** partway through the Elite Four, Minato's plan starts.
-  The Champion (who ordered the cover-up) admits it and fights beside him against Minato
-  and Akira. Celebi dies protecting him. The journal's pages go blank. He helps
-  the cycle finish, paying with his memories. Palkia sends him home.
+  The Champion (who ordered the cover-up) admits it and fights beside him with Haru and Yuki
+  against Minato and Akira. Celebi dies protecting him. The journal's pages go blank. He helps
+  the cycle finish, paying with his memories. He says goodbye to his friends. Palkia sends
+  him home.
 - **Epilogue:** hospital. Vague memories. The lookalike, with a small Lapras charm.
 
 ## Parked ideas
