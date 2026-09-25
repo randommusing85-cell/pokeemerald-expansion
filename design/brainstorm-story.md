@@ -87,6 +87,7 @@ Decisions move into the game bible, story outline and character docs once they'r
 - **Champion:** the person who ordered the cover-up of the cycle. They admit it and fight
   beside him at the end.
 - **Akira's mother is gym 1's leader**, an Ice-type specialist. The player knows her longest.
+- **Friends:** he meets friends along the way who can help him in fights.
 - **First milestone:** prologue through gym 1 (the accident, waking in Eien, Celebi, the
   professor's family, Akira, route 1, the first town and gym 1).
 - **Ending:** he saves the world and goes home. He wakes up in a hospital, remembers Nami
@@ -108,6 +109,7 @@ _(nothing yet)_
 1. Names: gym 1's leader (Akira's mother), the Champion, the professor's family member(s).
 2. Genders for Kashiwagi, Hashimoto and the Champion.
 3. Hashimoto's role and relationship to Nami beyond "mentor".
+4. Friends: how many, who, how they help in fights, what happens to them (round 8).
 
 ## Gaps and tensions
 
@@ -117,6 +119,10 @@ _(nothing yet)_
 - **Loyal Pokémon on the villains' side.** Their Pokémon love them too. This could be a
   theme ("loyalty doesn't mean they're right") or a problem if the villains' goal harms
   Pokémon. Pick which.
+- **One walking follower at a time.** The engine's follower NPC system (`include/follower_npc.h`)
+  supports a single follower. If Celebi walks behind him, a friend can't walk with him at the
+  same time without engine work. Tag battles are supported (`src/data/battle_partners.party`,
+  like Steven in Emerald).
 - **Engine work for the lead:** remove Emerald's boy/girl choice, keep the naming screen,
   and give him lines in big scenes (small script change, noted for later).
 
