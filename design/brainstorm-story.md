@@ -42,9 +42,22 @@ Decisions move into the game bible, story outline and character docs once they'r
   the villains there, and the villains make a move during the event.
 - **Guide Pokémon:** a Pokémon finds him when he arrives and guides him. Palkia sent it (he
   learns this later). It's the story Pokémon that dies.
+- **Saving the world:** he helps the cycle finish safely: Arceus renews, the world is
+  reborn, and he helps its people and Pokémon through the change. The price is his own
+  memories of this world.
+- **Opening:** in our world he's playing a Pokémon game when an accident nearly kills him.
+  Palkia catches him at the edge of death; his body lies in a coma the whole game.
+- **Nami and Minato's plan:** she knows it drains the hero's world and honestly chooses her
+  world over his. It hurts both of them.
+- **Midpoint order:** at the tournament he learns Nami is with the villains, and a
+  villain-caused disaster kills the gym leader (the rival's parent/mentor) and Nami's
+  mentor. The rival turns a few towns later, after the League plays the death down.
+- **Guide Pokémon is Celebi.** It follows him on the map (not in the party) and dies in the
+  final act protecting him from Minato's plan.
 - **Ending:** he saves the world and goes home. He wakes up in a hospital, remembers Nami
   only vaguely, and later bumps into someone who looks exactly like her. The game leaves it
-  open whether it's really her.
+  open whether it's really her, with a small hint for attentive players (a line only Nami
+  said, or something linked to her Pokémon).
 - **On-screen deaths:** the mentor/professor figure, a gym leader, and a villain the player
   respects (possibly Nami's mentor).
 - **Player's Pokémon:** his party is never killed. A story Pokémon he travels with dies in a
@@ -57,19 +70,19 @@ _(nothing yet)_
 
 ## Open questions
 
-1. How he saves the world, given the cycle is natural and Minato's fix drains other worlds.
-2. How he leaves our world at the start (and why he wakes up in a hospital).
-3. How Nami squares Minato's plan with the fact it drains his home world.
-4. Order of the midpoint: tournament, Nami reveal, gym leader's death, rival's turn.
-5. The guide Pokémon: follower or party member, and when it dies.
-6. Whether the ending's lookalike gets a hint for attentive players.
+1. Elite Four and the final confrontation with Minato: which comes first.
+2. Why Celebi (a time traveler) can't undo the deaths.
+3. Who is left on his side at the end.
+4. When and how the professor dies.
+5. The region: inspiration and feel.
 
 ## Gaps and tensions
 
-- **The hero's answer to the cycle** must be something besides Minato's plan and besides
-  letting the world end (round 4, question 1).
-- **Minato's plan threatens the hero's own world.** Raises the stakes; Nami believing in it
-  makes the romance harder (round 4, question 3).
+- **Celebi travels through time.** Players will ask why it can't undo the deaths; the story
+  needs a reason. It's also a time Pokémon sent by Palkia (space), which wants a line of
+  explanation.
+- **Celebi as a mythical follower that never battles** needs a reason too (weakened, can't
+  fight, or won't).
 - **Hospital wake-up** invites "was it all a coma dream?" Decide if that ambiguity is
   intended or only the Nami ambiguity is.
 - **Palkia and Arceus:** does Palkia's test serve Arceus, or go against it?
@@ -87,6 +100,25 @@ _(nothing yet)_
 - **Scope.** 8 gyms + Elite Four + tournament + villain plot is a full-size game. The
   first milestone (`design/README.md`) should be a small slice of it.
 - **Region, name, tone** are all still blank in the game bible.
+
+## Draft outline (proposal, not decided)
+
+- **Prologue (our world):** he's playing a Pokémon game; an accident; Palkia catches him.
+- **Act 1, Arrival (gyms 1-4):** he wakes in the region; Celebi finds him and follows him.
+  Meets the professor and the rival. His fan knowledge helps, and sometimes misleads him.
+  Signs of the fading (small disasters, off-screen losses). He meets Nami as a friendly
+  trainer. The villains appear: principled, gracious when beaten.
+- **Act 2, Tournament (midpoint):** Nami is a competitor. The villains move during the
+  event; the disaster kills the gym leader (rival's parent/mentor) and Nami's mentor. He
+  learns Nami is with the villains.
+- **Act 3, The split (gyms 5-8):** the League plays the death down; the rival joins Minato
+  openly. He learns about the cycle and Minato's plan to drain other worlds, his own
+  included. Nami tells him she chooses her world over his. The professor dies
+  (`TODO(design)`: when and how). He learns why Palkia brought him.
+- **Act 4, The League and the end:** Elite Four and Champion, and the final confrontation
+  with Minato and the rival (`TODO(design)`: order). Celebi dies protecting him. He helps
+  the cycle finish, paying with his memories. Palkia sends him home.
+- **Epilogue:** hospital. Vague memories. The lookalike, with a small hint.
 
 ## Parked ideas
 
