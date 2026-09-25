@@ -1,0 +1,13 @@
+# Power on, start a new game with default choices, and stop in the moving truck
+# once it has parked and the player can move (the debug menu and `warp` work from here).
+# Frame counts are exact for the stock intro; if you change the intro, re-probe with shots.
+wait 600
+press START          # skip copyright/intro to the title screen
+wait 600             # logo animation; the title ignores input until "PRESS START" shows
+press A              # title screen -> main menu
+wait 240             # menu fade-in
+press A              # NEW GAME
+press A 265          # Birch speech, gender (BOY), name (typed as Aaaaaaa), confirmation;
+                     # extra presses land during the truck ride, which ignores input
+wait_until32 @gMain+4 @CB2_Overworld+1 600
+wait 1200            # truck ride until it parks and the player can move

@@ -1,0 +1,12 @@
+# Power on and CONTINUE from the battery save given with --save, ending in the overworld.
+#   tools/mgba_harness/run.py my_scene.txt --save path/to/game.sav   (my_scene.txt: include continue.txt)
+# The title screen ignores input until its logo animation ends and "PRESS START" shows.
+wait 600
+press START          # skip copyright/intro to the title screen
+wait 600             # logo animation
+press A              # title screen -> main menu
+wait 240             # menu fade-in
+press A              # CONTINUE
+# gMain.callback2 == CB2_Overworld (+1: Thumb function pointer) once the field is running.
+wait_until32 @gMain+4 @CB2_Overworld+1 600
+wait 60              # map name popup / fade-in
