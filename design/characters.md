@@ -1,39 +1,89 @@
 # Characters
 
+Names follow Japanese naming. Most names and genders beyond the core cast were proposed by
+Claude at the user's request; change freely.
+
 ## Player
 
-_[Background, why they're starting their journey, default names.]_
+- A guy from our world and a Pokémon fan. Name chosen by the player; fixed male (Emerald's
+  boy/girl choice is removed, the naming screen stays).
+- Playing a Pokémon game when an accident nearly kills him. Palkia catches him at the edge
+  of death; his body lies in a coma in our world for the whole game.
+- **Voice:** mostly silent; speaks in big scenes. Inner thoughts show his game knowledge
+  ("in the games, this is where..."), which is sometimes wrong: this world is real.
+- **Journal:** a key item where he records what he knows and what happens. Near the end its
+  pages go blank as his memories are paid away.
+- **Ending:** helps Arceus's cycle finish safely, paying with his memories of Eien. Wakes in
+  a hospital at home.
 
 ## Rival
 
-- **Name:** _[name]_
-- **Personality:** _[one line]_
-- **Arc:** _[how they change over the game]_
-- **Team:** _[starter logic and how the team grows]_
-- **Battles:** _[where and when, with rough levels]_
+- **Name:** Akira (boy).
+- **Personality:** a cheerful local kid who looks up to the League.
+- **Arc:** his mother Fuyumi (gym 1) dies in the tournament disaster. The League plays her
+  death down, and a few towns later Akira decides the "good" side can't protect anyone and
+  joins Minato openly. He fights against the hero at the end.
+- **Team:** `TODO(design)`.
+- **Battles:** `TODO(design)`.
 
 ## Professor
 
-_[Name, research field, role in the story.]_
+- **Professor Kashiwagi** (woman). Researches the cycle. Her family takes the hero in.
+- Dies in Act 3 in a lab disaster, leaving the research that explains the cycle.
+- Her husband runs the household. `TODO(design)`: his name.
+
+## Love interest
+
+- **Nami** (girl). Signature Pokémon: **Lapras**.
+- Helps him when he's lost or Celebi is struggling; they battle later.
+- A committed believer in Minato's cause. He learns she's with them at the tournament.
+  She knows Minato's plan drains the hero's world and honestly chooses her world over his.
+  She never changes her mind; they choose each other anyway.
+- Her mentor Hashimoto dies in the tournament disaster.
+
+## Friends
+
+They have their own battles and lives; they don't follow him around. They fight beside him
+in scripted tag battles and turn up at big moments. All survive, and he says goodbye to
+each on-screen before he goes home. Keep these friendships clearly friendships.
+
+| Name | Role | Where | Notes |
+| --- | --- | --- | --- |
+| Haru Kashiwagi | Main friend, Act 1 | Hometown | Boy, the professor's son, about the hero's age. Shares the grief when his mother dies. |
+| Yuki | Main friend, Act 3 | Tournament, then Act 3 | Girl from another town. Tournament rival, becomes a friend after Akira leaves. |
+| Kaede | Smaller friend | `TODO(design)` | Young shrine keeper who knows the old tales of the cycle. |
+| Tetsu | Smaller friend | Near the door mountain | Old mountain guide. |
+| Ren | Smaller friend | `TODO(design)` | League trainer who quits after learning about the cover-up. |
 
 ## Gym leaders
 
 | # | Town | Leader | Type | Personality | Ace | Level |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | | | | | | |
-| 2 | | | | | | |
+| 1 | `TODO(design)` | Fuyumi | Ice | `TODO(design)`. Akira's mother; dies at the tournament. | | |
+| 2-8 | | `TODO(design)` | | | | |
+
+## Champion
+
+- **Seiji** (man). Ordered the League's cover-up of the cycle. When Minato's plan starts
+  partway through the Elite Four, he admits it and fights beside the hero, Haru and Yuki.
 
 ## Factions / villains
 
-### _[faction name]_
+### `TODO(design)`: faction name
 
-- **Goal:** _[what they want and why they think they're right]_
-- **Look:** _[uniform, trainer class]_
-- **Leader:** _[name, motive]_
-- **Where they appear:** _[locations and beats]_
+- **Goal:** stop Arceus's cycle by drawing energy from other worlds (the hero's included)
+  through Palkia's door, to sustain Arceus.
+- **Look:** `TODO(design)`.
+- **Leader:** **Minato** (man). Believes he can stop the cycle. Lives; the final villain.
+- **Lieutenant:** **Hashimoto** (older man), Nami's mentor. Dies in the tournament disaster.
+  `TODO(design)`: his relationship to Nami beyond mentor.
+- **Members:** principled; don't see themselves as evil; never change their minds; lose
+  gracefully.
+- **Where they appear:** from Act 1; the tournament; the door mountain at the end.
 
-## Other recurring NPCs
+## Pokémon characters
 
-| Name | Role | Where | Notes |
-| --- | --- | --- | --- |
-| | | | |
+- **Celebi:** finds the hero when he arrives and follows him on the map (not in the party).
+  Came from a future where the world ended; can't jump again or fight. Dies in the final act
+  protecting him from Minato's plan.
+- **Palkia:** the door. Brought him here; sends him home.

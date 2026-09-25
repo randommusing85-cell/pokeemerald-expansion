@@ -15,11 +15,17 @@ docs: when the design changes, the doc changes in the same commit.
 
 ## Current milestone
 
-**Vertical slice:** _[e.g. hometown → Route 1 → first town and gym → end of the opening arc]._
-Everything outside this scope waits.
+**Vertical slice: prologue through gym 1.** Everything outside this scope waits.
 
-- [ ] _[milestone checklist item]_
-- [ ] _[milestone checklist item]_
+- [ ] Prologue in our world: the accident, Palkia (engine: remove the boy/girl choice, keep
+      the naming screen)
+- [ ] Hometown: he wakes in Eien, Celebi finds him and follows him
+- [ ] Kashiwagi household: taken in, Haru, the journal key item
+- [ ] Meet Akira
+- [ ] Route 1
+- [ ] First town and gym 1 (Fuyumi, Ice)
+- [ ] Location docs for each map above (`locations/_template.md`)
+- [ ] TODO(design): starters, hometown and first town names
 
 ## Conventions
 

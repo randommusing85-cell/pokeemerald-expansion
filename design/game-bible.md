@@ -2,34 +2,65 @@
 
 ## Pitch
 
-_[One or two sentences: what the game is and why it's interesting.]_
+A Pokémon fan from our world nearly dies in an accident and wakes up in Eien, a snowbound
+region whose god is dying of old age. He travels the gym circuit, falls for a girl on the
+other side, loses people he loves, and saves the world at the cost of his memories of it.
 
 ## The region
 
-- **Name:** _[region name]_
-- **Inspiration:** _[real place, era or mood]_
-- **Geography:** _[mountains, coast, climate; how the land shapes travel]_
-- **Look and feel:** _[palette, tileset direction, weather, music mood]_
+- **Name:** Eien (永遠, "eternity").
+- **Inspiration:** northern Honshu's Sea of Japan coast (Tohoku, Aomori).
+- **Geography:** snow country and coast: fishing towns, old shrines, and a volcanic mountain
+  where the worlds are thin (modeled on Osorezan). `TODO(design)`: map layout, route count.
+- **Look and feel:** cold and sparse, long winters, aurora skies. Must feel distinct from
+  Sinnoh (which is Hokkaido-based and Palkia's home region).
 
 ## Themes
 
-_[2–3 themes the story keeps returning to, e.g. industry vs. nature, family, ambition.]_
+`TODO(design)`: confirm. Drawn from the story decisions:
+
+- **Everything ends, and that's allowed.** Arceus's cycle, the hero's memories, his goodbye.
+- **Loyalty isn't the same as being right.** Pokémon are loyal to every trainer, on any side.
+- **Good people can want opposite things.** The villains, Nami and the League all act on
+  what they believe.
 
 ## World rules
 
-_[What's true in this world that isn't in the main games: local customs, how Pokémon and
-people live together here, technology level, anything the story relies on.]_
+- **Pokémon are innately good and loyal** to their trainers. Morality belongs to trainers.
+- **Arceus is fading as part of a natural cycle.** It's old; the world will be remade. The
+  question is what survives the change.
+- **The League and scientists know** about the cycle and hide it. Ordinary people only have
+  rumors and folk tales (longer winters, "it's happened before").
+- **Other worlds exist**, ours included. Palkia is the door between them. At the thin place
+  on the mountain, Minato builds a machine to draw on Palkia's power.
+- **Pokémon can die.** Major characters' Pokémon die on-screen; minor NPCs' off-screen. The
+  player's party never dies.
 
 ## Pokémon
 
-- **Starters:** _[three species and why they fit]_
-- **Regional feel:** _[which species are common here, and why]_
-- **Legendary / myth:** _[if any, and its role in the story]_
+- **Starters:** `TODO(design)`.
+- **Regional feel:** `TODO(design)`. (Ice and Water fit the region; gym 1 is Ice.)
+- **Legendary / myth:**
+  - **Arceus:** the fading god whose cycle drives the plot.
+  - **Palkia:** the door between worlds. It brought the hero here as a test: will an
+    outsider keep the worlds apart or join them? It chose him because a fan sees this world
+    from outside.
+  - **Celebi:** came from a future where the cycle went wrong and the world ended. It saw the
+    hero in that future and led Palkia to him. It guides him but can't travel through time
+    again or battle.
 
 ## Tone
 
-_[Light, serious, mysterious? What the game never does.]_
+Grounded, with real losses: a betrayal, on-screen deaths, a bittersweet ending. Kept plain,
+not melodramatic (see `dialogue-style.md`).
+
+The game never:
+
+- makes villains cartoonish, gloating or sore losers. They think they're right and lose
+  gracefully.
+- has villains murder people. Deaths come from disasters their plan causes.
+- kills a Pokémon in the player's party.
 
 ## Out of scope
 
-_[Things the game deliberately won't have, to keep it finishable.]_
+`TODO(design)`.

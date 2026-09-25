@@ -8,6 +8,14 @@
 - Characters sound different from each other (see below).
 - The game's text has no em/en dashes; use `-`, `…` or two sentences.
 
+## Story-wide rules
+
+- **The hero** is mostly silent and speaks only in big scenes. His inner thoughts show his
+  game knowledge ("In the games, this is where..."), and sometimes that knowledge is wrong.
+- **Villains** believe they're right. In defeat they're gracious, never sore or gloating,
+  and they don't change their minds.
+- **Deaths** are shown plainly and briefly. No speeches at the deathbed.
+
 ## Voices
 
 For each major character, a line of description and 2–3 example lines in their voice.

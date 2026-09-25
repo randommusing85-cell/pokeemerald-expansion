@@ -3,6 +3,10 @@
 Working notes from brainstorming sessions (see `.claude/skills/brainstorm/SKILL.md`).
 Decisions move into the game bible, story outline and character docs once they're firm.
 
+**Promoted:** the decisions below are now in `game-bible.md`, `characters.md`,
+`story-outline.md`, `progression.md`, `dialogue-style.md` and the milestone in `README.md`.
+Those docs are the source of truth; this file is the record of how we got there.
+
 ## Decided
 
 - **Protagonist:** a guy from our world who is isekai'd into the Pokémon world.
