@@ -48,12 +48,9 @@ _(nothing yet)_
 - **Ending: stay or go home** is now central: the door the villains want could also send
   him home, and the love interest is tied to it.
 - **Fan knowledge in gameplay:** how does "he knows the games" show up for the player?
-
 - **Player character vs. isekai guy.** Emerald has a silent protagonist and a boy/girl
   choice. An isekai guy with a romance needs a voice and a fixed gender. Decide: fixed
   male lead who speaks (in choices or lines), or a mostly silent lead with a few key lines.
-- **Graceful villains vs. NPC deaths.** If the villains are principled and not sore losers,
-  who or what kills people? This needs an answer that doesn't make them cartoon evil.
 - **Loyal Pokémon on the villains' side.** Their Pokémon love them too. This could be a
   theme ("loyalty doesn't mean they're right") or a problem if the villains' goal harms
   Pokémon. Pick which.
