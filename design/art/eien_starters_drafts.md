@@ -178,3 +178,68 @@ the exact pose in all four. Gemini 3 Pro kept Torchic's pose but redrew the pose
 Froakie and Poochyena. That's the opposite of the fronts, where Pro was stronger. Converting
 with the front palette worked with no extra colours needed; the main loss is gradient detail
 (Bulbasaur's bulb).
+
+## Icons
+
+**Proposals only, not decided design.** These are draft party-menu icons for the four Eien
+forms. Nothing in `graphics/` or `src/` was changed. Contact sheet:
+[`eien_icons_contact_sheet.png`](eien_icons_contact_sheet.png). Each row shows the original
+icon, then each converted draft, with frame 1 and frame 2 at x4 and the chosen icon palette
+under each.
+
+- **Icon style:** `P_GBA_STYLE_SPECIES_ICONS` is FALSE, so the inputs are the modern `icon.png`
+  files in their `iconPalIndex` palettes: Torchic pal0, Bulbasaur pal4, Froakie pal0,
+  Poochyena pal2.
+- **Method:** an edit, like the backs. Each call sent two images:
+  - Image 1: the original 32x64 icon strip, centred on a white 64x64 canvas, 8x. The canvas is
+    square because the models return square images.
+  - Image 2: the Eien front frame 1, 8x.
+
+  Drafts: `icon_gemini3pro_a` (`gemini-3-pro-image`) and `icon_gemini31flash_b`
+  (`gemini-3.1-flash-image`). Bulbasaur also has a retry pair, `_c` (Pro) and `_d` (Flash),
+  with an extra size instruction.
+- **Prompt:**
+  > Image 1 is the original party-menu icon of {name}: two 32x32 pixel animation frames stacked
+  > vertically (frame 1 on top, frame 2 below), a 32x64 strip placed in the middle of a white
+  > 64x64 canvas and enlarged 8x. Image 2 is the front sprite of a regional variant, Eien
+  > {name}, enlarged 8x; use it as the design reference. Repaint image 1 as the same regional
+  > variant as image 2. Keep image 1's exact layout: the same 32x64 strip in the same place on
+  > the canvas, both frames, and in each frame the exact same pose, size and position on its
+  > 32x32 grid. Change colours and details, not the silhouettes; do not zoom, enlarge or redraw
+  > the layout. Key features to keep readable at 32x32: {notes} Style: chunky, readable
+  > Pokemon party icon pixel art (crisp square pixels, no anti-aliasing, no blur), dark
+  > outline, few colours. Everything outside the sprites is plain flat pure white, no text.
+  > Output a square image.
+
+  The Bulbasaur retry added: "IMPORTANT: image 2 is only a colour/design reference; do not
+  copy its size or pose. In image 1 each Bulbasaur is small, about 20 pixels wide and 19
+  pixels tall inside its 32x32 frame [...]; keep both frames exactly that small".
+- **Conversion:**
+  - `sprite_prep.sample_grid` (64 grid), then crop the middle 32 columns to get the 32x64
+    strip.
+  - Background removed with `background_mask`, over the whole strip and per frame.
+  - Indexed with each of the 6 icon palettes by nearest colour, keeping the palette with the
+    lowest total error. One palette covers both frames.
+  - Output: `eien_<species>/icon_drafts/<draft>.png` (32x64 indexed, index 0 transparent),
+    raw model output in `icon_drafts/raw/`. All pass the size and colour checks.
+
+| Species | Draft | Palette | Notes |
+|---|---|---|---|
+| Torchic | `icon_gemini3pro_a` | pal0 | **Pick.** Both frames keep the original pose and position. Grey "ash" body and grey tuft; a speck of teal on the belly. The cream turns grey (pal0 has no cream) and the lantern glow is 1-2 pixels, so it reads as a grey Torchic more than a lantern chick. |
+| Torchic | `icon_gemini31flash_b` | pal2 | The model painted the body near-black, and frame 2 is shrunk. Off-design. |
+| Bulbasaur | `icon_gemini3pro_c_hop_pal4` / `_pal3` | pal4 / pal3 | **Pick (made by hand from a model frame).** Frame 1 of `_c`, with frame 2 made by moving it down 1px. The original Bulbasaur icon's frame 2 is the same 1px hop. Pose and size are right. See the palette problem below. |
+| Bulbasaur | `icon_gemini3pro_a`, `icon_gemini31flash_b`, `icon_gemini3pro_c`, `icon_gemini31flash_d` | pal3 | Frame 1 is fine in `_b`, `_c` and `_d`, but every draft redrew frame 2 as a big copy of the Eien front, and `_a` did it in both frames. The size instruction in the retry didn't fix frame 2. |
+| Froakie | `icon_gemini3pro_a` | pal0 | **Pick.** Both frames keep the pose, yellow eyes and white scarf. But pal0 is Froakie's own palette and the changes are small, so it's hard to tell apart from vanilla Froakie; the ice crystals don't show at this size. |
+| Froakie | `icon_gemini31flash_b` | pal4 | Paler icy body with navy feet, closer to the front, but frame 2's pose and outline drifted and are noisy. |
+| Poochyena | `icon_gemini3pro_a` | pal5 | **Pick.** Both frames match the original's pose. Tan sandstone body, green moss and red bib all survive pal5 and read clearly. The best icon of the set. |
+| Poochyena | `icon_gemini31flash_b` | pal4 | Frame 1 OK but darker; frame 2 redrawn as a big copy of the front. |
+
+**Palette problem:** none of the 6 shared icon palettes has a cool teal-green or a violet. The
+Bulbasaur aurora bulb and body snap to pal3/pal4 blues and greys, and lose the green-violet
+look. Torchic's cream becomes grey. Options: hand-map the bulb to pal4's green (156,205,74) and
+pink-violet (246,148,246); or accept a "blue Bulbasaur" icon. Adding a 7th icon palette would
+be an engine change, so it's not proposed here.
+
+**Findings:** Gemini 3 Pro kept both frames for Torchic, Froakie and Poochyena. Gemini 3.1 Flash
+redrew frame 2 bigger for two species. That's the reverse of the backs, where Flash kept the
+pose better. Frame 2 is the weak point: the models tend to paste the reference front into it.
