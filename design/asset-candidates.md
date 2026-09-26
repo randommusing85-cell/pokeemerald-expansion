@@ -85,6 +85,13 @@ sprites here are 64x64, overworld frames mostly 16x32 (Gen 3), and music must be
 | Character Selection by FL | **No.** An Essentials (Ruby) script | - |
 | Tales of the Outskirt resource pack, individual artist names | Unknown without links | - |
 
+**Comprehensive Trainer PBS / Pokémon Decades** (from its author, via the user): the pack was
+taken down because it included Gen 4 sprites (e.g. the Dragon Tamers) whose artist doesn't want
+their work redistributed in other packs. The Decades 3.0.0 repo folders (`Graphics/Trainers`,
+`Graphics/Characters`, `Graphics/Transitions`) contain those same sprites, so **don't copy them
+wholesale**: take each sprite from its original source, under that artist's terms. The rest of the
+pack (PBS files, FL's Character Selector, Animated Trainer Intros, ENLS music) is Essentials-only.
+
 Better fit found while checking: [Accurate FRLG-style NPC Megapack](https://eeveeexpo.com/resources/823/)
 (compiled by SoulfulLex): Gen 3 (FRLG) style overworlds and trainer front/back sprites across
 generations, matching this engine's native size. The compiler asks that the original spriters be
