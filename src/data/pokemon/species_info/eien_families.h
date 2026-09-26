@@ -307,4 +307,75 @@
         .eggMoveLearnset = sPoochyenaEggMoveLearnset,
         .formSpeciesIdTable = sPoochyenaFormSpeciesIdTable,
     },
+
+    [SPECIES_MIGHTYENA_EIEN] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 90,
+        .baseDefense   = 90,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_ROCK, TYPE_DARK),
+        .catchRate = 127,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 147 : 128,
+        .evYield_Attack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_STURDY, ABILITY_STAKEOUT },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Mightyena"),
+        .cryId = CRY_MIGHTYENA,
+        .natDexNum = NATIONAL_DEX_MIGHTYENA,
+        .categoryName = _("Guardian"),
+        .height = 10,
+        .weight = 370,
+        // TODO(design): dex entry (a placeholder, like the other Eien forms' drafts).
+        .description = COMPOUND_STRING(
+            "A stone guardian that has grown into\n"
+            "its post. It roars at intruders, and\n"
+            "faint light shows through the cracks\n"
+            "in its body."),
+        .pokemonScale = 362,
+        .pokemonOffset = 9,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = sMonFrontPic_MightyenaEien,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 3,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 27),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(0, 6),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(0, 6),
+        ),
+        .frontAnimId = ANIM_V_SHAKE,
+        .backPic = sMonBackPic_MightyenaEien,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 3,
+        .backAnimId = BACK_ANIM_H_SHAKE,
+        .palette = sMonPalette_MightyenaEien,
+        .shinyPalette = sMonShinyPalette_MightyenaEien,
+        .iconSprite = gMonIcon_Mightyena, // placeholder until its own icon is drawn
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-2, 6, SHADOW_SIZE_L)
+        FOOTPRINT(Mightyena)
+        OVERWORLD(
+            sPicTable_Mightyena,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Mightyena,
+            gShinyOverworldPalette_Mightyena
+        )
+        .levelUpLearnset = sMightyenaEienLevelUpLearnset,
+        .teachableLearnset = sMightyenaTeachableLearnset,
+        .formSpeciesIdTable = sMightyenaFormSpeciesIdTable,
+    },
 #endif //P_FAMILY_POOCHYENA

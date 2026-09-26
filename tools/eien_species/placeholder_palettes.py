@@ -21,6 +21,7 @@ LOOKS = {
     "bulbasaur": (0.12, 0.75, 0.05),  # green-teal to a cool aurora teal
     "froakie": (-0.03, 0.45, 0.12),   # blue to a pale icy blue
     "poochyena": (0.08, 0.35, 0.02),  # grey-black to a warm stone grey
+    "mightyena": (0.08, 0.35, 0.02),  # the same stone as Eien Poochyena
 }
 
 

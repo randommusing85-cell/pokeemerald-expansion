@@ -38,6 +38,7 @@ PICKS = {
     "bulbasaur": ("front_gemini3pro_r2_b.png", "front_gemini3pro_r2_b.pal"),
     "froakie": ("front_gemini3pro_r2_b.png", "front_gemini3pro_r2_b.pal"),
     "poochyena": ("anim_front.png", "normal.pal"),  # the sprite test's front
+    "mightyena": ("front_gemini3pro_c.png", "front_gemini3pro_c.pal"),  # design/art/eien_mightyena/
 }
 # species: chosen back draft in design/art/eien_<species>/back_drafts/, already indexed with
 # the form's palette (design/art/eien_starters_drafts.md, "Back sprites"). Species without one

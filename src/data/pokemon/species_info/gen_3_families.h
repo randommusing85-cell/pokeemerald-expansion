@@ -1078,6 +1078,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sMightyenaLevelUpLearnset,
         .teachableLearnset = sMightyenaTeachableLearnset,
+        .formSpeciesIdTable = sMightyenaFormSpeciesIdTable, // Eien: eien_forms_data.h
     },
 #endif //P_FAMILY_POOCHYENA
 

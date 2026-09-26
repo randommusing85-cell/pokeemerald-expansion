@@ -11,6 +11,8 @@ static const u32 sMonFrontPic_FroakieEien[] = INCGFX_U32("graphics/pokemon/eien/
 static const u32 sMonBackPic_FroakieEien[] = INCGFX_U32("graphics/pokemon/eien/froakie/back.png", ".4bpp.smol");
 static const u32 sMonFrontPic_PoochyenaEien[] = INCGFX_U32("graphics/pokemon/eien/poochyena/anim_front.png", ".4bpp.smol");
 static const u32 sMonBackPic_PoochyenaEien[] = INCGFX_U32("graphics/pokemon/eien/poochyena/back.png", ".4bpp.smol");
+static const u32 sMonFrontPic_MightyenaEien[] = INCGFX_U32("graphics/pokemon/eien/mightyena/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_MightyenaEien[] = INCGFX_U32("graphics/pokemon/eien/mightyena/back.png", ".4bpp.smol");
 
 // Icons (tools/eien_species/make_icons.py): the starters use the Eien icon palette (6).
 static const u8 sMonIcon_TorchicEien[] = INCGFX_U8("graphics/pokemon/eien/torchic/icon.png", ".4bpp");
@@ -26,6 +28,8 @@ static const u16 sMonPalette_FroakieEien[] = INCGFX_U16("graphics/pokemon/eien/f
 static const u16 sMonShinyPalette_FroakieEien[] = INCGFX_U16("graphics/pokemon/eien/froakie/shiny.pal", ".gbapal");
 static const u16 sMonPalette_PoochyenaEien[] = INCGFX_U16("graphics/pokemon/eien/poochyena/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_PoochyenaEien[] = INCGFX_U16("graphics/pokemon/eien/poochyena/shiny.pal", ".gbapal");
+static const u16 sMonPalette_MightyenaEien[] = INCGFX_U16("graphics/pokemon/eien/mightyena/normal.pal", ".gbapal");
+static const u16 sMonShinyPalette_MightyenaEien[] = INCGFX_U16("graphics/pokemon/eien/mightyena/shiny.pal", ".gbapal");
 
 // Level-up learnsets: the original's, plus the new-type moves in variants.md.
 static const struct LevelUpMove sTorchicEienLevelUpLearnset[] = {
@@ -111,8 +115,36 @@ static const struct LevelUpMove sPoochyenaEienLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+// Eien Mightyena: Rock Slide on evolving; Eien Poochyena's Rock moves, then vanilla Mightyena's.
+static const struct LevelUpMove sMightyenaEienLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_ROCK_SLIDE),
+    LEVEL_UP_MOVE( 1, MOVE_CRUNCH),
+    LEVEL_UP_MOVE( 1, MOVE_FIRE_FANG),
+    LEVEL_UP_MOVE( 1, MOVE_ICE_FANG),
+    LEVEL_UP_MOVE( 1, MOVE_THUNDER_FANG),
+    LEVEL_UP_MOVE( 1, MOVE_THIEF),
+    LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
+    LEVEL_UP_MOVE( 1, MOVE_BITE),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 7, MOVE_ROCK_THROW),
+    LEVEL_UP_MOVE(13, MOVE_HOWL),
+    LEVEL_UP_MOVE(13, MOVE_LEER),
+    LEVEL_UP_MOVE(16, MOVE_ROCK_TOMB),
+    LEVEL_UP_MOVE(16, MOVE_ROAR),
+    LEVEL_UP_MOVE(20, MOVE_SWAGGER),
+    LEVEL_UP_MOVE(24, MOVE_ASSURANCE),
+    LEVEL_UP_MOVE(28, MOVE_SCARY_FACE),
+    LEVEL_UP_MOVE(36, MOVE_TAUNT),
+    LEVEL_UP_MOVE(44, MOVE_YAWN),
+    LEVEL_UP_MOVE(48, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(52, MOVE_SUCKER_PUNCH),
+    LEVEL_UP_MOVE(56, MOVE_PLAY_ROUGH),
+    LEVEL_UP_END
+};
+
 // Form tables: the original species and its Eien form.
 static const u16 sTorchicFormSpeciesIdTable[] = { SPECIES_TORCHIC, SPECIES_TORCHIC_EIEN, FORM_SPECIES_END };
 static const u16 sBulbasaurFormSpeciesIdTable[] = { SPECIES_BULBASAUR, SPECIES_BULBASAUR_EIEN, FORM_SPECIES_END };
 static const u16 sFroakieFormSpeciesIdTable[] = { SPECIES_FROAKIE, SPECIES_FROAKIE_EIEN, FORM_SPECIES_END };
 static const u16 sPoochyenaFormSpeciesIdTable[] = { SPECIES_POOCHYENA, SPECIES_POOCHYENA_EIEN, FORM_SPECIES_END };
+static const u16 sMightyenaFormSpeciesIdTable[] = { SPECIES_MIGHTYENA, SPECIES_MIGHTYENA_EIEN, FORM_SPECIES_END };

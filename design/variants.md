@@ -82,5 +82,14 @@ in the code).
   starters'; its icon is an AI draft in the vanilla icon palette 5; its shiny is "obsidian"
   (black stone, bright violet cracks); its idle frame is a small snarl (AI draft).
 
-`TODO(design)`: Eien Mightyena (stats, look; Poochyena doesn't evolve until it exists), which
-map sections count as shrine areas.
+- **Eien Mightyena:** 70 / 90 / 90 / 50 / 60 / 60 (70 / 90 / 70 / 60 / 60 / 70), 420: the same
+  shift as Eien Poochyena. Abilities Intimidate / Sturdy / Stakeout (hidden). Learns Rock Slide
+  on evolving; Rock Throw (7) and Rock Tomb (16) carry over; otherwise vanilla Mightyena's
+  learnset. The name stays "Eien Mightyena".
+- **Its sprite:** the "komainu" front draft (roaring, carved spiral mane and tail, red bib;
+  [art/eien_mightyena/](art/eien_mightyena/README.md)). Back, frame 2, shiny and icon are
+  placeholders for now: the vanilla back recolored to its palette, frame 1 raised 1px, an
+  automatic hue shift and the vanilla icon.
+
+`TODO(design)`: which map sections count as shrine areas (Eien Poochyena doesn't evolve until
+they're decided), Eien Mightyena's dex entry (a draft is in the code).

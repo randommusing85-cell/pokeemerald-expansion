@@ -38,7 +38,7 @@ Running notes. Nothing is decided until it's under **Decided**; decisions move i
 
 Promoted into `variants.md` and `game-bible.md`.
 
-## Round 3: Eien Mightyena (proposal, not decided)
+## Round 3: Eien Mightyena (decided: the proposal, look c)
 
 Needed before Eien Poochyena can evolve (`variants.md`). Front drafts:
 [art/eien_mightyena/](art/eien_mightyena/README.md).

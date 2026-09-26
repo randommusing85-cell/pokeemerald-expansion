@@ -1,4 +1,7 @@
-# Drafts: Eien Mightyena (proposals)
+# Drafts: Eien Mightyena
+
+**Picked:** `front_gemini3pro_c` (komainu). It's in the game (`tools/eien_species/convert_art.py`);
+in-game shots: `summary.png`, `battle_back.png` (placeholder back).
 
 Front sprite drafts for Eien Mightyena, the evolution of Eien Poochyena (`variants.md`). Nothing
 here is decided. Contact sheet: [../eien_mightyena_contact_sheet.png](../eien_mightyena_contact_sheet.png).
