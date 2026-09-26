@@ -4,20 +4,22 @@
 Works on palette indices (the colors come from recolor.py). Reads the vanilla sprites kept in
 tools/eien_hero/vanilla/ and writes the files below.
 
-Walking frames: heads drawn by hand below (OW_HEADS); hair uses 14 (light), 9 (mid), 4 (dark).
+Overworld sheets (walking, running, bikes): heads drawn by hand below (OW_HEADS), placed on
+each frame where its cap is found (ANCHORS); hair uses 14 (light), 9 (mid), 4 (dark).
 Battle sprites: the hoodie's red panels move to the strap greys (10-11) except the Poké Ball,
 pixels of 9 (now hair) move to 10, and the head comes from an AI draft
 (tools/eien_hero/ai_drafts/, Gemini 3 Pro image edit of the enlarged sprite): the draft is
 snapped back to the pixel grid, aligned on the unchanged body, and used only around the old cap
 and where it drew hair, limited to hair, skin and outline colors. Hair uses 9 and 4.
 
-  graphics/object_events/pics/people/brendan/walking.png   (9 walking frames)
+  graphics/object_events/pics/people/brendan/{walking,running,mach_bike,acro_bike}.png
   graphics/trainers/front_pics/brendan.png                 (battle front)
   graphics/trainers/back_pics/brendan.png                  (battle back, 4 frames)
   tools/eien_hero/redraw_hair.py
 """
 
 import os
+import re
 
 from PIL import Image
 
@@ -54,36 +56,70 @@ OW_HEADS = {
         17: "..odidiiiiiiiio.",
     },
 }
-# frame -> (facing, rows the frame is shifted down relative to its facing frame)
-OW_FRAMES = {0: ("down", 0), 1: ("up", 0), 2: ("left", 0), 3: ("down", 1), 4: ("down", 1),
-             5: ("up", 1), 6: ("up", 1), 7: ("left", 1), 8: ("left", 1)}
 BLUE_HAIR = 8  # index Brendan's black hair shares with his trousers; repainted as hair below
+SKIN = (1, 2, 3, 4)
+
+# Every overworld sheet (walking, running, bikes) reuses the heads above. Each frame's cap is
+# found by a row of pixels that only the cap has, per facing; its position in the walking
+# frames (column, row) is where OW_HEADS sits, so the offset from there places the new head.
+ANCHORS = {
+    "down": (re.compile("kjnnnnjk"), 4, 17),     # the cap's brim
+    "up": (re.compile("ohii[id]{4}iiho"), 2, 17),  # the cap's back edge
+    "left": (re.compile("h[in][in]j"), 2, 15),   # the cap's peak
+}
+# The overworld sheets with Brendan's cap, and their frame width.
+OW_SHEETS = {"walking": 16, "running": 16, "mach_bike": 32, "acro_bike": 32}
+LETTERS = "".join(sorted(KEY, key=KEY.get))  # index -> letter
 
 
-def redraw_walking():
-    im = Image.open(os.path.join(HERE, "vanilla", "walking.png"))
-    px = im.load()
-    for frame, (facing, shift) in OW_FRAMES.items():
-        x0 = frame * 16
-        for y in range(10 + shift, 18 + shift):
-            for x in range(16):
+def find_head(px, x0, width):
+    """(facing, dx, dy) of the cap in one frame, relative to the walking frames' head."""
+    rows = ["".join(LETTERS[px[x0 + x, y]] for x in range(width)) for y in range(32)]
+    for facing, (pattern, ax, ay) in ANCHORS.items():
+        for y, row in enumerate(rows):
+            m = pattern.search(row)
+            if m:
+                return facing, m.start() - ax, y - ay
+    return None
+
+
+def place_head(px, x0, width, facing, dx, dy):
+    fringe = 17 + dy
+    for y in range(8 + dy, fringe + 1):
+        for x in range(max(0, dx), min(width, dx + 16)):
+            # Running and biking, the brim sits where the arms start: keep them.
+            if not (facing == "down" and y == fringe and px[x0 + x, y] in SKIN):
                 px[x0 + x, y] = 0
-        for row, line in OW_HEADS[facing].items():
-            for x, ch in enumerate(line):
-                if ch != ".":
-                    px[x0 + x, row + shift] = KEY[ch]
-        # Hair below the cap line that used the trousers' blue: back of the head (up, left).
-        if facing == "up":
-            for y in (18 + shift, 19 + shift):
-                for x in range(16):
-                    if px[x0 + x, y] == BLUE_HAIR:
-                        px[x0 + x, y] = KEY["d"]
-        if facing == "left":
-            for y in range(18 + shift, 21 + shift):
-                for x in range(7, 16):
-                    if px[x0 + x, y] == BLUE_HAIR:
-                        px[x0 + x, y] = KEY["i"]
-    im.save(os.path.join(REPO, "graphics/object_events/pics/people/brendan/walking.png"))
+    for row, line in OW_HEADS[facing].items():
+        for x, ch in enumerate(line):
+            if ch != "." and 0 <= dx + x < width:
+                if facing == "down" and row + dy == fringe and ch == "o" and px[x0 + dx + x, fringe] in SKIN:
+                    continue
+                px[x0 + dx + x, row + dy] = KEY[ch]
+    # Hair below the cap line that used the trousers' blue: back of the head (up, left).
+    if facing == "up":
+        for y in (fringe + 1, fringe + 2):
+            for x in range(max(0, dx), min(width, dx + 16)):
+                if px[x0 + x, y] == BLUE_HAIR:
+                    px[x0 + x, y] = KEY["d"]
+    if facing == "left":
+        for y in range(fringe + 1, fringe + 4):
+            for x in range(max(0, dx + 7), min(width, dx + 16)):
+                if px[x0 + x, y] == BLUE_HAIR:
+                    px[x0 + x, y] = KEY["i"]
+
+
+def redraw_overworld():
+    for name, width in OW_SHEETS.items():
+        im = Image.open(os.path.join(HERE, "vanilla", f"{name}.png"))
+        px = im.load()
+        for frame in range(im.width // width):
+            found = find_head(px, frame * width, width)
+            if found is None:
+                raise SystemExit(f"{name} frame {frame}: no cap found")
+            place_head(px, frame * width, width, *found)
+        im.save(os.path.join(REPO, f"graphics/object_events/pics/people/brendan/{name}.png"))
+        print(f"{name}: {im.width // width} frames")
 
 
 def read_pal(path):
@@ -216,6 +252,6 @@ def redraw_battle():
 
 
 if __name__ == "__main__":
-    redraw_walking()
+    redraw_overworld()
     redraw_battle()
-    print("redrew the walking frames and the battle sprites")
+    print("redrew the overworld sheets and the battle sprites")

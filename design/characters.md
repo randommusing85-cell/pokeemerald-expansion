@@ -98,7 +98,7 @@ Gen 3 style, from the FRLG-style NPC megapack, converted by `tools/eien_npcs/` (
 
 | Character | Sprite |
 | --- | --- |
-| Player | Brendan's sprites recolored (`tools/eien_hero/`): short messy dark hair with a side fringe, grey hoodie, blue jeans. An ordinary guy from our world. Walking and battle sprites have the new hairstyle; the other sheets (running, bikes, surfing...) still have Brendan's cap shape in the new colors |
+| Player | Brendan's sprites recolored (`tools/eien_hero/`): short messy dark hair with a side fringe, grey hoodie, blue jeans. An ordinary guy from our world. Walking, running, bike and battle sprites have the new hairstyle; the other sheets (surfing, fishing, field moves...) still have Brendan's cap shape in the new colors |
 | Haru | `OBJ_EVENT_GFX_EIEN_HARU` |
 | Akira | `OBJ_EVENT_GFX_EIEN_AKIRA` |
 | Nami | `OBJ_EVENT_GFX_EIEN_NAMI` |
