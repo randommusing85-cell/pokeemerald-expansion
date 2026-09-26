@@ -7,7 +7,8 @@ For each species in PICKS:
                                                   raised 1px (placeholder animation)
   graphics/pokemon/eien/<species>/normal.pal      the draft's 16 colors, shared by front and back
   graphics/pokemon/eien/<species>/shiny.pal       an automatic hue shift (placeholder)
-  graphics/pokemon/eien/<species>/back.png        placeholder: the original back sprite, each
+  graphics/pokemon/eien/<species>/back.png        the chosen back draft (BACK_PICKS), or else a
+                                                  placeholder: the original back sprite, each
                                                   color replaced by the draft color covering the
                                                   same pixels on the front
 Icons stay the originals for now. Species not in PICKS keep their placeholder palettes
@@ -36,6 +37,15 @@ PICKS = {
     "bulbasaur": ("front_gemini3pro_r2_b.png", "front_gemini3pro_r2_b.pal"),
     "froakie": ("front_gemini3pro_r2_b.png", "front_gemini3pro_r2_b.pal"),
     "poochyena": ("anim_front.png", "normal.pal"),  # the sprite test's front
+}
+# species: chosen back draft in design/art/eien_<species>/back_drafts/, already indexed with
+# the form's palette (design/art/eien_starters_drafts.md, "Back sprites"). Species without one
+# get the placeholder back below.
+BACK_PICKS = {
+    "torchic": "back_gemini31flash_b.png",
+    "bulbasaur": "back_gemini31flash_b.png",
+    "froakie": "back_gemini31flash_b.png",
+    "poochyena": "back_gemini31flash_b.png",
 }
 SHINY_HUE = 0.5
 
@@ -78,6 +88,9 @@ def main():
         new_back = Image.new("P", back.size)
         new_back.putpalette([c for rgb in palette for c in rgb] + [0] * (768 - 48))
         new_back.putdata([remap[i] if i < len(remap) else 0 for i in back.getdata()])
+        if species in BACK_PICKS:
+            drawn = Image.open(os.path.join(REPO, "design", "art", f"eien_{species}", "back_drafts", BACK_PICKS[species]))
+            new_back.putdata(list(drawn.getdata()))
         new_back.save(os.path.join(out, "back.png"))
 
         sprite_prep.write_jasc(os.path.join(out, "normal.pal"), palette)

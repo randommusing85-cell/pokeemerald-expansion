@@ -54,11 +54,12 @@ Otherwise they keep the original learnset.
 
 **Sprites:** the fronts are the chosen AI drafts (`design/art/eien_starters_drafts.md`, round 2,
 `front_gemini3pro_r2_b` for all three), converted by `tools/eien_species/convert_art.py`.
-Placeholders still: the back sprites (the original backs in the new colors), the idle frame
-(frame 1 raised 1px), the shinies (an automatic hue shift) and the icons (the originals).
+The backs are AI drafts too (`back_gemini31flash_b`, an edit of each original back with the
+Eien front as reference). Placeholders still: the idle frame (frame 1 raised 1px), the shinies
+(an automatic hue shift) and the icons (the originals).
 
 `TODO(design)`: evolved forms (they don't evolve until those exist), dex entries (drafts are
-in the code), the back sprites, icons and shinies.
+in the code), icons and shinies.
 
 ## Others
 
@@ -72,8 +73,8 @@ in the code), the back sprites, icons and shinies.
 - **Evolves** into Eien Mightyena (Rock/Dark) by leveling up to 18+ in a shrine area.
 
 - **Sprite:** the front is the sprite test's draft ([art/eien_poochyena/](art/eien_poochyena/README.md)),
-  converted by `tools/eien_species/convert_art.py`; the back, idle frame, shiny and icon are
-  placeholders, as for the starters.
+  converted by `tools/eien_species/convert_art.py`; the back is an AI draft like the
+  starters'; the idle frame, shiny and icon are placeholders.
 
 `TODO(design)`: Eien Mightyena (stats, look; Poochyena doesn't evolve until it exists), which
-map sections count as shrine areas, Eien Poochyena's back sprite, icon and shiny.
+map sections count as shrine areas, Eien Poochyena's icon and shiny.
