@@ -118,3 +118,63 @@ The framing instruction worked: every round-2 draft kept the original's size and
 | `front_gemini3pro_r2_a` | Right size and crouch, yellow eyes, sharp expression, crystal scarf. Very pale overall; navy only around the eyes and mouth. |
 | `front_gemini3pro_r2_b` | **Pick.** Same as r2_a but with navy hands and feet, which ground it and add contrast, giving the "hint of navy". The crystal scarf is tidy and the ninja glare is clear at 64x64. |
 | `front_gemini31flash_r2_c` | Pose and eyes OK, but the frubbles came out as scattered ice specks and stray pixels, noisy at 64x64. |
+
+## Back sprites
+
+**Proposals only, not decided design.** These are draft back sprites for the four Eien forms, to
+go with the fronts now in `graphics/pokemon/eien/<species>/`. Nothing in `graphics/` was
+changed. Contact sheet: [`eien_backs_contact_sheet.png`](eien_backs_contact_sheet.png). Each
+row shows the Eien front, the current placeholder back, then the drafts. The grey line under
+each back is its bounding box, to compare size and position with the original back.
+
+- **Method:** an edit, not a from-scratch draw, because the Poochyena test got a side view that
+  way. Each call sent two images:
+  - Image 1: the original `graphics/pokemon/<species>/back.png` in its `normal.pal` colours,
+    8x.
+  - Image 2: Eien front frame 1 in its colours, 8x.
+
+  One call per draft, `back_gemini3pro_a` (`gemini-3-pro-image`) and `back_gemini31flash_b`
+  (`gemini-3.1-flash-image`), no retries. All 8 calls succeeded.
+- **Prompt:**
+  > Image 1 is the original back battle sprite of {name} (seen from behind and slightly above,
+  > as the player's Pokemon in battle), 64x64 pixel art enlarged 8x. Image 2 is the front
+  > sprite of a regional variant, Eien {name}, enlarged 8x; use it as the design reference.
+  > Repaint image 1 so it shows the same regional variant as image 2: same design details and
+  > colours as the front, but keep image 1's exact pose, silhouette, size and position on the
+  > canvas. It must stay a back view seen from behind; do not turn it into a side or front
+  > view, and do not zoom in or enlarge it. Change colours and details, not the silhouette.
+  > Species notes: {notes} Style: Gen 4/5 Pokemon battle sprite pixel art on a 64x64 pixel
+  > grid enlarged 8x (crisp square pixels, no anti-aliasing, no blur), dark outline, limited
+  > palette. Plain flat pure white background, nothing else, no text. Output a square image.
+
+  The notes per species were the ones given in the request: ash/cream feathers with a tail
+  flicker; the aurora bulb; the ice scarf with navy accents; sandstone with a spiral mane,
+  moss, a bib knot and violet cracks.
+- **Conversion:**
+  - `sprite_prep.sample_grid` (64 grid), then `background_mask` and `fit`. Box 64, so nothing
+    was rescaled.
+  - Then `sprite_prep.index` with the form's **existing**
+    `graphics/pokemon/eien/<species>/normal.pal`, nearest colour. No new palette, so front
+    and back share one.
+  - Output: `eien_<species>/back_drafts/<draft>.png` (64x64 indexed, index 0 transparent),
+    with the raw model output in `back_drafts/raw/`.
+  - All pass the tool's size and colour checks.
+  - Mean snap distance per sprite pixel (RGB) was about 7-10, and about 13-19 for Bulbasaur,
+    whose bulb violets are only partly in the front palette.
+
+| Species | Draft | Notes |
+|---|---|---|
+| Torchic | `back_gemini31flash_b` | **Pick.** Pose, silhouette and box identical to the original back (15,9)-(48,54). Ash/cream body, feather tuft kept as feathers, a pale teal/violet flicker at the tail. Snaps cleanly (err 6.9). Plain from behind, as expected with the lantern on the belly. |
+| Torchic | `back_gemini3pro_a` | Same exact pose and box, same colours. Also has the flicker, plus a stray light-blue block at the lower right (probably the belly window peeking round); reads as an artefact. |
+| Bulbasaur | `back_gemini31flash_b` | **Pick.** Exact original pose and box (6,15)-(57,51), cropped at the bottom like the original. Big bulb with a green-teal-violet swirl and strong dark outline, clearly the same form as the front. The palette snap flattens the raw's smooth gradient into bands of the front's teals and violets; still reads. |
+| Bulbasaur | `back_gemini3pro_a` | Nice aurora bulb, but it redrew the pose: a smaller full body with legs, box (11,15)-(57,55). Not the back pose. |
+| Froakie | `back_gemini31flash_b` | **Pick, with fixes.** Original pose and box. The ice-crystal scarf is clearly visible from behind. But the lower body turned pale white-blue instead of the original's darker back, so there are almost no navy accents. Paint some navy back in. |
+| Froakie | `back_gemini3pro_a` | Better colours (navy shading and feet, scarf), but it grew legs and feet under the body and runs to y=61, taller than the original (to y=57). Pose not kept. |
+| Poochyena | `back_gemini31flash_b` | **Pick.** Keeps the original's pose and box (4,13)-(62,53) exactly. Sandstone body, moss along the back, red bib knot at the neck, faint violet cracks. No clear spiral mane from this angle. Snaps well (err 8.4). |
+| Poochyena | `back_gemini3pro_a` | Failed the brief: it redrew the Eien front as a side view (spiral tail, full legs), the same failure as the earlier from-scratch test. Good design, wrong view. |
+
+**Findings:** the two-image edit fixed the side-view problem for Gemini 3.1 Flash, which held
+the exact pose in all four. Gemini 3 Pro kept Torchic's pose but redrew the pose for Bulbasaur,
+Froakie and Poochyena. That's the opposite of the fronts, where Pro was stronger. Converting
+with the front palette worked with no extra colours needed; the main loss is gradient detail
+(Bulbasaur's bulb).
