@@ -52,8 +52,13 @@ Stats are HP / Atk / Def / SpA / SpD / Spe (the original in brackets).
 
 Otherwise they keep the original learnset.
 
+**Sprites:** the fronts are the chosen AI drafts (`design/art/eien_starters_drafts.md`, round 2,
+`front_gemini3pro_r2_b` for all three), converted by `tools/eien_species/convert_art.py`.
+Placeholders still: the back sprites (the original backs in the new colors), the idle frame
+(frame 1 raised 1px), the shinies (an automatic hue shift) and the icons (the originals).
+
 `TODO(design)`: evolved forms (they don't evolve until those exist), dex entries (drafts are
-in the code), the final sprites (placeholders are recolored originals).
+in the code), the back sprites, icons and shinies.
 
 ## Others
 

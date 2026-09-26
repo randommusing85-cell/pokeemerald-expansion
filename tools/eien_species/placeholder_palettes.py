@@ -3,7 +3,9 @@
 at the new typing (design/variants.md). The forms reuse the original sprites until their own
 art is drawn; only these palettes differ.
 
-Writes graphics/pokemon/eien/<species>/normal.pal and shiny.pal from graphics/pokemon/<species>/.
+Writes graphics/pokemon/eien/<species>/normal.pal and shiny.pal from graphics/pokemon/<species>/,
+for species that don't have chosen art yet (convert_art.py). LOOKS is also used by
+convert_art.py to recolor the placeholder back sprites.
 Rerunning always gives the same result.
   tools/eien_species/placeholder_palettes.py
 """
@@ -40,7 +42,11 @@ def shift(color, hue, sat, light):
 
 
 def main():
+    from convert_art import PICKS  # species with chosen art get their palettes from there
+
     for species, look in LOOKS.items():
+        if species in PICKS:
+            continue
         for name in ("normal.pal", "shiny.pal"):
             palette = read_jasc(os.path.join(REPO, "graphics/pokemon", species, name))
             # Index 0 is transparency: keep it.

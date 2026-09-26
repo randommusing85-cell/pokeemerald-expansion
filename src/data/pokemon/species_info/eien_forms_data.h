@@ -1,7 +1,16 @@
 // Eien regional forms (design/variants.md): data the species entries in eien_families.h
 // point to. Included by species_info.h before gSpeciesInfo.
 
-// Placeholder palettes: the original sprites recolored (tools/eien_species/).
+// Sprites from the chosen AI drafts (tools/eien_species/convert_art.py); the back sprites are
+// placeholders (the original backs in the new colors). Poochyena still uses the original
+// sprites with a placeholder palette (tools/eien_species/placeholder_palettes.py).
+static const u32 sMonFrontPic_TorchicEien[] = INCGFX_U32("graphics/pokemon/eien/torchic/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_TorchicEien[] = INCGFX_U32("graphics/pokemon/eien/torchic/back.png", ".4bpp.smol");
+static const u32 sMonFrontPic_BulbasaurEien[] = INCGFX_U32("graphics/pokemon/eien/bulbasaur/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_BulbasaurEien[] = INCGFX_U32("graphics/pokemon/eien/bulbasaur/back.png", ".4bpp.smol");
+static const u32 sMonFrontPic_FroakieEien[] = INCGFX_U32("graphics/pokemon/eien/froakie/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_FroakieEien[] = INCGFX_U32("graphics/pokemon/eien/froakie/back.png", ".4bpp.smol");
+
 static const u16 sMonPalette_TorchicEien[] = INCGFX_U16("graphics/pokemon/eien/torchic/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_TorchicEien[] = INCGFX_U16("graphics/pokemon/eien/torchic/shiny.pal", ".gbapal");
 static const u16 sMonPalette_BulbasaurEien[] = INCGFX_U16("graphics/pokemon/eien/bulbasaur/normal.pal", ".gbapal");

@@ -39,7 +39,7 @@
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Torchic,
+        .frontPic = sMonFrontPic_TorchicEien,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 48) : MON_COORDS_SIZE(32, 48),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 12,
         .frontAnimFrames = ANIM_FRAMES(
@@ -52,7 +52,7 @@
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_H_STRETCH : ANIM_V_JUMPS_SMALL,
-        .backPic = gMonBackPic_Torchic,
+        .backPic = sMonBackPic_TorchicEien,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 56) : MON_COORDS_SIZE(40, 48),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 5 : 10,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
@@ -60,10 +60,6 @@
         .shinyPalette = sMonShinyPalette_TorchicEien,
         .iconSprite = gMonIcon_Torchic,
         .iconPalIndex = 0,
-#if P_GENDER_DIFFERENCES && !P_GBA_STYLE_SPECIES_GFX
-        .backPicFemale = gMonBackPic_TorchicF,
-        .backPicSizeFemale = MON_COORDS_SIZE(40, 48),
-#endif //P_GENDER_DIFFERENCES && !P_GBA_STYLE_SPECIES_GFX
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(-1, 1, SHADOW_SIZE_S)
         FOOTPRINT(Torchic)
@@ -126,7 +122,7 @@
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Bulbasaur,
+        .frontPic = sMonFrontPic_BulbasaurEien,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(32, 40) : MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 14 : 13,
         .frontAnimFrames = ANIM_FRAMES(
@@ -135,7 +131,7 @@
             ANIMCMD_FRAME(0, 1),
         ),
         .frontAnimId = ANIM_V_JUMPS_H_JUMPS,
-        .backPic = gMonBackPic_Bulbasaur,
+        .backPic = sMonBackPic_BulbasaurEien,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 32) : MON_COORDS_SIZE(56, 40),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 16 : 13,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
@@ -197,7 +193,7 @@
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Froakie,
+        .frontPic = sMonFrontPic_FroakieEien,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 12,
         .frontAnimFrames = ANIM_FRAMES(
@@ -210,7 +206,7 @@
             ANIMCMD_FRAME(0, 11),
         ),
         .frontAnimId = ANIM_H_JUMPS,
-        .backPic = gMonBackPic_Froakie,
+        .backPic = sMonBackPic_FroakieEien,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_SHRINK_GROW,

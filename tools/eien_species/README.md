@@ -9,9 +9,12 @@ The Eien regional forms (design/variants.md) are defined in:
 - `src/data/pokemon/species_info/eien_forms_data.h`: their level-up learnsets, palettes and
   the form tables (each original species points at its table).
 
-Until their own art exists, the forms reuse the original sprites with placeholder palettes:
+The starters' sprites come from the chosen AI drafts; species without chosen art reuse the
+original sprites with placeholder palettes:
 
-  tools/eien_species/placeholder_palettes.py   # writes graphics/pokemon/eien/<species>/*.pal
+  tools/eien_species/convert_art.py            # PICKS: draft -> graphics/pokemon/eien/<species>/
+                                               # (front, palette, shiny, placeholder back)
+  tools/eien_species/placeholder_palettes.py   # the rest: recolored original palettes
 
 AI draft front sprites for review are in `design/art/eien_<species>/`
 (`design/art/eien_starters_drafts.md`, `eien_starters_contact_sheet.png`).
