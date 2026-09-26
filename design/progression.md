@@ -38,6 +38,9 @@ Route 1 and gym 1 levels are proposed defaults; adjust after playtesting.
 
 ## Difficulty
 
+- **Side-quest rewards** are items, TMs, keepsakes, lore, money and battle items; never Rare
+  Candies or EXP, so the level caps hold.
+
 - **Normal and Hard** modes, chosen at the start.
 - **Soft level caps** tied to the next gym or boss (EXP drops above the cap).
   `TODO(design)`: is optional side content balanced to the caps?

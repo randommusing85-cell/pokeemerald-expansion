@@ -85,10 +85,16 @@ on what other hacks and fan games do.
 - **Celebi's glimpses.** In scripted story moments Celebi shows a short vision of what's
   coming (a rival's lead, a disaster site, a hidden path). Talking to Celebi gives a hint
   about where to go next. Both get vaguer as Celebi weakens.
-- **Relationship points** with Nami and the friends, earned through choices and optional
-  scenes. They change scenes, dialogue, who helps in the finale's battles and small epilogue
-  details, never the outcome. Never shown as numbers: only the journal's line per person.
-  `TODO(design)`: how points are earned, which friends get tag battles.
+- **Relationship points** with Nami, Haru, Yuki, Kaede, Tetsu, Ren and Akira. Earned through
+  answers in story scenes (never an "evil" option; they read as how he treats someone) and
+  each friend's quest chain. They change scenes, dialogue, who helps in the finale, gifts and
+  the epilogue, never the outcome. Never shown as numbers: only the journal's line per
+  person. Details in [side-quests.md](side-quests.md). `TODO(design)`: which friends get tag
+  battles; point thresholds.
+- **Side quests** (the journal's missions tab): friend chains are the backbone, plus research,
+  the fading's small disasters, and lore. About 25 at launch, built to grow to Unbound's
+  scale. Quests tied to people who die or leave can be missed for good; the epilogue gives
+  them back as memories. See [side-quests.md](side-quests.md).
 - **Eien weather and terrain.** Snow on most routes, an aurora weather on clear nights, and a
   "thin place" terrain at shrines and the mountain that boosts Ghost and Psychic moves.
   Built on the engine's weather and terrain. `TODO(design)`: the aurora's battle effect,

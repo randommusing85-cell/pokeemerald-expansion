@@ -17,6 +17,9 @@ docs (game bible, characters, story outline) when the user agrees.
 
 ## Decided
 
+Promoted into `side-quests.md`, `game-bible.md` (Mechanics), `characters.md`,
+`progression.md` (Difficulty) and the milestone list in `README.md`.
+
 - **Earning points (1a+b):** dialogue choices in story scenes (two or three answers, never an
   "evil" one; they read as how he treats someone) and a short quest chain per friend
   (2-4 steps across the game).

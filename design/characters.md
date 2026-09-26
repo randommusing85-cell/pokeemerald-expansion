@@ -29,6 +29,9 @@ Claude at the user's request; change freely.
 - **Team:** takes the starter strong against the player's (see [variants.md](variants.md)).
 - **Battles:** first battle at Kashiwagi's lab right after picking starters. Meets the player
   again in Shimotsuki and shows him his mother's gym. `TODO(design)`: later battles.
+- **Relationship points and chain:** before he leaves, training battles and helping around
+  Shimotsuki (ends with Fuyumi's death); after, optional meetings on the other side where he
+  explains himself. His points change his last scene and his epilogue flash, not his choice.
 
 ## Professor
 
@@ -44,6 +47,8 @@ Claude at the user's request; change freely.
 - A committed believer in Minato's cause. He learns she's with them at the tournament.
   She knows Minato's plan drains the hero's world and honestly chooses her world over his.
   She never changes her mind; they choose each other anyway.
+- **Relationship points** add optional warm scenes (the coast, Lapras) and change her lines;
+  the core romance scenes always play.
 - Her mentor Hashimoto dies in the tournament disaster.
 
 ## Friends
@@ -51,6 +56,11 @@ Claude at the user's request; change freely.
 They have their own battles and lives; they don't follow him around. They fight beside him
 in scripted tag battles and turn up at big moments. All survive, and he says goodbye to
 each on-screen before he goes home. Keep these friendships clearly friendships.
+
+Each has relationship points and a quest chain ([side-quests.md](side-quests.md)). Yuki and
+Ren get earlier cameos so their chains have room: Yuki is met once or twice in Act 1, Ren
+is a League trainer at a gym. At the door mountain Kaede always comes to help; with enough
+points, Tetsu and Ren come too.
 
 | Name | Role | Where | Notes |
 | --- | --- | --- | --- |

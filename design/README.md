@@ -11,6 +11,7 @@ docs: when the design changes, the doc changes in the same commit.
 | [progression.md](progression.md) | Route order, badges, level curve, what gates what |
 | [dialogue-style.md](dialogue-style.md) | How characters talk, with examples |
 | [variants.md](variants.md) | Eien's regional variants of existing Pokémon, and shiny rules |
+| [side-quests.md](side-quests.md) | Side quests, friend chains and relationship points |
 | [locations/](locations/) | One doc per town, route or dungeon (copy `_template.md`) |
 | [asset-credits.md](asset-credits.md) | Every community asset used, with its author |
 | [asset-candidates.md](asset-candidates.md) | Community assets we might use, not yet checked |
@@ -31,6 +32,10 @@ docs: when the design changes, the doc changes in the same commit.
 - [ ] Sprites for those 4 (front, back, icon, normal + shiny palettes)
 - [x] Community snow tileset, credited in `asset-credits.md` (`tools/eien_tileset/README.md`)
 - [x] Door behaviors/animations and tree-top layering for the Eien tilesets
+- [ ] Quest table in the save file with `setquest` / `checkquest` script commands (quest
+      state and relationship points; [side-quests](side-quests.md))
+- [ ] Three quests to prove it: Haru step 1 (Hamakaze), the professor's Eien Poochyena
+      research (Route 1), Akira step 1 (Shimotsuki)
 - [ ] Shiny odds 1 in 4,096 (`SHINY_ODDS 16` in `include/constants/pokemon.h`)
 - [ ] Maps made in Porymap; map constants filled into the location docs
 
