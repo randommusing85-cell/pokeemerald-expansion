@@ -2,6 +2,7 @@
 #include "constants/teaching_types.h"
 #include "species_info/shared_dex_text.h"
 #include "species_info/shared_front_pic_anims.h"
+#include "species_info/eien_forms_data.h"
 
 // Macros for ease of use.
 
@@ -159,6 +160,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     #include "species_info/gen_7_families.h"
     #include "species_info/gen_8_families.h"
     #include "species_info/gen_9_families.h"
+    #include "species_info/eien_families.h"
 
     [SPECIES_EGG] =
     {

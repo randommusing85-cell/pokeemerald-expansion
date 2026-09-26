@@ -29,7 +29,8 @@ docs: when the design changes, the doc changes in the same commit.
 - [ ] Route 1: coast, snowy fields, shrine; Eien Poochyena ([Route 1](locations/route-1.md))
 - [ ] Shimotsuki and gym 1 (Fuyumi, Ice); Akira shows him the gym ([Shimotsuki](locations/shimotsuki.md))
 - [ ] Nami's first meeting, just after gym 1 (end of the slice)
-- [ ] Species: Eien Torchic, Bulbasaur, Froakie, Poochyena ([variants](variants.md))
+- [x] Species: Eien Torchic, Bulbasaur, Froakie, Poochyena ([variants](variants.md)); forms
+      with placeholder sprites (`tools/eien_species/`)
 - [ ] Sprites for those 4 (front, back, icon, normal + shiny palettes)
 - [x] Community snow tileset, credited in `asset-credits.md` (`tools/eien_tileset/README.md`)
 - [x] Door behaviors/animations and tree-top layering for the Eien tilesets

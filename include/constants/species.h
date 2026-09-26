@@ -1692,6 +1692,11 @@ enum __attribute__((packed)) Species
 
     SPECIES_CUSTOM_START = SPECIES_GLIMMORA_MEGA,
     // Add any custom species between here and SPECIES_CUSTOM_END
+    // Eien regional forms (design/variants.md). Append only: saves store these numbers.
+    SPECIES_TORCHIC_EIEN,
+    SPECIES_BULBASAUR_EIEN,
+    SPECIES_FROAKIE_EIEN,
+    SPECIES_POOCHYENA_EIEN,
     SPECIES_CUSTOM_END,
 
     SPECIES_EGG = SPECIES_CUSTOM_END,
