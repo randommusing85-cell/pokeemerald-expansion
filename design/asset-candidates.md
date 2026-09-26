@@ -94,3 +94,11 @@ wholesale**: take each sprite from its original source, under that artist's term
 pack (PBS files, FL's Character Selector, Animated Trainer Intros, ENLS music) is Essentials-only.
 
 Chosen instead: the Accurate FRLG-style NPC Megapack (Gen 3 style; see "Downloaded and checked").
+
+## Checked and not needed
+
+- **Gen 3 Sprite Pack** (FRLG front/back/icon sprites for Essentials): the engine already has
+  every Gen 1-3 GBA sprite (`graphics/pokemon/*/*_gba.png`); we use Gen 4/5 style anyway.
+- **[PokéSprite](https://github.com/msikma/pokesprite)** (Gen 7/8 box icons, Gen 3-8 item
+  sprites): box icons are 68x56 and items 32x32, but the engine uses 32x32 two-frame Pokémon
+  icons and 24x24 item icons, and already has both for every Pokémon and item.
