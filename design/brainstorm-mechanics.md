@@ -32,10 +32,26 @@ Running notes for the mechanics brainstorm. Nothing here is decided until it's u
   Built on the engine's weather and terrain.
 - **Difficulty (5c):** Normal and Hard modes, soft level caps, and an optional Nuzlocke mode.
 - **Quality of life (6):** DexNav, reusable TMs, field moves without HMs.
+- **Fan knowledge in battle (r2 1b+c):** the Pokédex entry and typing are known, and moves show
+  effectiveness hints against known species. Against Eien variants the hint shows "?", so
+  his instincts can mislead him. He only knows species up to the generation he played;
+  later ones are "???" too.
+- **Research tiers plus lore (r2 2b+d):** seeing gives the name and sprite, battling gives the
+  typing, catching gives the full entry, and extra steps (a certain move, catching at night)
+  add lore notes. Shrine tablets, folk tales and the professor's notes add lore too.
+- **Celebi's glimpses (r2 3d):** scripted story moments, plus on request (talk to Celebi for a
+  hint); hints get vaguer as Celebi weakens.
+- **Nuzlocke framing (r2 4b):** standard rules, but a fainted Pokémon "goes home to rest":
+  gone from the run, not dead, so the world's rule holds.
+- **Relationship feedback (r2 6b):** hinted in the journal, a line per person that changes;
+  no numbers.
 
 ## Leaning
 
-_(none yet)_
+- **Post-game as a memory epilogue (user's idea, r2 5):** back in our world, he plays a
+  Pokémon game that feels familiar. The post-game content (Frontier-style battles,
+  legendaries, finishing research) happens inside it, and he slowly, vaguely remembers
+  Eien. Details in round 3.
 
 ## Research summary (round 0)
 
@@ -48,14 +64,13 @@ _(none yet)_
 - **Open space:** research-task dex on GBA, restrained romance, isekai premise in an actual
   game, bond systems beyond Affection, choices that change what you can get.
 
-## Open questions (round 2)
+## Open questions (round 3)
 
-1. What fan knowledge covers and what it gives in battle.
-2. How the research log fills in for Eien Pokémon.
-3. When Celebi's glimpses happen.
-4. How the Nuzlocke mode squares with "the party never dies".
-5. Post-game, given the journal goes blank.
-6. How visible relationship points are.
+1. What the game he plays in the epilogue is.
+2. How the memories come back.
+3. Who is in the epilogue's world.
+4. How the epilogue connects to the Nami look-alike.
+5. Which generations he knows.
 
 ## Gaps and tensions
 
