@@ -20,16 +20,29 @@ Running notes. Nothing is decided until it's under **Decided**.
 
 ## Decided
 
-_(none yet)_
+- **Look (1c):** a hybrid: notebook art (paper background, tab bookmarks on the edge) with
+  Bag-style controls and the normal font. A handwriting font can come later.
+- **Three tabs (2a):** Story, Research, Missions. People are the groups inside Missions (each
+  person's header shows their line); letters show as a "new" marker on that person's group;
+  lore pages sit inside Story.
+- **Story tab (3c):** a "what's next" line on top, then a short entry per story beat in his
+  voice, then the lore pages (tablets, folk tales) as a second list.
+- **Research (4b):** the data lives in the Pokédex, which shows "???" until each tier unlocks;
+  the journal lists each species' research steps and lore notes.
+- **Blank pages (5c):** a scripted scene at the end where lines fade out one entry at a
+  time; after the ending, the journal shows empty pages; in the epilogue, entries write
+  themselves back in as memories return. Both use one "write / erase an entry" effect.
+- **Opening it (6c):** the journal replaces the PokéNav in the start menu. Letters replace
+  Match Call.
 
-## Open questions (round 1)
+## Open questions (round 2)
 
-1. Overall look.
-2. Where people, letters and lore live among the three tabs.
-3. What the story tab shows.
-4. Research: in the journal, the Pokédex, or both.
-5. How the pages going blank (and refilling) is shown.
-6. How the player opens it.
+1. Screen layout.
+2. What opens first (the first page, the last tab).
+3. What happens to the rest of the PokéNav (region map, rematches, contests, ribbons).
+4. What a mission's detail shows.
+5. How closed (missed) missions look.
+6. What the first milestone builds.
 
 ## Gaps and tensions
 
