@@ -1,30 +1,44 @@
 # Asset candidates
 
-Community assets that might fit Eien. **Not yet used or checked.** Terms below come from
-search-result summaries (the sites were blocked from the build environment), so read each
-resource's own page and readme/credit file before importing. Once an asset is used, move it
-to `asset-credits.md`.
+Community assets that might fit Eien. None are in the game yet. Once an asset is used, move
+it to `asset-credits.md` with its credits.
 
-Most of these are made for RPG Maker / Pokémon Essentials. For this engine they need
-converting: 16x16 tiles (halve anything drawn at 32x32), at most 16 colors per palette, and
-the primary/secondary tileset limits in CLAUDE.md. [Porytiles](https://github.com/grunt-lucas/porytiles)
-builds Porymap-ready tilesets from plain PNG layers and handles the palette packing.
+## Downloaded and checked
+
+`tools/fetch_assets.py` downloads these into `build/community_assets/` (git-ignored).
+Terms are quoted from each resource page or the credit file inside the pack.
+
+Tilesets made for RPG Maker / Pokémon Essentials need converting for this engine: 16x16
+tiles (halve anything drawn at 2x), at most 16 colors per palette, and the primary/secondary
+tileset limits in CLAUDE.md. [Porytiles](https://github.com/grunt-lucas/porytiles) builds
+Porymap-ready tilesets from plain PNG layers and handles the palette packing.
+
+| Pack | Author / credit | Terms | Format | What's useful for Eien |
+| --- | --- | --- | --- | --- |
+| [Gen 3 Snow Tileset](https://eeveeexpo.com/resources/1631/) | CinnaYva (`Credit.txt`: "Credit: Cinna (BannedFootage on reddit)") | Credit required. No other terms stated on the page or in the pack. | RMXP sheet at exact 2x (halves losslessly to 16px); 536 colors in total, so each map's tileset takes a subset | A full snowy-town kit: snowy houses, Pokémon Center, Mart, Gym, pines, cliffs, ice, igloo, statues, a stone tower, snow paths and deep snow |
+| [Gen III Johto Tile Set](https://eeveeexpo.com/resources/1858/) | Alistair (aka TheWildDeadHero) | "Credit if used please" / "Credit Required" | Loose 1x sheet, made within GBA limits | Japanese-style houses, a five-story pagoda (shrine landmark), flower beds, water |
+| [Ekat's Public Gen 3 Tilesets](https://eeveeexpo.com/resources/621/) | Ekat + per-set credits in `Credits.txt` (e.g. Gen 3 Snow: Ekat, Heartlessdragoon; Pokémon Center - Winter: Ekat, Vurtax) | Credit per set. The pack page states no commercial limit; Ekat's DeviantArt snow post says non-commercial. Treat as non-commercial. | 1x sheets | Gen 3 Snow, Snow_1-6 and Ice autotiles, Snowpoint Temple (shrine / door mountain), Beach Houses (Hamakaze), Mt. Moon Village, winter Pokémon Center interior |
+| [Free Fakemon Pack](https://eeveeexpo.com/resources/1517/) | Mikitari | "Feel free to use in any project", with credit | 120 sprites: front, back, icons, and shiny front/back/icons. Gen 4 style (matches this engine's default sprites), exact 2x (halves to fit 64x64) | Fakemon, including a few regional forms of real Pokémon and several ice-themed designs |
+| [Gen 1 Type Changed Pokemon](https://digi5932.itch.io/gen-1-type-changed-pokemon) | digi5932 | "Free to use this pack for all projects, credit would be appreciated but not required." No AI used. | 300 sprites (front + back, all 151), 64x64 indexed, ROM-ready | Bases for Gen 1 variants. Its types differ from ours (e.g. its Bulbasaur is Ground/Ice) and it has none of our 4 milestone Pokémon |
+
+Not reachable from the build environment: PokéCommunity (HTTP 403), so its threads below are
+still unverified.
+
+## Not yet checked
+
+Terms below come from search-result summaries. Read each page and readme before importing.
 
 ## Snow and terrain
 
 | Asset | Author | Why it fits | Terms (unverified) |
 | --- | --- | --- | --- |
-| [Gen 3 Snow Tileset (Update, Feb 2025)](https://eeveeexpo.com/resources/1631/) ([PokéCommunity](https://www.pokecommunity.com/threads/gen-3-snow-tileset-update.534817/)) | CinnaYva | GBA-style snow; the main snow candidate | Free for fan games with credit; see its `credit` txt |
 | [GBA Snow Tileset](https://eeveeexpo.com/resources/1497/) | `TODO` | GBA-style snow | `TODO` |
 | [Gen 3 Snowpoint Temple and Snow Tiles](https://www.deviantart.com/ekat99/art/Gen-3-Snowpoint-Temple-and-Snow-Tiles-878878345) | Ekat99 | Snow tiles plus a temple (shrine / door mountain) | Non-commercial; credit Ekat, Vurtax (trees), Heartlessdragoon (RSE palettes) |
-| [Ekat's Public Gen 3 Tilesets](https://eeveeexpo.com/resources/621/) | Ekat and others | 81 sets incl. snowy, fishing village (Hamakaze), mountain village | Per-set credits in an included txt |
 
 ## Towns and structures
 
 | Asset | Author | Why it fits | Terms (unverified) |
 | --- | --- | --- | --- |
-| [Gen III Johto Tile Set](https://eeveeexpo.com/resources/1858/) | `TODO` | FRLG-style Johto: Japanese houses and shrines, made within GBA limits | `TODO` |
-| Ekat's fishing village / mountain village (in the collection above) | Ekat and others | Hamakaze, Shimotsuki | Per-set credits |
 | [Gen 3 Interior Tileset](https://eeveeexpo.com/resources/1511/) | CinnaYva | Houses, lab, gym interiors | `TODO` |
 
 ## Battle backgrounds
@@ -48,8 +62,6 @@ so only Eien variants and any fakemon need new art.
 
 | Asset | Author | Why it fits | Terms (unverified) |
 | --- | --- | --- | --- |
-| [Gen 1 Type Changed Pokemon](https://digi5932.itch.io/gen-1-type-changed-pokemon) | digi5932 | Type-changed Gen 1 Pokémon: close to Eien's variant idea; front + back, 16 colors or fewer | Free for all projects; credit appreciated |
-| [Free Fakemon Pack](https://eeveeexpo.com/resources/1517/) | `TODO` | 80+ fakemon with back sprites and icons (Gen 4 style: downscale to the 64x64 frame) | Free to use in any project |
 | [Fakemon Festival Pack](https://eeveeexpo.com/resources/654/) / [Redux](https://eeveeexpo.com/resources/1871/) | community | Many designers, many fakemon | "Free to Use" per title |
 | [Public Fakemon](https://eeveeexpo.com/threads/9011/) | community | Fakemon | `TODO` |
 | [Cinna's Fakemon](https://eeveeexpo.com/resources/1757/) | CinnaYva | Same artist as the snow tileset (consistent style) | Read the ReadMe; ask before using anything not in the pack |
