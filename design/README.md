@@ -10,6 +10,7 @@ docs: when the design changes, the doc changes in the same commit.
 | [characters.md](characters.md) | Player, rival, professor, gym leaders, factions |
 | [progression.md](progression.md) | Route order, badges, level curve, what gates what |
 | [dialogue-style.md](dialogue-style.md) | How characters talk, with examples |
+| [variants.md](variants.md) | Eien's regional variants of existing Pokémon, and shiny rules |
 | [locations/](locations/) | One doc per town, route or dungeon (copy `_template.md`) |
 | [asset-credits.md](asset-credits.md) | Every community asset used, with its author |
 
@@ -17,15 +18,19 @@ docs: when the design changes, the doc changes in the same commit.
 
 **Vertical slice: prologue through gym 1.** Everything outside this scope waits.
 
-- [ ] Prologue in our world: the accident, Palkia (engine: remove the boy/girl choice, keep
-      the naming screen)
-- [ ] Hometown: he wakes in Eien, Celebi finds him and follows him
-- [ ] Kashiwagi household: taken in, Haru, the journal key item
-- [ ] Meet Akira
-- [ ] Route 1
-- [ ] First town and gym 1 (Fuyumi, Ice)
-- [ ] Location docs for each map above (`locations/_template.md`)
-- [ ] TODO(design): starters, hometown and first town names
+- [ ] Prologue: bedroom in our world, the accident, Palkia ([prologue](locations/prologue-bedroom.md))
+- [ ] Engine: remove the boy/girl choice, keep the naming screen
+- [ ] Hamakaze: he wakes in Eien, Celebi follows him, the Kashiwagi household, Haru, the
+      journal ([Hamakaze](locations/hamakaze.md))
+- [ ] Kashiwagi's lab: pick a starter, Akira and Haru take the others, first battle with Akira
+- [ ] Route 1: coast, snowy fields, shrine; Eien Poochyena ([Route 1](locations/route-1.md))
+- [ ] Shimotsuki and gym 1 (Fuyumi, Ice); Akira shows him the gym ([Shimotsuki](locations/shimotsuki.md))
+- [ ] Nami's first meeting, just after gym 1 (end of the slice)
+- [ ] Species: Eien Torchic, Bulbasaur, Froakie, Poochyena ([variants](variants.md))
+- [ ] Sprites for those 4 (front, back, icon, normal + shiny palettes)
+- [ ] Community snow tileset, credited in `asset-credits.md`
+- [ ] Shiny odds 1 in 4,096 (`SHINY_ODDS 16` in `include/constants/pokemon.h`)
+- [ ] Maps made in Porymap; map constants filled into the location docs
 
 ## Conventions
 

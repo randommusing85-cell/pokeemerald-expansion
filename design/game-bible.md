@@ -10,10 +10,12 @@ other side, loses people he loves, and saves the world at the cost of his memori
 
 - **Name:** Eien (永遠, "eternity").
 - **Inspiration:** northern Honshu's Sea of Japan coast (Tohoku, Aomori).
-- **Geography:** snow country and coast: fishing towns, old shrines, and a volcanic mountain
+- **Geography:** snow country and coast: fishing towns (e.g. Hamakaze), snowy inland towns
+  (e.g. Shimotsuki), old shrines, and a volcanic mountain
   where the worlds are thin (modeled on Osorezan). `TODO(design)`: map layout, route count.
 - **Look and feel:** cold and sparse, long winters, aurora skies. Must feel distinct from
-  Sinnoh (which is Hokkaido-based and Palkia's home region).
+  Sinnoh (which is Hokkaido-based and Palkia's home region). Needs a community snow tileset
+  (the engine has none).
 
 ## Themes
 
@@ -38,8 +40,13 @@ other side, loses people he loves, and saves the world at the cost of his memori
 
 ## Pokémon
 
-- **Starters:** `TODO(design)`.
-- **Regional feel:** `TODO(design)`. (Ice and Water fit the region; gym 1 is Ice.)
+- **Starters:** Eien variants of Torchic (Fire/Ghost), Bulbasaur (Grass/Psychic) and Froakie
+  (Water/Ice), given by Professor Kashiwagi. As a fan, the hero recognizes them.
+- **Regional variants:** Eien has its own variants of some existing Pokémon, mostly changed
+  by the fading (toward Ghost/Psychic/Dark) and some adapted to the cold. See
+  [variants.md](variants.md).
+- **Shinies** are rare (1 in 4,096) and exist for originals and variants alike.
+- **Fakemon:** `TODO(design)`: none, a few, or later.
 - **Legendary / myth:**
   - **Arceus:** the fading god whose cycle drives the plot.
   - **Palkia:** the door between worlds. It brought the hero here as a test: will an

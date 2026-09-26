@@ -4,6 +4,10 @@ Working notes (see `.claude/skills/brainstorm/SKILL.md`). Firm decisions move in
 design docs: `README.md` milestone, `progression.md`, `characters.md`, `story-outline.md`,
 and a location doc per map.
 
+**Promoted:** the decisions below are now in `README.md` (milestone), `game-bible.md`,
+`characters.md`, `story-outline.md`, `progression.md`, `variants.md` and `locations/`.
+Those docs are the source of truth; this file is the record of how we got there.
+
 ## Decided (from the story docs)
 
 - Scope: prologue in our world → hometown (wakes in Eien, Celebi, Kashiwagi household,

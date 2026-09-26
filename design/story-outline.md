@@ -7,19 +7,20 @@ Locations and flags are `TODO` until the maps exist.
 
 | # | Where | What happens | Sets (flag/var) |
 | --- | --- | --- | --- |
-| 1 | Our world | He's playing a Pokémon game. An accident nearly kills him; Palkia catches him. | `TODO` |
+| 1 | His bedroom (our world) | He's playing a Pokémon game. The accident happens in text on a black screen; Palkia catches him. | `TODO` |
 
 ## Act 1: Arrival (gyms 1-4)
 
 | # | Where | What happens | Sets (flag/var) |
 | --- | --- | --- | --- |
-| 1 | Hometown `TODO(design)` | He wakes in Eien. Celebi finds him and starts following him. | `TODO` |
-| 2 | Hometown | Professor Kashiwagi's family takes him in. Haru becomes his first friend. He starts the journal. | `TODO` |
-| 3 | Hometown / route 1 | He meets Akira. | `TODO` |
-| 4 | Gym 1 | Fuyumi, Akira's mother (Ice). | `TODO` |
-| 5 | `TODO(design)` | Nami helps him when he's lost or Celebi is struggling. | `TODO` |
-| 6 | `TODO(design)` | The villains appear: principled, gracious when beaten. Signs of the fading: small disasters, off-screen losses. | `TODO` |
-| 7 | `TODO(design)` | He battles Nami. Gyms 2-4. | `TODO` |
+| 1 | Hamakaze | He wakes in Eien. Celebi finds him and starts following him. | `TODO` |
+| 2 | Hamakaze, Kashiwagi house | Professor Kashiwagi's family takes him in. Haru becomes his first friend. He starts the journal. | `TODO` |
+| 3 | Hamakaze, Kashiwagi's lab | He picks a starter; Akira takes the one strong against it, Haru the third. First battle with Akira. | `TODO` |
+| 4 | Route 1 | Coast, snowy fields, a small shrine. Eien Poochyena, which helps against the Ice gym. | `TODO` |
+| 5 | Shimotsuki | Akira shows him his mother's gym. Gym 1: Fuyumi (Ice). | `TODO` |
+| 6 | Past Shimotsuki `TODO(design)` | Nami helps him when he's lost or Celebi is struggling. End of the first milestone. | `TODO` |
+| 7 | `TODO(design)` | The villains appear: principled, gracious when beaten. Signs of the fading: small disasters, off-screen losses. | `TODO` |
+| 8 | `TODO(design)` | He battles Nami. Gyms 2-4. | `TODO` |
 
 ## Act 2: The tournament (midpoint)
 

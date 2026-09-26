@@ -11,8 +11,9 @@ Claude at the user's request; change freely.
   of death; his body lies in a coma in our world for the whole game.
 - **Voice:** mostly silent; speaks in big scenes. Inner thoughts show his game knowledge
   ("in the games, this is where..."), which is sometimes wrong: this world is real.
-- **Journal:** a key item where he records what he knows and what happens. Near the end its
-  pages go blank as his memories are paid away.
+- **Journal:** a key item where he records what he knows and what happens. Its first page is
+  a note to himself: "My name is ___. I'm from ___. If I start forgetting, read this." Near
+  the end its pages go blank as his memories are paid away.
 - **Ending:** helps Arceus's cycle finish safely, paying with his memories of Eien. Wakes in
   a hospital at home.
 
@@ -23,8 +24,9 @@ Claude at the user's request; change freely.
 - **Arc:** his mother Fuyumi (gym 1) dies in the tournament disaster. The League plays her
   death down, and a few towns later Akira decides the "good" side can't protect anyone and
   joins Minato openly. He fights against the hero at the end.
-- **Team:** `TODO(design)`.
-- **Battles:** `TODO(design)`.
+- **Team:** takes the starter strong against the player's (see [variants.md](variants.md)).
+- **Battles:** first battle at Kashiwagi's lab right after picking starters. Meets the player
+  again in Shimotsuki and shows him his mother's gym. `TODO(design)`: later battles.
 
 ## Professor
 
@@ -35,7 +37,8 @@ Claude at the user's request; change freely.
 ## Love interest
 
 - **Nami** (girl). Signature Pokémon: **Lapras**.
-- Helps him when he's lost or Celebi is struggling; they battle later.
+- Helps him when he's lost or Celebi is struggling, just after gym 1 (the end of the first
+  milestone); they battle later.
 - A committed believer in Minato's cause. He learns she's with them at the tournament.
   She knows Minato's plan drains the hero's world and honestly chooses her world over his.
   She never changes her mind; they choose each other anyway.
@@ -49,7 +52,7 @@ each on-screen before he goes home. Keep these friendships clearly friendships.
 
 | Name | Role | Where | Notes |
 | --- | --- | --- | --- |
-| Haru Kashiwagi | Main friend, Act 1 | Hometown | Boy, the professor's son, about the hero's age. Shares the grief when his mother dies. |
+| Haru Kashiwagi | Main friend, Act 1 | Hamakaze | Boy, the professor's son, about the hero's age. Takes the third starter. Shares the grief when his mother dies. |
 | Yuki | Main friend, Act 3 | Tournament, then Act 3 | Girl from another town. Tournament rival, becomes a friend after Akira leaves. |
 | Kaede | Smaller friend | `TODO(design)` | Young shrine keeper who knows the old tales of the cycle. |
 | Tetsu | Smaller friend | Near the door mountain | Old mountain guide. |
@@ -59,7 +62,7 @@ each on-screen before he goes home. Keep these friendships clearly friendships.
 
 | # | Town | Leader | Type | Personality | Ace | Level |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | `TODO(design)` | Fuyumi | Ice | `TODO(design)`. Akira's mother; dies at the tournament. | | |
+| 1 | Shimotsuki | Fuyumi | Ice | Stern veteran in the gym, softer at home with Akira. Akira's mother; dies at the tournament. | Bergmite (with Spheal) | 13-14 |
 | 2-8 | | `TODO(design)` | | | | |
 
 ## Champion
