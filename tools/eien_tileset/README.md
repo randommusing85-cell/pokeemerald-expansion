@@ -52,14 +52,16 @@ Listed in `DOORS` in `build_source.py`. A door only warps if the map has a warp 
 | --- | --- | --- | --- |
 | `gTileset_EienTown` | `0x26A` | pink house | animated |
 | `gTileset_EienTown` | `0x26E` | green shop | animated |
-| `gTileset_EienTown` | `0x28A` | Pokémon Center | no animation |
-| `gTileset_EienTown` | `0x2AA` | Mart | no animation |
-| `gTileset_EienTown` | `0x2D3` | Gym | no animation |
+| `gTileset_EienTown` | `0x28A` | Pokémon Center | animated (sliding) |
+| `gTileset_EienTown` | `0x2AA` | Mart | animated (sliding) |
+| `gTileset_EienTown` | `0x2D3` | Gym | animated (sliding) |
 | `gTileset_EienCoast` | `0x299` | beach house | no animation |
 | `gTileset_EienCoast` | `0x2C9` | Japanese wooden house | no animation |
 | `gTileset_EienCoast` | `0x2E1` | blue house | animated |
 | `gTileset_EienCoast` | `0x2E5` | yellow shop | animated |
 
-Animated doors use the snow pack's door frames (`Doors/DoorsSnow*.png`), colored with the door
+Hinged doors use the snow pack's door frames (`Doors/DoorsSnow*.png`), colored with the door
 metatile's own palettes. The Pokémon Center, Mart and Gym have sliding glass doors the pack has
-no frames for; they warp without an animation. `build_source.py` prints the current ids.
+no frames for: `make_doors.py` draws them by sliding the two halves of the glass apart over the
+dark doorway (with the sliding-door sound). The beach house and the Japanese house warp without
+an animation. `build_source.py` prints the current ids.

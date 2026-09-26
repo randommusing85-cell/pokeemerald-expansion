@@ -11,6 +11,15 @@ static const u8 sDoorAnimPalettes_EienTown_26A[] = {9, 9, 9, 9, 9, 9, 9, 9};
 static const u8 sDoorAnimTiles_EienTown_26E[] = INCGFX_U8("graphics/door_anims/eien/eien_town_26e.png", ".4bpp");
 static const u8 sDoorAnimPalettes_EienTown_26E[] = {10, 10, 10, 10, 10, 10, 10, 10};
 
+static const u8 sDoorAnimTiles_EienTown_28A[] = INCGFX_U8("graphics/door_anims/eien/eien_town_28a.png", ".4bpp");
+static const u8 sDoorAnimPalettes_EienTown_28A[] = {9, 9, 9, 9, 9, 9, 9, 9};
+
+static const u8 sDoorAnimTiles_EienTown_2AA[] = INCGFX_U8("graphics/door_anims/eien/eien_town_2aa.png", ".4bpp");
+static const u8 sDoorAnimPalettes_EienTown_2AA[] = {9, 9, 9, 9, 9, 9, 9, 9};
+
+static const u8 sDoorAnimTiles_EienTown_2D3[] = INCGFX_U8("graphics/door_anims/eien/eien_town_2d3.png", ".4bpp");
+static const u8 sDoorAnimPalettes_EienTown_2D3[] = {11, 11, 9, 9, 11, 11, 9, 9};
+
 static const u8 sDoorAnimTiles_EienCoast_2E1[] = INCGFX_U8("graphics/door_anims/eien/eien_coast_2e1.png", ".4bpp");
 static const u8 sDoorAnimPalettes_EienCoast_2E1[] = {11, 11, 8, 8, 11, 11, 8, 8};
 
@@ -20,6 +29,9 @@ static const u8 sDoorAnimPalettes_EienCoast_2E5[] = {11, 11, 11, 11, 11, 11, 11,
 #define EIEN_DOOR_ANIM_GRAPHICS \
     { .metatileNum = 0x26A, .tileset = &gTileset_EienTown, .sound = DOOR_SOUND_NORMAL, .size = DOOR_SIZE_1x1, .tiles = sDoorAnimTiles_EienTown_26A, .palettes = sDoorAnimPalettes_EienTown_26A }, \
     { .metatileNum = 0x26E, .tileset = &gTileset_EienTown, .sound = DOOR_SOUND_NORMAL, .size = DOOR_SIZE_1x1, .tiles = sDoorAnimTiles_EienTown_26E, .palettes = sDoorAnimPalettes_EienTown_26E }, \
+    { .metatileNum = 0x28A, .tileset = &gTileset_EienTown, .sound = DOOR_SOUND_SLIDING, .size = DOOR_SIZE_1x1, .tiles = sDoorAnimTiles_EienTown_28A, .palettes = sDoorAnimPalettes_EienTown_28A }, \
+    { .metatileNum = 0x2AA, .tileset = &gTileset_EienTown, .sound = DOOR_SOUND_SLIDING, .size = DOOR_SIZE_1x1, .tiles = sDoorAnimTiles_EienTown_2AA, .palettes = sDoorAnimPalettes_EienTown_2AA }, \
+    { .metatileNum = 0x2D3, .tileset = &gTileset_EienTown, .sound = DOOR_SOUND_SLIDING, .size = DOOR_SIZE_1x1, .tiles = sDoorAnimTiles_EienTown_2D3, .palettes = sDoorAnimPalettes_EienTown_2D3 }, \
     { .metatileNum = 0x2E1, .tileset = &gTileset_EienCoast, .sound = DOOR_SOUND_NORMAL, .size = DOOR_SIZE_1x1, .tiles = sDoorAnimTiles_EienCoast_2E1, .palettes = sDoorAnimPalettes_EienCoast_2E1 }, \
     { .metatileNum = 0x2E5, .tileset = &gTileset_EienCoast, .sound = DOOR_SOUND_NORMAL, .size = DOOR_SIZE_1x1, .tiles = sDoorAnimTiles_EienCoast_2E5, .palettes = sDoorAnimPalettes_EienCoast_2E5 }, \
 

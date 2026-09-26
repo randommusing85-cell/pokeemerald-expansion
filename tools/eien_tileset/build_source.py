@@ -79,16 +79,18 @@ TILESETS = {
     ],
 }
 
-# Door cells: (sheet, column, row, animation). animation is "auto" to pick the closest door
-# in the snow pack's Doors sheets (opens with an animation), or None for a door without one
-# (MB_NON_ANIMATED_DOOR: still warps, no animation).
+# Door cells: (sheet, column, row, animation). animation is:
+#   "auto"   the closest hinged door in the snow pack's Doors sheets
+#   "slide"  sliding glass: make_doors.py draws the frames by sliding the two halves of the
+#            glass (columns 1-14, rows 1-12 of the cell) apart over a dark interior
+#   None     no animation (MB_NON_ANIMATED_DOOR: still warps)
 DOORS = {
     "eien_town": [
         ("cinna", 2, 106, "auto"),   # pink house
         ("cinna", 6, 106, "auto"),   # green shop
-        ("cinna", 2, 115, None),     # Pokémon Center (sliding glass)
-        ("cinna", 2, 119, None),     # Mart (sliding glass)
-        ("cinna", 3, 125, None),     # Gym (glass double door)
+        ("cinna", 2, 115, "slide"),  # Pokémon Center (sliding glass)
+        ("cinna", 2, 119, "slide"),  # Mart (sliding glass)
+        ("cinna", 3, 125, "slide"),  # Gym (glass double door)
     ],
     "eien_coast": [
         ("cinna", 1, 110, "auto"),   # blue house
