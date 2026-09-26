@@ -73,7 +73,27 @@ Those docs are the source of truth; this file is the record of how we got there.
 
 ## Leaning
 
-_(nothing yet)_
+**Overworld sprites (proposed, awaiting the user's pick).** From the FRLG-style NPC megapack
+(`tools/fetch_assets.py frlg_npc_megapack`); ids refer to the numbered contact sheet, file names
+are the pack's. Main characters avoid canon faces and trainer-class sprites used by generic
+trainers.
+
+| Character | Pick | Alternative | Credit (from the pack's readme) |
+| --- | --- | --- | --- |
+| Haru | HGSS `NPC_YoungMan` | RSE `trainer_ACETRAINER_M` | HGSS-in-FR style: Delta231, Mimi, M.vit, Kimoras |
+| Akira | FRLG `trainer_BIRDKEEPER` | HGSS `trainer_YOUNGSTER` | Bird Keeper: Spherical Ice |
+| Nami | FRLG `trainer_YOUNGCOUPLE_F` (red hair) | HGSS `NPC_YoungWoman` | Young Couple: Kalarie |
+| Prof. Kashiwagi | HGSS `NPC_MidageWoman` | RSE `trainer_REPORTER_F` | HGSS set as above |
+| Her husband | HGSS `NPC_Shopkeeper` (apron) | HGSS `NPC_MidageMan` | HGSS set as above |
+| Fuyumi | HGSS `trainer_ACETRAINER_F` (hair bun) | RSE `trainer_EXPERT_F` | HGSS set as above |
+| Hamakaze folk | HGSS `trainer_FISHERMAN`, `trainer_SAILOR`, RSE `Hoenn NPC 06`, `trainer_SCHOOLBOY` | | HGSS set; RSE-style: Poffin_Case |
+| Shimotsuki folk | DPPt `trainer_ACETRAINERSNOW_M`, `trainer_WORKER`, RSE `trainer_POKEFAN_M`, DPPt `trainer_SOCIALITE` | | DPPt set: `TODO` (not named in the readme) |
+
+- **Player:** keep the engine's Brendan for now: it has every sheet the player needs (walk,
+  run, bike, surf, fishing, field moves). `TODO(design)`: a custom look for the isekai hero.
+- **Nurse and Mart clerk:** the engine's own Emerald sprites.
+- **Celebi:** the engine's Pokémon overworld sprite (`OBJ_EVENT_GFX_SPECIES(CELEBI)`).
+- No female lab-coat sprite exists in the pack; the professor pick is a mother figure.
 
 ## Open questions
 
