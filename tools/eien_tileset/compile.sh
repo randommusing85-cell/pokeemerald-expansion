@@ -17,3 +17,5 @@ for name in "$@"; do
     done
     echo "$name: compiled to data/tilesets/secondary/$name"
 done
+# Door animations depend on the compiled palettes, so rebuild them after every compile.
+python3 tools/eien_tileset/make_doors.py

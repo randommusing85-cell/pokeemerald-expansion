@@ -30,7 +30,7 @@ docs: when the design changes, the doc changes in the same commit.
 - [ ] Species: Eien Torchic, Bulbasaur, Froakie, Poochyena ([variants](variants.md))
 - [ ] Sprites for those 4 (front, back, icon, normal + shiny palettes)
 - [x] Community snow tileset, credited in `asset-credits.md` (`tools/eien_tileset/README.md`)
-- [ ] Door behaviors/animations and tree-top layering for the Eien tilesets
+- [x] Door behaviors/animations and tree-top layering for the Eien tilesets
 - [ ] Shiny odds 1 in 4,096 (`SHINY_ODDS 16` in `include/constants/pokemon.h`)
 - [ ] Maps made in Porymap; map constants filled into the location docs
 

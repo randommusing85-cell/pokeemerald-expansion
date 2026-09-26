@@ -349,6 +349,10 @@ static const u8 sDoorAnimPalettes_TrainerTowerRoofElevator[] = {11, 11, 2, 2, 2,
 
 #endif // IS_FRLG
 
+#if !IS_FRLG
+#include "data/field_door_eien.h"
+#endif
+
 static const struct DoorGraphics sDoorAnimGraphicsTable[] =
 {
 #if !IS_FRLG
@@ -775,6 +779,7 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
         .tiles = sDoorAnimTiles_TrainerHillRoofElevator,
         .palettes = sDoorAnimPalettes_TrainerHillRoofElevator
     },
+    EIEN_DOOR_ANIM_GRAPHICS
 #else
     {
         .metatileNum = METATILE_GeneralFrlg_Door,

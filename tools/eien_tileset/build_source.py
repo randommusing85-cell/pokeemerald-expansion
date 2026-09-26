@@ -7,8 +7,14 @@ into tilesets_src/<name>/. Compile them with tools/eien_tileset/compile.sh.
 
 Every piece keeps its layout, so buildings stay paintable as one block in Porymap.
 RPG Maker "unused" marker cells (red X) and empty cells are dropped. Cells with
-transparency (trees, props, eaves) get plain snow on the bottom layer and the piece on the
-middle layer, so they sit on snow wherever they're placed.
+transparency (trees, props, eaves) get plain snow underneath so they sit on snow wherever
+they're placed. Layers (dual-layer mode, inferred by Porytiles from which PNGs have content):
+  normal:  snow on bottom.png, piece on middle.png (both drawn below the player)
+  covered: snow on middle.png, piece on top.png (piece drawn above the player), used for the
+           upper rows of tall pieces (tree tops, the pagoda spire) so the player can walk
+           behind them
+Door cells listed in DOORS get a door behavior in attributes.csv; animated ones are listed in
+doors.json for tools/eien_tileset/make_doors.py.
 
   tools/eien_tileset/build_source.py            # all tilesets
   tools/eien_tileset/build_source.py --stats    # print tile/palette estimates only
@@ -16,6 +22,7 @@ middle layer, so they sit on snow wherever they're placed.
 
 import argparse
 import glob
+import json
 import os
 import sys
 
@@ -40,14 +47,16 @@ def ekat(name):
     return Image.open(glob.glob(os.path.join(PACKS, "ekat_tiles", "**", name + ".png"), recursive=True)[0]).convert("RGBA")
 
 
-# (sheet, first column, first row, columns, rows) in 16px metatile units.
+# Pieces: (sheet, first column, first row, columns, rows[, options]) in 16px metatile units.
+# options: {"cover": (band, n)} splits the piece into bands of `band` rows (one object per
+# band, e.g. a 3-row tree) and puts the top `n` rows of each band on the covered layer.
 SOURCES = {"cinna": cinna, "johto": johto, "beach": lambda: ekat("Beach Houses")}
 BASE_SNOW = ("cinna", 0, 29)  # plain snow under every see-through cell
 
 GROUND = [
     ("cinna", 0, 23, 8, 2),    # snow tufts, small plants
     ("cinna", 0, 28, 8, 3),    # snow ground and patches
-    ("cinna", 0, 31, 6, 6),    # pines, snowy pines
+    ("cinna", 0, 31, 6, 6, {"cover": (3, 2)}),  # pines, snowy pines (3 rows tall)
 ]
 TILESETS = {
     # Shimotsuki: snowy inland town with the first gym.
@@ -66,9 +75,49 @@ TILESETS = {
     # Route 1 and its shrine.
     "eien_shrine": GROUND + [
         ("cinna", 0, 0, 8, 12),    # rocky snow cliffs and ledges
-        ("johto", 21, 7, 7, 14),   # Johto: five-story pagoda
+        ("johto", 21, 7, 7, 14, {"cover": (14, 11)}),  # Johto: five-story pagoda
     ],
 }
+
+# Door cells: (sheet, column, row, animation). animation is "auto" to pick the closest door
+# in the snow pack's Doors sheets (opens with an animation), or None for a door without one
+# (MB_NON_ANIMATED_DOOR: still warps, no animation).
+DOORS = {
+    "eien_town": [
+        ("cinna", 2, 106, "auto"),   # pink house
+        ("cinna", 6, 106, "auto"),   # green shop
+        ("cinna", 2, 115, None),     # Pokémon Center (sliding glass)
+        ("cinna", 2, 119, None),     # Mart (sliding glass)
+        ("cinna", 3, 125, None),     # Gym (glass double door)
+    ],
+    "eien_coast": [
+        ("cinna", 1, 110, "auto"),   # blue house
+        ("cinna", 5, 110, "auto"),   # yellow shop
+        ("beach", 1, 8, None),       # beach house, ground floor
+        ("johto", 27, 5, None),      # Japanese wooden house
+    ],
+    "eien_shrine": [],
+}
+DOOR_SHEETS = ("DoorsSnow", "DoorsSnow2")  # columns are door styles; rows closed, opening x2, open
+
+
+def door_styles():
+    """{"DoorsSnow:0": [closed, open1, open2, open3], ...} at 1x (the sheets are 2x)."""
+    styles = {}
+    for name in DOOR_SHEETS:
+        im = Image.open(os.path.join(PACKS, "cinna_snow", "SnowTileset", "Doors", name + ".png")).convert("RGBA")
+        im = im.resize((im.width // 2, im.height // 2), Image.NEAREST)
+        for c in range(im.width // 16):
+            frames = [im.crop((c * 16, r * 16, c * 16 + 16, r * 16 + 16)) for r in range(4)]
+            if frames[0].getextrema()[3][1]:
+                styles[f"{name}:{c}"] = frames
+    return styles
+
+
+def closest_style(cell, styles):
+    def diff(a, b):
+        return sum(1 for x, y in zip(a.getdata(), b.getdata()) if (x[3] > 0) != (y[3] > 0) or (x[3] and x[:3] != y[:3]))
+    return min(styles, key=lambda k: diff(cell, styles[k][0]))
 
 
 def is_marker(cell):
@@ -80,7 +129,8 @@ def is_marker(cell):
 
 
 def cells(sheets, piece):
-    sheet, col, row, cols, rows = piece
+    """Returns the piece's cells (None where dropped), with each cell's source position."""
+    sheet, col, row, cols, rows = piece[:5]
     im = sheets[sheet]
     grid = []
     for r in range(rows):
@@ -89,7 +139,7 @@ def cells(sheets, piece):
             box = ((col + c) * 16, (row + r) * 16, (col + c + 1) * 16, (row + r + 1) * 16)
             cell = im.crop(box)
             empty = cell.getextrema()[3][1] == 0
-            line.append(None if empty or is_marker(cell) else cell)
+            line.append(None if empty or is_marker(cell) else (cell, (sheet, col + c, row + r), r))
         grid.append(line)
     while grid and all(c is None for c in grid[-1]):  # trim empty rows
         grid.pop()
@@ -180,29 +230,48 @@ def reduce_colors(layers, palettes=7, per_palette=15, rounds=12):
 def build(name, pieces, stats_only):
     sheets = {k: f() for k, f in SOURCES.items()}
     snow = sheets[BASE_SNOW[0]].crop((BASE_SNOW[1] * 16, BASE_SNOW[2] * 16, BASE_SNOW[1] * 16 + 16, BASE_SNOW[2] * 16 + 16))
-    placed, height = place([g for g in (cells(sheets, p) for p in pieces) if g])
-    bottom, middle = (Image.new("RGBA", (WIDTH * 16, height * 16)) for _ in range(2))
+    grids = [(cells(sheets, p), p[5] if len(p) > 5 else {}) for p in pieces]
+    grids = [(g, o) for g, o in grids if g]
+    placed, height = place([g for g, _ in grids])
+    bottom, middle, top = (Image.new("RGBA", (WIDTH * 16, height * 16)) for _ in range(3))
+    ids = {}  # source position -> metatile id (local: row-major over the 8-wide sheet)
     count = 0
-    for grid, x, y in placed:
+    for (grid, x, y), (_, options) in zip(placed, grids):
+        band, covered_rows = options.get("cover", (1, 0))
         for r, line in enumerate(grid):
-            for c, cell in enumerate(line):
-                if cell is None:
+            for c, item in enumerate(line):
+                if item is None:
                     continue
+                cell, source, piece_row = item
                 count += 1
+                ids[source] = (y + r) * WIDTH + x + c
                 pos = ((x + c) * 16, (y + r) * 16)
-                if cell.getextrema()[3][0] < 255:  # see-through: snow below, piece above
+                see_through = cell.getextrema()[3][0] < 255
+                if see_through and piece_row % band < covered_rows:  # covered: drawn over the player
+                    middle.paste(snow, pos)
+                    top.paste(cell, pos)
+                elif see_through:  # normal: snow below, piece above, both under the player
                     bottom.paste(snow, pos)
                     middle.paste(cell, pos)
                 else:
                     bottom.paste(cell, pos)
 
+    styles = door_styles()
+    doors = []
+    for sheet, col, row, anim in DOORS[name]:
+        if (sheet, col, row) not in ids:
+            sys.exit(f"{name}: door {(sheet, col, row)} is not in any piece")
+        cell = sheets[sheet].crop((col * 16, row * 16, col * 16 + 16, row * 16 + 16))
+        style = closest_style(cell, styles) if anim == "auto" else anim
+        doors.append({"id": ids[(sheet, col, row)], "source": [sheet, col, row], "style": style})
+
     if not stats_only:
-        reduce_colors((bottom, middle))
+        reduce_colors((bottom, middle, top))
 
     # Estimates: unique 8x8 tiles (flips count as the same) and colors, per layer.
     tiles = set()
     colors = set()
-    for layer in (bottom, middle):
+    for layer in (bottom, middle, top):
         for ty in range(0, layer.height, 8):
             for tx in range(0, layer.width, 8):
                 t = layer.crop((tx, ty, tx + 8, ty + 8))
@@ -222,8 +291,16 @@ def build(name, pieces, stats_only):
     os.makedirs(dest, exist_ok=True)
     bottom.save(os.path.join(dest, "bottom.png"))
     middle.save(os.path.join(dest, "middle.png"))
-    Image.new("RGBA", bottom.size).save(os.path.join(dest, "top.png"))
-    print(f"  wrote {os.path.relpath(dest, REPO)}/{{bottom,middle,top}}.png ({bottom.width}x{bottom.height})")
+    top.save(os.path.join(dest, "top.png"))
+    with open(os.path.join(dest, "attributes.csv"), "w") as f:
+        f.write("id,behavior\n")
+        for d in sorted(doors, key=lambda d: d["id"]):
+            f.write(f"{d['id']},{'MB_ANIMATED_DOOR' if d['style'] else 'MB_NON_ANIMATED_DOOR'}\n")
+    with open(os.path.join(dest, "doors.json"), "w") as f:
+        json.dump([d for d in doors if d["style"]], f, indent=2)
+    for d in doors:
+        print(f"  door {d['source']} -> metatile {512 + d['id']:#05x} ({d['style'] or 'no animation'})")
+    print(f"  wrote {os.path.relpath(dest, REPO)}/{{bottom,middle,top}}.png ({bottom.width}x{bottom.height}), attributes.csv, doors.json")
 
 
 def main():
