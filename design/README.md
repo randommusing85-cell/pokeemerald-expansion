@@ -32,7 +32,7 @@ docs: when the design changes, the doc changes in the same commit.
 - [ ] Sprites for those 4 (front, back, icon, normal + shiny palettes)
 - [x] Community snow tileset, credited in `asset-credits.md` (`tools/eien_tileset/README.md`)
 - [x] Door behaviors/animations and tree-top layering for the Eien tilesets
-- [ ] Quest table in the save file with `setquest` / `checkquest` script commands (quest
+- [x] Quest table in the save file with `setquest` / `checkquest` script commands (quest
       state and relationship points; [side-quests](side-quests.md))
 - [ ] Three quests to prove it: Haru step 1 (Hamakaze), the professor's Eien Poochyena
       research (Route 1), Akira step 1 (Shimotsuki)
