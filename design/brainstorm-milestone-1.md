@@ -73,8 +73,11 @@ _(nothing yet)_
 
 ## Open questions
 
-1. Fakemon: none, a few, or later. Blocked on how sprites get made (see below).
-2. How sprites for variants (and any fakemon) get made: artist, AI draft + cleanup, or both.
+1. Fakemon: none, a few, or later.
+2. How sprites for variants (and any fakemon) get made. Tested on Eien Poochyena
+   (`design/art/eien_poochyena/README.md`): AI front sprites work after light cleanup; back
+   sprites and icons need hand work.
+3. Eien Poochyena's final look (the test design is a proposal).
 
 ## Gaps and tensions
 
