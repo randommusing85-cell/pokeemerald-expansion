@@ -35,11 +35,10 @@ Decided in [brainstorm-quests-relationships.md](brainstorm-quests-relationships.
 `TODO(design)`: point thresholds (what counts as "enough"); the letter trigger rule; which
 friends get tag battles.
 
-## Draft chains
+## Chains
 
-**Everything below is a draft for review, not decided.** Steps marked (M1) are in the first
-milestone. Places, items and lore that don't exist in the other docs yet are
-`TODO(design)`.
+Approved as drafted. Steps marked (M1) are in the first milestone. Places, items and lore
+still open are `TODO(design)`.
 
 ### Haru (Act 1 to Act 3)
 
