@@ -35,14 +35,25 @@ Running notes. Nothing is decided until it's under **Decided**.
 - **Opening it (6c):** the journal replaces the PokéNav in the start menu. Letters replace
   Match Call.
 
-## Open questions (round 2)
+- **Layout (r2 1c):** an open notebook: the left page is the list, the right page the detail,
+  a spine in the middle, bookmark tabs on the right edge. About 14 characters per line on
+  each page.
+- **Opening (r2 2b):** the first page ("If I start forgetting, read this.") shows the first
+  time only; after that the journal opens on the last tab used. The first page stays
+  reachable as the cover (it goes blank too at the end).
+- **The rest of the PokéNav (r2 3a):** cut. The Town Map is its own key item (Haru's quest
+  reward); rematches use the Vs. Seeker (`I_VS_SEEKER_CHARGING`); contests and ribbons go.
+- **Mission detail (r2 4b):** the hint, who gave it, its state, and a short log of what's
+  happened in his voice. Rewards stay hidden (protects the keepsakes).
+- **Closed missions (r2 5a):** greyed out in the person's group, with one line in his voice.
+- **First milestone (r2 6b):** all three tabs, bare: placeholder art, working list and detail,
+  real data for the three quests, the Eien Poochyena research and a few story entries.
+- **Defaults:** L/R and Left/Right switch tabs, B closes.
 
-1. Screen layout.
-2. What opens first (the first page, the last tab).
-3. What happens to the rest of the PokéNav (region map, rematches, contests, ribbons).
-4. What a mission's detail shows.
-5. How closed (missed) missions look.
-6. What the first milestone builds.
+## Open questions (later)
+
+- Final art: in-house, AI drafts (like the hero sprite) or a credited community asset.
+- A handwriting-style font, maybe later.
 
 ## Gaps and tensions
 
