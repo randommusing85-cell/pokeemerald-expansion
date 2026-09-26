@@ -17,21 +17,30 @@ Running notes. Nothing is decided until it's under **Decided**; decisions move i
 
 ## Decided
 
-_(none yet)_
+- **Forms (1a):** regional forms of the existing species (like Alolan Rattata): same dex
+  number, their own form entries.
+- **Stats (1b):** the same total as the original, redistributed to fit the new typing.
+- **Abilities (3b):** existing abilities that fit the theme; starters keep their pinch ability
+  as the main one.
+- **Evolutions (4d):** starters evolve by level (first at about Lv 18) and keep their Eien
+  typing; other variants like Poochyena evolve by an Eien method (a shrine, an aurora night,
+  a thin place). The engine has the conditions (`IF_IN_MAPSEC`, `IF_IN_MAP`, `IF_WEATHER`).
+- **Eien Bulbasaur (5c):** a fading bloom: its bulb is partly translucent and glows faintly
+  like the aurora, as if it's between worlds.
+- **Froakie (6b):** the one starter he doesn't recognize. It's "???" from the start, a quiet
+  first demonstration of fan knowledge. The game bible's "he recognizes them" becomes "he
+  recognizes two of them".
 
-## Open questions (round 1)
+## Open questions (round 2)
 
-1. Forms of the existing species, or new species entries.
-2. Base stats.
-3. Abilities.
-4. Evolution lines and methods.
-5. Eien Bulbasaur's concept.
-6. Froakie and the Gen 1-5 knowledge rule.
+1. Stat spreads (proposal table).
+2. Abilities per species.
+3. Early new moves.
+4. Eien Poochyena's evolution method.
+5. Next step on sprites.
 
 ## Gaps and tensions
 
-- The game bible says he recognizes the starters, but Froakie is Gen 6, outside his
-  knowledge.
 - Sprites: back sprites and icons need hand work (sprite test findings).
 
 ## Parked ideas
