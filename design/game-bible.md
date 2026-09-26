@@ -63,7 +63,39 @@ other side, loses people he loves, and saves the world at the cost of his memori
     from outside.
   - **Celebi:** came from a future where the cycle went wrong and the world ended. It saw the
     hero in that future and led Palkia to him. It guides him but can't travel through time
-    again or battle.
+    again or battle. Its guidance is short glimpses of what's coming (see Mechanics).
+
+## Mechanics
+
+Decided in [brainstorm-mechanics.md](brainstorm-mechanics.md), which also has the research
+on what other hacks and fan games do.
+
+- **Fan knowledge (the signature mechanic).** He knows Gen 1-5 Pokémon from the games: their
+  Pokédex entries and typing are known from the start, and in battle his moves show
+  effectiveness hints against them. Eien variants and Gen 6+ species show "???", and the
+  hint shows "?" too, so his instincts can mislead him (Fire is fine against a normal
+  Bulbasaur, not against Eien Bulbasaur).
+- **Research.** Unknown species fill in by tiers: seeing one gives the name and sprite,
+  battling it gives the typing, catching it gives the full entry, and extra steps (seeing a
+  certain move, catching one at night) add lore notes. Shrine tablets, folk tales and the
+  professor's notes add lore too. `TODO(design)`: the steps per species.
+- **The journal** (key item) has three tabs: the story so far, research, and missions (side
+  quests). It also holds a line per friend that changes with the relationship (below). Its
+  pages go blank at the end; the epilogue fills them back in.
+- **Celebi's glimpses.** In scripted story moments Celebi shows a short vision of what's
+  coming (a rival's lead, a disaster site, a hidden path). Talking to Celebi gives a hint
+  about where to go next. Both get vaguer as Celebi weakens.
+- **Relationship points** with Nami and the friends, earned through choices and optional
+  scenes. They change scenes, dialogue, who helps in the finale's battles and small epilogue
+  details, never the outcome. Never shown as numbers: only the journal's line per person.
+  `TODO(design)`: how points are earned, which friends get tag battles.
+- **Eien weather and terrain.** Snow on most routes, an aurora weather on clear nights, and a
+  "thin place" terrain at shrines and the mountain that boosts Ghost and Psychic moves.
+  Built on the engine's weather and terrain. `TODO(design)`: the aurora's battle effect,
+  the terrain's exact rules.
+- **Difficulty:** see [progression.md](progression.md).
+- **Not used:** Mega, Z-Moves, Dynamax and Tera (a lore-tied gimmick may come later);
+  follower Pokémon (Celebi already follows him; parked).
 
 ## Tone
 

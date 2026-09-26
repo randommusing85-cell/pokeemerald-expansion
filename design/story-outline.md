@@ -53,14 +53,39 @@ Locations and flags are `TODO` until the maps exist.
 
 ## Ending
 
-He wakes up in a hospital in our world, remembering Eien only vaguely. Later he bumps into
-someone who looks exactly like Nami. The game leaves it open whether it's really her; the
-hint for attentive players is a small Lapras charm.
+He wakes up in a hospital in our world, remembering Eien only vaguely. The main ending shows
+only a short glimpse of a woman who looks exactly like Nami.
+
+## Epilogue (the post-game)
+
+The post-game is a memory epilogue in our world. It mirrors the prologue: he plays the
+ordinary Pokémon game he was playing before the accident, and Eien seeps into it.
+
+- Things that shouldn't be there appear: a snowy route, a Rock/Dark Poochyena. Only he
+  notices.
+- His friends are ordinary game NPCs with generic lines that change slightly as he
+  remembers.
+- Post-game content (Frontier-style battles, legendaries, finishing research) happens inside
+  this game.
+- Memories come back three ways, all collected in the journal: its blank pages refill as
+  post-game content is done; short flashes at places that mattered (the tournament, the
+  lab, where Celebi died); finishing an Eien species' research returns the memory tied to
+  it.
+- At the very end, a faint echo of Celebi recognizes him (an echo: Celebi stays dead).
+- Finishing the epilogue gives the full meeting with the woman who looks like Nami. The game
+  leaves it open whether it's really her; the hint for attentive players is a small Lapras
+  charm.
+
+`TODO(design)`: hospital or home; where the Frontier and legendaries sit in the home game;
+whether catching Arceus or Palkia inside "a game" is deliberate; he knows only real
+Pokémon again, so research restarts at "???" (a deliberate echo, but check it isn't
+repetitive).
 
 ## Open questions
 
 - TODO(design): should the hospital ending make players wonder if it was all a coma dream,
-  or only whether the woman is Nami?
+  or only whether the woman is Nami? The epilogue (Eien seeping into an ordinary game)
+  keeps this ambiguous rather than answering it.
 - TODO(design): does Palkia's test serve Arceus, or go against it?
 - TODO(design): are the villains' loyal Pokémon a theme ("loyalty doesn't mean they're
   right")?

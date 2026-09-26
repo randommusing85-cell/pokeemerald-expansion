@@ -28,6 +28,18 @@ Route 1 and gym 1 levels are proposed defaults; adjust after playtesting.
 
 ## Items and HMs / field moves
 
-- **Journal** (key item): from the start of Act 1. Records what he knows and what happens;
-  its pages go blank near the end.
+- **Journal** (key item): from the start of Act 1. Tabs for the story, research and missions
+  (see the game bible's Mechanics). Its pages go blank near the end and refill in the
+  epilogue.
 - `TODO(design)`: field moves and other key items.
+- **Field moves without HMs:** `TODO(design)`: which key item or Pokémon does them.
+- **TMs are reusable.**
+- **DexNav** is on, for searching and chaining wild Pokémon.
+
+## Difficulty
+
+- **Normal and Hard** modes, chosen at the start.
+- **Soft level caps** tied to the next gym or boss (EXP drops above the cap).
+  `TODO(design)`: is optional side content balanced to the caps?
+- **Optional Nuzlocke mode** with standard rules, framed to fit the world: a fainted Pokémon
+  "goes home to rest", gone from the run but not dead (the player's party never dies).

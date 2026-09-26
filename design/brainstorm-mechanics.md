@@ -17,6 +17,9 @@ Running notes for the mechanics brainstorm. Nothing here is decided until it's u
 
 ## Decided
 
+Promoted into `game-bible.md` (Mechanics), `story-outline.md` (Ending, Epilogue),
+`progression.md` (Items, Difficulty) and `characters.md`.
+
 - **Signature mechanic: fan knowledge vs. Eien's unknowns (1a).** He knows ordinary Pokémon
   from the games: their entries, typing and weaknesses show from the start. Eien variants
   show "???" until he studies them, and what he learns fills his journal.

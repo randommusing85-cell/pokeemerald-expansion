@@ -13,7 +13,9 @@ Claude at the user's request; change freely.
   ("in the games, this is where..."), which is sometimes wrong: this world is real.
 - **Journal:** a key item where he records what he knows and what happens. Its first page is
   a note to himself: "My name is ___. I'm from ___. If I start forgetting, read this." Near
-  the end its pages go blank as his memories are paid away.
+  the end its pages go blank as his memories are paid away; in the epilogue they fill back in.
+  Also holds his research on unknown Pokémon and his missions (game bible, Mechanics).
+- **Game knowledge:** he knows Gen 1-5 Pokémon; Eien variants and later species are new to him.
 - **Ending:** helps Arceus's cycle finish safely, paying with his memories of Eien. Wakes in
   a hospital at home.
 
@@ -87,6 +89,7 @@ each on-screen before he goes home. Keep these friendships clearly friendships.
 ## Pokémon characters
 
 - **Celebi:** finds the hero when he arrives and follows him on the map (not in the party).
+  Shows him glimpses of what's coming and gives hints when he talks to it.
   Came from a future where the world ended; can't jump again or fight. Dies in the final act
   protecting him from Minato's plan.
 - **Palkia:** the door. Brought him here; sends him home.
