@@ -24,6 +24,7 @@
 #include "constants/decorations.h"
 #include "constants/difficulty.h"
 #include "constants/eien_quests.h"
+#include "constants/eien_story.h"
 #include "constants/easy_chat.h"
 #include "constants/event_objects.h"
 #include "constants/event_object_movement.h"

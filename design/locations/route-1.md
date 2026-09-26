@@ -39,7 +39,9 @@ Lv 2-5. `TODO(design)`: exact species and rates.
 
 | Name | Set when | Checked by |
 | --- | --- | --- |
-| `TODO` | | |
+| `VAR_EIEN_STORY` = `STORY_ROUTE_1` | He first steps onto Route 1 | The journal |
+| `QUEST_RESEARCH_POOCHYENA` (quest table; step bits: seen, battled, caught) | The professor asks him (`TODO(design)`: where); each bit when he sees, battles, catches one | The journal's Research and Missions tabs |
+| `QUEST_HARU_MAP` step 1-3 | He notes each of the coast, the fields, the shrine | The journal |
 
 ## Screenshot check
 

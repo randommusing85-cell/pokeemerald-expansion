@@ -56,6 +56,12 @@ by number. Every argument can be a number or a var.
 
 Tests: `make check TESTS="(Eien quests)"` (`test/eien_quests.c`).
 
+The journal's text for each quest (title, giver, hint, log lines, the line shown when it's
+closed) and the relationship line per person live in `src/data/eien_journal.h`; the screen
+is `src/eien_journal.c`. Research quests store their tiers as bits of the step (seen,
+battled, caught, lore). The relationship thresholds there are placeholders until the design
+sets them.
+
 ## Chains
 
 Approved as drafted. Steps marked (M1) are in the first milestone. Places, items and lore

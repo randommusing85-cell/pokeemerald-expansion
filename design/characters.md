@@ -12,7 +12,7 @@ Claude at the user's request; change freely.
 - **Voice:** mostly silent; speaks in big scenes. Inner thoughts show his game knowledge
   ("in the games, this is where..."), which is sometimes wrong: this world is real.
 - **Journal:** a key item where he records what he knows and what happens. Its first page is
-  a note to himself: "My name is ___. I'm from ___. If I start forgetting, read this." Near
+  a note to himself: "My name is ___. I'm from another world. If I start forgetting, read this." Near
   the end its pages go blank as his memories are paid away; in the epilogue they fill back in.
   Also holds his research on unknown Pokémon and his missions (game bible, Mechanics).
 - **Game knowledge:** he knows Gen 1-5 Pokémon; Eien variants and later species are new to him.

@@ -36,7 +36,9 @@ after gym 1, when Nami helps him.
 
 | Name | Set when | Checked by |
 | --- | --- | --- |
-| `TODO` | | |
+| `VAR_EIEN_STORY` = `STORY_SHIMOTSUKI` | Akira shows him the gym | The journal |
+| `VAR_EIEN_STORY` = `STORY_BADGE_1` | He beats Fuyumi | The journal |
+| `QUEST_AKIRA_PRACTICE` (quest table) | Akira asks for a practice battle after gym 1 | The journal; closes at the tournament |
 
 ## Screenshot check
 

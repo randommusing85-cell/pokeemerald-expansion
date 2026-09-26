@@ -36,7 +36,7 @@ docs: when the design changes, the doc changes in the same commit.
       state and relationship points; [side-quests](side-quests.md))
 - [ ] Three quests to prove it: Haru step 1 (Hamakaze), the professor's Eien Poochyena
       research (Route 1), Akira step 1 (Shimotsuki)
-- [ ] Journal screen, bare: three tabs with placeholder art, replacing the PokéNav in the start
+- [x] Journal screen, bare: three tabs with placeholder art, replacing the PokéNav in the start
       menu; real data for the quests above, the Poochyena research and a few story entries
 - [ ] Shiny odds 1 in 4,096 (`SHINY_ODDS 16` in `include/constants/pokemon.h`)
 - [ ] Maps made in Porymap; map constants filled into the location docs

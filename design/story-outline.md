@@ -1,7 +1,9 @@
 # Story outline
 
 Write beats in order. Each beat says where it happens, what happens, and what state it sets.
-Locations and flags are `TODO` until the maps exist.
+Locations and flags are `TODO` until the maps exist. Main story progress is one var,
+`VAR_EIEN_STORY`, set to the `STORY_*` values in `include/constants/eien_story.h`; the
+journal writes an entry for each beat reached (`src/data/eien_journal.h`).
 
 ## Prologue: our world
 
@@ -13,12 +15,12 @@ Locations and flags are `TODO` until the maps exist.
 
 | # | Where | What happens | Sets (flag/var) |
 | --- | --- | --- | --- |
-| 1 | Hamakaze | He wakes in Eien. Celebi finds him and starts following him. | `TODO` |
-| 2 | Hamakaze, Kashiwagi house | Professor Kashiwagi's family takes him in. Haru becomes his first friend. He starts the journal. | `TODO` |
-| 3 | Hamakaze, Kashiwagi's lab | He picks a starter; Akira takes the one strong against it, Haru the third. First battle with Akira. | `TODO` |
-| 4 | Route 1 | Coast, snowy fields, a small shrine. Eien Poochyena, which helps against the Ice gym. | `TODO` |
-| 5 | Shimotsuki | Akira shows him his mother's gym. Gym 1: Fuyumi (Ice). | `TODO` |
-| 6 | Past Shimotsuki `TODO(design)` | Nami helps him when he's lost or Celebi is struggling. End of the first milestone. | `TODO` |
+| 1 | Hamakaze | He wakes in Eien. Celebi finds him and starts following him. | `VAR_EIEN_STORY` = `STORY_ARRIVED` |
+| 2 | Hamakaze, Kashiwagi house | Professor Kashiwagi's family takes him in. Haru becomes his first friend. He starts the journal. | `STORY_TAKEN_IN`; `FLAG_RECEIVED_JOURNAL` |
+| 3 | Hamakaze, Kashiwagi's lab | He picks a starter; Akira takes the one strong against it, Haru the third. First battle with Akira. | `STORY_GOT_STARTER` |
+| 4 | Route 1 | Coast, snowy fields, a small shrine. Eien Poochyena, which helps against the Ice gym. | `STORY_ROUTE_1` |
+| 5 | Shimotsuki | Akira shows him his mother's gym. Gym 1: Fuyumi (Ice). | `STORY_SHIMOTSUKI`, then `STORY_BADGE_1` |
+| 6 | Past Shimotsuki `TODO(design)` | Nami helps him when he's lost or Celebi is struggling. End of the first milestone. | `STORY_MET_NAMI` |
 | 7 | `TODO(design)` | The villains appear: principled, gracious when beaten. Signs of the fading: small disasters, off-screen losses. | `TODO` |
 | 8 | `TODO(design)` | He battles Nami. Gyms 2-4. | `TODO` |
 
