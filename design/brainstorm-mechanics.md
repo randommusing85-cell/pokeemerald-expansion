@@ -17,7 +17,21 @@ Running notes for the mechanics brainstorm. Nothing here is decided until it's u
 
 ## Decided
 
-_(none yet)_
+- **Signature mechanic: fan knowledge vs. Eien's unknowns (1a).** He knows ordinary Pokémon
+  from the games: their entries, typing and weaknesses show from the start. Eien variants
+  show "???" until he studies them, and what he learns fills his journal.
+- **Celebi's glimpses (1d)** as the story-side partner: short visions of what's coming
+  (a rival's lead, a disaster site, a hidden path) that fade as Celebi weakens.
+- **The journal does it all (2d):** story memory, research log for Eien Pokémon, and a
+  mission log, in tabs. Its pages going blank at the end should hurt because it was used
+  all game.
+- **Relationship points (3b)** with Nami and the friends: they change scenes, dialogue, who
+  helps in the finale's battles and small epilogue details, not the outcome.
+- **Battle twist: Eien weather and terrain (4b):** snow on most routes, an aurora night
+  weather, and a "thin place" terrain at shrines and the mountain (Ghost/Psychic boosted).
+  Built on the engine's weather and terrain.
+- **Difficulty (5c):** Normal and Hard modes, soft level caps, and an optional Nuzlocke mode.
+- **Quality of life (6):** DexNav, reusable TMs, field moves without HMs.
 
 ## Leaning
 
@@ -34,15 +48,14 @@ _(none yet)_
 - **Open space:** research-task dex on GBA, restrained romance, isekai premise in an actual
   game, bond systems beyond Affection, choices that change what you can get.
 
-## Open questions (round 1)
+## Open questions (round 2)
 
-1. Signature mechanic: fan knowledge vs. Eien's unknowns / bonds / thin-place fields /
-   Celebi's glimpses.
-2. What the journal does: mission log / research dex / story memory / all three.
-3. Choices and relationships with a fixed ending.
-4. Battle twist: none / Eien weather and thin-place terrain / one lore-tied gimmick.
-5. Difficulty baseline: modes, level caps, Nuzlocke option.
-6. Quality-of-life set: followers, DexNav, reusable TMs, field moves without HMs.
+1. What fan knowledge covers and what it gives in battle.
+2. How the research log fills in for Eien Pokémon.
+3. When Celebi's glimpses happen.
+4. How the Nuzlocke mode squares with "the party never dies".
+5. Post-game, given the journal goes blank.
+6. How visible relationship points are.
 
 ## Gaps and tensions
 
@@ -54,8 +67,11 @@ _(none yet)_
 
 ## Parked ideas
 
-_(none yet)_
+- Follower Pokémon (6a): clashes with Celebi following the hero; revisit if Celebi's
+  following is a scripted NPC that can share the slot.
 
 ## Rejected
 
-_(none yet)_
+- Bonds as the signature mechanic (1b), thin-place fields as a full field system (1c):
+  kept smaller, as relationship points (3b) and a terrain (4b).
+- Every gimmick on (4d): generic. A lore-tied gimmick (4c) is not ruled out for later.
