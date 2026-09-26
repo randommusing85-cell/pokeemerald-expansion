@@ -38,6 +38,24 @@ Running notes. Nothing is decided until it's under **Decided**; decisions move i
 
 Promoted into `variants.md` and `game-bible.md`.
 
+## Round 3: Eien Mightyena (proposal, not decided)
+
+Needed before Eien Poochyena can evolve (`variants.md`). Front drafts:
+[art/eien_mightyena/](art/eien_mightyena/README.md).
+
+- **Type:** Rock/Dark, as `variants.md` already says.
+- **Stats:** 70 / 90 / 90 / 50 / 60 / 60 (vanilla 70 / 90 / 70 / 60 / 60 / 70), 420. This
+  is the same shift as Eien Poochyena: more Defense, less Sp. Atk and Speed.
+- **Abilities:** Intimidate / Sturdy / Stakeout (hidden), the same as Eien Poochyena.
+- **Moves:** Rock Slide as its evolution move. Otherwise Eien Poochyena's learnset carries on
+  into vanilla Mightyena's (Rock Throw and Rock Tomb stay early).
+- **Look:** one of the drafts' three concepts: a (grown Poochyena), b (granite with a shrine
+  rope) or c (a roaring komainu).
+- **Name:** "Eien Mightyena", with no new name. `variants.md` allows a final form its own
+  name, but Mightyena is a two-stage line.
+
+Still open: its dex entry (`TODO(design)`), which map sections count as shrine areas.
+
 ## Parked ideas (round 2)
 
 - A signature move per starter for the final stages (custom engine work, later milestone).
