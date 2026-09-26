@@ -98,7 +98,7 @@ Gen 3 style, from the FRLG-style NPC megapack, converted by `tools/eien_npcs/` (
 
 | Character | Sprite |
 | --- | --- |
-| Player | Engine's Brendan for now (has walk, run, bike, surf, fishing). `TODO(design)`: a custom look for the isekai hero |
+| Player | Brendan's sprites recolored (`tools/eien_hero/`): dark hair, grey hoodie, blue jeans. An ordinary guy from our world. Shape is still Brendan's; redrawing the most-seen frames is a later option |
 | Haru | `OBJ_EVENT_GFX_EIEN_HARU` |
 | Akira | `OBJ_EVENT_GFX_EIEN_AKIRA` |
 | Nami | `OBJ_EVENT_GFX_EIEN_NAMI` |
