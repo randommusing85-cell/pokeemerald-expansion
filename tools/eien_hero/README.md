@@ -17,5 +17,16 @@ Not recolored (separate art, only seen in places we'll replace or don't use yet)
 intro movie (`graphics/intro/scene_2/brendan*.png`), the ORAS dowsing effect, and Battle Frontier
 transitions.
 
-The shape is still Brendan's (the spiky cap now reads as dark hair). A true redesign would mean
-redrawing the most-seen frames by hand (walking, running, battle sprites).
+## New hairstyle
+
+`redraw_hair.py` replaces Brendan's cap with short messy dark hair and a side fringe on the
+most-seen sprites; run it after `recolor.py`. It reads the untouched originals in `vanilla/`.
+
+- **Walking (9 frames):** heads drawn by hand, pixel by pixel (`OW_HEADS`), one per facing.
+- **Battle front and back (4 frames):** heads from AI drafts (`ai_drafts/`, Gemini 3 Pro image
+  edits of the enlarged sprites), snapped to the pixel grid and merged only around the old cap.
+  The hoodie's red panels become grey; the Poké Ball stays red and white.
+
+Still Brendan's cap: running, bikes, surfing, fishing, field moves, underwater, watering and
+decorating sheets (the cap reads as dark hair there, from the recolor). Their heads can be
+redrawn the same way as the walking frames.

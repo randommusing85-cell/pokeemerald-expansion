@@ -48,10 +48,22 @@ LOOK = {
 }
 
 
-def recolor(base):
-    """Apply LOOK: within each group, the original lightest index gets the new lightest color."""
+# Battle sprites share their palette with the Poké Ball in his hand (red 12-13, white 14) and
+# his eyes (white 14), so the battle palette keeps those and uses other slots instead:
+# hair is 9 (main) and 4 (dark); the hoodie panels are repainted with the strap's greys 10-11
+# (redraw_hair.py moves those pixels).
+LOOK_TRAINER = {
+    (9,): hexes("5a4a42"),                                     # hair (redrawn head)
+    (4,): hexes("2a211e"),                                     # hair, dark
+    (10, 11): hexes("b8bcc4", "8a8e98"),                       # hoodie and strap greys
+    (5, 6, 7, 8): hexes("4a6aa4", "3a5890", "2c4678", "1e3060"),  # navy outfit -> denim blue
+}
+
+
+def recolor(base, look=None):
+    """Apply a look: within each group, the original lightest index gets the new lightest color."""
     out = list(base)
-    for indices, colors in LOOK.items():
+    for indices, colors in (look or LOOK).items():
         for rank, i in enumerate(sorted(indices, key=lambda i: -sum(base[i]))):
             out[i] = colors[min(rank, len(colors) - 1)]
     return out
@@ -64,7 +76,7 @@ def write_jasc(path, palette):
 
 def main():
     ow = recolor(VANILLA_OW)
-    trainer = recolor(VANILLA_TRAINER)
+    trainer = recolor(VANILLA_TRAINER, LOOK_TRAINER)
     # Reflection: keep vanilla's per-color offset from the overworld palette.
     reflection = [tuple(max(0, min(255, n + (r - o))) for n, r, o in zip(new, refl, old))
                   for new, refl, old in zip(ow, VANILLA_OW_REFLECTION, VANILLA_OW)]
