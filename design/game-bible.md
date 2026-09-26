@@ -50,7 +50,8 @@ other side, loses people he loves, and saves the world at the cost of his memori
 ## Pokémon
 
 - **Starters:** Eien variants of Torchic (Fire/Ghost), Bulbasaur (Grass/Psychic) and Froakie
-  (Water/Ice), given by Professor Kashiwagi. As a fan, the hero recognizes them.
+  (Water/Ice), given by Professor Kashiwagi. As a fan, the hero recognizes two of them;
+  Froakie (Gen 6) is outside what he knows, so it's "???" to him from the start.
 - **Regional variants:** Eien has its own variants of some existing Pokémon, mostly changed
   by the fading (toward Ghost/Psychic/Dark) and some adapted to the cold. See
   [variants.md](variants.md).

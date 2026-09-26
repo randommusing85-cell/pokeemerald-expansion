@@ -31,13 +31,16 @@ Running notes. Nothing is decided until it's under **Decided**; decisions move i
   first demonstration of fan knowledge. The game bible's "he recognizes them" becomes "he
   recognizes two of them".
 
-## Open questions (round 2)
+- **Stats (r2 1a), abilities (r2 2a), early moves (r2 3a):** as proposed; see `variants.md`.
+- **Eien Poochyena evolves (r2 4a)** by leveling up to 18+ in a shrine area.
+- **Sprites (r2 5c):** placeholder sprites now (recolored originals), Gemini front drafts in
+  parallel for review.
 
-1. Stat spreads (proposal table).
-2. Abilities per species.
-3. Early new moves.
-4. Eien Poochyena's evolution method.
-5. Next step on sprites.
+Promoted into `variants.md` and `game-bible.md`.
+
+## Parked ideas (round 2)
+
+- A signature move per starter for the final stages (custom engine work, later milestone).
 
 ## Gaps and tensions
 
