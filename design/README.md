@@ -13,6 +13,7 @@ docs: when the design changes, the doc changes in the same commit.
 | [variants.md](variants.md) | Eien's regional variants of existing Pokémon, and shiny rules |
 | [locations/](locations/) | One doc per town, route or dungeon (copy `_template.md`) |
 | [asset-credits.md](asset-credits.md) | Every community asset used, with its author |
+| [asset-candidates.md](asset-candidates.md) | Community assets we might use, not yet checked |
 
 ## Current milestone
 
