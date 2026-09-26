@@ -66,3 +66,26 @@ so only Eien variants and any fakemon need new art.
 | [Fakemon Festival Pack](https://eeveeexpo.com/resources/654/) / [Redux](https://eeveeexpo.com/resources/1871/) | community | Many designers, many fakemon | "Free to Use" per title |
 | [Public Fakemon](https://eeveeexpo.com/threads/9011/) | community | Fakemon | `TODO` |
 | [Cinna's Fakemon](https://eeveeexpo.com/resources/1757/) | CinnaYva | Same artist as the snow tileset (consistent style) | Read the ReadMe; ask before using anything not in the pack |
+
+## From another fan game's credits list (triaged)
+
+A credits list from a Pokémon Essentials fan game. Being credited there doesn't give us
+permission: each resource has its own terms. Engine fit decides most of it: trainer battle
+sprites here are 64x64, overworld frames mostly 16x32 (Gen 3), and music must be MIDI.
+
+| Resource | Fit for this engine | Terms (checked where linked) |
+| --- | --- | --- |
+| ENLS's Pre-Looped Music Library | **No.** Pre-looped audio files; GBA music is MIDI converted at build time | - |
+| [Kyledove trainer classes](https://eeveeexpo.com/resources/authors/9232/) (SWSH, XY, ORAS, USUM, Ga-Olé) | Gen 4/5 style, larger than 64x64: needs cropping or resizing | Credit required; "prefers people not edit or recolor without asking" (case by case). Cropping to 64x64 is an edit: **ask first** |
+| [Pokémon Showdown trainer sprites](https://play.pokemonshowdown.com/sprites/trainers/?filter=credited) and their artists (Beliot419, hyo-oppa, kyledove, ...) | Gen 4/5 style, needs cropping | "Credit must be given... **DO NOT EDIT without permission**" |
+| pokengine trainer battlers / overworlds (Jext, kyledove, hyo, Rald) | Gen 4 style | Only items tagged "public use with credits" |
+| Mr Gela's [Gen 4 and 5 trainer sprites](https://eeveeexpo.com/resources/391/) | Gen 4/5 style, needs cropping | `TODO` |
+| [Official Gen 4 OWs](https://eeveeexpo.com/resources/404/) (VanillaSunshine and others), [Ultimate Gen 4 OW Pack](https://eeveeexpo.com/resources/609/) (PurpleZaffre), [Gen 5 in Gen 4 OW style](https://eeveeexpo.com/resources/370/) (DiegoWT) | 32x32 frames: the engine can show them, but they're a different look from Gen 3 characters | `TODO` |
+| DeviantArt singles (Wolfang62, SirPeaches, Mid117, hyo-oppa, skyin2020, Solo993, PKMNTrainerRick) | Mostly Gen 4 style; Solo993's ORAS protagonists are GBA style | Per post |
+| Character Selection by FL | **No.** An Essentials (Ruby) script | - |
+| Tales of the Outskirt resource pack, individual artist names | Unknown without links | - |
+
+Better fit found while checking: [Accurate FRLG-style NPC Megapack](https://eeveeexpo.com/resources/823/)
+(compiled by SoulfulLex): Gen 3 (FRLG) style overworlds and trainer front/back sprites across
+generations, matching this engine's native size. The compiler asks that the original spriters be
+credited (listed in the pack).
