@@ -32,6 +32,21 @@ docs (game bible, characters, story outline) when the user agrees.
 - **Quest kinds (5c+a+b+d):** friend chains are the backbone, plus research quests (study Eien
   Pokémon; ties to fan knowledge), the fading's small disasters (help towns; shows the
   stakes before the big deaths) and lore (shrine tablets, folk tales, Kaede as the thread).
+- **Size (r2 1b):** about 25 quests at launch (7 friend chains of 2-3 steps, plus about 8
+  research, disaster and lore quests), but the system is built to grow to Unbound's scale
+  (80 or more) without redesign.
+- **Late arrivals (r2 2a):** Yuki and Ren get earlier cameos (Yuki met once or twice in Act 1,
+  Ren as a League trainer at a gym); their chains start at the cameo.
+- **Akira's chain (r2 3c):** before he leaves, training battles and helping around Shimotsuki
+  (ends with Fuyumi's death); after, optional meetings on the other side where he explains
+  himself and the hero can answer, no fight unless the player wants one.
+- **Delivery (r2 4a+c):** chains are picked up at the friend's home (Haru in Hamakaze, Kaede
+  at her shrine, Tetsu at the mountain), and letters in the journal say when someone wants
+  to see him. Celebi's hints can point to them as a fallback.
+- **Gifts (r2 5d):** smaller friends (Kaede, Tetsu, Ren) give an item or TM tied to them; main
+  ones (Haru, Yuki, Nami, Akira) give a keepsake that does nothing in Eien but appears in the
+  epilogue game and brings back that friend's memory.
+- **Finale helpers (r2 6b):** Kaede always comes; high points bring Tetsu and Ren too.
 - **Missable (6c):** quests tied to people who die or leave close for good, but the journal
   notes the unfinished thing and the epilogue gives it back as a memory.
 
@@ -39,14 +54,13 @@ docs (game bible, characters, story outline) when the user agrees.
 
 _(none)_
 
-## Open questions (round 2)
+## Open questions (round 3)
 
-1. How many quests in total.
-2. Late arrivals (Yuki, Ren): earlier cameos or shorter chains.
-3. Akira's chain before and after he defects.
-4. How friend chains are delivered.
-5. What the gifts are.
-6. Finale helpers: what if points are low.
+1. How quest state is stored so it scales to 80+.
+2. How relationship points are stored.
+3. What the missions tab shows.
+4. Rewards vs. soft level caps.
+5. Which quests are in the first milestone.
 
 ## Gaps and tensions
 
@@ -54,8 +68,10 @@ _(none)_
 - Yuki's scenes must read as friendship, not a second romance.
 - Quests with the professor and Fuyumi are missable by design; their chains need to start
   early enough that a player can finish them.
-- The "seeing the other side" quest kind (5e) wasn't picked; Akira's chain may cover some of
-  it.
+- The "seeing the other side" quest kind (5e) wasn't picked; Akira's "after" meetings cover
+  some of it.
+- Save space: 375 spare flags but only 23 spare vars today. Vanilla Hoenn flags free up only
+  once the vanilla scripts that use them are removed.
 
 ## Parked ideas
 
