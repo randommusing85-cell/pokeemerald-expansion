@@ -17,6 +17,15 @@ other side, loses people he loves, and saves the world at the cost of his memori
   Sinnoh (which is Hokkaido-based and Palkia's home region). Needs a community snow tileset
   (the engine has none).
 
+## Art style
+
+- **Overworld and characters:** Gen 3 (FRLG/RSE) style: 16x32 overworld frames, 64x64 trainer
+  battle sprites. NPC overworlds come from the FRLG-style NPC megapack (see
+  `asset-candidates.md`).
+- **Pokémon:** Gen 4/5 style, the engine default (`P_GBA_STYLE_SPECIES_GFX FALSE`). It's
+  consistent across every generation, and variants and fakemon are drawn to match it.
+- **Tilesets:** Gen 3 style (the Eien snow tilesets in `tools/eien_tileset/`).
+
 ## Themes
 
 `TODO(design)`: confirm. Drawn from the story decisions:
