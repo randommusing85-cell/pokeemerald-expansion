@@ -47,6 +47,20 @@ docs (game bible, characters, story outline) when the user agrees.
   ones (Haru, Yuki, Nami, Akira) give a keepsake that does nothing in Eien but appears in the
   epilogue game and brings back that friend's memory.
 - **Finale helpers (r2 6b):** Kaede always comes; high points bring Tetsu and Ren too.
+- **Quest storage (r3 1b):** a dedicated quest table in the save file (a few bits of state per
+  quest), read and written by new script commands (e.g. `setquest` / `checkquest`). A small,
+  isolated engine addition, built before the first quest. Scales to hundreds of quests and
+  keeps quests off the spare story flags.
+- **Relationship storage (r3 2b):** a byte per person in the same save table; no vars used.
+- **Missions tab (r3 3c):** title, a one-line hint of where to go, state (open / done /
+  closed), and who gave it; grouped by person, plus an "Eien" group for research, disasters
+  and lore. Filters (open only, by act) come once there are about 40 quests.
+- **Rewards (r3 4b):** items, TMs, keepsakes, lore, money and battle items. No Rare Candies or
+  EXP rewards, so the soft level caps hold.
+- **First milestone (r3 5b):** one quest per system: Haru's step 1 in Hamakaze, a research
+  quest from the professor (study Eien Poochyena on Route 1), Akira's step 1 around
+  Shimotsuki. Proves the quest table, the missions tab and points end to end. Fuyumi's
+  chain starts in the second milestone, still before the tournament.
 - **Missable (6c):** quests tied to people who die or leave close for good, but the journal
   notes the unfinished thing and the epilogue gives it back as a memory.
 
@@ -54,17 +68,15 @@ docs (game bible, characters, story outline) when the user agrees.
 
 _(none)_
 
-## Open questions (round 3)
+## Open questions (later)
 
-1. How quest state is stored so it scales to 80+.
-2. How relationship points are stored.
-3. What the missions tab shows.
-4. Rewards vs. soft level caps.
-5. Which quests are in the first milestone.
+- Each friend's chain, step by step (draft outlines; new lore as `TODO(design)`).
+- The journal's screen layout (three tabs), its own short brainstorm.
+- The letter trigger rule (after the next badge, on entering a town, ...).
+- Point thresholds: what counts as "enough" for a finale helper or a peak gift.
 
 ## Gaps and tensions
 
-- Side-quest rewards vs. soft level caps.
 - Yuki's scenes must read as friendship, not a second romance.
 - Quests with the professor and Fuyumi are missable by design; their chains need to start
   early enough that a player can finish them.
