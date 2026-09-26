@@ -46,12 +46,23 @@ Running notes for the mechanics brainstorm. Nothing here is decided until it's u
 - **Relationship feedback (r2 6b):** hinted in the journal, a line per person that changes;
   no numbers.
 
+- **Post-game is a memory epilogue (user's idea, r2 5; details r3):** back in our world he
+  plays the ordinary game from the prologue (r3 1b), and Eien seeps into it: a snowy route
+  that shouldn't be there, a Rock/Dark Poochyena. Only he notices. Post-game content
+  (Frontier-style battles, legendaries, finishing research) happens inside it.
+- **Memories come back three ways, collected in the journal (r3 2d):** blank pages refill as
+  post-game content is done; short flashes at places that mattered; finishing an Eien
+  species' research returns the memory tied to it.
+- **The game's world (r3 3b+d):** his friends are ordinary game NPCs with generic lines that
+  change slightly as he remembers. At the very end, a faint echo of Celebi recognizes him
+  (an echo: Celebi stays dead).
+- **The Nami look-alike (r3 4c):** the main ending shows a short glimpse of her; finishing the
+  epilogue gives the full meeting with the Lapras charm.
+- **He knows Gen 1-5 (r3 5b):** species from Gen 6 on are "???" like the Eien variants.
+
 ## Leaning
 
-- **Post-game as a memory epilogue (user's idea, r2 5):** back in our world, he plays a
-  Pokémon game that feels familiar. The post-game content (Frontier-style battles,
-  legendaries, finishing research) happens inside it, and he slowly, vaguely remembers
-  Eien. Details in round 3.
+_(none)_
 
 ## Research summary (round 0)
 
@@ -64,21 +75,25 @@ Running notes for the mechanics brainstorm. Nothing here is decided until it's u
 - **Open space:** research-task dex on GBA, restrained romance, isekai premise in an actual
   game, bond systems beyond Affection, choices that change what you can get.
 
-## Open questions (round 3)
+## Open questions (next rounds)
 
-1. What the game he plays in the epilogue is.
-2. How the memories come back.
-3. Who is in the epilogue's world.
-4. How the epilogue connects to the Nami look-alike.
-5. Which generations he knows.
+- Side quests for the journal's missions tab.
+- The aurora weather's battle effect; the thin-place terrain's exact rules.
+- How relationship points are earned (choices, optional scenes, tag battles) and which
+  friends get tag battles.
+- Level caps vs. optional side content.
+- Epilogue structure: hospital or home, where the Frontier and legendaries sit in the home
+  game, whether catching Arceus/Palkia "in a game" is deliberate.
+- The research screen's UI (custom GBA menu).
 
 ## Gaps and tensions
 
-- Celebi already follows the hero; follower Pokémon would make two followers.
-- The ending is fixed; choices can only change the road there, not the outcome.
-- "The party never dies" vs. a built-in Nuzlocke mode.
-- The journal goes blank at the end; if it holds the dex or quests, what happens post-game?
-- GBA budget: every new menu (quest log, research dex) is custom UI work.
+- Celebi already follows the hero; follower Pokémon would make two followers (parked).
+- GBA budget: the journal (three tabs) and the research screen are custom UI work.
+- In the epilogue he's back to knowing only real Pokémon, so research starts from "???"
+  again: a deliberate echo, but it could feel repetitive.
+- The story outline's open question (was it a coma dream?) stays open; the epilogue's
+  "Eien seeps into an ordinary game" keeps it ambiguous rather than answering it.
 
 ## Parked ideas
 
