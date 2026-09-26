@@ -21,7 +21,8 @@ docs: when the design changes, the doc changes in the same commit.
 **Vertical slice: prologue through gym 1.** Everything outside this scope waits.
 
 - [ ] Prologue: bedroom in our world, the accident, Palkia ([prologue](locations/prologue-bedroom.md))
-- [ ] Engine: remove the boy/girl choice, keep the naming screen
+- [x] Engine: remove the boy/girl choice, keep the naming screen (`EIEN_HERO_ALWAYS_MALE` in
+      `include/config/general.h`)
 - [ ] Hamakaze: he wakes in Eien, Celebi follows him, the Kashiwagi household, Haru, the
       journal ([Hamakaze](locations/hamakaze.md))
 - [ ] Kashiwagi's lab: pick a starter, Akira and Haru take the others, first battle with Akira
@@ -38,7 +39,7 @@ docs: when the design changes, the doc changes in the same commit.
       research (Route 1), Akira step 1 (Shimotsuki)
 - [x] Journal screen, bare: three tabs with placeholder art, replacing the PokéNav in the start
       menu; real data for the quests above, the Poochyena research and a few story entries
-- [ ] Shiny odds 1 in 4,096 (`SHINY_ODDS 16` in `include/constants/pokemon.h`)
+- [x] Shiny odds 1 in 4,096 (`SHINY_ODDS 16` in `include/constants/pokemon.h`)
 - [ ] Maps made in Porymap; map constants filled into the location docs
 
 ## Conventions
