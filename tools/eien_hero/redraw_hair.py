@@ -4,7 +4,7 @@
 Works on palette indices (the colors come from recolor.py). Reads the vanilla sprites kept in
 tools/eien_hero/vanilla/ and writes the files below.
 
-Overworld sheets (walking, running, bikes): heads drawn by hand below (OW_HEADS), placed on
+Overworld sheets (walking, running, bikes, surfing, fishing): heads drawn by hand below (OW_HEADS), placed on
 each frame where its cap is found (ANCHORS); hair uses 14 (light), 9 (mid), 4 (dark).
 Battle sprites: the hoodie's red panels move to the strap greys (10-11) except the Poké Ball,
 pixels of 9 (now hair) move to 10, and the head comes from an AI draft
@@ -12,7 +12,7 @@ pixels of 9 (now hair) move to 10, and the head comes from an AI draft
 snapped back to the pixel grid, aligned on the unchanged body, and used only around the old cap
 and where it drew hair, limited to hair, skin and outline colors. Hair uses 9 and 4.
 
-  graphics/object_events/pics/people/brendan/{walking,running,mach_bike,acro_bike}.png
+  graphics/object_events/pics/people/brendan/{walking,running,mach_bike,acro_bike,surfing,fishing}.png
   graphics/trainers/front_pics/brendan.png                 (battle front)
   graphics/trainers/back_pics/brendan.png                  (battle back, 4 frames)
   tools/eien_hero/redraw_hair.py
@@ -58,17 +58,21 @@ OW_HEADS = {
 }
 BLUE_HAIR = 8  # index Brendan's black hair shares with his trousers; repainted as hair below
 SKIN = (1, 2, 3, 4)
+# Hand touch-ups after the heads are placed: (sheet, frame) -> {(x, y): letter}.
+TOUCH_UPS = {
+    ("fishing", 1): {(26, 10): "e", (25, 11): "e", (26, 11): "o"},  # the rod's end, hidden by the cap before
+}
 
 # Every overworld sheet (walking, running, bikes) reuses the heads above. Each frame's cap is
 # found by a row of pixels that only the cap has, per facing; its position in the walking
 # frames (column, row) is where OW_HEADS sits, so the offset from there places the new head.
 ANCHORS = {
-    "down": (re.compile("kjnnnnjk"), 4, 17),     # the cap's brim
-    "up": (re.compile("ohii[id]{4}iiho"), 2, 17),  # the cap's back edge
+    "down": (re.compile("k[jk]nnnn[jk]k"), 4, 17),  # the cap's brim
+    "up": (re.compile("[ob]hii[id]{4}iih[ob]"), 2, 17),  # the cap's back edge (b: raised arms)
     "left": (re.compile("h[in][in]j"), 2, 15),   # the cap's peak
 }
 # The overworld sheets with Brendan's cap, and their frame width.
-OW_SHEETS = {"walking": 16, "running": 16, "mach_bike": 32, "acro_bike": 32}
+OW_SHEETS = {"walking": 16, "running": 16, "mach_bike": 32, "acro_bike": 32, "surfing": 32, "fishing": 32}
 LETTERS = "".join(sorted(KEY, key=KEY.get))  # index -> letter
 
 
@@ -83,8 +87,34 @@ def find_head(px, x0, width):
     return None
 
 
-def place_head(px, x0, width, facing, dx, dy):
+def head_outline():
+    """Per facing, the cells the walking frames' cap and the new head cover (walking layout).
+    Anything else in the cleared box that runs out of it (a fishing rod) is put back."""
+    walking = Image.open(os.path.join(HERE, "vanilla", "walking.png")).load()
+    outline = {}
+    for frame, facing in enumerate(("down", "up", "left")):
+        cells = {(x, y) for y in range(8, 18) for x in range(16) if walking[frame * 16 + x, y]}
+        cells |= {(x, y) for y, line in OW_HEADS[facing].items() for x, ch in enumerate(line) if ch != "."}
+        outline[facing] = cells
+    return outline
+
+
+def place_head(px, x0, width, facing, dx, dy, outline):
     fringe = 17 + dy
+    box = {(x, y) for y in range(8 + dy, fringe + 1) for x in range(max(0, dx), min(width, dx + 16))}
+    loose = {c for c in box if (c[0] - dx, c[1] - dy) not in outline[facing] and px[x0 + c[0], c[1]]}
+    # Of those, keep what runs out of the box above or to the side (a rod); stray bits of cap
+    # stay cleared. (Below the box is the body, which touches the cap anyway.)
+    def near(x, y):
+        return [(x + i, y + j) for i in (-1, 0, 1) for j in (-1, 0, 1) if (i, j) != (0, 0)]
+    todo = [c for c in loose if any(n not in box and 0 <= n[0] < width and 0 <= n[1] <= fringe and px[x0 + n[0], n[1]]
+                                    for n in near(*c))]
+    keep = {}
+    while todo:
+        c = todo.pop()
+        if c not in keep:
+            keep[c] = px[x0 + c[0], c[1]]
+            todo += [n for n in near(*c) if n in loose]
     for y in range(8 + dy, fringe + 1):
         for x in range(max(0, dx), min(width, dx + 16)):
             # Running and biking, the brim sits where the arms start: keep them.
@@ -96,6 +126,8 @@ def place_head(px, x0, width, facing, dx, dy):
                 if facing == "down" and row + dy == fringe and ch == "o" and px[x0 + dx + x, fringe] in SKIN:
                     continue
                 px[x0 + dx + x, row + dy] = KEY[ch]
+    for (x, y), v in keep.items():
+        px[x0 + x, y] = v
     # Hair below the cap line that used the trousers' blue: back of the head (up, left).
     if facing == "up":
         for y in (fringe + 1, fringe + 2):
@@ -110,6 +142,7 @@ def place_head(px, x0, width, facing, dx, dy):
 
 
 def redraw_overworld():
+    outline = head_outline()
     for name, width in OW_SHEETS.items():
         im = Image.open(os.path.join(HERE, "vanilla", f"{name}.png"))
         px = im.load()
@@ -117,7 +150,9 @@ def redraw_overworld():
             found = find_head(px, frame * width, width)
             if found is None:
                 raise SystemExit(f"{name} frame {frame}: no cap found")
-            place_head(px, frame * width, width, *found)
+            place_head(px, frame * width, width, *found, outline)
+            for (x, y), ch in TOUCH_UPS.get((name, frame), {}).items():
+                px[frame * width + x, y] = KEY[ch]
         im.save(os.path.join(REPO, f"graphics/object_events/pics/people/brendan/{name}.png"))
         print(f"{name}: {im.width // width} frames")
 
