@@ -4,7 +4,7 @@
 Works on palette indices (the colors come from recolor.py). Reads the vanilla sprites kept in
 tools/eien_hero/vanilla/ and writes the files below.
 
-Overworld sheets (walking, running, bikes, surfing, fishing): heads drawn by hand below (OW_HEADS), placed on
+Overworld sheets: heads drawn by hand below (OW_HEADS), placed on
 each frame where its cap is found (ANCHORS); hair uses 14 (light), 9 (mid), 4 (dark).
 Battle sprites: the hoodie's red panels move to the strap greys (10-11) except the Poké Ball,
 pixels of 9 (now hair) move to 10, and the head comes from an AI draft
@@ -12,7 +12,7 @@ pixels of 9 (now hair) move to 10, and the head comes from an AI draft
 snapped back to the pixel grid, aligned on the unchanged body, and used only around the old cap
 and where it drew hair, limited to hair, skin and outline colors. Hair uses 9 and 4.
 
-  graphics/object_events/pics/people/brendan/{walking,running,mach_bike,acro_bike,surfing,fishing}.png
+  graphics/object_events/pics/people/brendan/*.png                (every overworld sheet)
   graphics/trainers/front_pics/brendan.png                 (battle front)
   graphics/trainers/back_pics/brendan.png                  (battle back, 4 frames)
   tools/eien_hero/redraw_hair.py
@@ -67,12 +67,46 @@ TOUCH_UPS = {
 # found by a row of pixels that only the cap has, per facing; its position in the walking
 # frames (column, row) is where OW_HEADS sits, so the offset from there places the new head.
 ANCHORS = {
-    "down": (re.compile("k[jk]nnnn[jk]k"), 4, 17),  # the cap's brim
+    "down": (re.compile("[hk][jk]nnnn[fjk][hjk]"), 4, 17),  # the cap's brim
     "up": (re.compile("[ob]hii[id]{4}iih[ob]"), 2, 17),  # the cap's back edge (b: raised arms)
     "left": (re.compile("h[in][in]j"), 2, 15),   # the cap's peak
 }
 # The overworld sheets with Brendan's cap, and their frame width.
-OW_SHEETS = {"walking": 16, "running": 16, "mach_bike": 32, "acro_bike": 32, "surfing": 32, "fishing": 32}
+OW_SHEETS = {"walking": 16, "running": 16, "mach_bike": 32, "acro_bike": 32, "surfing": 32, "fishing": 32,
+             "field_move": 32, "watering": 32, "decorating": 16, "underwater": 32}
+
+# Frames whose head doesn't fit the three facings, drawn whole by hand:
+# (sheet, frame) -> (left column, top row, rows, mirror). In rows "." clears, "_" keeps the
+# pixel, a letter sets it. mirror=True flips the drawing across the 32-wide frame.
+THROW = ["..............",   # field move, throwing a Poké Ball: head tilted, 3/4 view
+         "..............",
+         "..oooooo......",
+         ".onnnnniio....",
+         "onnnniiiiio...",
+         "oinniiiiiio...",
+         "odiididiiiio..",
+         "_______iiido.."]
+# Underwater (own palette, tinted blue; seen from above): 8 is the dark hair, 5 mid, 15 outline.
+DIVE_BACK = ["............",
+             "....oooooo..",
+             "..ooeeheeoo.",
+             ".oehheehhho.",
+             ".ohhehhhhho.",
+             ".ohhhhhhhho."]
+DIVE_SIDE = ["............",
+             ".....oooo...",
+             "..ooeeehho..",
+             ".oeehhhehho.",
+             "ohehhhhhhhho",
+             "hhhhhhhhhho."]
+HAND_HEADS = {
+    ("field_move", 3): (11, 11, THROW, False),
+    ("field_move", 4): (10, 10, THROW, False),
+    ("underwater", 0): (10, 6, DIVE_BACK, False),
+    ("underwater", 1): (10, 5, DIVE_BACK, False),
+    ("underwater", 2): (10, 5, DIVE_SIDE, False),
+    ("underwater", 3): (10, 5, DIVE_SIDE, True),
+}
 LETTERS = "".join(sorted(KEY, key=KEY.get))  # index -> letter
 
 
@@ -147,6 +181,14 @@ def redraw_overworld():
         im = Image.open(os.path.join(HERE, "vanilla", f"{name}.png"))
         px = im.load()
         for frame in range(im.width // width):
+            if (name, frame) in HAND_HEADS:
+                left, top, rows, mirror = HAND_HEADS[(name, frame)]
+                for y, line in enumerate(rows):
+                    for x, ch in enumerate(line):
+                        if ch != "_":
+                            col = width - 1 - (left + x) if mirror else left + x
+                            px[frame * width + col, top + y] = KEY[ch]
+                continue
             found = find_head(px, frame * width, width)
             if found is None:
                 raise SystemExit(f"{name} frame {frame}: no cap found")
