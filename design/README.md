@@ -31,8 +31,9 @@ docs: when the design changes, the doc changes in the same commit.
 - [ ] Nami's first meeting, just after gym 1 (end of the slice)
 - [x] Species: Eien Torchic, Bulbasaur, Froakie, Poochyena ([variants](variants.md)); forms
       with placeholder sprites (`tools/eien_species/`)
-- [ ] Sprites for those 4 (front, back, icon, normal + shiny palettes). Done: all four
-      fronts, backs, icons, palettes and shinies. Placeholder: idle frames
+- [x] Sprites for those 4 (front, back, icon, normal + shiny palettes), all AI drafts
+      converted by `tools/eien_species/`. The idle motion is smaller than the originals';
+      hand animation can improve it later
 - [x] Community snow tileset, credited in `asset-credits.md` (`tools/eien_tileset/README.md`)
 - [x] Door behaviors/animations and tree-top layering for the Eien tilesets
 - [x] Quest table in the save file with `setquest` / `checkquest` script commands (quest

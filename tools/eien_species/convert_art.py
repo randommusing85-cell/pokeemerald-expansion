@@ -3,8 +3,8 @@
 
 For each species in PICKS:
   graphics/pokemon/eien/<species>/anim_front.png  the chosen front (design/art/eien_<species>/
-                                                  converted/), 2 frames; frame 2 is frame 1
-                                                  raised 1px (placeholder animation)
+                                                  converted/) and frame 2 (FRAME2_PICKS; else
+                                                  frame 1 raised 1px)
   graphics/pokemon/eien/<species>/normal.pal      the draft's 16 colors, shared by front and back
   graphics/pokemon/eien/<species>/shiny.pal       the chosen shiny draft (SHINY_PICKS), or an
                                                   automatic hue shift
@@ -12,7 +12,7 @@ For each species in PICKS:
                                                   placeholder: the original back sprite, each
                                                   color replaced by the draft color covering the
                                                   same pixels on the front
-Icons stay the originals for now. Species not in PICKS keep their placeholder palettes
+Icons are make_icons.py. Species not in PICKS keep their placeholder palettes
 (placeholder_palettes.py).
   tools/eien_species/convert_art.py
 """
@@ -56,6 +56,15 @@ SHINY_PICKS = {
     "froakie": "midnight.pal",
     "poochyena": "obsidian.pal",
 }
+# species: chosen front frame 2 (idle) in design/art/eien_<species>/frame2_drafts/, indexed with
+# the form's palette (design/art/eien_starters_drafts.md, "Frame 2 (idle)"). Species without
+# one get frame 1 raised 1px.
+FRAME2_PICKS = {
+    "torchic": "frame2_gemini3pro_c.png",
+    "bulbasaur": "frame2_blend_flash_0.png",
+    "froakie": "frame2_gemini3pro_c.png",
+    "poochyena": "frame2_gemini3pro_c.png",
+}
 SHINY_HUE = 0.5
 
 
@@ -73,7 +82,10 @@ def main():
         palette = sprite_prep.read_jasc(os.path.join(art, palette_file))
         palette = palette + [(0, 0, 0)] * (16 - len(palette))
         front.putpalette([c for rgb in palette for c in rgb] + [0] * (768 - 48))
-        sprite_prep.stack_frames(front).save(os.path.join(out, "anim_front.png"))
+        anim = sprite_prep.stack_frames(front)
+        if species in FRAME2_PICKS:
+            anim.paste(Image.open(os.path.join(REPO, "design", "art", f"eien_{species}", "frame2_drafts", FRAME2_PICKS[species])), (0, 64))
+        anim.save(os.path.join(out, "anim_front.png"))
 
         # Back: the original back sprite, each original color replaced by the draft color that
         # covers the same pixels on the front (the drafts keep the original's framing). Colors
