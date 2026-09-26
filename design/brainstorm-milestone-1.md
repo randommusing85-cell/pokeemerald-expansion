@@ -73,7 +73,7 @@ Those docs are the source of truth; this file is the record of how we got there.
 
 ## Leaning
 
-**Overworld sprites (proposed, awaiting the user's pick).** From the FRLG-style NPC megapack
+**Overworld sprites: decided (user kept all picks) and converted** (`tools/eien_npcs/`). From the FRLG-style NPC megapack
 (`tools/fetch_assets.py frlg_npc_megapack`); ids refer to the numbered contact sheet, file names
 are the pack's. Main characters avoid canon faces and trainer-class sprites used by generic
 trainers.

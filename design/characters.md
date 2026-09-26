@@ -90,3 +90,22 @@ each on-screen before he goes home. Keep these friendships clearly friendships.
   Came from a future where the world ended; can't jump again or fight. Dies in the final act
   protecting him from Minato's plan.
 - **Palkia:** the door. Brought him here; sends him home.
+
+## Overworld sprites
+
+Gen 3 style, from the FRLG-style NPC megapack, converted by `tools/eien_npcs/` (credits in
+`asset-credits.md`).
+
+| Character | Sprite |
+| --- | --- |
+| Player | Engine's Brendan for now (has walk, run, bike, surf, fishing). `TODO(design)`: a custom look for the isekai hero |
+| Haru | `OBJ_EVENT_GFX_EIEN_HARU` |
+| Akira | `OBJ_EVENT_GFX_EIEN_AKIRA` |
+| Nami | `OBJ_EVENT_GFX_EIEN_NAMI` |
+| Professor Kashiwagi | `OBJ_EVENT_GFX_EIEN_KASHIWAGI` |
+| Her husband | `OBJ_EVENT_GFX_EIEN_KASHIWAGI_HUSBAND` |
+| Fuyumi | `OBJ_EVENT_GFX_EIEN_FUYUMI` |
+| Celebi | `OBJ_EVENT_GFX_SPECIES(CELEBI)` (engine) |
+| Hamakaze townsfolk | `OBJ_EVENT_GFX_EIEN_FISHERMAN`, `_SAILOR`, `_VILLAGE_WOMAN`, `_SCHOOLBOY` |
+| Shimotsuki townsfolk | `OBJ_EVENT_GFX_EIEN_SNOW_TRAINER`, `_WORKER`, `_POKEFAN_M`, `_SOCIALITE` |
+| Nurse, Mart clerk | the engine's Emerald sprites |
