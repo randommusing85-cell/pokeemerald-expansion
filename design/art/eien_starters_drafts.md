@@ -68,3 +68,53 @@ All three lost Bulbasaur's open mouth and red eyes, as the brief asked (calm eye
   holes showed up here, but check highlights when cleaning up.
 - Each draft has its own palette; a final sprite needs one palette shared with its back sprite
   and a hand-picked shiny.
+
+## Round 2
+
+**Still proposals, not decided design.** Round-1 files are kept; round 2 adds `*_r2_a`,
+`*_r2_b` (Gemini 3 Pro image) and `*_r2_c` (Gemini 3.1 Flash image) per species, in the same
+`drafts/` and `converted/` folders. Contact sheet:
+[`eien_starters_contact_sheet_r2.png`](eien_starters_contact_sheet_r2.png).
+
+Same method and conversion as round 1 (one call per draft, no retries, all succeeded, all pass
+the GBA checks). Prompt changes:
+
+- The framing sentence now reads: "Keep the exact canvas framing and sprite size of the input:
+  the sprite must occupy the same area of the square, at the same scale and position, with the
+  same pose and outline, so it is still clearly {name}. Do not zoom in or enlarge it. Change
+  colours and details, not the silhouette."
+- Briefs, steered from round 1:
+  - Torchic: keep its own three-feather head tuft as feathers (not flames), proportions, outline
+    and pose; muted ash-grey/cream feathers; a small lantern-like glowing window on the
+    chest/belly with a pale teal / blue-violet flame; optionally a faint flicker at the tail tip.
+  - Bulbasaur: strong dark outline like the original, same pose and size; bulb partly
+    translucent with a green/teal/violet aurora glow, readable at 64x64; slightly cooler
+    blue-green body; calm half-closed eyes.
+  - Froakie: same size, crouch and framing, inside the same bounds; yellow eyes, sharper ninja
+    expression; frubbles as a frost/ice-crystal scarf; paler icy body with navy accents.
+
+The framing instruction worked: every round-2 draft kept the original's size and position.
+
+### Eien Torchic
+
+| Draft | Notes |
+|---|---|
+| `front_gemini3pro_r2_a` | Torchic outline and tuft kept. Cool grey body with cream tuft and chest, a small lantern window with a teal flame, a violet flicker at the tail. The pale, pupil-less eyes are the eeriest look of the three. Grey legs are dark and a bit heavy. |
+| `front_gemini3pro_r2_b` | **Pick.** The closest to the brief. It is exactly Torchic's shape, the warm ash/cream reads as "muted Torchic" rather than a different bird, the lantern window on the belly is clear at 64x64, and there's a faint tail flicker. Cute rather than eerie. |
+| `front_gemini31flash_r2_c` | Tuft kept, lantern window clear, but it added a pale wisp beside the tuft (against the brief) and the palette is darker and muddier. |
+
+### Eien Bulbasaur
+
+| Draft | Notes |
+|---|---|
+| `front_gemini3pro_r2_a` | Strong outline, vivid aurora bulb, but it grew extra leaves at the sides of the bulb, which makes it read like Ivysaur and widens the silhouette. |
+| `front_gemini3pro_r2_b` | **Pick.** Same pose, size and strong outline as the original. The bulb has a clear green-teal-violet aurora that reads at 64x64, the violet half-closed eyes are calm, and the body is cool blue-green. It shows the translucency least, so hand-painting a few see-through pixels might help. |
+| `front_gemini31flash_r2_c` | Most literally translucent (a netted, glassy bulb) but it added a brown stem tip, and the darker, greyer body with pale spots is less appealing. |
+
+### Eien Froakie
+
+| Draft | Notes |
+|---|---|
+| `front_gemini3pro_r2_a` | Right size and crouch, yellow eyes, sharp expression, crystal scarf. Very pale overall; navy only around the eyes and mouth. |
+| `front_gemini3pro_r2_b` | **Pick.** Same as r2_a but with navy hands and feet, which ground it and add contrast, giving the "hint of navy". The crystal scarf is tidy and the ninja glare is clear at 64x64. |
+| `front_gemini31flash_r2_c` | Pose and eyes OK, but the frubbles came out as scattered ice specks and stray pixels, noisy at 64x64. |
