@@ -57,8 +57,8 @@
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = sMonPalette_TorchicEien,
         .shinyPalette = sMonShinyPalette_TorchicEien,
-        .iconSprite = gMonIcon_Torchic,
-        .iconPalIndex = 0,
+        .iconSprite = sMonIcon_TorchicEien,
+        .iconPalIndex = 6,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(-1, 1, SHADOW_SIZE_S)
         FOOTPRINT(Torchic)
@@ -136,8 +136,8 @@
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = sMonPalette_BulbasaurEien,
         .shinyPalette = sMonShinyPalette_BulbasaurEien,
-        .iconSprite = gMonIcon_Bulbasaur,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 4,
+        .iconSprite = sMonIcon_BulbasaurEien,
+        .iconPalIndex = 6,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(1, -1, SHADOW_SIZE_S)
         FOOTPRINT(Bulbasaur)
@@ -211,8 +211,8 @@
         .backAnimId = BACK_ANIM_SHRINK_GROW,
         .palette = sMonPalette_FroakieEien,
         .shinyPalette = sMonShinyPalette_FroakieEien,
-        .iconSprite = gMonIcon_Froakie,
-        .iconPalIndex = 0,
+        .iconSprite = sMonIcon_FroakieEien,
+        .iconPalIndex = 6,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(2, 0, SHADOW_SIZE_S)
         FOOTPRINT(Froakie)
@@ -288,8 +288,8 @@
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = sMonPalette_PoochyenaEien,
         .shinyPalette = sMonShinyPalette_PoochyenaEien,
-        .iconSprite = gMonIcon_Poochyena,
-        .iconPalIndex = 2,
+        .iconSprite = sMonIcon_PoochyenaEien,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(0, 2, SHADOW_SIZE_M)
         FOOTPRINT(Poochyena)

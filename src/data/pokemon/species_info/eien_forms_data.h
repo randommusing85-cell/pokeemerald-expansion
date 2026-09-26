@@ -12,6 +12,12 @@ static const u32 sMonBackPic_FroakieEien[] = INCGFX_U32("graphics/pokemon/eien/f
 static const u32 sMonFrontPic_PoochyenaEien[] = INCGFX_U32("graphics/pokemon/eien/poochyena/anim_front.png", ".4bpp.smol");
 static const u32 sMonBackPic_PoochyenaEien[] = INCGFX_U32("graphics/pokemon/eien/poochyena/back.png", ".4bpp.smol");
 
+// Icons (tools/eien_species/make_icons.py): the starters use the Eien icon palette (6).
+static const u8 sMonIcon_TorchicEien[] = INCGFX_U8("graphics/pokemon/eien/torchic/icon.png", ".4bpp");
+static const u8 sMonIcon_BulbasaurEien[] = INCGFX_U8("graphics/pokemon/eien/bulbasaur/icon.png", ".4bpp");
+static const u8 sMonIcon_FroakieEien[] = INCGFX_U8("graphics/pokemon/eien/froakie/icon.png", ".4bpp");
+static const u8 sMonIcon_PoochyenaEien[] = INCGFX_U8("graphics/pokemon/eien/poochyena/icon.png", ".4bpp");
+
 static const u16 sMonPalette_TorchicEien[] = INCGFX_U16("graphics/pokemon/eien/torchic/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_TorchicEien[] = INCGFX_U16("graphics/pokemon/eien/torchic/shiny.pal", ".gbapal");
 static const u16 sMonPalette_BulbasaurEien[] = INCGFX_U16("graphics/pokemon/eien/bulbasaur/normal.pal", ".gbapal");
