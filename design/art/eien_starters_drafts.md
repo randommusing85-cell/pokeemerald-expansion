@@ -243,3 +243,75 @@ be an engine change, so it's not proposed here.
 **Findings:** Gemini 3 Pro kept both frames for Torchic, Froakie and Poochyena. Gemini 3.1 Flash
 redrew frame 2 bigger for two species. That's the reverse of the backs, where Flash kept the
 pose better. Frame 2 is the weak point: the models tend to paste the reference front into it.
+
+## Frame 2 (idle)
+
+**Proposals only, not decided design.** These are drafts for the second front animation frame,
+to replace the placeholder (frame 1 raised 1px) in
+`graphics/pokemon/eien/<species>/anim_front.png`. Nothing in `graphics/` was changed.
+
+**Review files:**
+- Contact sheet [`eien_frame2_contact_sheet.png`](eien_frame2_contact_sheet.png): original
+  f1, original f2, Eien f1, then the drafts, each labelled with how many pixels differ from
+  Eien f1 and where.
+- A looping preview per draft, `eien_<species>/frame2_drafts/<draft>_anim.gif`: f1/f2 at 400ms,
+  x3, green background.
+
+**Method:** an edit. Each call sent two images:
+- Image 1: the original species' frames 1 and 2 side by side, in `normal.pal`, 8x
+  (1024x512).
+- Image 2: Eien frame 1, 8x.
+
+**Drafts:**
+- Round 1: `frame2_gemini3pro_a` (`gemini-3-pro-image`) and `frame2_gemini31flash_b`
+  (`gemini-3.1-flash-image`).
+- Round 2, retried after round 1 barely moved anything: `_c` (Pro) and `_d` (Flash), with the
+  motion described explicitly.
+- Two 502 "upstream request failed" errors on Torchic; one retry fixed round 1. Torchic's Flash
+  `_d` failed twice and doesn't exist.
+
+**Conversion:** `sample_grid` (64), `background_mask`, then `sprite_prep.index` with the
+form's existing `normal.pal`. Front, frame 2 and back all share one palette. Output:
+`eien_<species>/frame2_drafts/<draft>.png` (64x64 indexed), raw model output in
+`frame2_drafts/raw/`.
+
+**Prompt (round 1):**
+> Image 1 shows the original {name}'s two idle animation frames side by side (frame 1 left,
+> frame 2 right), 64x64 pixel art each, enlarged 8x; note exactly what changes from frame 1 to
+> frame 2. Image 2 is a regional variant's frame 1 (Eien {name}), 64x64 enlarged 8x. Draw the
+> regional variant's frame 2: identical to image 2 in design, colours, size, outline and
+> position, changing ONLY what changes between the two frames in image 1 (the same small
+> motion). Same canvas framing as image 2: a single 64x64 sprite enlarged 8x, not zoomed or
+> moved. Pixel art with crisp square pixels, no anti-aliasing, no blur. Plain flat pure white
+> background, nothing else, no text. Output a square image.
+
+**Round 2 change:** "(the same small motion)" became "(the same motion)", followed by a
+description of the original's motion and its size. For example, Poochyena: "lowers its head
+and opens its mouth in a snarl, the body and tail shift. About 770 pixels change; it is a
+clear pose change". Then: "Make the regional variant move the same way and by the same amount,
+keeping all its own design details [...] on the moved parts."
+
+**Key finding:** the original frame 2s aren't small tweaks. 529-850 pixels change: Torchic
+leans, Bulbasaur rears up, Froakie shifts into a hop, Poochyena lowers its head. The models
+either copied frame 1 with a tiny local change (5-150 px in round 1) or matched the motion but
+redrew the design (Bulbasaur `_d` and `_c`). No draft matches both the motion and the design.
+
+| Species | Draft | Differs | Notes |
+|---|---|---|---|
+| Torchic | `frame2_gemini3pro_c` | 240 px | **Pick.** A slight lean and a leg change across the whole height, with the design unchanged. Much less motion than the original's lean. |
+| Torchic | `frame2_gemini31flash_b` | 122 px | Small leg and feet shuffle only. |
+| Torchic | `frame2_gemini3pro_a` | 30 px | Feet only; almost a still. |
+| Bulbasaur | `frame2_gemini31flash_b` | 26 px | **Pick (safe).** Mouth opens, nothing else. The design is exactly frame 1. It gives only the mouth part of the original's rear-up, but it reads as a real "breath/roar" in the GIF. |
+| Bulbasaur | `frame2_gemini31flash_d` | 836 px | Matches the rear-up motion and size of the original (850 px), but redraws the design: a bigger violet bulb and a different body shade. Useful as a pose reference for a hand redraw. |
+| Bulbasaur | `frame2_gemini3pro_c` | 1180 px | Mouth open, but redrawn bigger (zoomed), so it jumps in size. Not usable. |
+| Bulbasaur | `frame2_gemini3pro_a` | 75 px | Feet shuffle only. |
+| Froakie | `frame2_gemini3pro_c` | 264 px | **Pick.** The legs shift into a wider, lower hop stance with the upper body and design unchanged. Less motion than the original, but it reads. |
+| Froakie | `frame2_gemini31flash_d` | 181 px | Similar wide-leg stance; also reasonable. |
+| Froakie | `frame2_gemini3pro_a` / `frame2_gemini31flash_b` | 80 / 33 px | Feet only. |
+| Poochyena | `frame2_gemini3pro_c` | 139 px | **Pick.** Head and snout lower and the mouth opens into a snarl, which is the original's motion in miniature. The design is otherwise identical. |
+| Poochyena | `frame2_gemini3pro_a` | 150 px | Tail/back change only, not the original's head motion. |
+| Poochyena | `frame2_gemini31flash_d` / `frame2_gemini31flash_b` | 34 / 5 px | Mouth only / effectively a copy of frame 1. |
+
+**Recommendation:** the picks are usable as placeholders better than the 1px raise, but a
+full-size motion like the originals needs hand work. Start from the pick and move parts by
+hand, using Bulbasaur `_d` as a pose guide.
