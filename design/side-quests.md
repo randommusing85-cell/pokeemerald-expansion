@@ -27,13 +27,34 @@ Decided in [brainstorm-quests-relationships.md](brainstorm-quests-relationships.
   unfinished thing, and the epilogue gives it back as a memory.
 - **Rewards:** items, TMs, keepsakes, lore, money, battle items. Never Rare Candies or EXP.
 - **Size:** about 25 at launch; the system is built to grow to 80+ (Unbound's scale).
-- **Storage:** a quest table in the save file (a few bits of state per quest, a byte of
-  points per person), with `setquest` / `checkquest` script commands. No spare vars used.
+- **Storage:** a quest table in the save file (a byte per quest: state and step; a byte of
+  points per person; a bit per person for letters). No spare vars or flags used. See
+  [Scripting](#scripting).
 - **Missions tab:** title, one-line hint, state (open / done / closed) and who gave it;
   grouped by person, plus an "Eien" group. Filters once there are about 40 quests.
 
 `TODO(design)`: point thresholds (what counts as "enough"); the letter trigger rule; which
 friends get tag battles.
+
+## Scripting
+
+The table is `gSaveBlock1Ptr->eienQuests` (`src/eien_quests.c`), with room for 128 quests
+and 16 people (148 bytes of SaveBlock1). Ids are in `include/constants/eien_quests.h`:
+append new `QUEST_*` / `PERSON_*` at the end and never renumber them, since saves store them
+by number. Every argument can be a number or a var.
+
+| Command | Does |
+| --- | --- |
+| `setquest QUEST, QUEST_STATE_*` | Sets the state: `NONE` (hidden), `OPEN`, `DONE`, `CLOSED` (missed) |
+| `checkquest QUEST` | `VAR_RESULT` = the state |
+| `setqueststep QUEST, n` | Sets the step (0-63) the journal's log shows |
+| `checkqueststep QUEST` | `VAR_RESULT` = the step |
+| `addpoints PERSON, n` / `removepoints PERSON, n` | Changes relationship points (kept within 0-255) |
+| `checkpoints PERSON` | `VAR_RESULT` = the points |
+| `setletter PERSON, TRUE/FALSE` | Marks or clears a letter in the journal |
+| `checkletter PERSON` | `VAR_RESULT` = TRUE if a letter is waiting |
+
+Tests: `make check TESTS="(Eien quests)"` (`test/eien_quests.c`).
 
 ## Chains
 

@@ -3011,3 +3011,66 @@
 	getbraillestringwidth \text
 	call EventScript_BrailleCursorWaitButton
 	.endm
+
+	@ Eien's quest table and relationship points (src/eien_quests.c, design/side-quests.md).
+	@ Quest and person arguments are QUEST_* / PERSON_* from constants/eien_quests.h; every
+	@ argument can also be a var.
+
+	@ Sets a quest's state (QUEST_STATE_NONE / OPEN / DONE / CLOSED). Its step is kept.
+	.macro setquest quest:req, state:req
+	callnative ScrCmd_setquest, requests_effects=1
+	.2byte \quest
+	.2byte \state
+	.endm
+
+	@ Sets VAR_RESULT to a quest's state (QUEST_STATE_*).
+	.macro checkquest quest:req
+	callnative ScrCmd_checkquest, requests_effects=1
+	.2byte \quest
+	.endm
+
+	@ Sets a quest's step (0-63), which the journal's log uses. Its state is kept.
+	.macro setqueststep quest:req, step:req
+	callnative ScrCmd_setqueststep, requests_effects=1
+	.2byte \quest
+	.2byte \step
+	.endm
+
+	@ Sets VAR_RESULT to a quest's step.
+	.macro checkqueststep quest:req
+	callnative ScrCmd_checkqueststep, requests_effects=1
+	.2byte \quest
+	.endm
+
+	@ Adds relationship points to a person; kept within 0-255.
+	.macro addpoints person:req, amount:req
+	callnative ScrCmd_addpoints, requests_effects=1
+	.2byte \person
+	.2byte \amount
+	.endm
+
+	@ Removes relationship points from a person; never below 0.
+	.macro removepoints person:req, amount:req
+	callnative ScrCmd_removepoints, requests_effects=1
+	.2byte \person
+	.2byte \amount
+	.endm
+
+	@ Sets VAR_RESULT to a person's relationship points.
+	.macro checkpoints person:req
+	callnative ScrCmd_checkpoints, requests_effects=1
+	.2byte \person
+	.endm
+
+	@ Marks (TRUE) or clears (FALSE) a letter from a person in the journal.
+	.macro setletter person:req, pending:req
+	callnative ScrCmd_setletter, requests_effects=1
+	.2byte \person
+	.2byte \pending
+	.endm
+
+	@ Sets VAR_RESULT to TRUE if a letter from a person is waiting.
+	.macro checkletter person:req
+	callnative ScrCmd_checkletter, requests_effects=1
+	.2byte \person
+	.endm
