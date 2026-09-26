@@ -71,6 +71,9 @@ in the code), the back sprites, icons and shinies.
   Tomb (16); otherwise the original learnset.
 - **Evolves** into Eien Mightyena (Rock/Dark) by leveling up to 18+ in a shrine area.
 
-`TODO(design)`: Eien Mightyena (stats, look; Poochyena doesn't evolve until it exists), Eien
-Poochyena's final look (the sprite test is a proposal), which map sections count as shrine
-areas.
+- **Sprite:** the front is the sprite test's draft ([art/eien_poochyena/](art/eien_poochyena/README.md)),
+  converted by `tools/eien_species/convert_art.py`; the back, idle frame, shiny and icon are
+  placeholders, as for the starters.
+
+`TODO(design)`: Eien Mightyena (stats, look; Poochyena doesn't evolve until it exists), which
+map sections count as shrine areas, Eien Poochyena's back sprite, icon and shiny.

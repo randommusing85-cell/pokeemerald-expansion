@@ -1,7 +1,6 @@
 // Eien regional forms (design/variants.md), generated from the original entries and then
-// edited by hand. Included inside gSpeciesInfo by species_info.h; their learnsets, palettes
-// and form tables are in eien_forms_data.h. Sprites are the originals with placeholder
-// palettes until the Eien art is drawn. TODO(design): evolutions (the evolved forms don't
+// edited by hand. Included inside gSpeciesInfo by species_info.h; their learnsets, sprites,
+// palettes and form tables are in eien_forms_data.h. TODO(design): evolutions (the evolved forms don't
 // exist yet, so these don't evolve).
 
 #if P_FAMILY_TORCHIC
@@ -274,7 +273,7 @@
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Poochyena,
+        .frontPic = sMonFrontPic_PoochyenaEien,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 40) : MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 12 : 11,
         .frontAnimFrames = ANIM_FRAMES(
@@ -283,7 +282,7 @@
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Poochyena,
+        .backPic = sMonBackPic_PoochyenaEien,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(64, 48),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 9 : 11,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,

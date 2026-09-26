@@ -2,7 +2,7 @@
 """Turn the chosen draft front sprites into the Eien forms' sprites (design/variants.md).
 
 For each species in PICKS:
-  graphics/pokemon/eien/<species>/anim_front.png  the chosen draft (design/art/eien_<species>/
+  graphics/pokemon/eien/<species>/anim_front.png  the chosen front (design/art/eien_<species>/
                                                   converted/), 2 frames; frame 2 is frame 1
                                                   raised 1px (placeholder animation)
   graphics/pokemon/eien/<species>/normal.pal      the draft's 16 colors, shared by front and back
@@ -29,11 +29,13 @@ sys.path.insert(0, HERE)
 import sprite_prep  # noqa: E402
 from placeholder_palettes import LOOKS, shift  # noqa: E402
 
-# species: chosen draft (design/art/eien_starters_drafts.md)
+# species: (chosen front sprite, its palette) in design/art/eien_<species>/converted/
+# (design/art/eien_starters_drafts.md, design/art/eien_poochyena/README.md)
 PICKS = {
-    "torchic": "front_gemini3pro_r2_b",
-    "bulbasaur": "front_gemini3pro_r2_b",
-    "froakie": "front_gemini3pro_r2_b",
+    "torchic": ("front_gemini3pro_r2_b.png", "front_gemini3pro_r2_b.pal"),
+    "bulbasaur": ("front_gemini3pro_r2_b.png", "front_gemini3pro_r2_b.pal"),
+    "froakie": ("front_gemini3pro_r2_b.png", "front_gemini3pro_r2_b.pal"),
+    "poochyena": ("anim_front.png", "normal.pal"),  # the sprite test's front
 }
 SHINY_HUE = 0.5
 
@@ -43,13 +45,13 @@ def lightness(rgb):
 
 
 def main():
-    for species, draft in PICKS.items():
+    for species, (front_file, palette_file) in PICKS.items():
         art = os.path.join(REPO, "design", "art", f"eien_{species}", "converted")
         out = os.path.join(REPO, "graphics", "pokemon", "eien", species)
         os.makedirs(out, exist_ok=True)
 
-        front = Image.open(os.path.join(art, f"{draft}.png"))
-        palette = sprite_prep.read_jasc(os.path.join(art, f"{draft}.pal"))
+        front = Image.open(os.path.join(art, front_file)).crop((0, 0, 64, 64))  # frame 1
+        palette = sprite_prep.read_jasc(os.path.join(art, palette_file))
         palette = palette + [(0, 0, 0)] * (16 - len(palette))
         front.putpalette([c for rgb in palette for c in rgb] + [0] * (768 - 48))
         sprite_prep.stack_frames(front).save(os.path.join(out, "anim_front.png"))
@@ -84,7 +86,7 @@ def main():
             problems = sprite_prep.check(os.path.join(out, name), size)
             if problems:
                 raise SystemExit(f"{species}/{name}: {', '.join(problems)}")
-        print(f"{species}: {draft} -> graphics/pokemon/eien/{species}/")
+        print(f"{species}: {front_file} -> graphics/pokemon/eien/{species}/")
 
 
 if __name__ == "__main__":

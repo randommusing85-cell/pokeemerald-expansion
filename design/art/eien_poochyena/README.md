@@ -1,7 +1,8 @@
 # Sprite test: Eien Poochyena
 
-A test of the sprite workflow on one variant (Rock/Dark shrine guardian dog). **Not in the
-game yet**: the species doesn't exist in code, and the look is a proposal, not decided design.
+A test of the sprite workflow on one variant (Rock/Dark shrine guardian dog). The front
+sprite is now Eien Poochyena's in the game (`tools/eien_species/convert_art.py`); its back,
+icon and shiny there are placeholders, not the ones from this test.
 
 ## How it was made
 
