@@ -31,6 +31,10 @@ Route 1 and gym 1 levels are proposed defaults; adjust after playtesting.
 - **Journal** (key item): from the start of Act 1. Tabs for the story, research and missions
   (see the game bible's Mechanics). Its pages go blank near the end and refill in the
   epilogue.
+- **No PokéNav.** The journal takes its place in the start menu; letters replace Match Call.
+- **Town Map:** its own key item, Haru's first quest reward.
+- **Vs. Seeker** for trainer rematches (`I_VS_SEEKER_CHARGING`).
+- No contests or ribbons.
 - `TODO(design)`: field moves and other key items.
 - **Field moves without HMs:** `TODO(design)`: which key item or Pokémon does them.
 - **TMs are reusable.**

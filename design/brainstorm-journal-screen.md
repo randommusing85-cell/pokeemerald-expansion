@@ -20,6 +20,9 @@ Running notes. Nothing is decided until it's under **Decided**.
 
 ## Decided
 
+Promoted into `game-bible.md` (Mechanics, the journal), `progression.md` and the
+milestone list in `README.md`.
+
 - **Look (1c):** a hybrid: notebook art (paper background, tab bookmarks on the edge) with
   Bag-style controls and the normal font. A handwriting font can come later.
 - **Three tabs (2a):** Story, Research, Missions. People are the groups inside Missions (each

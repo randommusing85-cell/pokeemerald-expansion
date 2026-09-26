@@ -79,9 +79,22 @@ on what other hacks and fan games do.
   battling it gives the typing, catching it gives the full entry, and extra steps (seeing a
   certain move, catching one at night) add lore notes. Shrine tablets, folk tales and the
   professor's notes add lore too. `TODO(design)`: the steps per species.
-- **The journal** (key item) has three tabs: the story so far, research, and missions (side
-  quests). It also holds a line per friend that changes with the relationship (below). Its
-  pages go blank at the end; the epilogue fills them back in.
+- **The journal** replaces the PokéNav in the start menu. It looks like an open notebook (the
+  list on the left page, details on the right, bookmark tabs on the edge) with Bag-style
+  controls. Three tabs:
+  - **Story:** a "what's next" line, his entry for each story beat, then lore pages (shrine
+    tablets, folk tales).
+  - **Research:** each species' research steps and notes. The data itself is in the
+    Pokédex, which shows "???" until each tier unlocks.
+  - **Missions:** side quests grouped by person (each header shows that person's line) plus
+    an "Eien" group. Letters show as a "new" marker. A mission shows its hint, who gave it,
+    its state and a short log; rewards stay hidden. Missed ones stay, greyed, with one line
+    in his voice.
+
+  The first page ("If I start forgetting, read this.") shows the first time it's opened, then
+  stays as the cover. At the end the entries fade out one by one and the pages stay blank;
+  in the epilogue they write themselves back in. Screen details:
+  [brainstorm-journal-screen.md](brainstorm-journal-screen.md).
 - **Celebi's glimpses.** In scripted story moments Celebi shows a short vision of what's
   coming (a rival's lead, a disaster site, a hidden path). Talking to Celebi gives a hint
   about where to go next. Both get vaguer as Celebi weakens.
