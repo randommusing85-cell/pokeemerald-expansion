@@ -10,7 +10,8 @@ Where he wakes in Eien, finds a home with the Kashiwagi family, and gets his fir
 
 ## Look
 
-A coastal fishing village ("sea wind"), snowy. Needs the community snow tileset.
+A coastal fishing village ("sea wind"), snowy. Tilesets: `gTileset_General` + `gTileset_EienCoast`
+(beach house, Japanese wooden house, small houses).
 `TODO(design)`: landmarks, music.
 
 ## Story beats here

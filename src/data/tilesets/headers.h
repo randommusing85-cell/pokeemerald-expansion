@@ -833,6 +833,40 @@ const struct Tileset gTileset_UnionRoom =
     .callback = NULL,
 };
 
+
+// Eien (built from tilesets_src/ by tools/eien_tileset)
+const struct Tileset gTileset_EienTown =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_EienTown,
+    .palettes = gTilesetPalettes_EienTown,
+    .metatiles = gMetatiles_EienTown,
+    .metatileAttributes = gMetatileAttributes_EienTown,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_EienCoast =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_EienCoast,
+    .palettes = gTilesetPalettes_EienCoast,
+    .metatiles = gMetatiles_EienCoast,
+    .metatileAttributes = gMetatileAttributes_EienCoast,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_EienShrine =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_EienShrine,
+    .palettes = gTilesetPalettes_EienShrine,
+    .metatiles = gMetatiles_EienShrine,
+    .metatileAttributes = gMetatileAttributes_EienShrine,
+    .callback = NULL,
+};
 #else
 
 // FRLG tilesets

@@ -11,6 +11,7 @@ The first route. Gives every starter a way to handle the Ice gym (Eien Poochyena
 ## Look
 
 Coast near Hamakaze, turning into snowy fields, then a small shrine before Shimotsuki.
+Tilesets: `gTileset_General` + `gTileset_EienShrine` (snow cliffs, ledges, the pagoda).
 
 ## Story beats here
 

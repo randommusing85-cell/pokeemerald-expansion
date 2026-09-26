@@ -1,6 +1,7 @@
 # Asset candidates
 
-Community assets that might fit Eien. None are in the game yet. Once an asset is used, move
+Community assets that might fit Eien. The snow, Johto and Ekat beach-house tiles are now in the
+game (see `asset-credits.md`); the rest are not. Once an asset is used, move
 it to `asset-credits.md` with its credits.
 
 ## Downloaded and checked

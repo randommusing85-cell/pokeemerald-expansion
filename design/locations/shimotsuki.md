@@ -10,7 +10,8 @@ The first gym town. Akira shows him his mother's gym; he earns the first badge.
 
 ## Look
 
-A snowy inland town ("frost month"). `TODO(design)`: landmarks, music.
+A snowy inland town ("frost month"). Tilesets: `gTileset_General` + `gTileset_EienTown`
+(houses, Pokémon Center, Mart, Gym). `TODO(design)`: landmarks, music.
 
 ## Story beats here
 
