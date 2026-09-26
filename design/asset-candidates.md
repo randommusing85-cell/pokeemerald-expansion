@@ -20,6 +20,7 @@ Porymap-ready tilesets from plain PNG layers and handles the palette packing.
 | [Gen III Johto Tile Set](https://eeveeexpo.com/resources/1858/) | Alistair (aka TheWildDeadHero) | "Credit if used please" / "Credit Required" | Loose 1x sheet, made within GBA limits | Japanese-style houses, a five-story pagoda (shrine landmark), flower beds, water |
 | [Ekat's Public Gen 3 Tilesets](https://eeveeexpo.com/resources/621/) | Ekat + per-set credits in `Credits.txt` (e.g. Gen 3 Snow: Ekat, Heartlessdragoon; Pokémon Center - Winter: Ekat, Vurtax) | Credit per set. The pack page states no commercial limit; Ekat's DeviantArt snow post says non-commercial. Treat as non-commercial. | 1x sheets | Gen 3 Snow, Snow_1-6 and Ice autotiles, Snowpoint Temple (shrine / door mountain), Beach Houses (Hamakaze), Mt. Moon Village, winter Pokémon Center interior |
 | [Free Fakemon Pack](https://eeveeexpo.com/resources/1517/) | Mikitari | "Feel free to use in any project", with credit | 120 sprites: front, back, icons, and shiny front/back/icons. Gen 4 style (matches this engine's default sprites), exact 2x (halves to fit 64x64) | Fakemon, including a few regional forms of real Pokémon and several ice-themed designs |
+| [Accurate FRLG-style NPC Megapack](https://eeveeexpo.com/resources/823/) | Compiled by SoulfulLex; credit the original spriters listed in its `MegaPack Readme.txt` (e.g. Kalarie, MrDollSteak, Spherical Ice, Aveontrainer, Avatar, Daman, Pokésho, Poffin_Case, Delta231, Mimi, M.vit, Kimoras, Mr. Gela, Solo993, hyo-oppa) | "I'd rather you credit the original Spriters." Credit the spriter of each sprite used | 248 RMXP overworld sheets (4 directions x 4 frames, 32x48 at 2x: halves to 16x24, fits the 16x32 GBA frame); 45 have more than 15 colors and need reducing. Playable-character trainer sprites are 2x (128x128) or Gen 4 size (160x160) | Gen 3 overworld NPCs: FRLG trainers, RSE-style townsfolk, HGSS and DPPt characters redrawn in FR style (incl. a snow Ace Trainer), anime characters. No trainer battle sprites for NPC classes (the engine already has FRLG/RSE ones) |
 | [Gen 1 Type Changed Pokemon](https://digi5932.itch.io/gen-1-type-changed-pokemon) | digi5932 | "Free to use this pack for all projects, credit would be appreciated but not required." No AI used. | 300 sprites (front + back, all 151), 64x64 indexed, ROM-ready | Bases for Gen 1 variants. Its types differ from ours (e.g. its Bulbasaur is Ground/Ice) and it has none of our 4 milestone Pokémon |
 
 Not reachable from the build environment: PokéCommunity (HTTP 403), so its threads below are
@@ -92,7 +93,4 @@ their work redistributed in other packs. The Decades 3.0.0 repo folders (`Graphi
 wholesale**: take each sprite from its original source, under that artist's terms. The rest of the
 pack (PBS files, FL's Character Selector, Animated Trainer Intros, ENLS music) is Essentials-only.
 
-Better fit found while checking: [Accurate FRLG-style NPC Megapack](https://eeveeexpo.com/resources/823/)
-(compiled by SoulfulLex): Gen 3 (FRLG) style overworlds and trainer front/back sprites across
-generations, matching this engine's native size. The compiler asks that the original spriters be
-credited (listed in the pack).
+Chosen instead: the Accurate FRLG-style NPC Megapack (Gen 3 style; see "Downloaded and checked").

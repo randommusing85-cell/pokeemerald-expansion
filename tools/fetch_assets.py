@@ -29,6 +29,7 @@ PACKS = {
     "ekat_tiles": ("eeveeexpo", 621),   # Ekat + others, 81 Gen 3 tilesets (1x)
     "mikitari_fakemon": ("eeveeexpo", 1517),  # Mikitari, Free Fakemon Pack (7z, 2x)
     "gen1_type_changed": ("itch", "https://digi5932.itch.io/gen-1-type-changed-pokemon"),
+    "frlg_npc_megapack": ("eeveeexpo", 823),  # SoulfulLex (compiler), FRLG-style NPCs; credit the spriters
 }
 
 opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
