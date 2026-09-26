@@ -6,7 +6,8 @@ For each species in PICKS:
                                                   converted/), 2 frames; frame 2 is frame 1
                                                   raised 1px (placeholder animation)
   graphics/pokemon/eien/<species>/normal.pal      the draft's 16 colors, shared by front and back
-  graphics/pokemon/eien/<species>/shiny.pal       an automatic hue shift (placeholder)
+  graphics/pokemon/eien/<species>/shiny.pal       the chosen shiny draft (SHINY_PICKS), or an
+                                                  automatic hue shift
   graphics/pokemon/eien/<species>/back.png        the chosen back draft (BACK_PICKS), or else a
                                                   placeholder: the original back sprite, each
                                                   color replaced by the draft color covering the
@@ -46,6 +47,14 @@ BACK_PICKS = {
     "bulbasaur": "back_gemini31flash_b.png",
     "froakie": "back_gemini31flash_b.png",
     "poochyena": "back_gemini31flash_b.png",
+}
+# species: chosen shiny palette in design/art/eien_<species>/shiny_drafts/ (shiny_drafts.py).
+# Species without one get an automatic hue shift.
+SHINY_PICKS = {
+    "torchic": "night_lantern.pal",
+    "bulbasaur": "twilight.pal",
+    "froakie": "midnight.pal",
+    "poochyena": "obsidian.pal",
 }
 SHINY_HUE = 0.5
 
@@ -94,7 +103,11 @@ def main():
         new_back.save(os.path.join(out, "back.png"))
 
         sprite_prep.write_jasc(os.path.join(out, "normal.pal"), palette)
-        sprite_prep.write_jasc(os.path.join(out, "shiny.pal"), sprite_prep.shiny_palette(palette, SHINY_HUE, 0.0))
+        if species in SHINY_PICKS:
+            shiny = sprite_prep.read_jasc(os.path.join(REPO, "design", "art", f"eien_{species}", "shiny_drafts", SHINY_PICKS[species]))
+        else:
+            shiny = sprite_prep.shiny_palette(palette, SHINY_HUE, 0.0)
+        sprite_prep.write_jasc(os.path.join(out, "shiny.pal"), shiny)
         for name, size in (("anim_front.png", (64, 128)), ("back.png", (64, 64))):
             problems = sprite_prep.check(os.path.join(out, name), size)
             if problems:

@@ -57,11 +57,13 @@ Otherwise they keep the original learnset.
 The backs are AI drafts too (`back_gemini31flash_b`, an edit of each original back with the
 Eien front as reference). The icons are AI drafts as well; the starters' use an Eien icon palette
 (icon palette 6, added because the six vanilla ones have no teal, violet or warm ash).
-Placeholders still: the idle frame (frame 1 raised 1px) and the shinies (an automatic hue
-shift).
+Shinies are deliberate recolors (`tools/eien_species/shiny_drafts.py`): Torchic "night
+lantern" (slate body, violet flame), Bulbasaur "twilight" (purple body, gold bulb), Froakie
+"midnight" (dark navy body, white frost scarf). Placeholder still: the idle frame (frame 1
+raised 1px).
 
 `TODO(design)`: evolved forms (they don't evolve until those exist), dex entries (drafts are
-in the code), shinies.
+in the code).
 
 ## Others
 
@@ -76,8 +78,8 @@ in the code), shinies.
 
 - **Sprite:** the front is the sprite test's draft ([art/eien_poochyena/](art/eien_poochyena/README.md)),
   converted by `tools/eien_species/convert_art.py`; the back is an AI draft like the
-  starters'; its icon is an AI draft in the vanilla icon palette 5; the idle frame and shiny
-  are placeholders.
+  starters'; its icon is an AI draft in the vanilla icon palette 5; its shiny is "obsidian"
+  (black stone, bright violet cracks); the idle frame is a placeholder.
 
 `TODO(design)`: Eien Mightyena (stats, look; Poochyena doesn't evolve until it exists), which
-map sections count as shrine areas, Eien Poochyena's shiny.
+map sections count as shrine areas.

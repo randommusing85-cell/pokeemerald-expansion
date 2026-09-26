@@ -12,8 +12,9 @@ The Eien regional forms (design/variants.md) are defined in:
 The starters' sprites come from the chosen AI drafts; species without chosen art reuse the
 original sprites with placeholder palettes:
 
-  tools/eien_species/convert_art.py            # PICKS / BACK_PICKS: drafts -> graphics/pokemon/eien/<species>/
+  tools/eien_species/convert_art.py            # PICKS / BACK_PICKS / SHINY_PICKS -> graphics/pokemon/eien/<species>/
                                                # (front, back, palette, shiny)
+  tools/eien_species/shiny_drafts.py           # shiny recolor concepts and their contact sheet
   tools/eien_species/placeholder_palettes.py   # the rest: recolored original palettes
   tools/eien_species/make_icons.py             # icons, and the Eien icon palette (pal6.pal)
 
