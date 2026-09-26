@@ -23,13 +23,34 @@ _(none yet)_
 
 _(none yet)_
 
-## Open questions
+## Research summary (round 0)
 
-_(filled in after round 1)_
+- **Saturated (baseline, not selling points):** difficulty modes, level caps, Mega/Z/Dynamax/
+  Tera, reusable TMs, DexNav, followers, dark cult stories, big fakemon dexes, built-in
+  Nuzlocke/randomizer.
+- **Proven but less common:** open world with scaled gyms (Crystal Clear), mission log
+  (Unbound), karma and relationship points (Rejuvenation), roguelite runs (Emerald Rogue),
+  battle field effects (Reborn/Rejuvenation), Delta species (Insurgence).
+- **Open space:** research-task dex on GBA, restrained romance, isekai premise in an actual
+  game, bond systems beyond Affection, choices that change what you can get.
+
+## Open questions (round 1)
+
+1. Signature mechanic: fan knowledge vs. Eien's unknowns / bonds / thin-place fields /
+   Celebi's glimpses.
+2. What the journal does: mission log / research dex / story memory / all three.
+3. Choices and relationships with a fixed ending.
+4. Battle twist: none / Eien weather and thin-place terrain / one lore-tied gimmick.
+5. Difficulty baseline: modes, level caps, Nuzlocke option.
+6. Quality-of-life set: followers, DexNav, reusable TMs, field moves without HMs.
 
 ## Gaps and tensions
 
-_(filled in after round 1)_
+- Celebi already follows the hero; follower Pokémon would make two followers.
+- The ending is fixed; choices can only change the road there, not the outcome.
+- "The party never dies" vs. a built-in Nuzlocke mode.
+- The journal goes blank at the end; if it holds the dex or quests, what happens post-game?
+- GBA budget: every new menu (quest log, research dex) is custom UI work.
 
 ## Parked ideas
 
