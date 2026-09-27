@@ -44,3 +44,17 @@ form's palette (`back_drafts/`; raw output in `back_drafts/raw/`).
   silhouette.
 - **3 Pro a:** redrawn as a smaller full-body view, the framing problem the Poochyena test found.
 - **3 Pro b:** washed-out pink; its colors snap badly to the palette.
+
+## Frame 2 (idle) drafts (proposals)
+
+Contact sheet: [../eien_mightyena_frame2_contact_sheet.png](../eien_mightyena_frame2_contact_sheet.png);
+animated previews are the `frame2_drafts/*_anim.gif` files. Made like the other forms' idle frames:
+the model saw vanilla Mightyena's two frames and the Eien front, and was asked to redraw the same
+motion (a howl: head up and back, mouth open, tail lowered; about 1,000 pixels change). The results
+were indexed with the form's palette. All four keep the legs still.
+
+- **3.1 Flash a (889 px):** the full motion. The head goes up and the spiral tail drops, like
+  the vanilla frame. The best match.
+- **3 Pro a (779 px):** a clean howl with fangs, but the tail stays put.
+- **3 Pro b (680 px):** like Pro a, with a smaller head move.
+- **3.1 Flash b (372 px):** the head lifts only a little.
