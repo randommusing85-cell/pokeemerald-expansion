@@ -360,8 +360,8 @@
         .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = sMonPalette_MightyenaEien,
         .shinyPalette = sMonShinyPalette_MightyenaEien,
-        .iconSprite = gMonIcon_Mightyena, // placeholder until its own icon is drawn
-        .iconPalIndex = 2,
+        .iconSprite = sMonIcon_MightyenaEien,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 6, SHADOW_SIZE_L)
         FOOTPRINT(Mightyena)

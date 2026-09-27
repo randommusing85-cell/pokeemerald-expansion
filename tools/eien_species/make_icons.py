@@ -34,6 +34,7 @@ ICON_PICKS = {
 # species: (indexed icon in design/art/eien_<species>/icon_drafts/, vanilla icon palette)
 ICON_READY = {
     "poochyena": ("icon_gemini3pro_a.png", 5),
+    "mightyena": ("icon_gemini3pro_a.png", 5),
 }
 
 

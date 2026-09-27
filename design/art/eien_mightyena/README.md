@@ -76,7 +76,9 @@ color's lightness so the shading survives. The drafts are `shiny_drafts/*.pal`.
 - **jade:** green jade stone and a gold bib, like Poochyena's "jade" draft.
 - **moonstone:** pale white-grey stone and an indigo bib. The violet cracks are faint on it.
 
-## Icon drafts (proposals)
+## Icon drafts
+
+**Picked:** `icon_gemini3pro_a`, in the game (`party_icon.png`), via `tools/eien_species/make_icons.py`.
 
 Contact sheet: [../eien_mightyena_icon_contact_sheet.png](../eien_mightyena_icon_contact_sheet.png).
 Made like Eien Poochyena's icon: the model saw vanilla Mightyena's icon strip (32x64, two frames)

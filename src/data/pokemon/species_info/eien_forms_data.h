@@ -19,6 +19,7 @@ static const u8 sMonIcon_TorchicEien[] = INCGFX_U8("graphics/pokemon/eien/torchi
 static const u8 sMonIcon_BulbasaurEien[] = INCGFX_U8("graphics/pokemon/eien/bulbasaur/icon.png", ".4bpp");
 static const u8 sMonIcon_FroakieEien[] = INCGFX_U8("graphics/pokemon/eien/froakie/icon.png", ".4bpp");
 static const u8 sMonIcon_PoochyenaEien[] = INCGFX_U8("graphics/pokemon/eien/poochyena/icon.png", ".4bpp");
+static const u8 sMonIcon_MightyenaEien[] = INCGFX_U8("graphics/pokemon/eien/mightyena/icon.png", ".4bpp");
 
 static const u16 sMonPalette_TorchicEien[] = INCGFX_U16("graphics/pokemon/eien/torchic/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_TorchicEien[] = INCGFX_U16("graphics/pokemon/eien/torchic/shiny.pal", ".gbapal");

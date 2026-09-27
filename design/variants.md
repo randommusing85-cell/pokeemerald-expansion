@@ -89,8 +89,8 @@ in the code).
 - **Its sprite:** the "komainu" front draft (roaring, carved spiral mane and tail, red bib;
   [art/eien_mightyena/](art/eien_mightyena/README.md)). Its back is an AI draft (3.1 Flash b); its idle
   frame is a howl, like vanilla Mightyena's (AI draft). Its shiny is "obsidian", like Eien
-  Poochyena's (black stone, bright violet cracks). The icon is a placeholder for now (the
-  vanilla icon).
+  Poochyena's (black stone, bright violet cracks). Its icon is an AI draft in the vanilla
+  icon palette 5, like Eien Poochyena's.
 
 `TODO(design)`: which map sections count as shrine areas (Eien Poochyena doesn't evolve until
 they're decided), Eien Mightyena's dex entry (a draft is in the code).
