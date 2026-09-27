@@ -48,6 +48,7 @@ BACK_PICKS = {
     "bulbasaur": "back_gemini31flash_b.png",
     "froakie": "back_gemini31flash_b.png",
     "poochyena": "back_gemini31flash_b.png",
+    "mightyena": "back_gemini31flash_b.png",
 }
 # species: chosen shiny palette in design/art/eien_<species>/shiny_drafts/ (shiny_drafts.py).
 # Species without one get an automatic hue shift.

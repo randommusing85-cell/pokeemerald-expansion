@@ -1,7 +1,7 @@
 # Drafts: Eien Mightyena
 
 **Picked:** `front_gemini3pro_c` (komainu). It's in the game (`tools/eien_species/convert_art.py`);
-in-game shots: `summary.png`, `battle_back.png` (placeholder back).
+in-game shots: `summary.png`, `battle_back.png`.
 
 Front sprite drafts for Eien Mightyena, the evolution of Eien Poochyena (`variants.md`). Nothing
 here is decided. Contact sheet: [../eien_mightyena_contact_sheet.png](../eien_mightyena_contact_sheet.png).
@@ -29,7 +29,9 @@ sampled to 64x64, its background removed and cut to 15 colors (`tools/sprite_pre
 - The white mark on the front leg comes from Eien Poochyena's sprite.
 - Frame 2, back, icon and shiny come after a pick, as for the other forms.
 
-## Back sprite drafts (proposals)
+## Back sprite drafts
+
+**Picked:** `back_gemini31flash_b`, in the game.
 
 Contact sheet: [../eien_mightyena_back_contact_sheet.png](../eien_mightyena_back_contact_sheet.png).
 Made like the other forms' backs: vanilla Mightyena's back and the picked front, enlarged 8x, went
