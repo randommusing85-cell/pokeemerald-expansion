@@ -53,6 +53,14 @@ CONCEPTS = {
         # obsidian: black glassy stone, bright violet cracks
         "obsidian": [((2, 10, 14), 250, 0.12, -0.35), ((5, 8, 9, 11, 13), 280, 0.9, 0.05)],
     },
+    "mightyena": {
+        # obsidian, like Eien Poochyena's shiny: black glassy stone, bright violet cracks
+        "obsidian": [((6, 9, 12), 250, 0.12, -0.35), ((2, 4), 250, 0.12, -0.08), ((8, 11), 280, 0.9, 0.05)],
+        # jade: green jade stone, gold bib
+        "jade": [((6, 9, 12), 150, 0.35, 0.0), ((2, 4), 160, 0.3, 0.0), ((3, 7, 10), 45, 0.75, 0.05)],
+        # moonstone: pale white stone, indigo bib, violet cracks
+        "moonstone": [((6, 9, 12), 220, 0.12, 0.18), ((2, 4), 230, 0.15, 0.05), ((3, 7, 10), 245, 0.55, 0.0)],
+    },
 }
 
 

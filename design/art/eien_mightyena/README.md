@@ -60,3 +60,16 @@ were indexed with the form's palette. All four keep the legs still.
 - **3 Pro a (779 px):** a clean howl with fangs, but the tail stays put.
 - **3 Pro b (680 px):** like Pro a, with a smaller head move.
 - **3.1 Flash b (372 px):** the head lifts only a little.
+
+## Shiny palette drafts (proposals)
+
+Made by `tools/eien_species/shiny_drafts.py` like the other forms' shinies. Each concept recolors
+groups of palette slots (stone 6/9/12 and its shading 2/4, bib 3/7/10, cracks 8/11), keeping each
+color's lightness so the shading survives. The drafts are `shiny_drafts/*.pal`.
+[shiny_line.png](shiny_line.png) shows Eien Poochyena's row above Eien Mightyena's; the full sheet is
+[../eien_shiny_contact_sheet.png](../eien_shiny_contact_sheet.png).
+
+- **obsidian:** black glassy stone and bright violet cracks. The moss and red bib stay. It matches
+  Eien Poochyena's chosen shiny, so the line shines the same way. The best fit.
+- **jade:** green jade stone and a gold bib, like Poochyena's "jade" draft.
+- **moonstone:** pale white-grey stone and an indigo bib. The violet cracks are faint on it.
