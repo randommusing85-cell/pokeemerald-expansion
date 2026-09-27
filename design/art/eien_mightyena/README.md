@@ -75,3 +75,18 @@ color's lightness so the shading survives. The drafts are `shiny_drafts/*.pal`.
   Eien Poochyena's chosen shiny, so the line shines the same way. The best fit.
 - **jade:** green jade stone and a gold bib, like Poochyena's "jade" draft.
 - **moonstone:** pale white-grey stone and an indigo bib. The violet cracks are faint on it.
+
+## Icon drafts (proposals)
+
+Contact sheet: [../eien_mightyena_icon_contact_sheet.png](../eien_mightyena_icon_contact_sheet.png).
+Made like Eien Poochyena's icon: the model saw vanilla Mightyena's icon strip (32x64, two frames)
+and the Eien front and repainted the icon; each draft was sampled back to 32x64. All four are
+indexed with vanilla icon palette 5, the same palette as Eien Poochyena's icon, so the line
+matches. Palette 5's darkest color is a dark grey, so the outlines are softer than in the drafts,
+as on Poochyena's icon. (A best-fit search picked the Eien palette 6 for three drafts, but it
+turns the sandstone grey.)
+
+- **3 Pro a:** tan like Poochyena's icon, with the spiral tail, red bib and violet cracks. Frame
+  2 moves about as much as vanilla's (216 px vs 201). The best fit.
+- **3 Pro b:** a darker brown with a busy, noisy pattern.
+- **3.1 Flash a, b:** frame 1 is fine, but frame 2 is redrawn larger and messy.
