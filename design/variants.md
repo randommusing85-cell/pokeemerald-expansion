@@ -88,8 +88,9 @@ in the code).
   learnset. The name stays "Eien Mightyena".
 - **Its sprite:** the "komainu" front draft (roaring, carved spiral mane and tail, red bib;
   [art/eien_mightyena/](art/eien_mightyena/README.md)). Its back is an AI draft (3.1 Flash b); its idle
-  frame is a howl, like vanilla Mightyena's (AI draft). Shiny and icon are placeholders for now:
-  an automatic hue shift and the vanilla icon.
+  frame is a howl, like vanilla Mightyena's (AI draft). Its shiny is "obsidian", like Eien
+  Poochyena's (black stone, bright violet cracks). The icon is a placeholder for now (the
+  vanilla icon).
 
 `TODO(design)`: which map sections count as shrine areas (Eien Poochyena doesn't evolve until
 they're decided), Eien Mightyena's dex entry (a draft is in the code).

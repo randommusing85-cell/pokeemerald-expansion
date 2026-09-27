@@ -61,7 +61,9 @@ were indexed with the form's palette. All four keep the legs still.
 - **3 Pro b (680 px):** like Pro a, with a smaller head move.
 - **3.1 Flash b (372 px):** the head lifts only a little.
 
-## Shiny palette drafts (proposals)
+## Shiny palette drafts
+
+**Picked:** `obsidian`, in the game (`shiny_game.png`: summary and battle).
 
 Made by `tools/eien_species/shiny_drafts.py` like the other forms' shinies. Each concept recolors
 groups of palette slots (stone 6/9/12 and its shading 2/4, bib 3/7/10, cracks 8/11), keeping each

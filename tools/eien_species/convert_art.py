@@ -57,6 +57,7 @@ SHINY_PICKS = {
     "bulbasaur": "twilight.pal",
     "froakie": "midnight.pal",
     "poochyena": "obsidian.pal",
+    "mightyena": "obsidian.pal",
 }
 # species: chosen front frame 2 (idle) in design/art/eien_<species>/frame2_drafts/, indexed with
 # the form's palette (design/art/eien_starters_drafts.md, "Frame 2 (idle)"). Species without
