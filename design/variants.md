@@ -87,9 +87,9 @@ in the code).
   on evolving; Rock Throw (7) and Rock Tomb (16) carry over; otherwise vanilla Mightyena's
   learnset. The name stays "Eien Mightyena".
 - **Its sprite:** the "komainu" front draft (roaring, carved spiral mane and tail, red bib;
-  [art/eien_mightyena/](art/eien_mightyena/README.md)). Its back is an AI draft (3.1 Flash b).
-  Frame 2, shiny and icon are placeholders for now: frame 1 raised 1px, an automatic hue
-  shift and the vanilla icon.
+  [art/eien_mightyena/](art/eien_mightyena/README.md)). Its back is an AI draft (3.1 Flash b); its idle
+  frame is a howl, like vanilla Mightyena's (AI draft). Shiny and icon are placeholders for now:
+  an automatic hue shift and the vanilla icon.
 
 `TODO(design)`: which map sections count as shrine areas (Eien Poochyena doesn't evolve until
 they're decided), Eien Mightyena's dex entry (a draft is in the code).

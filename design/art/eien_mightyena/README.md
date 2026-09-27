@@ -45,7 +45,9 @@ form's palette (`back_drafts/`; raw output in `back_drafts/raw/`).
 - **3 Pro a:** redrawn as a smaller full-body view, the framing problem the Poochyena test found.
 - **3 Pro b:** washed-out pink; its colors snap badly to the palette.
 
-## Frame 2 (idle) drafts (proposals)
+## Frame 2 (idle) drafts
+
+**Picked:** `frame2_gemini31flash_a`, in the game (checked on the summary screen).
 
 Contact sheet: [../eien_mightyena_frame2_contact_sheet.png](../eien_mightyena_frame2_contact_sheet.png);
 animated previews are the `frame2_drafts/*_anim.gif` files. Made like the other forms' idle frames:

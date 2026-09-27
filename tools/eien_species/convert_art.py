@@ -66,6 +66,7 @@ FRAME2_PICKS = {
     "bulbasaur": "frame2_blend_flash_0.png",
     "froakie": "frame2_gemini3pro_c.png",
     "poochyena": "frame2_gemini3pro_c.png",
+    "mightyena": "frame2_gemini31flash_a.png",
 }
 SHINY_HUE = 0.5
 
