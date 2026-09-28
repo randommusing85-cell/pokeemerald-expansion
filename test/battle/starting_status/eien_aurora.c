@@ -115,3 +115,32 @@ SINGLE_BATTLE_TEST("Aurora: works together with a thin place")
         ResetStartingStatuses();
     }
 }
+
+SINGLE_BATTLE_TEST("Aurora: makes a temporary Rainbow from another starting status permanent")
+{
+    SetStartingStatus(STARTING_STATUS_RAINBOW_PLAYER_TEMPORARY);
+    SetStartingStatus(STARTING_STATUS_RAINBOW_OPPONENT_TEMPORARY);
+    SetStartingStatus(STARTING_STATUS_AURORA);
+
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN {}
+        TURN {}
+        TURN {}
+        TURN {}
+        TURN {}
+        TURN {}
+    } SCENE {
+        MESSAGE("An aurora shimmers in the sky!");
+        NONE_OF {
+            MESSAGE("The rainbow on your side disappeared!");
+            MESSAGE("The rainbow on the opposing side disappeared!");
+        }
+    } THEN {
+        EXPECT(gSideStatuses[B_SIDE_PLAYER] & SIDE_STATUS_RAINBOW);
+        EXPECT(gSideStatuses[B_SIDE_OPPONENT] & SIDE_STATUS_RAINBOW);
+        ResetStartingStatuses();
+    }
+}
