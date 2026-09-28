@@ -21,18 +21,24 @@
 
 #define TINT(r, g, b) (Q_8_8(r) | Q_8_8(g) << 8 | Q_8_8(b) << 16)
 
-// The pulse loops through these tints: a cold night blue, a green glow, a violet glow, and back.
-// TODO(design): the night palette (an art pass on a real map).
-static const struct BlendSettings sAuroraBlends[] =
+#define FRAMES_PER_STEP  4 // Palettes are re-blended every this many frames
+#define STEPS_PER_FADE  96 // A fade from one tint to the next: 96 steps * 4 frames, about 6.4 seconds
+
+struct AuroraTint
 {
-    {.coeff = 10, .blendColor = TINT(0.40, 0.46, 0.66), .isTint = TRUE}, // Cold night
-    {.coeff = 10, .blendColor = TINT(0.34, 0.80, 0.56), .isTint = TRUE}, // Green
-    {.coeff = 10, .blendColor = TINT(0.68, 0.38, 0.86), .isTint = TRUE}, // Violet
+    struct BlendSettings blend;
+    u16 holdSteps; // How long the tint holds before fading to the next one
 };
 
-#define FRAMES_PER_STEP  4 // Palettes are re-blended every this many frames
-#define STEPS_PER_LEG  128 // Each leg (one tint to the next) is 128 steps * 4 frames: about 8.5 seconds
-#define STEPS_PER_CYCLE (STEPS_PER_LEG * ARRAY_COUNT(sAuroraBlends)) // The whole loop: about 25 seconds
+// The pulse loops through these tints: a cold night blue, a green glow, a violet glow, and back.
+// Green holds for a while; violet passes straight through. The whole loop is about 25 seconds.
+// TODO(design): the night palette (an art pass on a real map).
+static const struct AuroraTint sAuroraTints[] =
+{
+    {{.coeff = 10, .blendColor = TINT(0.40, 0.46, 0.66), .isTint = TRUE}, 0},  // Cold night
+    {{.coeff = 10, .blendColor = TINT(0.34, 0.80, 0.56), .isTint = TRUE}, 96}, // Green
+    {{.coeff = 10, .blendColor = TINT(0.68, 0.38, 0.86), .isTint = TRUE}, 0},  // Violet
+};
 
 static EWRAM_DATA u16 sPhase = 0; // Step within the cycle
 static EWRAM_DATA u8 sStepTimer = 0;
@@ -77,21 +83,36 @@ bool32 IsAuroraWeatherActive(void)
     return gWeatherPtr->currWeather == WEATHER_AURORA && gWeatherPtr->nextWeather == WEATHER_AURORA;
 }
 
+static u32 GetAuroraCycleSteps(void)
+{
+    u32 i, steps = 0;
+
+    for (i = 0; i < ARRAY_COUNT(sAuroraTints); i++)
+        steps += sAuroraTints[i].holdSteps + STEPS_PER_FADE;
+    return steps;
+}
+
 // Replaces the time-of-day blend with the aurora's at the current point of the pulse.
 // Also called whenever the time-of-day blend is recalculated, so the pulse isn't reset.
 void SetAuroraTimeBlend(void)
 {
-    u32 leg, step, progress;
+    u32 i, step, progress = 0;
 
     if (!IsAuroraWeatherActive())
         return;
 
-    leg = sPhase / STEPS_PER_LEG;
-    step = sPhase % STEPS_PER_LEG;
-    // Eased: 0 at the start of the leg, 256 at its end (half a cosine wave)
-    progress = (256 - Cos(step * 128 / STEPS_PER_LEG, 256)) / 2;
-    gTimeBlend.startBlend = sAuroraBlends[leg];
-    gTimeBlend.endBlend = sAuroraBlends[(leg + 1) % ARRAY_COUNT(sAuroraBlends)];
+    // Find the tint whose hold or fade sPhase falls in
+    step = sPhase;
+    for (i = 0; step >= sAuroraTints[i].holdSteps + STEPS_PER_FADE; i++)
+        step -= sAuroraTints[i].holdSteps + STEPS_PER_FADE;
+    if (step >= sAuroraTints[i].holdSteps)
+    {
+        // Fading to the next tint, eased: 0 at the start, 256 at the end (half a cosine wave)
+        step -= sAuroraTints[i].holdSteps;
+        progress = (256 - Cos(step * 128 / STEPS_PER_FADE, 256)) / 2;
+    }
+    gTimeBlend.startBlend = sAuroraTints[i].blend;
+    gTimeBlend.endBlend = sAuroraTints[(i + 1) % ARRAY_COUNT(sAuroraTints)].blend;
     gTimeBlend.weight = 256 - progress;
 }
 
@@ -117,7 +138,7 @@ void Aurora_Main(void)
     if (++sStepTimer < FRAMES_PER_STEP)
         return;
     sStepTimer = 0;
-    if (++sPhase >= STEPS_PER_CYCLE)
+    if (++sPhase >= GetAuroraCycleSteps())
         sPhase = 0;
     SetAuroraTimeBlend();
     // Don't touch the palettes during a fade (warps, battles, menus fading in)
