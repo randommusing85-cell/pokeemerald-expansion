@@ -29,9 +29,6 @@ Once the shrine maps exist, also:
 
 ## 2. Buildable now, without maps
 
-- **Journal note** for Eien Poochyena: when the journal opens with an Eien Poochyena of
-  Lv 18+ in the party, its research entry gets the "it didn't evolve" note (`variants.md`).
-  Code in `src/eien_journal.c`, data in `src/data/eien_journal.h`.
 - **Battle sprites for the milestone's trainers**: Akira (lab battle) and Fuyumi (gym 1) have
   only overworld sprites; they need trainer front pics (`TRAINER_PIC_...`, like
   `TRAINER_PIC_EIEN_KAEDE`), or vanilla placeholders. Haru and Nami need them later.
@@ -67,6 +64,9 @@ Once the shrine maps exist, also:
   for Kaede (front and back) and her grandmother.
 - Thin-place battle effect (`STARTING_STATUS_THIN_PLACE`, `src/eien_places.c`, tests in
   `test/battle/starting_status/eien_thin_place.c`).
+- Journal note for Eien Poochyena at Lv 18+ that didn't evolve (`FLAG_JOURNAL_POOCHYENA_NO_EVO`,
+  `UpdateJournalNotes`, tests in `test/eien_journal.c`). The research page is now full; a lore
+  tier will need scrolling.
 - Full test suite: 5,407 passed, 0 failed at the handoff.
 
 ## Working notes for the next chat
