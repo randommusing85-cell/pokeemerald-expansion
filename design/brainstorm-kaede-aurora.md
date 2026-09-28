@@ -38,17 +38,25 @@ Running notes. Nothing is decided until it's under **Decided**; decisions move i
 - **Default (engine):** a partner in a wild double battle uses the engine's follower-NPC
   partner (`include/config/follower_npc.h`, a config switch; it grows SaveBlock3 a little).
 
+- **The variants (r2 1a):** Eien Poochyena and Eien Mightyena: the stone dogs "wake" under the
+  aurora and gather howling at the shrine. No new species. The aurora-only encounter is wild
+  Eien Mightyena, which appears in the wild only on aurora nights at thin places (answers
+  where wild Eien Mightyena appear). `TODO(design)`: the tale's text.
+- **Kaede's reaction (r2 2a):** flatly: "The tales say they do this." Then she asks him whether
+  the tales are true (the question that earns her points).
+- **Froslass (r2 3a):** after the battle it drifts down with the aurora and settles beside her.
+- **Fuyumi's absence (r2 4c):** the gym is closed with a sign; Kaede says one plain line about
+  the gym being dark now; a townsperson line or two.
+
 ## Leaning
 
 _(none)_
 
 ## Open questions
 
-Round 2 (asked):
-1. Which Eien variants act strangely.
-2. Kaede's reaction.
-3. How Froslass arrives.
-4. What Shimotsuki shows of Fuyumi's absence.
+- The tale's text (what the stone dogs do on aurora nights).
+- Nami's optional aurora-night scene: a different night, or linked to this one.
+- Levels of the wild pair and Kaede's two Pokémon at this point.
 
 ## Gaps and tensions
 
