@@ -16877,3 +16877,39 @@ Double Battle: No
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_EIEN_AKIRA_LAB_TORCHIC ===
+Name: AKIRA
+Class: Rival
+Pic: Eien Akira
+Gender: Male
+Music: Male
+Double Battle: No
+
+Torchic-Eien
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_EIEN_AKIRA_LAB_BULBASAUR ===
+Name: AKIRA
+Class: Rival
+Pic: Eien Akira
+Gender: Male
+Music: Male
+Double Battle: No
+
+Bulbasaur-Eien
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_EIEN_AKIRA_LAB_FROAKIE ===
+Name: AKIRA
+Class: Rival
+Pic: Eien Akira
+Gender: Male
+Music: Male
+Double Battle: No
+
+Froakie-Eien
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe

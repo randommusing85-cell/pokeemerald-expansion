@@ -24,9 +24,9 @@ docs: when the design changes, the doc changes in the same commit.
 - [ ] Prologue: bedroom in our world, the accident, Palkia ([prologue](locations/prologue-bedroom.md))
 - [x] Engine: remove the boy/girl choice, keep the naming screen (`EIEN_HERO_ALWAYS_MALE` in
       `include/config/general.h`)
-- [ ] Hamakaze: he wakes in Eien, Celebi follows him, the Kashiwagi household, Haru, the
-      journal ([Hamakaze](locations/hamakaze.md))
-- [ ] Kashiwagi's lab: pick a starter, Akira and Haru take the others, first battle with Akira
+- [x] Hamakaze: he wakes in Eien, Celebi follows him, the Kashiwagi household, Haru, the
+      journal ([Hamakaze](locations/hamakaze.md)). Placeholder town layout; lines are drafts
+- [x] Kashiwagi's lab: pick a starter, Akira and Haru take the others, first battle with Akira
 - [ ] Route 1: coast, snowy fields, shrine; Eien Poochyena ([Route 1](locations/route-1.md))
 - [ ] Shimotsuki and gym 1 (Fuyumi, Ice); Akira shows him the gym; Kaede's cameo at her shrine ([Shimotsuki](locations/shimotsuki.md))
 - [ ] Nami's first meeting, just after gym 1 (end of the slice)

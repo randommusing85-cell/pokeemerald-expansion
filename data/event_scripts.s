@@ -602,6 +602,11 @@ gStdScripts_End::
 	.include "data/maps/Route119_House/scripts.inc"
 	.include "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc"
 
+@ Eien
+	.include "data/maps/Hamakaze/scripts.inc"
+	.include "data/maps/Hamakaze_KashiwagiHouse/scripts.inc"
+	.include "data/maps/Hamakaze_Lab/scripts.inc"
+
 .if IS_FRLG
 
 @ FRLG scripts
@@ -1740,3 +1745,4 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/battle_frontier.inc"
 	.include "data/scripts/apricorn_tree.inc"
 	.include "data/scripts/wild_encounter.inc"
+	.include "data/scripts/eien_celebi.inc"

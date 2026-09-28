@@ -9323,6 +9323,17 @@
       "border_filepath": "data/layouts/OneIsland_KindleRoad_EmberSpa_Frlg/border.bin",
       "blockdata_filepath": "data/layouts/OneIsland_KindleRoad_EmberSpa_Frlg/map.bin",
       "layout_version": "frlg"
+    },
+    {
+      "id": "LAYOUT_HAMAKAZE",
+      "name": "Hamakaze_Layout",
+      "width": 24,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_EienCoast",
+      "border_filepath": "data/layouts/Hamakaze/border.bin",
+      "blockdata_filepath": "data/layouts/Hamakaze/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

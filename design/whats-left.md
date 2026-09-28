@@ -6,13 +6,14 @@ marked `TODO(design)` in the docs (`grep -rF 'TODO(design)' design`, about 90).
 
 ## 1. Blocked on maps (the user makes them in Porymap)
 
-No Eien map exists yet. Each one unlocks its scripting, which the location docs already
-describe. Maps needed for the first milestone (prologue through gym 1):
+Hamakaze exists (a hand-made placeholder layout, see below); the rest don't yet. Each map
+unlocks its scripting, which the location docs already describe. Maps needed for the first
+milestone (prologue through gym 1):
 
 | Map | Doc | Then build |
 | --- | --- | --- |
 | Prologue bedroom | [prologue-bedroom.md](locations/prologue-bedroom.md) | The accident, Palkia |
-| Hamakaze (+ Kashiwagi house, lab) | [hamakaze.md](locations/hamakaze.md) | Waking in Eien, Celebi following, the household, Haru, receiving the journal; the lab: starter pick, Akira and Haru take the others, first battle with Akira; Haru's quest step 1 (`QUEST_HARU_MAP`) |
+| Hamakaze (+ Kashiwagi house, lab) | [hamakaze.md](locations/hamakaze.md) | **Built** on a placeholder layout (redraw it in Porymap any time). Still to do: Haru's quest step 1 (`QUEST_HARU_MAP`, when he asks is `TODO(design)`); the connection north to Route 1; a new game starting here (or in the prologue) |
 | Route 1 | [route-1.md](locations/route-1.md) | Trainers (Lv 5-8), wild table (Eien Poochyena ~20%), the professor's Poochyena research (`QUEST_RESEARCH_POOCHYENA`) |
 | Route 1 shrine (own small map) | [route-1.md](locations/route-1.md) | Torii, komainu, the tablet (lore page; counts for Kaede's quest), grass with more Eien Poochyena |
 | Shimotsuki (+ gym, Pokémon Center, Mart) | [shimotsuki.md](locations/shimotsuki.md) | Akira shows the gym; gym 1 (Fuyumi: Spheal, Bergmite Lv 13-14); Akira's quest step 1 (`QUEST_AKIRA_PRACTICE`); Nami's first meeting just after gym 1 (end of the slice) |
@@ -73,6 +74,11 @@ Once the shrine maps exist, also:
 - Follower NPCs switched on (`include/config/follower_npc.h`): Celebi can follow the hero, and
   a follower with a battle partner joins wild battles as a double (checked with the debug
   menu's Steven follower on Route 101, `design/art/follower_partner_wild_battle.png`).
+- Hamakaze, the Kashiwagi house and the lab, with the first three story beats scripted
+  (waking and Celebi, taken in and the journal, starters and Akira's battle); shots in
+  `design/art/hamakaze/`. Fixed an engine check along the way: an early rival battle with
+  `RIVAL_BATTLE_HEAL_AFTER` no longer turns on the FRLG tutorial (and Emerald's Lv 2
+  Zigzagoon) in `src/battle_setup.c`.
 - Full test suite: 5,407 passed, 0 failed at the handoff.
 
 ## Working notes for the next chat
