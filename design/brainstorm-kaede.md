@@ -23,7 +23,19 @@ agrees.
 
 ## Decided
 
-_(none yet)_
+- **Role (1a):** she keeps the folk version. She tells the tales as tales and doesn't know
+  they're true; he sees the truth behind them, sometimes before she does.
+- **Voice (2c):** blunt and practical. Tired of being young and in charge, no patience for
+  ceremony, but she does it all properly.
+- **Shimotsuki ties (3c):** none close. She knows Fuyumi and Akira as neighbors; her story is
+  her own.
+- **Why she's young (4a):** an elderly keeper, her grandparent, still lives at the shrine but
+  can't do the work. A second NPC there. (Placeholder: no name, gender or relation beyond
+  "grandparent" yet.)
+- **Her Pokémon (5a):** her partner is an Eien Mightyena, the shrine's guardian: it shows the
+  player what Eien Poochyena becomes.
+- **First meeting (6b+c):** she's reading her shrine's tablet when he arrives, asks if he read
+  the one on Route 1, sees his Poochyena and says the stone dogs grow at their post.
 
 ## Leaning
 
@@ -31,18 +43,18 @@ _(none)_
 
 ## Open questions
 
-Round 1 (asked):
-1. Her role in the story.
-2. Personality and voice.
-3. Her ties to Shimotsuki's people (Fuyumi, Akira).
-4. Why someone young keeps the shrine.
-5. Her Pokémon.
-6. How she first meets him.
+Round 2 (asked):
+1. Her part in the first milestone.
+2. Age and look.
+3. Her team beyond Mightyena.
+4. Does she notice he's not from here.
+5. How "someone always pays" lands (quest step 3).
+6. The grandparent's role.
 
 ## Gaps and tensions
 
-- She's in the same town as Fuyumi and Akira, whose story is Act 1's heart; she can
-  deepen it or crowd it.
+- She doesn't know the tales are true, so she can't explain the plot; the tablets and his own
+  knowledge have to carry it.
 - She tells truths the League hides. Is that dangerous for her, and does the League know?
 - "Someone always pays" foreshadows his memory loss; she must not give the ending away.
 - Whether she appears in the first milestone (it ends right after gym 1).
