@@ -2,7 +2,9 @@
 
 ## Battle sprite drafts
 
-**Picked:** not yet.
+**Picked:** `akira_gemini31flash_b` (pointing), in the game as `TRAINER_PIC_EIEN_AKIRA`
+(`graphics/trainers/front_pics/eien_akira.png`). `battle_ingame.png` is a debug battle with the
+debug opponent's picture swapped for the test only.
 
 Contact sheet: [../eien_akira_battle_contact_sheet.png](../eien_akira_battle_contact_sheet.png).
 A trainer front picture (64x64) for his lab battle and later ones. Made by

@@ -146,10 +146,12 @@ Gen 3 style, from the FRLG-style NPC megapack, converted by `tools/eien_npcs/` (
 | Player | Brendan's sprites recolored (`tools/eien_hero/`): short messy dark hair with a side fringe, grey hoodie, blue jeans. An ordinary guy from our world. Every sprite (overworld sheets and battle) has the new hairstyle |
 | Haru | `OBJ_EVENT_GFX_EIEN_HARU` |
 | Akira | `OBJ_EVENT_GFX_EIEN_AKIRA` |
+| Akira (battle) | `TRAINER_PIC_EIEN_AKIRA`: an AI draft, pointing with a grin (`design/art/eien_akira/`) |
 | Nami | `OBJ_EVENT_GFX_EIEN_NAMI` |
 | Professor Kashiwagi | `OBJ_EVENT_GFX_EIEN_KASHIWAGI` |
 | Her husband | `OBJ_EVENT_GFX_EIEN_KASHIWAGI_HUSBAND` |
 | Fuyumi | `OBJ_EVENT_GFX_EIEN_FUYUMI` |
+| Fuyumi (battle) | `TRAINER_PIC_EIEN_FUYUMI`: an AI draft, a Poké Ball held out, red winter coat (`design/art/eien_fuyumi/`) |
 | Kaede | `OBJ_EVENT_GFX_EIEN_KAEDE`: a recolor (dark hair, white ribbon, navy winter coat, red hakama, brown boots) |
 | Kaede (battle) | `TRAINER_PIC_EIEN_KAEDE`: AI drafts, arms crossed (front) and a 4-frame throw from behind (back, for tag battles) (`design/art/eien_kaede/`) |
 | Kaede's grandmother (battle) | `TRAINER_PIC_EIEN_KAEDE_GRANDMOTHER`: an AI draft with a walking stick; ready if she ever battles (the design doesn't give her a battle yet) |
