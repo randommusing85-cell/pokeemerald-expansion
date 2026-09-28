@@ -95,11 +95,11 @@ The map bookends the chain: the first quest starts it, the last one gives it bac
 
 ### Kaede (lore thread; always helps in the finale)
 
-`TODO(design)`: where her shrine is.
+Her shrine is in Shimotsuki; it's a shrine area, where Eien Poochyena can first evolve.
 
 | # | When / where | What happens | Points from | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Act 1 or 2, her shrine | She asks for rubbings of old shrine tablets around Eien. A collection quest that scales (one tablet per few maps); each rubbing adds a lore page to the journal. | Each tablet brought back | Spell Tag (Ghost boost) | No |
+| 1 | Act 1, her shrine in Shimotsuki, after gym 1 | She asks for rubbings of old shrine tablets around Eien. A collection quest that scales (one tablet per few maps); each rubbing adds a lore page to the journal. Tablets he read before (the Route 1 shrine's) count. | Each tablet brought back | Spell Tag (Ghost boost) | No |
 | 2 | Act 3, a thin place on an aurora night | She shows him a folk tale "happening": Eien variants act strangely under the aurora. Adds a research step. | The answer about whether the tales are true | Lore | No |
 | 3 | Act 3, before the League | She tells what the tales say about the end of a cycle: someone always pays. Foreshadows his memories. | The answer | `TODO(design)`: charm item | No |
 

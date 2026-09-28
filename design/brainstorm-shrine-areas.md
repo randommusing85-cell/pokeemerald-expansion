@@ -49,6 +49,9 @@ Running notes. Nothing is decided until it's under **Decided**; decisions move i
 - **Default:** the evolution entries are added once the two shrine maps exist; the first
   milestone ends below Lv 18, so it doesn't need them.
 
+Promoted into `variants.md` ("Shrine areas" and Eien Poochyena), the Route 1 and Shimotsuki
+location docs, Kaede in `side-quests.md`, `characters.md` and `story-outline.md`.
+
 ## Leaning
 
 _(none)_

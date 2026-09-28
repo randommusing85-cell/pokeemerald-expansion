@@ -1,12 +1,14 @@
 # Shimotsuki
 
-- **Map(s):** `MAP_...` `TODO`: town, gym, Pokémon Center, Mart
+- **Map(s):** `MAP_...` `TODO`: town, gym, Pokémon Center, Mart, Kaede's shrine (its own small map)
 - **Type:** town
 - **Connects to:** Route 1. `TODO(design)`: the way on, where Nami is met.
 
 ## Purpose
 
-The first gym town. Akira shows him his mother's gym; he earns the first badge.
+The first gym town. Akira shows him his mother's gym; he earns the first badge. Kaede's
+shrine is here: the first place Eien Poochyena can evolve (a shrine area, reachable right
+after gym 1, about when it reaches Lv 18), and where Kaede's quest chain starts.
 
 ## Look
 
@@ -24,6 +26,7 @@ after gym 1, when Nami helps him.
 | --- | --- | --- | --- |
 | Akira | `TODO` | arriving | Shows him his mother's gym |
 | Nami | past the town `TODO` | after gym 1 | Helps him when he's lost or Celebi is struggling |
+| Kaede | her shrine `TODO` | after gym 1 (`TODO(design)`: in the first milestone or not) | Starts her tablet quest ([side-quests.md](../side-quests.md)) |
 
 ## Trainers
 

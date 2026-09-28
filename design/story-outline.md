@@ -92,4 +92,5 @@ repetitive).
 - TODO(design): are the villains' loyal Pokémon a theme ("loyalty doesn't mean they're
   right")?
 - TODO(design): Hashimoto's relationship to Nami beyond mentor.
-- TODO(design): where Kaede, Tetsu and Ren appear, and whether they get tag battles.
+- Kaede's shrine is in Shimotsuki; she's met there after gym 1.
+- TODO(design): where Tetsu and Ren appear, and whether the friends get tag battles.

@@ -66,7 +66,7 @@ points, Tetsu and Ren come too.
 | --- | --- | --- | --- |
 | Haru Kashiwagi | Main friend, Act 1 | Hamakaze | Boy, the professor's son, about the hero's age. Takes the third starter. Shares the grief when his mother dies. |
 | Yuki | Main friend, Act 3 | Tournament, then Act 3 | Girl from another town. Tournament rival, becomes a friend after Akira leaves. |
-| Kaede | Smaller friend | `TODO(design)` | Young shrine keeper who knows the old tales of the cycle. |
+| Kaede | Smaller friend | Her shrine in Shimotsuki | Young shrine keeper who knows the old tales of the cycle. |
 | Tetsu | Smaller friend | Near the door mountain | Old mountain guide. |
 | Ren | Smaller friend | `TODO(design)` | League trainer who quits after learning about the cover-up. |
 

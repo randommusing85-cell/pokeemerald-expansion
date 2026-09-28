@@ -75,7 +75,11 @@ in the code).
 - **Eien Poochyena:** 35 / 55 / 50 / 25 / 30 / 25 (35 / 55 / 35 / 30 / 30 / 35), 220.
   Abilities Intimidate / Sturdy / Stakeout (hidden). New early moves: Rock Throw (7), Rock
   Tomb (16); otherwise the original learnset.
-- **Evolves** into Eien Mightyena (Rock/Dark) by leveling up to 18+ in a shrine area.
+- **Evolves** into Eien Mightyena (Rock/Dark) by leveling up to 18+ in a shrine area (a Rare
+  Candy used there counts). The first chance is Kaede's shrine in Shimotsuki, right after
+  gym 1. Before that, the Route 1 shrine's tablet hints at the rule, and the journal notes
+  it: when he opens the journal with an Eien Poochyena of Lv 18+ in his party, its research
+  entry says it didn't evolve.
 
 - **Sprite:** the front is the sprite test's draft ([art/eien_poochyena/](art/eien_poochyena/README.md)),
   converted by `tools/eien_species/convert_art.py`; the back is an AI draft like the
@@ -92,5 +96,17 @@ in the code).
   Poochyena's (black stone, bright violet cracks). Its icon is an AI draft in the vanilla
   icon palette 5, like Eien Poochyena's.
 
-`TODO(design)`: which map sections count as shrine areas (Eien Poochyena doesn't evolve until
-they're decided), Eien Mightyena's dex entry (a draft is in the code).
+`TODO(design)`: Eien Mightyena's dex entry (a draft is in the code); whether wild Eien
+Mightyena appear, and where.
+
+### Shrine areas
+
+A **shrine area** is a shrine's grounds on their own small map; never a whole route or town,
+and not the mountain. So far: the Route 1 shrine and Kaede's shrine in Shimotsuki. Every
+shrine area is also a thin place (the mountain is a thin place but not a shrine area).
+Each shrine map gets its own evolution entry (`IF_IN_MAP`), with no engine change; if a
+second system (the thin-place terrain, more shrine evolutions) needs the same list, it
+becomes a shared "shrine area" mark on the map. Eien Poochyena doesn't evolve in the game
+until the two shrine maps exist. Decided in [brainstorm-shrine-areas.md](brainstorm-shrine-areas.md).
+
+`TODO(design)`: how many shrines the whole game has, and where.
