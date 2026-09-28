@@ -23,7 +23,20 @@ Running notes. Nothing is decided until it's under **Decided**; decisions move i
 
 ## Decided
 
-_(none yet)_
+- **Opponents (1a):** two Eien variants acting strangely under the aurora: a wild double
+  battle with Kaede beside him. The tale happening is the battle.
+- **Place (2a):** her shrine in Shimotsuki (already a thin place). No new map; Shimotsuki gets
+  an Act 3 visit, after Fuyumi's death.
+- **The night (3c):** the first aurora night is story-set (she says come back tonight, he
+  rests at the shrine); after that, aurora nights come back at random for the E3 night
+  research.
+- **"Acting strangely" (4a+b):** on the map they move oddly, glow and gather at the shrine;
+  and some Eien variants appear only on aurora nights at thin places (aurora-only encounters).
+  No new battle rules needed.
+- **Her second Pokémon (5a):** Froslass, drawn by the aurora; it stays with her after the
+  battle. Mismagius joins before the League (step 3).
+- **Default (engine):** a partner in a wild double battle uses the engine's follower-NPC
+  partner (`include/config/follower_npc.h`, a config switch; it grows SaveBlock3 a little).
 
 ## Leaning
 
@@ -31,12 +44,11 @@ _(none)_
 
 ## Open questions
 
-Round 1 (asked):
-1. Who they fight.
-2. Where it happens.
-3. How the aurora night comes about.
-4. What "acting strangely" means in the game.
-5. Which Ghost joins her, and how.
+Round 2 (asked):
+1. Which Eien variants act strangely.
+2. Kaede's reaction.
+3. How Froslass arrives.
+4. What Shimotsuki shows of Fuyumi's absence.
 
 ## Gaps and tensions
 
