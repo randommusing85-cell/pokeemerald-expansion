@@ -30,7 +30,8 @@ Hamakaze_EventScript_WakeUp::
 	playmoncry SPECIES_CELEBI, CRY_MODE_NORMAL
 	waitmoncry
 	msgbox Hamakaze_Text_ACelebi, MSGBOX_DEFAULT
-	setfollowernpc LOCALID_HAMAKAZE_CELEBI, FNPC_ALL, EienCelebi_EventScript_Talk
+	@ Every permission except FNPC_WHITE_OUT: Celebi stays with him after a white-out
+	setfollowernpc LOCALID_HAMAKAZE_CELEBI, FNPC_ALL_LAND | FNPC_ALL_WATER, EienCelebi_EventScript_Talk
 	setvar VAR_EIEN_STORY, STORY_ARRIVED
 	msgbox Hamakaze_Text_ItsFollowingMe, MSGBOX_DEFAULT
 	releaseall
