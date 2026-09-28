@@ -32,9 +32,8 @@ Once the shrine maps exist, also:
 - **Journal note** for Eien Poochyena: when the journal opens with an Eien Poochyena of
   Lv 18+ in the party, its research entry gets the "it didn't evolve" note (`variants.md`).
   Code in `src/eien_journal.c`, data in `src/data/eien_journal.h`.
-- **Battle sprites for the milestone's trainers**: Akira (lab battle) and Fuyumi (gym 1) have
-  only overworld sprites; they need trainer front pics (`TRAINER_PIC_...`, like
-  `TRAINER_PIC_EIEN_KAEDE`), or vanilla placeholders. Haru and Nami need them later.
+- **Battle sprites for Haru and Nami** (later): make them like Akira's and Fuyumi's with
+  `tools/eien_npcs/trainer_pic_drafts.py` (add an entry to its `CHARACTERS`).
 - **Aurora battle message**: the Rainbow effect's text says "rainbow"; a small text change
   if the aurora should say so (`game-bible.md`, Eien weather and terrain).
 - **Follower-NPC partner** config (`include/config/follower_npc.h`) for Kaede's aurora-night
@@ -67,6 +66,9 @@ Once the shrine maps exist, also:
   for Kaede (front and back) and her grandmother.
 - Thin-place battle effect (`STARTING_STATUS_THIN_PLACE`, `src/eien_places.c`, tests in
   `test/battle/starting_status/eien_thin_place.c`).
+- Battle sprites for Akira and Fuyumi (`TRAINER_PIC_EIEN_AKIRA`, `TRAINER_PIC_EIEN_FUYUMI`,
+  AI drafts via `tools/eien_npcs/trainer_pic_drafts.py`, notes in `design/art/eien_akira/`
+  and `design/art/eien_fuyumi/`).
 - Full test suite: 5,407 passed, 0 failed at the handoff.
 
 ## Working notes for the next chat

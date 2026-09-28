@@ -2,7 +2,9 @@
 
 ## Battle sprite drafts
 
-**Picked:** not yet.
+**Picked:** `fuyumi_gemini3pro_b` (Poké Ball held out), in the game as `TRAINER_PIC_EIEN_FUYUMI`
+(`graphics/trainers/front_pics/eien_fuyumi.png`). `battle_ingame.png` is a debug battle with the
+debug opponent's picture swapped for the test only.
 
 Contact sheet: [../eien_fuyumi_battle_contact_sheet.png](../eien_fuyumi_battle_contact_sheet.png).
 A trainer front picture (64x64) for gym 1. Made by `tools/eien_npcs/trainer_pic_drafts.py`:
