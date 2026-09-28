@@ -37,25 +37,39 @@ agrees.
 - **First meeting (6b+c):** she's reading her shrine's tablet when he arrives, asks if he read
   the one on Route 1, sees his Poochyena and says the stone dogs grow at their post.
 
+- **First milestone (r2 1c):** a cameo: she's sweeping at the shrine and says one blunt line.
+  The real first meeting is in the second milestone.
+- **Age and look (r2 2a):** about his age, a teen. Shrine keeper's clothes worn practically:
+  red hakama, a heavy winter coat over them, boots for the snow.
+- **Team (r2 3a):** Eien Mightyena plus Ghost types (species `TODO(design)`).
+- **He's not from here (r2 4b):** she notices and doesn't pry: one short remark.
+- **"Someone always pays" (r2 5a):** she tells it flatly, as just a tale; he and the player
+  make the connection.
+- **The grandparent (r2 6a+b):** small talk and the old days; repeats the evolution rule if the
+  player missed it; gives the charm item at quest step 3.
+
+### Example lines (proposals, for `dialogue-style.md`)
+
+> You read the one on Route 1? Good. Nobody reads them.
+> It'll grow when it's ready. Here, not out there. That's how the stone dogs are.
+> You don't know the tales. Everyone here knows the tales. …Anyway.
+
 ## Leaning
 
 _(none)_
 
 ## Open questions
 
-Round 2 (asked):
-1. Her part in the first milestone.
-2. Age and look.
-3. Her team beyond Mightyena.
-4. Does she notice he's not from here.
-5. How "someone always pays" lands (quest step 3).
-6. The grandparent's role.
+- Does the League care about a shrine keeper's folk tales?
+- Her finale battle: what she holds off, with which team.
+- Her letters: when she writes and what she says.
+- Her Ghost-type species; the charm item; the grandparent's name and relation.
+- Her overworld and battle sprites (an AI draft pass like the hero's).
 
 ## Gaps and tensions
 
 - She doesn't know the tales are true, so she can't explain the plot; the tablets and his own
   knowledge have to carry it.
-- She tells truths the League hides. Is that dangerous for her, and does the League know?
 - "Someone always pays" foreshadows his memory loss; she must not give the ending away.
 - Whether she appears in the first milestone (it ends right after gym 1).
 - Her look, overworld sprite and battle sprite.
