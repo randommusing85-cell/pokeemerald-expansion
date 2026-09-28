@@ -35,7 +35,7 @@ struct AuroraTint
 // TODO(design): the night palette (an art pass on a real map).
 static const struct AuroraTint sAuroraTints[] =
 {
-    {{.coeff = 10, .blendColor = TINT(0.40, 0.46, 0.66), .isTint = TRUE}, 0},  // Cold night
+    {{.coeff = 10, .blendColor = TINT(0.50, 0.56, 0.80), .isTint = TRUE}, 0},  // Cold night
     {{.coeff = 10, .blendColor = TINT(0.44, 0.96, 0.66), .isTint = TRUE}, 96}, // Green
     {{.coeff = 10, .blendColor = TINT(0.80, 0.48, 0.98), .isTint = TRUE}, 0},  // Violet
 };
