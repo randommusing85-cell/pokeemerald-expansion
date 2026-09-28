@@ -106,9 +106,9 @@ in the code).
 A **shrine area** is a shrine's grounds on their own small map; never a whole route or town,
 and not the mountain. So far: the Route 1 shrine and Kaede's shrine in Shimotsuki. Every
 shrine area is also a thin place (the mountain is a thin place but not a shrine area).
-Each shrine map gets its own evolution entry (`IF_IN_MAP`), with no engine change; if a
-second system (the thin-place terrain, more shrine evolutions) needs the same list, it
-becomes a shared "shrine area" mark on the map. Eien Poochyena doesn't evolve in the game
+Each shrine map gets its own evolution entry (`IF_IN_MAP`), with no engine change. The
+thin-place effect now keeps its own list of maps (`src/eien_places.c`); the shrine maps go in
+both. Eien Poochyena doesn't evolve in the game
 until the two shrine maps exist. Decided in [brainstorm-shrine-areas.md](brainstorm-shrine-areas.md).
 
 `TODO(design)`: how many shrines the whole game has, and where.

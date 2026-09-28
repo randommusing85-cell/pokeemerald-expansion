@@ -23,6 +23,7 @@
 #include "decompress.h"
 #include "dexnav.h"
 #include "dma3.h"
+#include "eien_places.h"
 #include "event_data.h"
 #include "evolution_scene.h"
 #include "frontier_util.h"
@@ -3410,6 +3411,8 @@ static void DoBattleIntro(void)
                     statusesOpponentB = GetTrainerStartingStatusFromId(TRAINER_BATTLE_PARAM.opponentB);
             }
             STARTING_STATUS_DEFINITIONS(UNPACK_STARTING_STATUS_TO_BATTLE);
+            if (IsCurrentMapThinPlace()) // Eien: every battle on a thin-place map
+                gStartingStatuses.thinPlace = TRUE;
             gBattleMainFunc = TryDoEventsBeforeFirstTurn;
         }
         break;

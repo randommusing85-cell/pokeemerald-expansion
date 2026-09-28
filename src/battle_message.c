@@ -904,6 +904,8 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_S]                                    = COMPOUND_STRING("s"),
     [STRINGID_LOSTSOMEOFITSHP]                      = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} lost some of its HP!"),
     [STRINGID_BELCHCANTUSE]                         = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} hasn't eaten any held Berries, so it can't possibly belch!\p"),
+    // Eien. TODO(design): the final text (design/game-bible.md, Eien weather and terrain).
+    [STRINGID_EIEN_THIN_PLACE]                      = COMPOUND_STRING("The air feels thin here…"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =
@@ -950,6 +952,7 @@ const u16 gStartingStatusStringIds[B_MSG_STARTING_STATUS_COUNT] =
     [B_MSG_SET_STICKY_WEB]       = STRINGID_STICKYWEBUSED,
     [B_MSG_SET_STEALTH_ROCK]     = STRINGID_POINTEDSTONESFLOAT,
     [B_MSG_SET_SHARP_STEEL]      = STRINGID_SHARPSTEELFLOATS,
+    [B_MSG_SET_THIN_PLACE]       = STRINGID_EIEN_THIN_PLACE,
 };
 
 const u16 gTerrainStringIds[B_MSG_TERRAIN_COUNT] =

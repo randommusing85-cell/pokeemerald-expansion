@@ -2877,6 +2877,19 @@ bool32 TryFieldEffects(enum FieldEffectCases caseId)
             gStartingStatuses.weatherSnow = gStartingStatuses.weatherSnowTemporary = FALSE;
             return effect;
         }
+        // Eien: a thin place (shrines, the mountain). Permanent; boosts Ghost and Psychic moves.
+        else if (gStartingStatuses.thinPlace)
+        {
+            gStartingStatuses.thinPlace = FALSE;
+            if (!(gFieldStatuses & STATUS_FIELD_THIN_PLACE))
+            {
+                gFieldStatuses |= STATUS_FIELD_THIN_PLACE;
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SET_THIN_PLACE;
+                BattleScriptPushCursorAndCallback(BattleScript_OverworldHazard); // a message, no animation
+                effect = TRUE;
+            }
+            return effect;
+        }
         else if (gStartingStatuses.weatherFog || gStartingStatuses.weatherFogTemporary)
         {
             effect = SetStartingWeatherStatus(BATTLE_WEATHER_FOG, gStartingStatuses.weatherFog);
@@ -6547,6 +6560,8 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
     if (IsPsychicTerrainAffected(battlerAtk, ctx->abilities[battlerAtk], ctx->holdEffects[battlerAtk], ctx->terrain) && moveType == TYPE_PSYCHIC)
         modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
+    if ((gFieldStatuses & STATUS_FIELD_THIN_PLACE) && (moveType == TYPE_GHOST || moveType == TYPE_PSYCHIC)) // Eien
+        modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
     if (IsFieldMudSportAffected(ctx->moveType))
         modifier = uq4_12_multiply(modifier, UQ_4_12(GetConfig(B_SPORT_DMG_REDUCTION) >= GEN_5 ? 0.33 : 0.5));
     if (IsFieldWaterSportAffected(ctx->moveType))

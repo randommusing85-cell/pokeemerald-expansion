@@ -116,7 +116,14 @@ on what other hacks and fan games do.
     30% more damage, for both sides. It leaves the terrain slot free, so normal terrains still
     work on top of it, and it can't be removed. Every battle on a thin-place map has it (wild
     or trainer); the map's script sets it on entering, and a short message says so at the
-    start. One small engine addition (a new battle-start status).
+    start. Built: `STARTING_STATUS_THIN_PLACE` (field status `STATUS_FIELD_THIN_PLACE`,
+    tests in `test/battle/starting_status/eien_thin_place.c`, shot in
+    `art/thin_place_message.png`). Which maps are thin places is a list in
+    `src/eien_places.c` (`IsCurrentMapThinPlace`), checked at the start of every battle; add
+    each shrine map and the mountain there once they exist. (Not map scripts: the engine only
+    clears starting statuses when they're used or after a whiteout, so a status set on entering
+    a map would leak into a later battle elsewhere.) Scripts can still force it for one battle
+    with `setstartingstatus STARTING_STATUS_THIN_PLACE`.
   - **Aurora in battle:** the engine's "Rainbow" effect for both sides (moves' side effects
     twice as likely). Its messages say "rainbow"; saying "aurora" needs a small text change.
   - **Aurora on the map:** a cold night palette with a slow color pulse. Aurora nights are
