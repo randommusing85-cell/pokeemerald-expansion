@@ -24,9 +24,9 @@
 // The pulse goes between a cold night tint and a green glow.
 // TODO(design): the night palette (an art pass on a real map).
 static const struct BlendSettings sAuroraNightBlend = {.coeff = 10, .blendColor = TINT(0.40, 0.46, 0.66), .isTint = TRUE};
-static const struct BlendSettings sAuroraGlowBlend  = {.coeff = 10, .blendColor = TINT(0.40, 0.66, 0.58), .isTint = TRUE};
+static const struct BlendSettings sAuroraGlowBlend  = {.coeff = 10, .blendColor = TINT(0.34, 0.80, 0.56), .isTint = TRUE};
 
-#define GLOW_MAX       192 // Of 256: how far the pulse goes toward the glow
+#define GLOW_MAX       256 // Of 256: how far the pulse goes toward the glow (all the way)
 #define FRAMES_PER_STEP  4 // Palettes are re-blended every this many frames
 #define PHASE_PER_STEP   2 // A full pulse is 256 / 2 steps * 4 frames: about 8.5 seconds
 
