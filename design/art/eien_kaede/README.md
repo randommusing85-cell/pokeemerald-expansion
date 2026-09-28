@@ -72,7 +72,12 @@ grey shawl), sampled to 64x64 with their own palettes (`grandmother_battle_draft
 - **b, seiza:** Flash b is calm and tidy; Pro b's hair came out frizzy and greenish.
 - **c, ofuda:** Flash c holds a clear paper charm; Pro c's hair and charm are smudgy.
 
-## Back sprite drafts (proposals)
+## Back sprite drafts
+
+**Picked:** `back_gemini3pro_b`, in the game as the back sprite of `TRAINER_PIC_EIEN_KAEDE`
+(`graphics/trainers/back_pics/eien_kaede.png`, animation `sBackAnims_OldManPokedude`), with a
+4-pixel speck removed from the last frame. Checked in the debug menu's tag battle with Steven's
+partner picture swapped for the test only: `back_tag_battle_ingame.png`, `back_throw_ingame.png`.
 
 Contact sheet: [../eien_kaede_back_contact_sheet.png](../eien_kaede_back_contact_sheet.png);
 `back_drafts/*_anim.gif` play each strip. Needed for her tag battles (aurora night, finale).

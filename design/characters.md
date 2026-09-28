@@ -92,7 +92,7 @@ points, Tetsu and Ren come too.
   of Minato's group in a tag battle on the thin-place terrain, with those three Pokémon. It's
   the same battle whatever her points; they change only her lines. Afterwards she follows
   him up and sees the cycle end: the tale she has always told happens in front of her.
-  She needs a back sprite by Act 3.
+  Her back sprite for these tag battles is in (`TRAINER_PIC_EIEN_KAEDE`).
 - **First meeting** (second milestone): she's reading her shrine's tablet, asks if he read the
   one on Route 1, sees his Poochyena and says the stone dogs grow at their post. In the first
   milestone she only has a cameo, sweeping at the shrine.
@@ -149,7 +149,7 @@ Gen 3 style, from the FRLG-style NPC megapack, converted by `tools/eien_npcs/` (
 | Her husband | `OBJ_EVENT_GFX_EIEN_KASHIWAGI_HUSBAND` |
 | Fuyumi | `OBJ_EVENT_GFX_EIEN_FUYUMI` |
 | Kaede | `OBJ_EVENT_GFX_EIEN_KAEDE`: a recolor (dark hair, white ribbon, navy winter coat, red hakama, brown boots) |
-| Kaede (battle) | `TRAINER_PIC_EIEN_KAEDE`: an AI draft, arms crossed (`design/art/eien_kaede/`) |
+| Kaede (battle) | `TRAINER_PIC_EIEN_KAEDE`: AI drafts, arms crossed (front) and a 4-frame throw from behind (back, for tag battles) (`design/art/eien_kaede/`) |
 | Kaede's grandmother (battle) | `TRAINER_PIC_EIEN_KAEDE_GRANDMOTHER`: an AI draft with a walking stick; ready if she ever battles (the design doesn't give her a battle yet) |
 | Kaede's grandmother | `OBJ_EVENT_GFX_EIEN_KAEDE_GRANDMOTHER`: the HGSS Medium in shrine colors (white robe, purple hakama) |
 | Celebi | `OBJ_EVENT_GFX_SPECIES(CELEBI)` (engine) |
