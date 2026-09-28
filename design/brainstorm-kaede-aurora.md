@@ -48,6 +48,9 @@ Running notes. Nothing is decided until it's under **Decided**; decisions move i
 - **Fuyumi's absence (r2 4c):** the gym is closed with a sign; Kaede says one plain line about
   the gym being dark now; a townsperson line or two.
 
+Promoted into `side-quests.md` (Kaede step 2, E3), `characters.md` (her team order and
+battles), `variants.md` (wild Eien Mightyena) and the Shimotsuki doc (the Act 3 visit).
+
 ## Leaning
 
 _(none)_

@@ -59,7 +59,7 @@ _(none)_
 ## Open questions
 
 - How many shrines the whole game has, and where (each new one is a new evolution entry).
-- Wild Eien Mightyena: whether they appear, and where (shrines would be natural).
+- Wild Eien Mightyena: decided in `brainstorm-kaede-aurora.md` (aurora nights at thin places).
 - The Route 1 shrine's encounter rate for Eien Poochyena, and the Shimotsuki shrine's layout.
 
 ## Gaps and tensions

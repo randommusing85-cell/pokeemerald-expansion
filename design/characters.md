@@ -85,10 +85,11 @@ points, Tetsu and Ren come too.
 - **Ties:** none close to Fuyumi or Akira; they're neighbors.
 - **Team:** Eien Mightyena (the shrine's guardian, the player's first look at what Eien
   Poochyena becomes), Froslass (a snow spirit) and Mismagius (both of its move types get the
-  thin-place boost). One joins per quest step: Mightyena is there at the first meeting, the
-  second on the aurora night, the third before the League (`TODO(design)`: which Ghost first).
-- **Battles:** always beside him, never against him. A tag battle on the aurora night (quest
-  step 2), then the finale: at the door mountain she and the hero fight two ordinary members
+  thin-place boost). One joins per quest step: Mightyena is there at the first meeting,
+  Froslass on the aurora night (drawn by the aurora), Mismagius before the League.
+- **Battles:** always beside him, never against him. On the aurora night (quest step 2), a
+  wild double battle beside him against two stone dogs woken by the aurora (the engine's
+  follower-NPC partner); then the finale: at the door mountain she and the hero fight two ordinary members
   of Minato's group in a tag battle on the thin-place terrain, with those three Pokémon. It's
   the same battle whatever her points; they change only her lines. Afterwards she follows
   him up and sees the cycle end: the tale she has always told happens in front of her.
@@ -96,8 +97,9 @@ points, Tetsu and Ren come too.
 - **First meeting** (second milestone): she's reading her shrine's tablet, asks if he read the
   one on Route 1, sees his Poochyena and says the stone dogs grow at their post. In the first
   milestone she only has a cameo, sweeping at the shrine.
-- `TODO(design)`: whether the League cares about her tales; her letters; her finale lines;
-  who they fight on the aurora night. Decided in [brainstorm-kaede-finale.md](brainstorm-kaede-finale.md).
+- `TODO(design)`: whether the League cares about her tales; her letters; her finale lines.
+  Decided in [brainstorm-kaede-finale.md](brainstorm-kaede-finale.md) and
+  [brainstorm-kaede-aurora.md](brainstorm-kaede-aurora.md).
   Decided in [brainstorm-kaede.md](brainstorm-kaede.md).
 
 ## Gym leaders

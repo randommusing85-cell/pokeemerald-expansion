@@ -96,8 +96,10 @@ in the code).
   Poochyena's (black stone, bright violet cracks). Its icon is an AI draft in the vanilla
   icon palette 5, like Eien Poochyena's.
 
-`TODO(design)`: Eien Mightyena's dex entry (a draft is in the code); whether wild Eien
-Mightyena appear, and where.
+- **Wild Eien Mightyena** appear only on aurora nights at thin places: the stone dogs wake
+  under the aurora ([side-quests.md](side-quests.md), Kaede step 2 and E3).
+
+`TODO(design)`: Eien Mightyena's dex entry (a draft is in the code).
 
 ### Shrine areas
 

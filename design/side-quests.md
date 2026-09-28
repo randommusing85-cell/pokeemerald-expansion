@@ -102,7 +102,7 @@ finale she fights beside him in a tag battle, whatever her points
 | # | When / where | What happens | Points from | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Act 1, her shrine in Shimotsuki, after gym 1 | She asks for rubbings of old shrine tablets around Eien. A collection quest that scales (one tablet per few maps); each rubbing adds a lore page to the journal. Tablets he read before (the Route 1 shrine's) count. | Each tablet brought back | Spell Tag (Ghost boost) | No |
-| 2 | Act 3, a thin place on an aurora night | She shows him a folk tale "happening": Eien variants act strangely under the aurora. Adds a research step. They fight a tag battle side by side (`TODO(design)`: against whom), and her second Pokémon joins her team. | The answer about whether the tales are true | Lore | No |
+| 2 | Act 3, her shrine in Shimotsuki, on the first aurora night (story-set: she says come back tonight, he rests at the shrine) | She shows him a folk tale "happening": the stone dogs (Eien Poochyena and Mightyena) wake under the aurora, glow and gather howling at the shrine (`TODO(design)`: the tale's text). He and Kaede fight two of them in a wild double battle, side by side. Afterwards a Froslass drifts down with the aurora and stays with her. She says flatly that the tales say they do this, and asks him whether the tales are true. Adds a research step. | The answer about whether the tales are true | Lore | No |
 | 3 | Act 3, before the League | She tells what the tales say about the end of a cycle: someone always pays. She tells it flatly, as just a tale; he and the player make the connection. Foreshadows his memories. Her third Pokémon has joined her. | The answer | A charm item from her grandmother (`TODO(design)`: which) | No |
 
 ### Yuki (cameo in Act 1; friend from Act 3)
@@ -147,7 +147,7 @@ Her core scenes are fixed (story outline). Optional warm scenes, earned by her p
 | --- | --- | --- | --- | --- | --- |
 | E1 (M1) | Research | Act 1, Route 1 | The professor asks him to study Eien Poochyena (see, battle, catch). | Poké Balls | No |
 | E2 | Research | Act 1 to 3 | The professor's list: study each Eien variant as they appear. Closes when she dies; Haru's step 3 finishes one entry. | Items per entry | After her death |
-| E3 | Research | Act 3, aurora nights | Night-only research steps (lore notes). | Lore | No |
+| E3 | Research | Act 3, aurora nights (random after Kaede's step 2) | Night-only research steps (lore notes), including wild Eien Mightyena, which appear only on aurora nights at thin places. | Lore | No |
 | E4 | Disaster | Act 1, Hamakaze | The harbor freezes early; fishermen can't go out. `TODO(design)`: what the hero does. | Money | No |
 | E5 | Disaster | Act 2 or 3, `TODO(design)` | A child goes missing near a thin place. | Battle item | No |
 | E6 | Disaster | Act 3, Yuki's hometown | Yuki's step 2. | (Yuki's) | No |

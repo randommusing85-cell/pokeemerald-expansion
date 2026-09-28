@@ -29,6 +29,8 @@ after gym 1, when Nami helps him.
 | Kaede (cameo) | her shrine `TODO` | first milestone | Sweeping; one blunt line |
 | Kaede | her shrine `TODO` | after gym 1, second milestone | First meeting: reading the shrine's tablet; asks about the Route 1 tablet; explains the stone dogs grow at their post. Starts her tablet quest ([side-quests.md](../side-quests.md)) |
 | Kaede's grandmother | her shrine `TODO` | always | Small talk about the old days; repeats the evolution rule |
+| Kaede, aurora night | her shrine `TODO` | Act 3, her quest step 2 | The stone dogs wake under the aurora; a wild double battle beside her; Froslass joins her ([side-quests.md](../side-quests.md)) |
+| Closed gym | the gym door `TODO` | Act 3, after Fuyumi's death | A sign on the closed gym; Kaede says one plain line about the gym being dark now; a townsperson line or two |
 
 ## Trainers
 
