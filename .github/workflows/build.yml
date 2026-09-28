@@ -6,6 +6,7 @@ on:
       - master
       - upcoming
   pull_request:
+  workflow_dispatch: # Eien: a "Run workflow" button in the Actions tab, to run CI on any branch by hand
 
 env:
   GAME_REVISION: 0
