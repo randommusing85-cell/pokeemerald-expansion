@@ -22,7 +22,19 @@ Running notes. Nothing is decided until it's under **Decided**; decisions move i
 
 ## Decided
 
-_(none yet)_
+- **Thin place (1d):** not a terrain but its own permanent field effect, set at battle start:
+  Ghost and Psychic moves do 30% more damage. It doesn't take the terrain slot, so normal
+  terrains still work on top of it. One contained engine addition (a new starting status).
+- **Where (2c):** every battle on a thin-place map, wild or trainer; the map's script sets it
+  on entering. A short message at battle start ("The air feels thin here…", placeholder text).
+- **Aurora in battle (3b):** the engine's "Rainbow" effect for both sides (moves' secondary
+  effects twice as likely), shown as the aurora shimmering. No new engine code.
+- **Aurora on the map (4a):** a tint: the map's colors shift to a cold night palette with a slow
+  color pulse. Mostly palette work.
+- **Defaults (not asked):** both apply together (a thin place on an aurora night, like Kaede's
+  step 2). The thin-place effect is permanent for the battle and can't be removed. The journal
+  explains each effect the first time he meets it (his fan knowledge doesn't cover them).
+  Aurora nights are clear nights, so no snow then.
 
 ## Leaning
 
@@ -30,11 +42,8 @@ _(none)_
 
 ## Open questions
 
-Round 1 (asked):
-1. How the thin-place terrain is built.
-2. Which battles it applies to.
-3. The aurora's battle effect.
-4. How the aurora looks on the map.
+- The exact battle-start messages (placeholder text above).
+- The night palette and pulse (art pass on a real map).
 
 ## Gaps and tensions
 
