@@ -22,7 +22,16 @@ Running notes. Nothing is decided until it's under **Decided**; decisions move i
 
 ## Decided
 
-_(none yet)_
+- **Form (1a):** a tag battle beside him: the hero and Kaede against two of Minato's people,
+  with the engine's partner battles. She needs a back sprite.
+- **Opponents (2a):** two ordinary members of Minato's group: nameless, principled, gracious
+  when they lose.
+- **Team theme (3a):** Eien Mightyena plus Gen 1-5 Ghost types that fit snow and shrine
+  folklore (he recognizes them). No new Eien variants.
+- **Size (4a):** three Pokémon, the usual per side in a tag battle, at finale level.
+- **Terrain (5a):** the thin-place terrain is active, as on the whole mountain; her Ghosts
+  get its boost. Depends on the terrain's rules (`TODO(design)`).
+- **Points (6a):** the battle is always the same; her points change only her lines.
 
 ## Leaning
 
@@ -30,20 +39,17 @@ _(none)_
 
 ## Open questions
 
-Round 1 (asked):
-1. What form her finale battle takes.
-2. Who she holds off.
-3. Her team's theme.
-4. Team size and strength.
-5. The thin-place terrain in her battle.
-6. Whether her points change the battle.
+Round 2 (asked):
+1. Her two Ghost types.
+2. Whether the player sees her Pokémon before the finale.
+3. Whether she battles (with or against him) before the finale.
+4. What happens to her after the battle.
 
 ## Gaps and tensions
 
 - Tetsu's and Ren's battles need to feel different from hers.
 - The level curve is only set up to gym 1; finale levels are unknown.
-- A tag battle with her needs a back sprite for her (partners show from behind).
-- Whether she battles earlier (a training battle, a rematch) is open.
+- A back sprite for her is now required (tag battle partners show from behind).
 - Minato's forces have no named members yet besides Minato and Akira.
 
 ## Parked ideas
