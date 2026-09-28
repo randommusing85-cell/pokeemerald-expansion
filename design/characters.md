@@ -90,7 +90,7 @@ points, Tetsu and Ren come too.
 - **Battles:** always beside him, never against him. On the aurora night (quest step 2), a
   wild double battle beside him against two stone dogs woken by the aurora (the engine's
   follower-NPC partner); then the finale: at the door mountain she and the hero fight two ordinary members
-  of Minato's group in a tag battle on the thin-place terrain, with those three Pokémon. It's
+  of Minato's group in a tag battle with the thin-place effect, with those three Pokémon. It's
   the same battle whatever her points; they change only her lines. Afterwards she follows
   him up and sees the cycle end: the tale she has always told happens in front of her.
   Her back sprite for these tag battles is in (`TRAINER_PIC_EIEN_KAEDE`).

@@ -109,10 +109,22 @@ on what other hacks and fan games do.
   the fading's small disasters, and lore. About 25 at launch, built to grow to Unbound's
   scale. Quests tied to people who die or leave can be missed for good; the epilogue gives
   them back as memories. See [side-quests.md](side-quests.md).
-- **Eien weather and terrain.** Snow on most routes, an aurora weather on clear nights, and a
-  "thin place" terrain at shrines and the mountain that boosts Ghost and Psychic moves.
-  Built on the engine's weather and terrain. `TODO(design)`: the aurora's battle effect,
-  the terrain's exact rules.
+- **Eien weather and terrain.** Snow on most routes (the engine's snow), an aurora on clear
+  nights, and "thin places" at shrines and the mountain. Decided in
+  [brainstorm-weather-terrain.md](brainstorm-weather-terrain.md):
+  - **Thin place:** its own permanent battle effect, not a terrain: Ghost and Psychic moves do
+    30% more damage, for both sides. It leaves the terrain slot free, so normal terrains still
+    work on top of it, and it can't be removed. Every battle on a thin-place map has it (wild
+    or trainer); the map's script sets it on entering, and a short message says so at the
+    start. One small engine addition (a new battle-start status).
+  - **Aurora in battle:** the engine's "Rainbow" effect for both sides (moves' side effects
+    twice as likely). Its messages say "rainbow"; saying "aurora" needs a small text change.
+  - **Aurora on the map:** a cold night palette with a slow color pulse. Aurora nights are
+    clear, so no snow then. The first is story-set (Kaede's step 2); after that they come back
+    at random.
+  - Both apply together (a thin place on an aurora night). The journal explains each effect
+    the first time he meets it; his fan knowledge doesn't cover them.
+  - `TODO(design)`: the exact battle messages; the night palette (an art pass on a real map).
 - **Difficulty:** see [progression.md](progression.md).
 - **Not used:** Mega, Z-Moves, Dynamax and Tera (a lore-tied gimmick may come later);
   follower Pokémon (Celebi already follows him; parked).

@@ -36,6 +36,8 @@ Running notes. Nothing is decided until it's under **Decided**; decisions move i
   explains each effect the first time he meets it (his fan knowledge doesn't cover them).
   Aurora nights are clear nights, so no snow then.
 
+Promoted into `game-bible.md` (Mechanics, Eien weather and terrain).
+
 ## Leaning
 
 _(none)_
