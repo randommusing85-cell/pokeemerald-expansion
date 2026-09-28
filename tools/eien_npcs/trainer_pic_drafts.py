@@ -149,10 +149,12 @@ def main():
                 if not args.convert_only:
                     parts = [image_part(char["style"], 4), image_part(char["overworld"], 8)]
                     try:
-                        open(raw, "wb").write(generate(model, COMMON + char["who"] + pose_text, parts))
+                        # Generate before opening the file, so a failed call keeps the old draft
+                        data = generate(model, COMMON + char["who"] + pose_text, parts)
+                        with open(raw, "wb") as f:
+                            f.write(data)
                     except Exception as e:  # keep going; one failed draft shouldn't lose the rest
                         print(f"{stem}: {e}", file=sys.stderr)
-                        continue
                 if os.path.exists(raw):
                     rgba = convert(raw, os.path.join(out_dir, stem + ".png"), os.path.join(out_dir, stem + ".pal"))
                     drafts.append((stem.replace(name + "_", ""), rgba))
