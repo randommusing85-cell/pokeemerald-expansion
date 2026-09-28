@@ -416,6 +416,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienSnowTra
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienWorker;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienPokefanM;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienSocialite;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienKaede;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienKaedeGrandmother;
 // Eien NPCs externs END
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -822,6 +824,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_EIEN_WORKER] = &gObjectEventGraphicsInfo_EienWorker,
     [OBJ_EVENT_GFX_EIEN_POKEFAN_M] = &gObjectEventGraphicsInfo_EienPokefanM,
     [OBJ_EVENT_GFX_EIEN_SOCIALITE] = &gObjectEventGraphicsInfo_EienSocialite,
+    [OBJ_EVENT_GFX_EIEN_KAEDE] = &gObjectEventGraphicsInfo_EienKaede,
+    [OBJ_EVENT_GFX_EIEN_KAEDE_GRANDMOTHER] = &gObjectEventGraphicsInfo_EienKaedeGrandmother,
 // Eien NPCs END
 
 };

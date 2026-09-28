@@ -1,6 +1,9 @@
 # Drafts: Kaede and her grandparent (overworld)
 
-Proposals, nothing picked yet. Contact sheet:
+**Picked:** Kaede a (navy coat) and grandparent b (Medium in shrine colors), in the game as
+`OBJ_EVENT_GFX_EIEN_KAEDE` and `OBJ_EVENT_GFX_EIEN_KAEDE_GRANDMOTHER`. `ingame_test.png` shows
+both, each facing down, sideways and up, placed on Littleroot for the test only.
+ Contact sheet:
 [../eien_kaede_ow_contact_sheet.png](../eien_kaede_ow_contact_sheet.png) (each facing down,
 left, right, up). Made by `tools/eien_npcs/kaede_drafts.py` as recolors of FRLG-style NPC
 megapack sheets, like the other Eien NPCs. A picked draft goes through

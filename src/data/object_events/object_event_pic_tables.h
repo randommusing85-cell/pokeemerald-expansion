@@ -2550,4 +2550,12 @@ static const struct SpriteFrameImage sPicTable_EienPokefanM[] = {
 static const struct SpriteFrameImage sPicTable_EienSocialite[] = {
     overworld_ascending_frames(gObjectEventPic_EienSocialite, 2, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_EienKaede[] = {
+    overworld_ascending_frames(gObjectEventPic_EienKaede, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_EienKaedeGrandmother[] = {
+    overworld_ascending_frames(gObjectEventPic_EienKaedeGrandmother, 2, 4),
+};
 // Eien NPCs END

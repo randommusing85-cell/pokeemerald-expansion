@@ -79,9 +79,9 @@ points, Tetsu and Ren come too.
 - **Role:** she keeps the folk version of the old tales and doesn't know they're true. He sees
   the truth behind them, sometimes before she does. She notices he's not from here, says so
   once, and doesn't pry.
-- **Her shrine** is in Shimotsuki. An elderly grandparent still lives there but can't do the
+- **Her shrine** is in Shimotsuki. Her elderly grandmother still lives there but can't do the
   work: small talk about the old days, repeats the evolution rule, gives the charm item at the
-  end of her quest chain. `TODO(design)`: the grandparent's name and exact relation.
+  end of her quest chain. `TODO(design)`: the grandmother's name.
 - **Ties:** none close to Fuyumi or Akira; they're neighbors.
 - **Team:** an Eien Mightyena, the shrine's guardian (the player's first look at what Eien
   Poochyena becomes), plus Ghost types (`TODO(design)`: species).
@@ -139,8 +139,8 @@ Gen 3 style, from the FRLG-style NPC megapack, converted by `tools/eien_npcs/` (
 | Professor Kashiwagi | `OBJ_EVENT_GFX_EIEN_KASHIWAGI` |
 | Her husband | `OBJ_EVENT_GFX_EIEN_KASHIWAGI_HUSBAND` |
 | Fuyumi | `OBJ_EVENT_GFX_EIEN_FUYUMI` |
-| Kaede | `TODO`: red hakama, winter coat, snow boots |
-| Kaede's grandparent | `TODO` |
+| Kaede | `OBJ_EVENT_GFX_EIEN_KAEDE`: a recolor (dark hair, white ribbon, navy winter coat, red hakama, brown boots) |
+| Kaede's grandmother | `OBJ_EVENT_GFX_EIEN_KAEDE_GRANDMOTHER`: the HGSS Medium in shrine colors (white robe, purple hakama) |
 | Celebi | `OBJ_EVENT_GFX_SPECIES(CELEBI)` (engine) |
 | Hamakaze townsfolk | `OBJ_EVENT_GFX_EIEN_FISHERMAN`, `_SAILOR`, `_VILLAGE_WOMAN`, `_SCHOOLBOY` |
 | Shimotsuki townsfolk | `OBJ_EVENT_GFX_EIEN_SNOW_TRAINER`, `_WORKER`, `_POKEFAN_M`, `_SOCIALITE` |

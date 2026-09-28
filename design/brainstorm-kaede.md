@@ -66,7 +66,8 @@ _(none)_
 - Does the League care about a shrine keeper's folk tales?
 - Her finale battle: what she holds off, with which team.
 - Her letters: when she writes and what she says.
-- Her Ghost-type species; the charm item; the grandparent's name and relation.
+- Her Ghost-type species; the charm item; the grandmother's name (the sprite made her a
+  grandmother).
 - Her overworld and battle sprites (an AI draft pass like the hero's).
 
 ## Gaps and tensions

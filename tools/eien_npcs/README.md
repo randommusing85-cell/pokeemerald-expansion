@@ -43,3 +43,8 @@ credit) and rerun. Credit the sprite's artist in `design/asset-credits.md`.
 | `OBJ_EVENT_GFX_EIEN_WORKER` | Shimotsuki | DPPt `trainer_WORKER` |
 | `OBJ_EVENT_GFX_EIEN_POKEFAN_M` | Shimotsuki | RSE `trainer_POKEFAN_M` |
 | `OBJ_EVENT_GFX_EIEN_SOCIALITE` | Shimotsuki | DPPt `trainer_SOCIALITE` |
+| `OBJ_EVENT_GFX_EIEN_KAEDE` | Kaede | Anime `NPC 07`, recolored by `kaede_drafts.py` |
+| `OBJ_EVENT_GFX_EIEN_KAEDE_GRANDMOTHER` | Kaede's grandmother | HGSS `trainer_MEDIUM`, recolored by `kaede_drafts.py` |
+
+A recolored sheet is an absolute path in `CHARACTERS`. Adding characters regroups the shared
+palettes, so the others' colors can shift slightly; compare them before committing.

@@ -56,6 +56,11 @@ CHARACTERS = [
     ("WORKER", "worker", "DPPt NPCs/Characters/trainer_WORKER.png", DPPT),
     ("POKEFAN_M", "pokefan_m", "RSE NPCs/Characters/trainer_POKEFAN_M.png", RSE),
     ("SOCIALITE", "socialite", "DPPt NPCs/Characters/trainer_SOCIALITE.png", DPPT),
+    # Recolors of pack sheets (tools/eien_npcs/kaede_drafts.py, design/art/eien_kaede/)
+    ("KAEDE", "kaede", os.path.join(REPO, "design/art/eien_kaede/drafts/kaede_a_navy_coat.png"),
+     "Anime NPC 07: Kalarie (first frames Pokésho), recolored"),
+    ("KAEDE_GRANDMOTHER", "kaede_grandmother",
+     os.path.join(REPO, "design/art/eien_kaede/drafts/grandparent_b_medium_shrine.png"), HGSS + " (Medium, recolored)"),
 ]
 
 
