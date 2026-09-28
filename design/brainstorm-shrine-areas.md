@@ -36,34 +36,39 @@ Running notes. Nothing is decided until it's under **Decided**; decisions move i
 - **Thin places (6b):** every shrine area is a thin place; the mountain is a thin place but not
   a shrine area.
 
+- **Shimotsuki's shrine (r2 1a):** it's Kaede's shrine. That settles where her shrine is; her
+  first quest starts there after gym 1.
+- **Route 1 shrine map (r2 2b):** torii, komainu statues, the tablet, and a patch of grass where
+  Eien Poochyena appears more often.
+- **Tablets read early (r2 3a):** he can read the Route 1 tablet before Kaede's quest; it adds
+  a lore page, and tablets already read count when her quest starts.
+- **Journal note (r2 4b):** when he opens the journal with an Eien Poochyena of Lv 18+ in his
+  party, its research entry gets the "it didn't evolve" note. Checked on open; no battle code
+  changes.
+- **Rare Candy (r2 5a):** counts, like any level-up (engine default).
+- **Default:** the evolution entries are added once the two shrine maps exist; the first
+  milestone ends below Lv 18, so it doesn't need them.
+
 ## Leaning
 
 _(none)_
 
 ## Open questions
 
-Round 2 (asked):
-1. What the Shimotsuki shrine is (whose, what's there).
-2. What's on the Route 1 shrine map.
-3. The Route 1 tablet before Kaede's quest exists.
-4. When the journal note appears.
-5. Whether a Rare Candy used at a shrine counts.
-
-Default (not asked): the evolution is added once the shrine maps exist. The first milestone
-ends at gym 1, below Lv 18, so it isn't needed for that milestone.
+- How many shrines the whole game has, and where (each new one is a new evolution entry).
+- Wild Eien Mightyena: whether they appear, and where (shrines would be natural).
+- The Route 1 shrine's encounter rate for Eien Poochyena, and the Shimotsuki shrine's layout.
 
 ## Gaps and tensions
 
-- The Route 1 shrine is the obvious shrine area but sits before gym 1, while Lv 18 comes
-  after it; the first evolution may mean backtracking, or it happens at a later shrine.
-- Shimotsuki's shrine is new content in a town whose doc has no landmarks yet; it could also
-  answer where Kaede's shrine is.
-- The Route 1 tablet comes before Kaede asks for rubbings.
+- Two new maps for the user to make in Porymap: the Route 1 shrine and Kaede's shrine in
+  Shimotsuki.
+- Kaede is now met in Shimotsuki; her first quest's "Act 1 or 2" becomes just after gym 1,
+  when the first milestone ends. Whether she appears in the first milestone is open.
 - Evolution only checks where the player is when it levels up. A Poochyena that levels past
   18 elsewhere must level again at a shrine (or use a Rare Candy there).
 - Fan knowledge: he knows Mightyena evolves at 18, so a Poochyena that doesn't evolve is a
   small surprise the game can use or must explain.
-- How many shrines the game has, and where, isn't decided yet.
 
 ## Parked ideas
 
