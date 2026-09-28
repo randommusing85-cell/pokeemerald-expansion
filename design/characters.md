@@ -140,6 +140,7 @@ Gen 3 style, from the FRLG-style NPC megapack, converted by `tools/eien_npcs/` (
 | Her husband | `OBJ_EVENT_GFX_EIEN_KASHIWAGI_HUSBAND` |
 | Fuyumi | `OBJ_EVENT_GFX_EIEN_FUYUMI` |
 | Kaede | `OBJ_EVENT_GFX_EIEN_KAEDE`: a recolor (dark hair, white ribbon, navy winter coat, red hakama, brown boots) |
+| Kaede (battle) | `TRAINER_PIC_EIEN_KAEDE`: an AI draft, arms crossed (`design/art/eien_kaede/`) |
 | Kaede's grandmother | `OBJ_EVENT_GFX_EIEN_KAEDE_GRANDMOTHER`: the HGSS Medium in shrine colors (white robe, purple hakama) |
 | Celebi | `OBJ_EVENT_GFX_SPECIES(CELEBI)` (engine) |
 | Hamakaze townsfolk | `OBJ_EVENT_GFX_EIEN_FISHERMAN`, `_SAILOR`, `_VILLAGE_WOMAN`, `_SCHOOLBOY` |

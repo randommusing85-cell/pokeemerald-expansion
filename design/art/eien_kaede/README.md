@@ -33,7 +33,11 @@ real hakama shape, the sheet would need an edit (by hand or an AI pass like the 
 
 The docs leave the grandparent's gender open; picking a sprite settles it.
 
-## Battle sprite drafts (proposals)
+## Battle sprite drafts
+
+**Picked:** `kaede_gemini3pro_c` (arms crossed), in the game as `TRAINER_PIC_EIEN_KAEDE`
+(`graphics/trainers/front_pics/eien_kaede.png`). `battle_ingame.png` is a debug battle with the
+debug opponent's picture swapped for the test only.
 
 Contact sheet: [../eien_kaede_battle_contact_sheet.png](../eien_kaede_battle_contact_sheet.png).
 A trainer front picture (64x64); a back picture is only needed if she joins tag battles
