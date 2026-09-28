@@ -71,3 +71,23 @@ grey shawl), sampled to 64x64 with their own palettes (`grandmother_battle_draft
   stooped) are both clean. Flash a reads most like a trainer.
 - **b, seiza:** Flash b is calm and tidy; Pro b's hair came out frizzy and greenish.
 - **c, ofuda:** Flash c holds a clear paper charm; Pro c's hair and charm are smudgy.
+
+## Back sprite drafts (proposals)
+
+Contact sheet: [../eien_kaede_back_contact_sheet.png](../eien_kaede_back_contact_sheet.png);
+`back_drafts/*_anim.gif` play each strip. Needed for her tag battles (aurora night, finale).
+A trainer back sprite is a 64x256 strip of four frames: standing, then three throw frames. It
+shares the front sprite's palette, so the drafts are indexed with `eien_kaede.pal`.
+Gemini got Steven's four back frames in a 2x2 grid (pose, size, framing) and her front sprite
+(design), and drew the same grid; each cell was sampled to 64x64 (`back_drafts/`, raw in
+`back_drafts/raw/`). AI-assisted.
+
+The frame order (stand, wind-up, forward, follow-through) matches the engine's
+`sBackAnims_OldManPokedude` animation (idle frame 0, throw 1-2-3-0), not the Hoenn one that
+Steven's own sheet uses; the GIFs use that timing.
+
+- **3 Pro b:** large and cropped at the bottom like the vanilla backs; bun, ribbon and coat
+  read well; the clearest throw. One stray pixel next to the ball in frame 3 to clean up.
+- **3.1 Flash b:** the same framing; a bigger ribbon, a softer throw.
+- **3 Pro a, 3.1 Flash a:** smaller full-body figures (the red hakama shows), smaller than a
+  back sprite should be, the same problem the Poochyena back test had.
