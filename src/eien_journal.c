@@ -19,7 +19,6 @@
 #include "menu.h"
 #include "overworld.h"
 #include "palette.h"
-#include "pokemon.h"
 #include "scanline_effect.h"
 #include "sound.h"
 #include "sprite.h"
@@ -350,20 +349,6 @@ static void BuildRows(void)
         AddRow(ROW_EMPTY, 0, sText_NothingYet, COLOR_GREY, FALSE, FALSE);
 }
 
-void UpdateJournalNotes(void)
-{
-    u32 i;
-
-    for (i = 0; i < PARTY_SIZE; i++)
-    {
-        struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][i];
-
-        if (GetMonData(mon, MON_DATA_SPECIES_OR_EGG) == SPECIES_POOCHYENA_EIEN
-         && GetMonData(mon, MON_DATA_LEVEL) >= EIEN_POOCHYENA_EVO_LEVEL)
-            FlagSet(FLAG_JOURNAL_POOCHYENA_NO_EVO);
-    }
-}
-
 // ---- Drawing --------------------------------------------------------------
 
 static void DrawBackground(void)
@@ -477,8 +462,6 @@ static void DrawResearchDetail(u32 i)
             y = PrintParagraph(y, sJournal->text, COLOR_GREY);
         }
     }
-    if (research->note != NULL && FlagGet(research->noteFlag))
-        PrintParagraph(y, research->note, COLOR_INK);
 }
 
 static void DrawMissionDetail(u32 i)
@@ -634,7 +617,6 @@ void CB2_OpenJournal(void)
         break;
     case 2:
         sJournal = AllocZeroed(sizeof(*sJournal));
-        UpdateJournalNotes();
         PutWindowTilemap(WIN_LEFT);
         PutWindowTilemap(WIN_RIGHT);
         PutWindowTilemap(WIN_TABS);

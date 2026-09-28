@@ -92,13 +92,7 @@ struct JournalResearch
     u16 quest;
     const u8 *name;
     const u8 *notes[RESEARCH_TIER_COUNT];
-    u16 noteFlag;    // Once set, `note` is shown below the tiers
-    const u8 *note;
 };
-
-// Eien Poochyena evolves at this level, but only in a shrine area (design/variants.md). The
-// first time he opens the journal with one at this level or above, he notes it didn't evolve.
-#define EIEN_POOCHYENA_EVO_LEVEL 18
 
 static const u8 *const sResearchTierNames[RESEARCH_TIER_COUNT] =
 {
@@ -119,8 +113,6 @@ static const struct JournalResearch sJournalResearch[] =
             [RESEARCH_TIER_CAUGHT] = COMPOUND_STRING("Heavier than it looks."),
             [RESEARCH_TIER_LORE] = NULL, // TODO(design): a lore step for Eien Poochyena
         },
-        .noteFlag = FLAG_JOURNAL_POOCHYENA_NO_EVO,
-        .note = COMPOUND_STRING("Lv 18, and it didn't evolve."),
     },
 };
 

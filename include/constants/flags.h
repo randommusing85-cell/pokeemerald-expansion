@@ -55,7 +55,7 @@
 #define FLAG_JOURNAL_COVER_SEEN  0x21 // Eien: the journal has been opened once (cover page shown)
 #define FLAG_AURORA_TONIGHT      0x22 // Eien: tonight is an aurora night (story-set: Kaede's quest step 2)
 #define FLAG_AURORA_NIGHTS       0x23 // Eien: aurora nights come back at random (set after the first one)
-#define FLAG_JOURNAL_POOCHYENA_NO_EVO 0x24 // Eien: the journal noted an Eien Poochyena at Lv 18+ that didn't evolve
+#define FLAG_UNUSED_0x024    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
