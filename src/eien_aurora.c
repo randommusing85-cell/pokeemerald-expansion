@@ -21,10 +21,10 @@
 
 #define TINT(r, g, b) (Q_8_8(r) | Q_8_8(g) << 8 | Q_8_8(b) << 16)
 
-// The pulse goes between a cold night tint and a green glow.
+// The pulse goes between a cold night tint and a violet glow.
 // TODO(design): the night palette (an art pass on a real map).
 static const struct BlendSettings sAuroraNightBlend = {.coeff = 10, .blendColor = TINT(0.40, 0.46, 0.66), .isTint = TRUE};
-static const struct BlendSettings sAuroraGlowBlend  = {.coeff = 10, .blendColor = TINT(0.34, 0.80, 0.56), .isTint = TRUE};
+static const struct BlendSettings sAuroraGlowBlend  = {.coeff = 10, .blendColor = TINT(0.68, 0.38, 0.86), .isTint = TRUE};
 
 #define GLOW_MAX       256 // Of 256: how far the pulse goes toward the glow (all the way)
 #define FRAMES_PER_STEP  4 // Palettes are re-blended every this many frames
