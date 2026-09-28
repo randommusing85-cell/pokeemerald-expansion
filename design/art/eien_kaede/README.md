@@ -53,3 +53,17 @@ was sampled to 64x64 and cut to its own 15 colors (`battle_drafts/`, raw output 
   flares into a white swoosh that looks odd.
 - **c, arms crossed** (blunt, tired-but-capable): Pro c is the tallest and most in character;
   Flash c is plainer.
+
+## Grandmother battle sprite drafts (proposals)
+
+Contact sheet: [../eien_kaede_grandmother_battle_contact_sheet.png](../eien_kaede_grandmother_battle_contact_sheet.png).
+The design doesn't give her a battle yet (`characters.md`); these are ready if she gets one.
+Made like Kaede's: Emerald's Expert F (an elderly woman in a white robe) for style and framing,
+her overworld sprite for the design (white hair in a bun, white kimono top, purple hakama, a
+grey shawl), sampled to 64x64 with their own palettes (`grandmother_battle_drafts/`, raw in
+`grandmother_battle_drafts/raw/`). AI-assisted.
+
+- **a, walking stick:** Flash a (hands on the stick, a Poké Ball at her feet) and Pro a (more
+  stooped) are both clean. Flash a reads most like a trainer.
+- **b, seiza:** Flash b is calm and tidy; Pro b's hair came out frizzy and greenish.
+- **c, ofuda:** Flash c holds a clear paper charm; Pro c's hair and charm are smudgy.
