@@ -21,16 +21,20 @@
 
 #define TINT(r, g, b) (Q_8_8(r) | Q_8_8(g) << 8 | Q_8_8(b) << 16)
 
-// The pulse goes between a cold night tint and a violet glow.
+// The pulse loops through these tints: a cold night blue, a green glow, a violet glow, and back.
 // TODO(design): the night palette (an art pass on a real map).
-static const struct BlendSettings sAuroraNightBlend = {.coeff = 10, .blendColor = TINT(0.40, 0.46, 0.66), .isTint = TRUE};
-static const struct BlendSettings sAuroraGlowBlend  = {.coeff = 10, .blendColor = TINT(0.68, 0.38, 0.86), .isTint = TRUE};
+static const struct BlendSettings sAuroraBlends[] =
+{
+    {.coeff = 10, .blendColor = TINT(0.40, 0.46, 0.66), .isTint = TRUE}, // Cold night
+    {.coeff = 10, .blendColor = TINT(0.34, 0.80, 0.56), .isTint = TRUE}, // Green
+    {.coeff = 10, .blendColor = TINT(0.68, 0.38, 0.86), .isTint = TRUE}, // Violet
+};
 
-#define GLOW_MAX       256 // Of 256: how far the pulse goes toward the glow (all the way)
 #define FRAMES_PER_STEP  4 // Palettes are re-blended every this many frames
-#define PHASE_PER_STEP   2 // A full pulse is 256 / 2 steps * 4 frames: about 8.5 seconds
+#define STEPS_PER_LEG   64 // Each leg (one tint to the next) is 64 steps * 4 frames: about 4 seconds
+#define STEPS_PER_CYCLE (STEPS_PER_LEG * ARRAY_COUNT(sAuroraBlends)) // The whole loop: about 13 seconds
 
-static EWRAM_DATA u8 sPhase = 0;
+static EWRAM_DATA u16 sPhase = 0; // Step within the cycle
 static EWRAM_DATA u8 sStepTimer = 0;
 
 bool32 IsAuroraNight(void)
@@ -77,15 +81,18 @@ bool32 IsAuroraWeatherActive(void)
 // Also called whenever the time-of-day blend is recalculated, so the pulse isn't reset.
 void SetAuroraTimeBlend(void)
 {
-    u32 glow;
+    u32 leg, step, progress;
 
     if (!IsAuroraWeatherActive())
         return;
 
-    glow = (GLOW_MAX * (256 - Cos(sPhase, 256))) / 512;
-    gTimeBlend.startBlend = sAuroraNightBlend;
-    gTimeBlend.endBlend = sAuroraGlowBlend;
-    gTimeBlend.weight = 256 - glow;
+    leg = sPhase / STEPS_PER_LEG;
+    step = sPhase % STEPS_PER_LEG;
+    // Eased: 0 at the start of the leg, 256 at its end (half a cosine wave)
+    progress = (256 - Cos(step * 128 / STEPS_PER_LEG, 256)) / 2;
+    gTimeBlend.startBlend = sAuroraBlends[leg];
+    gTimeBlend.endBlend = sAuroraBlends[(leg + 1) % ARRAY_COUNT(sAuroraBlends)];
+    gTimeBlend.weight = 256 - progress;
 }
 
 void Aurora_InitVars(void)
@@ -110,7 +117,8 @@ void Aurora_Main(void)
     if (++sStepTimer < FRAMES_PER_STEP)
         return;
     sStepTimer = 0;
-    sPhase += PHASE_PER_STEP;
+    if (++sPhase >= STEPS_PER_CYCLE)
+        sPhase = 0;
     SetAuroraTimeBlend();
     // Don't touch the palettes during a fade (warps, battles, menus fading in)
     if (!gPaletteFade.active)
