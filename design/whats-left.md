@@ -36,8 +36,9 @@ Once the shrine maps exist, also:
   `tools/eien_npcs/trainer_pic_drafts.py` (add an entry to its `CHARACTERS`).
 - **Aurora battle message**: the Rainbow effect's text says "rainbow"; a small text change
   if the aurora should say so (`game-bible.md`, Eien weather and terrain).
-- **Follower-NPC partner** config (`include/config/follower_npc.h`) for Kaede's aurora-night
-  wild double battle (Act 3; not needed for the first milestone).
+- **Kaede as a battle partner** (Act 3): her `PARTNER_` entry in
+  `src/data/battle_partners.party` once her aurora-night levels are decided; her scene swaps
+  Celebi's follower slot for hers and back.
 
 ## 3. Design still open (the big ones)
 
@@ -69,6 +70,9 @@ Once the shrine maps exist, also:
 - Battle sprites for Akira and Fuyumi (`TRAINER_PIC_EIEN_AKIRA`, `TRAINER_PIC_EIEN_FUYUMI`,
   AI drafts via `tools/eien_npcs/trainer_pic_drafts.py`, notes in `design/art/eien_akira/`
   and `design/art/eien_fuyumi/`).
+- Follower NPCs switched on (`include/config/follower_npc.h`): Celebi can follow the hero, and
+  a follower with a battle partner joins wild battles as a double (checked with the debug
+  menu's Steven follower on Route 101, `design/art/follower_partner_wild_battle.png`).
 - Full test suite: 5,407 passed, 0 failed at the handoff.
 
 ## Working notes for the next chat
