@@ -26,7 +26,9 @@ after gym 1, when Nami helps him.
 | --- | --- | --- | --- |
 | Akira | `TODO` | arriving | Shows him his mother's gym |
 | Nami | past the town `TODO` | after gym 1 | Helps him when he's lost or Celebi is struggling |
-| Kaede | her shrine `TODO` | after gym 1 (`TODO(design)`: in the first milestone or not) | Starts her tablet quest ([side-quests.md](../side-quests.md)) |
+| Kaede (cameo) | her shrine `TODO` | first milestone | Sweeping; one blunt line |
+| Kaede | her shrine `TODO` | after gym 1, second milestone | First meeting: reading the shrine's tablet; asks about the Route 1 tablet; explains the stone dogs grow at their post. Starts her tablet quest ([side-quests.md](../side-quests.md)) |
+| Kaede's grandparent | her shrine `TODO` | always | Small talk about the old days; repeats the evolution rule |
 
 ## Trainers
 

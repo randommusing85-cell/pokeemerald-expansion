@@ -27,7 +27,7 @@ docs: when the design changes, the doc changes in the same commit.
       journal ([Hamakaze](locations/hamakaze.md))
 - [ ] Kashiwagi's lab: pick a starter, Akira and Haru take the others, first battle with Akira
 - [ ] Route 1: coast, snowy fields, shrine; Eien Poochyena ([Route 1](locations/route-1.md))
-- [ ] Shimotsuki and gym 1 (Fuyumi, Ice); Akira shows him the gym ([Shimotsuki](locations/shimotsuki.md))
+- [ ] Shimotsuki and gym 1 (Fuyumi, Ice); Akira shows him the gym; Kaede's cameo at her shrine ([Shimotsuki](locations/shimotsuki.md))
 - [ ] Nami's first meeting, just after gym 1 (end of the slice)
 - [x] Species: Eien Torchic, Bulbasaur, Froakie, Poochyena ([variants](variants.md)); forms
       with placeholder sprites (`tools/eien_species/`)

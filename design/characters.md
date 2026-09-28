@@ -70,6 +70,27 @@ points, Tetsu and Ren come too.
 | Tetsu | Smaller friend | Near the door mountain | Old mountain guide. |
 | Ren | Smaller friend | `TODO(design)` | League trainer who quits after learning about the cover-up. |
 
+### Kaede
+
+- A teen shrine keeper, about his age. Red hakama with a heavy winter coat over it and snow
+  boots.
+- **Voice:** blunt and practical. Tired of being young and in charge, no patience for
+  ceremony, but she does everything properly.
+- **Role:** she keeps the folk version of the old tales and doesn't know they're true. He sees
+  the truth behind them, sometimes before she does. She notices he's not from here, says so
+  once, and doesn't pry.
+- **Her shrine** is in Shimotsuki. An elderly grandparent still lives there but can't do the
+  work: small talk about the old days, repeats the evolution rule, gives the charm item at the
+  end of her quest chain. `TODO(design)`: the grandparent's name and exact relation.
+- **Ties:** none close to Fuyumi or Akira; they're neighbors.
+- **Team:** an Eien Mightyena, the shrine's guardian (the player's first look at what Eien
+  Poochyena becomes), plus Ghost types (`TODO(design)`: species).
+- **First meeting** (second milestone): she's reading her shrine's tablet, asks if he read the
+  one on Route 1, sees his Poochyena and says the stone dogs grow at their post. In the first
+  milestone she only has a cameo, sweeping at the shrine.
+- `TODO(design)`: whether the League cares about her tales; her finale battle; her letters.
+  Decided in [brainstorm-kaede.md](brainstorm-kaede.md).
+
 ## Gym leaders
 
 | # | Town | Leader | Type | Personality | Ace | Level |
@@ -118,6 +139,8 @@ Gen 3 style, from the FRLG-style NPC megapack, converted by `tools/eien_npcs/` (
 | Professor Kashiwagi | `OBJ_EVENT_GFX_EIEN_KASHIWAGI` |
 | Her husband | `OBJ_EVENT_GFX_EIEN_KASHIWAGI_HUSBAND` |
 | Fuyumi | `OBJ_EVENT_GFX_EIEN_FUYUMI` |
+| Kaede | `TODO`: red hakama, winter coat, snow boots |
+| Kaede's grandparent | `TODO` |
 | Celebi | `OBJ_EVENT_GFX_SPECIES(CELEBI)` (engine) |
 | Hamakaze townsfolk | `OBJ_EVENT_GFX_EIEN_FISHERMAN`, `_SAILOR`, `_VILLAGE_WOMAN`, `_SCHOOLBOY` |
 | Shimotsuki townsfolk | `OBJ_EVENT_GFX_EIEN_SNOW_TRAINER`, `_WORKER`, `_POKEFAN_M`, `_SOCIALITE` |

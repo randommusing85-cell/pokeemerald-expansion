@@ -20,6 +20,14 @@
 
 For each major character, a line of description and 2–3 example lines in their voice.
 
+### Kaede
+
+Blunt and practical; short sentences, no ceremony. Tells old tales flatly, as tales.
+
+> You read the one on Route 1? Good. Nobody reads them.
+> It'll grow when it's ready. Here, not out there. That's how the stone dogs are.
+> You don't know the tales. Everyone here knows the tales. …Anyway.
+
 ### _[Rival]_
 
 _[description]_

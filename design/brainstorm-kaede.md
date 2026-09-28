@@ -54,6 +54,9 @@ agrees.
 > It'll grow when it's ready. Here, not out there. That's how the stone dogs are.
 > You don't know the tales. Everyone here knows the tales. …Anyway.
 
+Promoted into `characters.md` (Kaede, sprites), `dialogue-style.md` (her voice), Kaede's chain in
+`side-quests.md`, the Shimotsuki doc and the milestone list in `README.md`.
+
 ## Leaning
 
 _(none)_
