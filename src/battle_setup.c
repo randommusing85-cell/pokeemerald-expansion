@@ -546,6 +546,8 @@ void BattleSetup_StartScriptedDoubleWildBattle(void)
     LockPlayerFieldControls();
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_DOUBLE;
+    if (IsNPCFollowerWildBattle()) // Eien: a follower partner joins scripted doubles too (Kaede's aurora night)
+        gBattleTypeFlags |= BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER;
     CreateBattleStartTask(GetWildBattleTransition(), 0);
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
     IncrementGameStat(GAME_STAT_WILD_BATTLES);
@@ -719,6 +721,9 @@ static void CB2_EndScriptedWildBattle(void)
 {
     CpuFill16(0, (void *)(BG_PLTT), BG_PLTT_SIZE);
     ResetOamRange(0, 128);
+
+    if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER) // Eien: see BattleSetup_StartScriptedDoubleWildBattle
+        RestorePartyAfterFollowerNPCBattle();
 
     if (IsPlayerDefeated(gBattleOutcome) == TRUE)
     {
