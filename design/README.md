@@ -15,6 +15,7 @@ docs: when the design changes, the doc changes in the same commit.
 | [locations/](locations/) | One doc per town, route or dungeon (copy `_template.md`) |
 | [asset-credits.md](asset-credits.md) | Every community asset used, with its author |
 | [asset-candidates.md](asset-candidates.md) | Community assets we might use, not yet checked |
+| [whats-left.md](whats-left.md) | Handoff: what's left to build, grouped by what blocks it |
 
 ## Current milestone
 
