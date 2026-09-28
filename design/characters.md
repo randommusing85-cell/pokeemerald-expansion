@@ -83,12 +83,21 @@ points, Tetsu and Ren come too.
   work: small talk about the old days, repeats the evolution rule, gives the charm item at the
   end of her quest chain. `TODO(design)`: the grandmother's name.
 - **Ties:** none close to Fuyumi or Akira; they're neighbors.
-- **Team:** an Eien Mightyena, the shrine's guardian (the player's first look at what Eien
-  Poochyena becomes), plus Ghost types (`TODO(design)`: species).
+- **Team:** Eien Mightyena (the shrine's guardian, the player's first look at what Eien
+  Poochyena becomes), Froslass (a snow spirit) and Mismagius (both of its move types get the
+  thin-place boost). One joins per quest step: Mightyena is there at the first meeting, the
+  second on the aurora night, the third before the League (`TODO(design)`: which Ghost first).
+- **Battles:** always beside him, never against him. A tag battle on the aurora night (quest
+  step 2), then the finale: at the door mountain she and the hero fight two ordinary members
+  of Minato's group in a tag battle on the thin-place terrain, with those three Pokémon. It's
+  the same battle whatever her points; they change only her lines. Afterwards she follows
+  him up and sees the cycle end: the tale she has always told happens in front of her.
+  She needs a back sprite by Act 3.
 - **First meeting** (second milestone): she's reading her shrine's tablet, asks if he read the
   one on Route 1, sees his Poochyena and says the stone dogs grow at their post. In the first
   milestone she only has a cameo, sweeping at the shrine.
-- `TODO(design)`: whether the League cares about her tales; her finale battle; her letters.
+- `TODO(design)`: whether the League cares about her tales; her letters; her finale lines;
+  who they fight on the aurora night. Decided in [brainstorm-kaede-finale.md](brainstorm-kaede-finale.md).
   Decided in [brainstorm-kaede.md](brainstorm-kaede.md).
 
 ## Gym leaders

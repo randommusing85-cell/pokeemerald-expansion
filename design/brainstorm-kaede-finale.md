@@ -44,6 +44,9 @@ Running notes. Nothing is decided until it's under **Decided**; decisions move i
 - **After the battle (r2 4b):** she follows him up and sees the cycle end: the tale she has
   always told happens in front of her. The payoff for her lore thread.
 
+Promoted into `characters.md` (her team and battles), `side-quests.md` (steps 2 and 3) and
+`story-outline.md` (Act 4 beats 3 and 4).
+
 ## Leaning
 
 _(none)_

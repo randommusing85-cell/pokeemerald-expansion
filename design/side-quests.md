@@ -95,13 +95,15 @@ The map bookends the chain: the first quest starts it, the last one gives it bac
 
 ### Kaede (lore thread; always helps in the finale)
 
-Her shrine is in Shimotsuki; it's a shrine area, where Eien Poochyena can first evolve.
+Her shrine is in Shimotsuki; it's a shrine area, where Eien Poochyena can first evolve. In the
+finale she fights beside him in a tag battle, whatever her points
+([characters.md](characters.md)).
 
 | # | When / where | What happens | Points from | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Act 1, her shrine in Shimotsuki, after gym 1 | She asks for rubbings of old shrine tablets around Eien. A collection quest that scales (one tablet per few maps); each rubbing adds a lore page to the journal. Tablets he read before (the Route 1 shrine's) count. | Each tablet brought back | Spell Tag (Ghost boost) | No |
-| 2 | Act 3, a thin place on an aurora night | She shows him a folk tale "happening": Eien variants act strangely under the aurora. Adds a research step. | The answer about whether the tales are true | Lore | No |
-| 3 | Act 3, before the League | She tells what the tales say about the end of a cycle: someone always pays. She tells it flatly, as just a tale; he and the player make the connection. Foreshadows his memories. | The answer | A charm item from her grandmother (`TODO(design)`: which) | No |
+| 2 | Act 3, a thin place on an aurora night | She shows him a folk tale "happening": Eien variants act strangely under the aurora. Adds a research step. They fight a tag battle side by side (`TODO(design)`: against whom), and her second Pokémon joins her team. | The answer about whether the tales are true | Lore | No |
+| 3 | Act 3, before the League | She tells what the tales say about the end of a cycle: someone always pays. She tells it flatly, as just a tale; he and the player make the connection. Foreshadows his memories. Her third Pokémon has joined her. | The answer | A charm item from her grandmother (`TODO(design)`: which) | No |
 
 ### Yuki (cameo in Act 1; friend from Act 3)
 

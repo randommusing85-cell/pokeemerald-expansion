@@ -49,8 +49,8 @@ journal writes an entry for each beat reached (`src/data/eien_journal.h`).
 | --- | --- | --- | --- |
 | 1 | Pokémon League | Partway through the Elite Four, Minato's plan starts. | `TODO` |
 | 2 | League | Seiji admits the cover-up and joins him. | `TODO` |
-| 3 | Door mountain | With Seiji, Haru and Yuki he fights Minato and Akira. Celebi dies protecting him. | `TODO` |
-| 4 | Door mountain | He helps the cycle finish safely; Arceus renews. The journal's pages go blank. | `TODO` |
+| 3 | Door mountain | On the way up, Kaede fights beside him in a tag battle against two of Minato's people (Tetsu and Ren hold off others if their points are high). With Seiji, Haru and Yuki he fights Minato and Akira. Celebi dies protecting him. | `TODO` |
+| 4 | Door mountain | He helps the cycle finish safely; Arceus renews. The journal's pages go blank. Kaede sees it: the tale she has always told, happening. | `TODO` |
 | 5 | `TODO(design)` | He says goodbye to his friends. Palkia sends him home. | `TODO` |
 
 ## Ending
