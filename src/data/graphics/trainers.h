@@ -472,6 +472,8 @@ const u16 gTrainerPalette_PainterFrlg[] = INCGFX_U16("graphics/trainers/palettes
 // Eien
 const u32 gTrainerFrontPic_EienKaede[] = INCGFX_U32("graphics/trainers/front_pics/eien_kaede.png", ".4bpp.smol");
 const u16 gTrainerPalette_EienKaede[] = INCGFX_U16("graphics/trainers/palettes/eien_kaede.pal", ".gbapal");
+const u32 gTrainerFrontPic_EienKaedeGrandmother[] = INCGFX_U32("graphics/trainers/front_pics/eien_kaede_grandmother.png", ".4bpp.smol");
+const u16 gTrainerPalette_EienKaedeGrandmother[] = INCGFX_U16("graphics/trainers/palettes/eien_kaede_grandmother.pal", ".gbapal");
 
 static const u8 gTrainerBackPic_None[] = INCGFX_U8("graphics/trainers/back_pics/none.png", ".4bpp");
 const u8 gTrainerBackPic_Brendan[] = INCGFX_U8("graphics/trainers/back_pics/brendan.png", ".4bpp");
@@ -1233,5 +1235,9 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_EIEN_KAEDE] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_EienKaede, gTrainerPalette_EienKaede),
+    },
+    [TRAINER_PIC_EIEN_KAEDE_GRANDMOTHER] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_EienKaedeGrandmother, gTrainerPalette_EienKaedeGrandmother),
     },
 };

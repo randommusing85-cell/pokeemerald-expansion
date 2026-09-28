@@ -54,7 +54,11 @@ was sampled to 64x64 and cut to its own 15 colors (`battle_drafts/`, raw output 
 - **c, arms crossed** (blunt, tired-but-capable): Pro c is the tallest and most in character;
   Flash c is plainer.
 
-## Grandmother battle sprite drafts (proposals)
+## Grandmother battle sprite drafts
+
+**Picked:** `grandmother_gemini31flash_a` (walking stick), in the game as
+`TRAINER_PIC_EIEN_KAEDE_GRANDMOTHER`. `grandmother_battle_ingame.png` is a debug battle with the
+debug opponent's picture swapped for the test only.
 
 Contact sheet: [../eien_kaede_grandmother_battle_contact_sheet.png](../eien_kaede_grandmother_battle_contact_sheet.png).
 The design doesn't give her a battle yet (`characters.md`); these are ready if she gets one.
