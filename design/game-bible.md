@@ -132,7 +132,7 @@ on what other hacks and fan games do.
   - **Aurora on the map:** a cold night palette with a slow color pulse. Aurora nights are
     clear, so no snow then. The first is story-set (Kaede's step 2); after that they come back
     at random. Built as the weather `WEATHER_AURORA` (`src/eien_aurora.c`): it loops the
-    night tint from a cold blue to a green glow to a violet glow and back, about 13 seconds a
+    night tint from a cold blue to a green glow to a violet glow and back, about 25 seconds a
     cycle (placeholder colors; shots in `art/aurora_map_plain_night.png` and `art/aurora_map_pulse.png`). When a
     map loads at night, an outdoor map whose weather is clear or snow gets the aurora instead
     if tonight is an aurora night. Tonight is an aurora night if `FLAG_AURORA_TONIGHT` is set

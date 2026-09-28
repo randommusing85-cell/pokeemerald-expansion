@@ -31,8 +31,8 @@ static const struct BlendSettings sAuroraBlends[] =
 };
 
 #define FRAMES_PER_STEP  4 // Palettes are re-blended every this many frames
-#define STEPS_PER_LEG   64 // Each leg (one tint to the next) is 64 steps * 4 frames: about 4 seconds
-#define STEPS_PER_CYCLE (STEPS_PER_LEG * ARRAY_COUNT(sAuroraBlends)) // The whole loop: about 13 seconds
+#define STEPS_PER_LEG  128 // Each leg (one tint to the next) is 128 steps * 4 frames: about 8.5 seconds
+#define STEPS_PER_CYCLE (STEPS_PER_LEG * ARRAY_COUNT(sAuroraBlends)) // The whole loop: about 25 seconds
 
 static EWRAM_DATA u16 sPhase = 0; // Step within the cycle
 static EWRAM_DATA u8 sStepTimer = 0;
