@@ -23,7 +23,18 @@ Running notes. Nothing is decided until it's under **Decided**; decisions move i
 
 ## Decided
 
-_(none yet)_
+- **What counts (1a):** only real shrine maps, the grounds around a shrine. Not whole routes,
+  not the mountain.
+- **Route 1's shrine (2a):** its own small map entered from Route 1 (the user makes it in
+  Porymap). It's a shrine area.
+- **First chance (3c):** Shimotsuki gets a shrine (its own map), reachable right after gym 1,
+  about when Eien Poochyena reaches Lv 18.
+- **Teaching it (4a+c):** the journal's Poochyena research entry gets a note the first time it
+  reaches 18 and doesn't evolve; a shrine tablet at the Route 1 shrine hints at the rule.
+- **Built as (5a):** one evolution entry per shrine map (`IF_IN_MAP`), no engine change. Switch
+  to a shared "shrine area" mark when a second system needs it.
+- **Thin places (6b):** every shrine area is a thin place; the mountain is a thin place but not
+  a shrine area.
 
 ## Leaning
 
@@ -31,18 +42,23 @@ _(none)_
 
 ## Open questions
 
-Round 1 (asked):
-1. What counts as a shrine area.
-2. Route 1's shrine: its own map or part of the route.
-3. Where the first chance to evolve is, given it reaches Lv 18 after gym 1.
-4. How the player learns the rule.
-5. How it's built in the engine.
-6. Shrine areas and thin places: the same set or not.
+Round 2 (asked):
+1. What the Shimotsuki shrine is (whose, what's there).
+2. What's on the Route 1 shrine map.
+3. The Route 1 tablet before Kaede's quest exists.
+4. When the journal note appears.
+5. Whether a Rare Candy used at a shrine counts.
+
+Default (not asked): the evolution is added once the shrine maps exist. The first milestone
+ends at gym 1, below Lv 18, so it isn't needed for that milestone.
 
 ## Gaps and tensions
 
 - The Route 1 shrine is the obvious shrine area but sits before gym 1, while Lv 18 comes
   after it; the first evolution may mean backtracking, or it happens at a later shrine.
+- Shimotsuki's shrine is new content in a town whose doc has no landmarks yet; it could also
+  answer where Kaede's shrine is.
+- The Route 1 tablet comes before Kaede asks for rubbings.
 - Evolution only checks where the player is when it levels up. A Poochyena that levels past
   18 elsewhere must level again at a shrine (or use a Rare Candy there).
 - Fan knowledge: he knows Mightyena evolves at 18, so a Poochyena that doesn't evolve is a
