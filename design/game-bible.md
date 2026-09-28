@@ -125,13 +125,27 @@ on what other hacks and fan games do.
     a map would leak into a later battle elsewhere.) Scripts can still force it for one battle
     with `setstartingstatus STARTING_STATUS_THIN_PLACE`.
   - **Aurora in battle:** the engine's "Rainbow" effect for both sides (moves' side effects
-    twice as likely). Its messages say "rainbow"; saying "aurora" needs a small text change.
+    twice as likely), for the whole battle, with one aurora message instead of the rainbow's
+    ("An aurora shimmers in the sky!", placeholder text). Every battle under the aurora weather
+    has it. Built: `STARTING_STATUS_AURORA` (tests in
+    `test/battle/starting_status/eien_aurora.c`, shot in `art/aurora_message.png`).
   - **Aurora on the map:** a cold night palette with a slow color pulse. Aurora nights are
     clear, so no snow then. The first is story-set (Kaede's step 2); after that they come back
-    at random.
+    at random. Built as the weather `WEATHER_AURORA` (`src/eien_aurora.c`): it pulses the
+    night tint between a cold blue and a green glow, about 8 seconds a cycle (placeholder
+    colors; shots in `art/aurora_map_plain_night.png` and `art/aurora_map_pulse.png`). When a
+    map loads at night, an outdoor map whose weather is clear or snow gets the aurora instead
+    if tonight is an aurora night. Tonight is an aurora night if `FLAG_AURORA_TONIGHT` is set
+    (the story sets it for Kaede's step 2 and clears it after), or `FLAG_AURORA_NIGHTS` is set
+    (from the end of Kaede's step 2) and tonight's roll comes up: one night in
+    `AURORA_NIGHT_CHANCE` (4 for now), the same roll all night on every map. The aurora starts
+    or ends on the next map change after nightfall or dawn, not mid-map. A script can also
+    force it with `setweather WEATHER_AURORA` / `doweather`.
+    `TODO(design)`: how often aurora nights come back.
   - Both apply together (a thin place on an aurora night). The journal explains each effect
     the first time he meets it; his fan knowledge doesn't cover them.
-  - `TODO(design)`: the exact battle messages; the night palette (an art pass on a real map).
+  - `TODO(design)`: the exact battle messages (both are placeholders); the night palette (an
+    art pass on a real map: the two tints in `src/eien_aurora.c`).
 - **Difficulty:** see [progression.md](progression.md).
 - **Not used:** Mega, Z-Moves, Dynamax and Tera (a lore-tied gimmick may come later);
   follower Pokémon (Celebi already follows him; parked).

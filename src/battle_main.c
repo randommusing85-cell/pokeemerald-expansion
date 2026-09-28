@@ -23,6 +23,7 @@
 #include "decompress.h"
 #include "dexnav.h"
 #include "dma3.h"
+#include "eien_aurora.h"
 #include "eien_places.h"
 #include "event_data.h"
 #include "evolution_scene.h"
@@ -3413,6 +3414,8 @@ static void DoBattleIntro(void)
             STARTING_STATUS_DEFINITIONS(UNPACK_STARTING_STATUS_TO_BATTLE);
             if (IsCurrentMapThinPlace()) // Eien: every battle on a thin-place map
                 gStartingStatuses.thinPlace = TRUE;
+            if (IsAuroraWeatherActive()) // Eien: every battle under the aurora
+                gStartingStatuses.aurora = TRUE;
             gBattleMainFunc = TryDoEventsBeforeFirstTurn;
         }
         break;

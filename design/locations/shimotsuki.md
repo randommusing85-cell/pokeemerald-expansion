@@ -46,6 +46,8 @@ after gym 1, when Nami helps him.
 | `VAR_EIEN_STORY` = `STORY_SHIMOTSUKI` | Akira shows him the gym | The journal |
 | `VAR_EIEN_STORY` = `STORY_BADGE_1` | He beats Fuyumi | The journal |
 | `QUEST_AKIRA_PRACTICE` (quest table) | Akira asks for a practice battle after gym 1 | The journal; closes at the tournament |
+| `FLAG_AURORA_TONIGHT` | Kaede says come back tonight (Act 3, her step 2); cleared after the aurora-night battle | `IsAuroraNight` (`src/eien_aurora.c`): the aurora weather and its battle effect |
+| `FLAG_AURORA_NIGHTS` | The end of Kaede's step 2 | `IsAuroraNight`: aurora nights come back at random from then on |
 
 ## Screenshot check
 
