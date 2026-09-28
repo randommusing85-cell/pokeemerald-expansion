@@ -37,8 +37,9 @@ Once the shrine maps exist, also:
   `TRAINER_PIC_EIEN_KAEDE`), or vanilla placeholders. Haru and Nami need them later.
 - **Aurora battle message**: the Rainbow effect's text says "rainbow"; a small text change
   if the aurora should say so (`game-bible.md`, Eien weather and terrain).
-- **Follower-NPC partner** config (`include/config/follower_npc.h`) for Kaede's aurora-night
-  wild double battle (Act 3; not needed for the first milestone).
+- **Kaede as a battle partner** (Act 3): her `PARTNER_` entry in
+  `src/data/battle_partners.party` once her aurora-night levels are decided; her scene swaps
+  Celebi's follower slot for hers and back.
 
 ## 3. Design still open (the big ones)
 
@@ -67,6 +68,9 @@ Once the shrine maps exist, also:
   for Kaede (front and back) and her grandmother.
 - Thin-place battle effect (`STARTING_STATUS_THIN_PLACE`, `src/eien_places.c`, tests in
   `test/battle/starting_status/eien_thin_place.c`).
+- Follower NPCs switched on (`include/config/follower_npc.h`): Celebi can follow the hero, and
+  a follower with a battle partner joins wild battles as a double (checked with the debug
+  menu's Steven follower on Route 101, `design/art/follower_partner_wild_battle.png`).
 - Full test suite: 5,407 passed, 0 failed at the handoff.
 
 ## Working notes for the next chat
