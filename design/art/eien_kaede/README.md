@@ -1,0 +1,31 @@
+# Drafts: Kaede and her grandparent (overworld)
+
+Proposals, nothing picked yet. Contact sheet:
+[../eien_kaede_ow_contact_sheet.png](../eien_kaede_ow_contact_sheet.png) (each facing down,
+left, right, up). Made by `tools/eien_npcs/kaede_drafts.py` as recolors of FRLG-style NPC
+megapack sheets, like the other Eien NPCs. A picked draft goes through
+`tools/eien_npcs/convert.py`, and its artists get credited in `asset-credits.md`.
+
+## Kaede
+
+The pack has no shrine keeper, so these start from `Anime NPC 07` (Kalarie; first frames by
+Pokésho): tied-up hair and an open coat over a darker layer. Maroon hair becomes dark brown,
+the layer under the coat becomes a red hakama, the hair band becomes a white ribbon, and the
+shoes become brown boots. The base wears glasses; they're painted out as plain eyes.
+
+- **a, navy coat:** a dark winter coat. The red hakama stands out most.
+- **b, cream coat:** a light padded coat. Reads the most "shrine".
+- **c, grey coat:** closest to the base's colors.
+
+A recolor can't change the silhouette: the hakama only shows as a strip under the coat. For a
+real hakama shape, the sheet would need an edit (by hand or an AI pass like the hero's hair).
+
+## Grandparent
+
+- **a, Medium** (HGSS `trainer_MEDIUM`; Delta231, Mimi, M.vit, Kimoras): an elderly woman in an
+  orange robe, as it is.
+- **b, Medium in shrine colors:** the same sheet with a white upper robe and a purple hakama,
+  the color senior keepers wear.
+- **c, Kurt** (HGSS `NPC_Kurt`): an elderly man in a green coat, as it is.
+
+The docs leave the grandparent's gender open; picking a sprite settles it.
