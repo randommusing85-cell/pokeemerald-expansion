@@ -32,3 +32,20 @@ real hakama shape, the sheet would need an edit (by hand or an AI pass like the 
 - **c, Kurt** (HGSS `NPC_Kurt`): an elderly man in a green coat, as it is.
 
 The docs leave the grandparent's gender open; picking a sprite settles it.
+
+## Battle sprite drafts (proposals)
+
+Contact sheet: [../eien_kaede_battle_contact_sheet.png](../eien_kaede_battle_contact_sheet.png).
+A trainer front picture (64x64); a back picture is only needed if she joins tag battles
+(`TODO(design)`). Gemini 3 Pro Image and 3.1 Flash Image got FRLG's Channeler (a shrine maiden)
+for style, proportions and framing, and her overworld sprite for colors and design: navy
+winter coat open over a white kimono top and red hakama, white ribbon, brown boots. Each draft
+was sampled to 64x64 and cut to its own 15 colors (`battle_drafts/`, raw output in
+`battle_drafts/raw/`). AI-assisted art, to be noted in `asset-credits.md` when one is used.
+
+- **a, broom** (bamboo shrine broom, hand on hip): ties to her sweeping cameo. Flash a is the
+  cleaner of the two.
+- **b, throw** (Poké Ball throw): Pro b reads well and has the most energy; Flash b's coat
+  flares into a white swoosh that looks odd.
+- **c, arms crossed** (blunt, tired-but-capable): Pro c is the tallest and most in character;
+  Flash c is plainer.
