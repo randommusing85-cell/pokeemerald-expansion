@@ -721,6 +721,7 @@ enum FaintedActions
     F(STARTING_STATUS_WEATHER_FOG_TEMPORARY,          weatherFogTemporary,        (u32, 1)) /* Temporary Fog */                            \
     /* Eien */                                                                                                                             \
     F(STARTING_STATUS_THIN_PLACE,                     thinPlace,                  (u32, 1)) /* Thin place (Permanent) */                   \
+    F(STARTING_STATUS_AURORA,                         aurora,                     (u32, 1)) /* Aurora: Rainbow on both sides (Permanent) */ \
 
 #define UNPACK_STARTING_STATUS_ENUMS(_enum, ...) _enum,
 

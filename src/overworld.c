@@ -9,6 +9,7 @@
 #include "credits_frlg.h"
 #include "clock.h"
 #include "dexnav.h"
+#include "eien_aurora.h"
 #include "event_data.h"
 #include "event_object_movement.h"
 #include "event_scripts.h"
@@ -1768,6 +1769,8 @@ void UpdateTimeOfDay(bool32 updateBlend)
         }
         gTimeOfDay = TIME_DAY;
     }
+    if (updateBlend)
+        SetAuroraTimeBlend(); // Eien: keep the aurora's pulse on aurora nights
 }
 
 #undef MORNING_HOUR_MIDDLE
