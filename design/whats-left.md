@@ -29,14 +29,10 @@ Once the shrine maps exist, also:
 
 ## 2. Buildable now, without maps
 
-- **Journal note** for Eien Poochyena: when the journal opens with an Eien Poochyena of
-  Lv 18+ in the party, its research entry gets the "it didn't evolve" note (`variants.md`).
-  Code in `src/eien_journal.c`, data in `src/data/eien_journal.h`.
-- **Battle sprites for the milestone's trainers**: Akira (lab battle) and Fuyumi (gym 1) have
-  only overworld sprites; they need trainer front pics (`TRAINER_PIC_...`, like
-  `TRAINER_PIC_EIEN_KAEDE`), or vanilla placeholders. Haru and Nami need them later.
-- **Aurora battle message**: the Rainbow effect's text says "rainbow"; a small text change
-  if the aurora should say so (`game-bible.md`, Eien weather and terrain).
+- **Battle sprites for Haru and Nami** (later): make them like Akira's and Fuyumi's with
+  `tools/eien_npcs/trainer_pic_drafts.py` (add an entry to its `CHARACTERS`).
+- **Journal note for the aurora**: the journal explains the aurora the first time he meets it
+  (`game-bible.md`, Eien weather and terrain). Text `TODO(design)`.
 - **Kaede as a battle partner** (Act 3): her `PARTNER_` entry in
   `src/data/battle_partners.party` once her aurora-night levels are decided; her scene swaps
   Celebi's follower slot for hers and back.
@@ -53,7 +49,8 @@ Once the shrine maps exist, also:
   (`side-quests.md`).
 - **Kaede:** the tale's text (the stone dogs on aurora nights), her finale lines, her letters,
   whether the League cares about her tales, the grandmother's name, the charm item.
-- **Weather and terrain:** exact battle messages; the aurora night palette (needs a map).
+- **Weather and terrain:** exact battle messages; the aurora night palette (needs a map);
+  how often aurora nights come back (`AURORA_NIGHT_CHANCE`, 1 in 4 for now).
 - **Nami's** aurora-night warm scene: a different night from Kaede's, or linked.
 
 ## 4. Done so far (for orientation)
@@ -68,6 +65,17 @@ Once the shrine maps exist, also:
   for Kaede (front and back) and her grandmother.
 - Thin-place battle effect (`STARTING_STATUS_THIN_PLACE`, `src/eien_places.c`, tests in
   `test/battle/starting_status/eien_thin_place.c`).
+- Aurora nights: the map weather `WEATHER_AURORA` (a pulsing night tint) and its battle effect
+  `STARTING_STATUS_AURORA` (Rainbow for both sides), `src/eien_aurora.c`, flags
+  `FLAG_AURORA_TONIGHT` / `FLAG_AURORA_NIGHTS`, tests in
+  `test/battle/starting_status/eien_aurora.c`. Still to do once maps exist: set the flags in
+  Kaede's step-2 script, the aurora-only wild Eien Mightyena at thin places.
+- Journal note for Eien Poochyena at Lv 18+ that didn't evolve (`FLAG_JOURNAL_POOCHYENA_NO_EVO`,
+  `UpdateJournalNotes`, tests in `test/eien_journal.c`). The research page is now full; a lore
+  tier will need scrolling.
+- Battle sprites for Akira and Fuyumi (`TRAINER_PIC_EIEN_AKIRA`, `TRAINER_PIC_EIEN_FUYUMI`,
+  AI drafts via `tools/eien_npcs/trainer_pic_drafts.py`, notes in `design/art/eien_akira/`
+  and `design/art/eien_fuyumi/`).
 - Follower NPCs switched on (`include/config/follower_npc.h`): Celebi can follow the hero, and
   a follower with a battle partner joins wild battles as a double (checked with the debug
   menu's Steven follower on Route 101, `design/art/follower_partner_wild_battle.png`).
