@@ -23,6 +23,7 @@
 #include "constants/easy_chat.h"
 #include "constants/trainer_hill.h"
 #include "constants/trainer_tower.h"
+#include "constants/eien_quests.h"
 #include "constants/items.h"
 #include "constants/moves.h"
 #include "config/save.h"
@@ -1092,6 +1093,14 @@ struct Bag
     struct ItemSlot berries[BAG_BERRIES_COUNT];
 };
 
+// Eien's quest table and relationship points (src/eien_quests.c, design/side-quests.md).
+struct EienQuestData
+{
+    u8 quests[EIEN_QUEST_CAPACITY];  // bits 0-1 state (QUEST_STATE_*), bits 2-7 step
+    u8 points[EIEN_PERSON_CAPACITY]; // relationship points per person
+    u16 letters;                     // a pending letter per person (bit = PERSON_*)
+};
+
 struct SaveBlock1
 {
     /*0x00*/ struct Coords16 pos;
@@ -1210,6 +1219,7 @@ struct SaveBlock1
     u8 rivalName[PLAYER_NAME_LENGTH + 1];
     struct DaycareMon route5DayCareMon;
 #endif
+    struct EienQuestData eienQuests;
     // sizeof: 0x3???
 };
 

@@ -1515,6 +1515,12 @@ static void Task_NewGameBirchSpeech_WaitForPlayerFadeIn(u8 taskId)
 
 static void Task_NewGameBirchSpeech_BoyOrGirl(u8 taskId)
 {
+    if (EIEN_HERO_ALWAYS_MALE)
+    {
+        gSaveBlock2Ptr->playerGender = MALE;
+        gTasks[taskId].func = Task_NewGameBirchSpeech_WhatsYourName;
+        return;
+    }
     NewGameBirchSpeech_ClearWindow(0);
     StringExpandPlaceholders(gStringVar4, gText_Birch_BoyOrGirl);
     AddTextPrinterForMessage(TRUE);

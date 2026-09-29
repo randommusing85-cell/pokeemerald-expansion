@@ -469,6 +469,17 @@ const u16 gTrainerPalette_LadyFrlg[] = INCGFX_U16("graphics/trainers/palettes/la
 const u32 gTrainerFrontPic_PainterFrlg[] = INCGFX_U32("graphics/trainers/front_pics/painter_frlg.png", ".4bpp.smol");
 const u16 gTrainerPalette_PainterFrlg[] = INCGFX_U16("graphics/trainers/palettes/painter_frlg.pal", ".gbapal");
 
+// Eien
+const u32 gTrainerFrontPic_EienKaede[] = INCGFX_U32("graphics/trainers/front_pics/eien_kaede.png", ".4bpp.smol");
+const u16 gTrainerPalette_EienKaede[] = INCGFX_U16("graphics/trainers/palettes/eien_kaede.pal", ".gbapal");
+const u8 gTrainerBackPic_EienKaede[] = INCGFX_U8("graphics/trainers/back_pics/eien_kaede.png", ".4bpp");
+const u32 gTrainerFrontPic_EienKaedeGrandmother[] = INCGFX_U32("graphics/trainers/front_pics/eien_kaede_grandmother.png", ".4bpp.smol");
+const u16 gTrainerPalette_EienKaedeGrandmother[] = INCGFX_U16("graphics/trainers/palettes/eien_kaede_grandmother.pal", ".gbapal");
+const u32 gTrainerFrontPic_EienAkira[] = INCGFX_U32("graphics/trainers/front_pics/eien_akira.png", ".4bpp.smol");
+const u16 gTrainerPalette_EienAkira[] = INCGFX_U16("graphics/trainers/palettes/eien_akira.pal", ".gbapal");
+const u32 gTrainerFrontPic_EienFuyumi[] = INCGFX_U32("graphics/trainers/front_pics/eien_fuyumi.png", ".4bpp.smol");
+const u16 gTrainerPalette_EienFuyumi[] = INCGFX_U16("graphics/trainers/palettes/eien_fuyumi.pal", ".gbapal");
+
 static const u8 gTrainerBackPic_None[] = INCGFX_U8("graphics/trainers/back_pics/none.png", ".4bpp");
 const u8 gTrainerBackPic_Brendan[] = INCGFX_U8("graphics/trainers/back_pics/brendan.png", ".4bpp");
 const u8 gTrainerBackPic_May[] = INCGFX_U8("graphics/trainers/back_pics/may.png", ".4bpp");
@@ -1225,5 +1236,22 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_PAINTER_FRLG] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PainterFrlg, gTrainerPalette_PainterFrlg),
+    },
+    [TRAINER_PIC_EIEN_KAEDE] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_EienKaede, gTrainerPalette_EienKaede),
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_EienKaede, gTrainerPalette_EienKaede, sBackAnims_OldManPokedude),
+    },
+    [TRAINER_PIC_EIEN_KAEDE_GRANDMOTHER] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_EienKaedeGrandmother, gTrainerPalette_EienKaedeGrandmother),
+    },
+    [TRAINER_PIC_EIEN_AKIRA] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_EienAkira, gTrainerPalette_EienAkira),
+    },
+    [TRAINER_PIC_EIEN_FUYUMI] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_EienFuyumi, gTrainerPalette_EienFuyumi),
     },
 };

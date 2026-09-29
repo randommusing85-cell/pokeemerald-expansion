@@ -377,6 +377,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sTorchicLevelUpLearnset,
         .teachableLearnset = sTorchicTeachableLearnset,
         .eggMoveLearnset = sTorchicEggMoveLearnset,
+        .formSpeciesIdTable = sTorchicFormSpeciesIdTable, // Eien: eien_forms_data.h
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_COMBUSKEN}),
     },
 
@@ -1002,6 +1003,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sPoochyenaLevelUpLearnset,
         .teachableLearnset = sPoochyenaTeachableLearnset,
         .eggMoveLearnset = sPoochyenaEggMoveLearnset,
+        .formSpeciesIdTable = sPoochyenaFormSpeciesIdTable, // Eien: eien_forms_data.h
         .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_MIGHTYENA}),
     },
 
@@ -1076,6 +1078,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sMightyenaLevelUpLearnset,
         .teachableLearnset = sMightyenaTeachableLearnset,
+        .formSpeciesIdTable = sMightyenaFormSpeciesIdTable, // Eien: eien_forms_data.h
     },
 #endif //P_FAMILY_POOCHYENA
 

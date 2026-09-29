@@ -444,6 +444,7 @@ enum BattleTerrain
 #define STATUS_FIELD_GRAVITY                        (1 << 5)
 #define STATUS_FIELD_ION_DELUGE                     (1 << 6)
 #define STATUS_FIELD_FAIRY_LOCK                     (1 << 7)
+#define STATUS_FIELD_THIN_PLACE                     (1 << 8) // Eien: Ghost and Psychic moves do 30% more (design/game-bible.md)
 
 // Flags describing move's result
 #define MOVE_RESULT_MISSED                 (1 << 0)
@@ -718,6 +719,9 @@ enum FaintedActions
     F(STARTING_STATUS_WEATHER_SNOW_TEMPORARY,         weatherSnowTemporary,       (u32, 1)) /* Temporary Snow */                           \
     F(STARTING_STATUS_WEATHER_FOG,                    weatherFog,                 (u32, 1)) /* Permanent Fog */                            \
     F(STARTING_STATUS_WEATHER_FOG_TEMPORARY,          weatherFogTemporary,        (u32, 1)) /* Temporary Fog */                            \
+    /* Eien */                                                                                                                             \
+    F(STARTING_STATUS_THIN_PLACE,                     thinPlace,                  (u32, 1)) /* Thin place (Permanent) */                   \
+    F(STARTING_STATUS_AURORA,                         aurora,                     (u32, 1)) /* Aurora: Rainbow on both sides (Permanent) */ \
 
 #define UNPACK_STARTING_STATUS_ENUMS(_enum, ...) _enum,
 

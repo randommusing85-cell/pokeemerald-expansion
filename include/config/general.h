@@ -87,4 +87,7 @@
 // Naming Screen
 #define AUTO_LOWERCASE_KEYBOARD      GEN_LATEST  // Starting in GEN_6, after entering the first uppercase character, the keyboard switches to lowercase letters.
 
+// Eien
+#define EIEN_HERO_ALWAYS_MALE        TRUE        // The new game intro skips the boy/girl question: the hero is male (design/characters.md). The naming screen stays.
+
 #endif // GUARD_CONFIG_GENERAL_H

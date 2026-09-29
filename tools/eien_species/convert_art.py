@@ -1,0 +1,135 @@
+#!/usr/bin/env python3
+"""Turn the chosen draft front sprites into the Eien forms' sprites (design/variants.md).
+
+For each species in PICKS:
+  graphics/pokemon/eien/<species>/anim_front.png  the chosen front (design/art/eien_<species>/
+                                                  converted/) and frame 2 (FRAME2_PICKS; else
+                                                  frame 1 raised 1px)
+  graphics/pokemon/eien/<species>/normal.pal      the draft's 16 colors, shared by front and back
+  graphics/pokemon/eien/<species>/shiny.pal       the chosen shiny draft (SHINY_PICKS), or an
+                                                  automatic hue shift
+  graphics/pokemon/eien/<species>/back.png        the chosen back draft (BACK_PICKS), or else a
+                                                  placeholder: the original back sprite, each
+                                                  color replaced by the draft color covering the
+                                                  same pixels on the front
+Icons are make_icons.py. Species not in PICKS keep their placeholder palettes
+(placeholder_palettes.py).
+  tools/eien_species/convert_art.py
+"""
+
+import colorsys
+import math
+import os
+import sys
+
+from PIL import Image
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+REPO = os.path.dirname(os.path.dirname(HERE))
+sys.path.insert(0, os.path.join(REPO, "tools", "sprite_prep"))
+sys.path.insert(0, HERE)
+import sprite_prep  # noqa: E402
+from placeholder_palettes import LOOKS, shift  # noqa: E402
+
+# species: (chosen front sprite, its palette) in design/art/eien_<species>/converted/
+# (design/art/eien_starters_drafts.md, design/art/eien_poochyena/README.md)
+PICKS = {
+    "torchic": ("front_gemini3pro_r2_b.png", "front_gemini3pro_r2_b.pal"),
+    "bulbasaur": ("front_gemini3pro_r2_b.png", "front_gemini3pro_r2_b.pal"),
+    "froakie": ("front_gemini3pro_r2_b.png", "front_gemini3pro_r2_b.pal"),
+    "poochyena": ("anim_front.png", "normal.pal"),  # the sprite test's front
+    "mightyena": ("front_gemini3pro_c.png", "front_gemini3pro_c.pal"),  # design/art/eien_mightyena/
+}
+# species: chosen back draft in design/art/eien_<species>/back_drafts/, already indexed with
+# the form's palette (design/art/eien_starters_drafts.md, "Back sprites"). Species without one
+# get the placeholder back below.
+BACK_PICKS = {
+    "torchic": "back_gemini31flash_b.png",
+    "bulbasaur": "back_gemini31flash_b.png",
+    "froakie": "back_gemini31flash_b.png",
+    "poochyena": "back_gemini31flash_b.png",
+    "mightyena": "back_gemini31flash_b.png",
+}
+# species: chosen shiny palette in design/art/eien_<species>/shiny_drafts/ (shiny_drafts.py).
+# Species without one get an automatic hue shift.
+SHINY_PICKS = {
+    "torchic": "night_lantern.pal",
+    "bulbasaur": "twilight.pal",
+    "froakie": "midnight.pal",
+    "poochyena": "obsidian.pal",
+    "mightyena": "obsidian.pal",
+}
+# species: chosen front frame 2 (idle) in design/art/eien_<species>/frame2_drafts/, indexed with
+# the form's palette (design/art/eien_starters_drafts.md, "Frame 2 (idle)"). Species without
+# one get frame 1 raised 1px.
+FRAME2_PICKS = {
+    "torchic": "frame2_gemini3pro_c.png",
+    "bulbasaur": "frame2_blend_flash_0.png",
+    "froakie": "frame2_gemini3pro_c.png",
+    "poochyena": "frame2_gemini3pro_c.png",
+    "mightyena": "frame2_gemini31flash_a.png",
+}
+SHINY_HUE = 0.5
+
+
+def lightness(rgb):
+    return colorsys.rgb_to_hls(*(c / 255 for c in rgb))[1]
+
+
+def main():
+    for species, (front_file, palette_file) in PICKS.items():
+        art = os.path.join(REPO, "design", "art", f"eien_{species}", "converted")
+        out = os.path.join(REPO, "graphics", "pokemon", "eien", species)
+        os.makedirs(out, exist_ok=True)
+
+        front = Image.open(os.path.join(art, front_file)).crop((0, 0, 64, 64))  # frame 1
+        palette = sprite_prep.read_jasc(os.path.join(art, palette_file))
+        palette = palette + [(0, 0, 0)] * (16 - len(palette))
+        front.putpalette([c for rgb in palette for c in rgb] + [0] * (768 - 48))
+        anim = sprite_prep.stack_frames(front)
+        if species in FRAME2_PICKS:
+            anim.paste(Image.open(os.path.join(REPO, "design", "art", f"eien_{species}", "frame2_drafts", FRAME2_PICKS[species])), (0, 64))
+        anim.save(os.path.join(out, "anim_front.png"))
+
+        # Back: the original back sprite, each original color replaced by the draft color that
+        # covers the same pixels on the front (the drafts keep the original's framing). Colors
+        # the fronts don't share fall back to the placeholder recolor snapped to the palette.
+        back = Image.open(os.path.join(REPO, "graphics", "pokemon", species, "back.png"))
+        old = sprite_prep.read_jasc(os.path.join(REPO, "graphics", "pokemon", species, "normal.pal"))
+        original_front = Image.open(os.path.join(REPO, "graphics", "pokemon", species, "anim_front.png")).crop((0, 0, 64, 64))
+        votes = {}
+        for a, b in zip(original_front.getdata(), front.getdata()):
+            if a and b:
+                votes.setdefault(a, {}).setdefault(b, 0)
+                votes[a][b] += 1
+        remap = [0]
+        for i, color in enumerate(old[1:], start=1):
+            if i in votes:
+                # Prefer candidates about as light as the original color: outlines drawn over a
+                # white area shouldn't turn it dark.
+                remap.append(max(votes[i], key=lambda j: votes[i][j] * math.exp(-abs(lightness(palette[j]) - lightness(color)) / 0.25)))
+            else:
+                remap.append(sprite_prep.nearest(shift(color, *LOOKS[species]), palette))
+        new_back = Image.new("P", back.size)
+        new_back.putpalette([c for rgb in palette for c in rgb] + [0] * (768 - 48))
+        new_back.putdata([remap[i] if i < len(remap) else 0 for i in back.getdata()])
+        if species in BACK_PICKS:
+            drawn = Image.open(os.path.join(REPO, "design", "art", f"eien_{species}", "back_drafts", BACK_PICKS[species]))
+            new_back.putdata(list(drawn.getdata()))
+        new_back.save(os.path.join(out, "back.png"))
+
+        sprite_prep.write_jasc(os.path.join(out, "normal.pal"), palette)
+        if species in SHINY_PICKS:
+            shiny = sprite_prep.read_jasc(os.path.join(REPO, "design", "art", f"eien_{species}", "shiny_drafts", SHINY_PICKS[species]))
+        else:
+            shiny = sprite_prep.shiny_palette(palette, SHINY_HUE, 0.0)
+        sprite_prep.write_jasc(os.path.join(out, "shiny.pal"), shiny)
+        for name, size in (("anim_front.png", (64, 128)), ("back.png", (64, 64))):
+            problems = sprite_prep.check(os.path.join(out, name), size)
+            if problems:
+                raise SystemExit(f"{species}/{name}: {', '.join(problems)}")
+        print(f"{species}: {front_file} -> graphics/pokemon/eien/{species}/")
+
+
+if __name__ == "__main__":
+    main()

@@ -10,16 +10,41 @@ docs: when the design changes, the doc changes in the same commit.
 | [characters.md](characters.md) | Player, rival, professor, gym leaders, factions |
 | [progression.md](progression.md) | Route order, badges, level curve, what gates what |
 | [dialogue-style.md](dialogue-style.md) | How characters talk, with examples |
+| [variants.md](variants.md) | Eien's regional variants of existing Pokémon, and shiny rules |
+| [side-quests.md](side-quests.md) | Side quests, friend chains and relationship points |
 | [locations/](locations/) | One doc per town, route or dungeon (copy `_template.md`) |
 | [asset-credits.md](asset-credits.md) | Every community asset used, with its author |
+| [asset-candidates.md](asset-candidates.md) | Community assets we might use, not yet checked |
+| [whats-left.md](whats-left.md) | Handoff: what's left to build, grouped by what blocks it |
 
 ## Current milestone
 
-**Vertical slice:** _[e.g. hometown → Route 1 → first town and gym → end of the opening arc]._
-Everything outside this scope waits.
+**Vertical slice: prologue through gym 1.** Everything outside this scope waits.
 
-- [ ] _[milestone checklist item]_
-- [ ] _[milestone checklist item]_
+- [ ] Prologue: bedroom in our world, the accident, Palkia ([prologue](locations/prologue-bedroom.md))
+- [x] Engine: remove the boy/girl choice, keep the naming screen (`EIEN_HERO_ALWAYS_MALE` in
+      `include/config/general.h`)
+- [x] Hamakaze: he wakes in Eien, Celebi follows him, the Kashiwagi household, Haru, the
+      journal ([Hamakaze](locations/hamakaze.md)). Placeholder town layout; lines are drafts
+- [x] Kashiwagi's lab: pick a starter, Akira and Haru take the others, first battle with Akira
+- [ ] Route 1: coast, snowy fields, shrine; Eien Poochyena ([Route 1](locations/route-1.md))
+- [ ] Shimotsuki and gym 1 (Fuyumi, Ice); Akira shows him the gym; Kaede's cameo at her shrine ([Shimotsuki](locations/shimotsuki.md))
+- [ ] Nami's first meeting, just after gym 1 (end of the slice)
+- [x] Species: Eien Torchic, Bulbasaur, Froakie, Poochyena ([variants](variants.md)); forms
+      with placeholder sprites (`tools/eien_species/`)
+- [x] Sprites for those 4 (front, back, icon, normal + shiny palettes), all AI drafts
+      converted by `tools/eien_species/`. The idle motion is smaller than the originals';
+      hand animation can improve it later
+- [x] Community snow tileset, credited in `asset-credits.md` (`tools/eien_tileset/README.md`)
+- [x] Door behaviors/animations and tree-top layering for the Eien tilesets
+- [x] Quest table in the save file with `setquest` / `checkquest` script commands (quest
+      state and relationship points; [side-quests](side-quests.md))
+- [ ] Three quests to prove it: Haru step 1 (Hamakaze), the professor's Eien Poochyena
+      research (Route 1), Akira step 1 (Shimotsuki)
+- [x] Journal screen, bare: three tabs with placeholder art, replacing the PokéNav in the start
+      menu; real data for the quests above, the Poochyena research and a few story entries
+- [x] Shiny odds 1 in 4,096 (`SHINY_ODDS 16` in `include/constants/pokemon.h`)
+- [ ] Maps made in Porymap; map constants filled into the location docs
 
 ## Conventions
 

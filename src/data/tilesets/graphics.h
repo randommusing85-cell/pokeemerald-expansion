@@ -1625,6 +1625,73 @@ const u16 gTilesetPalettes_UnionRoom[][16] =
 
 const u32 gTilesetTiles_UnionRoom[] = INCGFX_U32("data/tilesets/secondary/union_room/tiles.png", ".4bpp.fastSmol");
 
+
+// Eien (built from tilesets_src/ by tools/eien_tileset)
+const u32 gTilesetTiles_EienTown[] = INCGFX_U32("data/tilesets/secondary/eien_town/tiles.png", ".4bpp.fastSmol");
+
+const u16 gTilesetPalettes_EienTown[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/eien_town/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_town/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_town/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_town/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_town/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_town/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_town/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_town/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_town/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_town/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_town/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_town/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_town/palettes/12.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_town/palettes/13.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_town/palettes/14.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_town/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_EienCoast[] = INCGFX_U32("data/tilesets/secondary/eien_coast/tiles.png", ".4bpp.fastSmol");
+
+const u16 gTilesetPalettes_EienCoast[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/eien_coast/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_coast/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_coast/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_coast/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_coast/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_coast/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_coast/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_coast/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_coast/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_coast/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_coast/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_coast/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_coast/palettes/12.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_coast/palettes/13.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_coast/palettes/14.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_coast/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_EienShrine[] = INCGFX_U32("data/tilesets/secondary/eien_shrine/tiles.png", ".4bpp.fastSmol");
+
+const u16 gTilesetPalettes_EienShrine[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/eien_shrine/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_shrine/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_shrine/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_shrine/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_shrine/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_shrine/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_shrine/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_shrine/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_shrine/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_shrine/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_shrine/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_shrine/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_shrine/palettes/12.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_shrine/palettes/13.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_shrine/palettes/14.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/eien_shrine/palettes/15.pal", ".gbapal"),
+};
 #else
 
 const u32 gTilesetTiles_Building_Frlg[] = INCGFX_U32("data/tilesets/primary/building_frlg/tiles.png", ".4bpp.smol");

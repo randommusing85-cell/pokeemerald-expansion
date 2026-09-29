@@ -1,0 +1,54 @@
+# Shimotsuki
+
+- **Map(s):** `MAP_...` `TODO`: town, gym, Pokémon Center, Mart, Kaede's shrine (its own small map)
+- **Type:** town
+- **Connects to:** Route 1. `TODO(design)`: the way on, where Nami is met.
+
+## Purpose
+
+The first gym town. Akira shows him his mother's gym; he earns the first badge. Kaede's
+shrine is here: the first place Eien Poochyena can evolve (a shrine area, reachable right
+after gym 1, about when it reaches Lv 18), and where Kaede's quest chain starts.
+
+## Look
+
+A snowy inland town ("frost month"). Tilesets: `gTileset_General` + `gTileset_EienTown`
+(houses, Pokémon Center, Mart, Gym). `TODO(design)`: landmarks, music.
+
+## Story beats here
+
+Act 1 beats 5-6 in [story-outline.md](../story-outline.md). The first milestone ends just
+after gym 1, when Nami helps him.
+
+## NPCs and events
+
+| NPC / event | Position (x,y) | Visible when | Says / does |
+| --- | --- | --- | --- |
+| Akira | `TODO` | arriving | Shows him his mother's gym |
+| Nami | past the town `TODO` | after gym 1 | Helps him when he's lost or Celebi is struggling |
+| Kaede (cameo) | her shrine `TODO` | first milestone | Sweeping; one blunt line |
+| Kaede | her shrine `TODO` | after gym 1, second milestone | First meeting: reading the shrine's tablet; asks about the Route 1 tablet; explains the stone dogs grow at their post. Starts her tablet quest ([side-quests.md](../side-quests.md)) |
+| Kaede's grandmother | her shrine `TODO` | always | Small talk about the old days; repeats the evolution rule |
+| Kaede, aurora night | her shrine `TODO` | Act 3, her quest step 2 | The stone dogs wake under the aurora; a wild double battle beside her; Froslass joins her ([side-quests.md](../side-quests.md)) |
+| Closed gym | the gym door `TODO` | Act 3, after Fuyumi's death | A sign on the closed gym; Kaede says one plain line about the gym being dark now; a townsperson line or two |
+
+## Trainers
+
+| Trainer | Class | Team (levels) | Notes |
+| --- | --- | --- | --- |
+| Gym trainers | `TODO` | Lv 9-11 | `TODO(design)` |
+| Fuyumi | Leader | Spheal, Bergmite (ace, Lv 13-14) | Stern veteran. Each Pokémon carries one move for the Ice-resistant starters (`TODO`: check learnsets) |
+
+## Flags and vars
+
+| Name | Set when | Checked by |
+| --- | --- | --- |
+| `VAR_EIEN_STORY` = `STORY_SHIMOTSUKI` | Akira shows him the gym | The journal |
+| `VAR_EIEN_STORY` = `STORY_BADGE_1` | He beats Fuyumi | The journal |
+| `QUEST_AKIRA_PRACTICE` (quest table) | Akira asks for a practice battle after gym 1 | The journal; closes at the tournament |
+| `FLAG_AURORA_TONIGHT` | Kaede says come back tonight (Act 3, her step 2); cleared after the aurora-night battle | `IsAuroraNight` (`src/eien_aurora.c`): the aurora weather and its battle effect |
+| `FLAG_AURORA_NIGHTS` | The end of Kaede's step 2 | `IsAuroraNight`: aurora nights come back at random from then on |
+
+## Screenshot check
+
+`TODO` once the maps exist.

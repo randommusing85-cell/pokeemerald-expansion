@@ -23,6 +23,8 @@
 #include "constants/daycare.h"
 #include "constants/decorations.h"
 #include "constants/difficulty.h"
+#include "constants/eien_quests.h"
+#include "constants/eien_story.h"
 #include "constants/easy_chat.h"
 #include "constants/event_objects.h"
 #include "constants/event_object_movement.h"
@@ -599,6 +601,11 @@ gStdScripts_End::
 	.include "data/maps/Route119_WeatherInstitute_2F/scripts.inc"
 	.include "data/maps/Route119_House/scripts.inc"
 	.include "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc"
+
+@ Eien
+	.include "data/maps/Hamakaze/scripts.inc"
+	.include "data/maps/Hamakaze_KashiwagiHouse/scripts.inc"
+	.include "data/maps/Hamakaze_Lab/scripts.inc"
 
 .if IS_FRLG
 
@@ -1738,3 +1745,4 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/battle_frontier.inc"
 	.include "data/scripts/apricorn_tree.inc"
 	.include "data/scripts/wild_encounter.inc"
+	.include "data/scripts/eien_celebi.inc"
