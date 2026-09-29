@@ -79,7 +79,11 @@ in the code).
   Candy used there counts). The first chance is Kaede's shrine in Shimotsuki, right after
   gym 1. Before that, the Route 1 shrine's tablet hints at the rule, and the journal notes
   it: when he opens the journal with an Eien Poochyena of Lv 18+ in his party, its research
-  entry says it didn't evolve.
+  entry says it didn't evolve. Built: the entry gets "Lv 18, and it didn't evolve." below its
+  tiers, kept from then on (`FLAG_JOURNAL_POOCHYENA_NO_EVO`, set by `UpdateJournalNotes` in
+  `src/eien_journal.c`; tests in `test/eien_journal.c`; shot in
+  `art/journal_poochyena_note.png`). The research page is full with it: a lore tier for Eien
+  Poochyena will need the page to scroll or the notes to shrink.
 
 - **Sprite:** the front is the sprite test's draft ([art/eien_poochyena/](art/eien_poochyena/README.md)),
   converted by `tools/eien_species/convert_art.py`; the back is an AI draft like the
