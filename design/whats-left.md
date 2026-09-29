@@ -29,9 +29,8 @@ Once the shrine maps exist, also:
 
 ## 2. Buildable now, without maps
 
-- **Battle sprites for the milestone's trainers**: Akira (lab battle) and Fuyumi (gym 1) have
-  only overworld sprites; they need trainer front pics (`TRAINER_PIC_...`, like
-  `TRAINER_PIC_EIEN_KAEDE`), or vanilla placeholders. Haru and Nami need them later.
+- **Battle sprites for Haru and Nami** (later): make them like Akira's and Fuyumi's with
+  `tools/eien_npcs/trainer_pic_drafts.py` (add an entry to its `CHARACTERS`).
 - **Journal note for the aurora**: the journal explains the aurora the first time he meets it
   (`game-bible.md`, Eien weather and terrain). Text `TODO(design)`.
 - **Follower-NPC partner** config (`include/config/follower_npc.h`) for Kaede's aurora-night
@@ -73,6 +72,9 @@ Once the shrine maps exist, also:
 - Journal note for Eien Poochyena at Lv 18+ that didn't evolve (`FLAG_JOURNAL_POOCHYENA_NO_EVO`,
   `UpdateJournalNotes`, tests in `test/eien_journal.c`). The research page is now full; a lore
   tier will need scrolling.
+- Battle sprites for Akira and Fuyumi (`TRAINER_PIC_EIEN_AKIRA`, `TRAINER_PIC_EIEN_FUYUMI`,
+  AI drafts via `tools/eien_npcs/trainer_pic_drafts.py`, notes in `design/art/eien_akira/`
+  and `design/art/eien_fuyumi/`).
 - Full test suite: 5,407 passed, 0 failed at the handoff.
 
 ## Working notes for the next chat
