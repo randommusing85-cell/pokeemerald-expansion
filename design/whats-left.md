@@ -32,8 +32,8 @@ Once the shrine maps exist, also:
 - **Battle sprites for the milestone's trainers**: Akira (lab battle) and Fuyumi (gym 1) have
   only overworld sprites; they need trainer front pics (`TRAINER_PIC_...`, like
   `TRAINER_PIC_EIEN_KAEDE`), or vanilla placeholders. Haru and Nami need them later.
-- **Aurora battle message**: the Rainbow effect's text says "rainbow"; a small text change
-  if the aurora should say so (`game-bible.md`, Eien weather and terrain).
+- **Journal note for the aurora**: the journal explains the aurora the first time he meets it
+  (`game-bible.md`, Eien weather and terrain). Text `TODO(design)`.
 - **Follower-NPC partner** config (`include/config/follower_npc.h`) for Kaede's aurora-night
   wild double battle (Act 3; not needed for the first milestone).
 
@@ -49,7 +49,8 @@ Once the shrine maps exist, also:
   (`side-quests.md`).
 - **Kaede:** the tale's text (the stone dogs on aurora nights), her finale lines, her letters,
   whether the League cares about her tales, the grandmother's name, the charm item.
-- **Weather and terrain:** exact battle messages; the aurora night palette (needs a map).
+- **Weather and terrain:** exact battle messages; the aurora night palette (needs a map);
+  how often aurora nights come back (`AURORA_NIGHT_CHANCE`, 1 in 4 for now).
 - **Nami's** aurora-night warm scene: a different night from Kaede's, or linked.
 
 ## 4. Done so far (for orientation)
@@ -64,6 +65,11 @@ Once the shrine maps exist, also:
   for Kaede (front and back) and her grandmother.
 - Thin-place battle effect (`STARTING_STATUS_THIN_PLACE`, `src/eien_places.c`, tests in
   `test/battle/starting_status/eien_thin_place.c`).
+- Aurora nights: the map weather `WEATHER_AURORA` (a pulsing night tint) and its battle effect
+  `STARTING_STATUS_AURORA` (Rainbow for both sides), `src/eien_aurora.c`, flags
+  `FLAG_AURORA_TONIGHT` / `FLAG_AURORA_NIGHTS`, tests in
+  `test/battle/starting_status/eien_aurora.c`. Still to do once maps exist: set the flags in
+  Kaede's step-2 script, the aurora-only wild Eien Mightyena at thin places.
 - Journal note for Eien Poochyena at Lv 18+ that didn't evolve (`FLAG_JOURNAL_POOCHYENA_NO_EVO`,
   `UpdateJournalNotes`, tests in `test/eien_journal.c`). The research page is now full; a lore
   tier will need scrolling.
