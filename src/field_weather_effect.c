@@ -1,5 +1,6 @@
 #include "global.h"
 #include "battle_anim.h"
+#include "eien_aurora.h"
 #include "event_object_movement.h"
 #include "fieldmap.h"
 #include "field_weather.h"
@@ -2527,7 +2528,7 @@ u8 GetSavedWeather(void)
 void SetSavedWeatherFromCurrMapHeader(void)
 {
     enum OverworldWeather oldWeather = gSaveBlock1Ptr->weather;
-    gSaveBlock1Ptr->weather = TranslateWeatherNum(gMapHeader.weather);
+    gSaveBlock1Ptr->weather = GetAuroraNightWeather(TranslateWeatherNum(gMapHeader.weather)); // Eien
     UpdateRainCounter(gSaveBlock1Ptr->weather, oldWeather);
 }
 
@@ -2687,6 +2688,7 @@ static enum OverworldWeather TranslateWeatherNum(enum OverworldWeather weather)
     case WEATHER_ROUTE119_CYCLE:     return sWeatherCycleRoute119[gSaveBlock1Ptr->weatherCycleStage];
     case WEATHER_ROUTE123_CYCLE:     return sWeatherCycleRoute123[gSaveBlock1Ptr->weatherCycleStage];
     case WEATHER_DYNAMIC:            return GetDynamicWeather();
+    case WEATHER_AURORA:             return WEATHER_AURORA;
     }
 
     return WEATHER_NONE;
