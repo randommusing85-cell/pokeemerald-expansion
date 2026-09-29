@@ -69,8 +69,10 @@ Once the shrine maps exist, also:
 - Aurora nights: the map weather `WEATHER_AURORA` (a pulsing night tint) and its battle effect
   `STARTING_STATUS_AURORA` (Rainbow for both sides), `src/eien_aurora.c`, flags
   `FLAG_AURORA_TONIGHT` / `FLAG_AURORA_NIGHTS`, tests in
-  `test/battle/starting_status/eien_aurora.c`. Still to do once maps exist: set the flags in
-  Kaede's step-2 script, the aurora-only wild Eien Mightyena at thin places.
+  `test/battle/starting_status/eien_aurora.c`. Still to do once maps exist: Kaede's step-2 script
+  sets `FLAG_AURORA_TONIGHT`, then clears it and sets `FLAG_AURORA_NIGHTS` after the battle
+  (the flag alone would force an aurora every night); the aurora-only wild Eien Mightyena at
+  thin places.
 - Journal note for Eien Poochyena at Lv 18+ that didn't evolve (`FLAG_JOURNAL_POOCHYENA_NO_EVO`,
   `UpdateJournalNotes`, tests in `test/eien_journal.c`). The research page is now full; a lore
   tier will need scrolling.

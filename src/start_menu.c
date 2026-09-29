@@ -340,10 +340,9 @@ static void BuildNormalStartMenu(void)
 
     AddStartMenuAction(MENU_ACTION_BAG);
 
-    if (FlagGet(FLAG_RECEIVED_JOURNAL)) // Eien
+    if (FlagGet(FLAG_RECEIVED_JOURNAL)) // Eien: the journal takes the PokéNav's slot
         AddStartMenuAction(MENU_ACTION_JOURNAL);
-
-    if (FlagGet(FLAG_SYS_POKENAV_GET) == TRUE)
+    else if (FlagGet(FLAG_SYS_POKENAV_GET) == TRUE)
         AddStartMenuAction(MENU_ACTION_POKENAV);
 
     AddStartMenuAction(MENU_ACTION_PLAYER);
@@ -360,9 +359,9 @@ static void BuildDebugStartMenu(void)
     if (FlagGet(FLAG_SYS_POKEMON_GET) == TRUE)
         AddStartMenuAction(MENU_ACTION_POKEMON);
     AddStartMenuAction(MENU_ACTION_BAG);
-    if (FlagGet(FLAG_RECEIVED_JOURNAL)) // Eien
+    if (FlagGet(FLAG_RECEIVED_JOURNAL)) // Eien: the journal takes the PokéNav's slot
         AddStartMenuAction(MENU_ACTION_JOURNAL);
-    if (FlagGet(FLAG_SYS_POKENAV_GET) == TRUE)
+    else if (FlagGet(FLAG_SYS_POKENAV_GET) == TRUE)
         AddStartMenuAction(MENU_ACTION_POKENAV);
     AddStartMenuAction(MENU_ACTION_PLAYER);
     AddStartMenuAction(MENU_ACTION_SAVE);
