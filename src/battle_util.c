@@ -2890,6 +2890,21 @@ bool32 TryFieldEffects(enum FieldEffectCases caseId)
             }
             return effect;
         }
+        // Eien: an aurora night. Permanent Rainbow for both sides (moves' side effects twice as likely).
+        // Also makes a temporary Rainbow set by an earlier starting status permanent.
+        else if (gStartingStatuses.aurora)
+        {
+            gStartingStatuses.aurora = FALSE;
+            gSideStatuses[B_SIDE_PLAYER] |= SIDE_STATUS_RAINBOW;
+            gSideStatuses[B_SIDE_OPPONENT] |= SIDE_STATUS_RAINBOW;
+            gSideTimers[B_SIDE_PLAYER].rainbowTimer = gSideTimers[B_SIDE_OPPONENT].rainbowTimer = 0;
+            // One message and one animation for the whole field
+            gEffectBattler = gBattlerAttacker = gBattlerTarget = B_BATTLER_0;
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SET_AURORA;
+            gBattleScripting.animArg1 = B_ANIM_RAINBOW;
+            BattleScriptPushCursorAndCallback(BattleScript_OverworldStatusStarts);
+            return TRUE;
+        }
         else if (gStartingStatuses.weatherFog || gStartingStatuses.weatherFogTemporary)
         {
             effect = SetStartingWeatherStatus(BATTLE_WEATHER_FOG, gStartingStatuses.weatherFog);
