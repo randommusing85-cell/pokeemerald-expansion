@@ -93,7 +93,12 @@ points, Tetsu and Ren come too.
   of Minato's group in a tag battle with the thin-place effect, with those three Pokémon. It's
   the same battle whatever her points; they change only her lines. Afterwards she follows
   him up and sees the cycle end: the tale she has always told happens in front of her.
-  Her back sprite for these tag battles is in (`TRAINER_PIC_EIEN_KAEDE`).
+  Her back sprite for these tag battles is in (`TRAINER_PIC_EIEN_KAEDE`). The follower-NPC
+  partner is switched on (`include/config/follower_npc.h`): a follower set with a battle
+  partner joins every wild battle as a double against two wild Pokémon; Celebi, set without
+  one, never does. Still needed: her `PARTNER_` entry in `src/data/battle_partners.party`
+  (levels `TODO(design)`), and her scene has to take Celebi's follower slot for the night
+  (one walking follower at a time) and give it back after.
 - **First meeting** (second milestone): she's reading her shrine's tablet, asks if he read the
   one on Route 1, sees his Poochyena and says the stone dogs grow at their post. In the first
   milestone she only has a cameo, sweeping at the shrine.
