@@ -22,14 +22,28 @@ the location doc when settled; this file stays as the record.
 
 ## Decided
 
-(nothing yet)
+- **Akira's scene (r1 1a):** he waits at the town's south entrance, walks him to the gym
+  door and points out the Pokémon Center on the way. The gym is shut until then
+  (`STORY_SHIMOTSUKI`).
+- **Gym layout (r1 2b):** a simple vanilla gym layout reused for now, Ice theme in the text;
+  no puzzle. A real ice puzzle can come with the Porymap redraw.
+- **Gym trainers (r1 3a):** two (Lv 9 and 10), plus a gym guide NPC who explains Ice and points
+  at Route 1's Poochyena.
+- **Fuyumi's moves (r1 4a):** Spheal: Water Gun, Powder Snow, Defense Curl, Rollout. Bergmite:
+  Rock Tomb, Powder Snow, Curse, Harden. Water Gun covers Torchic, Rock Tomb covers Torchic and
+  Froakie; Poochyena resists Rock Tomb.
+- **Kaede's cameo (r1 5c):** "If you're here to pray, the box is on the left. If not, you're
+  in the way."
+- **Nami's meeting (r1 6b):** past town, Celebi suddenly fades and drops at a frozen lake's
+  edge; Nami's Lapras carries them across to shelter. The fading's first appearance, not
+  explained.
 
 ## Leaning
 
 ## Open questions
 
-- Round 1: Akira's arrival scene, the gym's layout/puzzle, how many gym trainers, Fuyumi's
-  moves, Kaede's cameo, Nami's meeting.
+- Round 2: where the lake is, Nami's scene beats, gym trainers' teams, the badge reward,
+  Akira's practice battle, the town's NPCs and music.
 
 ## Gaps and tensions
 
