@@ -56,9 +56,9 @@
 #define FLAG_AURORA_TONIGHT      0x22 // Eien: tonight is an aurora night (story-set: Kaede's quest step 2)
 #define FLAG_AURORA_NIGHTS       0x23 // Eien: aurora nights come back at random (set after the first one)
 #define FLAG_JOURNAL_POOCHYENA_NO_EVO 0x24 // Eien: the journal noted an Eien Poochyena at Lv 18+ that didn't evolve
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
+#define FLAG_ITEM_EIEN_ROUTE1_POTION    0x25 // Eien: Route 1's Potion (design/locations/route-1.md)
+#define FLAG_ITEM_EIEN_ROUTE1_POKE_BALL 0x26 // Eien: Route 1's Poké Ball
+#define FLAG_ITEM_EIEN_ROUTE1_ICE_HEAL  0x27 // Eien: Route 1's Ice Heal, near the shrine path
 #define FLAG_UNUSED_0x028    0x28 // Unused Flag
 #define FLAG_UNUSED_0x029    0x29 // Unused Flag
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag
@@ -664,7 +664,7 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
+#define FLAG_HIDDEN_ITEM_EIEN_ROUTE1_X_DEFENSE  0x264 // Eien: Route 1's hidden X Defense (hidden item range)
 #define FLAG_UNUSED_0x265  0x265 // Unused Flag
 #define FLAG_UNUSED_0x266  0x266 // Unused Flag
 #define FLAG_UNUSED_0x267  0x267 // Unused Flag

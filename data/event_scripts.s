@@ -606,6 +606,8 @@ gStdScripts_End::
 	.include "data/maps/Hamakaze/scripts.inc"
 	.include "data/maps/Hamakaze_KashiwagiHouse/scripts.inc"
 	.include "data/maps/Hamakaze_Lab/scripts.inc"
+	.include "data/maps/EienRoute1/scripts.inc"
+	.include "data/maps/EienRoute1_Shrine/scripts.inc"
 
 .if IS_FRLG
 

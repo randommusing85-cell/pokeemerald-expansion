@@ -27,7 +27,8 @@ docs: when the design changes, the doc changes in the same commit.
 - [x] Hamakaze: he wakes in Eien, Celebi follows him, the Kashiwagi household, Haru, the
       journal ([Hamakaze](locations/hamakaze.md)). Placeholder town layout; lines are drafts
 - [x] Kashiwagi's lab: pick a starter, Akira and Haru take the others, first battle with Akira
-- [ ] Route 1: coast, snowy fields, shrine; Eien Poochyena ([Route 1](locations/route-1.md))
+- [x] Route 1: coast, snowy fields, shrine; Eien Poochyena ([Route 1](locations/route-1.md)).
+      Placeholder layouts; lines are drafts
 - [ ] Shimotsuki and gym 1 (Fuyumi, Ice); Akira shows him the gym; Kaede's cameo at her shrine ([Shimotsuki](locations/shimotsuki.md))
 - [ ] Nami's first meeting, just after gym 1 (end of the slice)
 - [x] Species: Eien Torchic, Bulbasaur, Froakie, Poochyena ([variants](variants.md)); forms
@@ -39,8 +40,8 @@ docs: when the design changes, the doc changes in the same commit.
 - [x] Door behaviors/animations and tree-top layering for the Eien tilesets
 - [x] Quest table in the save file with `setquest` / `checkquest` script commands (quest
       state and relationship points; [side-quests](side-quests.md))
-- [ ] Three quests to prove it: Haru step 1 (Hamakaze), the professor's Eien Poochyena
-      research (Route 1), Akira step 1 (Shimotsuki)
+- [ ] Three quests to prove it: Haru step 1 (Hamakaze) and the professor's Eien Poochyena
+      research (Route 1) are built; Akira step 1 (Shimotsuki) is left
 - [x] Journal screen, bare: three tabs with placeholder art, replacing the PokéNav in the start
       menu; real data for the quests above, the Poochyena research and a few story entries
 - [x] Shiny odds 1 in 4,096 (`SHINY_ODDS 16` in `include/constants/pokemon.h`)

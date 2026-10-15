@@ -306,6 +306,9 @@
         .teachableLearnset = sPoochyenaTeachableLearnset,
         .eggMoveLearnset = sPoochyenaEggMoveLearnset,
         .formSpeciesIdTable = sPoochyenaFormSpeciesIdTable,
+        // Evolves only in a shrine area (variants.md): one entry per shrine map.
+        // TODO: add Kaede's shrine in Shimotsuki once its map exists.
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_MIGHTYENA_EIEN, CONDITIONS({IF_IN_MAP, MAP_EIEN_ROUTE1_SHRINE})}),
     },
 
     [SPECIES_MIGHTYENA_EIEN] =

@@ -35,7 +35,9 @@ libc++ (`apt install clang libc++-dev libc++abi-dev doxygen`), then
   shifts later ids, which would scramble maps already painted with them: add new pieces at
   the end.
 - Each tileset: at most 512 metatiles, 512 tiles, 7 palettes (checked by `--stats` and Porytiles).
-- Collision is painted per map in Porymap.
+- Collision is painted per map in Porymap. Behaviors come from `DOORS` and `BEHAVIORS` in
+  `build_source.py` (metatile 0x206, the snow-buried plant, is tall grass; 0x211 and 0x212 are plain snow with east
+  and west arrow warps, for the Route 1 shrine's entrance).
 
 ## Layers
 

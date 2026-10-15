@@ -27,6 +27,11 @@
 // quest. A step has 6 bits; more tablets than that need a second quest entry.
 #define TABLET_ROUTE1_SHRINE   0
 
+// QUEST_HARU_MAP step bits: the three places on Route 1.
+#define HARU_MAP_COAST         0
+#define HARU_MAP_FIELDS        1
+#define HARU_MAP_SHRINE        2
+
 // People with relationship points. Append only, never renumber.
 #define PERSON_NAMI    0
 #define PERSON_HARU    1

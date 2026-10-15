@@ -7,8 +7,8 @@
 // Add each map here once it exists in Porymap.
 static const u16 sThinPlaceMaps[] =
 {
-    // TODO: the Route 1 shrine, Kaede's shrine in Shimotsuki, the door mountain.
-    MAP_UNDEFINED,
+    MAP_EIEN_ROUTE1_SHRINE,
+    // TODO: Kaede's shrine in Shimotsuki, the door mountain.
 };
 
 bool32 IsThinPlaceMap(u32 mapGroup, u32 mapNum)

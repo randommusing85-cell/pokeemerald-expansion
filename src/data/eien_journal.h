@@ -159,13 +159,14 @@ static const struct JournalMission sJournalMissions[] =
     {
         .quest = QUEST_HARU_MAP,
         .group = PERSON_HARU,
+        .stepIsBits = TRUE,
         .title = COMPOUND_STRING("Haru's map"),
         .giver = COMPOUND_STRING("Haru"),
-        .hint = COMPOUND_STRING("Note the coast, the fields and the shrine on Route 1."),
+        .hint = COMPOUND_STRING("Three places on Route 1 for his map."),
         .log = {
-            COMPOUND_STRING("Noted one place."),
-            COMPOUND_STRING("Noted two."),
-            COMPOUND_STRING("Noted all three."),
+            [HARU_MAP_COAST] = COMPOUND_STRING("Saw the coast."),
+            [HARU_MAP_FIELDS] = COMPOUND_STRING("Saw the fields."),
+            [HARU_MAP_SHRINE] = COMPOUND_STRING("Saw the shrine."),
         },
         .closedLine = COMPOUND_STRING("I never finished it."),
     },

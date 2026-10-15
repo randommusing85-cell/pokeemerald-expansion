@@ -115,6 +115,10 @@ Hamakaze_Lab_EventScript_AfterBattle::
 	waitmovement 0
 	removeobject LOCALID_LAB_AKIRA
 	setvar VAR_EIEN_STORY, STORY_GOT_STARTER
+	@ The professor's Poochyena research (side-quests E1, route-1.md)
+	msgbox Hamakaze_Lab_Text_Research, MSGBOX_DEFAULT
+	giveitem ITEM_POKE_BALL, 5
+	setquest QUEST_RESEARCH_POOCHYENA, QUEST_STATE_OPEN
 	msgbox Hamakaze_Lab_Text_RouteOneNorth, MSGBOX_DEFAULT
 	release
 	end
@@ -215,6 +219,14 @@ Hamakaze_Lab_Text_AkiraAfterBattle:
 	.string "AKIRA: I'm going home to Shimotsuki.\n"
 	.string "Come find me there!\p"
 	.string "One day I'll battle in the League.$"
+
+Hamakaze_Lab_Text_Research:
+	.string "PROFESSOR: One more thing.\p"
+	.string "There's a Poochyena on Route 1\n"
+	.string "that isn't like the others.\p"
+	.string "See one, battle one, and catch one\n"
+	.string "if you can. Write it all down.\p"
+	.string "These will help.$"
 
 Hamakaze_Lab_Text_RouteOneNorth:
 	.string "PROFESSOR: Route 1 is north of town.\n"
