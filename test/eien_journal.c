@@ -39,3 +39,20 @@ TEST("(Eien journal) the no-evolution note stays once noted")
     UpdateJournalNotes();
     EXPECT(FlagGet(FLAG_JOURNAL_POOCHYENA_NO_EVO));
 }
+
+// Eien Poochyena evolves only in a shrine area (design/variants.md, "Shrine areas").
+TEST("(Eien species) Eien Poochyena evolves at Lv 18 only at the Route 1 shrine")
+{
+    u32 map, level;
+    struct Pokemon mon;
+
+    PARAMETRIZE { map = MAP_EIEN_ROUTE1_SHRINE; level = 18; }
+    PARAMETRIZE { map = MAP_EIEN_ROUTE1_SHRINE; level = 17; }
+    PARAMETRIZE { map = MAP_EIEN_ROUTE1;        level = 18; }
+
+    gSaveBlock1Ptr->location.mapGroup = MAP_GROUP(map);
+    gSaveBlock1Ptr->location.mapNum = MAP_NUM(map);
+    CreateMon(&mon, SPECIES_POOCHYENA_EIEN, level, 0, OTID_STRUCT_PRESET(0));
+    EXPECT_EQ(GetEvolutionTargetSpecies(&mon, EVO_MODE_NORMAL, ITEM_NONE, NULL, NULL, CHECK_EVO),
+              (map == MAP_EIEN_ROUTE1_SHRINE && level >= 18) ? SPECIES_MIGHTYENA_EIEN : SPECIES_NONE);
+}

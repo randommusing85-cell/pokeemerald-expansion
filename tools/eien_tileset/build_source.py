@@ -100,6 +100,12 @@ DOORS = {
     ],
     "eien_shrine": [],
 }
+# Other behaviors, for cells in every tileset that has them: (sheet, column, row) -> behavior.
+BEHAVIORS = {
+    ("cinna", 6, 23): "MB_TALL_GRASS",        # snow-buried plant (metatile 0x206): Route 1's grass
+    ("cinna", 1, 28): "MB_EAST_ARROW_WARP",   # snow (0x211): walk east to warp (Route 1 -> its shrine)
+    ("cinna", 2, 28): "MB_WEST_ARROW_WARP",   # snow (0x212): walk west to warp (the shrine -> Route 1)
+}
 DOOR_SHEETS = ("DoorsSnow", "DoorsSnow2")  # columns are door styles; rows closed, opening x2, open
 
 
@@ -296,8 +302,10 @@ def build(name, pieces, stats_only):
     top.save(os.path.join(dest, "top.png"))
     with open(os.path.join(dest, "attributes.csv"), "w") as f:
         f.write("id,behavior\n")
-        for d in sorted(doors, key=lambda d: d["id"]):
-            f.write(f"{d['id']},{'MB_ANIMATED_DOOR' if d['style'] else 'MB_NON_ANIMATED_DOOR'}\n")
+        rows = [(d["id"], "MB_ANIMATED_DOOR" if d["style"] else "MB_NON_ANIMATED_DOOR") for d in doors]
+        rows += [(ids[cell], behavior) for cell, behavior in BEHAVIORS.items() if cell in ids]
+        for id, behavior in sorted(rows):
+            f.write(f"{id},{behavior}\n")
     with open(os.path.join(dest, "doors.json"), "w") as f:
         json.dump([d for d in doors if d["style"]], f, indent=2)
     for d in doors:

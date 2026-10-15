@@ -1634,6 +1634,10 @@
     {
       "id": "MAPSEC_HAMAKAZE",
       "name": "HAMAKAZE"
+    },
+    {
+      "id": "MAPSEC_EIEN_ROUTE1",
+      "name": "ROUTE 1"
     }
   ]
 }

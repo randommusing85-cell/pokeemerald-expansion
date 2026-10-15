@@ -92,3 +92,19 @@ TEST("(Eien quests) out-of-range ids are ignored")
     EXPECT_EQ(GetRelationshipPoints(EIEN_PERSON_CAPACITY), 0);
     EXPECT_EQ(gSaveBlock1Ptr->eienQuests.letters, 0);
 }
+
+TEST("(Eien quests) setquestbit sets one step bit and keeps the state")
+{
+    ClearEienQuests();
+    RUN_OVERWORLD_SCRIPT(
+        setquestbit QUEST_KAEDE_TABLETS, TABLET_ROUTE1_SHRINE;
+        setquestbit QUEST_KAEDE_TABLETS, 3;
+        checkquestbit QUEST_KAEDE_TABLETS, 3;
+    );
+    EXPECT_EQ(gSpecialVar_Result, TRUE);
+    EXPECT_EQ(GetQuestStep(QUEST_KAEDE_TABLETS), (1 << TABLET_ROUTE1_SHRINE) | (1 << 3));
+    EXPECT_EQ(GetQuestState(QUEST_KAEDE_TABLETS), QUEST_STATE_NONE);
+    EXPECT_EQ(IsQuestStepBitSet(QUEST_KAEDE_TABLETS, 1), FALSE);
+    SetQuestStepBit(QUEST_KAEDE_TABLETS, 6); // past the step's 6 bits: ignored
+    EXPECT_EQ(GetQuestStep(QUEST_KAEDE_TABLETS), (1 << TABLET_ROUTE1_SHRINE) | (1 << 3));
+}

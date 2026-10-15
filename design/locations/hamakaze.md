@@ -3,8 +3,8 @@
 - **Map(s):** `MAP_HAMAKAZE` (town), `MAP_HAMAKAZE_KASHIWAGI_HOUSE`, `MAP_HAMAKAZE_LAB` (map group
   `gMapGroup_Eien`). Placeholder layout: see **Maps** below.
 - **Type:** town (hometown)
-- **Connects to:** Route 1, north (the gap in the tree line; no connection until Route 1
-  exists). North is the placeholder layout's choice, not a design decision yet.
+- **Connects to:** Route 1, north (the gap in the tree line), decided in
+  [brainstorm-route-1.md](../brainstorm-route-1.md).
 
 ## Purpose
 
@@ -46,6 +46,11 @@ Act 1 beats 1-3 in [story-outline.md](../story-outline.md).
    Akira takes the one strong against it, Haru the last; Akira battles him at once. Losing is
    fine (early rival battle: healed, no white-out). Akira leaves for Shimotsuki. Sets
    `STORY_GOT_STARTER`.
+4. **The research (lab, after the battle):** the professor asks him to study Eien Poochyena
+   (see, battle, catch) and gives him Poké Balls. Opens `QUEST_RESEARCH_POOCHYENA`.
+5. **Haru's map (town, north exit):** walking to the north exit after the starters, Haru
+   catches up with his half-drawn map and asks him to note three places on Route 1. Opens
+   `QUEST_HARU_MAP`.
 
 All lines are drafts in the style guide's voice (`TODO(design)` in the scripts). Choices made
 here that the docs didn't settle, all easy to change:
@@ -65,6 +70,7 @@ here that the docs didn't settle, all easy to change:
 | Item | Position | Hidden? |
 | --- | --- | --- |
 | Journal (start menu entry, `FLAG_RECEIVED_JOURNAL`) | given | no |
+| Poké Ball ×5 | given by the professor with the research | no |
 
 ## Flags and vars
 
@@ -75,7 +81,8 @@ here that the docs didn't settle, all easy to change:
 | `FLAG_RECEIVED_JOURNAL` | He starts the journal (taken in) | The start menu (JOURNAL entry) |
 | `FLAG_JOURNAL_COVER_SEEN` | The journal is opened the first time | The journal (opens on the cover once) |
 | `VAR_EIEN_STORY` = `STORY_GOT_STARTER` | After the lab battle with Akira | The journal |
-| `QUEST_HARU_MAP` (quest table) | `TODO(design)`: when Haru asks | The journal's Missions tab |
+| `QUEST_RESEARCH_POOCHYENA` opened | The professor asks, after Akira's battle | The journal's Research and Missions tabs |
+| `QUEST_HARU_MAP` opened | Haru asks at the north exit, after the starters | The journal's Missions tab; Route 1 adds the steps |
 
 ## Maps
 

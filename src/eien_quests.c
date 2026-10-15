@@ -12,6 +12,7 @@
 
 #define STATE_MASK  0x03
 #define STEP_SHIFT  2
+#define STEP_BITS   6
 
 STATIC_ASSERT(QUEST_COUNT <= EIEN_QUEST_CAPACITY, EienQuestCapacity);
 STATIC_ASSERT(PERSON_COUNT <= EIEN_PERSON_CAPACITY, EienPersonCapacity);
@@ -50,6 +51,18 @@ void SetQuestStep(u32 quest, u32 step)
         step = QUEST_STEP_MAX;
     entry = &gSaveBlock1Ptr->eienQuests.quests[quest];
     *entry = (*entry & STATE_MASK) | (step << STEP_SHIFT);
+}
+
+// For quests whose step holds bits (research tiers, tablets read) instead of a count.
+void SetQuestStepBit(u32 quest, u32 bit)
+{
+    if (bit < STEP_BITS)
+        SetQuestStep(quest, GetQuestStep(quest) | (1 << bit));
+}
+
+bool32 IsQuestStepBitSet(u32 quest, u32 bit)
+{
+    return bit < STEP_BITS && (GetQuestStep(quest) >> bit) & 1;
 }
 
 u32 GetRelationshipPoints(u32 person)
@@ -124,6 +137,24 @@ void ScrCmd_checkqueststep(struct ScriptContext *ctx)
 
     Script_RequestEffects(SCREFF_V1);
     gSpecialVar_Result = GetQuestStep(quest);
+}
+
+void ScrCmd_setquestbit(struct ScriptContext *ctx)
+{
+    u32 quest = VarGet(ScriptReadHalfword(ctx));
+    u32 bit = VarGet(ScriptReadHalfword(ctx));
+
+    Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE);
+    SetQuestStepBit(quest, bit);
+}
+
+void ScrCmd_checkquestbit(struct ScriptContext *ctx)
+{
+    u32 quest = VarGet(ScriptReadHalfword(ctx));
+    u32 bit = VarGet(ScriptReadHalfword(ctx));
+
+    Script_RequestEffects(SCREFF_V1);
+    gSpecialVar_Result = IsQuestStepBitSet(quest, bit);
 }
 
 // Amounts are positive: a negative number would read as a var id, so subtracting has its

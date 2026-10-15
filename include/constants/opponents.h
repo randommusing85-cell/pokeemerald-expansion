@@ -863,12 +863,17 @@
 #define TRAINER_EIEN_AKIRA_LAB_TORCHIC      855
 #define TRAINER_EIEN_AKIRA_LAB_BULBASAUR    856
 #define TRAINER_EIEN_AKIRA_LAB_FROAKIE      857
+// Eien: Route 1 (design/locations/route-1.md)
+#define TRAINER_EIEN_ROUTE1_FISHERMAN       858
+#define TRAINER_EIEN_ROUTE1_HIKER           859
+#define TRAINER_EIEN_ROUTE1_LASS            860
+#define TRAINER_EIEN_ROUTE1_YOUNGSTER       861
 
-// NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 6 additional trainers before trainer flag space overflows (Eien has used 3 of the original 9)
+// NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 2 additional trainers before trainer flag space overflows (Eien has used 7 of the original 9)
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_EMERALD     858
+#define TRAINERS_COUNT_EMERALD     862
 #define MAX_TRAINERS_COUNT_EMERALD 864
 
 #if IS_FRLG

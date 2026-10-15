@@ -3042,6 +3042,20 @@
 	.2byte \quest
 	.endm
 
+	@ Sets one bit of a quest's step (for quests whose step holds bits). Its state is kept.
+	.macro setquestbit quest:req, bit:req
+	callnative ScrCmd_setquestbit, requests_effects=1
+	.2byte \quest
+	.2byte \bit
+	.endm
+
+	@ Sets VAR_RESULT to TRUE if that bit of a quest's step is set.
+	.macro checkquestbit quest:req, bit:req
+	callnative ScrCmd_checkquestbit, requests_effects=1
+	.2byte \quest
+	.2byte \bit
+	.endm
+
 	@ Adds relationship points to a person; kept within 0-255.
 	.macro addpoints person:req, amount:req
 	callnative ScrCmd_addpoints, requests_effects=1

@@ -1165,6 +1165,8 @@
   "gMapGroup_Eien": [
     "Hamakaze",
     "Hamakaze_KashiwagiHouse",
-    "Hamakaze_Lab"
+    "Hamakaze_Lab",
+    "EienRoute1",
+    "EienRoute1_Shrine"
   ]
 }
