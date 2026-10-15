@@ -20,14 +20,30 @@ location doc when they're settled; this file stays as the record.
 
 ## Decided
 
-(nothing yet)
+- **Shape (r1 1a):** north from Hamakaze in a straight line: the coast along one side, then
+  the snowy fields. The shrine is a short side path near the Shimotsuki end: optional but
+  easy to see.
+- **Wild species (r1 2a+c+d):** Eien Poochyena, Starly, Bidoof, Wingull (the coast), Snover,
+  Machop, Zigzagoon. Machop is a second answer to the Ice gym.
+- **Day and night tables (r1 2d):** Eien Poochyena is rarer by day and common at night (the
+  stone dogs stir after dark). Turns on `OW_TIME_OF_DAY_ENCOUNTERS`; maps without suffixed
+  tables keep their one table, so vanilla data is unaffected.
+- **Shrine grass (r1 3b):** Eien Poochyena about 50%, Shuppet 15-20%, the route's commons for
+  the rest.
+- **Trainers (r1 4c):** locals at their jobs: a Fisherman on the coast, a Hiker or Picnicker
+  in the fields, a Lass visiting the shrine, a kid who says he'll beat Fuyumi. One of them
+  uses an Eien Poochyena (counts as "battled" for the research). Generic trainer sprites.
+- **Items (r1 5b):** Potion, Poké Ball, an Ice Heal near the shrine, a hidden X Defense.
+- **Quests given in Hamakaze (r1 6a):** the professor asks for the Poochyena research and
+  gives Poké Balls after Akira's battle; Haru stops him at the north exit and asks for the
+  map notes.
 
 ## Leaning
 
 ## Open questions
 
-- Round 1: route shape and direction, wild table, trainers, items, tablet text and storage,
-  where the two quests are given.
+- Round 2: exact day/night rates, the shrine's day/night split, trainer teams and who has
+  the Poochyena, the tablet's text and storage, how Haru's three places are noted, music.
 
 ## Gaps and tensions
 
@@ -38,6 +54,10 @@ location doc when they're settled; this file stays as the record.
   the "every starter can handle gym 1" goal.
 - Wild battles in the shrine grass get the thin-place effect.
 - Music for the route and the shrine (placeholder until decided).
+- Day/night vs gym fairness: someone who only plays in daylight must still find Eien
+  Poochyena often enough.
+- GBA land slots have fixed rates (20/20/10/10/10/10/5/5/4/4/1/1), so the picked percentages
+  get fitted to the nearest slot sums.
 
 ## Parked ideas
 
