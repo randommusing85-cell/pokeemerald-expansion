@@ -13,9 +13,8 @@ milestone (prologue through gym 1):
 | Map | Doc | Then build |
 | --- | --- | --- |
 | Prologue bedroom | [prologue-bedroom.md](locations/prologue-bedroom.md) | The accident, Palkia |
-| Hamakaze (+ Kashiwagi house, lab) | [hamakaze.md](locations/hamakaze.md) | **Built** on a placeholder layout (redraw it in Porymap any time). Still to do: Haru's quest step 1 (`QUEST_HARU_MAP`, when he asks is `TODO(design)`); the connection north to Route 1; a new game starting here (or in the prologue) |
-| Route 1 | [route-1.md](locations/route-1.md) | Trainers (Lv 5-8), wild table (Eien Poochyena ~20%), the professor's Poochyena research (`QUEST_RESEARCH_POOCHYENA`) |
-| Route 1 shrine (own small map) | [route-1.md](locations/route-1.md) | Torii, komainu, the tablet (lore page; counts for Kaede's quest), grass with more Eien Poochyena |
+| Hamakaze (+ Kashiwagi house, lab) | [hamakaze.md](locations/hamakaze.md) | **Built** on a placeholder layout (redraw it in Porymap any time), with the research and Haru's map quest. Still to do: a new game starting here (or in the prologue) |
+| Route 1 + its shrine | [route-1.md](locations/route-1.md) | **Built** on placeholder layouts: trainers, day/night wild tables, items, Haru's notes, the tablet. Still to do: the connection north once Shimotsuki exists; real music |
 | Shimotsuki (+ gym, Pokémon Center, Mart) | [shimotsuki.md](locations/shimotsuki.md) | Akira shows the gym; gym 1 (Fuyumi: Spheal, Bergmite Lv 13-14); Akira's quest step 1 (`QUEST_AKIRA_PRACTICE`); Nami's first meeting just after gym 1 (end of the slice) |
 | Kaede's shrine in Shimotsuki (own small map) | [shimotsuki.md](locations/shimotsuki.md) | Kaede's cameo (sweeping, one blunt line); her grandmother |
 

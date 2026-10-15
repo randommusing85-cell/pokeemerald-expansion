@@ -71,7 +71,7 @@ still open are `TODO(design)`.
 
 | # | When / where | What happens | Points from | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
-| 1 (M1) | Act 1, Hamakaze | Haru is drawing a map of Eien for the newcomer and asks him to note three places on Route 1 (the coast, the snowy fields, the shrine). Teaches the missions tab. | Finishing it; an answer about where he's "really" from | Town Map | No |
+| 1 (M1) | Act 1, Hamakaze (he stops him at the north exit, after the starters) | Haru is drawing a map of Eien for the newcomer and asks him to note three places on Route 1 (the coast, the snowy fields, the shrine). The coast and fields are noted on walking in; the shrine by examining the torii. Teaches the missions tab. | Finishing it; an answer about where he's "really" from | Town Map | No |
 | 2 | Act 1, before the tournament | Haru feels behind his friends. A training battle, then a tag battle together against two trainers who've been bothering him. | The answer after the loss or win | Battle item | No |
 | 3 | Act 3, Kashiwagi's lab, after the professor dies | Haru is sorting his mother's notes. Help him find her last field notes; they finish a research entry she started. | Staying to help; the answer about grief | **Keepsake:** Haru's map from step 1, finished | No |
 
@@ -145,13 +145,13 @@ Her core scenes are fixed (story outline). Optional warm scenes, earned by her p
 
 | # | Kind | When / where | What happens | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
-| E1 (M1) | Research | Act 1, Route 1 | The professor asks him to study Eien Poochyena (see, battle, catch). | Poké Balls | No |
+| E1 (M1) | Research | Act 1, Hamakaze lab, then Route 1 | After Akira's battle the professor asks him to study Eien Poochyena (see, battle, catch) and gives Poké Balls ([route-1.md](locations/route-1.md)). | Poké Balls | No |
 | E2 | Research | Act 1 to 3 | The professor's list: study each Eien variant as they appear. Closes when she dies; Haru's step 3 finishes one entry. | Items per entry | After her death |
 | E3 | Research | Act 3, aurora nights (random after Kaede's step 2) | Night-only research steps (lore notes), including wild Eien Mightyena, which appear only on aurora nights at thin places. | Lore | No |
 | E4 | Disaster | Act 1, Hamakaze | The harbor freezes early; fishermen can't go out. `TODO(design)`: what the hero does. | Money | No |
 | E5 | Disaster | Act 2 or 3, `TODO(design)` | A child goes missing near a thin place. | Battle item | No |
 | E6 | Disaster | Act 3, Yuki's hometown | Yuki's step 2. | (Yuki's) | No |
-| E7 | Lore | Act 1 to 3 | Kaede's tablets (her step 1). | (Kaede's) | No |
+| E7 | Lore | Act 1 to 3 | Kaede's tablets (her step 1). Stored as `QUEST_KAEDE_TABLETS`, one step bit per tablet; reading a tablet sets its bit even before she asks, and the quest shows once she opens it. | (Kaede's) | No |
 | E8 | Lore | Act 1 to 3 | Old people in each town tell a folk tale about earlier cycles; each adds a journal page. Scales with the number of towns. | Lore | No |
 
 **Count:** Haru 3, Akira 4, Fuyumi 2, Kaede 3, Yuki 2, Ren 2, Tetsu 2, E1-E5 and E8 6

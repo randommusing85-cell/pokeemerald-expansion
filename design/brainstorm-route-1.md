@@ -37,13 +37,35 @@ location doc when they're settled; this file stays as the record.
 - **Quests given in Hamakaze (r1 6a):** the professor asks for the Poochyena research and
   gives Poké Balls after Akira's battle; Haru stops him at the north exit and asks for the
   map notes.
+- **Route rates (r2 1b):** two tables, morning/day/evening shared and night separate. Day:
+  Eien Poochyena 15%, Starly 25%, Bidoof 20%, Zigzagoon 15%, Wingull 15%, Machop/Snover the
+  rest. Night: Eien Poochyena 30%, Zigzagoon 20%, Bidoof 15%, Snover 15%, Machop 10%, Wingull
+  the rest; Starly roosts.
+- **Shrine split (r2 2a):** day Eien Poochyena 50%, Shuppet 5%; night Eien Poochyena 60%,
+  Shuppet 25%; commons for the rest.
+- **Teams (r2 3a):** Fisherman Lv 5 (Magikarp, Wingull); Hiker Lv 7 (Machop); Lass at the
+  shrine Lv 7 (Zigzagoon, Starly); the kid Lv 8 (Eien Poochyena, Snover): "Rock beats Ice. I
+  caught it for Fuyumi."
+- **Tablet storage (r2 4b):** one quest for Kaede's tablets (`QUEST_KAEDE_TABLETS`), one step
+  bit per tablet. Reading sets the bit while the quest is hidden; the lore page is keyed to
+  the bit.
+- **Tablet text (r2 5a+d):** "The dogs keep the gate. They grow at the gate, and nowhere
+  else." Then his thought: "In the games, Poochyena just evolves at 18. …Does it say
+  something else here?"
+- **Haru's places (r2 6c):** the coast and the fields are noted on walking in; the shrine by
+  examining the torii.
 
 ## Leaning
 
 ## Open questions
 
-- Round 2: exact day/night rates, the shrine's day/night split, trainer teams and who has
-  the Poochyena, the tablet's text and storage, how Haru's three places are noted, music.
+- Trainer names (placeholders for now).
+- Real music (placeholders: Route 101 for the route, Mt. Pyre for the shrine).
+- Research tier definitions used as defaults: seen = appears in a battle; battled = faints or
+  is caught; caught = caught.
+
+Promoted into `locations/route-1.md`, `locations/hamakaze.md`, `side-quests.md` and
+`whats-left.md`.
 
 ## Gaps and tensions
 
