@@ -20,7 +20,12 @@
 #define QUEST_HARU_MAP             0  // Haru 1: note three places on Route 1 for his map
 #define QUEST_RESEARCH_POOCHYENA   1  // E1: the professor's Eien Poochyena research
 #define QUEST_AKIRA_PRACTICE       2  // Akira 1: a practice battle in Shimotsuki
-#define QUEST_COUNT                3
+#define QUEST_KAEDE_TABLETS        3  // E7 / Kaede 1: shrine tablets read; one step bit per tablet
+#define QUEST_COUNT                4
+
+// QUEST_KAEDE_TABLETS step bits. Reading a tablet sets its bit even before Kaede opens the
+// quest. A step has 6 bits; more tablets than that need a second quest entry.
+#define TABLET_ROUTE1_SHRINE   0
 
 // People with relationship points. Append only, never renumber.
 #define PERSON_NAMI    0

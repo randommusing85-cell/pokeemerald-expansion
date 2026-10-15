@@ -24,6 +24,7 @@
 #include "dexnav.h"
 #include "dma3.h"
 #include "eien_aurora.h"
+#include "eien_journal.h"
 #include "eien_places.h"
 #include "event_data.h"
 #include "evolution_scene.h"
@@ -5275,6 +5276,7 @@ static void HandleEndTurn_FinishBattle(void)
                         HandleSetPokedexFlagFromMon(&party[partySlot], FLAG_SET_SEEN);
                 }
             }
+            UpdateResearchAfterBattle(); // Eien: research tiers (src/eien_journal.c)
         }
 
         if (!(gBattleTypeFlags & (BATTLE_TYPE_LINK

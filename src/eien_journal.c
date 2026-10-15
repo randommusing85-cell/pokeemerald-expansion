@@ -10,6 +10,7 @@
 #include "global.h"
 #include "eien_journal.h"
 #include "eien_quests.h"
+#include "battle.h"
 #include "bg.h"
 #include "event_data.h"
 #include "gpu_regs.h"
@@ -269,6 +270,8 @@ static s32 GetLatestStoryEntry(void)
 
 static bool32 IsLorePageVisible(u32 i)
 {
+    if (sJournalLore[i].stepIsBits)
+        return IsQuestStepBitSet(sJournalLore[i].quest, sJournalLore[i].minStep);
     return GetQuestState(sJournalLore[i].quest) != QUEST_STATE_NONE
         && GetQuestStep(sJournalLore[i].quest) >= sJournalLore[i].minStep;
 }
@@ -361,6 +364,45 @@ void UpdateJournalNotes(void)
         if (GetMonData(mon, MON_DATA_SPECIES_OR_EGG) == SPECIES_POOCHYENA_EIEN
          && GetMonData(mon, MON_DATA_LEVEL) >= EIEN_POOCHYENA_EVO_LEVEL)
             FlagSet(FLAG_JOURNAL_POOCHYENA_NO_EVO);
+    }
+}
+
+// Research tiers from a finished battle (called from battle_main.c): seen when one was sent
+// out against him, battled when it fainted or was caught, caught when he caught one. Tiers
+// count whether or not the professor has asked yet, so nothing is lost.
+void UpdateResearchAfterBattle(void)
+{
+    u32 i, slot;
+    enum BattleTrainer trainer;
+
+    for (i = 0; i < ARRAY_COUNT(sJournalResearch); i++)
+    {
+        u32 quest = sJournalResearch[i].quest;
+        u32 species = sJournalResearch[i].species;
+
+        for (trainer = B_TRAINER_PLAYER; trainer < MAX_BATTLE_TRAINERS; trainer++)
+        {
+            struct Pokemon *party;
+
+            if ((trainer & BIT_SIDE) == B_SIDE_PLAYER)
+                continue;
+            party = GetTrainerParty(trainer);
+            for (slot = 0; slot < PARTY_SIZE; slot++)
+            {
+                if (!gBattleStruct->partyState[trainer][slot].sentOut
+                 || GetMonData(&party[slot], MON_DATA_SPECIES) != species)
+                    continue;
+                SetQuestStepBit(quest, RESEARCH_TIER_SEEN);
+                if (GetMonData(&party[slot], MON_DATA_HP) == 0)
+                    SetQuestStepBit(quest, RESEARCH_TIER_BATTLED);
+            }
+        }
+        if (gBattleOutcome == B_OUTCOME_CAUGHT && gBattleResults.caughtMonSpecies == species)
+        {
+            SetQuestStepBit(quest, RESEARCH_TIER_SEEN);
+            SetQuestStepBit(quest, RESEARCH_TIER_BATTLED);
+            SetQuestStepBit(quest, RESEARCH_TIER_CAUGHT);
+        }
     }
 }
 

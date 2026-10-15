@@ -5,5 +5,6 @@
 void CB2_OpenJournal(void);
 // Notes he makes when he opens the journal (e.g. an Eien Poochyena that didn't evolve).
 void UpdateJournalNotes(void);
+void UpdateResearchAfterBattle(void);
 
 #endif // GUARD_EIEN_JOURNAL_H

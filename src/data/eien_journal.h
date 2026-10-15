@@ -62,18 +62,28 @@ static const struct JournalStoryEntry sJournalStory[] =
     },
 };
 
-// Lore pages (shrine tablets, folk tales): shown once a quest reaches a step.
-// TODO(design): Kaede's tablets and the folk tales (side-quests.md) fill this.
+// Lore pages (shrine tablets, folk tales): shown once a quest reaches a step. With stepIsBits,
+// the page shows once bit minStep of the quest's step is set, even while the quest itself
+// isn't open yet (a tablet read before Kaede asks for rubbings).
+// TODO(design): more tablets and the folk tales (side-quests.md) fill this.
 struct JournalLorePage
 {
     u16 quest;
     u8 minStep;
+    bool8 stepIsBits;
     const u8 *title;
     const u8 *text;
 };
 
 static const struct JournalLorePage sJournalLore[] =
 {
+    {
+        .quest = QUEST_KAEDE_TABLETS,
+        .minStep = TABLET_ROUTE1_SHRINE,
+        .stepIsBits = TRUE,
+        .title = COMPOUND_STRING("Route 1 tablet"),
+        .text = COMPOUND_STRING("Carved on the tablet at the Route 1 shrine: “The dogs keep the gate. They grow at the gate, and nowhere else.”"),
+    },
     { .title = NULL },
 };
 
@@ -90,6 +100,7 @@ enum
 struct JournalResearch
 {
     u16 quest;
+    u16 species; // Seeing, battling and catching this species sets the quest's tier bits
     const u8 *name;
     const u8 *notes[RESEARCH_TIER_COUNT];
     u16 noteFlag;    // Once set, `note` is shown below the tiers
@@ -112,6 +123,7 @@ static const struct JournalResearch sJournalResearch[] =
 {
     {
         .quest = QUEST_RESEARCH_POOCHYENA,
+        .species = SPECIES_POOCHYENA_EIEN,
         .name = COMPOUND_STRING("Eien Poochyena"),
         .notes = {
             [RESEARCH_TIER_SEEN] = COMPOUND_STRING("Grey, like a stone shrine dog."),
