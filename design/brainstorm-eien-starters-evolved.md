@@ -36,21 +36,26 @@ Working notes for the starters' second and third stages (`variants.md`). Decisio
   snowshoes and scouts the drifts; Eien Greninja is a lone mountain guardian of the snow
   passes.
 - **Names (r1 6a):** "Eien" plus the vanilla name for all six for now.
+- **Stats (r2 1a):** each first stage's shift carried up the line (HP / Atk / Def / SpA / SpD /
+  Spe): Eien Combusken 60 / 70 / 60 / 95 / 60 / 60 (405), Eien Blaziken 80 / 105 / 70 / 120 /
+  70 / 85 (530); Eien Ivysaur 60 / 53 / 63 / 90 / 85 / 54 (405), Eien Venusaur 80 / 73 / 83 /
+  110 / 105 / 74 (525); Eien Frogadier 54 / 63 / 52 / 83 / 66 / 87 (405), Eien Greninja 72 /
+  95 / 67 / 103 / 81 / 112 (530).
+- **Evolution moves (r2 2a):** Combusken Fiery Dance, Blaziken Shadow Ball, Ivysaur Psybeam,
+  Venusaur Psychic, Frogadier Icy Wind, Greninja Freeze-Dry.
+- **Art (r2 3c):** the middle stages now in full (front 2 frames, back, icon, two palettes);
+  front-only drafts of the finals to check the concepts early.
+- **Defaults (r2):** abilities are the pinch ability plus the first stage's hidden one (Blaze /
+  Cursed Body, Overgrow / Forewarn, Torrent / Snow Cloak); shinies carry the first stages'
+  themes up (night lantern, twilight, midnight); vanilla learnsets after the first stages'
+  new moves.
 
 ## Leaning
 
 ## Open questions
 
-Round 2, asked:
-
-1. Stat spreads.
-2. Evolution moves.
-3. How to stage the art.
-
-Defaults proposed, not asked: abilities are the pinch ability plus the first stage's hidden
-one (Blaze / Cursed Body, Overgrow / Forewarn, Torrent / Snow Cloak); shinies carry the first
-stages' themes up (night lantern, twilight, midnight); otherwise vanilla learnsets after the
-first stages' new moves.
+Still open: dex entries (drafted at build time); the finals' full art; final-form names if a
+design earns one; the parked signature moves.
 
 ## Gaps and tensions
 
