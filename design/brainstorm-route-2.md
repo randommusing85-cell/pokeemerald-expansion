@@ -29,21 +29,32 @@ name). Decisions move into a location doc when settled; this file stays as the r
 - **Nami's battle (r1 4c):** later, between gyms 3 and 4. Not on this route.
 - **Shape (r1 5a+d):** one long route (the lake path is its south end) plus a small optional
   roadside shrine with a tablet for Kaede's quest.
-- **Variant (r1 6d):** no new variant on this route; the next Eien variant answers gym 2, the
-  way Poochyena answered gym 1.
+- **Variant (r1 6d, r2 6a):** the next Eien variant answers gym 2, the way Poochyena answered
+  gym 1. It lives on this route, in grass near the town end: the route's one notable Pokémon.
+- **Gym 2 (r2 1b):** Fighting. The leader is a mountain ascetic who trains under the hot
+  waterfalls (Tohoku's yamabushi). Fighting threatens Eien Poochyena (Rock/Dark), which gives
+  the new variant its job.
+- **Villains at the patch (r2 2c+d):** they rope the patch off and warn people away, as if
+  they've seen it before; one member stays behind and chats with him, friendly and curious
+  about Celebi (a first named member; placeholder name).
+- **Nami (r2 3a):** seen far off crossing the lake on Lapras. No words.
+- **The patch (r2 4a):** midway, on the main path; an unavoidable scene as he passes, then he
+  walks around it.
+- **Roadside tablet (r2 5a):** about thin places ("where the snow stops, the gate is near" is
+  the direction, not the text). The text is still to write.
 
 ## Leaning
 
 ## Open questions
 
-Round 2, asked:
+Round 3, asked:
 
-1. Gym 2's type and leader concept.
-2. What the villains do at the thinning patch (and a placeholder look).
-3. Whether Nami shows up on this route at all.
-4. Where the patch sits and how it gates the route.
-5. The roadside tablet's theme.
-6. Where the gym 2 variant lives (it has to be catchable before gym 2).
+1. Which species becomes the gym 2 variant (it should beat Fighting).
+2. The gym 2 leader's character.
+3. The faction's placeholder look.
+4. Who the friendly member is.
+5. The route's trainers.
+6. Whether Akira or Haru appear on the route.
 
 Defaults proposed, not asked: wild Lv 10-15 on the route, trainers Lv 12-17, gym 2 trainers
 about Lv 17-19 and its ace about Lv 21 (starters evolve at about 18, before gym 2). Texture:
@@ -55,8 +66,9 @@ snowy forest at the lake end, climbing to steam vents and bare rock near the tow
   other.
 - The faction has no name or look yet; a first appearance needs at least a placeholder look.
 - Nami just met him and left; battling her too soon after may feel rushed (settled: r1 4c).
-- r1 6d: the gym 2 variant must be catchable before gym 2, so on this route or in the town's
-  surroundings, which pulls against "no variant on this route".
+- r1 6d: the gym 2 variant must be catchable before gym 2 (settled by r2 6a: on this route).
+- The new variant gets a research entry in the professor's list (side-quests E2), like
+  Poochyena's.
 - If a tablet sits on this route, it needs a small shrine or roadside marker (and a bit in
   `QUEST_KAEDE_TABLETS`).
 
