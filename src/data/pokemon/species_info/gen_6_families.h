@@ -689,6 +689,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sFrogadierLevelUpLearnset,
         .teachableLearnset = sFrogadierTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_GRENINJA}),
+        .formSpeciesIdTable = sFrogadierFormSpeciesIdTable, // Eien: eien_forms_data.h
     },
 
     [SPECIES_GRENINJA] =

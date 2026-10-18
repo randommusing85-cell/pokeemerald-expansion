@@ -65,13 +65,20 @@ hand animation can improve it later.
 
 `TODO(design)`: dex entries (drafts are in the code).
 
-### Evolved stages (designed, not built)
+### Evolved stages
 
 Decided in [brainstorm-eien-starters-evolved.md](brainstorm-eien-starters-evolved.md). The
 three lines diverge: Torchic's goes toward the dead and ritual (Ghost), Bulbasaur's toward the
 sky and the aurora (Psychic), Froakie's deeper into the cold, with a touch of Tohoku festival
 and folklore. All evolve at **Lv 18 and Lv 36** and keep their Eien typing. Names are "Eien"
-plus the vanilla name for now. Until these are built, the starters don't evolve.
+plus the vanilla name for now.
+
+**Built so far:** the middle stages' species data (`SPECIES_COMBUSKEN_EIEN`, `_IVYSAUR_EIEN`,
+`_FROGADIER_EIEN`): stats, types, abilities, learnsets, draft dex entries, and the first stages'
+Lv 18 evolutions (tests in `test/eien_journal.c`). They use the vanilla sprites with recolored
+placeholder palettes until their AI drafts are picked (`tools/eien_species/evolved_drafts.py`,
+contact sheet `art/eien_evolved_contact_sheet.png`). The finals aren't built: the middle stages
+don't evolve further yet.
 
 | Form | Look | Stats (total) | Evolution move |
 | --- | --- | --- | --- |
@@ -92,7 +99,11 @@ plus the vanilla name for now. Until these are built, the starters don't evolve.
 - **Shinies:** the first stages' themes carried up (night lantern, twilight, midnight).
 - **Art:** the middle stages in full first (gym 3 needs them: Akira's evolved starter); the
   finals as front-only drafts to check the concepts, full art later.
-- `TODO(design)`: dex entries; final-form names if a design earns one; a signature move per
+- **Dex entries (drafts, `TODO(design)`):** Eien Combusken (category Festival) dances in front of
+  the lantern floats, paper feathers glowing; Eien Ivysaur (Aurora Bud) turns its half-open bud
+  to the sky; Eien Frogadier (Snow Scout) walks the drifts in its straw cape and vanishes when
+  travelers look back. The text is in `src/data/pokemon/species_info/eien_families.h`.
+- `TODO(design)`: the finals' dex entries; final-form names if a design earns one; a signature move per
   final stage (parked).
 
 ## Others

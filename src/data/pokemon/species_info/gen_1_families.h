@@ -143,6 +143,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sIvysaurLevelUpLearnset,
         .teachableLearnset = sIvysaurTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_VENUSAUR}),
+        .formSpeciesIdTable = sIvysaurFormSpeciesIdTable, // Eien: eien_forms_data.h
     },
 
 #if P_UPDATED_EXP_YIELDS >= GEN_8

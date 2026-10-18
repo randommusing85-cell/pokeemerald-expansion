@@ -1,7 +1,7 @@
 // Eien regional forms (design/variants.md), generated from the original entries and then
 // edited by hand. Included inside gSpeciesInfo by species_info.h; their learnsets, sprites,
-// palettes and form tables are in eien_forms_data.h. TODO(design): evolutions (the evolved forms don't
-// exist yet, so these don't evolve).
+// palettes and form tables are in eien_forms_data.h. The starters evolve at Lv 18 into their Eien
+// middle stages (below); those don't evolve further until the finals exist.
 
 #if P_FAMILY_TORCHIC
     [SPECIES_TORCHIC_EIEN] =
@@ -81,6 +81,7 @@
         .levelUpLearnset = sTorchicEienLevelUpLearnset,
         .teachableLearnset = sTorchicTeachableLearnset,
         .eggMoveLearnset = sTorchicEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_COMBUSKEN_EIEN}),
         .formSpeciesIdTable = sTorchicFormSpeciesIdTable,
     },
 #endif //P_FAMILY_TORCHIC
@@ -153,6 +154,7 @@
         .levelUpLearnset = sBulbasaurEienLevelUpLearnset,
         .teachableLearnset = sBulbasaurTeachableLearnset,
         .eggMoveLearnset = sBulbasaurEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_IVYSAUR_EIEN}),
         .formSpeciesIdTable = sBulbasaurFormSpeciesIdTable,
     },
 #endif //P_FAMILY_BULBASAUR
@@ -228,6 +230,7 @@
         .levelUpLearnset = sFroakieEienLevelUpLearnset,
         .teachableLearnset = sFroakieTeachableLearnset,
         .eggMoveLearnset = sFroakieEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_FROGADIER_EIEN}),
         .formSpeciesIdTable = sFroakieFormSpeciesIdTable,
     },
 #endif //P_FAMILY_FROAKIE
@@ -382,3 +385,225 @@
         .formSpeciesIdTable = sMightyenaFormSpeciesIdTable,
     },
 #endif //P_FAMILY_POOCHYENA
+
+// Eien middle stages (design/variants.md, "Evolved stages"): they evolve from the first
+// stages at Lv 18. Placeholder sprites: the vanilla ones with recolored palettes until the
+// AI drafts are picked. They don't evolve further yet (the finals aren't built).
+
+#if P_FAMILY_TORCHIC
+    [SPECIES_COMBUSKEN_EIEN] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 70,
+        .baseDefense   = 60,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_GHOST),
+        .catchRate = 45,
+        .expYield = 142,
+        .evYield_SpAttack = 2,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_CURSED_BODY },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Combusken"),
+        .cryId = CRY_COMBUSKEN,
+        .natDexNum = NATIONAL_DEX_COMBUSKEN,
+        .categoryName = _("Festival"),
+        .height = 9,
+        .weight = 195,
+        .description = COMPOUND_STRING(
+            "It dances in front of the lantern floats\n"
+            "at summer festivals. Its paper feathers\n"
+            "glow from the pale flame inside, and it\n"
+            "leaps higher the louder the drums play."),
+        .pokemonScale = 343,
+        .pokemonOffset = 5,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Combusken,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 64) : MON_COORDS_SIZE(48, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 1 : 3,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 8),
+            ANIMCMD_FRAME(1, 25),
+            ANIMCMD_FRAME(0, 12),
+        ),
+        .frontAnimId = ANIM_V_JUMPS_H_JUMPS,
+        .backPic = gMonBackPic_Combusken,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 0 : 1,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
+        .palette = sMonPalette_CombuskenEien,
+        .shinyPalette = sMonShinyPalette_CombuskenEien,
+        .iconSprite = gMonIcon_Combusken,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-1, 8, SHADOW_SIZE_M)
+        FOOTPRINT(Combusken)
+        OVERWORLD(
+            sPicTable_Combusken,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Combusken,
+            gShinyOverworldPalette_Combusken
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_CombuskenF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following
+        )
+        .levelUpLearnset = sCombuskenEienLevelUpLearnset,
+        .teachableLearnset = sCombuskenTeachableLearnset,
+        .formSpeciesIdTable = sCombuskenFormSpeciesIdTable,
+    },
+#endif //P_FAMILY_TORCHIC
+
+#if P_FAMILY_BULBASAUR
+    [SPECIES_IVYSAUR_EIEN] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 53,
+        .baseDefense   = 63,
+        .baseSpeed     = 54,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_PSYCHIC),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 141,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
+        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_FOREWARN },
+        .bodyColor = BODY_COLOR_BLUE,
+        .noFlip = TRUE,
+        .speciesName = _("Ivysaur"),
+        .cryId = CRY_IVYSAUR,
+        .natDexNum = NATIONAL_DEX_IVYSAUR,
+        .categoryName = _("Aurora Bud"),
+        .height = 10,
+        .weight = 130,
+        .description = COMPOUND_STRING(
+            "Its bud has half opened. On clear nights\n"
+            "a small aurora swirls inside the petals,\n"
+            "and it turns its head to the sky as if\n"
+            "listening for something far away."),
+        .pokemonScale = 335,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Ivysaur,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 48) : MON_COORDS_SIZE(56, 48),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 10 : 9,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 1),
+            ANIMCMD_FRAME(1, 36),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_Ivysaur,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 9,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = sMonPalette_IvysaurEien,
+        .shinyPalette = sMonShinyPalette_IvysaurEien,
+        .iconSprite = gMonIcon_Ivysaur,
+        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 4,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-1, 3, SHADOW_SIZE_L)
+        FOOTPRINT(Ivysaur)
+        OVERWORLD(
+            sPicTable_Ivysaur,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Ivysaur,
+            gShinyOverworldPalette_Ivysaur
+        )
+        .levelUpLearnset = sIvysaurEienLevelUpLearnset,
+        .teachableLearnset = sIvysaurTeachableLearnset,
+        .formSpeciesIdTable = sIvysaurFormSpeciesIdTable,
+    },
+#endif //P_FAMILY_BULBASAUR
+
+#if P_FAMILY_FROAKIE
+    [SPECIES_FROGADIER_EIEN] =
+    {
+        .baseHP        = 54,
+        .baseAttack    = 63,
+        .baseDefense   = 52,
+        .baseSpeed     = 87,
+        .baseSpAttack  = 83,
+        .baseSpDefense = 66,
+        .types = MON_TYPES(TYPE_WATER, TYPE_ICE),
+        .catchRate = 45,
+        .expYield = 142,
+        .evYield_Speed = 2,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
+        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_SNOW_CLOAK },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Frogadier"),
+        .cryId = CRY_FROGADIER,
+        .natDexNum = NATIONAL_DEX_FROGADIER,
+        .categoryName = _("Snow Scout"),
+        .height = 6,
+        .weight = 109,
+        .description = COMPOUND_STRING(
+            "It wears a cape of woven straw and walks\n"
+            "on the deepest drifts without sinking.\n"
+            "It scouts the snow ahead of travelers\n"
+            "and vanishes when they look back."),
+        .pokemonScale = 422,
+        .pokemonOffset = 12,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Frogadier,
+        .frontPicSize = MON_COORDS_SIZE(56, 48),
+        .frontPicYOffset = 8,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 30),
+        ),
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
+        .backPic = gMonBackPic_Frogadier,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 6,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
+        .palette = sMonPalette_FrogadierEien,
+        .shinyPalette = sMonShinyPalette_FrogadierEien,
+        .iconSprite = gMonIcon_Frogadier,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
+        SHADOW(0, 5, SHADOW_SIZE_M)
+        FOOTPRINT(Frogadier)
+        OVERWORLD(
+            sPicTable_Frogadier,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Frogadier,
+            gShinyOverworldPalette_Frogadier
+        )
+        .levelUpLearnset = sFrogadierEienLevelUpLearnset,
+        .teachableLearnset = sFrogadierTeachableLearnset,
+        .formSpeciesIdTable = sFrogadierFormSpeciesIdTable,
+    },
+#endif //P_FAMILY_FROAKIE
