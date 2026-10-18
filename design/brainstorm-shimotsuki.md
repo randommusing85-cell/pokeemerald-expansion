@@ -54,19 +54,28 @@ the location doc when settled; this file stays as the record.
   person by the Pokémon Center), plain lines, one that sets up Fuyumi's softer side
   ("She makes the best stew in town"). Music placeholders: Lavaridge for the town, the gym
   theme, a quiet track for Nami's scene.
+- **White-out before Shimotsuki (r3 1a):** he wakes at the Kashiwagi house; someone there says
+  one line and heals the team. A heal location in Hamakaze, set before Route 1.
+- **Kaede's shrine grass (r3 2b):** its own wild table: Eien Poochyena plus a Ghost type that
+  isn't Route 1's Shuppet (species open, round 4), so the evolution works by battling there.
+- **Kaede's shrine tablet (r3 3a+d):** the text is about the stone dogs on aurora nights
+  (setting up her step 2), but it stays "too worn to read" until her milestone-2 scene, where
+  she reads it. Its text is still to write.
+- **Badge (r3 4b):** the Hoarfrost Badge.
+- **Gym trainers (r3 5c):** locals at their jobs, like Route 1: an ice fisher and a snow
+  shoveller (new trainer classes; names open, round 4).
+- **The lake (r3 6a):** frozen at the edges, open dark water in the middle, which Lapras swims.
+  `TODO(art)`: an ice-rim tile. His line stays close to "A frozen lake…".
 
 ## Leaning
 
 ## Open questions
 
-Round 3 (after the build), asked:
+Round 4, asked:
 
-1. Where he wakes after a white-out before Shimotsuki's Pokémon Center.
-2. Kaede's shrine grass: its own wild table, a different one, or no grass.
-3. The direction of Kaede's shrine tablet text.
-4. The badge's name.
-5. The gym trainers' classes and names.
-6. The "frozen" lake vs Lapras swimming across it.
+1. The Ghost type at Kaede's shrine (with Eien Poochyena).
+2. Who heals him at the Kashiwagi house, and his line.
+3. Names and class names for the two gym trainers.
 
 Defaults proposed, not asked (change any): the Mart keeps its placeholder stock (Poké Ball,
 Potion, Antidote, Paralyze Heal, Awakening, Ice Heal, Escape Rope); the lake path stays
@@ -92,7 +101,10 @@ Promoted into `locations/shimotsuki.md`, `story-outline.md`, `side-quests.md`,
 - Found in round 3: experience counts toward the shrine evolution only from battles fought on
   the shrine map, so a shrine with no grass and no trainer can only evolve Poochyena by Rare
   Candy.
-- Found in round 3: the docs call the lake frozen, but Nami's Lapras swims across it.
+- Found in round 3: the docs call the lake frozen, but Nami's Lapras swims across it (settled by
+  r3 6a: open water in the middle).
+- r3 5c needs two new trainer classes (a small engine data change: the class name and its
+  prize money; pics can reuse vanilla ones for now).
 
 ## Parked ideas
 
