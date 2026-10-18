@@ -24,22 +24,30 @@ this file stays as the record.
 
 ## Decided
 
+- **Routes (r1 1b):** numbers for routes, names for landmarks. The mountain pass is Route 2;
+  the lake path takes the lake's name.
+- **The hot-spring town (r1 2a):** Yunotaki (湯の滝, "hot-water falls"), after the falls where
+  Ibuki trains.
+- **The lake (r1 3a):** Lake Usurai (薄氷, "thin ice"): frozen at the edges, open in the middle.
+  The lake path's region-map name becomes "LAKE USURAI".
+- **The faction (r1 4d):** a public name in Act 1, "the Eien Survey" (they look like field
+  researchers); their true name, Tokoyo (常世, the eternal land of Japanese myth), comes out at
+  the tournament.
+- **The young researcher (r1 5a):** Hinata (陽向, "sunny place"), a young woman.
+
 ## Leaning
 
 ## Open questions
 
-Round 1, asked:
-
-1. How routes are named (numbers or names), and the lake path.
-2. The hot-spring town.
-3. The lake.
-4. The faction.
-5. The young researcher (name and gender).
+Round 2, asked: the smaller names (gym 1 trainers, the pilgrims, Kashiwagi's husband,
+Kaede's grandmother).
 
 ## Gaps and tensions
 
-- The faction's name has to work twice: as what the public sees (researchers) and as what
-  they really are. One name or two?
+- The faction's name has to work twice (settled by r1 4d: two names).
+- r1 1b + 3a: the built lake map keeps its constant `MAP_EIEN_ROUTE2` (renaming map constants
+  is churn), but its region-map section and pop-up become "LAKE USURAI"; the pass gets the
+  "ROUTE 2" section when it's built. The location docs need the same change.
 - Smaller names still open: the gym trainers (Tomo, Saya are placeholders), the two
   pilgrims, Kashiwagi's husband, Kaede's grandmother, the route trainers on the pass.
 
