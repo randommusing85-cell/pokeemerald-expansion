@@ -116,7 +116,7 @@ Hamakaze_KashiwagiHouse_Text_StayWithUs:
 Hamakaze_KashiwagiHouse_Text_IntroduceFamily:
 	.string "PROFESSOR: I'm Professor Kashiwagi.\n"
 	.string "I study Pokémon here.\p"
-	.string "This is my husband.\n"
+	.string "This is my husband, Makoto.\n"
 	.string "And that's our son, Haru.$"
 
 Hamakaze_KashiwagiHouse_Text_Haru:
@@ -145,7 +145,7 @@ Hamakaze_KashiwagiHouse_Text_ComeToLab:
 	.string "I have something for you.$"
 
 Hamakaze_KashiwagiHouse_Text_MakeYourselfAtHome:
-	.string "HUSBAND: Make yourself at home.$"
+	.string "MAKOTO: Make yourself at home.$"
 
 Hamakaze_KashiwagiHouse_Text_HaruAfterStarter:
 	.string "HARU: Mine's still shy.\n"

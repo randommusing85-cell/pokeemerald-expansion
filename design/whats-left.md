@@ -15,10 +15,10 @@ milestone (prologue through gym 1):
 | Prologue bedroom | [prologue-bedroom.md](locations/prologue-bedroom.md) | The accident, Palkia |
 | Hamakaze (+ Kashiwagi house, lab) | [hamakaze.md](locations/hamakaze.md) | **Built** on a placeholder layout (redraw it in Porymap any time), with the research and Haru's map quest. Still to do: a new game starting here (or in the prologue) |
 | Route 1 + its shrine | [route-1.md](locations/route-1.md) | **Built** on placeholder layouts: trainers, day/night wild tables, items, Haru's notes, the tablet, the warp north to Shimotsuki. Still to do: real music |
-| Shimotsuki (+ gym, Pokémon Center, Mart), Kaede's shrine, the lake path | [shimotsuki.md](locations/shimotsuki.md) | **Built** on placeholder layouts: Akira shows the gym, gym 1 with badge and TM07, Akira's practice (`QUEST_AKIRA_PRACTICE`), Kaede's cameo and her grandmother, Nami's meeting and the end-of-milestone message. Since then: the Hoarfrost Badge, Kaede's shrine wild table (Eien Poochyena, Duskull), the ICE FISHER and SHOVELER classes. Still to do: the tablet text, the gym trainers' names, real music, an ice-rim tile for the lake |
+| Shimotsuki (+ gym, Pokémon Center, Mart), Kaede's shrine, Lake Usurai | [shimotsuki.md](locations/shimotsuki.md) | **Built** on placeholder layouts: Akira shows the gym, gym 1 with badge and TM07, Akira's practice (`QUEST_AKIRA_PRACTICE`), Kaede's cameo and her grandmother, Nami's meeting and the end-of-milestone message. Since then: the Hoarfrost Badge, Kaede's shrine wild table (Eien Poochyena, Duskull), the ICE FISHER and SHOVELER classes. Still to do: the tablet text, real music, an ice-rim tile for the lake |
 
 | Route 2's mountain pass + roadside shrine | [route-2.md](locations/route-2.md) | Designed (brainstorm-route-2.md); needs maps, Eien Hoothoot, trainers |
-| The hot-spring town (+ gym 2, Pokémon Center, Mart, inn) | [onsen-town.md](locations/onsen-town.md) | Designed in outline; needs maps, the gym 2 leader's name and team |
+| Yunotaki (+ gym 2, Pokémon Center, Mart, inn) | [yunotaki.md](locations/yunotaki.md) | Designed (brainstorm-gym-2.md); needs maps, Ibuki's sprites, the Pilgrim class |
 
 Open gaps found while building Shimotsuki:
 
@@ -40,7 +40,7 @@ Open gaps found while building Shimotsuki:
 ## 3. Design still open (the big ones)
 
 - **Story:** Act 2 and Act 3 locations and most beats (`story-outline.md`); the faction's
-  name and look; Tetsu's and Ren's placement.
+  look (named: the Eien Survey, true name Tokoyo); Tetsu's and Ren's placement.
 - **Progression:** gym leaders 2-8, the level curve past gym 1, badge gates, field moves
   without HMs (`progression.md`).
 - **Species:** the evolved starters and Eien Hoothoot are designed (`variants.md`), not built; more Eien variants (5-10 total planned);
@@ -48,7 +48,7 @@ Open gaps found while building Shimotsuki:
 - **Quests:** point thresholds, the letter trigger rule, remaining chains' details
   (`side-quests.md`).
 - **Kaede:** the tale's text (the stone dogs on aurora nights), her finale lines, her letters,
-  whether the League cares about her tales, the grandmother's name, the charm item.
+  whether the League cares about her tales, the charm item.
 - **Weather and terrain:** exact battle messages; the aurora night palette (needs a map);
   how often aurora nights come back (`AURORA_NIGHT_CHANCE`, 1 in 4 for now).
 - **Nami's** aurora-night warm scene: a different night from Kaede's, or linked.

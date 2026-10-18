@@ -1,6 +1,6 @@
 # Brainstorm: the gym 2 leader (team and name)
 
-Working notes for the hot-spring town's gym leader (`locations/onsen-town.md`). Decisions
+Working notes for the hot-spring town's gym leader (`locations/yunotaki.md`). Decisions
 move into `characters.md`, `progression.md` and the town doc when settled; this file stays as
 the record.
 
@@ -58,7 +58,7 @@ the record.
 ## Open questions
 
 Promoted into `characters.md`, `progression.md`, `story-outline.md` and
-`locations/onsen-town.md`. Still open: the town's name (the gym doc still says "the hot-spring town"); the pilgrims'
+`locations/yunotaki.md`. Still open: the town's name (the gym doc still says "the hot-spring town"); the pilgrims'
 names; Ibuki's dialogue beyond the losing line; his sprites (AI drafts); the evolved Eien
 starters (needed by gym 3).
 
