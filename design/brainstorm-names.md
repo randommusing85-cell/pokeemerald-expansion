@@ -34,13 +34,17 @@ this file stays as the record.
   researchers); their true name, Tokoyo (常世, the eternal land of Japanese myth), comes out at
   the tournament.
 - **The young researcher (r1 5a):** Hinata (陽向, "sunny place"), a young woman.
+- **Shimotsuki's gym trainers (r2 1a):** Tomo (Ice Fisher) and Saya (Shoveler) stay.
+- **The pilgrims (r2 2a):** Daichi ("earth", Makuhita) and Shizuka ("quiet", Meditite).
+- **Kashiwagi's husband (r2 3b):** Makoto (誠, "sincerity").
+- **Kaede's grandmother (r2 4a):** Chiyo (千代, "a thousand generations").
+- **Default (r2):** the trainers on the pass get placeholder names when built, `TODO(design)`.
 
 ## Leaning
 
 ## Open questions
 
-Round 2, asked: the smaller names (gym 1 trainers, the pilgrims, Kashiwagi's husband,
-Kaede's grandmother).
+Nothing open from rounds 1-2.
 
 ## Gaps and tensions
 
