@@ -23,15 +23,30 @@ this file stays as the record.
 
 ## Decided
 
+- **Maps (r1 1a):** the route is two maps: a lower snowy forest and an upper stretch of steam
+  vents and rock. Each has its own grass tables; Eien Hoothoot is only in the upper one.
+- **Trainer count (r1 2b):** six: woodcutter, inn porter, charcoal burner, a pilgrim, a second
+  pilgrim, and a pilgrim pair in a double battle.
+- **Classes (r1 3a):** all new: WOODCUTTER, PORTER, CHARCOALER, and PILGRIM (shared with gym 2).
+- **Locals' teams (r1 4a+d):** job Pokémon: the woodcutter Pineco and Timburr, the porter
+  Machop and a pack Pokémon, the charcoal burner Slugma or Numel. One local has a vanilla
+  Hoothoot and says the owls up here look see-through at night.
+- **Wild species (r1 5b):** lower forest Snorunt, Swinub, Pineco; upper vents Geodude, Numel,
+  Meditite and Eien Hoothoot.
+- **Lake Usurai (r1 6b):** Tomo the Ice Fisher gives an Old Rod after the badge; the lake gets a
+  fishing table (Magikarp, Goldeen, Spheal).
+
 ## Leaning
 
 ## Open questions
 
 ## Gaps and tensions
 
-- A map has one grass table: "Hoothoot near the town end" needs either a split map, Hoothoot
-  in all of the route's grass, or a second map (the shrine) for it.
-- Lake Usurai has no wild table and he has no rod or Surf yet.
+- A map has one grass table (settled by r1 1a: two maps).
+- Lake Usurai has no wild table and he has no rod yet (settled by r1 6b).
+- r1 1a: Hoothoot's evolution checks "on its home pass": the upper map only, or both.
+- r1 1a: the patch's place relative to the map join.
+- Haru catches up on the pass: battle or only the Town Map?
 - The thinning patch: Pokémon flee it. Does the grass around it have encounters?
 
 ## Parked ideas
