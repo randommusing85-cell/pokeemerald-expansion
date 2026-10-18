@@ -35,22 +35,23 @@ move into `variants.md` when settled; this file stays as the record.
   The roadside tablet could hint at it.
 - **Research (r1 6d):** seen / battled / caught, like Poochyena, plus a journal note when one
   reaches Lv 20 without evolving (the hint for the rule, like Poochyena's).
+- **Eien Noctowl's look (r2 1c):** shrouded: the faded wings stretch into long trailing veils
+  that drift behind it like a funeral shroud; bigger and more spectral, still a clear owl.
+- **Eien Noctowl's stats (r2 2a):** the same shift as Eien Hoothoot's: 90 / 50 / 46 / 110 / 76
+  / 80, 452.
+- **On evolving (r2 3a):** learns Hex.
+- **Wild rates (r2 4c):** about 10% by day, 30% at night, on the pass near the town end.
+- **Shiny (r2 5b):** aurora mist, green-violet instead of grey (for both stages).
+- **Defaults (r2):** Eien Noctowl keeps Eien Hoothoot's abilities and the name "Eien Noctowl";
+  dex entries are drafts written at build time; sprites through AI drafts like Poochyena's.
 
 ## Leaning
 
 ## Open questions
 
-Round 2, asked:
-
-1. Eien Noctowl's look.
-2. Eien Noctowl's stats (452).
-3. The move it learns on evolving.
-4. Wild rates on the pass, day and night.
-5. The shiny palette.
-
-Defaults proposed, not asked: Eien Noctowl keeps Eien Hoothoot's abilities (as Mightyena kept
-Poochyena's) and the name "Eien Noctowl"; dex entries are drafts written at build time; the
-sprites go through AI drafts like Poochyena's.
+Still open after round 2: the dex entries (drafted at build time), the roadside tablet's
+hint for the night-pass rule (part of the tablet text), the exact rates fitted to the land
+slots.
 
 ## Gaps and tensions
 
