@@ -63,14 +63,62 @@ lantern" (slate body, violet flame), Bulbasaur "twilight" (purple body, gold bul
 too; its motion is smaller than the original species' (a lean, a crouch, a mouth opening), so
 hand animation can improve it later.
 
-`TODO(design)`: evolved forms (they don't evolve until those exist), dex entries (drafts are
-in the code).
+`TODO(design)`: dex entries (drafts are in the code).
+
+### Evolved stages
+
+Decided in [brainstorm-eien-starters-evolved.md](brainstorm-eien-starters-evolved.md). The
+three lines diverge: Torchic's goes toward the dead and ritual (Ghost), Bulbasaur's toward the
+sky and the aurora (Psychic), Froakie's deeper into the cold, with a touch of Tohoku festival
+and folklore. All evolve at **Lv 18 and Lv 36** and keep their Eien typing. Names are "Eien"
+plus the vanilla name for now.
+
+**Built so far:** the middle stages' species data (`SPECIES_COMBUSKEN_EIEN`, `_IVYSAUR_EIEN`,
+`_FROGADIER_EIEN`): stats, types, abilities, learnsets, draft dex entries, and the first stages'
+Lv 18 evolutions (tests in `test/eien_journal.c`), with their sprites. The finals aren't built:
+the middle stages don't evolve further yet.
+
+- **Middle-stage sprites:** picked AI drafts ([art/eien_evolved_drafts.md](art/eien_evolved_drafts.md)):
+  fronts Combusken `3pro_a`, Ivysaur `3pro_b`, Frogadier `3pro_a`; idle frames `3pro_a` /
+  `31flash_a` / `3pro_a`; backs `31flash_b` / `31flash_a` / `3pro_a`
+  (`tools/eien_species/stage_drafts.py`). Shinies carry the first stages' themes (night lantern,
+  twilight, midnight; `shiny_drafts.py`). Icons are the vanilla icons recolored into the Eien icon
+  palette (`make_icons.py`), since the icon drafts came out noisy. Checked in game: evolution,
+  party icon, battle back (shots in `art/eien_combusken/`, `eien_ivysaur/`, `eien_frogadier/`).
+- **Finals:** front-only concept drafts in the same contact sheet (`art/eien_evolved_contact_sheet.png`).
+
+| Form | Look | Stats (total) | Evolution move |
+| --- | --- | --- | --- |
+| Eien Combusken | A leaping Nebuta festival dancer with lantern-paper feathers | 60 / 70 / 60 / 95 / 60 / 60 (405) | Fiery Dance |
+| Eien Blaziken | The Nebuta warrior float itself: glowing from inside, painted face, a towering fighter | 80 / 105 / 70 / 120 / 70 / 85 (530) | Shadow Ball |
+| Eien Ivysaur | The bud half-opens; a small aurora swirls inside its translucent petals | 60 / 53 / 63 / 90 / 85 / 54 (405) | Psybeam |
+| Eien Venusaur | The flower fully open, the aurora streaming up from it into the sky | 80 / 73 / 83 / 110 / 105 / 74 (525) | Psychic |
+| Eien Frogadier | A snow scout in a straw snow cape and snowshoes, scouting the drifts | 54 / 63 / 52 / 83 / 66 / 87 (405) | Icy Wind |
+| Eien Greninja | A lone mountain guardian of the snow passes | 72 / 95 / 67 / 103 / 81 / 112 (530) | Freeze-Dry |
+
+- **Stats:** each first stage's shift carried up its line (vanilla Combusken 60 / 85 / 60 / 85
+  / 60 / 55, Blaziken 80 / 120 / 70 / 110 / 70 / 80, Ivysaur 60 / 62 / 63 / 80 / 80 / 60,
+  Venusaur 80 / 82 / 83 / 100 / 100 / 80, Frogadier 54 / 63 / 52 / 83 / 56 / 97, Greninja 72 /
+  95 / 67 / 103 / 71 / 122).
+- **Abilities:** the pinch ability plus the first stage's hidden one (Blaze / Cursed Body,
+  Overgrow / Forewarn, Torrent / Snow Cloak).
+- **Learnsets:** the first stages' new moves carry on; otherwise vanilla.
+- **Shinies:** the first stages' themes carried up (night lantern, twilight, midnight).
+- **Art:** the middle stages in full (done); the finals as front-only drafts to check the
+  concepts, full art later.
+- **Dex entries (drafts, `TODO(design)`):** Eien Combusken (category Festival) dances in front of
+  the lantern floats, paper feathers glowing; Eien Ivysaur (Aurora Bud) turns its half-open bud
+  to the sky; Eien Frogadier (Snow Scout) walks the drifts in its straw cape and vanishes when
+  travelers look back. The text is in `src/data/pokemon/species_info/eien_families.h`.
+- `TODO(design)`: the finals' dex entries; final-form names if a design earns one; a signature move per
+  final stage (parked).
 
 ## Others
 
 | Pokémon | Eien type | Idea | Where first |
 | --- | --- | --- | --- |
 | Poochyena | Rock/Dark | A stone shrine guardian dog (komainu), touched by the fading. Beats the Ice gym. | Route 1 (common, ~20%) |
+| Hoothoot | Ghost/Flying | A half-faded owl of the night pass: its wings and tail fade into mist, only the face and glowing eyes are solid. Touched by the fading. Immune to Fighting moves; beats the Fighting gym. | Route 2's mountain pass, grass near the town end (about 10% by day, 30% at night) |
 
 - **Eien Poochyena:** 35 / 55 / 50 / 25 / 30 / 25 (35 / 55 / 35 / 30 / 30 / 35), 220.
   Abilities Intimidate / Sturdy / Stakeout (hidden). New early moves: Rock Throw (7), Rock
@@ -104,6 +152,25 @@ in the code).
   under the aurora ([side-quests.md](side-quests.md), Kaede step 2 and E3).
 
 `TODO(design)`: Eien Mightyena's dex entry (a draft is in the code).
+
+- **Eien Hoothoot** (designed, not built): 50 / 30 / 26 / 60 / 36 / 60 (60 / 30 / 30 / 36 / 56 /
+  50), 262: a fast special attacker. Abilities Insomnia / Frisk / Cursed Body (hidden). New
+  moves: Astonish (1), Gust (6, replacing Echoed Voice), Ominous Wind (15, replacing Defog);
+  otherwise vanilla (Confusion 9, Reflect 12, Air Slash 18).
+- **Evolves** into Eien Noctowl by leveling up to 20+ at night on its home pass (Route 2's
+  mountain pass): an evolution entry with both the time (`IF_TIME`) and map conditions. The
+  journal notes one that reaches Lv 20 without evolving, like Eien Poochyena's note (it needs
+  its own flag, and the research page may need to scroll). The roadside tablet on the pass
+  can hint at the rule (`TODO(design)`: its text).
+- **Eien Noctowl:** 90 / 50 / 46 / 110 / 76 / 80 (100 / 50 / 50 / 86 / 96 / 70), 452: the same
+  shift. Same abilities. Learns Hex on evolving. Look: shrouded, the faded wings stretched into
+  long trailing veils that drift behind it like a funeral shroud.
+- **Research:** seen / battled / caught, like Eien Poochyena's (side-quests E2).
+- **Shiny:** aurora mist, green-violet instead of grey, for both stages.
+- **Sprites:** AI drafts through `tools/eien_species/`, like Eien Poochyena's.
+  `TODO(design)`: both dex entries (drafted at build time).
+
+Decided in [brainstorm-eien-hoothoot.md](brainstorm-eien-hoothoot.md).
 
 ### Shrine areas
 

@@ -31,6 +31,16 @@ ICON_PICKS = {
     "bulbasaur": ("icon_gemini3pro_c.png", True),
     "froakie": ("icon_gemini3pro_a.png", False),
 }
+# species: (vanilla icon palette, {vanilla color index: target color}). These get the vanilla
+# icon recolored into the Eien icon palette: listed colors go to their target (taken from the
+# form's front), the rest keep their own color, each snapped to pal6. pal6 itself doesn't change,
+# so the starters' icons stay as they are.
+ICON_RECOLOR = {
+    "combusken": (0, {4: (160, 152, 128), 5: (200, 192, 184), 6: (136, 112, 248), 7: (136, 128, 192)}),
+    "ivysaur": (4, {4: (56, 120, 128), 5: (104, 184, 168), 6: (56, 120, 128), 7: (136, 112, 248),
+                    8: (136, 128, 192), 12: (104, 184, 168)}),
+    "frogadier": (0, {9: (72, 160, 192), 12: (160, 192, 240), 13: (104, 184, 168)}),
+}
 # species: (indexed icon in design/art/eien_<species>/icon_drafts/, vanilla icon palette)
 ICON_READY = {
     "poochyena": ("icon_gemini3pro_a.png", 5),
@@ -74,6 +84,20 @@ def main():
         if problems:
             raise SystemExit(f"{species}/icon.png: {', '.join(problems)}")
         print(f"{species}: {ICON_PICKS[species][0]} -> icon.png (icon palette {EIEN_ICON_PALETTE})")
+
+    for species, (vanilla_pal, targets) in ICON_RECOLOR.items():
+        src = Image.open(os.path.join(REPO, "graphics", "pokemon", species, "icon.png"))
+        old = sprite_prep.read_jasc(os.path.join(REPO, "graphics", "pokemon", "icon_palettes", f"pal{vanilla_pal}.pal"))
+        remap = [0] + [sprite_prep.nearest(targets.get(i, c), palette) for i, c in enumerate(old[1:], start=1)]
+        icon = Image.new("P", src.size)
+        icon.putpalette([c for rgb in palette for c in rgb] + [0] * (768 - 3 * len(palette)))
+        icon.putdata([remap[i] if i < len(remap) else 0 for i in src.getdata()])
+        path = os.path.join(REPO, "graphics", "pokemon", "eien", species, "icon.png")
+        icon.save(path)
+        problems = sprite_prep.check(path, (32, 64))
+        if problems:
+            raise SystemExit(f"{species}/icon.png: {', '.join(problems)}")
+        print(f"{species}: vanilla icon recolored -> icon.png (icon palette {EIEN_ICON_PALETTE})")
 
     for species, (draft, pal) in ICON_READY.items():
         icon = Image.open(os.path.join(REPO, "design", "art", f"eien_{species}", "icon_drafts", draft))

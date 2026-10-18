@@ -61,6 +61,19 @@ CONCEPTS = {
         # moonstone: pale white stone, indigo bib, violet cracks
         "moonstone": [((6, 9, 12), 220, 0.12, 0.18), ((2, 4), 230, 0.15, 0.05), ((3, 7, 10), 245, 0.55, 0.0)],
     },
+    # the middle stages carry their first stage's shiny up the line, plus one alternative each
+    "combusken": {
+        "night_lantern": [((5, 7, 11, 13, 14), 225, 0.18, -0.12), ((4, 6, 8, 9, 12), 285, 0.7, 0.0)],
+        "paper_lantern": [((5, 7, 11, 13, 14), 25, 0.45, 0.04), ((4, 6, 8, 9, 12), 355, 0.75, -0.05)],
+    },
+    "ivysaur": {
+        "twilight": [((2, 3, 6, 8, 11), 265, 0.35, 0.0), ((4, 5, 7, 9, 10, 12, 13), 70, 0.6, 0.0)],
+        "red_aurora": [((4, 5, 7, 9, 12, 13), 340, 0.65, 0.0)],
+    },
+    "frogadier": {
+        "midnight": [((3, 4, 5, 7, 10), 228, 0.55, -0.3)],
+        "golden_ice": [((3, 4, 5, 7, 10), 45, 0.55, 0.0)],
+    },
 }
 
 

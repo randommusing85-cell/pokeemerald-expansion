@@ -22,6 +22,9 @@ LOOKS = {
     "froakie": (-0.03, 0.45, 0.12),   # blue to a pale icy blue
     "poochyena": (0.08, 0.35, 0.02),  # grey-black to a warm stone grey
     "mightyena": (0.08, 0.35, 0.02),  # the same stone as Eien Poochyena
+    "combusken": (0.58, 0.55, 0.06),  # the middle stages take their first stage's look
+    "ivysaur": (0.12, 0.75, 0.05),
+    "frogadier": (-0.03, 0.45, 0.12),
 }
 
 

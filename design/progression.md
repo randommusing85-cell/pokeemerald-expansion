@@ -2,7 +2,8 @@
 
 ## Route order
 
-Our world (prologue) → Hamakaze → Route 1 → Shimotsuki (gym 1) → ... → gym 4 → tournament →
+Our world (prologue) → Hamakaze → Route 1 → Shimotsuki (gym 1) → the lake path → Route 2's
+mountain pass → the hot-spring town (gym 2) → ... → gym 4 → tournament →
 gyms 5-8 → Pokémon League (Minato's plan interrupts the Elite Four) → door mountain.
 
 ## Badges and gates
@@ -10,7 +11,8 @@ gyms 5-8 → Pokémon League (Minato's plan interrupts the Elite Four) → door 
 | Badge | Leader | Unlocks | Gate the player passes after |
 | --- | --- | --- | --- |
 | 1 | Fuyumi (Ice), Shimotsuki | Hoarfrost Badge; Fuyumi also gives TM07 Hail. `TODO(design)`: what it unlocks | `TODO(design)` |
-| 2-8 | `TODO(design)` | | |
+| 2 | Ibuki (Fighting), the hot-spring town | Misogi Badge; Ibuki also gives TM31 Brick Break. `TODO(design)`: what it unlocks | `TODO(design)` |
+| 3-8 | `TODO(design)` | | |
 
 Every gate is enforced by a flag or var; list it in the location doc that checks it.
 
@@ -20,8 +22,10 @@ Every gate is enforced by a flag or var; list it in the location doc that checks
 | --- | --- | --- | --- |
 | Route 1 | 2-5 | 5-8 | |
 | Gym 1 | | 9-11 | 13-14 (Bergmite) |
+| Route 2 (the pass) | 10-15 | 12-17 | |
+| Gym 2 | | 17-19 (Akira 17-18) | 21 (Medicham) |
 
-Route 1 and gym 1 levels are proposed defaults; adjust after playtesting.
+All levels are proposed defaults; adjust after playtesting.
 
 - **Starters' first evolution is about Lv 18** (not 16), so the first milestone only needs
   their first stage.

@@ -3,7 +3,9 @@
 The Eien regional forms (design/variants.md) are defined in:
 
 - `include/constants/species.h`: `SPECIES_TORCHIC_EIEN`, `SPECIES_BULBASAUR_EIEN`,
-  `SPECIES_FROAKIE_EIEN`, `SPECIES_POOCHYENA_EIEN`, in the custom range (append only).
+  `SPECIES_FROAKIE_EIEN`, `SPECIES_POOCHYENA_EIEN`, `SPECIES_MIGHTYENA_EIEN`, and the starters'
+  middle stages `SPECIES_COMBUSKEN_EIEN`, `SPECIES_IVYSAUR_EIEN`, `SPECIES_FROGADIER_EIEN`, in
+  the custom range (append only).
 - `src/data/pokemon/species_info/eien_families.h`: their species entries (stats, types,
   abilities, dex text, graphics).
 - `src/data/pokemon/species_info/eien_forms_data.h`: their level-up learnsets, palettes and
@@ -17,6 +19,8 @@ original sprites with placeholder palettes:
   tools/eien_species/shiny_drafts.py           # shiny recolor concepts and their contact sheet
   tools/eien_species/placeholder_palettes.py   # the rest: recolored original palettes
   tools/eien_species/make_icons.py             # icons, and the Eien icon palette (pal6.pal)
+  tools/eien_species/evolved_drafts.py         # AI front drafts for the evolved starters
+                                               # -> design/art/eien_<species>/drafts/, contact sheet
 
 The Eien icon palette is a seventh icon palette: `graphics/pokemon/icon_palettes/pal6.pal`,
 registered in `src/graphics.c` (`gMonIconPalettes`) and `src/pokemon_icon.c`
@@ -28,4 +32,5 @@ that needs one more palette will have to load icon palettes on demand instead.
 AI draft front sprites for review are in `design/art/eien_<species>/`
 (`design/art/eien_starters_drafts.md`, `eien_starters_contact_sheet.png`).
 
-To give one in game for a check: debug menu, Give X, Pokémon (Basic), species 1573-1576.
+To give one in game for a check: debug menu, Give X, Pokémon (Basic), species 1573-1580
+(1578-1580 are the middle stages).

@@ -461,6 +461,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sCombuskenLevelUpLearnset,
         .teachableLearnset = sCombuskenTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_BLAZIKEN}),
+        .formSpeciesIdTable = sCombuskenFormSpeciesIdTable, // Eien: eien_forms_data.h
     },
 
     [SPECIES_BLAZIKEN] =

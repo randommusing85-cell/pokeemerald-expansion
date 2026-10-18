@@ -17,6 +17,9 @@ milestone (prologue through gym 1):
 | Route 1 + its shrine | [route-1.md](locations/route-1.md) | **Built** on placeholder layouts: trainers, day/night wild tables, items, Haru's notes, the tablet, the warp north to Shimotsuki. Still to do: real music |
 | Shimotsuki (+ gym, Pokémon Center, Mart), Kaede's shrine, the lake path | [shimotsuki.md](locations/shimotsuki.md) | **Built** on placeholder layouts: Akira shows the gym, gym 1 with badge and TM07, Akira's practice (`QUEST_AKIRA_PRACTICE`), Kaede's cameo and her grandmother, Nami's meeting and the end-of-milestone message. Since then: the Hoarfrost Badge, Kaede's shrine wild table (Eien Poochyena, Duskull), the ICE FISHER and SHOVELER classes. Still to do: the tablet text, the gym trainers' names, real music, an ice-rim tile for the lake |
 
+| Route 2's mountain pass + roadside shrine | [route-2.md](locations/route-2.md) | Designed (brainstorm-route-2.md); needs maps, Eien Hoothoot, trainers |
+| The hot-spring town (+ gym 2, Pokémon Center, Mart, inn) | [onsen-town.md](locations/onsen-town.md) | Designed in outline; needs maps, the gym 2 leader's name and team |
+
 Open gaps found while building Shimotsuki:
 
 - **White-out before the first Pokémon Center:** fixed; he wakes at the Kashiwagi house and her
@@ -40,7 +43,7 @@ Open gaps found while building Shimotsuki:
   name and look; Tetsu's and Ren's placement.
 - **Progression:** gym leaders 2-8, the level curve past gym 1, badge gates, field moves
   without HMs (`progression.md`).
-- **Species:** evolved forms of the three starters; more Eien variants (5-10 total planned);
+- **Species:** the evolved starters and Eien Hoothoot are designed (`variants.md`), not built; more Eien variants (5-10 total planned);
   Eien Mightyena's dex entry.
 - **Quests:** point thresholds, the letter trigger rule, remaining chains' details
   (`side-quests.md`).

@@ -39,6 +39,10 @@ PICKS = {
     "froakie": ("front_gemini3pro_r2_b.png", "front_gemini3pro_r2_b.pal"),
     "poochyena": ("anim_front.png", "normal.pal"),  # the sprite test's front
     "mightyena": ("front_gemini3pro_c.png", "front_gemini3pro_c.pal"),  # design/art/eien_mightyena/
+    # the middle stages (design/art/eien_evolved_drafts.md)
+    "combusken": ("front_gemini3pro_a.png", "front_gemini3pro_a.pal"),
+    "ivysaur": ("front_gemini3pro_b.png", "front_gemini3pro_b.pal"),
+    "frogadier": ("front_gemini3pro_a.png", "front_gemini3pro_a.pal"),
 }
 # species: chosen back draft in design/art/eien_<species>/back_drafts/, already indexed with
 # the form's palette (design/art/eien_starters_drafts.md, "Back sprites"). Species without one
@@ -49,6 +53,9 @@ BACK_PICKS = {
     "froakie": "back_gemini31flash_b.png",
     "poochyena": "back_gemini31flash_b.png",
     "mightyena": "back_gemini31flash_b.png",
+    "combusken": "back_gemini31flash_b.png",
+    "ivysaur": "back_gemini31flash_a.png",
+    "frogadier": "back_gemini3pro_a.png",
 }
 # species: chosen shiny palette in design/art/eien_<species>/shiny_drafts/ (shiny_drafts.py).
 # Species without one get an automatic hue shift.
@@ -58,6 +65,9 @@ SHINY_PICKS = {
     "froakie": "midnight.pal",
     "poochyena": "obsidian.pal",
     "mightyena": "obsidian.pal",
+    "combusken": "night_lantern.pal",
+    "ivysaur": "twilight.pal",
+    "frogadier": "midnight.pal",
 }
 # species: chosen front frame 2 (idle) in design/art/eien_<species>/frame2_drafts/, indexed with
 # the form's palette (design/art/eien_starters_drafts.md, "Frame 2 (idle)"). Species without
@@ -68,6 +78,9 @@ FRAME2_PICKS = {
     "froakie": "frame2_gemini3pro_c.png",
     "poochyena": "frame2_gemini3pro_c.png",
     "mightyena": "frame2_gemini31flash_a.png",
+    "combusken": "frame2_gemini3pro_a.png",
+    "ivysaur": "frame2_gemini31flash_a.png",
+    "frogadier": "frame2_gemini3pro_a.png",
 }
 SHINY_HUE = 0.5
 
