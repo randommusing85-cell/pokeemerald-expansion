@@ -71,6 +71,7 @@ in the code).
 | Pokémon | Eien type | Idea | Where first |
 | --- | --- | --- | --- |
 | Poochyena | Rock/Dark | A stone shrine guardian dog (komainu), touched by the fading. Beats the Ice gym. | Route 1 (common, ~20%) |
+| Hoothoot | Ghost/Flying | A lantern owl of the night pass, touched by the fading. Immune to Fighting moves; beats the Fighting gym. Planned, not built: stats, look, abilities, evolution method and research steps are `TODO(design)` ([brainstorm-route-2.md](brainstorm-route-2.md)) | Route 2's mountain pass, grass near the town end, more common at night |
 
 - **Eien Poochyena:** 35 / 55 / 50 / 25 / 30 / 25 (35 / 55 / 35 / 30 / 30 / 35), 220.
   Abilities Intimidate / Sturdy / Stakeout (hidden). New early moves: Rock Throw (7), Rock

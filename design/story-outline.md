@@ -21,8 +21,8 @@ journal writes an entry for each beat reached (`src/data/eien_journal.h`).
 | 4 | Route 1 | Coast, snowy fields, a small shrine. Eien Poochyena, which helps against the Ice gym. | `STORY_ROUTE_1` |
 | 5 | Shimotsuki | Akira shows him his mother's gym. Gym 1: Fuyumi (Ice). | `STORY_SHIMOTSUKI`, then `STORY_BADGE_1` |
 | 6 | The lake path north of Shimotsuki (`MAP_EIEN_ROUTE2`, placeholder name) | Celebi flickers and drops at a frozen lake; Nami's Lapras carries them across to a shelter, where Celebi recovers. End of the first milestone. | `STORY_MET_NAMI` |
-| 7 | `TODO(design)` | The villains appear: principled, gracious when beaten. Signs of the fading: small disasters, off-screen losses. | `TODO` |
-| 8 | `TODO(design)` | He battles Nami. Gyms 2-4. | `TODO` |
+| 7 | Route 2's mountain pass ([route-2.md](locations/route-2.md)) | Haru gives him the Town Map. Midway, a patch where the world thins (the snow stops, colours drain, Celebi reacts, Pokémon flee). People in field gear rope it off as if they've seen it before; a young researcher among them chats with him about Celebi. He only learns later they were the villains. | `TODO` |
+| 8 | The hot-spring town ([onsen-town.md](locations/onsen-town.md)), then `TODO(design)` | Gym 2 (Fighting). Gyms 3-4. He battles Nami between gyms 3 and 4. | `TODO` |
 
 ## Act 2: The tournament (midpoint)
 

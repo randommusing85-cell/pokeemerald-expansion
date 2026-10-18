@@ -71,7 +71,7 @@ still open are `TODO(design)`.
 
 | # | When / where | What happens | Points from | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
-| 1 (M1) | Act 1, Hamakaze (he stops him at the north exit, after the starters) | Haru is drawing a map of Eien for the newcomer and asks him to note three places on Route 1 (the coast, the snowy fields, the shrine). The coast and fields are noted on walking in; the shrine by examining the torii. Teaches the missions tab. | Finishing it; an answer about where he's "really" from | Town Map | No |
+| 1 (M1) | Act 1, Hamakaze (he stops him at the north exit, after the starters) | Haru is drawing a map of Eien for the newcomer and asks him to note three places on Route 1 (the coast, the snowy fields, the shrine). The coast and fields are noted on walking in; the shrine by examining the torii. Teaches the missions tab. | Finishing it; an answer about where he's "really" from | Town Map, which Haru brings him on Route 2's mountain pass ([route-2.md](locations/route-2.md)) | No |
 | 2 | Act 1, before the tournament | Haru feels behind his friends. A training battle, then a tag battle together against two trainers who've been bothering him. | The answer after the loss or win | Battle item | No |
 | 3 | Act 3, Kashiwagi's lab, after the professor dies | Haru is sorting his mother's notes. Help him find her last field notes; they finish a research entry she started. | Staying to help; the answer about grief | **Keepsake:** Haru's map from step 1, finished | No |
 

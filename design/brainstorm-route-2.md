@@ -72,7 +72,9 @@ name). Decisions move into a location doc when settled; this file stays as the r
 
 ## Open questions
 
-Still open after round 4: the names (route, town, gym 2 leader, the friendly member, the
+Promoted into `locations/route-2.md`, `locations/onsen-town.md`, `story-outline.md`,
+`progression.md`, `characters.md`, `variants.md`, `side-quests.md`, `locations/shimotsuki.md`,
+`locations/route-1.md` and `whats-left.md`. Still open after round 4: the names (route, town, gym 2 leader, the friendly member, the
 faction); the tablet's text; Eien Hoothoot's design (stats, look, research steps); the gym 2
 leader's team; the faction's real look; music.
 

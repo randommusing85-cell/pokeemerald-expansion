@@ -91,8 +91,9 @@ blocks in `src/data/trainers.party` are replaced. Further trainers will need the
 
 ## The lake path (`MAP_EIEN_ROUTE2`, placeholder name)
 
-A small map just north of Shimotsuki: a snowy path ending at a frozen lake. It becomes the
-start of the next route later (`TODO(design)`: its name and the rest of the route).
+A small map just north of Shimotsuki: a snowy path ending at a frozen lake. Route 2's mountain
+pass joins it at the north-east, by the path round the lake's east side
+([route-2.md](route-2.md)). `TODO(design)`: its name.
 
 - **Nami's meeting:** Celebi flickers and drops at the lake's edge. Nami arrives on Lapras: "It's
   cold. Get on." A fade, then the far shore at a small shelter, where Celebi recovers. She says

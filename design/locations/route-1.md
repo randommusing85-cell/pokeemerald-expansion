@@ -92,7 +92,7 @@ tablets read before then already count. The journal's lore page is keyed to the 
 | --- | --- | --- |
 | `VAR_EIEN_STORY` = `STORY_ROUTE_1` | He first steps onto Route 1 | The journal |
 | `QUEST_RESEARCH_POOCHYENA` (quest table; step bits: seen, battled, caught) | Opened by the professor in her lab after Akira's battle (she gives Poké Balls). Bits: **seen** when one appears in a battle, **battled** when one faints or is caught, **caught** when he catches one. These definitions are defaults; change them if wanted | The journal's Research and Missions tabs |
-| `QUEST_HARU_MAP` step bits (`HARU_MAP_COAST` / `_FIELDS` / `_SHRINE`) | Opened by Haru at Hamakaze's north exit. The coast and the fields are noted when he walks into them, the shrine when he examines the torii. `TODO(design)`: handing the map back to Haru (the Town Map reward) | The journal's Missions tab |
+| `QUEST_HARU_MAP` step bits (`HARU_MAP_COAST` / `_FIELDS` / `_SHRINE`) | Opened by Haru at Hamakaze's north exit. The coast and the fields are noted when he walks into them, the shrine when he examines the torii. Haru takes the notes back and gives the Town Map on Route 2's mountain pass ([route-2.md](route-2.md)) | The journal's Missions tab |
 | `QUEST_KAEDE_TABLETS` bit `TABLET_ROUTE1_SHRINE` | He reads the Route 1 shrine's tablet | The journal's lore page; Kaede's step 1 |
 | `FLAG_ITEM_EIEN_ROUTE1_POTION` / `_POKE_BALL` / `_ICE_HEAL`, `FLAG_HIDDEN_ITEM_EIEN_ROUTE1_X_DEFENSE` | Items picked up | The item balls / hidden item |
 

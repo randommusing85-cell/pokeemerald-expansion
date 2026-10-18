@@ -112,7 +112,8 @@ points, Tetsu and Ren come too.
 | # | Town | Leader | Type | Personality | Ace | Level |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Shimotsuki | Fuyumi | Ice | Stern veteran in the gym, softer at home with Akira. Akira's mother; dies at the tournament. | Bergmite (with Spheal) | 13-14 |
-| 2-8 | | `TODO(design)` | | | | |
+| 2 | The hot-spring town | `TODO(design)` | Fighting | A former League fighter who left the League and trains under the falls, like Tohoku's mountain ascetics. Quietly sceptical of the League (a seed for the cover-up, not spelled out). | `TODO(design)` | about 21 |
+| 3-8 | | `TODO(design)` | | | | |
 
 ## Champion
 
@@ -125,13 +126,18 @@ points, Tetsu and Ren come too.
 
 - **Goal:** stop Arceus's cycle by drawing energy from other worlds (the hero's included)
   through Palkia's door, to sustain Arceus.
-- **Look:** `TODO(design)`.
+- **Look:** `TODO(design)`. Placeholder: field gear (headlamps, measuring poles, notebooks); they
+  look like researchers, which is why nobody finds them suspicious.
 - **Leader:** **Minato** (man). Believes he can stop the cycle. Lives; the final villain.
 - **Lieutenant:** **Hashimoto** (older man), Nami's mentor. Dies in the tournament disaster.
   `TODO(design)`: his relationship to Nami beyond mentor.
 - **Members:** principled; don't see themselves as evil; never change their minds; lose
   gracefully.
-- **Where they appear:** from Act 1; the tournament; the door mountain at the end.
+- **Where they appear:** from Act 1 (first on Route 2's mountain pass, helping at a thinning
+  patch); the tournament; the door mountain at the end.
+- **The young researcher** (placeholder name): the first member he meets, on the pass. Loves
+  Pokémon, fascinated by Celebi, warm and open. Returns at the tournament, clearly on the
+  other side.
 
 ## Pokémon characters
 
