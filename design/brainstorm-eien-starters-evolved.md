@@ -54,7 +54,7 @@ Working notes for the starters' second and third stages (`variants.md`). Decisio
 
 ## Open questions
 
-Still open: dex entries (drafted at build time); the finals' full art; final-form names if a
+Promoted into `variants.md`. Still open: dex entries (drafted at build time); the finals' full art; final-form names if a
 design earns one; the parked signature moves.
 
 ## Gaps and tensions

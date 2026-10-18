@@ -63,8 +63,37 @@ lantern" (slate body, violet flame), Bulbasaur "twilight" (purple body, gold bul
 too; its motion is smaller than the original species' (a lean, a crouch, a mouth opening), so
 hand animation can improve it later.
 
-`TODO(design)`: evolved forms (they don't evolve until those exist), dex entries (drafts are
-in the code).
+`TODO(design)`: dex entries (drafts are in the code).
+
+### Evolved stages (designed, not built)
+
+Decided in [brainstorm-eien-starters-evolved.md](brainstorm-eien-starters-evolved.md). The
+three lines diverge: Torchic's goes toward the dead and ritual (Ghost), Bulbasaur's toward the
+sky and the aurora (Psychic), Froakie's deeper into the cold, with a touch of Tohoku festival
+and folklore. All evolve at **Lv 18 and Lv 36** and keep their Eien typing. Names are "Eien"
+plus the vanilla name for now. Until these are built, the starters don't evolve.
+
+| Form | Look | Stats (total) | Evolution move |
+| --- | --- | --- | --- |
+| Eien Combusken | A leaping Nebuta festival dancer with lantern-paper feathers | 60 / 70 / 60 / 95 / 60 / 60 (405) | Fiery Dance |
+| Eien Blaziken | The Nebuta warrior float itself: glowing from inside, painted face, a towering fighter | 80 / 105 / 70 / 120 / 70 / 85 (530) | Shadow Ball |
+| Eien Ivysaur | The bud half-opens; a small aurora swirls inside its translucent petals | 60 / 53 / 63 / 90 / 85 / 54 (405) | Psybeam |
+| Eien Venusaur | The flower fully open, the aurora streaming up from it into the sky | 80 / 73 / 83 / 110 / 105 / 74 (525) | Psychic |
+| Eien Frogadier | A snow scout in a straw snow cape and snowshoes, scouting the drifts | 54 / 63 / 52 / 83 / 66 / 87 (405) | Icy Wind |
+| Eien Greninja | A lone mountain guardian of the snow passes | 72 / 95 / 67 / 103 / 81 / 112 (530) | Freeze-Dry |
+
+- **Stats:** each first stage's shift carried up its line (vanilla Combusken 60 / 85 / 60 / 85
+  / 60 / 55, Blaziken 80 / 120 / 70 / 110 / 70 / 80, Ivysaur 60 / 62 / 63 / 80 / 80 / 60,
+  Venusaur 80 / 82 / 83 / 100 / 100 / 80, Frogadier 54 / 63 / 52 / 83 / 56 / 97, Greninja 72 /
+  95 / 67 / 103 / 71 / 122).
+- **Abilities:** the pinch ability plus the first stage's hidden one (Blaze / Cursed Body,
+  Overgrow / Forewarn, Torrent / Snow Cloak).
+- **Learnsets:** the first stages' new moves carry on; otherwise vanilla.
+- **Shinies:** the first stages' themes carried up (night lantern, twilight, midnight).
+- **Art:** the middle stages in full first (gym 3 needs them: Akira's evolved starter); the
+  finals as front-only drafts to check the concepts, full art later.
+- `TODO(design)`: dex entries; final-form names if a design earns one; a signature move per
+  final stage (parked).
 
 ## Others
 
