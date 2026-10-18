@@ -6,6 +6,7 @@ Shimotsuki_Gym_MapScripts::
 
 Shimotsuki_Gym_EventScript_Fuyumi::
 	trainerbattle_single TRAINER_EIEN_FUYUMI, Shimotsuki_Gym_Text_FuyumiIntro, Shimotsuki_Gym_Text_FuyumiDefeat, Shimotsuki_Gym_EventScript_FuyumiDefeated, NO_MUSIC
+	goto_if_unset FLAG_RECEIVED_TM_HAIL_EIEN, Shimotsuki_Gym_EventScript_GiveHail
 	msgbox Shimotsuki_Gym_Text_FuyumiPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -17,7 +18,14 @@ Shimotsuki_Gym_EventScript_FuyumiDefeated::
 	setflag FLAG_BADGE01_GET
 	setvar VAR_EIEN_STORY, STORY_BADGE_1
 	msgbox Shimotsuki_Gym_Text_TakeThis, MSGBOX_DEFAULT
+	goto Shimotsuki_Gym_EventScript_GiveHail
+	end
+
+@ If the bag is full, talking to her again retries the TM.
+Shimotsuki_Gym_EventScript_GiveHail::
 	giveitem ITEM_TM07
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_RECEIVED_TM_HAIL_EIEN
 	msgbox Shimotsuki_Gym_Text_ExplainHail, MSGBOX_DEFAULT
 	release
 	end

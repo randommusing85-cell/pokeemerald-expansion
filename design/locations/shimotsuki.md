@@ -77,6 +77,7 @@ blocks in `src/data/trainers.party` are replaced. Further trainers will need the
 | `VAR_EIEN_STORY` = `STORY_SHIMOTSUKI` | Akira shows him the gym | The journal |
 | `VAR_EIEN_STORY` = `STORY_BADGE_1` | He beats Fuyumi | The journal |
 | `FLAG_BADGE01_GET` | He beats Fuyumi | The badge (vanilla's first-badge flag, same meaning) |
+| `FLAG_RECEIVED_TM_HAIL_EIEN` | Fuyumi gives TM07 | Her script (a full bag retries the TM when he talks to her again) |
 | `QUEST_AKIRA_PRACTICE` (quest table) | Opened when he talks to Akira after gym 1, done when he wins | The journal; Akira's object (hidden once done); closes at the tournament |
 | `VAR_EIEN_AKIRA_STARTER` | The lab: the species of the starter Akira took | Which practice-battle entry he uses (and his later battles) |
 | `VAR_EIEN_SCENE` = 1 | Nami's scene, across the warp to the far shore; back to 0 at its end | The lake path's frame script (a scene that crosses a warp) |
