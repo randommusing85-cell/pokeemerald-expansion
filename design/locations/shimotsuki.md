@@ -1,10 +1,10 @@
 # Shimotsuki
 
 - **Map(s):** `MAP_SHIMOTSUKI` (town), `MAP_SHIMOTSUKI_GYM`, `MAP_SHIMOTSUKI_POKEMON_CENTER_1F`,
-  `MAP_SHIMOTSUKI_MART`, `MAP_SHIMOTSUKI_KAEDE_SHRINE` (its own small map), and the lake path
-  `MAP_EIEN_ROUTE2`. Placeholder layouts; see **Maps** below.
+  `MAP_SHIMOTSUKI_MART`, `MAP_SHIMOTSUKI_KAEDE_SHRINE` (its own small map), and Lake Usurai
+  `MAP_EIEN_ROUTE2` (the lake path). Placeholder layouts; see **Maps** below.
 - **Type:** town
-- **Connects to:** Route 1 to the south; the lake path (`MAP_EIEN_ROUTE2`, a placeholder name)
+- **Connects to:** Route 1 to the south; Lake Usurai (`MAP_EIEN_ROUTE2`, the lake path)
   to the north, where Nami is met.
 
 Decided in [brainstorm-shimotsuki.md](../brainstorm-shimotsuki.md).
@@ -47,7 +47,7 @@ Act 1 beats 5-6 in [story-outline.md](../story-outline.md).
 | Gym guide | inside the gym door | always | Explains Ice; points at Route 1's Eien Poochyena |
 | Locals | around town | always | A snow shoveller, a kid by the gym, an older person by the Pokémon Center. Plain lines; the kid sets up Fuyumi's softer side ("She makes the best stew in town"), the older person points east to the shrine |
 | Kaede (cameo) | her shrine | first milestone | Sweeping. "If you're here to pray, the box is on the left. If not, you're in the way." |
-| Kaede's grandmother | her shrine | always | Small talk about the old days. `TODO(design)`: repeating the evolution rule waits for milestone 2 |
+| Chiyo, Kaede's grandmother | her shrine | always | Small talk about the old days. `TODO(design)`: repeating the evolution rule waits for milestone 2 |
 | Kaede | her shrine | after gym 1, second milestone | First meeting: reading the shrine's tablet; asks about the Route 1 tablet; explains the stone dogs grow at their post. Starts her tablet quest ([side-quests.md](../side-quests.md)) |
 | Kaede, aurora night | her shrine | Act 3, her quest step 2 | The stone dogs wake under the aurora; a wild double battle beside her; Froslass joins her ([side-quests.md](../side-quests.md)) |
 | Closed gym | the gym door | Act 3, after Fuyumi's death | A sign on the closed gym; Kaede says one plain line about the gym being dark now; a townsperson line or two |
@@ -56,8 +56,8 @@ Act 1 beats 5-6 in [story-outline.md](../story-outline.md).
 
 The gym trainers are locals at their jobs, like Route 1's: two new trainer classes, ICE FISHER
 and SHOVELER (`TRAINER_CLASS_ICE_FISHER` / `_SHOVELER` in `include/constants/trainers.h`;
-"SNOW SHOVELER" didn't fit the 12-letter class name). Their names are placeholders
-(`TODO(design)`). Both use the snow trainer overworld sprite (`OBJ_EVENT_GFX_EIEN_SNOW_TRAINER`);
+"SNOW SHOVELER" didn't fit the 12-letter class name). Their names, Tomo and Saya,
+are final ([brainstorm-names.md](../brainstorm-names.md)). Both use the snow trainer overworld sprite (`OBJ_EVENT_GFX_EIEN_SNOW_TRAINER`);
 their battle pics reuse the Fisherman and Picnicker for now.
 
 | Trainer | Class | Team (levels) | Notes |
@@ -89,11 +89,14 @@ blocks in `src/data/trainers.party` are replaced. Further trainers will need the
 | `FLAG_AURORA_TONIGHT` | Kaede says come back tonight (Act 3, her step 2); cleared after the aurora-night battle | `IsAuroraNight` (`src/eien_aurora.c`): the aurora weather and its battle effect |
 | `FLAG_AURORA_NIGHTS` | The end of Kaede's step 2 | `IsAuroraNight`: aurora nights come back at random from then on |
 
-## The lake path (`MAP_EIEN_ROUTE2`, placeholder name)
+## Lake Usurai (`MAP_EIEN_ROUTE2`), the lake path
 
 A small map just north of Shimotsuki: a snowy path ending at a frozen lake. Route 2's mountain
 pass joins it at the north-east, by the path round the lake's east side
-([route-2.md](route-2.md)). `TODO(design)`: its name.
+([route-2.md](route-2.md)). Named in [brainstorm-names.md](../brainstorm-names.md): Lake Usurai
+(薄氷, "thin ice"), frozen at the edges, open in the middle. The map keeps the constant
+`MAP_EIEN_ROUTE2`; its region-map section (`MAPSEC_EIEN_ROUTE2`) and pop-up read
+"LAKE USURAI".
 
 - **Nami's meeting:** Celebi flickers and drops at the lake's edge. Nami arrives on Lapras: "It's
   cold. Get on." A fade, then the far shore at a small shelter, where Celebi recovers. She says

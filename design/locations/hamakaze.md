@@ -28,7 +28,7 @@ Act 1 beats 1-3 in [story-outline.md](../story-outline.md).
 | Fisherman | beach (4,15) | always | Flavor line |
 | Villager | town (9,11), wanders | always | Points to the Kashiwagi house, later the lab |
 | Professor Kashiwagi | lab | | Offers the three starters |
-| Kashiwagi's husband | house | | Runs the household that takes him in. Heals the team after a white-out: "Back again? Sit. I'll see to them." `TODO(design)`: name |
+| Makoto, Kashiwagi's husband | house | | Runs the household that takes him in. Heals the team after a white-out: "Back again? Sit. I'll see to them." |
 | Haru Kashiwagi | house / lab | | First friend; takes the third starter |
 | Akira | lab | | Takes the starter strong against the player's; battles right after |
 | Journal | - | taken in | Opens from the start menu (in place of the PokéNav). First page: "My name is (player). I'm from another world. If I start forgetting, read this." |

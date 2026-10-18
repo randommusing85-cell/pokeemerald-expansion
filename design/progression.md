@@ -2,8 +2,8 @@
 
 ## Route order
 
-Our world (prologue) → Hamakaze → Route 1 → Shimotsuki (gym 1) → the lake path → Route 2's
-mountain pass → the hot-spring town (gym 2) → ... → gym 4 → tournament →
+Our world (prologue) → Hamakaze → Route 1 → Shimotsuki (gym 1) → Lake Usurai → Route 2 (the
+mountain pass) → Yunotaki (gym 2) → ... → gym 4 → tournament →
 gyms 5-8 → Pokémon League (Minato's plan interrupts the Elite Four) → door mountain.
 
 ## Badges and gates
@@ -11,7 +11,7 @@ gyms 5-8 → Pokémon League (Minato's plan interrupts the Elite Four) → door 
 | Badge | Leader | Unlocks | Gate the player passes after |
 | --- | --- | --- | --- |
 | 1 | Fuyumi (Ice), Shimotsuki | Hoarfrost Badge; Fuyumi also gives TM07 Hail. `TODO(design)`: what it unlocks | `TODO(design)` |
-| 2 | Ibuki (Fighting), the hot-spring town | Misogi Badge; Ibuki also gives TM31 Brick Break. `TODO(design)`: what it unlocks | `TODO(design)` |
+| 2 | Ibuki (Fighting), Yunotaki | Misogi Badge; Ibuki also gives TM31 Brick Break. `TODO(design)`: what it unlocks | `TODO(design)` |
 | 3-8 | `TODO(design)` | | |
 
 Every gate is enforced by a flag or var; list it in the location doc that checks it.

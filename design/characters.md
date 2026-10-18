@@ -37,7 +37,7 @@ Claude at the user's request; change freely.
 
 - **Professor Kashiwagi** (woman). Researches the cycle. Her family takes the hero in.
 - Dies in Act 3 in a lab disaster, leaving the research that explains the cycle.
-- Her husband runs the household. `TODO(design)`: his name.
+- Her husband, **Makoto** (誠, "sincerity"), runs the household.
 
 ## Love interest
 
@@ -81,7 +81,7 @@ points, Tetsu and Ren come too.
   once, and doesn't pry.
 - **Her shrine** is in Shimotsuki. Her elderly grandmother still lives there but can't do the
   work: small talk about the old days, repeats the evolution rule, gives the charm item at the
-  end of her quest chain. `TODO(design)`: the grandmother's name.
+  end of her quest chain. Her name is **Chiyo** (千代, "a thousand generations").
 - **Ties:** none close to Fuyumi or Akira; they're neighbors.
 - **Team:** Eien Mightyena (the shrine's guardian, the player's first look at what Eien
   Poochyena becomes), Froslass (a snow spirit) and Mismagius (both of its move types get the
@@ -112,7 +112,7 @@ points, Tetsu and Ren come too.
 | # | Town | Leader | Type | Personality | Ace | Level |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Shimotsuki | Fuyumi | Ice | Stern veteran in the gym, softer at home with Akira. Akira's mother; dies at the tournament. | Bergmite (with Spheal) | 13-14 |
-| 2 | The hot-spring town | Ibuki (man, 40s) | Fighting | A former League fighter who walked away after a season that ended badly and won't say why. Trains under the hot waterfalls, like Tohoku's mountain ascetics. Quietly sceptical of the League (a seed for the cover-up, not spelled out). | Medicham (with Throh, Sawk) | 19-21 |
+| 2 | Yunotaki | Ibuki (man, 40s) | Fighting | A former League fighter who walked away after a season that ended badly and won't say why. Trains under the hot waterfalls, like Tohoku's mountain ascetics. Quietly sceptical of the League (a seed for the cover-up, not spelled out). | Medicham (with Throh, Sawk) | 19-21 |
 | 3-8 | | `TODO(design)` | | | | |
 
 ## Champion
@@ -122,7 +122,11 @@ points, Tetsu and Ren come too.
 
 ## Factions / villains
 
-### `TODO(design)`: faction name
+### The Eien Survey (true name: Tokoyo)
+
+- **Name:** in Act 1 they go by **the Eien Survey**, a public name that fits the field
+  researchers they look like. Their true name, **Tokoyo** (常世, the eternal land of Japanese
+  myth), comes out at the tournament.
 
 - **Goal:** stop Arceus's cycle by drawing energy from other worlds (the hero's included)
   through Palkia's door, to sustain Arceus.
@@ -135,7 +139,7 @@ points, Tetsu and Ren come too.
   gracefully.
 - **Where they appear:** from Act 1 (first on Route 2's mountain pass, helping at a thinning
   patch); the tournament; the door mountain at the end.
-- **The young researcher** (placeholder name): the first member he meets, on the pass. Loves
+- **Hinata** (陽向, "sunny place"), a young woman: the first member he meets, on the pass. Loves
   Pokémon, fascinated by Celebi, warm and open. Returns at the tournament, clearly on the
   other side.
 
@@ -160,13 +164,13 @@ Gen 3 style, from the FRLG-style NPC megapack, converted by `tools/eien_npcs/` (
 | Akira (battle) | `TRAINER_PIC_EIEN_AKIRA`: an AI draft, pointing with a grin (`design/art/eien_akira/`) |
 | Nami | `OBJ_EVENT_GFX_EIEN_NAMI` |
 | Professor Kashiwagi | `OBJ_EVENT_GFX_EIEN_KASHIWAGI` |
-| Her husband | `OBJ_EVENT_GFX_EIEN_KASHIWAGI_HUSBAND` |
+| Her husband, Makoto | `OBJ_EVENT_GFX_EIEN_KASHIWAGI_HUSBAND` |
 | Fuyumi | `OBJ_EVENT_GFX_EIEN_FUYUMI` |
 | Fuyumi (battle) | `TRAINER_PIC_EIEN_FUYUMI`: an AI draft, a Poké Ball held out, red winter coat (`design/art/eien_fuyumi/`) |
 | Kaede | `OBJ_EVENT_GFX_EIEN_KAEDE`: a recolor (dark hair, white ribbon, navy winter coat, red hakama, brown boots) |
 | Kaede (battle) | `TRAINER_PIC_EIEN_KAEDE`: AI drafts, arms crossed (front) and a 4-frame throw from behind (back, for tag battles) (`design/art/eien_kaede/`) |
-| Kaede's grandmother (battle) | `TRAINER_PIC_EIEN_KAEDE_GRANDMOTHER`: an AI draft with a walking stick; ready if she ever battles (the design doesn't give her a battle yet) |
-| Kaede's grandmother | `OBJ_EVENT_GFX_EIEN_KAEDE_GRANDMOTHER`: the HGSS Medium in shrine colors (white robe, purple hakama) |
+| Chiyo, Kaede's grandmother (battle) | `TRAINER_PIC_EIEN_KAEDE_GRANDMOTHER`: an AI draft with a walking stick; ready if she ever battles (the design doesn't give her a battle yet) |
+| Chiyo, Kaede's grandmother | `OBJ_EVENT_GFX_EIEN_KAEDE_GRANDMOTHER`: the HGSS Medium in shrine colors (white robe, purple hakama) |
 | Celebi | `OBJ_EVENT_GFX_SPECIES(CELEBI)` (engine) |
 | Hamakaze townsfolk | `OBJ_EVENT_GFX_EIEN_FISHERMAN`, `_SAILOR`, `_VILLAGE_WOMAN`, `_SCHOOLBOY` |
 | Shimotsuki townsfolk | `OBJ_EVENT_GFX_EIEN_SNOW_TRAINER`, `_WORKER`, `_POKEFAN_M`, `_SOCIALITE` |

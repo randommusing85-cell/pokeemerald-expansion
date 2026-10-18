@@ -1,4 +1,4 @@
-# The hot-spring town (placeholder name)
+# Yunotaki
 
 - **Map(s):** made in Porymap (placeholder constants): the town, its gym, Pokémon Center,
   Mart and inn.
@@ -6,7 +6,9 @@
 - **Connects to:** south: Route 2's mountain pass ([route-2.md](route-2.md)). `TODO(design)`:
   north/onward.
 
-Decided in [brainstorm-route-2.md](../brainstorm-route-2.md). `TODO(design)`: the town's name.
+Decided in [brainstorm-route-2.md](../brainstorm-route-2.md). Named in
+[brainstorm-names.md](../brainstorm-names.md): Yunotaki (湯の滝, "hot-water falls"), after the falls
+where Ibuki trains.
 
 ## Purpose
 
@@ -25,8 +27,8 @@ Act 1 beat 8 in [story-outline.md](../story-outline.md) (gyms 2-4).
 - **Akira** battles him at the town entrance before the gym. He's just lost to Ibuki and wants
   a warm-up (his team below).
 - **Gym 2: Ibuki.** A man in his 40s, a former League fighter who walked away after a season
-  that ended badly and won't say why. He trains under the hot waterfalls. Two pilgrims, then
-  Ibuki. Winning gives the Misogi Badge (named for the waterfall purification rite) and TM31
+  that ended badly and won't say why. He trains under the hot waterfalls. Two pilgrims (Daichi
+  and Shizuka), then Ibuki. Winning gives the Misogi Badge (named for the waterfall purification rite) and TM31
   Brick Break. When he loses he says one quiet line about the League (draft: "The League
   likes its stories tidy."); townsfolk gossip about why he quit. That's the whole seed for the
   cover-up here.
@@ -54,8 +56,8 @@ Pokémon shuts down every answer.
 | Trainer | Class | Team (levels) | Notes |
 | --- | --- | --- | --- |
 | Akira | Rival | His starter Lv 17 (unevolved; the evolved Eien starters aren't designed yet), Staravia Lv 18, Machop Lv 17 | At the town entrance, before the gym. Machop is his answer to Ice, learned from his mum's gym. One entry per starter he took |
-| Pilgrim 1 | Pilgrim (new class) | Makuhita Lv 17 | Here to learn from Ibuki. Name `TODO(design)` |
-| Pilgrim 2 | Pilgrim (new class) | Meditite Lv 18 | Foreshadows Medicham. Name `TODO(design)` |
+| Daichi | Pilgrim (new class) | Makuhita Lv 17 | Here to learn from Ibuki. His name means "earth" |
+| Shizuka | Pilgrim (new class) | Meditite Lv 18 | Foreshadows Medicham. Her name means "quiet" |
 | Ibuki | Leader | Throh Lv 19 (Seismic Toss, Rock Tomb, Bulk Up, Vital Throw), Sawk Lv 19 (Double Kick, Bite, Low Kick, Bulk Up), Medicham Lv 21 @ Sitrus Berry (Brick Break, Confusion, Meditate, Detect) | Throh and Sawk are like his disciples; Medicham the meditating ascetic. The Misogi Badge and TM31 Brick Break |
 
 No spare trainer slots are left: these reuse vanilla Hoenn slots, like Shimotsuki's

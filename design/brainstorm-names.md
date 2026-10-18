@@ -44,7 +44,9 @@ this file stays as the record.
 
 ## Open questions
 
-Nothing open from rounds 1-2.
+Promoted into `characters.md`, `story-outline.md`, `progression.md`, `whats-left.md` and
+the location docs (`onsen-town.md` renamed `yunotaki.md`); the lake path's region-map name
+is LAKE USURAI in the game. Still open: the trainers on the pass (placeholders when built).
 
 ## Gaps and tensions
 
@@ -52,8 +54,8 @@ Nothing open from rounds 1-2.
 - r1 1b + 3a: the built lake map keeps its constant `MAP_EIEN_ROUTE2` (renaming map constants
   is churn), but its region-map section and pop-up become "LAKE USURAI"; the pass gets the
   "ROUTE 2" section when it's built. The location docs need the same change.
-- Smaller names still open: the gym trainers (Tomo, Saya are placeholders), the two
-  pilgrims, Kashiwagi's husband, Kaede's grandmother, the route trainers on the pass.
+- Smaller names (settled by round 2): the gym trainers, the pilgrims, Kashiwagi's husband,
+  Kaede's grandmother. The route trainers on the pass wait for the build.
 
 ## Parked ideas
 
