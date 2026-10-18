@@ -11,6 +11,12 @@ static const u32 sMonFrontPic_FroakieEien[] = INCGFX_U32("graphics/pokemon/eien/
 static const u32 sMonBackPic_FroakieEien[] = INCGFX_U32("graphics/pokemon/eien/froakie/back.png", ".4bpp.smol");
 static const u32 sMonFrontPic_PoochyenaEien[] = INCGFX_U32("graphics/pokemon/eien/poochyena/anim_front.png", ".4bpp.smol");
 static const u32 sMonBackPic_PoochyenaEien[] = INCGFX_U32("graphics/pokemon/eien/poochyena/back.png", ".4bpp.smol");
+static const u32 sMonFrontPic_CombuskenEien[] = INCGFX_U32("graphics/pokemon/eien/combusken/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_CombuskenEien[] = INCGFX_U32("graphics/pokemon/eien/combusken/back.png", ".4bpp.smol");
+static const u32 sMonFrontPic_IvysaurEien[] = INCGFX_U32("graphics/pokemon/eien/ivysaur/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_IvysaurEien[] = INCGFX_U32("graphics/pokemon/eien/ivysaur/back.png", ".4bpp.smol");
+static const u32 sMonFrontPic_FrogadierEien[] = INCGFX_U32("graphics/pokemon/eien/frogadier/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_FrogadierEien[] = INCGFX_U32("graphics/pokemon/eien/frogadier/back.png", ".4bpp.smol");
 static const u32 sMonFrontPic_MightyenaEien[] = INCGFX_U32("graphics/pokemon/eien/mightyena/anim_front.png", ".4bpp.smol");
 static const u32 sMonBackPic_MightyenaEien[] = INCGFX_U32("graphics/pokemon/eien/mightyena/back.png", ".4bpp.smol");
 
@@ -21,8 +27,8 @@ static const u8 sMonIcon_FroakieEien[] = INCGFX_U8("graphics/pokemon/eien/froaki
 static const u8 sMonIcon_PoochyenaEien[] = INCGFX_U8("graphics/pokemon/eien/poochyena/icon.png", ".4bpp");
 static const u8 sMonIcon_MightyenaEien[] = INCGFX_U8("graphics/pokemon/eien/mightyena/icon.png", ".4bpp");
 
-// Middle stages: placeholder palettes on the vanilla sprites (placeholder_palettes.py) until
-// their AI drafts are picked.
+// Middle stages: the picked AI fronts (convert_art.py); the backs are recolored placeholders, the
+// shinies a hue shift and the icons the vanilla ones until their own drafts are picked.
 static const u16 sMonPalette_CombuskenEien[] = INCGFX_U16("graphics/pokemon/eien/combusken/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_CombuskenEien[] = INCGFX_U16("graphics/pokemon/eien/combusken/shiny.pal", ".gbapal");
 static const u16 sMonPalette_IvysaurEien[] = INCGFX_U16("graphics/pokemon/eien/ivysaur/normal.pal", ".gbapal");

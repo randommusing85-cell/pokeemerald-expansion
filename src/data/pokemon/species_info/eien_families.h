@@ -387,8 +387,7 @@
 #endif //P_FAMILY_POOCHYENA
 
 // Eien middle stages (design/variants.md, "Evolved stages"): they evolve from the first
-// stages at Lv 18. Placeholder sprites: the vanilla ones with recolored palettes until the
-// AI drafts are picked. They don't evolve further yet (the finals aren't built).
+// stages at Lv 18. Fronts from the picked AI drafts; backs, shinies and icons are placeholders. They don't evolve further yet (the finals aren't built).
 
 #if P_FAMILY_TORCHIC
     [SPECIES_COMBUSKEN_EIEN] =
@@ -425,7 +424,7 @@
         .pokemonOffset = 5,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Combusken,
+        .frontPic = sMonFrontPic_CombuskenEien,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 64) : MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 1 : 3,
         .frontAnimFrames = ANIM_FRAMES(
@@ -434,7 +433,7 @@
             ANIMCMD_FRAME(0, 12),
         ),
         .frontAnimId = ANIM_V_JUMPS_H_JUMPS,
-        .backPic = gMonBackPic_Combusken,
+        .backPic = sMonBackPic_CombuskenEien,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 0 : 1,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
@@ -504,7 +503,7 @@
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Ivysaur,
+        .frontPic = sMonFrontPic_IvysaurEien,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 48) : MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 10 : 9,
         .frontAnimFrames = ANIM_FRAMES(
@@ -513,7 +512,7 @@
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Ivysaur,
+        .backPic = sMonBackPic_IvysaurEien,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_H_SLIDE,
@@ -574,7 +573,7 @@
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Frogadier,
+        .frontPic = sMonFrontPic_FrogadierEien,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 8,
         .frontAnimFrames = ANIM_FRAMES(
@@ -582,7 +581,7 @@
             ANIMCMD_FRAME(0, 30),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
-        .backPic = gMonBackPic_Frogadier,
+        .backPic = sMonBackPic_FrogadierEien,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_GROW_STUTTER,
