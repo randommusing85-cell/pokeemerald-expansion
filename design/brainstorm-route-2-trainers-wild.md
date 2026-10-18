@@ -45,10 +45,28 @@ this file stays as the record.
   through the night and has seen the see-through owls.
 - **Hoothoot's evolution (r2 5a):** Lv 20+ at night on the upper map only.
 - **Haru (r2 6a):** only gives the Town Map; no battle.
+- **Lower map wild (r3 1b):** Lv 10-13. Day: Snorunt 30%, Swinub 30%, Pineco 25%, Starly 15%.
+  Night: Snorunt 35%, Swinub 30%, Pineco 25%, Sneasel 10% (no Starly; it roosts).
+- **Upper map wild (r3 2a):** Lv 12-15. Day: Geodude 30%, Numel 30%, Meditite 20%, Eien Hoothoot
+  10%, Machop 10%. Night: Eien Hoothoot 30%, Geodude 25%, Numel 25%, Meditite 20%.
+- **Fishing (r3 3b):** Tomo stands on Lake Usurai's shore after the badge and gives the Old Rod.
+  Old Rod table: Magikarp 60%, Goldeen 30%, Spheal 10%.
+- **Items (r3 4c):** lower map Super Potion, Great Ball; upper map Charcoal, Revive; hidden Burn
+  Heal by the vents.
+- **Charcoal burner (r3 5a):** Slugma Lv 15 and Hoothoot Lv 15.
+- **Music (r3 6b, vanilla placeholders):** lower map Route 119's forest track, upper map Mt.
+  Chimney's ascent; the patch scene plays silence.
+- **Defaults (r3):** levels: woodcutter Pineco 12, Timburr 13; porter Machop 14; first pilgrim
+  Tyrogue 14; charcoal burner Slugma 15, Hoothoot 15; second pilgrim Mankey 15, Machop 16; the
+  pair Mankey 16 and Makuhita 17. Vanilla level-up moves. Lake Usurai fishing has one table
+  for day and night. Trainer names are placeholders.
 
 ## Leaning
 
 ## Open questions
+
+Nothing open from rounds 1-3. Still open later: the trainers' names (placeholders), their
+lines, the two maps' layouts (Porymap).
 
 ## Gaps and tensions
 
