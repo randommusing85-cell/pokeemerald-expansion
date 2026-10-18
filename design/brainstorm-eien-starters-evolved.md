@@ -22,18 +22,35 @@ Working notes for the starters' second and third stages (`variants.md`). Decisio
 
 ## Decided
 
+- **The arc (r1 1c+d):** the three lines diverge. Torchic's goes toward the dead and ritual
+  (Ghost); Bulbasaur's toward the sky and the aurora (Psychic); Froakie's isn't about the
+  fading at all, it goes deeper into the cold. With a touch of Tohoku festival and folklore.
+- **Levels (r1 2a):** 18 and 36 for all three.
+- **Torchic line (r1 3a):** the Nebuta line. Eien Combusken is a leaping festival dancer with
+  lantern-paper feathers; Eien Blaziken is the Nebuta warrior float itself, glowing from
+  inside, painted face, a towering fighter.
+- **Bulbasaur line (r1 4a):** the aurora bloom. Eien Ivysaur's bud half-opens with a small
+  aurora swirling inside its translucent petals; Eien Venusaur's flower is fully open and the
+  aurora streams up from it into the sky.
+- **Froakie line (r1 5b):** the snow scout. Eien Frogadier wears a straw snow cape and
+  snowshoes and scouts the drifts; Eien Greninja is a lone mountain guardian of the snow
+  passes.
+- **Names (r1 6a):** "Eien" plus the vanilla name for all six for now.
+
 ## Leaning
 
 ## Open questions
 
-Round 1, asked:
+Round 2, asked:
 
-1. The arc across the three stages.
-2. Evolution levels.
-3. Eien Combusken and Blaziken's concept.
-4. Eien Ivysaur and Venusaur's concept.
-5. Eien Frogadier and Greninja's concept.
-6. Names for the final forms.
+1. Stat spreads.
+2. Evolution moves.
+3. How to stage the art.
+
+Defaults proposed, not asked: abilities are the pinch ability plus the first stage's hidden
+one (Blaze / Cursed Body, Overgrow / Forewarn, Torrent / Snow Cloak); shinies carry the first
+stages' themes up (night lantern, twilight, midnight); otherwise vanilla learnsets after the
+first stages' new moves.
 
 ## Gaps and tensions
 
