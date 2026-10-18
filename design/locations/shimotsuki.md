@@ -30,7 +30,8 @@ Act 1 beats 5-6 in [story-outline.md](../story-outline.md).
 1. **Akira shows the gym:** Akira waits at the south entrance. He walks him to the gym door
    and points out the Pokémon Center on the way. This sets `STORY_SHIMOTSUKI`; the gym is shut
    until then (the scene is unavoidable on entering).
-2. **Gym 1:** two gym trainers, a gym guide, then Fuyumi. Winning gives the badge and TM07 Hail
+2. **Gym 1:** two gym trainers, a gym guide, then Fuyumi. Winning gives the Hoarfrost Badge and
+   TM07 Hail
    and sets `STORY_BADGE_1`.
 3. **Akira's practice battle** (his step 1, optional): at the town's north edge on his way out,
    only if you talk to him.
@@ -53,14 +54,17 @@ Act 1 beats 5-6 in [story-outline.md](../story-outline.md).
 
 ## Trainers
 
-Names are placeholders (`TODO(design)`), and so are the gym trainers' classes. Both use the
-snow trainer overworld sprite (`OBJ_EVENT_GFX_EIEN_SNOW_TRAINER`).
+The gym trainers are locals at their jobs, like Route 1's: two new trainer classes, ICE FISHER
+and SHOVELER (`TRAINER_CLASS_ICE_FISHER` / `_SHOVELER` in `include/constants/trainers.h`;
+"SNOW SHOVELER" didn't fit the 12-letter class name). Their names are placeholders
+(`TODO(design)`). Both use the snow trainer overworld sprite (`OBJ_EVENT_GFX_EIEN_SNOW_TRAINER`);
+their battle pics reuse the Fisherman and Picnicker for now.
 
 | Trainer | Class | Team (levels) | Notes |
 | --- | --- | --- | --- |
-| Gym trainer 1 (TOMO) | Camper (placeholder) | Snover Lv 9 | A short line about the cold |
-| Gym trainer 2 (SAYA) | Picnicker (placeholder) | Snorunt Lv 10 | A short line about the cold |
-| Fuyumi | Leader | Spheal Lv 13 (Water Gun, Powder Snow, Defense Curl, Rollout), Bergmite Lv 14 (Rock Tomb, Powder Snow, Curse, Harden) | Stern veteran. Water Gun covers Eien Torchic; Rock Tomb covers Eien Torchic and Froakie; Eien Poochyena resists Rock Tomb. Badge and TM07 Hail |
+| Gym trainer 1 (TOMO) | Ice Fisher | Snover Lv 9 | A short line about the cold |
+| Gym trainer 2 (SAYA) | Shoveler | Snorunt Lv 10 | A short line about the cold |
+| Fuyumi | Leader | Spheal Lv 13 (Water Gun, Powder Snow, Defense Curl, Rollout), Bergmite Lv 14 (Rock Tomb, Powder Snow, Curse, Harden) | Stern veteran. Water Gun covers Eien Torchic; Rock Tomb covers Eien Torchic and Froakie; Eien Poochyena resists Rock Tomb. The Hoarfrost Badge and TM07 Hail |
 | Akira (practice) | Rival | His starter Lv 14 (the one strong against the player's), Starly Lv 11 | Optional; one trainer entry per starter he took |
 
 Trainer ids: `TRAINER_EIEN_FUYUMI` (863) and `TRAINER_EIEN_AKIRA_PRACTICE_FROAKIE` (862) take the
@@ -96,7 +100,8 @@ start of the next route later (`TODO(design)`: its name and the rest of the rout
   `STORY_MET_NAMI`, then a short end-of-milestone message. Music placeholder: a quiet track.
   Her lines are drafts (`TODO(design)`).
 - The fading's first appearance; not explained.
-- The lake is plain water for now (`TODO(art)`: a frozen look). Before gym 1 the path is open
+- The lake is frozen at the edges with open dark water in the middle, which Lapras swims. On
+  the map it's plain water for now (`TODO(art)`: an ice-rim tile). Before gym 1 the path is open
   but nothing happens there.
 
 ## Maps
@@ -116,13 +121,22 @@ All placeholders, hand-made; redraw them in Porymap any time.
   (`HEAL_LOCATION_SHIMOTSUKI`, outside its door); it has no 2F, so its stairs go nowhere.
 - **Kaede's shrine:** shares Route 1's shrine layout (`LAYOUT_EIEN_ROUTE1_SHRINE`); its west
   arrows lead back to the town's east edge. Kaede sweeps (walking in place) on the path; her
-  grandmother stands by the grass. Its tablet is a placeholder sign (`TODO(design)`: its text and
-  its bit in `QUEST_KAEDE_TABLETS`). Its grass patch has no encounter table, so leveling an
-  Eien Poochyena here needs a Rare Candy (`TODO(design)`: give it its own wild table, or a
-  layout without grass).
+  grandmother stands by the grass. Its tablet stays "too worn to read" until Kaede reads it to
+  him in milestone 2; its text is about the stone dogs on aurora nights, setting up her step 2
+  (`TODO(design)`: the text itself, and its bit in `QUEST_KAEDE_TABLETS`).
 - **Lake path:** 24x22 (`data/layouts/EienRoute2/`, town tileset), connected below the town.
   The lake fills the middle-west (rows 6-13); the shelter (a house, not enterable) on the far
   shore; a path round the east side back to the town. Nami's trigger is row 16.
+
+## Wild Pokémon
+
+Kaede's shrine grass, Lv 9-12, so an Eien Poochyena can reach Lv 18 by battling there. Rates are
+the slot sums in `src/data/wild_encounters.json` (`gShimotsuki_KaedeShrine`, `_Night`); morning and
+evening use the day table.
+
+| Area | Day | Night |
+| --- | --- | --- |
+| Kaede's shrine grass | Eien Poochyena 90%, Duskull 10% | Eien Poochyena 60%, Duskull 40% |
 
 The Mart's stock is a placeholder (Poké Ball, Potion, Antidote, Paralyze Heal, Awakening,
 Ice Heal, Escape Rope; `TODO(design)`).
@@ -143,4 +157,9 @@ foot); shots in `design/art/shimotsuki/`.
   `STORY_BADGE_1` in the harness); talking starts the battle.
 - `13_lake_path.png` to `17_milestone_end.png`: the lake path, Celebi flickering out, Nami on
   Lapras ("It's cold. Get on."), the far shore where Celebi comes back, and the end message.
+- After rounds 3-4: `18_ice_fisher.png` (the new class), `19_shrine_wild.png` and
+  `20_shrine_thin_place.png` (a wild Eien Poochyena in Kaede's shrine grass, with the thin-place
+  message), `21_lake_line.png` (his line at the lake), `22_whiteout_home.png` and
+  `23_husband_heals.png` (a white-out before Shimotsuki: back home, healed). `6_badge.png` now
+  shows the Hoarfrost Badge.
 - `layout.png`, `lake_path_layout.png`: the layouts.

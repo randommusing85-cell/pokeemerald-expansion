@@ -71,10 +71,17 @@ bool32 IsLastHealLocationPlayerHouse()
         || IsLastHealLocation(HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F)
         || IsLastHealLocation(HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE)
         || IsLastHealLocation(HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F)
-        || IsLastHealLocation(HEAL_LOCATION_PALLET_TOWN))
+        || IsLastHealLocation(HEAL_LOCATION_PALLET_TOWN)
+        || IsLastHealLocation(HEAL_LOCATION_HAMAKAZE)) // Eien
         return TRUE;
 
     return FALSE;
+}
+
+// Eien: the Kashiwagi house, his home before the first Pokémon Center (design/locations/hamakaze.md)
+bool32 IsLastHealLocationEienHome(void)
+{
+    return IsLastHealLocation(HEAL_LOCATION_HAMAKAZE);
 }
 
 u32 GetHealNpcLocalId(u32 healLocationId)

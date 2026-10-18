@@ -54,13 +54,39 @@ the location doc when settled; this file stays as the record.
   person by the Pokémon Center), plain lines, one that sets up Fuyumi's softer side
   ("She makes the best stew in town"). Music placeholders: Lavaridge for the town, the gym
   theme, a quiet track for Nami's scene.
+- **White-out before Shimotsuki (r3 1a):** he wakes at the Kashiwagi house; someone there says
+  one line and heals the team. A heal location in Hamakaze, set before Route 1.
+- **Kaede's shrine grass (r3 2b):** its own wild table: Eien Poochyena plus a Ghost type that
+  isn't Route 1's Shuppet (species open, round 4), so the evolution works by battling there.
+- **Kaede's shrine tablet (r3 3a+d):** the text is about the stone dogs on aurora nights
+  (setting up her step 2), but it stays "too worn to read" until her milestone-2 scene, where
+  she reads it. Its text is still to write.
+- **Badge (r3 4b):** the Hoarfrost Badge.
+- **Gym trainers (r3 5c):** locals at their jobs, like Route 1: an ice fisher and a snow
+  shoveller (new trainer classes; names open, round 4).
+- **The lake (r3 6a):** frozen at the edges, open dark water in the middle, which Lapras swims.
+  `TODO(art)`: an ice-rim tile. His line stays close to "A frozen lake…".
+- **Shrine Ghost (r4 1a):** Duskull, night-heavy like Shuppet on Route 1 (exact rates set when
+  the table is built, fitted to the land slots).
+- **Healer (r4 2a):** Kashiwagi's husband: "Back again? Sit. I'll see to them." (draft line,
+  warm and practical).
+- **Gym trainers (r4 3a):** classes ICE FISHER (Snover Lv 9) and SNOW SHOVELER (Snorunt
+  Lv 10); names TOMO and SAYA stay placeholders. Built as SHOVELER: the engine's class names
+  hold 12 letters and "SNOW SHOVELER" is 13.
+- **Shrine levels (default when building):** Lv 9-12; day Eien Poochyena 90%, Duskull 10%;
+  night 60% / 40%.
 
 ## Leaning
 
 ## Open questions
 
-- Names for the gym trainers, the lake map and the badge (placeholders).
-- Kaede's grandmother: at the shrine with a small-talk line (the doc says "always").
+Rounds 3-4 promoted into `locations/shimotsuki.md`, `locations/hamakaze.md` and
+`progression.md`. Still open after round 4: the tablet's text (the stone dogs on aurora nights), the gym
+trainers' real names, the husband's name, the ice-rim art, the badge icon, music.
+
+Defaults proposed, not asked (change any): the Mart keeps its placeholder stock (Poké Ball,
+Potion, Antidote, Paralyze Heal, Awakening, Ice Heal, Escape Rope); the lake path stays
+`MAP_EIEN_ROUTE2` until the next route is designed; music waits for a music pass.
 
 Promoted into `locations/shimotsuki.md`, `story-outline.md`, `side-quests.md`,
 `progression.md` and `whats-left.md`.
@@ -79,6 +105,13 @@ Promoted into `locations/shimotsuki.md`, `story-outline.md`, `side-quests.md`,
 - Found while building: before he reaches Shimotsuki's Pokémon Center there's no Eien respawn
   point, so a white-out on Route 1 sends him to vanilla Petalburg (`TODO(design)`: where he
   wakes after a white-out before the first Pokémon Center; the Kashiwagi house?).
+- Found in round 3: experience counts toward the shrine evolution only from battles fought on
+  the shrine map, so a shrine with no grass and no trainer can only evolve Poochyena by Rare
+  Candy.
+- Found in round 3: the docs call the lake frozen, but Nami's Lapras swims across it (settled by
+  r3 6a: open water in the middle).
+- r3 5c needs two new trainer classes (a small engine data change: the class name and its
+  prize money; pics can reuse vanilla ones for now).
 
 ## Parked ideas
 

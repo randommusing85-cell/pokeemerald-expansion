@@ -1463,7 +1463,11 @@ static void Task_RushInjuredPokemonToCenter(u8 taskId)
         if (WaitForWeatherFadeIn() == TRUE)
         {
             DestroyTask(taskId);
-            if (gTasks[taskId].tIsPlayerHouse)
+            if (IsLastHealLocationEienHome()) // Eien: Kashiwagi's husband heals him at their house
+            {
+                ScriptContext_SetupScript(EventScript_AfterWhiteOutKashiwagiHeal);
+            }
+            else if (gTasks[taskId].tIsPlayerHouse)
             {
                 if (IS_FRLG)
                     StringCopy(gStringVar1, COMPOUND_STRING("PROF. OAK"));

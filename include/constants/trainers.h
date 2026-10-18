@@ -525,6 +525,9 @@ enum TrainerClassID
     TRAINER_CLASS_RUIN_MANIAC_FRLG,
     TRAINER_CLASS_LADY_FRLG,
     TRAINER_CLASS_PAINTER_FRLG,
+    // Eien: Shimotsuki's gym trainers, locals at their jobs (design/locations/shimotsuki.md)
+    TRAINER_CLASS_ICE_FISHER,
+    TRAINER_CLASS_SHOVELER,
 
     TRAINER_CLASS_COUNT,
 };

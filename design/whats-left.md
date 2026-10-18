@@ -15,12 +15,12 @@ milestone (prologue through gym 1):
 | Prologue bedroom | [prologue-bedroom.md](locations/prologue-bedroom.md) | The accident, Palkia |
 | Hamakaze (+ Kashiwagi house, lab) | [hamakaze.md](locations/hamakaze.md) | **Built** on a placeholder layout (redraw it in Porymap any time), with the research and Haru's map quest. Still to do: a new game starting here (or in the prologue) |
 | Route 1 + its shrine | [route-1.md](locations/route-1.md) | **Built** on placeholder layouts: trainers, day/night wild tables, items, Haru's notes, the tablet, the warp north to Shimotsuki. Still to do: real music |
-| Shimotsuki (+ gym, Pokémon Center, Mart), Kaede's shrine, the lake path | [shimotsuki.md](locations/shimotsuki.md) | **Built** on placeholder layouts: Akira shows the gym, gym 1 with badge and TM07, Akira's practice (`QUEST_AKIRA_PRACTICE`), Kaede's cameo and her grandmother, Nami's meeting and the end-of-milestone message. Still to do: a wild table (or no grass) at Kaede's shrine, its tablet text, the badge name, real music, a frozen-lake look |
+| Shimotsuki (+ gym, Pokémon Center, Mart), Kaede's shrine, the lake path | [shimotsuki.md](locations/shimotsuki.md) | **Built** on placeholder layouts: Akira shows the gym, gym 1 with badge and TM07, Akira's practice (`QUEST_AKIRA_PRACTICE`), Kaede's cameo and her grandmother, Nami's meeting and the end-of-milestone message. Since then: the Hoarfrost Badge, Kaede's shrine wild table (Eien Poochyena, Duskull), the ICE FISHER and SHOVELER classes. Still to do: the tablet text, the gym trainers' names, real music, an ice-rim tile for the lake |
 
 Open gaps found while building Shimotsuki:
 
-- **White-out before the first Pokémon Center** goes to vanilla Petalburg: Hamakaze and Route 1
-  have no respawn point (`TODO(design)`: where he wakes; the Kashiwagi house?).
+- **White-out before the first Pokémon Center:** fixed; he wakes at the Kashiwagi house and her
+  husband heals the team (`HEAL_LOCATION_HAMAKAZE`).
 - **Trainer slots:** none spare now. Further trainers reuse vanilla Hoenn slots Eien never
   reaches, aliased in `include/constants/opponents.h` (four so far).
 

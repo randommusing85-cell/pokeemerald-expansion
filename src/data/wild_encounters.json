@@ -36853,6 +36853,144 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_SHIMOTSUKI_KAEDE_SHRINE",
+          "base_label": "gShimotsuki_KaedeShrine",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_DUSKULL"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_DUSKULL"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_SHIMOTSUKI_KAEDE_SHRINE",
+          "base_label": "gShimotsuki_KaedeShrine_Night",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_DUSKULL"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_DUSKULL"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_DUSKULL"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              },
+              {
+                "min_level": 9,
+                "max_level": 12,
+                "species": "SPECIES_POOCHYENA_EIEN"
+              }
+            ]
+          }
         }
       ]
     },

@@ -6209,11 +6209,11 @@ Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 /* Eien: reuses vanilla ALLEN's slot (Route 102, unreachable in Eien). Shimotsuki gym
-   (design/locations/shimotsuki.md). TODO(design): name and class are placeholders. */
+   (design/locations/shimotsuki.md). TODO(design): the name is a placeholder. */
 === TRAINER_EIEN_SHIMOTSUKI_GYM_1 ===
 Name: TOMO
-Class: Camper
-Pic: Camper
+Class: Ice Fisher
+Pic: Fisherman
 Gender: Male
 Music: Male
 Double Battle: No
@@ -11045,11 +11045,11 @@ Camerupt
 Level: 25
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-/* Eien: reuses vanilla TIANA's slot (Route 102). Shimotsuki gym. TODO(design): name and
-   class are placeholders. */
+/* Eien: reuses vanilla TIANA's slot (Route 102). Shimotsuki gym. TODO(design): the name is a
+   placeholder. */
 === TRAINER_EIEN_SHIMOTSUKI_GYM_2 ===
 Name: SAYA
-Class: Picnicker
+Class: Shoveler
 Pic: Picnicker
 Gender: Female
 Music: Female

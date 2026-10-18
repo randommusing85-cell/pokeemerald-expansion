@@ -357,6 +357,16 @@
       "y": 16,
       "respawn_map": "MAP_SHIMOTSUKI_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_SHIMOTSUKI_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_HAMAKAZE",
+      "map": "MAP_HAMAKAZE",
+      "x": 5,
+      "y": 8,
+      "respawn_map": "MAP_HAMAKAZE_KASHIWAGI_HOUSE",
+      "respawn_npc": "LOCALID_KASHIWAGI_HOUSE_HUSBAND",
+      "respawn_x": 1,
+      "respawn_y": 6
     }
   ]
 }

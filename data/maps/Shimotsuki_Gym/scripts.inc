@@ -66,7 +66,7 @@ Shimotsuki_Gym_EventScript_StatueAfter::
 	end
 
 @ TODO(design): all lines are drafts in the style guide's voice. Fuyumi is a stern veteran
-@ in the gym. The badge's name is still a placeholder.
+@ in the gym. The badge is the Hoarfrost Badge (brainstorm-shimotsuki.md, r3 4b).
 Shimotsuki_Gym_Text_FuyumiIntro:
 	.string "FUYUMI: You're the boy my son\n"
 	.string "keeps talking about.\p"
@@ -77,8 +77,8 @@ Shimotsuki_Gym_Text_FuyumiDefeat:
 	.string "…Fine. You've earned it.$"
 
 Shimotsuki_Gym_Text_ReceivedBadge:
-	.string "{PLAYER} received the gym's badge\n"
-	.string "from FUYUMI.$"
+	.string "{PLAYER} received the\n"
+	.string "HOARFROST BADGE from FUYUMI.$"
 
 Shimotsuki_Gym_Text_TakeThis:
 	.string "FUYUMI: Take this as well.$"
