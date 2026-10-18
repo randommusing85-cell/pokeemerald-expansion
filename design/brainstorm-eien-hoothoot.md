@@ -23,23 +23,43 @@ move into `variants.md` when settled; this file stays as the record.
 
 ## Decided
 
+- **Look (r1 1b):** a half-faded owl: its wings and tail fade into mist; only the face and
+  glowing eyes are solid. Drops the lantern overlap with Eien Torchic; the fading made
+  visible, tied to the thinning patch on the same route. Still "the owl of the night pass".
+- **Stats (r1 2b):** fast special attacker, 50 / 30 / 26 / 60 / 36 / 60 (HP / Atk / Def / SpA /
+  SpD / Spe), 262.
+- **Abilities (r1 3b):** Insomnia / Frisk / Cursed Body (hidden).
+- **Early moves (r1 4c):** Astonish (1) and Gust (6, replacing Echoed Voice); Ominous Wind (15,
+  replacing Defog). Confusion (9), Reflect (12) and Air Slash (18) stay; otherwise vanilla.
+- **Evolution (r1 5b):** levels up to 20+ at night on its home pass (Route 2's mountain pass).
+  The roadside tablet could hint at it.
+- **Research (r1 6d):** seen / battled / caught, like Poochyena, plus a journal note when one
+  reaches Lv 20 without evolving (the hint for the rule, like Poochyena's).
+
 ## Leaning
 
 ## Open questions
 
-Round 1, asked:
+Round 2, asked:
 
-1. The visual concept (and how it differs from Eien Torchic, also a lantern bird).
-2. The stat spread (total 262).
-3. Abilities.
-4. Early Ghost and Flying moves.
-5. How it evolves.
-6. Its research steps.
+1. Eien Noctowl's look.
+2. Eien Noctowl's stats (452).
+3. The move it learns on evolving.
+4. Wild rates on the pass, day and night.
+5. The shiny palette.
+
+Defaults proposed, not asked: Eien Noctowl keeps Eien Hoothoot's abilities (as Mightyena kept
+Poochyena's) and the name "Eien Noctowl"; dex entries are drafts written at build time; the
+sprites go through AI drafts like Poochyena's.
 
 ## Gaps and tensions
 
-- Eien Torchic is already "a shrine-lantern bird" (Fire/Ghost). A "lantern owl" overlaps in
-  both look and type (Ghost); the two need to read differently.
+- Eien Torchic is already "a shrine-lantern bird" (Fire/Ghost) (settled by r1 1b: the
+  half-faded owl; `variants.md` and `route-2.md` still say "lantern owl" until promoted).
+- r1 5b: "at night on the pass" needs the engine's time and map conditions together (`IF_TIME`
+  and `IF_IN_MAP` or `IF_IN_MAPSEC` on one evolution entry).
+- r1 6d: a second no-evolution note means another journal flag, and the research page is
+  already full with Poochyena's note (`variants.md`): it may need to scroll.
 - Gym 2 is Fighting: its leader's Pokémon will likely carry a Rock or Dark move for Ghost and
   Flying (to be settled in the gym 2 team brainstorm), so Hoothoot shouldn't be a free win.
 - An aurora-night evolution couldn't happen until Act 3 (aurora nights only return after
