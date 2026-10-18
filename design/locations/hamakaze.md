@@ -81,6 +81,7 @@ here that the docs didn't settle, all easy to change:
 | `FLAG_RECEIVED_JOURNAL` | He starts the journal (taken in) | The start menu (JOURNAL entry) |
 | `FLAG_JOURNAL_COVER_SEEN` | The journal is opened the first time | The journal (opens on the cover once) |
 | `VAR_EIEN_STORY` = `STORY_GOT_STARTER` | After the lab battle with Akira | The journal |
+| `VAR_EIEN_AKIRA_STARTER` | Akira takes his starter (its species) | His practice battle in Shimotsuki |
 | `QUEST_RESEARCH_POOCHYENA` opened | The professor asks, after Akira's battle | The journal's Research and Missions tabs |
 | `QUEST_HARU_MAP` opened | Haru asks at the north exit, after the starters | The journal's Missions tab; Route 1 adds the steps |
 

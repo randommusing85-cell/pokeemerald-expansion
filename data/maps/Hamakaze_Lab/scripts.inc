@@ -4,7 +4,8 @@
 @ beats Froakie, Froakie beats Torchic.
 @ FLAG_TEMP_1 hides the professor (before he's taken in), FLAG_TEMP_2 Haru and Akira and
 @ FLAG_TEMP_3 the three balls (outside the starter scene). VAR_TEMP_1 = 1 once the intro ran;
-@ VAR_TEMP_2-5 hold the chosen ball's species, Akira's ball, Haru's ball and Akira's trainer.
+@ VAR_TEMP_2-6 hold the chosen ball's species, Akira's ball, Haru's ball, Akira's trainer and
+@ Akira's species (kept in VAR_EIEN_AKIRA_STARTER for his later battles).
 
 Hamakaze_Lab_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Hamakaze_Lab_OnTransition
@@ -61,6 +62,7 @@ Hamakaze_Lab_EventScript_TorchicBall::
 	setvar VAR_TEMP_3, LOCALID_LAB_FROAKIE_BALL
 	setvar VAR_TEMP_4, LOCALID_LAB_BULBASAUR_BALL
 	setvar VAR_TEMP_5, TRAINER_EIEN_AKIRA_LAB_FROAKIE
+	setvar VAR_TEMP_6, SPECIES_FROAKIE_EIEN
 	goto Hamakaze_Lab_EventScript_ChooseStarter
 
 Hamakaze_Lab_EventScript_BulbasaurBall::
@@ -69,6 +71,7 @@ Hamakaze_Lab_EventScript_BulbasaurBall::
 	setvar VAR_TEMP_3, LOCALID_LAB_TORCHIC_BALL
 	setvar VAR_TEMP_4, LOCALID_LAB_FROAKIE_BALL
 	setvar VAR_TEMP_5, TRAINER_EIEN_AKIRA_LAB_TORCHIC
+	setvar VAR_TEMP_6, SPECIES_TORCHIC_EIEN
 	goto Hamakaze_Lab_EventScript_ChooseStarter
 
 Hamakaze_Lab_EventScript_FroakieBall::
@@ -77,6 +80,7 @@ Hamakaze_Lab_EventScript_FroakieBall::
 	setvar VAR_TEMP_3, LOCALID_LAB_BULBASAUR_BALL
 	setvar VAR_TEMP_4, LOCALID_LAB_TORCHIC_BALL
 	setvar VAR_TEMP_5, TRAINER_EIEN_AKIRA_LAB_BULBASAUR
+	setvar VAR_TEMP_6, SPECIES_BULBASAUR_EIEN
 	goto Hamakaze_Lab_EventScript_ChooseStarter
 
 Hamakaze_Lab_EventScript_ChooseStarter::
@@ -97,6 +101,7 @@ Hamakaze_Lab_EventScript_ChooseStarter::
 	@ Akira takes the one strong against it; Haru takes the last
 	msgbox Hamakaze_Lab_Text_AkiraTakes, MSGBOX_DEFAULT
 	removeobject VAR_TEMP_3
+	copyvar VAR_EIEN_AKIRA_STARTER, VAR_TEMP_6
 	applymovement LOCALID_LAB_HARU, Common_Movement_FaceRight
 	waitmovement 0
 	msgbox Hamakaze_Lab_Text_HaruTakes, MSGBOX_DEFAULT

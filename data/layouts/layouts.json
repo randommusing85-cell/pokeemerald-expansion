@@ -9356,6 +9356,28 @@
       "border_filepath": "data/layouts/EienRoute1_Shrine/border.bin",
       "blockdata_filepath": "data/layouts/EienRoute1_Shrine/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_SHIMOTSUKI",
+      "name": "Shimotsuki_Layout",
+      "width": 24,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_EienTown",
+      "border_filepath": "data/layouts/Shimotsuki/border.bin",
+      "blockdata_filepath": "data/layouts/Shimotsuki/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_EIEN_ROUTE2",
+      "name": "EienRoute2_Layout",
+      "width": 24,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_EienTown",
+      "border_filepath": "data/layouts/EienRoute2/border.bin",
+      "blockdata_filepath": "data/layouts/EienRoute2/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

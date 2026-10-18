@@ -8,7 +8,8 @@
 static const u16 sThinPlaceMaps[] =
 {
     MAP_EIEN_ROUTE1_SHRINE,
-    // TODO: Kaede's shrine in Shimotsuki, the door mountain.
+    MAP_SHIMOTSUKI_KAEDE_SHRINE,
+    // TODO: the door mountain.
 };
 
 bool32 IsThinPlaceMap(u32 mapGroup, u32 mapNum)

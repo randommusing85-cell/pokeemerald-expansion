@@ -868,12 +868,23 @@
 #define TRAINER_EIEN_ROUTE1_HIKER           859
 #define TRAINER_EIEN_ROUTE1_LASS            860
 #define TRAINER_EIEN_ROUTE1_YOUNGSTER       861
+// Eien: Shimotsuki (design/locations/shimotsuki.md)
+#define TRAINER_EIEN_AKIRA_PRACTICE_FROAKIE 862
+#define TRAINER_EIEN_FUYUMI                 863
 
-// NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 2 additional trainers before trainer flag space overflows (Eien has used 7 of the original 9)
+// Eien: the spare slots above are used up, so more Eien trainers take vanilla Hoenn slots that
+// Eien never reaches: no rematches, used only by their own vanilla map's script. Their blocks
+// in trainers.party are replaced; the vanilla scripts still build. Reused so far:
+#define TRAINER_EIEN_SHIMOTSUKI_GYM_1        TRAINER_ALLEN   // Route 102
+#define TRAINER_EIEN_SHIMOTSUKI_GYM_2        TRAINER_TIANA   // Route 102
+#define TRAINER_EIEN_AKIRA_PRACTICE_TORCHIC  TRAINER_RICK    // Route 102
+#define TRAINER_EIEN_AKIRA_PRACTICE_BULBASAUR TRAINER_DARIAN // Route 104
+
+// NOTE: Because each Trainer uses a flag to determine when they are defeated, there is no space for additional trainers before trainer flag space overflows (Eien has used all of the original 9)
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_EMERALD     862
+#define TRAINERS_COUNT_EMERALD     864
 #define MAX_TRAINERS_COUNT_EMERALD 864
 
 #if IS_FRLG

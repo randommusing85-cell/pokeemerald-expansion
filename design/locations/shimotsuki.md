@@ -1,8 +1,8 @@
 # Shimotsuki
 
 - **Map(s):** `MAP_SHIMOTSUKI` (town), `MAP_SHIMOTSUKI_GYM`, `MAP_SHIMOTSUKI_POKEMON_CENTER_1F`,
-  `MAP_SHIMOTSUKI_MART`, `MAP_SHIMOTSUKI_KAEDE_SHRINE` (its own small map). Placeholder layouts;
-  see **Maps** below.
+  `MAP_SHIMOTSUKI_MART`, `MAP_SHIMOTSUKI_KAEDE_SHRINE` (its own small map), and the lake path
+  `MAP_EIEN_ROUTE2`. Placeholder layouts; see **Maps** below.
 - **Type:** town
 - **Connects to:** Route 1 to the south; the lake path (`MAP_EIEN_ROUTE2`, a placeholder name)
   to the north, where Nami is met.
@@ -18,8 +18,10 @@ starts in the second milestone.
 ## Look
 
 A snowy inland town ("frost month"). Tilesets: `gTileset_General` + `gTileset_EienTown`
-(houses, Pokémon Center, Mart, Gym). Music (placeholders): Lavaridge's theme for the town, the
-gym theme in the gym. `TODO(design)`: landmarks, the real tracks.
+(houses, Pokémon Center, Mart, Gym). Music (placeholders): Lavaridge's theme for the town (in
+this engine Lavaridge's map plays `MUS_OLDALE`), the gym theme in the gym, Mt. Pyre's at Kaede's
+shrine (like Route 1's shrine), Route 101's on the lake path. `TODO(design)`: landmarks, the real
+tracks, and a quiet track for Nami's scene (it plays the lake path's music for now).
 
 ## Story beats here
 
@@ -42,7 +44,7 @@ Act 1 beats 5-6 in [story-outline.md](../story-outline.md).
 | Akira | the south entrance, then the gym door | arriving (`STORY_ROUTE_1`) | Walks him to the gym, points out the Pokémon Center |
 | Akira | the north edge | after gym 1, until his battle | Practice battle if talked to; afterwards a short line about watching League matches with his mum |
 | Gym guide | inside the gym door | always | Explains Ice; points at Route 1's Eien Poochyena |
-| Locals | around town | always | A snow shoveller, a kid by the gym, an older person by the Pokémon Center. Plain lines; one sets up Fuyumi's softer side ("She makes the best stew in town") |
+| Locals | around town | always | A snow shoveller, a kid by the gym, an older person by the Pokémon Center. Plain lines; the kid sets up Fuyumi's softer side ("She makes the best stew in town"), the older person points east to the shrine |
 | Kaede (cameo) | her shrine | first milestone | Sweeping. "If you're here to pray, the box is on the left. If not, you're in the way." |
 | Kaede's grandmother | her shrine | always | Small talk about the old days. `TODO(design)`: repeating the evolution rule waits for milestone 2 |
 | Kaede | her shrine | after gym 1, second milestone | First meeting: reading the shrine's tablet; asks about the Route 1 tablet; explains the stone dogs grow at their post. Starts her tablet quest ([side-quests.md](../side-quests.md)) |
@@ -51,17 +53,22 @@ Act 1 beats 5-6 in [story-outline.md](../story-outline.md).
 
 ## Trainers
 
-Names are placeholders (`TODO(design)`).
+Names are placeholders (`TODO(design)`), and so are the gym trainers' classes. Both use the
+snow trainer overworld sprite (`OBJ_EVENT_GFX_EIEN_SNOW_TRAINER`).
 
 | Trainer | Class | Team (levels) | Notes |
 | --- | --- | --- | --- |
-| Gym trainer 1 | `TODO(design)` | Snover Lv 9 | A short line about the cold |
-| Gym trainer 2 | `TODO(design)` | Snorunt Lv 10 | A short line about the cold |
+| Gym trainer 1 (TOMO) | Camper (placeholder) | Snover Lv 9 | A short line about the cold |
+| Gym trainer 2 (SAYA) | Picnicker (placeholder) | Snorunt Lv 10 | A short line about the cold |
 | Fuyumi | Leader | Spheal Lv 13 (Water Gun, Powder Snow, Defense Curl, Rollout), Bergmite Lv 14 (Rock Tomb, Powder Snow, Curse, Harden) | Stern veteran. Water Gun covers Eien Torchic; Rock Tomb covers Eien Torchic and Froakie; Eien Poochyena resists Rock Tomb. Badge and TM07 Hail |
 | Akira (practice) | Rival | His starter Lv 14 (the one strong against the player's), Starly Lv 11 | Optional; one trainer entry per starter he took |
 
-The gym's and Akira's trainer entries reuse vanilla Hoenn trainer slots Eien never reaches
-(noted in `include/constants/opponents.h`), since only 2 spare slots were left.
+Trainer ids: `TRAINER_EIEN_FUYUMI` (863) and `TRAINER_EIEN_AKIRA_PRACTICE_FROAKIE` (862) take the
+last 2 spare slots. The others reuse vanilla Hoenn slots Eien never reaches (no rematches, used
+only by their own vanilla map), aliased in `include/constants/opponents.h`:
+`TRAINER_EIEN_SHIMOTSUKI_GYM_1` / `_GYM_2` (Allen, Tiana: Route 102) and
+`TRAINER_EIEN_AKIRA_PRACTICE_TORCHIC` / `_BULBASAUR` (Rick: Route 102, Darian: Route 104). Their
+blocks in `src/data/trainers.party` are replaced. Further trainers will need the same.
 
 ## Flags and vars
 
@@ -70,7 +77,10 @@ The gym's and Akira's trainer entries reuse vanilla Hoenn trainer slots Eien nev
 | `VAR_EIEN_STORY` = `STORY_SHIMOTSUKI` | Akira shows him the gym | The journal |
 | `VAR_EIEN_STORY` = `STORY_BADGE_1` | He beats Fuyumi | The journal |
 | `FLAG_BADGE01_GET` | He beats Fuyumi | The badge (vanilla's first-badge flag, same meaning) |
-| `QUEST_AKIRA_PRACTICE` (quest table) | Opened and done in the practice battle after gym 1 | The journal; closes at the tournament |
+| `QUEST_AKIRA_PRACTICE` (quest table) | Opened when he talks to Akira after gym 1, done when he wins | The journal; Akira's object (hidden once done); closes at the tournament |
+| `VAR_EIEN_AKIRA_STARTER` | The lab: the species of the starter Akira took | Which practice-battle entry he uses (and his later battles) |
+| `VAR_EIEN_SCENE` = 1 | Nami's scene, across the warp to the far shore; back to 0 at its end | The lake path's frame script (a scene that crosses a warp) |
+| `VAR_EIEN_STORY` = `STORY_MET_NAMI` | Nami leaves the far shore | The journal; the end of the first milestone |
 | `FLAG_AURORA_TONIGHT` | Kaede says come back tonight (Act 3, her step 2); cleared after the aurora-night battle | `IsAuroraNight` (`src/eien_aurora.c`): the aurora weather and its battle effect |
 | `FLAG_AURORA_NIGHTS` | The end of Kaede's step 2 | `IsAuroraNight`: aurora nights come back at random from then on |
 
@@ -85,7 +95,51 @@ start of the next route later (`TODO(design)`: its name and the rest of the rout
   `STORY_MET_NAMI`, then a short end-of-milestone message. Music placeholder: a quiet track.
   Her lines are drafts (`TODO(design)`).
 - The fading's first appearance; not explained.
+- The lake is plain water for now (`TODO(art)`: a frozen look). Before gym 1 the path is open
+  but nothing happens there.
+
+## Maps
+
+All placeholders, hand-made; redraw them in Porymap any time.
+
+- **Town:** 24x26 (`data/layouts/Shimotsuki/`, `gTileset_General` + `gTileset_EienTown`). The gym
+  at the top middle (door 11,7), two houses beside it (not enterable), the Pokémon Center
+  (door 5,15) and Mart (door 19,15) below, a town sign (14,22). The north gap (x 16-19) is a
+  connection to the lake path, beside the gym rather than above it. The south edge (x 10-13,
+  row 25) is south-arrow snow: Route 1's north arrows and the town's south arrows are warps
+  (different secondary tilesets, the same reason as Route 1's shrine), each side landing on the
+  other's middle tile. The east edge at rows 18-19 is east-arrow snow to Kaede's shrine.
+- **Gym:** vanilla Rustboro gym layout (`LAYOUT_RUSTBORO_CITY_GYM`), Ice only in the text.
+  Fuyumi at the back, the two trainers on the way, the guide by the door, two statue signs.
+- **Pokémon Center and Mart:** vanilla layouts. The Center sets the respawn
+  (`HEAL_LOCATION_SHIMOTSUKI`, outside its door); it has no 2F, so its stairs go nowhere.
+- **Kaede's shrine:** shares Route 1's shrine layout (`LAYOUT_EIEN_ROUTE1_SHRINE`); its west
+  arrows lead back to the town's east edge. Kaede sweeps (walking in place) on the path; her
+  grandmother stands by the grass. Its tablet is a placeholder sign (`TODO(design)`: its text and
+  its bit in `QUEST_KAEDE_TABLETS`). Its grass patch has no encounter table, so leveling an
+  Eien Poochyena here needs a Rare Candy (`TODO(design)`: give it its own wild table, or a
+  layout without grass).
+- **Lake path:** 24x22 (`data/layouts/EienRoute2/`, town tileset), connected below the town.
+  The lake fills the middle-west (rows 6-13); the shelter (a house, not enterable) on the far
+  shore; a path round the east side back to the town. Nami's trigger is row 16.
+
+The Mart's stock is a placeholder (Poké Ball, Potion, Antidote, Paralyze Heal, Awakening,
+Ice Heal, Escape Rope; `TODO(design)`).
 
 ## Screenshot check
 
-`TODO` once the maps exist.
+Played through with the mGBA harness (from the lab, warped to Route 1's north end, then on
+foot); shots in `design/art/shimotsuki/`.
+- `1_akira_welcome.png`, `2_akira_center.png`, `3_akira_gym.png`: Akira meets him at the south
+  edge, points out the Pokémon Center, and walks him to the gym door.
+- `4_gym_trainer.png`: the first gym trainer spots him.
+- `5_fuyumi.png`: Fuyumi's intro. `6_badge.png`, `7_tm_hail.png`: the badge, then TM07. For
+  these two, Fuyumi's team was lowered to Lv 2 in a local build so the harness could win; the
+  committed team is as in the table above.
+- `8_pokemon_center.png`, `9_mart.png`: the nurse and the Mart.
+- `10_kaede.png`, `11_grandmother.png`: Kaede's line and her grandmother at the shrine.
+- `12_akira_practice.png`: Akira at the north edge after the badge (the story var set to
+  `STORY_BADGE_1` in the harness); talking starts the battle.
+- `13_lake_path.png` to `17_milestone_end.png`: the lake path, Celebi flickering out, Nami on
+  Lapras ("It's cold. Get on."), the far shore where Celebi comes back, and the end message.
+- `layout.png`, `lake_path_layout.png`: the layouts.

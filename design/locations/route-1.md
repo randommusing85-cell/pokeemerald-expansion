@@ -4,8 +4,8 @@
   `MAP_EIEN_ROUTE1_SHRINE`, entered from a short side path near the Shimotsuki end (a warp; see
   **Maps** below)
 - **Type:** route
-- **Connects to:** Hamakaze to the south, Shimotsuki to the north (no connection until
-  Shimotsuki exists).
+- **Connects to:** Hamakaze to the south, Shimotsuki to the north (a warp: the north edge is
+  north-arrow snow, x 10-13 at row 0, since the town uses a different secondary tileset).
 
 Decided in [brainstorm-route-1.md](../brainstorm-route-1.md).
 
@@ -45,8 +45,8 @@ placeholders (`TODO(design)`).
 | The shrine | Lass (EMI) | Zigzagoon Lv 7, Starly Lv 7 | Visiting the shrine |
 | Near Shimotsuki | Youngster (RIKU, the kid) | Eien Poochyena Lv 8, Snover Lv 7 | "Rock beats Ice. I caught it for Fuyumi." His Poochyena counts as "battled" for the research |
 
-Trainer ids `TRAINER_EIEN_ROUTE1_FISHERMAN` / `_HIKER` / `_LASS` / `_YOUNGSTER` (858-861). They
-leave only 2 spare trainer flags: Shimotsuki's gym needs more room first (`opponents.h`).
+Trainer ids `TRAINER_EIEN_ROUTE1_FISHERMAN` / `_HIKER` / `_LASS` / `_YOUNGSTER` (858-861).
+Shimotsuki took the last 2 spare slots and reuses vanilla ones past that (`opponents.h`).
 
 ## Wild Pokémon
 

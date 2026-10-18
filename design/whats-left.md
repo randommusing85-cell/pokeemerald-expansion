@@ -14,19 +14,15 @@ milestone (prologue through gym 1):
 | --- | --- | --- |
 | Prologue bedroom | [prologue-bedroom.md](locations/prologue-bedroom.md) | The accident, Palkia |
 | Hamakaze (+ Kashiwagi house, lab) | [hamakaze.md](locations/hamakaze.md) | **Built** on a placeholder layout (redraw it in Porymap any time), with the research and Haru's map quest. Still to do: a new game starting here (or in the prologue) |
-| Route 1 + its shrine | [route-1.md](locations/route-1.md) | **Built** on placeholder layouts: trainers, day/night wild tables, items, Haru's notes, the tablet. Still to do: the connection north once Shimotsuki exists; real music |
-| Shimotsuki (+ gym, Pokémon Center, Mart) | [shimotsuki.md](locations/shimotsuki.md) | Akira shows the gym; gym 1 (Fuyumi: Spheal, Bergmite Lv 13-14); Akira's quest step 1 (`QUEST_AKIRA_PRACTICE`); Nami's first meeting just after gym 1 (end of the slice) |
-| Kaede's shrine in Shimotsuki (own small map) | [shimotsuki.md](locations/shimotsuki.md) | Kaede's cameo (sweeping, one blunt line); her grandmother |
+| Route 1 + its shrine | [route-1.md](locations/route-1.md) | **Built** on placeholder layouts: trainers, day/night wild tables, items, Haru's notes, the tablet, the warp north to Shimotsuki. Still to do: real music |
+| Shimotsuki (+ gym, Pokémon Center, Mart), Kaede's shrine, the lake path | [shimotsuki.md](locations/shimotsuki.md) | **Built** on placeholder layouts: Akira shows the gym, gym 1 with badge and TM07, Akira's practice (`QUEST_AKIRA_PRACTICE`), Kaede's cameo and her grandmother, Nami's meeting and the end-of-milestone message. Still to do: a wild table (or no grass) at Kaede's shrine, its tablet text, the badge name, real music, a frozen-lake look |
 
-Once Kaede's shrine map exists, also:
+Open gaps found while building Shimotsuki:
 
-- **Eien Poochyena's evolution** there: a second `EVO_LEVEL` 18 entry with `IF_IN_MAP`, next to
-  the Route 1 shrine's in `src/data/pokemon/species_info/eien_families.h`.
-- **Thin-place list**: add it (and later the door mountain) to `sThinPlaceMaps` in
-  `src/eien_places.c`. The Route 1 shrine is in both already.
-- **Trainer flags:** Route 1 left 2 spare trainer slots (`include/constants/opponents.h`).
-  Shimotsuki's gym needs more: repurpose unused vanilla trainer ids or free flag space first.
-- Fill each map's `MAP_...` constant into its location doc.
+- **White-out before the first Pokémon Center** goes to vanilla Petalburg: Hamakaze and Route 1
+  have no respawn point (`TODO(design)`: where he wakes; the Kashiwagi house?).
+- **Trainer slots:** none spare now. Further trainers reuse vanilla Hoenn slots Eien never
+  reaches, aliased in `include/constants/opponents.h` (four so far).
 
 ## 2. Buildable now, without maps
 
@@ -87,12 +83,16 @@ Once Kaede's shrine map exists, also:
   `design/art/hamakaze/`. Fixed an engine check along the way: an early rival battle with
   `RIVAL_BATTLE_HEAL_AFTER` no longer turns on the FRLG tutorial (and Emerald's Lv 2
   Zigzagoon) in `src/battle_setup.c`.
+- Shimotsuki (town, gym, Pokémon Center, Mart, Kaede's shrine) and the lake path on
+  placeholder layouts: the first milestone's story plays through to `STORY_MET_NAMI`; shots in
+  `design/art/shimotsuki/`. Kaede's shrine is a thin place with Eien Poochyena's second
+  evolution entry.
 - Route 1 and its shrine on placeholder layouts: four trainers, day/night wild tables
   (`OW_TIME_OF_DAY_ENCOUNTERS`), items, Haru's map quest and the professor's research (given in
   Hamakaze), the tablet's lore page (`QUEST_KAEDE_TABLETS`), research tiers set by battles
   (`UpdateResearchAfterBattle`), Eien Poochyena's shrine evolution; shots in
   `design/art/route1/`.
-- Full test suite: 5,407 passed, 0 failed at the handoff.
+- Full test suite: 5,421 passed, 0 failed at the handoff.
 
 ## Working notes for the next chat
 

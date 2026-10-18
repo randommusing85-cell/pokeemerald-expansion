@@ -74,6 +74,11 @@ Promoted into `locations/shimotsuki.md`, `story-outline.md`, `side-quests.md`,
 - Kaede's shrine reuses the shrine tileset; the town uses the town tileset, so the shrine is
   reached by a warp (like Route 1's).
 - Only 2 spare trainer slots: everything past that reuses vanilla Hoenn slots.
+- Found while building: Kaede's shrine shares Route 1's shrine layout, so it has a grass patch
+  but no wild table (an Eien Poochyena can only evolve there with a Rare Candy for now).
+- Found while building: before he reaches Shimotsuki's Pokémon Center there's no Eien respawn
+  point, so a white-out on Route 1 sends him to vanilla Petalburg (`TODO(design)`: where he
+  wakes after a white-out before the first Pokémon Center; the Kashiwagi house?).
 
 ## Parked ideas
 

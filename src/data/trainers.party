@@ -6208,21 +6208,19 @@ Zigzagoon
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ALLEN ===
-Name: ALLEN
-Class: Youngster
-Pic: Youngster
+/* Eien: reuses vanilla ALLEN's slot (Route 102, unreachable in Eien). Shimotsuki gym
+   (design/locations/shimotsuki.md). TODO(design): name and class are placeholders. */
+=== TRAINER_EIEN_SHIMOTSUKI_GYM_1 ===
+Name: TOMO
+Class: Camper
+Pic: Camper
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Taillow
-Level: 3
+Snover
+Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TIMMY ===
@@ -11047,21 +11045,19 @@ Camerupt
 Level: 25
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_TIANA ===
-Name: TIANA
-Class: Lass
-Pic: Lass
+/* Eien: reuses vanilla TIANA's slot (Route 102). Shimotsuki gym. TODO(design): name and
+   class are placeholders. */
+=== TRAINER_EIEN_SHIMOTSUKI_GYM_2 ===
+Name: SAYA
+Class: Picnicker
+Pic: Picnicker
 Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Shroomish
-Level: 4
+Snorunt
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HALEY_1 ===
@@ -11251,21 +11247,22 @@ Wailmer
 Level: 39
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RICK ===
-Name: RICK
-Class: Bug Catcher
-Pic: Bug Catcher
+/* Eien: reuses vanilla RICK's slot (Route 102). Akira's practice battle in Shimotsuki. */
+=== TRAINER_EIEN_AKIRA_PRACTICE_TORCHIC ===
+Name: AKIRA
+Class: Rival
+Pic: Eien Akira
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Wurmple
-Level: 4
+Starly
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wurmple
-Level: 4
+Torchic-Eien
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LYLE ===
@@ -12970,17 +12967,22 @@ Zigzagoon @ Nugget
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DARIAN ===
-Name: DARIAN
-Class: Fisherman
-Pic: Fisherman
+/* Eien: reuses vanilla DARIAN's slot (Route 104). Akira's practice battle in Shimotsuki. */
+=== TRAINER_EIEN_AKIRA_PRACTICE_BULBASAUR ===
+Name: AKIRA
+Class: Rival
+Pic: Eien Akira
 Gender: Male
-Music: Hiker
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Magikarp
-Level: 9
+Starly
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bulbasaur-Eien
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HAILEY ===
@@ -16978,3 +16980,46 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Snover
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+/* Eien: Shimotsuki (design/locations/shimotsuki.md) */
+=== TRAINER_EIEN_AKIRA_PRACTICE_FROAKIE ===
+Name: AKIRA
+Class: Rival
+Pic: Eien Akira
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Starly
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Froakie-Eien
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_EIEN_FUYUMI ===
+Name: FUYUMI
+Class: Leader
+Pic: Eien Fuyumi
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Basic Trainer
+
+Spheal
+Level: 13
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Water Gun
+- Powder Snow
+- Defense Curl
+- Rollout
+
+Bergmite
+Level: 14
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Rock Tomb
+- Powder Snow
+- Curse
+- Harden

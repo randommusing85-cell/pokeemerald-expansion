@@ -608,6 +608,12 @@ gStdScripts_End::
 	.include "data/maps/Hamakaze_Lab/scripts.inc"
 	.include "data/maps/EienRoute1/scripts.inc"
 	.include "data/maps/EienRoute1_Shrine/scripts.inc"
+	.include "data/maps/Shimotsuki/scripts.inc"
+	.include "data/maps/Shimotsuki_Gym/scripts.inc"
+	.include "data/maps/Shimotsuki_PokemonCenter_1F/scripts.inc"
+	.include "data/maps/Shimotsuki_Mart/scripts.inc"
+	.include "data/maps/Shimotsuki_KaedeShrine/scripts.inc"
+	.include "data/maps/EienRoute2/scripts.inc"
 
 .if IS_FRLG
 
