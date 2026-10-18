@@ -75,10 +75,17 @@ plus the vanilla name for now.
 
 **Built so far:** the middle stages' species data (`SPECIES_COMBUSKEN_EIEN`, `_IVYSAUR_EIEN`,
 `_FROGADIER_EIEN`): stats, types, abilities, learnsets, draft dex entries, and the first stages'
-Lv 18 evolutions (tests in `test/eien_journal.c`). They use the vanilla sprites with recolored
-placeholder palettes until their AI drafts are picked (`tools/eien_species/evolved_drafts.py`,
-contact sheet `art/eien_evolved_contact_sheet.png`). The finals aren't built: the middle stages
-don't evolve further yet.
+Lv 18 evolutions (tests in `test/eien_journal.c`), with their sprites. The finals aren't built:
+the middle stages don't evolve further yet.
+
+- **Middle-stage sprites:** picked AI drafts ([art/eien_evolved_drafts.md](art/eien_evolved_drafts.md)):
+  fronts Combusken `3pro_a`, Ivysaur `3pro_b`, Frogadier `3pro_a`; idle frames `3pro_a` /
+  `31flash_a` / `3pro_a`; backs `31flash_b` / `31flash_a` / `3pro_a`
+  (`tools/eien_species/stage_drafts.py`). Shinies carry the first stages' themes (night lantern,
+  twilight, midnight; `shiny_drafts.py`). Icons are the vanilla icons recolored into the Eien icon
+  palette (`make_icons.py`), since the icon drafts came out noisy. Checked in game: evolution,
+  party icon, battle back (shots in `art/eien_combusken/`, `eien_ivysaur/`, `eien_frogadier/`).
+- **Finals:** front-only concept drafts in the same contact sheet (`art/eien_evolved_contact_sheet.png`).
 
 | Form | Look | Stats (total) | Evolution move |
 | --- | --- | --- | --- |
@@ -97,8 +104,8 @@ don't evolve further yet.
   Overgrow / Forewarn, Torrent / Snow Cloak).
 - **Learnsets:** the first stages' new moves carry on; otherwise vanilla.
 - **Shinies:** the first stages' themes carried up (night lantern, twilight, midnight).
-- **Art:** the middle stages in full first (gym 3 needs them: Akira's evolved starter); the
-  finals as front-only drafts to check the concepts, full art later.
+- **Art:** the middle stages in full (done); the finals as front-only drafts to check the
+  concepts, full art later.
 - **Dex entries (drafts, `TODO(design)`):** Eien Combusken (category Festival) dances in front of
   the lantern floats, paper feathers glowing; Eien Ivysaur (Aurora Bud) turns its half-open bud
   to the sky; Eien Frogadier (Snow Scout) walks the drifts in its straw cape and vanishes when

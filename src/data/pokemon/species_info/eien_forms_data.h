@@ -24,11 +24,14 @@ static const u32 sMonBackPic_MightyenaEien[] = INCGFX_U32("graphics/pokemon/eien
 static const u8 sMonIcon_TorchicEien[] = INCGFX_U8("graphics/pokemon/eien/torchic/icon.png", ".4bpp");
 static const u8 sMonIcon_BulbasaurEien[] = INCGFX_U8("graphics/pokemon/eien/bulbasaur/icon.png", ".4bpp");
 static const u8 sMonIcon_FroakieEien[] = INCGFX_U8("graphics/pokemon/eien/froakie/icon.png", ".4bpp");
+static const u8 sMonIcon_CombuskenEien[] = INCGFX_U8("graphics/pokemon/eien/combusken/icon.png", ".4bpp");
+static const u8 sMonIcon_IvysaurEien[] = INCGFX_U8("graphics/pokemon/eien/ivysaur/icon.png", ".4bpp");
+static const u8 sMonIcon_FrogadierEien[] = INCGFX_U8("graphics/pokemon/eien/frogadier/icon.png", ".4bpp");
 static const u8 sMonIcon_PoochyenaEien[] = INCGFX_U8("graphics/pokemon/eien/poochyena/icon.png", ".4bpp");
 static const u8 sMonIcon_MightyenaEien[] = INCGFX_U8("graphics/pokemon/eien/mightyena/icon.png", ".4bpp");
 
-// Middle stages: the picked AI fronts (convert_art.py); the backs are recolored placeholders, the
-// shinies a hue shift and the icons the vanilla ones until their own drafts are picked.
+// Middle stages: the picked AI fronts, idle frames, backs and shinies (convert_art.py); their
+// icons are the vanilla ones recolored into the Eien icon palette (make_icons.py).
 static const u16 sMonPalette_CombuskenEien[] = INCGFX_U16("graphics/pokemon/eien/combusken/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_CombuskenEien[] = INCGFX_U16("graphics/pokemon/eien/combusken/shiny.pal", ".gbapal");
 static const u16 sMonPalette_IvysaurEien[] = INCGFX_U16("graphics/pokemon/eien/ivysaur/normal.pal", ".gbapal");

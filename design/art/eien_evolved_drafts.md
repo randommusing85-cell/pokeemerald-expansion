@@ -1,8 +1,10 @@
 # Evolved Eien starters: AI draft front sprites
 
-**Proposals only, not decided.** Front drafts for the six evolved forms in `variants.md`
-("Evolved stages"). The middle stages are in the game with placeholder sprites (the vanilla ones
-recolored) until a draft is picked; the finals aren't built.
+Front drafts for the six evolved forms in `variants.md` ("Evolved stages").
+
+**Picked and in the game:** Eien Combusken `gemini3pro_a`, Eien Ivysaur `gemini3pro_b`, Eien
+Frogadier `gemini3pro_a`, with their idle frames, backs, shinies and icons (below). The finals'
+drafts are concept checks only; nothing is picked for them yet.
 
 Contact sheet: [`eien_evolved_contact_sheet.png`](eien_evolved_contact_sheet.png) (vanilla first,
 then each converted draft, at 2x).
@@ -72,8 +74,19 @@ its white background removed and cut to 15 colors (`tools/sprite_prep`). Raw out
 | `gemini31flash_a` | Cape and frost, no hat; reads as Frogadier grown up. |
 | `gemini31flash_b` | A big hat that dominates the sprite. |
 
-## After a pick
+## The rest of the middle stages' sprites
 
-For each picked middle stage: `convert_art.py` (front, palette), then frame 2, back, icon and
-shiny drafts as for the first stages, and a credit in `design/asset-credits.md`. The finals stay
-concept drafts until they're built.
+Made with `tools/eien_species/stage_drafts.py` (back, frame2, icon): the vanilla sprite for
+framing and motion plus the picked front, two models, two tries each. Contact sheets:
+`eien_back_drafts_contact_sheet.png`, `eien_frame2_drafts_contact_sheet.png`,
+`eien_icon_drafts_contact_sheet.png` (all three in `eien_middle_stage_drafts_contact_sheet.png`).
+
+| | Combusken | Ivysaur | Frogadier |
+| --- | --- | --- | --- |
+| Back (picked) | `31flash_b`, the only one near the vanilla over-the-shoulder view (the others redrew it as a small full body) | `31flash_a`, the bud fills the frame like the vanilla back | `3pro_a`, big straw cape, close framing |
+| Idle frame (picked) | `3pro_a`, arms spread like vanilla's motion | `31flash_a`, keeps the aurora bud | `3pro_a` |
+| Shiny (default) | night lantern | twilight | midnight |
+| Icon | the vanilla icon recolored into the Eien icon palette: the drafts lost the tiny two-frame layout and were noisy at 1x | same | same |
+
+In-game shots in each `eien_<species>/` folder: `evolution.png`, `evolution_move.png`,
+`party_icon.png`, `battle_back.png`. Credited in `design/asset-credits.md`.

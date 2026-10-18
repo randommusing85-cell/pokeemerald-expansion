@@ -387,7 +387,7 @@
 #endif //P_FAMILY_POOCHYENA
 
 // Eien middle stages (design/variants.md, "Evolved stages"): they evolve from the first
-// stages at Lv 18. Fronts from the picked AI drafts; backs, shinies and icons are placeholders. They don't evolve further yet (the finals aren't built).
+// stages at Lv 18. Sprites from the picked AI drafts; icons recolored into the Eien icon palette. They don't evolve further yet (the finals aren't built).
 
 #if P_FAMILY_TORCHIC
     [SPECIES_COMBUSKEN_EIEN] =
@@ -439,8 +439,8 @@
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = sMonPalette_CombuskenEien,
         .shinyPalette = sMonShinyPalette_CombuskenEien,
-        .iconSprite = gMonIcon_Combusken,
-        .iconPalIndex = 0,
+        .iconSprite = sMonIcon_CombuskenEien,
+        .iconPalIndex = 6,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 8, SHADOW_SIZE_M)
         FOOTPRINT(Combusken)
@@ -518,8 +518,8 @@
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = sMonPalette_IvysaurEien,
         .shinyPalette = sMonShinyPalette_IvysaurEien,
-        .iconSprite = gMonIcon_Ivysaur,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 4,
+        .iconSprite = sMonIcon_IvysaurEien,
+        .iconPalIndex = 6,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 3, SHADOW_SIZE_L)
         FOOTPRINT(Ivysaur)
@@ -587,8 +587,8 @@
         .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = sMonPalette_FrogadierEien,
         .shinyPalette = sMonShinyPalette_FrogadierEien,
-        .iconSprite = gMonIcon_Frogadier,
-        .iconPalIndex = 0,
+        .iconSprite = sMonIcon_FrogadierEien,
+        .iconPalIndex = 6,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(0, 5, SHADOW_SIZE_M)
         FOOTPRINT(Frogadier)
