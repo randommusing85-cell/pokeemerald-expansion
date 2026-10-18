@@ -44,20 +44,22 @@ the record.
 - **The League seed (r2 5a+c):** one quiet line when he loses (draft: "The League likes its
   stories tidy."), and townsfolk gossip about why he quit.
 - **Akira (r2 6a):** battles him at the town entrance before the gym; Akira has just lost to
-  Ibuki and wants a warm-up. His evolved starter at about Lv 20, Starly, and one more.
+  Ibuki and wants a warm-up.
+- **Akira's team (r3 1a):** his starter at Lv 17, unevolved (the evolved Eien starters aren't
+  designed yet), Staravia Lv 18 and Machop Lv 17 (his answer to Ice, learned from his mum's
+  gym). The jump to his evolved starter shows at gym 3.
+- **Pilgrims (r3 2a):** one Fighting Pokémon each: Makuhita and Meditite (foreshadowing
+  Medicham).
+- **Defaults (r3):** Throh: Seismic Toss, Rock Tomb, Bulk Up, Vital Throw. Sawk: Double Kick,
+  Bite, Low Kick, Bulk Up.
 
 ## Leaning
 
 ## Open questions
 
-Round 3, asked:
-
-1. Akira's third Pokémon.
-2. The pilgrims' teams.
-
-Defaults proposed, not asked: Throh: Seismic Toss, Rock Tomb, Bulk Up, Vital Throw. Sawk:
-Double Kick, Bite, Low Kick, Bulk Up. Akira's starter at Lv 20 (evolved), Starly Lv 18
-(Staravia evolves at 14, so a Staravia).
+Still open: the town's name (the gym doc still says "the hot-spring town"); the pilgrims'
+names; Ibuki's dialogue beyond the losing line; his sprites (AI drafts); the evolved Eien
+starters (needed by gym 3).
 
 ## Gaps and tensions
 
