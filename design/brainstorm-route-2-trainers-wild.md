@@ -35,6 +35,16 @@ this file stays as the record.
   Meditite and Eien Hoothoot.
 - **Lake Usurai (r1 6b):** Tomo the Ice Fisher gives an Old Rod after the badge; the lake gets a
   fishing table (Magikarp, Goldeen, Spheal).
+- **The patch (r2 1a+c):** at the end of the lower map; the grass around it is empty (Pokémon
+  flee it). The upper map opens quietly after it.
+- **Trainer spread (r2 2b):** lower map: woodcutter, porter, first pilgrim; upper map, by the
+  vents: charcoal burner (his kiln needs the heat), second pilgrim, the pilgrim pair.
+- **Teams (r2 3c):** porter Machop only (Lv 14); pilgrims Tyrogue; Mankey and Machop; the pair
+  Mankey and Makuhita. Meditite stays for the gym and the wild.
+- **The Hoothoot hint (r2 4a):** the charcoal burner has the vanilla Hoothoot; he works the kilns
+  through the night and has seen the see-through owls.
+- **Hoothoot's evolution (r2 5a):** Lv 20+ at night on the upper map only.
+- **Haru (r2 6a):** only gives the Town Map; no battle.
 
 ## Leaning
 
@@ -42,12 +52,9 @@ this file stays as the record.
 
 ## Gaps and tensions
 
+- Settled in round 2: Hoothoot's evolution map, the patch's place, Haru, the patch's grass.
 - A map has one grass table (settled by r1 1a: two maps).
 - Lake Usurai has no wild table and he has no rod yet (settled by r1 6b).
-- r1 1a: Hoothoot's evolution checks "on its home pass": the upper map only, or both.
-- r1 1a: the patch's place relative to the map join.
-- Haru catches up on the pass: battle or only the Town Map?
-- The thinning patch: Pokémon flee it. Does the grass around it have encounters?
 
 ## Parked ideas
 
