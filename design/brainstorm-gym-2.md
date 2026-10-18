@@ -35,19 +35,29 @@ the record.
   single Pokémon shuts down every answer.
 - **Badge and TM (r1 6a + Brick Break):** the Misogi Badge (the waterfall purification rite)
   and TM31 Brick Break.
+- **The Lv 19 pair (r2 1d):** Throh (carries Rock Tomb) and Sawk (carries Bite): the two
+  uniformed martial-arts Pokémon, like Ibuki's disciples.
+- **Medicham (r2 2c):** Brick Break, Confusion, Meditate, Detect (it previews the TM).
+- **Item (r2 3a):** a Sitrus Berry on Medicham only.
+- **Gym trainers (r2 4b):** two PILGRIMS (a new class, matching the route's pilgrims), here to
+  learn from Ibuki; Lv 17-18. They reuse vanilla trainer slots.
+- **The League seed (r2 5a+c):** one quiet line when he loses (draft: "The League likes its
+  stories tidy."), and townsfolk gossip about why he quit.
+- **Akira (r2 6a):** battles him at the town entrance before the gym; Akira has just lost to
+  Ibuki and wants a warm-up. His evolved starter at about Lv 20, Starly, and one more.
 
 ## Leaning
 
 ## Open questions
 
-Round 2, asked:
+Round 3, asked:
 
-1. The two Lv 19 Pokémon.
-2. Medicham's moves.
-3. Held items.
-4. The two gym trainers.
-5. How the League scepticism shows.
-6. Akira's battle in the town.
+1. Akira's third Pokémon.
+2. The pilgrims' teams.
+
+Defaults proposed, not asked: Throh: Seismic Toss, Rock Tomb, Bulk Up, Vital Throw. Sawk:
+Double Kick, Bite, Low Kick, Bulk Up. Akira's starter at Lv 20 (evolved), Starly Lv 18
+(Staravia evolves at 14, so a Staravia).
 
 ## Gaps and tensions
 
