@@ -53,6 +53,18 @@ name). Decisions move into a location doc when settled; this file stays as the r
   burner) and pilgrims climbing to the falls (Fighting-leaning, previewing the gym).
 - **Haru (r3 6a):** catches up on the route for his map notes and gives the Town Map, closing
   his step 1. Akira's next battle can come at gym 2.
+- **Joining the lake path (r4 1b+d):** a new route map north of the lake path, joined at its
+  north-east by the path round the lake's east side, so it's reachable on foot any time (the
+  far shore is only reached through Nami's scene).
+- **Order along the route (r4 2d):** Haru's handover near the start (warm) → trainers → the
+  thinning patch midway → a quieter stretch with the shrine side path and the Hoothoot grass
+  (night owls, eerie) → the hot-spring town.
+- **Gym 2 inside (r4 3a):** a vanilla gym layout reused for now, Fighting only in the text; a
+  waterfall hall or a climbing gauntlet can come with the Porymap redraw.
+- **The town (r4 4b):** Pokémon Center, Mart, gym, houses, and an inn whose hot spring heals the
+  team (a second heal spot). Yuki's cameo stays on the next route.
+- **Defaults (r4):** placeholder names for the route, town, leader, friendly member and faction;
+  Eien Hoothoot more common at night.
 - **Roadside tablet (r2 5a):** about thin places ("where the snow stops, the gate is near" is
   the direction, not the text). The text is still to write.
 
@@ -60,12 +72,9 @@ name). Decisions move into a location doc when settled; this file stays as the r
 
 ## Open questions
 
-Round 4, asked:
-
-1. How the route joins the lake path.
-2. The order of events along the route.
-3. The Fighting gym's inside.
-4. What the hot-spring town has besides the gym.
+Still open after round 4: the names (route, town, gym 2 leader, the friendly member, the
+faction); the tablet's text; Eien Hoothoot's design (stats, look, research steps); the gym 2
+leader's team; the faction's real look; music.
 
 Defaults proposed, not asked: wild Lv 10-15 on the route, trainers Lv 12-17, gym 2 trainers
 about Lv 17-19 and its ace about Lv 21 (starters evolve at about 18, before gym 2). Texture:
