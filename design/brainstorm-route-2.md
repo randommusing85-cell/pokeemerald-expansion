@@ -40,6 +40,19 @@ name). Decisions move into a location doc when settled; this file stays as the r
 - **Nami (r2 3a):** seen far off crossing the lake on Lapras. No words.
 - **The patch (r2 4a):** midway, on the main path; an unavoidable scene as he passes, then he
   walks around it.
+- **The variant (r3 1a):** Eien Hoothoot, Ghost/Flying: a lantern owl of the night pass.
+  Immune to Fighting moves, hits Fighting with Flying, echoes the thin places. Gets a research
+  entry like Poochyena's.
+- **Gym 2 leader (r3 2c):** a former League fighter who left the League and came to the falls;
+  quietly sceptical of it (a seed for the cover-up, not spelled out). Name open.
+- **Faction look (r3 3b, placeholder):** field gear: headlamps, measuring poles, notebooks.
+  They look like researchers, which is why nobody finds them suspicious.
+- **Friendly member (r3 4a+c):** a young field researcher who loves Pokémon and is fascinated
+  by Celebi; warm and open. Returns at the tournament, clearly on the other side. Name open.
+- **Route trainers (r3 5c):** a mix of locals at their jobs (woodcutter, inn porter, charcoal
+  burner) and pilgrims climbing to the falls (Fighting-leaning, previewing the gym).
+- **Haru (r3 6a):** catches up on the route for his map notes and gives the Town Map, closing
+  his step 1. Akira's next battle can come at gym 2.
 - **Roadside tablet (r2 5a):** about thin places ("where the snow stops, the gate is near" is
   the direction, not the text). The text is still to write.
 
@@ -47,14 +60,12 @@ name). Decisions move into a location doc when settled; this file stays as the r
 
 ## Open questions
 
-Round 3, asked:
+Round 4, asked:
 
-1. Which species becomes the gym 2 variant (it should beat Fighting).
-2. The gym 2 leader's character.
-3. The faction's placeholder look.
-4. Who the friendly member is.
-5. The route's trainers.
-6. Whether Akira or Haru appear on the route.
+1. How the route joins the lake path.
+2. The order of events along the route.
+3. The Fighting gym's inside.
+4. What the hot-spring town has besides the gym.
 
 Defaults proposed, not asked: wild Lv 10-15 on the route, trainers Lv 12-17, gym 2 trainers
 about Lv 17-19 and its ace about Lv 21 (starters evolve at about 18, before gym 2). Texture:
