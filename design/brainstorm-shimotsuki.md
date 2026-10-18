@@ -59,8 +59,18 @@ the location doc when settled; this file stays as the record.
 
 ## Open questions
 
-- Names for the gym trainers, the lake map and the badge (placeholders).
-- Kaede's grandmother: at the shrine with a small-talk line (the doc says "always").
+Round 3 (after the build), asked:
+
+1. Where he wakes after a white-out before Shimotsuki's Pokémon Center.
+2. Kaede's shrine grass: its own wild table, a different one, or no grass.
+3. The direction of Kaede's shrine tablet text.
+4. The badge's name.
+5. The gym trainers' classes and names.
+6. The "frozen" lake vs Lapras swimming across it.
+
+Defaults proposed, not asked (change any): the Mart keeps its placeholder stock (Poké Ball,
+Potion, Antidote, Paralyze Heal, Awakening, Ice Heal, Escape Rope); the lake path stays
+`MAP_EIEN_ROUTE2` until the next route is designed; music waits for a music pass.
 
 Promoted into `locations/shimotsuki.md`, `story-outline.md`, `side-quests.md`,
 `progression.md` and `whats-left.md`.
@@ -79,6 +89,10 @@ Promoted into `locations/shimotsuki.md`, `story-outline.md`, `side-quests.md`,
 - Found while building: before he reaches Shimotsuki's Pokémon Center there's no Eien respawn
   point, so a white-out on Route 1 sends him to vanilla Petalburg (`TODO(design)`: where he
   wakes after a white-out before the first Pokémon Center; the Kashiwagi house?).
+- Found in round 3: experience counts toward the shrine evolution only from battles fought on
+  the shrine map, so a shrine with no grass and no trainer can only evolve Poochyena by Rare
+  Candy.
+- Found in round 3: the docs call the lake frozen, but Nami's Lapras swims across it.
 
 ## Parked ideas
 
