@@ -135,7 +135,8 @@ EienRoute2_EventScript_Sign::
 @ Nami's "It's cold. Get on." is decided (brainstorm-shimotsuki.md); the rest are drafts
 @ (TODO(design)), including the end-of-milestone message.
 EienRoute2_Text_Lake:
-	.string "(A frozen lake…)$"
+	.string "(The lake's frozen at the edges.\n"
+	.string "The middle's black water.)$"
 
 EienRoute2_Text_CelebiFading:
 	.string "(Celebi? It's flickering.\n"

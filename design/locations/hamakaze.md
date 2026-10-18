@@ -28,7 +28,7 @@ Act 1 beats 1-3 in [story-outline.md](../story-outline.md).
 | Fisherman | beach (4,15) | always | Flavor line |
 | Villager | town (9,11), wanders | always | Points to the Kashiwagi house, later the lab |
 | Professor Kashiwagi | lab | | Offers the three starters |
-| Kashiwagi's husband | house | | Runs the household that takes him in. `TODO(design)`: name |
+| Kashiwagi's husband | house | | Runs the household that takes him in. Heals the team after a white-out: "Back again? Sit. I'll see to them." `TODO(design)`: name |
 | Haru Kashiwagi | house / lab | | First friend; takes the third starter |
 | Akira | lab | | Takes the starter strong against the player's; battles right after |
 | Journal | - | taken in | Opens from the start menu (in place of the PokéNav). First page: "My name is (player). I'm from another world. If I start forgetting, read this." |
@@ -71,6 +71,15 @@ here that the docs didn't settle, all easy to change:
 | --- | --- | --- |
 | Journal (start menu entry, `FLAG_RECEIVED_JOURNAL`) | given | no |
 | Poké Ball ×5 | given by the professor with the research | no |
+
+## White-out
+
+Until he reaches Shimotsuki's Pokémon Center, a white-out brings him back to the Kashiwagi house,
+facing her husband, who heals the team (`HEAL_LOCATION_HAMAKAZE`; respawn at (1,6) in the house).
+The respawn is set when he leaves the lab with his starter and whenever he enters the house; the
+Pokémon Center sets it to Shimotsuki from then on. The black-screen text is the engine's
+"scurried back home" one. The engine side is a small edit marked `// Eien` in
+`src/heal_location.c` and `src/field_screen_effect.c`.
 
 ## Flags and vars
 

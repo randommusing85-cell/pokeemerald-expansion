@@ -120,6 +120,7 @@ Hamakaze_Lab_EventScript_AfterBattle::
 	waitmovement 0
 	removeobject LOCALID_LAB_AKIRA
 	setvar VAR_EIEN_STORY, STORY_GOT_STARTER
+	setrespawn HEAL_LOCATION_HAMAKAZE
 	@ The professor's Poochyena research (side-quests E1, route-1.md)
 	msgbox Hamakaze_Lab_Text_Research, MSGBOX_DEFAULT
 	giveitem ITEM_POKE_BALL, 5

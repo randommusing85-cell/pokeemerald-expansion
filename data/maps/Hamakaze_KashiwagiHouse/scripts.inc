@@ -9,8 +9,25 @@ Hamakaze_KashiwagiHouse_MapScripts::
 	.byte 0
 
 Hamakaze_KashiwagiHouse_OnTransition:
+	@ His home: a white-out before Shimotsuki's Pokémon Center brings him back here
+	call_if_ge VAR_EIEN_STORY, STORY_TAKEN_IN, Hamakaze_KashiwagiHouse_EventScript_SetRespawn
 	call_if_ge VAR_EIEN_STORY, STORY_TAKEN_IN, Hamakaze_KashiwagiHouse_EventScript_HideProfessor
 	call_if_eq VAR_EIEN_STORY, STORY_TAKEN_IN, Hamakaze_KashiwagiHouse_EventScript_HideHaru
+	end
+
+Hamakaze_KashiwagiHouse_EventScript_SetRespawn:
+	setrespawn HEAL_LOCATION_HAMAKAZE
+	return
+
+@ After a white-out (src/field_screen_effect.c): he's back at the house, facing her husband.
+EventScript_AfterWhiteOutKashiwagiHeal::
+	lockall
+	applymovement LOCALID_KASHIWAGI_HOUSE_HUSBAND, Common_Movement_WalkInPlaceFasterDown
+	waitmovement 0
+	msgbox Hamakaze_KashiwagiHouse_Text_HusbandHeal, MSGBOX_DEFAULT
+	call Common_EventScript_OutOfCenterPartyHeal
+	fadedefaultbgm
+	releaseall
 	end
 
 Hamakaze_KashiwagiHouse_EventScript_HideProfessor:
@@ -133,3 +150,8 @@ Hamakaze_KashiwagiHouse_Text_MakeYourselfAtHome:
 Hamakaze_KashiwagiHouse_Text_HaruAfterStarter:
 	.string "HARU: Mine's still shy.\n"
 	.string "Yours already looks tough.$"
+
+@ Decided in brainstorm-shimotsuki.md (r4 2a); a draft line.
+Hamakaze_KashiwagiHouse_Text_HusbandHeal:
+	.string "Back again? Sit.\n"
+	.string "I'll see to them.$"

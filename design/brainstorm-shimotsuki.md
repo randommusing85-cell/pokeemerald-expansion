@@ -71,13 +71,17 @@ the location doc when settled; this file stays as the record.
 - **Healer (r4 2a):** Kashiwagi's husband: "Back again? Sit. I'll see to them." (draft line,
   warm and practical).
 - **Gym trainers (r4 3a):** classes ICE FISHER (Snover Lv 9) and SNOW SHOVELER (Snorunt
-  Lv 10); names TOMO and SAYA stay placeholders.
+  Lv 10); names TOMO and SAYA stay placeholders. Built as SHOVELER: the engine's class names
+  hold 12 letters and "SNOW SHOVELER" is 13.
+- **Shrine levels (default when building):** Lv 9-12; day Eien Poochyena 90%, Duskull 10%;
+  night 60% / 40%.
 
 ## Leaning
 
 ## Open questions
 
-Still open after round 4: the tablet's text (the stone dogs on aurora nights), the gym
+Rounds 3-4 promoted into `locations/shimotsuki.md`, `locations/hamakaze.md` and
+`progression.md`. Still open after round 4: the tablet's text (the stone dogs on aurora nights), the gym
 trainers' real names, the husband's name, the ice-rim art, the badge icon, music.
 
 Defaults proposed, not asked (change any): the Mart keeps its placeholder stock (Poké Ball,
