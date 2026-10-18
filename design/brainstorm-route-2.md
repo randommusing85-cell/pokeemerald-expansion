@@ -40,7 +40,8 @@ name). Decisions move into a location doc when settled; this file stays as the r
 - **Nami (r2 3a):** seen far off crossing the lake on Lapras. No words.
 - **The patch (r2 4a):** midway, on the main path; an unavoidable scene as he passes, then he
   walks around it.
-- **The variant (r3 1a):** Eien Hoothoot, Ghost/Flying: a lantern owl of the night pass.
+- **The variant (r3 1a):** Eien Hoothoot, Ghost/Flying: a lantern owl of the night pass (later
+  redesigned as a half-faded owl, see brainstorm-eien-hoothoot.md).
   Immune to Fighting moves, hits Fighting with Flying, echoes the thin places. Gets a research
   entry like Poochyena's.
 - **Gym 2 leader (r3 2c):** a former League fighter who left the League and came to the falls;

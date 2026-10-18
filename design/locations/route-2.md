@@ -65,8 +65,9 @@ previewing the gym). Lv 12-17 (default). `TODO(design)`: count, teams, names.
 
 ## Wild Pokémon
 
-Lv 10-15 (default). Eien Hoothoot in the grass near the town end, more common at night, the
-route's one notable Pokémon. `TODO(design)`: the rest of the tables.
+Lv 10-15 (default). Eien Hoothoot in the grass near the town end, the route's one notable
+Pokémon: about 10% by day, 30% at night ([variants.md](../variants.md)). It evolves here: Lv 20+
+at night on this route. `TODO(design)`: the rest of the tables.
 
 ## Items
 

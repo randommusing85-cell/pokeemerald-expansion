@@ -49,7 +49,7 @@ move into `variants.md` when settled; this file stays as the record.
 
 ## Open questions
 
-Still open after round 2: the dex entries (drafted at build time), the roadside tablet's
+Promoted into `variants.md` and `locations/route-2.md`. Still open after round 2: the dex entries (drafted at build time), the roadside tablet's
 hint for the night-pass rule (part of the tablet text), the exact rates fitted to the land
 slots.
 

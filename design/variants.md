@@ -71,7 +71,7 @@ in the code).
 | Pokémon | Eien type | Idea | Where first |
 | --- | --- | --- | --- |
 | Poochyena | Rock/Dark | A stone shrine guardian dog (komainu), touched by the fading. Beats the Ice gym. | Route 1 (common, ~20%) |
-| Hoothoot | Ghost/Flying | A lantern owl of the night pass, touched by the fading. Immune to Fighting moves; beats the Fighting gym. Planned, not built: stats, look, abilities, evolution method and research steps are `TODO(design)` ([brainstorm-route-2.md](brainstorm-route-2.md)) | Route 2's mountain pass, grass near the town end, more common at night |
+| Hoothoot | Ghost/Flying | A half-faded owl of the night pass: its wings and tail fade into mist, only the face and glowing eyes are solid. Touched by the fading. Immune to Fighting moves; beats the Fighting gym. | Route 2's mountain pass, grass near the town end (about 10% by day, 30% at night) |
 
 - **Eien Poochyena:** 35 / 55 / 50 / 25 / 30 / 25 (35 / 55 / 35 / 30 / 30 / 35), 220.
   Abilities Intimidate / Sturdy / Stakeout (hidden). New early moves: Rock Throw (7), Rock
@@ -105,6 +105,25 @@ in the code).
   under the aurora ([side-quests.md](side-quests.md), Kaede step 2 and E3).
 
 `TODO(design)`: Eien Mightyena's dex entry (a draft is in the code).
+
+- **Eien Hoothoot** (designed, not built): 50 / 30 / 26 / 60 / 36 / 60 (60 / 30 / 30 / 36 / 56 /
+  50), 262: a fast special attacker. Abilities Insomnia / Frisk / Cursed Body (hidden). New
+  moves: Astonish (1), Gust (6, replacing Echoed Voice), Ominous Wind (15, replacing Defog);
+  otherwise vanilla (Confusion 9, Reflect 12, Air Slash 18).
+- **Evolves** into Eien Noctowl by leveling up to 20+ at night on its home pass (Route 2's
+  mountain pass): an evolution entry with both the time (`IF_TIME`) and map conditions. The
+  journal notes one that reaches Lv 20 without evolving, like Eien Poochyena's note (it needs
+  its own flag, and the research page may need to scroll). The roadside tablet on the pass
+  can hint at the rule (`TODO(design)`: its text).
+- **Eien Noctowl:** 90 / 50 / 46 / 110 / 76 / 80 (100 / 50 / 50 / 86 / 96 / 70), 452: the same
+  shift. Same abilities. Learns Hex on evolving. Look: shrouded, the faded wings stretched into
+  long trailing veils that drift behind it like a funeral shroud.
+- **Research:** seen / battled / caught, like Eien Poochyena's (side-quests E2).
+- **Shiny:** aurora mist, green-violet instead of grey, for both stages.
+- **Sprites:** AI drafts through `tools/eien_species/`, like Eien Poochyena's.
+  `TODO(design)`: both dex entries (drafted at build time).
+
+Decided in [brainstorm-eien-hoothoot.md](brainstorm-eien-hoothoot.md).
 
 ### Shrine areas
 
