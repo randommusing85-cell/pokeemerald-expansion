@@ -105,6 +105,8 @@ BEHAVIORS = {
     ("cinna", 6, 23): "MB_TALL_GRASS",        # snow-buried plant (metatile 0x206): Route 1's grass
     ("cinna", 1, 28): "MB_EAST_ARROW_WARP",   # snow (0x211): walk east to warp (Route 1 -> its shrine)
     ("cinna", 2, 28): "MB_WEST_ARROW_WARP",   # snow (0x212): walk west to warp (the shrine -> Route 1)
+    ("cinna", 6, 28): "MB_NORTH_ARROW_WARP",  # snow (0x216): walk north to warp (Route 1 -> Shimotsuki)
+    ("cinna", 7, 28): "MB_SOUTH_ARROW_WARP",  # snow (0x217): walk south to warp (Shimotsuki -> Route 1)
 }
 DOOR_SHEETS = ("DoorsSnow", "DoorsSnow2")  # columns are door styles; rows closed, opening x2, open
 

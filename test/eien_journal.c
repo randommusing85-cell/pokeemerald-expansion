@@ -41,18 +41,20 @@ TEST("(Eien journal) the no-evolution note stays once noted")
 }
 
 // Eien Poochyena evolves only in a shrine area (design/variants.md, "Shrine areas").
-TEST("(Eien species) Eien Poochyena evolves at Lv 18 only at the Route 1 shrine")
+TEST("(Eien species) Eien Poochyena evolves at Lv 18 only at a shrine")
 {
-    u32 map, level;
+    u32 map, level, shrine;
     struct Pokemon mon;
 
-    PARAMETRIZE { map = MAP_EIEN_ROUTE1_SHRINE; level = 18; }
-    PARAMETRIZE { map = MAP_EIEN_ROUTE1_SHRINE; level = 17; }
-    PARAMETRIZE { map = MAP_EIEN_ROUTE1;        level = 18; }
+    PARAMETRIZE { map = MAP_EIEN_ROUTE1_SHRINE;      level = 18; shrine = TRUE; }
+    PARAMETRIZE { map = MAP_EIEN_ROUTE1_SHRINE;      level = 17; shrine = TRUE; }
+    PARAMETRIZE { map = MAP_SHIMOTSUKI_KAEDE_SHRINE; level = 18; shrine = TRUE; }
+    PARAMETRIZE { map = MAP_EIEN_ROUTE1;             level = 18; shrine = FALSE; }
+    PARAMETRIZE { map = MAP_SHIMOTSUKI;              level = 18; shrine = FALSE; }
 
     gSaveBlock1Ptr->location.mapGroup = MAP_GROUP(map);
     gSaveBlock1Ptr->location.mapNum = MAP_NUM(map);
     CreateMon(&mon, SPECIES_POOCHYENA_EIEN, level, 0, OTID_STRUCT_PRESET(0));
     EXPECT_EQ(GetEvolutionTargetSpecies(&mon, EVO_MODE_NORMAL, ITEM_NONE, NULL, NULL, CHECK_EVO),
-              (map == MAP_EIEN_ROUTE1_SHRINE && level >= 18) ? SPECIES_MIGHTYENA_EIEN : SPECIES_NONE);
+              (shrine && level >= 18) ? SPECIES_MIGHTYENA_EIEN : SPECIES_NONE);
 }
