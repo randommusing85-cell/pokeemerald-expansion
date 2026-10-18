@@ -57,7 +57,8 @@ the record.
 
 ## Open questions
 
-Still open: the town's name (the gym doc still says "the hot-spring town"); the pilgrims'
+Promoted into `characters.md`, `progression.md`, `story-outline.md` and
+`locations/onsen-town.md`. Still open: the town's name (the gym doc still says "the hot-spring town"); the pilgrims'
 names; Ibuki's dialogue beyond the losing line; his sprites (AI drafts); the evolved Eien
 starters (needed by gym 3).
 

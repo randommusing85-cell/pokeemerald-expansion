@@ -11,7 +11,7 @@ gyms 5-8 → Pokémon League (Minato's plan interrupts the Elite Four) → door 
 | Badge | Leader | Unlocks | Gate the player passes after |
 | --- | --- | --- | --- |
 | 1 | Fuyumi (Ice), Shimotsuki | Hoarfrost Badge; Fuyumi also gives TM07 Hail. `TODO(design)`: what it unlocks | `TODO(design)` |
-| 2 | `TODO(design)` (Fighting), the hot-spring town | `TODO(design)` | `TODO(design)` |
+| 2 | Ibuki (Fighting), the hot-spring town | Misogi Badge; Ibuki also gives TM31 Brick Break. `TODO(design)`: what it unlocks | `TODO(design)` |
 | 3-8 | `TODO(design)` | | |
 
 Every gate is enforced by a flag or var; list it in the location doc that checks it.
@@ -23,7 +23,7 @@ Every gate is enforced by a flag or var; list it in the location doc that checks
 | Route 1 | 2-5 | 5-8 | |
 | Gym 1 | | 9-11 | 13-14 (Bergmite) |
 | Route 2 (the pass) | 10-15 | 12-17 | |
-| Gym 2 | | 17-19 | about 21 |
+| Gym 2 | | 17-19 (Akira 17-18) | 21 (Medicham) |
 
 All levels are proposed defaults; adjust after playtesting.
 

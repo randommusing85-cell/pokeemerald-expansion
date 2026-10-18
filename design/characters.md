@@ -112,7 +112,7 @@ points, Tetsu and Ren come too.
 | # | Town | Leader | Type | Personality | Ace | Level |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Shimotsuki | Fuyumi | Ice | Stern veteran in the gym, softer at home with Akira. Akira's mother; dies at the tournament. | Bergmite (with Spheal) | 13-14 |
-| 2 | The hot-spring town | `TODO(design)` | Fighting | A former League fighter who left the League and trains under the falls, like Tohoku's mountain ascetics. Quietly sceptical of the League (a seed for the cover-up, not spelled out). | `TODO(design)` | about 21 |
+| 2 | The hot-spring town | Ibuki (man, 40s) | Fighting | A former League fighter who walked away after a season that ended badly and won't say why. Trains under the hot waterfalls, like Tohoku's mountain ascetics. Quietly sceptical of the League (a seed for the cover-up, not spelled out). | Medicham (with Throh, Sawk) | 19-21 |
 | 3-8 | | `TODO(design)` | | | | |
 
 ## Champion
