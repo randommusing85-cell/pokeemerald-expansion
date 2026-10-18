@@ -24,18 +24,30 @@ the record.
 
 ## Decided
 
+- **Who (r1 1a):** a man in his 40s who walked away from the League after a season that ended
+  badly. He doesn't say why.
+- **Name (r1 2b):** Ibuki (伊吹, "breath"; breath control is central to waterfall training).
+- **Team size (r1 3b):** three: Lv 19, 19, 21.
+- **Ace (r1 4c):** Medicham (Fighting/Psychic), the meditating ascetic; under its usual
+  evolution level, as gym aces often are. Its Psychic weakness keeps the Hoothoot plan fair.
+- **Coverage (r1 5a):** one coverage move per Pokémon, spread out: Rock Tomb on one (hits
+  Hoothoot and the Torchic line), Bite on another, the ace's own Psychic on the third. No
+  single Pokémon shuts down every answer.
+- **Badge and TM (r1 6a + Brick Break):** the Misogi Badge (the waterfall purification rite)
+  and TM31 Brick Break.
+
 ## Leaning
 
 ## Open questions
 
-Round 1, asked:
+Round 2, asked:
 
-1. Who the leader is (age, gender, why they left the League).
-2. The name.
-3. Team size.
-4. The ace.
-5. The coverage moves.
-6. The badge's name and the TM.
+1. The two Lv 19 Pokémon.
+2. Medicham's moves.
+3. Held items.
+4. The two gym trainers.
+5. How the League scepticism shows.
+6. Akira's battle in the town.
 
 ## Gaps and tensions
 
