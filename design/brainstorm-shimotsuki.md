@@ -37,13 +37,33 @@ the location doc when settled; this file stays as the record.
 - **Nami's meeting (r1 6b):** past town, Celebi suddenly fades and drops at a frozen lake's
   edge; Nami's Lapras carries them across to shelter. The fading's first appearance, not
   explained.
+- **The lake (r2 1a):** a small new map just north of Shimotsuki: a snowy path ending at a
+  frozen lake, the seed of the next route (name a placeholder).
+- **Nami's scene (r2 2a):** Celebi flickers and drops at the lake's edge; Nami arrives on
+  Lapras ("It's cold. Get on."); a fade, then the far shore at a small shelter where Celebi
+  recovers; she says a little (her name, she's heading the same way) and leaves. No battle.
+  Then `STORY_MET_NAMI` and an end-of-milestone message.
+- **Gym trainers (r2 3b):** Lv 9 Snover, Lv 10 Snorunt; one Pokémon each, a short line about
+  the cold.
+- **Badge reward (r2 4a, then changed):** the badge and a TM. Icy Wind isn't a TM in the engine
+  (it's a tutor move), so the reward is TM07 Hail instead (picked after the round).
+- **Akira's practice (r2 5c):** at the town's north edge on his way out; only if you talk to
+  him. His starter Lv 14 and Starly Lv 11; afterwards a short line about watching League
+  matches with his mum.
+- **Town NPCs and music (r2 6b):** a few locals (snow shoveller, a kid by the gym, an older
+  person by the Pokémon Center), plain lines, one that sets up Fuyumi's softer side
+  ("She makes the best stew in town"). Music placeholders: Lavaridge for the town, the gym
+  theme, a quiet track for Nami's scene.
 
 ## Leaning
 
 ## Open questions
 
-- Round 2: where the lake is, Nami's scene beats, gym trainers' teams, the badge reward,
-  Akira's practice battle, the town's NPCs and music.
+- Names for the gym trainers, the lake map and the badge (placeholders).
+- Kaede's grandmother: at the shrine with a small-talk line (the doc says "always").
+
+Promoted into `locations/shimotsuki.md`, `story-outline.md`, `side-quests.md`,
+`progression.md` and `whats-left.md`.
 
 ## Gaps and tensions
 

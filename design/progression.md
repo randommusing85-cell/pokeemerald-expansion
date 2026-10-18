@@ -9,7 +9,7 @@ gyms 5-8 → Pokémon League (Minato's plan interrupts the Elite Four) → door 
 
 | Badge | Leader | Unlocks | Gate the player passes after |
 | --- | --- | --- | --- |
-| 1 | Fuyumi (Ice), Shimotsuki | `TODO(design)` | `TODO(design)` |
+| 1 | Fuyumi (Ice), Shimotsuki | `TODO(design)` (badge name; Fuyumi also gives TM07 Hail) | `TODO(design)` |
 | 2-8 | `TODO(design)` | | |
 
 Every gate is enforced by a flag or var; list it in the location doc that checks it.
