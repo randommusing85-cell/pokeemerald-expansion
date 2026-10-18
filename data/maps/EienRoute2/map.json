@@ -76,6 +76,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0",
       "flag": "FLAG_TEMP_2"
+    },
+    {
+      "local_id": "LOCALID_EIEN_ROUTE2_TOMO",
+      "graphics_id": "OBJ_EVENT_GFX_EIEN_SNOW_TRAINER",
+      "x": 17,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EienRoute2_EventScript_Tomo",
+      "flag": "FLAG_TEMP_3"
     }
   ],
   "warp_events": [],

@@ -60,7 +60,7 @@
 #define FLAG_ITEM_EIEN_ROUTE1_POKE_BALL 0x26 // Eien: Route 1's Poké Ball
 #define FLAG_ITEM_EIEN_ROUTE1_ICE_HEAL  0x27 // Eien: Route 1's Ice Heal, near the shrine path
 #define FLAG_RECEIVED_TM_HAIL_EIEN      0x28 // Eien: Fuyumi gave TM07 Hail (gym 1)
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
+#define FLAG_RECEIVED_OLD_ROD_EIEN      0x29 // Eien: Tomo gave the Old Rod at Lake Usurai
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag

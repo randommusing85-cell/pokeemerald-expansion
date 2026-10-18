@@ -879,6 +879,13 @@
 #define TRAINER_EIEN_SHIMOTSUKI_GYM_2        TRAINER_TIANA   // Route 102
 #define TRAINER_EIEN_AKIRA_PRACTICE_TORCHIC  TRAINER_RICK    // Route 102
 #define TRAINER_EIEN_AKIRA_PRACTICE_BULBASAUR TRAINER_DARIAN // Route 104
+// Route 2 (design/locations/route-2.md)
+#define TRAINER_EIEN_ROUTE2_WOODCUTTER       TRAINER_ANDREW  // Route 103
+#define TRAINER_EIEN_ROUTE2_PORTER           TRAINER_MARCOS  // Route 103
+#define TRAINER_EIEN_ROUTE2_PILGRIM_1        TRAINER_HUEY    // Route 109
+#define TRAINER_EIEN_ROUTE2_CHARCOALER       TRAINER_EDMOND  // Route 109
+#define TRAINER_EIEN_ROUTE2_PILGRIM_2        TRAINER_BRENT   // Route 119
+#define TRAINER_EIEN_ROUTE2_PILGRIM_PAIR     TRAINER_DONALD  // Route 119, a double battle
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is no space for additional trainers before trainer flag space overflows (Eien has used all of the original 9)
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

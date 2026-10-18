@@ -107,9 +107,12 @@ pass joins it at the north-east, by the path round the lake's east side
 - The lake is frozen at the edges with open dark water in the middle, which Lapras swims. On
   the map it's plain water for now (`TODO(art)`: an ice-rim tile). Before gym 1 the path is open
   but nothing happens there.
-- **Fishing:** after the badge, Tomo the Ice Fisher stands on the lake shore and gives the Old
-  Rod ([brainstorm-route-2-trainers-wild.md](../brainstorm-route-2-trainers-wild.md)). The lake's Old Rod table: Magikarp 60%, Goldeen
-  30%, Spheal 10%, one table for day and night. `TODO(design)`: Tomo's line.
+- **Fishing:** after the badge, Tomo the Ice Fisher leaves the gym (his object hides on
+  `FLAG_BADGE01_GET`) and stands on the lake's east shore at (17,10), facing the water, and gives
+  the Old Rod once (`FLAG_RECEIVED_OLD_ROD_EIEN`, taken from `FLAG_UNUSED_0x029`; his lines are
+  drafts) ([brainstorm-route-2-trainers-wild.md](../brainstorm-route-2-trainers-wild.md)). The lake's Old Rod table: Magikarp 60%, Goldeen
+  30%, Spheal 10%, one table for day and night. The fishing table isn't built yet: the Old Rod has only two slots, fixed at 70% and 30% for
+every map, so 60 / 30 / 10 can't land as written (`TODO(design)`).
 
 ## Maps
 
@@ -171,3 +174,5 @@ foot); shots in `design/art/shimotsuki/`.
   `23_husband_heals.png` (a white-out before Shimotsuki: back home, healed). `6_badge.png` now
   shows the Hoarfrost Badge.
 - `layout.png`, `lake_path_layout.png`: the layouts.
+- After the Route 2 trainer build: `24_tomo_old_rod.png` (after the badge, Tomo on Lake
+  Usurai's east shore gives the Old Rod).

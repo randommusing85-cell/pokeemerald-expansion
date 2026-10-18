@@ -66,14 +66,23 @@ unique to the gym and the wild. Vanilla level-up moves. Names are placeholders w
 (`TODO(design)`), and so are their lines. No spare trainer slots: these reuse vanilla Hoenn
 slots (`include/constants/opponents.h`).
 
-| Map | Trainer | Class | Team (levels) | Notes |
+| Map | Trainer (placeholder name) | Class | Team (levels) | Notes |
 | --- | --- | --- | --- | --- |
-| Lower | Woodcutter | Woodcutter | Pineco Lv 12, Timburr Lv 13 | Local |
-| Lower | Inn porter | Porter | Machop Lv 14 | Local, carrying baskets up to the inn |
-| Lower | Pilgrim 1 | Pilgrim | Tyrogue Lv 14 | Sets up the Fighting theme early |
-| Upper | Charcoal burner | Charcoaler | Slugma Lv 15, Hoothoot Lv 15 | By the vents (his kiln needs the heat). He works the kilns through the night: the owls up here look see-through at night. Sets up Eien Hoothoot |
-| Upper | Pilgrim 2 | Pilgrim | Mankey Lv 15, Machop Lv 16 | |
-| Upper | Pilgrim pair | Pilgrim (double battle) | Mankey Lv 16, Makuhita Lv 17 | Fighting double play before Throh and Sawk |
+| Lower | Woodcutter (TAKESHI) | Woodcutter | Pineco Lv 12, Timburr Lv 13 | Local |
+| Lower | Inn porter (JIRO) | Porter | Machop Lv 14 | Local, carrying baskets up to the inn |
+| Lower | Pilgrim 1 (KOJI) | Pilgrim | Tyrogue Lv 14 | Sets up the Fighting theme early |
+| Upper | Charcoal burner (SABURO) | Charcoaler | Slugma Lv 15, Hoothoot Lv 15 | By the vents (his kiln needs the heat). He works the kilns through the night: the owls up here look see-through at night. Sets up Eien Hoothoot |
+| Upper | Pilgrim 2 (MIKA) | Pilgrim | Mankey Lv 15, Machop Lv 16 | |
+| Upper | Pilgrim pair (RYO & YUI) | Pilgrim (double battle) | Mankey Lv 16, Makuhita Lv 17 | Fighting double play before Throh and Sawk |
+
+**Built** (not yet placed: the maps don't exist): the classes (`TRAINER_CLASS_WOODCUTTER` /
+`_PORTER` / `_CHARCOALER` / `_PILGRIM`, `include/constants/trainers.h`, names in
+`src/battle_main.c`) and the trainers `TRAINER_EIEN_ROUTE2_WOODCUTTER`, `_PORTER`,
+`_PILGRIM_1`, `_CHARCOALER`, `_PILGRIM_2`, `_PILGRIM_PAIR` (the double battle: place it with
+`trainerbattle_double`). They take vanilla ANDREW, MARCOS (Route 103), HUEY, EDMOND (Route
+109), BRENT and DONALD (Route 119). Battle pics reuse vanilla ones for now: Hiker
+(woodcutter), Ruin Maniac (porter, a big pack), Kindler (charcoal burner), Black Belt
+(pilgrim 1, the pair) and Battle Girl (pilgrim 2). Overworld sprites: `TODO(design)`.
 
 ## Wild Pokémon
 
@@ -107,4 +116,6 @@ The grass around the thinning patch is empty.
 
 ## Screenshot check
 
-`TODO` once the maps exist.
+`TODO` once the maps exist. Checked so far: a debug battle against the charcoal burner
+("CHARCOALER SABURO", Slugma Lv 15) and the pilgrim pair as a double battle (Mankey Lv 16,
+Makuhita Lv 17): `design/art/route2/trainer_battles.png`.

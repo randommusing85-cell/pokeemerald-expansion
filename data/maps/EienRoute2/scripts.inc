@@ -1,5 +1,5 @@
-@ The lake path north of Shimotsuki (design/locations/shimotsuki.md); "Route 2" is a placeholder
-@ name. Act 1 beat 6: Nami. After gym 1 (STORY_BADGE_1), VAR_TEMP_1 arms the coord events on
+@ Lake Usurai, the lake path north of Shimotsuki (design/locations/shimotsuki.md; constant MAP_EIEN_ROUTE2).
+@ Act 1 beat 6: Nami. After gym 1 (STORY_BADGE_1), VAR_TEMP_1 arms the coord events on
 @ row 16, just short of the lake. Celebi flickers and drops; Nami arrives on Lapras and takes him
 @ across. The far shore is a warp onto this same map, so VAR_EIEN_SCENE = 1 carries the scene
 @ over it: FLAG_TEMP_1 hides the first Nami and Lapras, FLAG_TEMP_2 the pair on the far shore.
@@ -12,7 +12,9 @@ EienRoute2_MapScripts::
 EienRoute2_OnTransition:
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2
+	setflag FLAG_TEMP_3
 	setvar VAR_TEMP_1, 0
+	call_if_set FLAG_BADGE01_GET, EienRoute2_EventScript_ShowTomo
 	call_if_eq VAR_EIEN_STORY, STORY_BADGE_1, EienRoute2_EventScript_ArmNami
 	call_if_eq VAR_EIEN_SCENE, 1, EienRoute2_EventScript_ShowFarShore
 	end
@@ -23,6 +25,12 @@ EienRoute2_EventScript_ArmNami::
 
 EienRoute2_EventScript_ShowFarShore::
 	clearflag FLAG_TEMP_2
+	return
+
+@ After the badge Tomo, the gym's Ice Fisher, fishes from the east shore (FLAG_TEMP_3 hides him
+@ before it) and gives the Old Rod (brainstorm-route-2-trainers-wild.md, r3 3b).
+EienRoute2_EventScript_ShowTomo::
+	clearflag FLAG_TEMP_3
 	return
 
 EienRoute2_OnFrame:
@@ -128,6 +136,23 @@ EienRoute2_Movement_NamiLeaves:
 	walk_right
 	step_end
 
+EienRoute2_EventScript_Tomo::
+	lock
+	faceplayer
+	goto_if_set FLAG_RECEIVED_OLD_ROD_EIEN, EienRoute2_EventScript_TomoAfterRod
+	msgbox EienRoute2_Text_TomoGiveRod, MSGBOX_DEFAULT
+	giveitem ITEM_OLD_ROD
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_RECEIVED_OLD_ROD_EIEN
+	msgbox EienRoute2_Text_TomoExplainRod, MSGBOX_DEFAULT
+	release
+	end
+
+EienRoute2_EventScript_TomoAfterRod::
+	msgbox EienRoute2_Text_TomoAfterRod, MSGBOX_DEFAULT
+	release
+	end
+
 EienRoute2_EventScript_Sign::
 	msgbox EienRoute2_Text_Sign, MSGBOX_SIGN
 	end
@@ -164,3 +189,17 @@ EienRoute2_Text_MilestoneEnd:
 
 EienRoute2_Text_Sign:
 	.string "(The sign's buried in snow.)$"
+
+@ Tomo's lines are drafts (TODO(design)).
+EienRoute2_Text_TomoGiveRod:
+	.string "TOMO: You beat Fuyumi. Good.\p"
+	.string "I come out here when the gym's\n"
+	.string "quiet. Take this. It's my old one.$"
+
+EienRoute2_Text_TomoExplainRod:
+	.string "TOMO: Face the water and cast.\n"
+	.string "The fish here don't mind the cold.$"
+
+EienRoute2_Text_TomoAfterRod:
+	.string "TOMO: The ice creaks at night.\n"
+	.string "Nothing's fallen through yet.$"

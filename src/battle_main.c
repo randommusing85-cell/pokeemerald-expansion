@@ -420,6 +420,10 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     // Eien
     [TRAINER_CLASS_ICE_FISHER] =           { _("ICE FISHER"), 10 },
     [TRAINER_CLASS_SHOVELER] =             { _("SHOVELER"), 8 },
+    [TRAINER_CLASS_WOODCUTTER] =           { _("WOODCUTTER"), 10 },
+    [TRAINER_CLASS_PORTER] =               { _("PORTER"), 10 },
+    [TRAINER_CLASS_CHARCOALER] =           { _("CHARCOALER"), 8 },
+    [TRAINER_CLASS_PILGRIM] =              { _("PILGRIM"), 8, BALL_ULTRA },
 };
 
 static void (*const sTurnActionsFuncsTable[])(void) =
