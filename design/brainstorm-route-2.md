@@ -43,7 +43,11 @@ Round 2, asked:
 3. Whether Nami shows up on this route at all.
 4. Where the patch sits and how it gates the route.
 5. The roadside tablet's theme.
-6. The route's texture and level range.
+6. Where the gym 2 variant lives (it has to be catchable before gym 2).
+
+Defaults proposed, not asked: wild Lv 10-15 on the route, trainers Lv 12-17, gym 2 trainers
+about Lv 17-19 and its ace about Lv 21 (starters evolve at about 18, before gym 2). Texture:
+snowy forest at the lake end, climbing to steam vents and bare rock near the town.
 
 ## Gaps and tensions
 
