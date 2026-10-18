@@ -66,16 +66,19 @@ the location doc when settled; this file stays as the record.
   shoveller (new trainer classes; names open, round 4).
 - **The lake (r3 6a):** frozen at the edges, open dark water in the middle, which Lapras swims.
   `TODO(art)`: an ice-rim tile. His line stays close to "A frozen lake…".
+- **Shrine Ghost (r4 1a):** Duskull, night-heavy like Shuppet on Route 1 (exact rates set when
+  the table is built, fitted to the land slots).
+- **Healer (r4 2a):** Kashiwagi's husband: "Back again? Sit. I'll see to them." (draft line,
+  warm and practical).
+- **Gym trainers (r4 3a):** classes ICE FISHER (Snover Lv 9) and SNOW SHOVELER (Snorunt
+  Lv 10); names TOMO and SAYA stay placeholders.
 
 ## Leaning
 
 ## Open questions
 
-Round 4, asked:
-
-1. The Ghost type at Kaede's shrine (with Eien Poochyena).
-2. Who heals him at the Kashiwagi house, and his line.
-3. Names and class names for the two gym trainers.
+Still open after round 4: the tablet's text (the stone dogs on aurora nights), the gym
+trainers' real names, the husband's name, the ice-rim art, the badge icon, music.
 
 Defaults proposed, not asked (change any): the Mart keeps its placeholder stock (Poké Ball,
 Potion, Antidote, Paralyze Heal, Awakening, Ice Heal, Escape Rope); the lake path stays
