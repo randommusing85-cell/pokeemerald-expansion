@@ -22,7 +22,7 @@ Every gate is enforced by a flag or var; list it in the location doc that checks
 | --- | --- | --- | --- |
 | Route 1 | 2-5 | 5-8 | |
 | Gym 1 | | 9-11 | 13-14 (Bergmite) |
-| Route 2 (the pass) | 10-15 | 12-17 | |
+| Route 2 (the pass) | 10-13 lower map, 12-15 upper map | 12-17 | |
 | Gym 2 | | 17-19 (Akira 17-18) | 21 (Medicham) |
 
 All levels are proposed defaults; adjust after playtesting.

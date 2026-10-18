@@ -62,7 +62,7 @@ their battle pics reuse the Fisherman and Picnicker for now.
 
 | Trainer | Class | Team (levels) | Notes |
 | --- | --- | --- | --- |
-| Gym trainer 1 (TOMO) | Ice Fisher | Snover Lv 9 | A short line about the cold |
+| Gym trainer 1 (TOMO) | Ice Fisher | Snover Lv 9 | A short line about the cold. After the badge he's on Lake Usurai's shore and gives the Old Rod |
 | Gym trainer 2 (SAYA) | Shoveler | Snorunt Lv 10 | A short line about the cold |
 | Fuyumi | Leader | Spheal Lv 13 (Water Gun, Powder Snow, Defense Curl, Rollout), Bergmite Lv 14 (Rock Tomb, Powder Snow, Curse, Harden) | Stern veteran. Water Gun covers Eien Torchic; Rock Tomb covers Eien Torchic and Froakie; Eien Poochyena resists Rock Tomb. The Hoarfrost Badge and TM07 Hail |
 | Akira (practice) | Rival | His starter Lv 14 (the one strong against the player's), Starly Lv 11 | Optional; one trainer entry per starter he took |
@@ -107,6 +107,9 @@ pass joins it at the north-east, by the path round the lake's east side
 - The lake is frozen at the edges with open dark water in the middle, which Lapras swims. On
   the map it's plain water for now (`TODO(art)`: an ice-rim tile). Before gym 1 the path is open
   but nothing happens there.
+- **Fishing:** after the badge, Tomo the Ice Fisher stands on the lake shore and gives the Old
+  Rod ([brainstorm-route-2-trainers-wild.md](../brainstorm-route-2-trainers-wild.md)). The lake's Old Rod table: Magikarp 60%, Goldeen
+  30%, Spheal 10%, one table for day and night. `TODO(design)`: Tomo's line.
 
 ## Maps
 
@@ -141,6 +144,7 @@ evening use the day table.
 | Area | Day | Night |
 | --- | --- | --- |
 | Kaede's shrine grass | Eien Poochyena 90%, Duskull 10% | Eien Poochyena 60%, Duskull 40% |
+| Lake Usurai, Old Rod | Magikarp 60%, Goldeen 30%, Spheal 10% | the same |
 
 The Mart's stock is a placeholder (Poké Ball, Potion, Antidote, Paralyze Heal, Awakening,
 Ice Heal, Escape Rope; `TODO(design)`).

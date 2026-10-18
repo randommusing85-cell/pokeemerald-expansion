@@ -118,7 +118,7 @@ the middle stages don't evolve further yet.
 | Pokémon | Eien type | Idea | Where first |
 | --- | --- | --- | --- |
 | Poochyena | Rock/Dark | A stone shrine guardian dog (komainu), touched by the fading. Beats the Ice gym. | Route 1 (common, ~20%) |
-| Hoothoot | Ghost/Flying | A half-faded owl of the night pass: its wings and tail fade into mist, only the face and glowing eyes are solid. Touched by the fading. Immune to Fighting moves; beats the Fighting gym. | Route 2's mountain pass, grass near the town end (about 10% by day, 30% at night) |
+| Hoothoot | Ghost/Flying | A half-faded owl of the night pass: its wings and tail fade into mist, only the face and glowing eyes are solid. Touched by the fading. Immune to Fighting moves; beats the Fighting gym. | Route 2's upper map, the vents near Yunotaki (10% by day, 30% at night) |
 
 - **Eien Poochyena:** 35 / 55 / 50 / 25 / 30 / 25 (35 / 55 / 35 / 30 / 30 / 35), 220.
   Abilities Intimidate / Sturdy / Stakeout (hidden). New early moves: Rock Throw (7), Rock
@@ -158,7 +158,7 @@ the middle stages don't evolve further yet.
   moves: Astonish (1), Gust (6, replacing Echoed Voice), Ominous Wind (15, replacing Defog);
   otherwise vanilla (Confusion 9, Reflect 12, Air Slash 18).
 - **Evolves** into Eien Noctowl by leveling up to 20+ at night on its home pass (Route 2's
-  mountain pass): an evolution entry with both the time (`IF_TIME`) and map conditions. The
+  upper map only): an evolution entry with both the time (`IF_TIME`) and map conditions. The
   journal notes one that reaches Lv 20 without evolving, like Eien Poochyena's note (it needs
   its own flag, and the research page may need to scroll). The roadside tablet on the pass
   can hint at the rule (`TODO(design)`: its text).

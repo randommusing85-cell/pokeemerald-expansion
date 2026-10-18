@@ -65,7 +65,8 @@ this file stays as the record.
 
 ## Open questions
 
-Nothing open from rounds 1-3. Still open later: the trainers' names (placeholders), their
+Promoted into `locations/route-2.md`, `locations/shimotsuki.md`, `progression.md`,
+`variants.md` and `whats-left.md`. Nothing open from rounds 1-3. Still open later: the trainers' names (placeholders), their
 lines, the two maps' layouts (Porymap).
 
 ## Gaps and tensions
