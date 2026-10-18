@@ -43,7 +43,7 @@ Open gaps found while building Shimotsuki:
   name and look; Tetsu's and Ren's placement.
 - **Progression:** gym leaders 2-8, the level curve past gym 1, badge gates, field moves
   without HMs (`progression.md`).
-- **Species:** evolved forms of the three starters; more Eien variants (5-10 total planned);
+- **Species:** the evolved starters and Eien Hoothoot are designed (`variants.md`), not built; more Eien variants (5-10 total planned);
   Eien Mightyena's dex entry.
 - **Quests:** point thresholds, the letter trigger rule, remaining chains' details
   (`side-quests.md`).
