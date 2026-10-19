@@ -13,7 +13,7 @@ Decided in [brainstorm-route-3.md](../brainstorm-route-3.md).
 
 The road down from the mountains to the Sea of Japan coast, after gym 2. A quieter route: Yuki's
 cameo, the Eien Survey seen again (helpful and organised), and the first sight of the door
-mountain. The next Eien variant, Eien Wooper (Ground), lives here: the answer to gym 3, which is
+mountain. The next Eien variant, Eien Wooper (Ground/Steel), lives here: the answer to gym 3, which is
 Electric.
 
 ## Look
@@ -45,7 +45,7 @@ east:
 | --- | --- | --- | --- |
 | The Ace Trainer | a rope bridge, midway | until Yuki's scene | Blocks the bridge; battles him (see Trainers) |
 | Yuki | the same bridge | after his battle with the Ace Trainer | Beats the Ace Trainer, battles him briefly, "see you at the tournament". Starts her chain. `TODO(design)`: her sprite, team and lines |
-| Eien Survey member | the cave entrance | always | "It's safe. We checked." |
+| Eien Survey member | the cave entrance | always | "It's safe. We checked." Also says they found the Wooper "in the old seams" when they cleared it (a hint at its evolution; `TODO(design)`: the line) |
 | Survey sign | the cave entrance | always | "Route kept open by the Eien Survey." |
 | The view | the cave's exit | always | The coast and the door mountain (`TODO(design)`: whether he says anything) |
 
@@ -66,15 +66,17 @@ Lv 18-23 (default). Names are placeholders when built (`TODO(design)`).
 
 ## Wild Pokémon
 
-Lv 15-20 (default). `TODO(design)`: exact rates, day and night tables.
+Lv 15-20 (default). `TODO(design)`: the other species' exact rates. Eien Wooper is the same
+by day and night.
 
 | Area | Pokémon |
 | --- | --- |
-| The gorge | Eien Wooper (rarer, in the grass by the river), Psyduck, Marill, Lotad, Taillow, Shinx (near the telegraph line: an Electric preview before gym 3) |
-| The cave | Eien Wooper (more common, in the muddy pools), Zubat, Geodude, Roggenrola |
+| The gorge | Eien Wooper (10%, in the grass by the river), Psyduck, Marill, Lotad, Taillow, Shinx (near the telegraph line: an Electric preview before gym 3) |
+| The cave | Eien Wooper (30%, in the muddy pools), Zubat, Geodude, Roggenrola |
 
-Eien Wooper's design (stats, look, research) gets its own brainstorm, like Eien Hoothoot's
-([variants.md](../variants.md)).
+Eien Wooper's design is in [variants.md](../variants.md) ([brainstorm-eien-wooper.md](../brainstorm-eien-wooper.md)).
+It evolves into Eien Quagsire only in the cave (Lv 20+), so the cave is where its line is
+finished before gym 3.
 
 ## Items
 
@@ -91,6 +93,7 @@ Eien Wooper's design (stats, look, research) gets its own brainstorm, like Eien 
 | Name | Set when | Checked by |
 | --- | --- | --- |
 | `TODO` | Yuki's scene | Her chain (`side-quests.md`) |
+| `TODO` (a journal-note flag) | An Eien Wooper reaches Lv 20 outside the cave | Its research entry's note |
 
 ## Screenshot check
 

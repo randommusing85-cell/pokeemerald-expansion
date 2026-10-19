@@ -1,7 +1,8 @@
 # Brainstorm: Eien Wooper's design
 
 Working notes for the Route 3 variant (`variants.md`, `locations/route-3.md`). Decisions move into
-`variants.md` when settled; this file stays as the record.
+`variants.md` when settled; this file stays as the record. **Promoted** into `variants.md`,
+`locations/route-3.md`, `locations/isaribi.md` and `whats-left.md`.
 
 ## Givens (from the docs)
 
