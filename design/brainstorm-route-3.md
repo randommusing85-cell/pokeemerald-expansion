@@ -61,7 +61,8 @@ the record.
 
 ## Open questions
 
-Nothing open from rounds 1-3. Later, in their own brainstorms: Eien Wooper's design, the port town
+Promoted into `locations/route-3.md`, `story-outline.md`, `progression.md`, `side-quests.md`,
+`variants.md`, `locations/yunotaki.md` and `whats-left.md`. Nothing open from rounds 1-3. Later, in their own brainstorms: Eien Wooper's design, the port town
 (name, gym 3's leader and team, Nami's battle), Yuki (sprite, team, hometown). Trainer names,
 teams and exact rates at build time.
 

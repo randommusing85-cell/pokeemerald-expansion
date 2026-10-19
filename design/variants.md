@@ -119,6 +119,7 @@ the middle stages don't evolve further yet.
 | --- | --- | --- | --- |
 | Poochyena | Rock/Dark | A stone shrine guardian dog (komainu), touched by the fading. Beats the Ice gym. | Route 1 (common, ~20%) |
 | Hoothoot | Ghost/Flying | A half-faded owl of the night pass: its wings and tail fade into mist, only the face and glowing eyes are solid. Touched by the fading. Immune to Fighting moves; beats the Fighting gym. | Route 2's upper map, the vents near Yunotaki (10% by day, 30% at night) |
+| Wooper | Ground (`TODO(design)`: a second type?) | A gorge mud-dweller of Route 3; the answer to gym 3 (Electric). `TODO(design)`: its own brainstorm | Route 3 ([route-3.md](locations/route-3.md)): rarer in the gorge's grass, more common in the cave's muddy pools |
 
 - **Eien Poochyena:** 35 / 55 / 50 / 25 / 30 / 25 (35 / 55 / 35 / 30 / 30 / 35), 220.
   Abilities Intimidate / Sturdy / Stakeout (hidden). New early moves: Rock Throw (7), Rock

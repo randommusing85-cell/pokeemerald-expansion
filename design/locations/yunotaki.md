@@ -6,9 +6,10 @@
   `MAP_YUNOTAKI_MART`, `MAP_YUNOTAKI_HERB_SHOP`, `MAP_YUNOTAKI_INN` (`MAPSEC_YUNOTAKI`
   "YUNOTAKI", `HEAL_LOCATION_YUNOTAKI`). A Porymap map can replace it any time.
 - **Type:** town
-- **Connects to:** south: Route 2's mountain pass ([route-2.md](route-2.md)). `TODO(design)`:
-  where the road onward leads. Lavaridge's east exit stays, blocked for now: "The road east is
-  shut for the thaw." 
+- **Connects to:** south: Route 2's mountain pass ([route-2.md](route-2.md)). East: Route 3, the gorge road to
+  the coast ([route-3.md](route-3.md)). Lavaridge's east exit is blocked until Route 3 exists:
+  "The road east is shut for the thaw." (On Route 3 the road stays washed out; the Eien Survey's
+  cave is the way round.) 
 
 Decided in [brainstorm-route-2.md](../brainstorm-route-2.md). Named in
 [brainstorm-names.md](../brainstorm-names.md): Yunotaki (湯の滝, "hot-water falls"), after the falls
@@ -62,7 +63,7 @@ Act 1 beat 8 in [story-outline.md](../story-outline.md) (gyms 2-4).
 | Gym guide | inside the gym door | always | A retired pilgrim; the gym tips in his own voice |
 | Akira | the gym door | before gym 2, until his battle | Battles him (see Trainers) |
 | Ren | outside the gym | as he leaves with the badge | "Next." and walks in |
-| East exit block | the east edge | until `TODO(design)` | "The road east is shut for the thaw." |
+| East exit block | the east edge | until Route 3 is built | "The road east is shut for the thaw." |
 
 The three rumours disagree; nothing is spelled out. All lines are drafts at build time
 (`TODO(design)`). Lavaridge's vanilla gifts (the egg, the herb shop's Charcoal) are dropped.

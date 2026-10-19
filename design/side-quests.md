@@ -111,7 +111,7 @@ finale she fights beside him in a tag battle, whatever her points
 
 | # | When / where | What happens | Points from | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
-| 0 | Act 1, a route after gym 2 (cameo) | She beats a trainer he struggled with, battles him briefly, says she'll see him at the tournament. Starts her chain. | none | none | No |
+| 0 | Act 1, Route 3 ([route-3.md](locations/route-3.md)), at a rope bridge (cameo) | A League-sponsored Ace Trainer blocks the bridge; he battles them, win or lose. She beats them easily (the trainer he struggled with), battles him briefly, says she'll see him at the tournament. Starts her chain. | none | none | No |
 | 1 | Act 2, the tournament | Before her match she asks to spar; afterwards, her answer to losing or winning. | The answer | Battle item | Closes after the tournament |
 | 2 | Act 3, her hometown | One of the fading's small disasters hits her town (overlaps the Eien quests). Helping is how they become friends. | Helping; the answer | **Keepsake:** `TODO(design)`: a tournament token | No |
 
