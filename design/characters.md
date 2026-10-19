@@ -171,9 +171,9 @@ Gen 3 style, from the FRLG-style NPC megapack, converted by `tools/eien_npcs/` (
 | Kaede (battle) | `TRAINER_PIC_EIEN_KAEDE`: AI drafts, arms crossed (front) and a 4-frame throw from behind (back, for tag battles) (`design/art/eien_kaede/`) |
 | Chiyo, Kaede's grandmother (battle) | `TRAINER_PIC_EIEN_KAEDE_GRANDMOTHER`: an AI draft with a walking stick; ready if she ever battles (the design doesn't give her a battle yet) |
 | Chiyo, Kaede's grandmother | `OBJ_EVENT_GFX_EIEN_KAEDE_GRANDMOTHER`: the HGSS Medium in shrine colors (white robe, purple hakama) |
-| Ibuki | Planned ([brainstorm-ibuki-sprites.md](brainstorm-ibuki-sprites.md)): a megapack sheet recolored to his colors (off-white gi, dark brown belt and beads, faded red wrist tape, dark hair with grey); the same sprite under the falls. Vanilla Black Belt stand-in now |
-| Ibuki (battle) | Planned: AI drafts, a fighting stance with one open palm forward; Brawly as the pose and framing reference, Fuyumi's pic as a second reference so the Eien leaders match. Black Belt stand-in now |
-| Pilgrims (male, female) | Planned: two megapack sheets recolored: white travel clothes, a wide straw hat, a staff with a small bell, straw sandals, a cloth pack. The retired-pilgrim gym guide uses the male one. Battle pics as AI drafts (Black Belt and Battle Girl as references). Stand-ins now: Black Belt, Battle Girl |
+| Ibuki | `OBJ_EVENT_GFX_EIEN_IBUKI`: the RSE Black Belt recolored ([brainstorm-ibuki-sprites.md](brainstorm-ibuki-sprites.md)): the headband turned to tied-back hair, dark with grey; off-white gi, dark brown belt, faded red wrist tape. The same sprite under the falls (`design/art/eien_ibuki/`) |
+| Ibuki (battle) | `TRAINER_PIC_EIEN_IBUKI`: an AI draft, a fighting stance with one open palm forward, hair in a topknot, prayer beads, red wrist tape (Brawly and Fuyumi's pic as references) |
+| Pilgrims (male, female) | `OBJ_EVENT_GFX_EIEN_PILGRIM_M` (the RSE Ruin Maniac recolored) and `_PILGRIM_F` (the HGSS Picnicker recolored): white travel clothes, a wide straw hat, a cloth pack (no staff on the small sprites). The retired-pilgrim gym guide uses the male one. Battle: `TRAINER_PIC_EIEN_PILGRIM_M` (an AI draft: staff with a bell, fist raised); the female pic is `TODO` (second round of drafts), Battle Girl until then |
 | Celebi | `OBJ_EVENT_GFX_SPECIES(CELEBI)` (engine) |
 | Hamakaze townsfolk | `OBJ_EVENT_GFX_EIEN_FISHERMAN`, `_SAILOR`, `_VILLAGE_WOMAN`, `_SCHOOLBOY` |
 | Shimotsuki townsfolk | `OBJ_EVENT_GFX_EIEN_SNOW_TRAINER`, `_WORKER`, `_POKEFAN_M`, `_SOCIALITE` |

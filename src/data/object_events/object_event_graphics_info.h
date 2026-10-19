@@ -7248,7 +7248,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienHaru = {
 // trainer_BIRDKEEPER.png (Bird Keeper: Spherical Ice)
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienAkira = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_EIEN_NPC_3,
+    .paletteTag = OBJ_EVENT_PAL_TAG_EIEN_NPC_4,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -7267,7 +7267,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienAkira = {
 // trainer_YOUNGCOUPLE_F.png (Young Couple: Kalarie)
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienNami = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_EIEN_NPC_4,
+    .paletteTag = OBJ_EVENT_PAL_TAG_EIEN_NPC_3,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -7362,7 +7362,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienFisherman = {
 // trainer_SAILOR.png (HGSS OWs in FR style: Delta231, Mimi, M.vit, Kimoras)
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienSailor = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_EIEN_NPC_3,
+    .paletteTag = OBJ_EVENT_PAL_TAG_EIEN_NPC_2,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -7419,7 +7419,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienSchoolboy = {
 // trainer_ACETRAINERSNOW_M.png (DPPt NPCs: artist not named in the pack readme)
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienSnowTrainer = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_EIEN_NPC_3,
+    .paletteTag = OBJ_EVENT_PAL_TAG_EIEN_NPC_2,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -7476,7 +7476,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienPokefanM = {
 // trainer_SOCIALITE.png (DPPt NPCs: artist not named in the pack readme)
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienSocialite = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_EIEN_NPC_4,
+    .paletteTag = OBJ_EVENT_PAL_TAG_EIEN_NPC_3,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -7495,7 +7495,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienSocialite = {
 // kaede_a_navy_coat.png (Anime NPC 07: Kalarie (first frames Pokésho), recolored)
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienKaede = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_EIEN_NPC_2,
+    .paletteTag = OBJ_EVENT_PAL_TAG_EIEN_NPC_1,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -7528,5 +7528,62 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienKaedeGrandmoth
     .subspriteTables = sOamTables_16x32,
     .anims = sAnimTable_Standard,
     .images = sPicTable_EienKaedeGrandmother,
+};
+
+// ibuki_b_blackbelt_tape.png (FRLG-style RSE NPCs: Poffin_Case (Black Belt, recolored))
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienIbuki = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_EIEN_NPC_3,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_EienIbuki,
+};
+
+// pilgrim_m_b_ruinmaniac.png (FRLG-style RSE NPCs: Poffin_Case (Ruin Maniac, recolored))
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienPilgrimM = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_EIEN_NPC_4,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_EienPilgrimM,
+};
+
+// pilgrim_f_a_picnicker.png (HGSS OWs in FR style: Delta231, Mimi, M.vit, Kimoras (Picnicker, recolored))
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EienPilgrimF = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_EIEN_NPC_3,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_EienPilgrimF,
 };
 // Eien NPCs END

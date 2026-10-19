@@ -115,9 +115,11 @@ CHARACTERS = {
             "sandals, a cloth pack on her back, and a wooden staff with a small bell. Calm and "
             "focused. "
         ),
+        # Round 2 (c, d): round 1's a and b drew several views at once or left background gaps
+        # between the staff and the figure.
         "poses": {
-            "a": "Pose: standing firm, the staff planted upright in one hand, the other hand in a fist, ready to battle.",
-            "b": "Pose: holding a Poké Ball out toward the viewer, the staff resting against her shoulder.",
+            "c": "Pose: a single front view of one figure. She holds a Poké Ball out toward the viewer with one hand; the staff is strapped flat across her back, close to her body, its ends showing behind her shoulders.",
+            "d": "Pose: a single front view of one figure. Both hands grip the staff, held diagonally and close against her body, ready to battle; no gaps between the staff and her arms.",
         },
     },
 }
