@@ -147,18 +147,29 @@ on what other hacks and fan games do.
     - **While one is open** (Route 2's patch, the tournament, Minori's night): a low rumble (a
       vanilla sound effect), the snow stops, the music fades to silence, and the whole screen
       drains toward grey over a few seconds, then pulses faintly between grey and a trace of
-      colour. Built like the aurora (palette re-blending), in its own file
-      (`src/eien_thinning.c`, planned), started and stopped by a script special, with a palette
-      mask that leaves the hero's, Yuki's (a partner's) and Celebi's sprites in colour.
-      Celebi plays its flicker as it opens, then waits at the edge.
-    - **Battles inside** get the thin-place effect (forced per battle with
-      `setstartingstatus STARTING_STATUS_THIN_PLACE`) and a grey-tinted battle background.
+      colour. Celebi flickers as it opens.
+    - **Built:** the weather `WEATHER_THINNING` (`src/eien_thinning.c`). A scene calls
+      `EienThinning_EventScript_Open` / `_Close` (`data/scripts/eien_thinning.inc`): the rumble
+      (`SE_M_EARTHQUAKE`, placeholder), the snow cleared at once (`StopSnowForThinning`), the
+      weather set, the music faded out (and kept silent after a battle while it's open). Every
+      other frame the normal palettes are rebuilt and the map and object palettes pulled toward
+      grey: a 3-second eased creep, then a 4-second pulse that lets a trace of colour back. The
+      hero's and the follower's (Celebi's) palettes are left alone, and up to two more objects
+      (Yuki, a partner) with `setvar VAR_0x8004, LOCALID_...` + `callnative
+      KeepObjectInColourInThinning`. Objects sharing a palette with a kept one stay in colour
+      too. Closing brings the colour back over a second and the map's weather returns; leaving
+      the map closes it. Shots in `art/thinning/` (prototyped on Lake Usurai: debug menu,
+      Scripts 1 open / 2 close / 3 a wild battle inside).
+    - **Battles inside** get the thin-place effect automatically while it's open ("The air
+      feels thin here…") and a grey battle background (`TintBattleBackgroundForThinning`); the
+      Pokémon stay in colour.
     - **What's left behind** (Route 4's orchard, Route 5's patches, Minori's terraces): grey copies
       of the tiles, swapped in by map scripts; the palette budget is checked per tileset. They
       stay grey until the epilogue, when Arceus renews and the colour comes back (with the
       journal refilling).
-    - **Prototype first:** behind a debug script on a built map (Lake Usurai or Route 1),
-      screenshotted in the harness. `TODO(design)`: the rumble, the grey tints (an art pass).
+    - **Prototype:** done, behind the debug menu's Scripts 1-3 on Lake Usurai,
+      screenshotted in the harness. `TODO(design)`: the rumble, the grey (a neutral grey now;
+      a cold blue-grey is an option), the grey tile copies (made per tileset with each map).
   - Both apply together (a thin place on an aurora night). The journal explains each effect
     the first time he meets it; his fan knowledge doesn't cover them.
   - `TODO(design)`: the exact battle messages (both are placeholders); the night palette (an

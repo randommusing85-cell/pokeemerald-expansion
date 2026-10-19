@@ -1,7 +1,8 @@
 # Brainstorm: how the thinning looks on the GBA
 
 Working notes. Decisions move into `game-bible.md` (Eien weather and terrain) and the location
-docs that use it when settled; this file stays as the record. **Promoted** into `game-bible.md`, `locations/route-2.md`,
+docs that use it when settled; this file stays as the record. **Built** (`src/eien_thinning.c`, shots in
+`art/thinning/`). **Promoted** into `game-bible.md`, `locations/route-2.md`,
 `route-4.md`, `route-5.md`, `hanashiro.md`, `minori.md` and `whats-left.md`.
 
 ## Givens (from the docs and the engine)

@@ -24,6 +24,7 @@
 #include "dexnav.h"
 #include "dma3.h"
 #include "eien_aurora.h"
+#include "eien_thinning.h"
 #include "eien_journal.h"
 #include "eien_places.h"
 #include "event_data.h"
@@ -3420,7 +3421,7 @@ static void DoBattleIntro(void)
                     statusesOpponentB = GetTrainerStartingStatusFromId(TRAINER_BATTLE_PARAM.opponentB);
             }
             STARTING_STATUS_DEFINITIONS(UNPACK_STARTING_STATUS_TO_BATTLE);
-            if (IsCurrentMapThinPlace()) // Eien: every battle on a thin-place map
+            if (IsCurrentMapThinPlace() || IsThinningActive()) // Eien: every battle on a thin-place map or in a thinning
                 gStartingStatuses.thinPlace = TRUE;
             if (IsAuroraWeatherActive()) // Eien: every battle under the aurora
                 gStartingStatuses.aurora = TRUE;

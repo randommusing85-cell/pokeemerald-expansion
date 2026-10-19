@@ -5,6 +5,7 @@
 #include "util.h"
 #include "decompress.h"
 #include "eien_aurora.h"
+#include "eien_thinning.h"
 #include "event_object_movement.h"
 #include "field_weather.h"
 #include "fieldmap.h"
@@ -144,6 +145,7 @@ static const struct WeatherCallbacks sWeatherFuncs[] =
     [WEATHER_DOWNPOUR]           = {Downpour_InitVars,      Thunderstorm_Main,  Downpour_InitAll,      Thunderstorm_Finish},
     [WEATHER_UNDERWATER_BUBBLES] = {Bubbles_InitVars,       Bubbles_Main,       Bubbles_InitAll,       Bubbles_Finish},
     [WEATHER_AURORA]             = {Aurora_InitVars,        Aurora_Main,        Aurora_InitAll,        Aurora_Finish}, // Eien
+    [WEATHER_THINNING]           = {Thinning_InitVars,      Thinning_Main,      Thinning_InitAll,      Thinning_Finish}, // Eien
 };
 
 void (*const gWeatherPalStateFuncs[])(void) =
@@ -1221,6 +1223,7 @@ static const u8 sWeatherNames[WEATHER_COUNT][24] = {
     [WEATHER_ROUTE123_CYCLE]     = _("ROUTE123 CYCLE"),
     [WEATHER_FOG]                = _("FOG"),
     [WEATHER_AURORA]             = _("AURORA"),
+    [WEATHER_THINNING]           = _("THINNING"),
 };
 
 static const u8 sDebugText_WeatherNotDefined[] = _("NOT DEFINED!!!");

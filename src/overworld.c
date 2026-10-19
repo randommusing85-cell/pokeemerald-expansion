@@ -10,6 +10,7 @@
 #include "clock.h"
 #include "dexnav.h"
 #include "eien_aurora.h"
+#include "eien_thinning.h"
 #include "event_data.h"
 #include "event_object_movement.h"
 #include "event_scripts.h"
@@ -1297,6 +1298,11 @@ void Overworld_PlaySpecialMapMusic(void)
     }
     if (gDisableMapMusicChangeOnMapLoad == MUSIC_DISABLE_KEEP)
         return;
+    if (IsThinningActive()) // Eien: silence while a thinning is open, even after a battle
+    {
+        StopMapMusic();
+        return;
+    }
 
     if (music != MUS_ABNORMAL_WEATHER && music != MUS_NONE)
     {
