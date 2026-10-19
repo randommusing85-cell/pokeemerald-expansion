@@ -1,6 +1,7 @@
 #include "global.h"
 #include "battle_anim.h"
 #include "eien_aurora.h"
+#include "eien_thinning.h"
 #include "event_object_movement.h"
 #include "fieldmap.h"
 #include "field_weather.h"
@@ -925,6 +926,18 @@ static bool8 DestroySnowflakeSprite(void)
     }
 
     return FALSE;
+}
+
+// Eien: when a thinning opens the snow stops at once (data/scripts/eien_thinning.inc), instead of
+// the flakes thinning out one by one before the next weather can start.
+void StopSnowForThinning(void)
+{
+    if (gWeatherPtr->currWeather != WEATHER_SNOW || gWeatherPtr->nextWeather != WEATHER_SNOW)
+        return;
+    while (DestroySnowflakeSprite())
+        ;
+    gWeatherPtr->targetSnowflakeSpriteCount = 0;
+    gWeatherPtr->currWeather = gWeatherPtr->nextWeather = WEATHER_NONE;
 }
 
 static void InitSnowflakeSpriteMovement(struct Sprite *sprite)
@@ -2689,6 +2702,7 @@ static enum OverworldWeather TranslateWeatherNum(enum OverworldWeather weather)
     case WEATHER_ROUTE123_CYCLE:     return sWeatherCycleRoute123[gSaveBlock1Ptr->weatherCycleStage];
     case WEATHER_DYNAMIC:            return GetDynamicWeather();
     case WEATHER_AURORA:             return WEATHER_AURORA;
+    case WEATHER_THINNING:           return WEATHER_THINNING;
     }
 
     return WEATHER_NONE;

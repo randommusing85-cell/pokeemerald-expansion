@@ -23,6 +23,7 @@ enum OverworldWeather
     WEATHER_ROUTE123_CYCLE,
     WEATHER_FOG, // Aggregate of WEATHER_FOG_HORIZONTAL and WEATHER_FOG_DIAGONAL
     WEATHER_AURORA, // Eien: aurora nights (src/eien_aurora.c)
+    WEATHER_THINNING, // Eien: the thinning (src/eien_thinning.c)
     WEATHER_DYNAMIC,
     WEATHER_COUNT,
 };

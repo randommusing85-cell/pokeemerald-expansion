@@ -22,22 +22,35 @@ journal writes an entry for each beat reached (`src/data/eien_journal.h`).
 | 5 | Shimotsuki | Akira shows him his mother's gym. Gym 1: Fuyumi (Ice). | `STORY_SHIMOTSUKI`, then `STORY_BADGE_1` |
 | 6 | Lake Usurai, north of Shimotsuki (`MAP_EIEN_ROUTE2`) | Celebi flickers and drops at a frozen lake; Nami's Lapras carries them across to a shelter, where Celebi recovers. End of the first milestone. | `STORY_MET_NAMI` |
 | 7 | Route 2's mountain pass ([route-2.md](locations/route-2.md)) | Haru gives him the Town Map. Midway, a patch where the world thins (the snow stops, colours drain, Celebi reacts, Pokémon flee). People in field gear (the Eien Survey) rope it off as if they've seen it before; Hinata, a young researcher among them, chats with him about Celebi. He only learns later they were the villains. | `TODO` |
-| 8 | Yunotaki ([yunotaki.md](locations/yunotaki.md)), then `TODO(design)` | Akira battles him by the gym door (he just lost to Ibuki). Ren passes him at the gym door after the badge. Gym 2: Ibuki (Fighting), the Misogi Badge. Gyms 3-4. He battles Nami between gyms 3 and 4. | `TODO` |
+| 8 | Yunotaki ([yunotaki.md](locations/yunotaki.md)), Route 3 ([route-3.md](locations/route-3.md)), then Isaribi ([isaribi.md](locations/isaribi.md)) | Akira battles him by the gym door (he just lost to Ibuki). Ren passes him at the gym door after the badge. Gym 2: Ibuki (Fighting), the Misogi Badge. On Route 3, down a gorge to the coast: Yuki's cameo at a rope bridge, the Eien Survey's cleared tunnel round the washed-out road, and the first sight of the door mountain from its exit. Gym 3 in Isaribi, a Sea of Japan fishing port: Akari (Electric), the Lantern Badge; Akira watches from the stands. He battles Nami on Isaribi's pier after gym 3. | `TODO` |
+| 9 | Route 4 ([route-4.md](locations/route-4.md)), then Hanashiro ([hanashiro.md](locations/hanashiro.md)) | Inland across the rice plain. An orchard by the road blossoms and withers in an hour; the Eien Survey ropes it off, and one member asks about Celebi a little too closely (seen again at the tournament; the one who reports Celebi to Minato). In Hanashiro, a castle town of apples and cherry trees, Yuki teases him at the Pokémon Center. Gym 4: Mamoru (Grass), the castle's head gardener, the Blossom Badge. | `TODO` |
 
 ## Act 2: The tournament (midpoint)
 
 | # | Where | What happens | Sets (flag/var) |
 | --- | --- | --- | --- |
-| 1 | Tournament `TODO(design)` | Nami and Yuki are competitors. | `TODO` |
-| 2 | Tournament | The villains move during the event. The disaster kills Fuyumi and Hashimoto. | `TODO` |
-| 3 | Tournament | He learns Nami is with the villains. | `TODO` |
+Two days in Hanashiro's castle grounds ([hanashiro.md](locations/hanashiro.md)). Decided in
+[brainstorm-tournament.md](brainstorm-tournament.md). He plays three matches; the final never
+happens.
+
+| # | Where | What happens | Sets (flag/var) |
+| --- | --- | --- | --- |
+| 1 | Hanashiro, the castle grounds, day 1 | The opening. Round 1: KAITO (the bridge rematch, about Lv 30). The chain steps: Yuki's spar, training with Akira while Fuyumi watches, and Fuyumi asking him to look out for Akira. | `TODO` |
+| 2 | Hanashiro, the inn, night 1 | A last quiet scene for Fuyumi, Akira and him. | `TODO` |
+| 3 | The castle grounds, day 2 | Round 2: Yuki (Lv 32). The semi-final: Nami (Lv 34). On the next field Akira's evolved starter wins his semi-final (first seen here). | `TODO` |
+| 4 | The castle grounds, day 2 | Mid-semi-final a signal goes up; Nami stops ("I'm sorry. Not now.") and runs. Tokoyo has opened a thinning on purpose under the castle (a thin place) to test a small version of the door-mountain machine; it gets away from them. They didn't mean to kill anyone. Celebi flickers and drops, as at Lake Usurai. Hinata, in Tokoyo's gear, leads the crowd out. | `TODO` |
+| 5 | The grounds, the passage under the castle | He fights through two or three Tokoyo members (the Route 4 member among them, Lv 30-33) to reach the stands. | `TODO` |
+| 6 | The stands | He arrives as Fuyumi (with her Ice Pokémon) and Hashimoto hold the thinning back side by side so the stands can empty: two people on opposite sides. Both die, plainly and briefly. Akira sees it. He's too late. | `TODO` |
+| 7 | The stands, after | He finds Nami at Hashimoto's body among Tokoyo's members, in their gear: that's how he learns she's with them. Minato, first seen, calm and grieving Hashimoto: "We are Tokoyo." The League names Akira the winner (his semi-final finished); it's hollow to him. | `TODO` |
+| 8 | Shimotsuki | Fuyumi's funeral; Kaede keeps the rite. Then the League's statement: "an accident". Akira hears it. (`TODO(design)`: Akira's and Kaede's lines; who reads the statement; whether Seiji is seen.) | `TODO` |
 
 ## Act 3: The split (gyms 5-8)
 
 | # | Where | What happens | Sets (flag/var) |
 | --- | --- | --- | --- |
-| 1 | `TODO(design)` | The League plays Fuyumi's death down. A few towns later Akira joins Minato openly. | `TODO` |
-| 2 | `TODO(design)` | Yuki becomes a friend. | `TODO` |
+| 1 | Route 5 ([route-5.md](locations/route-5.md)), east out of Shimotsuki | Through old beech forest, greyed in patches; a Tokoyo member openly ropes off a thinning. At the forest's end Akira waits to say goodbye properly and asks him not to follow; they battle (about Lv 36); then he goes to Minato. Fuyumi's promise changes one line. Decided in [brainstorm-act-3-gym-5.md](brainstorm-act-3-gym-5.md). | `TODO` |
+| 1b | Kanaya ([kanaya.md](locations/kanaya.md)) | An ironworks town. Ren asks what he saw at the tournament. Fresh Survey digging in the old mine's sealed seam. Gym 5: Takumi (Fire), a League loyalist who believes the "accident" story; the Forge Badge. | `TODO` |
+| 2 | Route 6, then Minori ([minori.md](locations/minori.md)), Yuki's village | After gym 5 her letter asks for help: her Absol sensed something coming. On festival night a thinning opens at the terraces and the village's Pokémon walk into it; he and Yuki bring them back and beat two Tokoyo members measuring it. The festival ends late; the terraces stay grey for the year. Helping is how they become friends. | `TODO` |
 | 3 | `TODO(design)` | He learns about the cycle and Minato's plan to drain other worlds, his own included. | `TODO` |
 | 4 | `TODO(design)` | Nami tells him she chooses her world over his. | `TODO` |
 | 5 | Kashiwagi's lab | The professor dies in a lab disaster, leaving the research that explains the cycle. | `TODO` |

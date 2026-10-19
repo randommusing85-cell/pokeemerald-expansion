@@ -23,9 +23,11 @@ Claude at the user's request; change freely.
 
 - **Name:** Akira (boy).
 - **Personality:** a cheerful local kid who looks up to the League.
-- **Arc:** his mother Fuyumi (gym 1) dies in the tournament disaster. The League plays her
+- **Arc:** his mother Fuyumi (gym 1) dies in the tournament disaster; he sees it, and the League
+  names him the winner the same day (his semi-final finished), which feels hollow. The League plays her
   death down, and a few towns later Akira decides the "good" side can't protect anyone and
-  joins Minato openly. He fights against the hero at the end.
+  joins Minato openly: at the end of Route 5 he waits to say goodbye properly, asks the hero not
+  to follow, and battles him one last time on his side of the map. He fights against the hero at the end.
 - **Team:** takes the starter strong against the player's (see [variants.md](variants.md)).
 - **Battles:** first battle at Kashiwagi's lab right after picking starters. Meets the player
   again in Shimotsuki and shows him his mother's gym. `TODO(design)`: later battles.
@@ -65,7 +67,7 @@ points, Tetsu and Ren come too.
 | Name | Role | Where | Notes |
 | --- | --- | --- | --- |
 | Haru Kashiwagi | Main friend, Act 1 | Hamakaze | Boy, the professor's son, about the hero's age. Takes the third starter. Shares the grief when his mother dies. |
-| Yuki | Main friend, Act 3 | Tournament, then Act 3 | Girl from another town. Tournament rival, becomes a friend after Akira leaves. |
+| Yuki | Main friend, Act 3 | Route 3 cameo, tournament, then Act 3 | Girl from another town. Tournament rival, becomes a friend after Akira leaves. See below. |
 | Kaede | Smaller friend | Her shrine in Shimotsuki | Young shrine keeper who knows the old tales of the cycle. |
 | Tetsu | Smaller friend | Near the door mountain | Old mountain guide. |
 | Ren | Smaller friend | `TODO(design)` | League trainer who quits after learning about the cover-up. |
@@ -107,13 +109,40 @@ points, Tetsu and Ren come too.
   [brainstorm-kaede-aurora.md](brainstorm-kaede-aurora.md).
   Decided in [brainstorm-kaede.md](brainstorm-kaede.md).
 
+### Yuki
+
+Decided in [brainstorm-yuki.md](brainstorm-yuki.md).
+
+- **Name:** Yuki (幸, "happiness, good fortune"): a warm counterweight to the disasters, and
+  quietly ironic beside her Absol.
+- **Why she competes:** for her hometown, a small struggling place; a tournament win would
+  bring it money and attention. No sponsor (against KAITO's League money on Route 3). Act 3's
+  disaster hits what she's fighting for.
+- **Hometown:** Minori (実り, "harvest"), a small rice-terrace village a short route beyond
+  Kanaya ([locations/minori.md](locations/minori.md)). Her parents farm the terraces; a little brother
+  wants to be a trainer like her. Its one festival is *mushi-okuri* (torches along the paddies);
+  her cord is a torch-bearer's cord.
+- **Voice:** cheerful and teasing; ribs him, laughs off a loss, serious in battle.
+- **Look:** a farm girl on the road: a straw hat on her back, a work jacket, walking boots, a
+  cloth bag, and a festival cord in her hair from her town's one festival. The cord is her
+  keepsake.
+- **Team:** mixed, with one clear ace she's had since she was small: **Absol**, the disaster
+  Pokémon (in the games it appears before calamities). `TODO(design)`: the rest of her team
+  for the tournament and Act 3.
+- **In Act 1:** the Route 3 bridge (Absol alone, Lv 22; [route-3.md](locations/route-3.md)), then
+  a heal-and-chat at Hanashiro's Pokémon Center (gym 4), teasing him about the bridge, no battle.
+- **Sprites:** `TODO`: AI drafts like Ibuki's (an overworld recolor, a battle pic).
+
 ## Gym leaders
 
 | # | Town | Leader | Type | Personality | Ace | Level |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Shimotsuki | Fuyumi | Ice | Stern veteran in the gym, softer at home with Akira. Akira's mother; dies at the tournament. | Bergmite (with Spheal) | 13-14 |
 | 2 | Yunotaki | Ibuki (man, 40s) | Fighting | Lean, grey-streaked hair tied back, a scar across one eyebrow; an off-white training gi, a rope belt, prayer beads and faded red wrist tape from his League days. A former League fighter who walked away after a season that ended badly and won't say why. Trains under the hot waterfalls, like Tohoku's mountain ascetics. Quietly sceptical of the League (a seed for the cover-up, not spelled out). | Medicham (with Throh, Sawk) | 19-21 |
-| 3-8 | | `TODO(design)` | | | | |
+| 3 | Isaribi | Akari (woman) | Electric | Runs the squid-boat fleet; her Electric Pokémon light its lamps. Practical, loud, well loved: the first leader with a big, warm personality. ([locations/isaribi.md](locations/isaribi.md)) | Lanturn (with Magneton, Luxio) | 24-27 |
+| 4 | Hanashiro | Mamoru (man) | Grass | The castle's head gardener: keeps the cherry trees and moss gardens; quiet and exact; watches the trees for the fading. Survives the tournament disaster, shaken; turns up once in Act 3. ([locations/hanashiro.md](locations/hanashiro.md)) | Appletun (with Cherrim, Dipplin) | 29-32 |
+| 5 | Kanaya | Takumi (man, young) | Fire | The young heir of a foundry family; loyal to the League because the League made his family's name. Repeats the "accident" story and believes it; decent while being wrong. ([locations/kanaya.md](locations/kanaya.md)) | Coalossal (with Magcargo, Bronzong) | 35-38 |
+| 6-8 | | `TODO(design)` | | | | |
 
 ## Champion
 
@@ -132,8 +161,10 @@ points, Tetsu and Ren come too.
   through Palkia's door, to sustain Arceus.
 - **Look:** `TODO(design)`. Placeholder: field gear (headlamps, measuring poles, notebooks); they
   look like researchers, which is why nobody finds them suspicious.
-- **Leader:** **Minato** (man). Believes he can stop the cycle. Lives; the final villain.
-- **Lieutenant:** **Hashimoto** (older man), Nami's mentor. Dies in the tournament disaster.
+- **Leader:** **Minato** (man). Believes he can stop the cycle. Lives; the final villain. First seen
+  at the tournament, after the disaster: calm, grieving Hashimoto, unapologetic: "We are Tokoyo."
+- **Lieutenant:** **Hashimoto** (older man), Nami's mentor. Dies in the tournament disaster:
+  seeing Tokoyo's test is out of control, he joins Fuyumi holding the thinning back, and both die.
   `TODO(design)`: his relationship to Nami beyond mentor.
 - **Members:** principled; don't see themselves as evil; never change their minds; lose
   gracefully.
@@ -141,7 +172,10 @@ points, Tetsu and Ren come too.
   patch); the tournament; the door mountain at the end.
 - **Hinata** (陽向, "sunny place"), a young woman: the first member he meets, on the pass. Loves
   Pokémon, fascinated by Celebi, warm and open. Returns at the tournament, clearly on the
-  other side.
+  other side: in Tokoyo's gear, she leads the crowd out during the disaster.
+- **The member on Route 4** (`TODO(design)`: name): asks about Celebi a little too closely at
+  the orchard thinning; at the tournament, one of the Tokoyo members he fights through to reach the
+  stands; the one who reports Celebi to Minato.
 
 ## Pokémon characters
 

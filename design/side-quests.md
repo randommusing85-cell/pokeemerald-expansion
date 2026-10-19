@@ -82,7 +82,7 @@ The map bookends the chain: the first quest starts it, the last one gives it bac
 | # | When / where | What happens | Points from | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
 | 1 (M1) | Act 1, Shimotsuki, after gym 1 | A practice battle at the town's north edge on his way out (only if you talk to him; his starter Lv 14, Starly Lv 11), then Akira talks about watching League matches with his mum (sets up his turn). | The answer about the League | Battle item | Closes at the tournament |
-| 2 | Act 1, before the tournament | Training together for the tournament; Fuyumi watches (overlaps her chain). | The answer when Akira doubts himself | none | Closes at the tournament |
+| 2 | Act 2, the tournament's day 1 ([hanashiro.md](locations/hanashiro.md)) | Training together in the castle grounds; Fuyumi watches (overlaps her chain). | The answer when Akira doubts himself | none | Closes at the tournament |
 | 3 | Act 3, after he leaves | Optional meeting on the other side. He explains why; no fight unless the player wants one. | The answer (agree he was failed / ask him to come back / just listen) | none | Closes at the League |
 | 4 | Act 4, before the League | A second meeting. He gives something of his mother's. | The answer | **Keepsake:** `TODO(design)`: an object of Fuyumi's | Closes at the League |
 
@@ -91,7 +91,7 @@ The map bookends the chain: the first quest starts it, the last one gives it bac
 | # | When / where | What happens | Points from | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Act 1, Shimotsuki, after gym 1 (second milestone) | A rematch at home, not in the gym; she's softer there. | none (she has no points) | TM `TODO(design)` | Closes at the tournament |
-| 2 | Act 1, before the tournament | She asks him to look out for Akira. He can promise or not; it comes back when Akira leaves. | Akira's points (the promise) | none | Closes at the tournament |
+| 2 | Act 2, the tournament's day 1 | She asks him to look out for Akira. He can promise or not; it comes back when Akira leaves (one line of his goodbye on Route 5). | Akira's points (the promise) | none | Closes at the tournament |
 
 ### Kaede (lore thread; always helps in the finale)
 
@@ -107,13 +107,15 @@ finale she fights beside him in a tag battle, whatever her points
 
 ### Yuki (cameo in Act 1; friend from Act 3)
 
-`TODO(design)`: her hometown.
+Designed in [characters.md](characters.md) ([brainstorm-yuki.md](brainstorm-yuki.md)). Her hometown
+is Minori ([minori.md](locations/minori.md), [brainstorm-yuki-hometown.md](brainstorm-yuki-hometown.md)).
 
 | # | When / where | What happens | Points from | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
-| 0 | Act 1, a route after gym 2 (cameo) | She beats a trainer he struggled with, battles him briefly, says she'll see him at the tournament. Starts her chain. | none | none | No |
-| 1 | Act 2, the tournament | Before her match she asks to spar; afterwards, her answer to losing or winning. | The answer | Battle item | Closes after the tournament |
-| 2 | Act 3, her hometown | One of the fading's small disasters hits her town (overlaps the Eien quests). Helping is how they become friends. | Helping; the answer | **Keepsake:** `TODO(design)`: a tournament token | No |
+| 0 | Act 1, Route 3 ([route-3.md](locations/route-3.md)), at a rope bridge (cameo) | KAITO, a League-sponsored Ace Trainer, blocks the bridge; he battles KAITO, win or lose. She beats KAITO easily in a short scripted scene, battles him briefly (Absol alone, Lv 22, holding back), says she'll see him at the tournament. Starts her chain. | none | none | No |
+| 0b | Act 1, Hanashiro's Pokémon Center ([hanashiro.md](locations/hanashiro.md)), before gym 4 | A heal-and-chat: she teases him about the bridge. No battle. | none | none | No |
+| 1 | Act 2, the tournament's day 1 (their match is on day 2) | She asks to spar; afterwards, her answer to losing or winning. | The answer | Battle item | Closes after the tournament |
+| 2 | Act 3, Minori ([minori.md](locations/minori.md)), a short route beyond Kanaya; her letter after gym 5 | Her Absol sensed it coming. On festival night (*mushi-okuri*, torches along the paddies) a thinning opens at the terraces and the village's Pokémon walk into it. Absol leads him and Yuki through the grey; he calms them (wild battles); a tag battle beside her against two Tokoyo members measuring it. The Pokémon come back, the festival ends late, the terraces stay grey for the year. Her brother gets his first Pokémon. Helping is how they become friends. | Helping; the answer to "Will you come to the festival next year?" | **Keepsake** (at the goodbye): the festival cord from her hair | No |
 
 Keep her scenes friendship: rivals who respect each other, no flirting.
 
@@ -122,7 +124,7 @@ Keep her scenes friendship: rivals who respect each other, no flirting.
 | # | When / where | What happens | Points from | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
 | 0 | Act 1, Yunotaki (cameo) | A by-the-book League trainer. He arrives as the hero leaves gym 2 with the badge: a nod, "Next.", and he walks in to challenge Ibuki officially. No battle ([yunotaki.md](locations/yunotaki.md)). | none | none | No |
-| 1 | Act 3, after the tournament | He's uneasy about the League's story and asks what the hero saw. He quits either way. | Telling him the truth or not | none | No |
+| 1 | Act 3, Kanaya ([kanaya.md](locations/kanaya.md)), where he's come to challenge the gym | He's uneasy about the League's story and asks what the hero saw. He quits either way. | Telling him the truth or not | none | No |
 | 2 | Act 3, after he quits | He helps dig through League records about the cycle. | Helping | League TM `TODO(design)` | No |
 
 ### Tetsu (near the door mountain)
@@ -136,7 +138,7 @@ Keep her scenes friendship: rivals who respect each other, no flirting.
 
 Her core scenes are fixed (story outline). Optional warm scenes, earned by her points:
 
-- Act 1: the coast with her Lapras, after they battle.
+- Act 1: the coast with her Lapras, after they battle (Isaribi's pier at night, the squid boats lit; [isaribi.md](locations/isaribi.md)).
 - Act 3: an aurora night, after she tells him she chooses her world.
 - **Keepsake:** `TODO(design)`: does she give him a Lapras charm (and the woman in the
   epilogue has the matching one), or does only the woman have it?
@@ -150,7 +152,7 @@ Her core scenes are fixed (story outline). Optional warm scenes, earned by her p
 | E3 | Research | Act 3, aurora nights (random after Kaede's step 2) | Night-only research steps (lore notes), including wild Eien Mightyena, which appear only on aurora nights at thin places. | Lore | No |
 | E4 | Disaster | Act 1, Hamakaze | The harbor freezes early; fishermen can't go out. `TODO(design)`: what the hero does. | Money | No |
 | E5 | Disaster | Act 2 or 3, `TODO(design)` | A child goes missing near a thin place. | Battle item | No |
-| E6 | Disaster | Act 3, Yuki's hometown | Yuki's step 2. | (Yuki's) | No |
+| E6 | Disaster | Act 3, Minori (Yuki's hometown) | Yuki's step 2. | (Yuki's) | No |
 | E7 | Lore | Act 1 to 3 | Kaede's tablets (her step 1). Stored as `QUEST_KAEDE_TABLETS`, one step bit per tablet; reading a tablet sets its bit even before she asks, and the quest shows once she opens it. | (Kaede's) | No |
 | E8 | Lore | Act 1 to 3 | Old people in each town tell a folk tale about earlier cycles; each adds a journal page. Scales with the number of towns. | Lore | No |
 

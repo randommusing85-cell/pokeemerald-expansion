@@ -9,6 +9,7 @@
 #include "bg.h"
 #include "data.h"
 #include "decompress.h"
+#include "eien_thinning.h"
 #include "gpu_regs.h"
 #include "graphics.h"
 #include "link.h"
@@ -879,6 +880,7 @@ static void LoadBattleEnvironmentGfx(u16 environment)
     DecompressDataWithHeaderVram(gBattleEnvironmentInfo[environment].background.tileset, (void *)(BG_CHAR_ADDR(2)));
     DecompressDataWithHeaderVram(gBattleEnvironmentInfo[environment].background.tilemap, (void *)(BG_SCREEN_ADDR(26)));
     LoadPalette(gBattleEnvironmentInfo[environment].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+    TintBattleBackgroundForThinning(); // Eien
 }
 
 // Loads the entry associated with the battle environment.
@@ -1345,6 +1347,7 @@ bool8 LoadChosenBattleElement(u8 caseId)
         break;
     case 5:
         LoadPalette(gBattleEnvironmentInfo[GetBattleEnvironmentOverride()].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+        TintBattleBackgroundForThinning(); // Eien
         break;
     case 6:
         LoadBattleMenuWindowGfx();

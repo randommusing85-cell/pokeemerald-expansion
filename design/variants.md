@@ -119,6 +119,7 @@ the middle stages don't evolve further yet.
 | --- | --- | --- | --- |
 | Poochyena | Rock/Dark | A stone shrine guardian dog (komainu), touched by the fading. Beats the Ice gym. | Route 1 (common, ~20%) |
 | Hoothoot | Ghost/Flying | A half-faded owl of the night pass: its wings and tail fade into mist, only the face and glowing eyes are solid. Touched by the fading. Immune to Fighting moves; beats the Fighting gym. | Route 2's upper map, the vents near Yunotaki (10% by day, 30% at night) |
+| Wooper | Ground/Steel | A mine Wooper of the old tunnel's pools: its skin crusted with iron and copper ore, its gills glinting metal frills. Adapted to the mine, not touched by the fading. Immune to Electric; the answer to gym 3 | Route 3 ([route-3.md](locations/route-3.md)): the gorge's grass 10%, the cave 30% |
 
 - **Eien Poochyena:** 35 / 55 / 50 / 25 / 30 / 25 (35 / 55 / 35 / 30 / 30 / 35), 220.
   Abilities Intimidate / Sturdy / Stakeout (hidden). New early moves: Rock Throw (7), Rock
@@ -171,6 +172,37 @@ the middle stages don't evolve further yet.
   `TODO(design)`: both dex entries (drafted at build time).
 
 Decided in [brainstorm-eien-hoothoot.md](brainstorm-eien-hoothoot.md).
+
+- **Eien Wooper** (designed, not built): 55 / 45 / 55 / 15 / 35 / 5 (55 / 45 / 45 / 25 / 25 /
+  15), 210: balanced bulk. Abilities Sturdy / Heavy Metal / Unaware (hidden). New moves:
+  Mud-Slap (1, replacing Water Gun), Metal Claw (16, replacing Slam); Mud Shot (8) as vanilla;
+  otherwise vanilla. Against Akari: Lanturn's Water hits it 2x, Ice Fang is neutral, Flash
+  Cannon is resisted.
+- **Evolves** into Eien Quagsire by leveling up to 20+ in the mine tunnel only
+  (`MAP_EIEN_ROUTE3_CAVE`, an `IF_IN_MAP` entry). The journal notes one that reaches Lv 20
+  outside the tunnel, like Eien Poochyena's note (its own flag). A Survey member at the tunnel
+  says they found them "in the old seams" when they cleared it: a hint at the rule, and at
+  what the Survey digs for (`TODO(design)`: that payoff).
+- **Eien Quagsire:** 95 / 85 / 95 / 55 / 75 / 25 (95 / 85 / 85 / 65 / 65 / 35), 430: the same
+  shift. Same abilities. Learns Iron Head on evolving. Look: smooth polished metal, like a Nanbu
+  *tetsubin* (the cast-iron kettle of Iwate's ironware craft), with Quagsire's goofy face kept.
+- **Research:** seen / battled / caught, like the others.
+- **Shiny:** gold ore, a gleaming gold crust instead of iron and copper; Eien Quagsire a gilded
+  kettle.
+- **Sprites:** AI drafts through `tools/eien_species/`. `TODO(design)`: both dex entries
+  (drafted at build time).
+
+Decided in [brainstorm-eien-wooper.md](brainstorm-eien-wooper.md).
+
+### Planned: Trubbish's split
+
+Later in the game, Trubbish branches at Garbodor's level (Lv 36): leveling up while holding
+**Fresh Water** evolves it into a new Pokémon instead of Garbodor, and the Fresh Water is used
+up (like vanilla held-item evolutions). Fresh Water can be held (it's in the Items pocket), and
+the engine's `IF_HOLD_ITEM` condition on a level-up evolution supports it, with no engine
+change. Unlike the variants, the new Pokémon is a new species, not a regional form.
+`TODO(design)`: where Trubbish is found (a later act); the new Pokémon itself (name, type,
+look, stats; its own brainstorm). Noted in [brainstorm-eien-wooper.md](brainstorm-eien-wooper.md).
 
 ### Shrine areas
 

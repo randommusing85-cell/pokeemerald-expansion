@@ -47,7 +47,8 @@ the record.
   Ibuki and wants a warm-up.
 - **Akira's team (r3 1a):** his starter at Lv 17, unevolved (the evolved Eien starters aren't
   designed yet), Staravia Lv 18 and Machop Lv 17 (his answer to Ice, learned from his mum's
-  gym). The jump to his evolved starter shows at gym 3.
+  gym). The jump to his evolved starter shows at gym 3 (later moved: he doesn't battle at gym 3,
+  so it first shows at the tournament; brainstorm-port-gym-3.md r1 6b).
 - **Pilgrims (r3 2a):** one Fighting Pokémon each: Makuhita and Meditite (foreshadowing
   Medicham).
 - **Defaults (r3):** Throh: Seismic Toss, Rock Tomb, Bulk Up, Vital Throw. Sawk: Double Kick,

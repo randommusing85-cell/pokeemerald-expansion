@@ -18,6 +18,13 @@ milestone (prologue through gym 1):
 | Shimotsuki (+ gym, Pokémon Center, Mart), Kaede's shrine, Lake Usurai | [shimotsuki.md](locations/shimotsuki.md) | **Built** on placeholder layouts: Akira shows the gym, gym 1 with badge and TM07, Akira's practice (`QUEST_AKIRA_PRACTICE`), Kaede's cameo and her grandmother, Nami's meeting and the end-of-milestone message. Since then: the Hoarfrost Badge, Kaede's shrine wild table (Eien Poochyena, Duskull), the ICE FISHER and SHOVELER classes. Still to do: the tablet text, real music, an ice-rim tile for the lake |
 
 | Route 2's mountain pass + roadside shrine | [route-2.md](locations/route-2.md) | Designed (brainstorm-route-2.md, brainstorm-route-2-trainers-wild.md): two maps, six trainers, wild tables, items. The four classes, the six trainers, Tomo's Old Rod and the lake's fishing table are built. Needs the two maps (Porymap), Eien Hoothoot, the trainers' overworld sprites and lines |
+| Route 3, the gorge road to the coast + the Survey's cave | [route-3.md](locations/route-3.md) | Designed (brainstorm-route-3.md, brainstorm-route-3-trainers.md): two maps, Yuki's cameo, the Survey's tunnel, the door mountain view, trainers and teams, wild, items. Needs the maps (Porymap), Eien Wooper's build and sprites, Yuki's sprites (her design is in `characters.md`), the port town |
+| Isaribi (+ gym 3, Pokémon Center, Mart, boathouse, fishing-gear shop) | [isaribi.md](locations/isaribi.md) | Designed (brainstorm-port-gym-3.md): Akari (Electric), Mauville's gym reused, Nami's battle on the pier, the Good Rod. Needs the maps (Porymap), Akari's sprites, Eien Wooper's build (the crew's teams are set) |
+| Route 4, the rice plain | [route-4.md](locations/route-4.md) | Designed (brainstorm-route-4-gym-4.md): the orchard thinning, the Survey member, wild species. Needs the map (Porymap), trainers and teams, wild rates |
+| Hanashiro (+ gym 4, Pokémon Center, Mart; the castle grounds for Act 2) | [hanashiro.md](locations/hanashiro.md) | Designed (brainstorm-route-4-gym-4.md): Mamoru (Grass), Fortree's gym reused, Yuki's chat, the tournament's host. Needs the maps (Porymap, incl. the tournament's castle grounds, the passage under the castle and the inn), Mamoru's sprites, the apprentices' teams, the tournament's teams and lines (designed in brainstorm-tournament.md) |
+| Route 5, the beech forest | [route-5.md](locations/route-5.md) | Designed (brainstorm-act-3-gym-5.md): Akira's goodbye, a Tokoyo member, wild species. Needs the map (Porymap), trainers and teams, greyed tiles, lines |
+| Kanaya (+ gym 5, Pokémon Center, Mart, the mine) | [kanaya.md](locations/kanaya.md) | Designed (brainstorm-act-3-gym-5.md): Takumi (Fire), Lavaridge's gym reused, Ren's step 1, the sealed seam. Needs the maps (Porymap), Takumi's sprites, the workers' teams, lines, what the Survey digs for |
+| Route 6 + Minori (Yuki's village, her house, the terraces) | [route-6.md](locations/route-6.md), [minori.md](locations/minori.md) | Designed (brainstorm-yuki-hometown.md): the festival, the thinning, the rescue, the tag battle beside Yuki. Needs the maps (Porymap), the grey tile copies for the terraces (the thinning effect is built), names, teams, Yuki's partner entry |
 | Yunotaki (+ gym 2, Pokémon Center, Mart, herb shop, inn) | [yunotaki.md](locations/yunotaki.md) | **Built** on Lavaridge's layout (small edits) and Dewford's gym: gym 2 with Ibuki, the pilgrims and the Misogi Badge + TM31, Akira at the gym door, the bath heal, the gossips, Ren's cameo. Still to do: the connection from Route 2, the road east, real music, reviewing the draft lines |
 
 Open gaps found while building Shimotsuki:
@@ -43,7 +50,7 @@ Open gaps found while building Shimotsuki:
   look (named: the Eien Survey, true name Tokoyo); Tetsu's and Ren's placement.
 - **Progression:** gym leaders 2-8, the level curve past gym 1, badge gates, field moves
   without HMs (`progression.md`).
-- **Species:** the evolved starters and Eien Hoothoot are designed (`variants.md`), not built; more Eien variants (5-10 total planned);
+- **Species:** the evolved starters, Eien Hoothoot and Eien Wooper are designed (`variants.md`), not built; Trubbish's Fresh Water split is planned (its new Pokémon needs a brainstorm); more Eien variants (5-10 total planned);
   Eien Mightyena's dex entry.
 - **Quests:** point thresholds, the letter trigger rule, remaining chains' details
   (`side-quests.md`).
