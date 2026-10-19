@@ -113,7 +113,8 @@ points, Tetsu and Ren come too.
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Shimotsuki | Fuyumi | Ice | Stern veteran in the gym, softer at home with Akira. Akira's mother; dies at the tournament. | Bergmite (with Spheal) | 13-14 |
 | 2 | Yunotaki | Ibuki (man, 40s) | Fighting | Lean, grey-streaked hair tied back, a scar across one eyebrow; an off-white training gi, a rope belt, prayer beads and faded red wrist tape from his League days. A former League fighter who walked away after a season that ended badly and won't say why. Trains under the hot waterfalls, like Tohoku's mountain ascetics. Quietly sceptical of the League (a seed for the cover-up, not spelled out). | Medicham (with Throh, Sawk) | 19-21 |
-| 3-8 | | `TODO(design)` | | | | |
+| 3 | Isaribi | Akari (woman) | Electric | Runs the squid-boat fleet; her Electric Pokémon light its lamps. Practical, loud, well loved: the first leader with a big, warm personality. ([locations/isaribi.md](locations/isaribi.md)) | Lanturn (with Magneton, Luxio) | 24-27 |
+| 4-8 | | `TODO(design)` | | | | |
 
 ## Champion
 

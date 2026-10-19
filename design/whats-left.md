@@ -19,6 +19,7 @@ milestone (prologue through gym 1):
 
 | Route 2's mountain pass + roadside shrine | [route-2.md](locations/route-2.md) | Designed (brainstorm-route-2.md, brainstorm-route-2-trainers-wild.md): two maps, six trainers, wild tables, items. The four classes, the six trainers, Tomo's Old Rod and the lake's fishing table are built. Needs the two maps (Porymap), Eien Hoothoot, the trainers' overworld sprites and lines |
 | Route 3, the gorge road to the coast + the Survey's cave | [route-3.md](locations/route-3.md) | Designed (brainstorm-route-3.md): two maps, Yuki's cameo, the Survey's tunnel, the door mountain view, trainers, wild, items. Needs the maps (Porymap), Eien Wooper's design, Yuki's design, the port town |
+| Isaribi (+ gym 3, Pokémon Center, Mart, boathouse, fishing-gear shop) | [isaribi.md](locations/isaribi.md) | Designed (brainstorm-port-gym-3.md): Akari (Electric), Mauville's gym reused, Nami's battle on the pier, the Good Rod. Needs the maps (Porymap), Akari's sprites, the crew's teams, Eien Wooper |
 | Yunotaki (+ gym 2, Pokémon Center, Mart, herb shop, inn) | [yunotaki.md](locations/yunotaki.md) | **Built** on Lavaridge's layout (small edits) and Dewford's gym: gym 2 with Ibuki, the pilgrims and the Misogi Badge + TM31, Akira at the gym door, the bath heal, the gossips, Ren's cameo. Still to do: the connection from Route 2, the road east, real music, reviewing the draft lines |
 
 Open gaps found while building Shimotsuki:

@@ -136,7 +136,7 @@ Keep her scenes friendship: rivals who respect each other, no flirting.
 
 Her core scenes are fixed (story outline). Optional warm scenes, earned by her points:
 
-- Act 1: the coast with her Lapras, after they battle.
+- Act 1: the coast with her Lapras, after they battle (Isaribi's pier at night, the squid boats lit; [isaribi.md](locations/isaribi.md)).
 - Act 3: an aurora night, after she tells him she chooses her world.
 - **Keepsake:** `TODO(design)`: does she give him a Lapras charm (and the woman in the
   epilogue has the matching one), or does only the woman have it?

@@ -55,7 +55,8 @@ stays as the record.
 
 ## Open questions
 
-Nothing open from rounds 1-2. Later: Akira's line, the gym trainers' names and teams, Akari's
+Promoted into `locations/isaribi.md`, `characters.md`, `progression.md`, `story-outline.md`,
+`side-quests.md`, `locations/route-3.md` and `whats-left.md`. Nothing open from rounds 1-2. Later: Akira's line, the gym trainers' names and teams, Akari's
 dialogue and sprites, the town's NPC lines, where the road goes next, Ren (a gym-2-only cameo,
 not here unless decided), the Good Rod's tables.
 

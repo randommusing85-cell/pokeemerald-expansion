@@ -5,7 +5,7 @@
   `MAP_EIEN_ROUTE3_CAVE`, cave tileset).
 - **Type:** route
 - **Connects to:** west: Yunotaki's east exit ([yunotaki.md](yunotaki.md)). East: the cave, whose
-  exit leads to the gym 3 port town (`TODO(design)`: its name and doc).
+  exit leads to Isaribi, the gym 3 port town ([isaribi.md](isaribi.md)).
 
 Decided in [brainstorm-route-3.md](../brainstorm-route-3.md).
 
@@ -37,7 +37,7 @@ east:
    by the Eien Survey." Hinata isn't here (saved for later).
 4. **The cave's exit:** the first view after the dark: the coast below, and the door mountain
    smoking on the horizon. No scene, just the view (and maybe a line from him).
-5. The port town (gym 3).
+5. Isaribi (gym 3).
 
 ## NPCs and events
 
