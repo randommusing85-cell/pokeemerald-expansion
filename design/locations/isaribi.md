@@ -4,8 +4,8 @@
   `MAP_ISARIBI_POKEMON_CENTER_1F`, `MAP_ISARIBI_MART`, `MAP_ISARIBI_BOATHOUSE`,
   `MAP_ISARIBI_FISHING_SHOP`). The gym's inside reuses Mauville's gym layout.
 - **Type:** town
-- **Connects to:** west/up: Route 3's cave exit ([route-3.md](route-3.md)). `TODO(design)`: where the
-  road goes next (toward gym 4).
+- **Connects to:** west/up: Route 3's cave exit ([route-3.md](route-3.md)). East / inland: Route 4,
+  across the rice plain to Hanashiro, gym 4 ([route-4.md](route-4.md)).
 
 Decided in [brainstorm-port-gym-3.md](../brainstorm-port-gym-3.md). Isaribi (漁火, "fishing
 fires"): the lamps of the night squid boats strung across the dark sea.

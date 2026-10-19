@@ -3,7 +3,7 @@
 ## Route order
 
 Our world (prologue) → Hamakaze → Route 1 → Shimotsuki (gym 1) → Lake Usurai → Route 2 (the
-mountain pass) → Yunotaki (gym 2) → Route 3 (the gorge) → Isaribi (gym 3, Electric) → ... → gym 4 → tournament →
+mountain pass) → Yunotaki (gym 2) → Route 3 (the gorge) → Isaribi (gym 3, Electric) → Route 4 (the rice plain) → Hanashiro (gym 4, Grass) → the tournament (Hanashiro's castle grounds) →
 gyms 5-8 → Pokémon League (Minato's plan interrupts the Elite Four) → door mountain.
 
 ## Badges and gates
@@ -13,7 +13,8 @@ gyms 5-8 → Pokémon League (Minato's plan interrupts the Elite Four) → door 
 | 1 | Fuyumi (Ice), Shimotsuki | Hoarfrost Badge; Fuyumi also gives TM07 Hail. `TODO(design)`: what it unlocks | `TODO(design)` |
 | 2 | Ibuki (Fighting), Yunotaki | Misogi Badge; Ibuki also gives TM31 Brick Break. `TODO(design)`: what it unlocks | `TODO(design)` |
 | 3 | Akari (Electric), Isaribi | Lantern Badge; Akari also gives TM34 Shock Wave. `TODO(design)`: what it unlocks | `TODO(design)` |
-| 4-8 | `TODO(design)` | | |
+| 4 | Mamoru (Grass), Hanashiro | Blossom Badge; Mamoru also gives TM19 Giga Drain. `TODO(design)`: what it unlocks | `TODO(design)` |
+| 5-8 | `TODO(design)` | | |
 
 Every gate is enforced by a flag or var; list it in the location doc that checks it.
 
@@ -27,6 +28,8 @@ Every gate is enforced by a flag or var; list it in the location doc that checks
 | Gym 2 | | 17-19 (Akira 17-18) | 21 (Medicham) |
 | Route 3 (the gorge, the cave) | 15-20 | 18-23 (the bridge Ace Trainer about 25) | |
 | Gym 3 | | 22-25 | 27 (Lanturn) |
+| Route 4 (the rice plain) | 22-27 | 24-28 | |
+| Gym 4 | | 27-29 | 32 (Appletun) |
 
 All levels are proposed defaults; adjust after playtesting.
 

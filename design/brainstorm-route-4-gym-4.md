@@ -1,7 +1,9 @@
 # Brainstorm: the road after Isaribi and gym 4
 
 Working notes. Decisions move into `progression.md`, `story-outline.md`, `characters.md` and new
-location docs when settled; this file stays as the record.
+location docs when settled; this file stays as the record. **Promoted** into `locations/route-4.md`,
+`locations/hanashiro.md`, `isaribi.md`, `story-outline.md`, `progression.md`, `characters.md`,
+`side-quests.md` and `whats-left.md`.
 
 ## Givens (from the docs)
 

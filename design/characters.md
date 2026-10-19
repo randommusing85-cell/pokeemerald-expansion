@@ -126,8 +126,7 @@ Decided in [brainstorm-yuki.md](brainstorm-yuki.md).
   Pokémon (in the games it appears before calamities). `TODO(design)`: the rest of her team
   for the tournament and Act 3.
 - **In Act 1:** the Route 3 bridge (Absol alone, Lv 22; [route-3.md](locations/route-3.md)), then
-  a heal-and-chat at a Pokémon Center near gym 4, teasing him about the bridge, no battle
-  (`TODO(design)`: which town).
+  a heal-and-chat at Hanashiro's Pokémon Center (gym 4), teasing him about the bridge, no battle.
 - **Sprites:** `TODO`: AI drafts like Ibuki's (an overworld recolor, a battle pic).
 
 ## Gym leaders
@@ -137,7 +136,8 @@ Decided in [brainstorm-yuki.md](brainstorm-yuki.md).
 | 1 | Shimotsuki | Fuyumi | Ice | Stern veteran in the gym, softer at home with Akira. Akira's mother; dies at the tournament. | Bergmite (with Spheal) | 13-14 |
 | 2 | Yunotaki | Ibuki (man, 40s) | Fighting | Lean, grey-streaked hair tied back, a scar across one eyebrow; an off-white training gi, a rope belt, prayer beads and faded red wrist tape from his League days. A former League fighter who walked away after a season that ended badly and won't say why. Trains under the hot waterfalls, like Tohoku's mountain ascetics. Quietly sceptical of the League (a seed for the cover-up, not spelled out). | Medicham (with Throh, Sawk) | 19-21 |
 | 3 | Isaribi | Akari (woman) | Electric | Runs the squid-boat fleet; her Electric Pokémon light its lamps. Practical, loud, well loved: the first leader with a big, warm personality. ([locations/isaribi.md](locations/isaribi.md)) | Lanturn (with Magneton, Luxio) | 24-27 |
-| 4-8 | | `TODO(design)` | | | | |
+| 4 | Hanashiro | Mamoru (man) | Grass | The castle's head gardener: keeps the cherry trees and moss gardens; quiet and exact; watches the trees for the fading. Survives the tournament disaster, shaken; turns up once in Act 3. ([locations/hanashiro.md](locations/hanashiro.md)) | Appletun (with Cherrim, Dipplin) | 29-32 |
+| 5-8 | | `TODO(design)` | | | | |
 
 ## Champion
 
@@ -166,6 +166,9 @@ Decided in [brainstorm-yuki.md](brainstorm-yuki.md).
 - **Hinata** (陽向, "sunny place"), a young woman: the first member he meets, on the pass. Loves
   Pokémon, fascinated by Celebi, warm and open. Returns at the tournament, clearly on the
   other side.
+- **The member on Route 4** (`TODO(design)`: name): asks about Celebi a little too closely at
+  the orchard thinning; seen again at the tournament, near where the villains move; the one who
+  reports Celebi to Minato.
 
 ## Pokémon characters
 

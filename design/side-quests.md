@@ -113,7 +113,7 @@ Designed in [characters.md](characters.md) ([brainstorm-yuki.md](brainstorm-yuki
 | # | When / where | What happens | Points from | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
 | 0 | Act 1, Route 3 ([route-3.md](locations/route-3.md)), at a rope bridge (cameo) | KAITO, a League-sponsored Ace Trainer, blocks the bridge; he battles KAITO, win or lose. She beats KAITO easily in a short scripted scene, battles him briefly (Absol alone, Lv 22, holding back), says she'll see him at the tournament. Starts her chain. | none | none | No |
-| 0b | Act 1, a Pokémon Center near gym 4 (`TODO(design)`: which town) | A heal-and-chat: she teases him about the bridge. No battle. | none | none | No |
+| 0b | Act 1, Hanashiro's Pokémon Center ([hanashiro.md](locations/hanashiro.md)), before gym 4 | A heal-and-chat: she teases him about the bridge. No battle. | none | none | No |
 | 1 | Act 2, the tournament | Before her match she asks to spar; afterwards, her answer to losing or winning. | The answer | Battle item | Closes after the tournament |
 | 2 | Act 3, her hometown | One of the fading's small disasters hits her town (overlaps the Eien quests). Helping is how they become friends. | Helping; the answer | **Keepsake** (at the goodbye): the festival cord from her hair | No |
 
