@@ -10,6 +10,7 @@
 bool32 IsThinningActive(void);
 void TintBattleBackgroundForThinning(void);
 void KeepObjectInColourInThinning(void);
+void ResumeMusicAfterThinning(void);
 void StopSnowForThinning(void); // in field_weather_effect.c, next to the snow
 
 void Thinning_InitVars(void);

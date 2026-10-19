@@ -6,6 +6,7 @@
 #include "follower_npc.h"
 #include "overworld.h"
 #include "palette.h"
+#include "sound.h"
 #include "sprite.h"
 #include "trig.h"
 #include "constants/rgb.h"
@@ -34,6 +35,12 @@ static EWRAM_DATA u16 sDrain = 0;   // 0 (full colour) to DRAIN_FULL (grey)
 static EWRAM_DATA u16 sCloseFrom = 0;
 static EWRAM_DATA bool8 sClosing = FALSE;
 static EWRAM_DATA u8 sKeptLocalIds[MAX_KEPT_OBJECTS] = {0};
+static EWRAM_DATA u16 sKeptMap = 0; // The map the kept objects belong to
+
+static u16 GetCurrentMapId(void)
+{
+    return gSaveBlock1Ptr->location.mapNum | (gSaveBlock1Ptr->location.mapGroup << 8);
+}
 
 bool32 IsThinningActive(void)
 {
@@ -75,7 +82,7 @@ static u32 GetDrainedPalettes(void)
     palettes &= ~GetObjectPaletteBit(gPlayerAvatar.objectEventId);
     if (PlayerHasFollowerNPC())
         palettes &= ~GetObjectPaletteBit(GetFollowerNPCObjectId());
-    for (i = 0; i < MAX_KEPT_OBJECTS; i++)
+    for (i = 0; i < MAX_KEPT_OBJECTS && sKeptMap == GetCurrentMapId(); i++)
     {
         if (sKeptLocalIds[i] != 0
          && !TryGetObjectEventIdByLocalIdAndMap(sKeptLocalIds[i], gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, &objectEventId))
@@ -198,7 +205,6 @@ bool8 Thinning_Finish(void)
         sCloseFrom = sDrain;
         sStep = 0;
         sStepTimer = 0;
-        memset(sKeptLocalIds, 0, sizeof(sKeptLocalIds));
     }
     if (++sStepTimer >= FRAMES_PER_STEP)
     {
@@ -211,15 +217,22 @@ bool8 Thinning_Finish(void)
         return TRUE;
     sDrain = 0;
     ApplyThinning();
+    memset(sKeptLocalIds, 0, sizeof(sKeptLocalIds));
     return FALSE;
 }
 
 // special KeepObjectInColourInThinning: VAR_0x8004 is the local ID of an object (Yuki, a
-// partner) that stays in colour with the hero. Up to two; cleared when the thinning closes.
+// partner) that stays in colour with the hero. Up to two; cleared when the thinning closes, and
+// ignored on any other map (leaving the map closes the thinning without running its close).
 void KeepObjectInColourInThinning(void)
 {
     u32 i;
 
+    if (sKeptMap != GetCurrentMapId())
+    {
+        memset(sKeptLocalIds, 0, sizeof(sKeptLocalIds));
+        sKeptMap = GetCurrentMapId();
+    }
     for (i = 0; i < MAX_KEPT_OBJECTS; i++)
     {
         if (sKeptLocalIds[i] == 0 || sKeptLocalIds[i] == gSpecialVar_0x8004)
@@ -228,6 +241,17 @@ void KeepObjectInColourInThinning(void)
             return;
         }
     }
+}
+
+// callnative ResumeMusicAfterThinning, when it closes: the song paused when it opened comes back,
+// or, if a battle stopped it (Overworld_PlaySpecialMapMusic keeps it silent), the map's music
+// (or the saved song) starts again.
+void ResumeMusicAfterThinning(void)
+{
+    if (GetCurrentMapMusic() == 0)
+        Overworld_PlaySpecialMapMusic();
+    else
+        FadeInBGM(4);
 }
 
 // The battle background's palettes (BG palettes 2-4) go grey while it's open
