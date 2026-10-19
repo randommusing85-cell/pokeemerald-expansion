@@ -1,7 +1,8 @@
 # Brainstorm: Yuki's design
 
 Working notes. Decisions move into `characters.md`, `side-quests.md`, `dialogue-style.md` and
-`locations/route-3.md` when settled; this file stays as the record.
+`locations/route-3.md` when settled; this file stays as the record. **Promoted** into `characters.md`, `side-quests.md`,
+`dialogue-style.md`, `locations/route-3.md` and `whats-left.md`.
 
 ## Givens (from the docs)
 

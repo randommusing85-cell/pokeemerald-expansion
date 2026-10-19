@@ -65,7 +65,7 @@ points, Tetsu and Ren come too.
 | Name | Role | Where | Notes |
 | --- | --- | --- | --- |
 | Haru Kashiwagi | Main friend, Act 1 | Hamakaze | Boy, the professor's son, about the hero's age. Takes the third starter. Shares the grief when his mother dies. |
-| Yuki | Main friend, Act 3 | Tournament, then Act 3 | Girl from another town. Tournament rival, becomes a friend after Akira leaves. |
+| Yuki | Main friend, Act 3 | Route 3 cameo, tournament, then Act 3 | Girl from another town. Tournament rival, becomes a friend after Akira leaves. See below. |
 | Kaede | Smaller friend | Her shrine in Shimotsuki | Young shrine keeper who knows the old tales of the cycle. |
 | Tetsu | Smaller friend | Near the door mountain | Old mountain guide. |
 | Ren | Smaller friend | `TODO(design)` | League trainer who quits after learning about the cover-up. |
@@ -106,6 +106,29 @@ points, Tetsu and Ren come too.
   Decided in [brainstorm-kaede-finale.md](brainstorm-kaede-finale.md) and
   [brainstorm-kaede-aurora.md](brainstorm-kaede-aurora.md).
   Decided in [brainstorm-kaede.md](brainstorm-kaede.md).
+
+### Yuki
+
+Decided in [brainstorm-yuki.md](brainstorm-yuki.md).
+
+- **Name:** Yuki (幸, "happiness, good fortune"): a warm counterweight to the disasters, and
+  quietly ironic beside her Absol.
+- **Why she competes:** for her hometown, a small struggling place; a tournament win would
+  bring it money and attention. No sponsor (against KAITO's League money on Route 3). Act 3's
+  disaster hits what she's fighting for.
+- **Hometown:** `TODO(design)`, placed with Act 3's maps; leaning a small farming village
+  (rice terraces, one festival a year).
+- **Voice:** cheerful and teasing; ribs him, laughs off a loss, serious in battle.
+- **Look:** a farm girl on the road: a straw hat on her back, a work jacket, walking boots, a
+  cloth bag, and a festival cord in her hair from her town's one festival. The cord is her
+  keepsake.
+- **Team:** mixed, with one clear ace she's had since she was small: **Absol**, the disaster
+  Pokémon (in the games it appears before calamities). `TODO(design)`: the rest of her team
+  for the tournament and Act 3.
+- **In Act 1:** the Route 3 bridge (Absol alone, Lv 22; [route-3.md](locations/route-3.md)), then
+  a heal-and-chat at a Pokémon Center near gym 4, teasing him about the bridge, no battle
+  (`TODO(design)`: which town).
+- **Sprites:** `TODO`: AI drafts like Ibuki's (an overworld recolor, a battle pic).
 
 ## Gym leaders
 

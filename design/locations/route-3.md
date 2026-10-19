@@ -28,10 +28,10 @@ Act 1 beat 8 in [story-outline.md](../story-outline.md), between gym 2 and gym 3
 east:
 
 1. **The gorge:** the road is washed out by the thaw. Trainers along the gorge and its bridges.
-2. **Yuki's cameo** ([side-quests.md](../side-quests.md), step 0), midway: a League-sponsored
-   Ace Trainer heading for the tournament blocks a rope bridge, a few levels above the curve
-   (about Lv 25). He battles them, win or lose. Then Yuki arrives, beats them easily, battles
-   him briefly, and says she'll see him at the tournament.
+2. **Yuki's cameo** ([side-quests.md](../side-quests.md), step 0), midway: KAITO, a
+   League-sponsored Ace Trainer heading for the tournament, blocks a rope bridge (Lv 24-25).
+   He battles KAITO, win or lose. Then Yuki arrives, beats KAITO easily in a short scripted
+   scene, battles him briefly (Absol alone, Lv 22), and says she'll see him at the tournament.
 3. **The Survey's way round:** the broken road ends at an old mine tunnel the Eien Survey has
    cleared and lit. A member at the entrance: "It's safe. We checked." A sign: "Route kept open
    by the Eien Survey." Hinata isn't here (saved for later).
@@ -44,7 +44,7 @@ east:
 | NPC / event | Where | Visible when | Says / does |
 | --- | --- | --- | --- |
 | KAITO, the Ace Trainer | a rope bridge, midway | until Yuki's scene | Blocks the bridge; battles him (see Trainers) |
-| Yuki | the same bridge | after his battle with the Ace Trainer | Beats the Ace Trainer, battles him briefly, "see you at the tournament". Starts her chain. `TODO(design)`: her sprite, team and lines |
+| Yuki | the same bridge | after his battle with KAITO | Beats KAITO in a short scripted scene (her Absol moves, his Machoke falls, an emote, two text boxes; KAITO walks off). Then: "You didn't lose by much. I'd have lost to him, last year." (`TODO(design)`: a variant if he won). Battles him with Absol alone, Lv 22, and shows she held back (her others are tired). "See you at the tournament." Starts her chain ([characters.md](../characters.md)). Sprite `TODO` (AI drafts); class `TODO(design)` at build |
 | Eien Survey member | the cave entrance | always | "It's safe. We checked." Also says they found the Wooper "in the old seams" when they cleared it (a hint at its evolution; `TODO(design)`: the line) |
 | Survey sign | the cave entrance | always | "Route kept open by the Eien Survey." |
 | The view | the cave's exit | always | The coast and the door mountain (`TODO(design)`: whether he says anything) |

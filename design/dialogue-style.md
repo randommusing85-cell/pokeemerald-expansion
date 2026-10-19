@@ -28,6 +28,13 @@ Blunt and practical; short sentences, no ceremony. Tells old tales flatly, as ta
 > It'll grow when it's ready. Here, not out there. That's how the stone dogs are.
 > You don't know the tales. Everyone here knows the tales. …Anyway.
 
+### Yuki
+
+Cheerful and teasing; ribs him, laughs off a loss, serious in battle. Drafts:
+
+> You didn't lose by much. I'd have lost to him, last year.
+> (`TODO(design)`: a variant for when he beat KAITO.)
+
 ### _[Rival]_
 
 _[description]_
