@@ -1,7 +1,9 @@
 # Brainstorm: Yuki's hometown and its disaster
 
 Working notes. Decisions move into `side-quests.md`, `characters.md`, `story-outline.md` and a new
-location doc when settled; this file stays as the record.
+location doc when settled; this file stays as the record. **Promoted** into `locations/minori.md`,
+`locations/route-6.md`, `side-quests.md`, `characters.md`, `story-outline.md`, `progression.md`,
+`kanaya.md` and `whats-left.md`.
 
 ## Givens (from the docs)
 

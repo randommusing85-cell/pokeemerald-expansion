@@ -118,8 +118,10 @@ Decided in [brainstorm-yuki.md](brainstorm-yuki.md).
 - **Why she competes:** for her hometown, a small struggling place; a tournament win would
   bring it money and attention. No sponsor (against KAITO's League money on Route 3). Act 3's
   disaster hits what she's fighting for.
-- **Hometown:** `TODO(design)`, placed with Act 3's maps; leaning a small farming village
-  (rice terraces, one festival a year).
+- **Hometown:** Minori (実り, "harvest"), a small rice-terrace village a short route beyond
+  Kanaya ([locations/minori.md](locations/minori.md)). Her parents farm the terraces; a little brother
+  wants to be a trainer like her. Its one festival is *mushi-okuri* (torches along the paddies);
+  her cord is a torch-bearer's cord.
 - **Voice:** cheerful and teasing; ribs him, laughs off a loss, serious in battle.
 - **Look:** a farm girl on the road: a straw hat on her back, a work jacket, walking boots, a
   cloth bag, and a festival cord in her hair from her town's one festival. The cord is her

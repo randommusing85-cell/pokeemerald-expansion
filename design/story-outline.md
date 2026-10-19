@@ -50,7 +50,7 @@ happens.
 | --- | --- | --- | --- |
 | 1 | Route 5 ([route-5.md](locations/route-5.md)), east out of Shimotsuki | Through old beech forest, greyed in patches; a Tokoyo member openly ropes off a thinning. At the forest's end Akira waits to say goodbye properly and asks him not to follow; they battle (about Lv 36); then he goes to Minato. Fuyumi's promise changes one line. Decided in [brainstorm-act-3-gym-5.md](brainstorm-act-3-gym-5.md). | `TODO` |
 | 1b | Kanaya ([kanaya.md](locations/kanaya.md)) | An ironworks town. Ren asks what he saw at the tournament. Fresh Survey digging in the old mine's sealed seam. Gym 5: Takumi (Fire), a League loyalist who believes the "accident" story; the Forge Badge. | `TODO` |
-| 2 | Yuki's farming village, a short route beyond Kanaya (`TODO(design)`) | After gym 5 her letter asks for help; one of the fading's small disasters has hit her town. Helping is how they become friends. | `TODO` |
+| 2 | Route 6, then Minori ([minori.md](locations/minori.md)), Yuki's village | After gym 5 her letter asks for help: her Absol sensed something coming. On festival night a thinning opens at the terraces and the village's Pokémon walk into it; he and Yuki bring them back and beat two Tokoyo members measuring it. The festival ends late; the terraces stay grey for the year. Helping is how they become friends. | `TODO` |
 | 3 | `TODO(design)` | He learns about the cycle and Minato's plan to drain other worlds, his own included. | `TODO` |
 | 4 | `TODO(design)` | Nami tells him she chooses her world over his. | `TODO` |
 | 5 | Kashiwagi's lab | The professor dies in a lab disaster, leaving the research that explains the cycle. | `TODO` |

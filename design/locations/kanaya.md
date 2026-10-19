@@ -4,8 +4,8 @@
   `MAP_KANAYA_POKEMON_CENTER_1F`, `MAP_KANAYA_MART`, `MAP_KANAYA_MINE`). The gym's inside reuses
   Lavaridge's gym layout. Vanilla layouts can stand in.
 - **Type:** town
-- **Connects to:** west: Route 5 ([route-5.md](route-5.md)). Onward: a short route to Yuki's
-  farming village (`TODO(design)`), then toward gym 6.
+- **Connects to:** west: Route 5 ([route-5.md](route-5.md)). East: Route 6, a short route to
+  Minori, Yuki's village ([route-6.md](route-6.md), [minori.md](minori.md)), then toward gym 6.
 
 Decided in [brainstorm-act-3-gym-5.md](../brainstorm-act-3-gym-5.md). Kanaya (金屋, "metalworkers' quarter").
 

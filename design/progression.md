@@ -3,7 +3,7 @@
 ## Route order
 
 Our world (prologue) → Hamakaze → Route 1 → Shimotsuki (gym 1) → Lake Usurai → Route 2 (the
-mountain pass) → Yunotaki (gym 2) → Route 3 (the gorge) → Isaribi (gym 3, Electric) → Route 4 (the rice plain) → Hanashiro (gym 4, Grass) → the tournament (Hanashiro's castle grounds) → Shimotsuki (the funeral) → Route 5 (the beech forest) → Kanaya (gym 5, Fire) → Yuki's village →
+mountain pass) → Yunotaki (gym 2) → Route 3 (the gorge) → Isaribi (gym 3, Electric) → Route 4 (the rice plain) → Hanashiro (gym 4, Grass) → the tournament (Hanashiro's castle grounds) → Shimotsuki (the funeral) → Route 5 (the beech forest) → Kanaya (gym 5, Fire) → Route 6 → Minori (Yuki's village) →
 gyms 5-8 → Pokémon League (Minato's plan interrupts the Elite Four) → door mountain.
 
 ## Badges and gates
@@ -34,6 +34,7 @@ Every gate is enforced by a flag or var; list it in the location doc that checks
 | The tournament (Hanashiro) | | KAITO ~30, Yuki ~32, Nami ~34; Tokoyo members 30-33 | |
 | Route 5 (the beech forest) | 30-35 | 32-36 (Akira ~36) | |
 | Gym 5 | | 34-36 | 38 (Coalossal) |
+| Route 6, Minori | 34-38 | 35-38; the Tokoyo pair 37-40 | |
 
 All levels are proposed defaults; adjust after playtesting.
 

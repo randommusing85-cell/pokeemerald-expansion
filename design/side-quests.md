@@ -107,15 +107,15 @@ finale she fights beside him in a tag battle, whatever her points
 
 ### Yuki (cameo in Act 1; friend from Act 3)
 
-Designed in [characters.md](characters.md) ([brainstorm-yuki.md](brainstorm-yuki.md)).
-`TODO(design)`: her hometown (placed with Act 3's maps).
+Designed in [characters.md](characters.md) ([brainstorm-yuki.md](brainstorm-yuki.md)). Her hometown
+is Minori ([minori.md](locations/minori.md), [brainstorm-yuki-hometown.md](brainstorm-yuki-hometown.md)).
 
 | # | When / where | What happens | Points from | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
 | 0 | Act 1, Route 3 ([route-3.md](locations/route-3.md)), at a rope bridge (cameo) | KAITO, a League-sponsored Ace Trainer, blocks the bridge; he battles KAITO, win or lose. She beats KAITO easily in a short scripted scene, battles him briefly (Absol alone, Lv 22, holding back), says she'll see him at the tournament. Starts her chain. | none | none | No |
 | 0b | Act 1, Hanashiro's Pokémon Center ([hanashiro.md](locations/hanashiro.md)), before gym 4 | A heal-and-chat: she teases him about the bridge. No battle. | none | none | No |
 | 1 | Act 2, the tournament's day 1 (their match is on day 2) | She asks to spar; afterwards, her answer to losing or winning. | The answer | Battle item | Closes after the tournament |
-| 2 | Act 3, her hometown, a farming village a short route beyond Kanaya; her letter after gym 5 | One of the fading's small disasters hits her town (overlaps the Eien quests). Helping is how they become friends. | Helping; the answer | **Keepsake** (at the goodbye): the festival cord from her hair | No |
+| 2 | Act 3, Minori ([minori.md](locations/minori.md)), a short route beyond Kanaya; her letter after gym 5 | Her Absol sensed it coming. On festival night (*mushi-okuri*, torches along the paddies) a thinning opens at the terraces and the village's Pokémon walk into it. Absol leads him and Yuki through the grey; he calms them (wild battles); a tag battle beside her against two Tokoyo members measuring it. The Pokémon come back, the festival ends late, the terraces stay grey for the year. Her brother gets his first Pokémon. Helping is how they become friends. | Helping; the answer to "Will you come to the festival next year?" | **Keepsake** (at the goodbye): the festival cord from her hair | No |
 
 Keep her scenes friendship: rivals who respect each other, no flirting.
 
@@ -152,7 +152,7 @@ Her core scenes are fixed (story outline). Optional warm scenes, earned by her p
 | E3 | Research | Act 3, aurora nights (random after Kaede's step 2) | Night-only research steps (lore notes), including wild Eien Mightyena, which appear only on aurora nights at thin places. | Lore | No |
 | E4 | Disaster | Act 1, Hamakaze | The harbor freezes early; fishermen can't go out. `TODO(design)`: what the hero does. | Money | No |
 | E5 | Disaster | Act 2 or 3, `TODO(design)` | A child goes missing near a thin place. | Battle item | No |
-| E6 | Disaster | Act 3, Yuki's hometown | Yuki's step 2. | (Yuki's) | No |
+| E6 | Disaster | Act 3, Minori (Yuki's hometown) | Yuki's step 2. | (Yuki's) | No |
 | E7 | Lore | Act 1 to 3 | Kaede's tablets (her step 1). Stored as `QUEST_KAEDE_TABLETS`, one step bit per tablet; reading a tablet sets its bit even before she asks, and the quest shows once she opens it. | (Kaede's) | No |
 | E8 | Lore | Act 1 to 3 | Old people in each town tell a folk tale about earlier cycles; each adds a journal page. Scales with the number of towns. | Lore | No |
 
