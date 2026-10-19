@@ -21,13 +21,32 @@ move into the town doc when settled; this file stays as the record.
 
 ## Decided
 
+- **The map (r1 1c):** reuse vanilla Lavaridge Town's layout (a hot-spring town with a gym,
+  Pokémon Center, Mart, herb shop, a house and an outdoor hot spring), as our own map with our
+  own scripts. The user can swap in a Porymap map any time.
+- **The falls (r1 2a):** at the town's edge beside the gym; Ibuki is seen standing under them
+  before the gym battle.
+- **Inn and bath (r1 3c):** both: an inn for flavour and gossip, and the outdoor bath heals.
+- **Gossip (r1 4a):** three townsfolk, three different rumours about why Ibuki quit (an injury,
+  a loss to the Champion, "he saw something at the League"). Nobody agrees.
+- **Akira (r1 5b):** waits by the gym door; the battle is forced before you can enter, so you
+  can heal first. (The design said "at the town entrance"; this moves him.)
+- **Ren (r1 6b):** at gym 2, in town, waiting to challenge Ibuki officially. No battle, one dry
+  line.
+
 ## Leaning
 
 ## Open questions
 
 ## Gaps and tensions
 
-- Ren's cameo: gym 2 or gym 3?
+- Ren's cameo: gym 2 or gym 3? (settled by r1 6b: gym 2, in town)
+- Lavaridge's layout: the only exit is east (Route 112 joined there); no south entrance from
+  Route 2, no waterfall tiles (the general tileset has waterfall metatiles), the gym door is at
+  the bottom-left (5,15). The hot spring water doesn't heal in vanilla; healing needs a script.
+- Lavaridge's vanilla extras: the egg gift (Wynaut), the herb shop (herbs, and its Charcoal gift).
+- r1 2a + 5b: Ibuki under the falls and Ibuki in the gym are two objects; the falls one needs
+  hiding when the battle happens.
 - The pilgrims' sprite is shared with Route 2's pilgrims.
 - Music for the town (placeholder).
 
