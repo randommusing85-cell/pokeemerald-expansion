@@ -1,7 +1,11 @@
 # Drafts: Ibuki and the pilgrims
 
-Designed in [../../brainstorm-ibuki-sprites.md](../../brainstorm-ibuki-sprites.md). Nothing is
-picked yet; the game still uses vanilla stand-ins (Black Belt, Battle Girl).
+Designed in [../../brainstorm-ibuki-sprites.md](../../brainstorm-ibuki-sprites.md).
+
+**Picked:** overworld `ibuki_b_blackbelt_tape` (`OBJ_EVENT_GFX_EIEN_IBUKI`),
+`pilgrim_m_b_ruinmaniac` (`_PILGRIM_M`), `pilgrim_f_a_picnicker` (`_PILGRIM_F`); battle
+`ibuki_gemini3pro_b` (`TRAINER_PIC_EIEN_IBUKI`) and `pilgrim_m_gemini3pro_a`
+(`TRAINER_PIC_EIEN_PILGRIM_M`). The female pilgrim's battle pic: second round below, not picked yet.
 
 ## Overworld drafts
 
@@ -54,3 +58,9 @@ AI-assisted art, to be credited in `asset-credits.md` when one is used.
   - `gemini3pro_b`: chunky but whole; a Poké Ball out, the staff across her back.
   - `gemini31flash_b`: good, but white patches by the staff.
   A second round (or a cleanup of `gemini31flash_a`) may be worth it.
+
+  **Round 2** (c, d; one figure only, the staff held close; the contact sheet now shows these):
+  - `gemini3pro_c`: a Poké Ball out, the staff across her back; whole, a little chunky.
+  - `gemini31flash_c`: a Poké Ball out, the staff on her shoulder; clean and slim.
+  - `gemini3pro_d`: both hands on the staff, diagonal; a white patch left of the staff.
+  - `gemini31flash_d`: both hands on the staff; clean but thin and pale.
