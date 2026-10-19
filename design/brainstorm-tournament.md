@@ -38,14 +38,43 @@ Working notes. Decisions move into `story-outline.md`, `characters.md`, `side-qu
   back: two people on opposite sides, side by side. Both die.
 - **Nami (r1 5a+b):** mid-semi-final a signal goes up; she stops: "I'm sorry. Not now." and runs.
   After the disaster he finds her at Hashimoto's body among Tokoyo's members, in their gear.
+- **During the disaster (r2 1a):** he fights through the grounds against two or three Tokoyo
+  members (the Route 4 member among them) to reach the stands, and arrives as Fuyumi and
+  Hashimoto are holding it back. Too late.
+- **Hinata (r2 2c):** leads the crowd out, in Tokoyo's gear: on the other side, still herself.
+- **The name (r2 3a):** Minato, first seen, at the stands after the disaster: "We are Tokoyo."
+  Calm, grieving Hashimoto, unapologetic.
+- **The result (r2 4b):** the League names Akira the winner (his semi-final finished). Hollow to
+  him; it feeds his turn.
+- **Levels (r2 5a):** KAITO about Lv 30, Yuki 32, Nami 34; teams of three or four, each their
+  usual team grown.
+- **Two days (r2 6b):** day 1: the opening, round 1 (KAITO), the chain steps (Yuki's spar,
+  Akira's training, Fuyumi's promise), a night at the inn with a last quiet scene for Fuyumi,
+  Akira and him. Day 2: round 2 (Yuki), the semi-final (Nami), the disaster.
 - **Act 2's end (r1 6b):** Fuyumi's funeral in Shimotsuki (Kaede keeps the rite), then the
   League's statement: "an accident". Akira hears it.
 
 ## Leaning
 
+## Defaults (not asked; change any)
+
+- **Celebi** flickers and drops near the thinning, as at Lake Usurai; no glimpse here.
+- **Akira's semi-final opponent** is an unnamed League trainer (`TODO(design)`; Ren is a
+  possible tie-in).
+- **Tokoyo members in the grounds:** two plus the Route 4 member, Lv 30-33 (default).
+- **Maps:** the castle grounds (stands and fields), the passage under the castle (the thinning),
+  the inn; made by the user in Porymap; vanilla layouts can stand in.
+- **Story var:** new `STORY_*` steps for the tournament's beats (`include/constants/eien_story.h`)
+  at build time.
+
 ## Open questions
 
 ## Gaps and tensions
+
+- Akira at the funeral and after: his lines, and his last scene before he leaves (Act 3).
+- Kaede's lines at the funeral (her first big story scene; blunt, practical).
+- What the thinning looks like on the GBA (tiles, palette, weather), like Route 4's orchard.
+- The League's statement: who reads it (`TODO(design)`), and whether Seiji is seen.
 
 ## Parked ideas
 
