@@ -24,6 +24,18 @@ Working notes. Decisions move into `characters.md`, `side-quests.md`, `dialogue-
 
 ## Decided
 
+- **What drives her (r1 1a):** she competes for her hometown, a small struggling place; a
+  tournament win would bring it money and attention. Unsponsored. Act 3's disaster hits what
+  she's fighting for.
+- **Team shape (r1 2b):** mixed, with one clear ace she's had since she was small.
+- **Her ace (r1 3a):** Absol, the disaster Pokémon (in the games it appears before calamities).
+  Ties her to the fading's disasters and her hometown's. Not Ice.
+- **Her name (r1 4b):** 幸, "happiness, good fortune": a warm counterweight to the disasters,
+  quietly ironic with Absol.
+- **Hometown (r1 5d):** left for Act 3's map planning; leaning a small farming village (rice
+  terraces, one festival a year). `TODO(design)`.
+- **Voice (r1 6a):** cheerful and teasing; ribs him, laughs off a loss, serious in battle.
+
 ## Leaning
 
 ## Open questions
