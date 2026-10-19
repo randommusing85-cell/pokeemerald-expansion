@@ -35,7 +35,7 @@ Act 1 beat 7 in [story-outline.md](../story-outline.md). In order, south to nort
 1. **Haru catches up** near the start, for his map notes, and gives him the Town Map. This
    closes Haru's step 1 ([side-quests.md](../side-quests.md)).
 2. **Lower map trainers:** the woodcutter, the porter, the first pilgrim.
-3. **The thinning patch** (at the end of the lower map, on the main path; an unavoidable scene as he passes, then he
+3. **The thinning patch** (looks: the shared thinning look ([game-bible.md](../game-bible.md), Eien weather and terrain); at the end of the lower map, on the main path; an unavoidable scene as he passes, then he
    walks around it): the snow stops falling, colours drain, Celebi reacts, Pokémon flee it.
    People in field gear (the Eien Survey) rope it off and warn others away, as if they've seen it before. One of
    them, a young researcher named Hinata, stays and chats with him, fascinated by Celebi. He only learns

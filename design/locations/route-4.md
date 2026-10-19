@@ -34,7 +34,7 @@ Act 1 beat 9 in [story-outline.md](../story-outline.md).
 
 | NPC / event | Where | Visible when | Says / does |
 | --- | --- | --- | --- |
-| The orchard | by the road | the thinning scene | Blossoms and withers (`TODO(design)`: how it's shown: tiles, palette, weather) |
+| The orchard | by the road | the thinning scene | Blossoms and withers: the shared thinning look ([game-bible.md](../game-bible.md), Eien weather and terrain); the screen drain while it happens, then grey tiles (withered, grey trunks) until the epilogue |
 | Eien Survey members | the orchard | during the scene | Rope it off |
 | The Survey member | the orchard | during the scene | Asks about Celebi too closely (`TODO(design)`) |
 

@@ -16,8 +16,8 @@ the region. Quiet and old; the fading shows more here. Akira says goodbye at its
 ## Look
 
 Old snowy beech forest, like Shirakami-Sanchi: tall grey trunks, deep snow, silence. A few
-greyed patches (Act 3's fading, shown lightly). `TODO(design)`: tilesets, music; how the greyed
-tiles are made.
+greyed patches (Act 3's fading, shown lightly). The patches are grey copies of the forest's tiles,
+the shared thinning look ([game-bible.md](../game-bible.md), Eien weather and terrain), grey until the epilogue. `TODO(design)`: tilesets, music.
 
 ## Story beats here
 

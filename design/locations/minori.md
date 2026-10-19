@@ -19,8 +19,9 @@ a cost.
 A small, struggling village of rice terraces on a hillside. **The festival:** *mushi-okuri*
 (insect-sending), a real Tohoku rite: at night torches are carried along the paddies to drive
 the pests away. The torch-bearers wear cords; Yuki's festival cord (her keepsake) is one.
-`TODO(design)`: tilesets, music; the thinning's look (a shared design: greyed tiles, a palette
-fade).
+The thinning uses the shared thinning look ([game-bible.md](../game-bible.md), Eien weather and terrain): the screen drains on festival night (Yuki and
+Celebi stay in colour with him), and the terraces are grey tiles afterwards, until the epilogue.
+`TODO(design)`: tilesets, music.
 
 ## Story beats here
 

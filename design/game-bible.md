@@ -143,6 +143,22 @@ on what other hacks and fan games do.
     or ends on the next map change after nightfall or dawn, not mid-map. A script can also
     force it with `setweather WEATHER_AURORA` / `doweather`.
     `TODO(design)`: how often aurora nights come back.
+  - **The thinning on the map** (decided in [brainstorm-thinning-look.md](brainstorm-thinning-look.md)):
+    - **While one is open** (Route 2's patch, the tournament, Minori's night): a low rumble (a
+      vanilla sound effect), the snow stops, the music fades to silence, and the whole screen
+      drains toward grey over a few seconds, then pulses faintly between grey and a trace of
+      colour. Built like the aurora (palette re-blending), in its own file
+      (`src/eien_thinning.c`, planned), started and stopped by a script special, with a palette
+      mask that leaves the hero's, Yuki's (a partner's) and Celebi's sprites in colour.
+      Celebi plays its flicker as it opens, then waits at the edge.
+    - **Battles inside** get the thin-place effect (forced per battle with
+      `setstartingstatus STARTING_STATUS_THIN_PLACE`) and a grey-tinted battle background.
+    - **What's left behind** (Route 4's orchard, Route 5's patches, Minori's terraces): grey copies
+      of the tiles, swapped in by map scripts; the palette budget is checked per tileset. They
+      stay grey until the epilogue, when Arceus renews and the colour comes back (with the
+      journal refilling).
+    - **Prototype first:** behind a debug script on a built map (Lake Usurai or Route 1),
+      screenshotted in the harness. `TODO(design)`: the rumble, the grey tints (an art pass).
   - Both apply together (a thin place on an aurora night). The journal explains each effect
     the first time he meets it; his fan knowledge doesn't cover them.
   - `TODO(design)`: the exact battle messages (both are placeholders); the night palette (an

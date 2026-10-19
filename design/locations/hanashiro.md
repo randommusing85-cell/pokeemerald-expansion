@@ -32,7 +32,7 @@ Act 1 beat 9 and Act 2 in [story-outline.md](../story-outline.md).
   [story-outline.md](../story-outline.md) (Act 2), decided in
   [brainstorm-tournament.md](../brainstorm-tournament.md). Day 1: round 1 (KAITO), the chain
   steps, a night at the inn. Day 2: Yuki, Nami's semi-final, the disaster (Tokoyo's thinning
-  under the castle), Fuyumi's and Hashimoto's deaths at the stands, Minato's "We are Tokoyo."
+  under the castle; the shared thinning look ([game-bible.md](../game-bible.md), Eien weather and terrain)), Fuyumi's and Hashimoto's deaths at the stands, Minato's "We are Tokoyo."
   The League names Akira the winner. Mamoru survives, shaken; he helps with the aftermath and
   turns up once in Act 3.
 - **The tournament's maps:** the castle grounds (the stands, the fields), the passage under the
