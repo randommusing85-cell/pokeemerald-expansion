@@ -40,8 +40,8 @@ stays as the record.
 - **Team (r2 2a):** three: Magneton Lv 24 with Flash Cannon (Steel, against Rock), Luxio Lv 24
   with Ice Fang (against Ground and Grass), and the ace Lanturn Lv 27 with its Water moves
   (against Ground and Rock). One coverage move each, like gyms 1 and 2.
-- **Badge and TM (r2 3b):** the Lantern Badge (chōchin, 提灯; "CHOCHIN" has no long vowel
-  problem, but the badge reads LANTERN BADGE) and TM34 Shock Wave.
+- **Badge and TM (r2 3b):** the Lantern Badge (after chōchin, 提灯, paper lanterns; it ties back
+  to the Torchic line) and TM34 Shock Wave.
 - **Gym trainers (r2 4a):** two of her fleet crew, a squid-boat fisher and a deckhand, with
   Chinchou, Mareep and Pikachu between them.
 - **The town (r2 5b+c):** a harbour market with drying racks, the squid-boat pier, a lighthouse
