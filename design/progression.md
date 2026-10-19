@@ -30,6 +30,7 @@ Every gate is enforced by a flag or var; list it in the location doc that checks
 | Gym 3 | | 22-25 | 27 (Lanturn) |
 | Route 4 (the rice plain) | 22-27 | 24-28 | |
 | Gym 4 | | 27-29 | 32 (Appletun) |
+| The tournament (Hanashiro) | | KAITO ~30, Yuki ~32, Nami ~34; Tokoyo members 30-33 | |
 
 All levels are proposed defaults; adjust after playtesting.
 

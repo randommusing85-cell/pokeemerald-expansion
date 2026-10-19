@@ -29,15 +29,26 @@ journal writes an entry for each beat reached (`src/data/eien_journal.h`).
 
 | # | Where | What happens | Sets (flag/var) |
 | --- | --- | --- | --- |
-| 1 | Tournament, in Hanashiro's castle grounds ([hanashiro.md](locations/hanashiro.md)) | Nami and Yuki are competitors. | `TODO` |
-| 2 | Tournament | The villains move during the event. The disaster kills Fuyumi and Hashimoto. | `TODO` |
-| 3 | Tournament | He learns Nami is with the villains. | `TODO` |
+Two days in Hanashiro's castle grounds ([hanashiro.md](locations/hanashiro.md)). Decided in
+[brainstorm-tournament.md](brainstorm-tournament.md). He plays three matches; the final never
+happens.
+
+| # | Where | What happens | Sets (flag/var) |
+| --- | --- | --- | --- |
+| 1 | Hanashiro, the castle grounds, day 1 | The opening. Round 1: KAITO (the bridge rematch, about Lv 30). The chain steps: Yuki's spar, training with Akira while Fuyumi watches, and Fuyumi asking him to look out for Akira. | `TODO` |
+| 2 | Hanashiro, the inn, night 1 | A last quiet scene for Fuyumi, Akira and him. | `TODO` |
+| 3 | The castle grounds, day 2 | Round 2: Yuki (Lv 32). The semi-final: Nami (Lv 34). On the next field Akira's evolved starter wins his semi-final (first seen here). | `TODO` |
+| 4 | The castle grounds, day 2 | Mid-semi-final a signal goes up; Nami stops ("I'm sorry. Not now.") and runs. Tokoyo has opened a thinning on purpose under the castle (a thin place) to test a small version of the door-mountain machine; it gets away from them. They didn't mean to kill anyone. Celebi flickers and drops, as at Lake Usurai. Hinata, in Tokoyo's gear, leads the crowd out. | `TODO` |
+| 5 | The grounds, the passage under the castle | He fights through two or three Tokoyo members (the Route 4 member among them, Lv 30-33) to reach the stands. | `TODO` |
+| 6 | The stands | He arrives as Fuyumi (with her Ice Pokémon) and Hashimoto hold the thinning back side by side so the stands can empty: two people on opposite sides. Both die, plainly and briefly. Akira sees it. He's too late. | `TODO` |
+| 7 | The stands, after | He finds Nami at Hashimoto's body among Tokoyo's members, in their gear: that's how he learns she's with them. Minato, first seen, calm and grieving Hashimoto: "We are Tokoyo." The League names Akira the winner (his semi-final finished); it's hollow to him. | `TODO` |
+| 8 | Shimotsuki | Fuyumi's funeral; Kaede keeps the rite. Then the League's statement: "an accident". Akira hears it. (`TODO(design)`: Akira's and Kaede's lines; who reads the statement; whether Seiji is seen.) | `TODO` |
 
 ## Act 3: The split (gyms 5-8)
 
 | # | Where | What happens | Sets (flag/var) |
 | --- | --- | --- | --- |
-| 1 | `TODO(design)` | The League plays Fuyumi's death down. A few towns later Akira joins Minato openly. | `TODO` |
+| 1 | `TODO(design)` | After the League's statement, a few towns later Akira joins Minato openly. | `TODO` |
 | 2 | `TODO(design)` | Yuki becomes a friend. | `TODO` |
 | 3 | `TODO(design)` | He learns about the cycle and Minato's plan to drain other worlds, his own included. | `TODO` |
 | 4 | `TODO(design)` | Nami tells him she chooses her world over his. | `TODO` |

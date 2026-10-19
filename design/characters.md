@@ -23,7 +23,8 @@ Claude at the user's request; change freely.
 
 - **Name:** Akira (boy).
 - **Personality:** a cheerful local kid who looks up to the League.
-- **Arc:** his mother Fuyumi (gym 1) dies in the tournament disaster. The League plays her
+- **Arc:** his mother Fuyumi (gym 1) dies in the tournament disaster; he sees it, and the League
+  names him the winner the same day (his semi-final finished), which feels hollow. The League plays her
   death down, and a few towns later Akira decides the "good" side can't protect anyone and
   joins Minato openly. He fights against the hero at the end.
 - **Team:** takes the starter strong against the player's (see [variants.md](variants.md)).
@@ -156,8 +157,10 @@ Decided in [brainstorm-yuki.md](brainstorm-yuki.md).
   through Palkia's door, to sustain Arceus.
 - **Look:** `TODO(design)`. Placeholder: field gear (headlamps, measuring poles, notebooks); they
   look like researchers, which is why nobody finds them suspicious.
-- **Leader:** **Minato** (man). Believes he can stop the cycle. Lives; the final villain.
-- **Lieutenant:** **Hashimoto** (older man), Nami's mentor. Dies in the tournament disaster.
+- **Leader:** **Minato** (man). Believes he can stop the cycle. Lives; the final villain. First seen
+  at the tournament, after the disaster: calm, grieving Hashimoto, unapologetic: "We are Tokoyo."
+- **Lieutenant:** **Hashimoto** (older man), Nami's mentor. Dies in the tournament disaster:
+  seeing Tokoyo's test is out of control, he joins Fuyumi holding the thinning back, and both die.
   `TODO(design)`: his relationship to Nami beyond mentor.
 - **Members:** principled; don't see themselves as evil; never change their minds; lose
   gracefully.
@@ -165,10 +168,10 @@ Decided in [brainstorm-yuki.md](brainstorm-yuki.md).
   patch); the tournament; the door mountain at the end.
 - **Hinata** (陽向, "sunny place"), a young woman: the first member he meets, on the pass. Loves
   Pokémon, fascinated by Celebi, warm and open. Returns at the tournament, clearly on the
-  other side.
+  other side: in Tokoyo's gear, she leads the crowd out during the disaster.
 - **The member on Route 4** (`TODO(design)`: name): asks about Celebi a little too closely at
-  the orchard thinning; seen again at the tournament, near where the villains move; the one who
-  reports Celebi to Minato.
+  the orchard thinning; at the tournament, one of the Tokoyo members he fights through to reach the
+  stands; the one who reports Celebi to Minato.
 
 ## Pokémon characters
 

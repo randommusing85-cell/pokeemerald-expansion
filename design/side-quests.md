@@ -82,7 +82,7 @@ The map bookends the chain: the first quest starts it, the last one gives it bac
 | # | When / where | What happens | Points from | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
 | 1 (M1) | Act 1, Shimotsuki, after gym 1 | A practice battle at the town's north edge on his way out (only if you talk to him; his starter Lv 14, Starly Lv 11), then Akira talks about watching League matches with his mum (sets up his turn). | The answer about the League | Battle item | Closes at the tournament |
-| 2 | Act 1, before the tournament | Training together for the tournament; Fuyumi watches (overlaps her chain). | The answer when Akira doubts himself | none | Closes at the tournament |
+| 2 | Act 2, the tournament's day 1 ([hanashiro.md](locations/hanashiro.md)) | Training together in the castle grounds; Fuyumi watches (overlaps her chain). | The answer when Akira doubts himself | none | Closes at the tournament |
 | 3 | Act 3, after he leaves | Optional meeting on the other side. He explains why; no fight unless the player wants one. | The answer (agree he was failed / ask him to come back / just listen) | none | Closes at the League |
 | 4 | Act 4, before the League | A second meeting. He gives something of his mother's. | The answer | **Keepsake:** `TODO(design)`: an object of Fuyumi's | Closes at the League |
 
@@ -91,7 +91,7 @@ The map bookends the chain: the first quest starts it, the last one gives it bac
 | # | When / where | What happens | Points from | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Act 1, Shimotsuki, after gym 1 (second milestone) | A rematch at home, not in the gym; she's softer there. | none (she has no points) | TM `TODO(design)` | Closes at the tournament |
-| 2 | Act 1, before the tournament | She asks him to look out for Akira. He can promise or not; it comes back when Akira leaves. | Akira's points (the promise) | none | Closes at the tournament |
+| 2 | Act 2, the tournament's day 1 | She asks him to look out for Akira. He can promise or not; it comes back when Akira leaves. | Akira's points (the promise) | none | Closes at the tournament |
 
 ### Kaede (lore thread; always helps in the finale)
 
@@ -114,7 +114,7 @@ Designed in [characters.md](characters.md) ([brainstorm-yuki.md](brainstorm-yuki
 | --- | --- | --- | --- | --- | --- |
 | 0 | Act 1, Route 3 ([route-3.md](locations/route-3.md)), at a rope bridge (cameo) | KAITO, a League-sponsored Ace Trainer, blocks the bridge; he battles KAITO, win or lose. She beats KAITO easily in a short scripted scene, battles him briefly (Absol alone, Lv 22, holding back), says she'll see him at the tournament. Starts her chain. | none | none | No |
 | 0b | Act 1, Hanashiro's Pokémon Center ([hanashiro.md](locations/hanashiro.md)), before gym 4 | A heal-and-chat: she teases him about the bridge. No battle. | none | none | No |
-| 1 | Act 2, the tournament | Before her match she asks to spar; afterwards, her answer to losing or winning. | The answer | Battle item | Closes after the tournament |
+| 1 | Act 2, the tournament's day 1 (their match is on day 2) | She asks to spar; afterwards, her answer to losing or winning. | The answer | Battle item | Closes after the tournament |
 | 2 | Act 3, her hometown | One of the fading's small disasters hits her town (overlaps the Eien quests). Helping is how they become friends. | Helping; the answer | **Keepsake** (at the goodbye): the festival cord from her hair | No |
 
 Keep her scenes friendship: rivals who respect each other, no flirting.

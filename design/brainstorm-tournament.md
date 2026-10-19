@@ -1,7 +1,8 @@
 # Brainstorm: the tournament (Act 2)
 
 Working notes. Decisions move into `story-outline.md`, `characters.md`, `side-quests.md`,
-`locations/hanashiro.md` and `progression.md` when settled; this file stays as the record.
+`locations/hanashiro.md` and `progression.md` when settled; this file stays as the record. **Promoted** into `story-outline.md`, `characters.md`,
+`side-quests.md`, `locations/hanashiro.md`, `progression.md` and `whats-left.md`.
 
 ## Givens (from the docs)
 
