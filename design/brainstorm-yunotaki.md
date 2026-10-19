@@ -33,6 +33,18 @@ move into the town doc when settled; this file stays as the record.
   can heal first. (The design said "at the town entrance"; this moves him.)
 - **Ren (r1 6b):** at gym 2, in town, waiting to challenge Ibuki officially. No battle, one dry
   line.
+- **Fitting the layout (r2 1a):** copy Lavaridge's layout and make small edits: cut a south
+  entrance for Route 2, and put a short waterfall on the west edge by the gym (general tileset
+  waterfall metatiles, to confirm at build time). Everything else stays.
+- **The inn (r2 2a):** the house becomes the inn; the herb shop stays a herb shop (bitter
+  mountain medicine).
+- **The bath's heal (r2 3a):** one of the old women in the bath is the attendant: "Sit. Soak."
+  Talking to her heals the team.
+- **Gossips (r2 4c):** two in town and one in the inn, plus the herb-shop keeper, who won't
+  gossip: "Ask him yourself."
+- **Vanilla extras (r2 5a):** both gifts dropped (no egg, no Charcoal); the herb shop only sells.
+- **Ibuki at the falls (r2 6b):** always under the falls before the badge ("The gym's open. Go
+  in."); also in the gym.
 
 ## Leaning
 
@@ -45,8 +57,8 @@ move into the town doc when settled; this file stays as the record.
   Route 2, no waterfall tiles (the general tileset has waterfall metatiles), the gym door is at
   the bottom-left (5,15). The hot spring water doesn't heal in vanilla; healing needs a script.
 - Lavaridge's vanilla extras: the egg gift (Wynaut), the herb shop (herbs, and its Charcoal gift).
-- r1 2a + 5b: Ibuki under the falls and Ibuki in the gym are two objects; the falls one needs
-  hiding when the battle happens.
+- r1 2a + 5b: Ibuki under the falls and in the gym are two objects (settled by r2 6b: both
+  before the badge).
 - The pilgrims' sprite is shared with Route 2's pilgrims.
 - Music for the town (placeholder).
 
