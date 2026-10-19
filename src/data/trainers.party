@@ -3927,7 +3927,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_EIEN_ROUTE2_PILGRIM_2 ===
 Name: MIKA
 Class: Pilgrim
-Pic: Battle Girl
+Pic: Eien Pilgrim F
 Gender: Female
 Music: Intense
 Double Battle: No
@@ -11324,7 +11324,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_EIEN_YUNOTAKI_GYM_SHIZUKA ===
 Name: SHIZUKA
 Class: Pilgrim
-Pic: Battle Girl
+Pic: Eien Pilgrim F
 Gender: Female
 Music: Intense
 Double Battle: No

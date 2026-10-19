@@ -5,7 +5,8 @@ Designed in [../../brainstorm-ibuki-sprites.md](../../brainstorm-ibuki-sprites.m
 **Picked:** overworld `ibuki_b_blackbelt_tape` (`OBJ_EVENT_GFX_EIEN_IBUKI`),
 `pilgrim_m_b_ruinmaniac` (`_PILGRIM_M`), `pilgrim_f_a_picnicker` (`_PILGRIM_F`); battle
 `ibuki_gemini3pro_b` (`TRAINER_PIC_EIEN_IBUKI`) and `pilgrim_m_gemini3pro_a`
-(`TRAINER_PIC_EIEN_PILGRIM_M`). The female pilgrim's battle pic: second round below, not picked yet.
+(`TRAINER_PIC_EIEN_PILGRIM_M`), and from round 2 `pilgrim_f_gemini31flash_c` (`TRAINER_PIC_EIEN_PILGRIM_F`;
+`../eien_pilgrim_f/battle_ingame.png` is Shizuka's battle).
 
 ## Overworld drafts
 

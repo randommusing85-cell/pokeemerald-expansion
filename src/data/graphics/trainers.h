@@ -483,6 +483,8 @@ const u32 gTrainerFrontPic_EienIbuki[] = INCGFX_U32("graphics/trainers/front_pic
 const u16 gTrainerPalette_EienIbuki[] = INCGFX_U16("graphics/trainers/palettes/eien_ibuki.pal", ".gbapal");
 const u32 gTrainerFrontPic_EienPilgrimM[] = INCGFX_U32("graphics/trainers/front_pics/eien_pilgrim_m.png", ".4bpp.smol");
 const u16 gTrainerPalette_EienPilgrimM[] = INCGFX_U16("graphics/trainers/palettes/eien_pilgrim_m.pal", ".gbapal");
+const u32 gTrainerFrontPic_EienPilgrimF[] = INCGFX_U32("graphics/trainers/front_pics/eien_pilgrim_f.png", ".4bpp.smol");
+const u16 gTrainerPalette_EienPilgrimF[] = INCGFX_U16("graphics/trainers/palettes/eien_pilgrim_f.pal", ".gbapal");
 
 static const u8 gTrainerBackPic_None[] = INCGFX_U8("graphics/trainers/back_pics/none.png", ".4bpp");
 const u8 gTrainerBackPic_Brendan[] = INCGFX_U8("graphics/trainers/back_pics/brendan.png", ".4bpp");
@@ -1265,5 +1267,9 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_EIEN_PILGRIM_M] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_EienPilgrimM, gTrainerPalette_EienPilgrimM),
+    },
+    [TRAINER_PIC_EIEN_PILGRIM_F] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_EienPilgrimF, gTrainerPalette_EienPilgrimF),
     },
 };
