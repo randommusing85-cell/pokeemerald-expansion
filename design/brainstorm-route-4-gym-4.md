@@ -36,6 +36,17 @@ location docs when settled; this file stays as the record.
   begins, and the disaster that kills Fuyumi happens in a town the player knows.
 - **Length (r1 6a):** one route (placeholder Route 4), then the castle town. Yuki's heal-and-
   chat is at the castle town's Pokémon Center.
+- **Gym 4's leader (r2 1c):** the castle's head gardener (a man): keeps the cherry trees and moss
+  gardens; quiet and exact; watches the trees for the fading.
+- **At the tournament disaster (r2 2a):** he survives, shaken; helps with the aftermath and
+  turns up once in Act 3.
+- **His team (r2 3c):** Cherrim, Dipplin, and an Appletun ace (Grass/Dragon, so Ice answers it:
+  a nod to Fuyumi). Lv 28-32 (default; the ace 32).
+- **The gym (r2 4a):** Fortree's gym layout reused; its turnstiles read as orchard gates.
+- **Badge and TM (r2 5a):** the Blossom Badge, TM19 Giga Drain.
+- **Route 4's thinning (r2 6b):** an orchard blossoms and withers in an hour, out of season. The
+  Survey ropes it off; one member asks about Celebi a little too closely. The gardener talks
+  about it after the badge.
 
 ## Leaning
 
@@ -43,7 +54,6 @@ location docs when settled; this file stays as the record.
 
 ## Gaps and tensions
 
-- Gym 4's leader is in town for the tournament disaster: survivor or casualty (r2).
 - Names: the castle town and the route (a names pass, like brainstorm-names.md).
 - Field moves: which one is first needed here (`progression.md`).
 
