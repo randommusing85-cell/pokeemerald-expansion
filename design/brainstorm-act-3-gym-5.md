@@ -1,7 +1,9 @@
 # Brainstorm: Act 3's opening and gym 5
 
 Working notes. Decisions move into `story-outline.md`, `progression.md`, `characters.md`,
-`side-quests.md` and new location docs when settled; this file stays as the record.
+`side-quests.md` and new location docs when settled; this file stays as the record. **Promoted** into `locations/route-5.md`,
+`locations/kanaya.md`, `shimotsuki.md`, `story-outline.md`, `progression.md`, `characters.md`,
+`side-quests.md` and `whats-left.md`.
 
 ## Givens (from the docs)
 

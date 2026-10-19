@@ -5,7 +5,8 @@
   `MAP_EIEN_ROUTE2` (the lake path). Placeholder layouts; see **Maps** below.
 - **Type:** town
 - **Connects to:** Route 1 to the south; Lake Usurai (`MAP_EIEN_ROUTE2`, the lake path)
-  to the north, where Nami is met.
+  to the north, where Nami is met. In Act 3, a new east exit to Route 5, the beech forest
+  ([route-5.md](route-5.md)); `TODO(design)`: what keeps it shut until then.
 
 Decided in [brainstorm-shimotsuki.md](../brainstorm-shimotsuki.md).
 

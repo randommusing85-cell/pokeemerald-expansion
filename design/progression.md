@@ -3,7 +3,7 @@
 ## Route order
 
 Our world (prologue) → Hamakaze → Route 1 → Shimotsuki (gym 1) → Lake Usurai → Route 2 (the
-mountain pass) → Yunotaki (gym 2) → Route 3 (the gorge) → Isaribi (gym 3, Electric) → Route 4 (the rice plain) → Hanashiro (gym 4, Grass) → the tournament (Hanashiro's castle grounds) →
+mountain pass) → Yunotaki (gym 2) → Route 3 (the gorge) → Isaribi (gym 3, Electric) → Route 4 (the rice plain) → Hanashiro (gym 4, Grass) → the tournament (Hanashiro's castle grounds) → Shimotsuki (the funeral) → Route 5 (the beech forest) → Kanaya (gym 5, Fire) → Yuki's village →
 gyms 5-8 → Pokémon League (Minato's plan interrupts the Elite Four) → door mountain.
 
 ## Badges and gates
@@ -14,7 +14,8 @@ gyms 5-8 → Pokémon League (Minato's plan interrupts the Elite Four) → door 
 | 2 | Ibuki (Fighting), Yunotaki | Misogi Badge; Ibuki also gives TM31 Brick Break. `TODO(design)`: what it unlocks | `TODO(design)` |
 | 3 | Akari (Electric), Isaribi | Lantern Badge; Akari also gives TM34 Shock Wave. `TODO(design)`: what it unlocks | `TODO(design)` |
 | 4 | Mamoru (Grass), Hanashiro | Blossom Badge; Mamoru also gives TM19 Giga Drain. `TODO(design)`: what it unlocks | `TODO(design)` |
-| 5-8 | `TODO(design)` | | |
+| 5 | Takumi (Fire), Kanaya | Forge Badge; Takumi also gives TM35 Flamethrower. `TODO(design)`: what it unlocks | `TODO(design)` |
+| 6-8 | `TODO(design)` | | |
 
 Every gate is enforced by a flag or var; list it in the location doc that checks it.
 
@@ -31,6 +32,8 @@ Every gate is enforced by a flag or var; list it in the location doc that checks
 | Route 4 (the rice plain) | 22-27 | 24-28 | |
 | Gym 4 | | 27-29 | 32 (Appletun) |
 | The tournament (Hanashiro) | | KAITO ~30, Yuki ~32, Nami ~34; Tokoyo members 30-33 | |
+| Route 5 (the beech forest) | 30-35 | 32-36 (Akira ~36) | |
+| Gym 5 | | 34-36 | 38 (Coalossal) |
 
 All levels are proposed defaults; adjust after playtesting.
 
@@ -48,6 +51,8 @@ All levels are proposed defaults; adjust after playtesting.
 - No contests or ribbons.
 - `TODO(design)`: field moves and other key items.
 - **Field moves without HMs:** `TODO(design)`: which key item or Pokémon does them.
+- **Fast travel:** `TODO(design)`, decided with field moves. Until then story scenes move him
+  (the funeral takes him from Hanashiro to Shimotsuki).
 - **TMs are reusable.**
 - **DexNav** is on, for searching and chaining wild Pokémon.
 

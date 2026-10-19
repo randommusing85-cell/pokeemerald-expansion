@@ -48,8 +48,9 @@ happens.
 
 | # | Where | What happens | Sets (flag/var) |
 | --- | --- | --- | --- |
-| 1 | `TODO(design)` | After the League's statement, a few towns later Akira joins Minato openly. | `TODO` |
-| 2 | `TODO(design)` | Yuki becomes a friend. | `TODO` |
+| 1 | Route 5 ([route-5.md](locations/route-5.md)), east out of Shimotsuki | Through old beech forest, greyed in patches; a Tokoyo member openly ropes off a thinning. At the forest's end Akira waits to say goodbye properly and asks him not to follow; they battle (about Lv 36); then he goes to Minato. Fuyumi's promise changes one line. Decided in [brainstorm-act-3-gym-5.md](brainstorm-act-3-gym-5.md). | `TODO` |
+| 1b | Kanaya ([kanaya.md](locations/kanaya.md)) | An ironworks town. Ren asks what he saw at the tournament. Fresh Survey digging in the old mine's sealed seam. Gym 5: Takumi (Fire), a League loyalist who believes the "accident" story; the Forge Badge. | `TODO` |
+| 2 | Yuki's farming village, a short route beyond Kanaya (`TODO(design)`) | After gym 5 her letter asks for help; one of the fading's small disasters has hit her town. Helping is how they become friends. | `TODO` |
 | 3 | `TODO(design)` | He learns about the cycle and Minato's plan to drain other worlds, his own included. | `TODO` |
 | 4 | `TODO(design)` | Nami tells him she chooses her world over his. | `TODO` |
 | 5 | Kashiwagi's lab | The professor dies in a lab disaster, leaving the research that explains the cycle. | `TODO` |

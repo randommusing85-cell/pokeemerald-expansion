@@ -26,7 +26,8 @@ Claude at the user's request; change freely.
 - **Arc:** his mother Fuyumi (gym 1) dies in the tournament disaster; he sees it, and the League
   names him the winner the same day (his semi-final finished), which feels hollow. The League plays her
   death down, and a few towns later Akira decides the "good" side can't protect anyone and
-  joins Minato openly. He fights against the hero at the end.
+  joins Minato openly: at the end of Route 5 he waits to say goodbye properly, asks the hero not
+  to follow, and battles him one last time on his side of the map. He fights against the hero at the end.
 - **Team:** takes the starter strong against the player's (see [variants.md](variants.md)).
 - **Battles:** first battle at Kashiwagi's lab right after picking starters. Meets the player
   again in Shimotsuki and shows him his mother's gym. `TODO(design)`: later battles.
@@ -138,7 +139,8 @@ Decided in [brainstorm-yuki.md](brainstorm-yuki.md).
 | 2 | Yunotaki | Ibuki (man, 40s) | Fighting | Lean, grey-streaked hair tied back, a scar across one eyebrow; an off-white training gi, a rope belt, prayer beads and faded red wrist tape from his League days. A former League fighter who walked away after a season that ended badly and won't say why. Trains under the hot waterfalls, like Tohoku's mountain ascetics. Quietly sceptical of the League (a seed for the cover-up, not spelled out). | Medicham (with Throh, Sawk) | 19-21 |
 | 3 | Isaribi | Akari (woman) | Electric | Runs the squid-boat fleet; her Electric Pokémon light its lamps. Practical, loud, well loved: the first leader with a big, warm personality. ([locations/isaribi.md](locations/isaribi.md)) | Lanturn (with Magneton, Luxio) | 24-27 |
 | 4 | Hanashiro | Mamoru (man) | Grass | The castle's head gardener: keeps the cherry trees and moss gardens; quiet and exact; watches the trees for the fading. Survives the tournament disaster, shaken; turns up once in Act 3. ([locations/hanashiro.md](locations/hanashiro.md)) | Appletun (with Cherrim, Dipplin) | 29-32 |
-| 5-8 | | `TODO(design)` | | | | |
+| 5 | Kanaya | Takumi (man, young) | Fire | The young heir of a foundry family; loyal to the League because the League made his family's name. Repeats the "accident" story and believes it; decent while being wrong. ([locations/kanaya.md](locations/kanaya.md)) | Coalossal (with Magcargo, Bronzong) | 35-38 |
+| 6-8 | | `TODO(design)` | | | | |
 
 ## Champion
 
