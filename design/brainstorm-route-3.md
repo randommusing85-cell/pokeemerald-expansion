@@ -32,6 +32,17 @@ the record.
   Hoothoot.
 - **Yuki (r1 6a):** midway, she beats a trainer who beat or nearly beat him, then battles him
   briefly.
+- **Gym 3 type (r2 1b):** Electric: the Sea of Japan coast's winter thunderstorms that come with
+  the first snow (yuki-okoshi, "snow-waking thunder"). The variant's job is a Ground answer.
+- **The Survey's way round (r2 2a):** an old mine tunnel they cleared and hung lamps in; a member
+  at the entrance ("It's safe. We checked."); a sign: "Route kept open by the Eien Survey."
+  Hinata is saved for later.
+- **The door mountain (r2 3b):** seen from the cave's exit, the first view after the dark.
+- **Yuki (r2 4a):** a tough trainer blocks a rope bridge, a few levels above the curve; he
+  battles them (win or lose), then Yuki arrives, beats them easily, and battles him briefly.
+- **Variant family (r2 5a):** Wooper (to Quagsire): a gorge mud-dweller, already Ground. Its
+  design gets its own brainstorm, like Hoothoot's.
+- **Levels (r2 6a):** wild Lv 15-20, trainers 18-23, the bridge trainer about 25.
 
 ## Leaning
 
@@ -41,7 +52,7 @@ the record.
 
 - Gym 3 (leader, type, team) needs its own brainstorm once the type is set; the variant follows
   the type.
-- Levels after gym 2 aren't set (default proposal: wild Lv 15-20, trainers 18-23).
+- Levels after gym 2 (settled by r2 6a).
 - Yuki's sprite and team don't exist yet.
 - "A trainer he struggled with": a game can't force a struggle without a scripted loss.
 
