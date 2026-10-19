@@ -38,6 +38,33 @@ location doc when settled; this file stays as the record.
 - **Her family (r1 5a):** her parents farm the terraces; a little brother who wants to be a
   trainer like her.
 - **The village (r1 6a):** Minori (実り, "harvest, ripening").
+- **The festival (r2 1c):** *mushi-okuri*, insect-sending: torches carried along the paddies at
+  night to drive pests away (a real Tohoku rite). The torch-bearers wear cords: Yuki's festival
+  cord is one. The thinning opens mid-procession.
+- **Her question (r2 2c):** "Will you come to the festival next year?" (yes / I'll try / I don't
+  know). Light on the surface; the player knows he goes home. The answer gives the points.
+- **Celebi and Absol (r2 3c):** Celebi flickers and waits at the grey's edge; Yuki's Absol leads,
+  sensing where each Pokémon is.
+- **The Tokoyo pair (r2 4a):** two ordinary members, new faces: they'll close it after taking
+  readings. Calm and sure.
+- **The road (r2 5a):** a short route (placeholder Route 6) of terraced hillside with a few
+  trainers, from Kanaya to Minori.
+- **Her brother (r2 6a):** gets his first Pokémon in the aftermath: one of the saved Pokémon
+  chooses to stay with him.
+
+## Defaults (not asked; change any)
+
+- **Levels:** the grey's wild battles Lv 36-38; the Tokoyo pair Lv 37-40; Route 6's trainers
+  Lv 35-38.
+- **The village's Pokémon:** farm Pokémon (Mareep, Miltank, Skiddo, Lillipup, Hoppip;
+  `TODO(design)`), shown grey in the thinning and back in colour after.
+- **The tag battle** uses the follower-NPC partner system, as Kaede's will (Yuki's `PARTNER_`
+  entry: Absol and her team, about Lv 38).
+- **Names** (brother, parents, the Tokoyo pair): `TODO(design)`, placeholders at build time.
+- **Maps:** Route 6, Minori (village, Yuki's house, a Pokémon Center or none, the terraces, the
+  grey), made by the user in Porymap.
+- **The thinning's look on the GBA:** a small shared design of its own (greyed tiles, a palette
+  fade), used here, on Routes 4 and 5 and at the tournament.
 
 ## Leaning
 
