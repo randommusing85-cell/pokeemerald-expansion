@@ -45,10 +45,26 @@ move into the town doc when settled; this file stays as the record.
 - **Vanilla extras (r2 5a):** both gifts dropped (no egg, no Charcoal); the herb shop only sells.
 - **Ibuki at the falls (r2 6b):** always under the falls before the badge ("The gym's open. Go
   in."); also in the gym.
+- **Ren (r3 1b):** arrives as you leave the gym with the badge: a nod, "Next.", and he walks in.
+- **The gym's inside (r3 2c):** Dewford's gym (the vanilla Fighting gym): dark at first, the
+  light grows as you beat trainers, like reaching clarity under the falls (misogi).
+- **The gym guide (r3 3b):** a retired pilgrim who trained under Ibuki; the guide's tips in his
+  own voice. Uses the pilgrim sprite.
+- **The inn (r3 4a):** the innkeeper (the inn's gossip) and JIRO, Route 2's porter, unloading
+  baskets.
+- **The way onward (r3 5a):** Lavaridge's east exit stays, blocked for now ("The road east is
+  shut for the thaw."); where it leads is `TODO(design)`.
+- **Music (r3 6b, vanilla placeholder):** Fallarbor's track.
+- **Defaults (r3):** Ren uses a vanilla Ace Trainer sprite for now; the Pokémon Center keeps
+  Lavaridge's back door from the hot-spring side; Akira's, Ibuki's, the gossips' and Ren's lines
+  are drafted at build time (`TODO(design)`).
 
 ## Leaning
 
 ## Open questions
+
+Nothing open from rounds 1-3. Later: the onward route, the lines, Ibuki's and the pilgrims'
+sprites, a waterfall hall or climbing gym in a Porymap redraw.
 
 ## Gaps and tensions
 
