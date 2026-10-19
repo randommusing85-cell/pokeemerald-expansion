@@ -26,6 +26,21 @@ Working notes. Decisions move into `story-outline.md`, `characters.md`, `side-qu
 
 ## Decided
 
+- **The bracket (r1 1d):** three rounds he plays: round 1 KAITO (the bridge rematch), round 2
+  Yuki, the semi-final Nami. Akira's match runs on the next field: he sees Akira's evolved
+  starter win, but doesn't battle him. The final never happens.
+- **What Tokoyo does (r1 2a+c):** they open a thinning on purpose under the castle (a thin
+  place) and test a small version of the door-mountain machine on it. It gets away from them.
+  They didn't mean to kill anyone.
+- **Fuyumi's death (r1 3a):** she holds the thinning back with her Ice Pokémon so the stands can
+  empty. Akira sees it. Brief and plain.
+- **Hashimoto's death (r1 4a):** he sees the test is out of control and joins her holding it
+  back: two people on opposite sides, side by side. Both die.
+- **Nami (r1 5a+b):** mid-semi-final a signal goes up; she stops: "I'm sorry. Not now." and runs.
+  After the disaster he finds her at Hashimoto's body among Tokoyo's members, in their gear.
+- **Act 2's end (r1 6b):** Fuyumi's funeral in Shimotsuki (Kaede keeps the rite), then the
+  League's statement: "an accident". Akira hears it.
+
 ## Leaning
 
 ## Open questions
