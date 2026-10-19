@@ -112,7 +112,7 @@ points, Tetsu and Ren come too.
 | # | Town | Leader | Type | Personality | Ace | Level |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Shimotsuki | Fuyumi | Ice | Stern veteran in the gym, softer at home with Akira. Akira's mother; dies at the tournament. | Bergmite (with Spheal) | 13-14 |
-| 2 | Yunotaki | Ibuki (man, 40s) | Fighting | A former League fighter who walked away after a season that ended badly and won't say why. Trains under the hot waterfalls, like Tohoku's mountain ascetics. Quietly sceptical of the League (a seed for the cover-up, not spelled out). | Medicham (with Throh, Sawk) | 19-21 |
+| 2 | Yunotaki | Ibuki (man, 40s) | Fighting | Lean, grey-streaked hair tied back, a scar across one eyebrow; an off-white training gi, a rope belt, prayer beads and faded red wrist tape from his League days. A former League fighter who walked away after a season that ended badly and won't say why. Trains under the hot waterfalls, like Tohoku's mountain ascetics. Quietly sceptical of the League (a seed for the cover-up, not spelled out). | Medicham (with Throh, Sawk) | 19-21 |
 | 3-8 | | `TODO(design)` | | | | |
 
 ## Champion
@@ -171,6 +171,9 @@ Gen 3 style, from the FRLG-style NPC megapack, converted by `tools/eien_npcs/` (
 | Kaede (battle) | `TRAINER_PIC_EIEN_KAEDE`: AI drafts, arms crossed (front) and a 4-frame throw from behind (back, for tag battles) (`design/art/eien_kaede/`) |
 | Chiyo, Kaede's grandmother (battle) | `TRAINER_PIC_EIEN_KAEDE_GRANDMOTHER`: an AI draft with a walking stick; ready if she ever battles (the design doesn't give her a battle yet) |
 | Chiyo, Kaede's grandmother | `OBJ_EVENT_GFX_EIEN_KAEDE_GRANDMOTHER`: the HGSS Medium in shrine colors (white robe, purple hakama) |
+| Ibuki | Planned ([brainstorm-ibuki-sprites.md](brainstorm-ibuki-sprites.md)): a megapack sheet recolored to his colors (off-white gi, dark brown belt and beads, faded red wrist tape, dark hair with grey); the same sprite under the falls. Vanilla Black Belt stand-in now |
+| Ibuki (battle) | Planned: AI drafts, a fighting stance with one open palm forward; Brawly as the pose and framing reference, Fuyumi's pic as a second reference so the Eien leaders match. Black Belt stand-in now |
+| Pilgrims (male, female) | Planned: two megapack sheets recolored: white travel clothes, a wide straw hat, a staff with a small bell, straw sandals, a cloth pack. The retired-pilgrim gym guide uses the male one. Battle pics as AI drafts (Black Belt and Battle Girl as references). Stand-ins now: Black Belt, Battle Girl |
 | Celebi | `OBJ_EVENT_GFX_SPECIES(CELEBI)` (engine) |
 | Hamakaze townsfolk | `OBJ_EVENT_GFX_EIEN_FISHERMAN`, `_SAILOR`, `_VILLAGE_WOMAN`, `_SCHOOLBOY` |
 | Shimotsuki townsfolk | `OBJ_EVENT_GFX_EIEN_SNOW_TRAINER`, `_WORKER`, `_POKEFAN_M`, `_SOCIALITE` |

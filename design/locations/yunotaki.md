@@ -88,8 +88,9 @@ No spare trainer slots are left: these reuse vanilla Hoenn slots, like Shimotsuk
 (LEONEL), `_SHIZUKA` (JOSE), and Akira's `TRAINER_EIEN_AKIRA_YUNOTAKI_TORCHIC` / `_BULBASAUR` /
 `_FROAKIE` (DAISY, FOSTER, LUIS), picked by `VAR_EIEN_AKIRA_STARTER`.
 
-**Stand-in sprites** (vanilla) until Ibuki's own (AI drafts, like Fuyumi's) and a pilgrim sprite
-exist: Ibuki is a Black Belt (overworld and battle pic), Daichi a Black Belt, Shizuka a Battle
+**Stand-in sprites** (vanilla) until Ibuki's own and the pilgrims' exist (designed in
+[brainstorm-ibuki-sprites.md](../brainstorm-ibuki-sprites.md); see `characters.md`'s sprite
+table: megapack overworld sprites recolored, AI-drafted battle pics, male and female pilgrims): Ibuki is a Black Belt (overworld and battle pic), Daichi a Black Belt, Shizuka a Battle
 Girl (overworld `GIRL_3`), the gym guide a Black Belt, Ren `MAN_3`, JIRO a Hiker, the innkeeper
 `WOMAN_5`, the bath attendant and gossip Lavaridge's hot-spring old women.
 

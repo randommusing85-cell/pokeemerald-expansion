@@ -50,7 +50,8 @@ Working notes for gym 2 leader Ibuki's overworld sprite and battle picture. Deci
 
 ## Open questions
 
-Nothing open from rounds 1-2. The picks happen at build time.
+Promoted into `characters.md`, `locations/yunotaki.md` and `whats-left.md`. Nothing open
+from rounds 1-2. The picks happen at build time.
 
 ## Gaps and tensions
 
