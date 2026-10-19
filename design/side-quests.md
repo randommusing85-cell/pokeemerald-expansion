@@ -121,7 +121,7 @@ Keep her scenes friendship: rivals who respect each other, no flirting.
 
 | # | When / where | What happens | Points from | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
-| 0 | Act 1, a gym (cameo) | A by-the-book League trainer at gym 2 or 3. | none | none | No |
+| 0 | Act 1, Yunotaki (cameo) | A by-the-book League trainer. He arrives as the hero leaves gym 2 with the badge: a nod, "Next.", and he walks in to challenge Ibuki officially. No battle ([yunotaki.md](locations/yunotaki.md)). | none | none | No |
 | 1 | Act 3, after the tournament | He's uneasy about the League's story and asks what the hero saw. He quits either way. | Telling him the truth or not | none | No |
 | 2 | Act 3, after he quits | He helps dig through League records about the cycle. | Helping | League TM `TODO(design)` | No |
 

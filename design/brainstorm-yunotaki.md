@@ -63,7 +63,8 @@ move into the town doc when settled; this file stays as the record.
 
 ## Open questions
 
-Nothing open from rounds 1-3. Later: the onward route, the lines, Ibuki's and the pilgrims'
+Promoted into `locations/yunotaki.md`, `story-outline.md`, `side-quests.md` and
+`whats-left.md`. Nothing open from rounds 1-3. Later: the onward route, the lines, Ibuki's and the pilgrims'
 sprites, a waterfall hall or climbing gym in a Porymap redraw.
 
 ## Gaps and tensions
