@@ -39,7 +39,7 @@ AI-assisted art, to be credited in `asset-credits.md` when one is used.
   the off-white gi, the brown belt, the bead necklace and the red wrist tape.
   - `gemini3pro_a`: the biggest and most forceful; hair loose behind.
   - `gemini31flash_a`: clean and calm.
-  - `gemini3pro_b`: hair in a topknot, the clearest "tied back"; the scar shows.
+  - `gemini3pro_b`: hair in a topknot, the clearest "tied back".
   - `gemini31flash_b`: clean, closest to the leaders' scale.
 - **Male pilgrim** ([contact sheet](../eien_pilgrim_m_battle_contact_sheet.png); style
   reference the Black Belt pic, colors from `pilgrim_m_b_ruinmaniac`):
