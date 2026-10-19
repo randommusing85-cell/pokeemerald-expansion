@@ -625,21 +625,26 @@ Spoink
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DAISY ===
-Name: DAISY
-Class: Aroma Lady
-Pic: Aroma Lady
-Gender: Female
-Music: Female
+/* Eien: reuses vanilla DAISY's slot (Route 103). Akira by Yunotaki's gym door, if he took Torchic. */
+=== TRAINER_EIEN_AKIRA_YUNOTAKI_TORCHIC ===
+Name: AKIRA
+Class: Rival
+Pic: Eien Akira
+Gender: Male
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Shroomish
-Level: 14
+Staravia
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Roselia
-Level: 14
+Machop
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Torchic-Eien
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROSE_1 ===
@@ -831,30 +836,27 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Sand Attack
 - Poison Sting
 
-=== TRAINER_FOSTER ===
-Name: FOSTER
-Class: Ruin Maniac
-Pic: Ruin Maniac
+/* Eien: reuses vanilla FOSTER's slot (Route 105). Akira by Yunotaki's gym door, if he took Bulbasaur. */
+=== TRAINER_EIEN_AKIRA_YUNOTAKI_BULBASAUR ===
+Name: AKIRA
+Class: Rival
+Pic: Eien Akira
 Gender: Male
-Music: Hiker
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Sandshrew
-Level: 25
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+Staravia
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Sandslash
-Level: 25
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+Machop
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Bulbasaur-Eien
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DUSTY_2 ===
 Name: DUSTY
@@ -2744,17 +2746,26 @@ Rhydon
 Level: 35
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_LUIS ===
-Name: LUIS
-Class: Swimmer M
-Pic: Swimmer M
+/* Eien: reuses vanilla LUIS's slot (Route 105). Akira by Yunotaki's gym door, if he took Froakie. */
+=== TRAINER_EIEN_AKIRA_YUNOTAKI_FROAKIE ===
+Name: AKIRA
+Class: Rival
+Pic: Eien Akira
 Gender: Male
-Music: Swimmer
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Carvanha
-Level: 26
+Staravia
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Machop
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Froakie-Eien
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DOMINIK ===
@@ -3949,26 +3960,39 @@ Makuhita
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TAYLOR ===
-Name: TAYLOR
-Class: Bug Maniac
-Pic: Bug Maniac
+/* Eien: reuses vanilla TAYLOR's slot (Route 119). Gym 2's leader (design/locations/yunotaki.md). */
+=== TRAINER_EIEN_IBUKI ===
+Name: IBUKI
+Class: Leader
+Pic: Black Belt
 Gender: Male
-Music: Suspicious
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Wurmple
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Throh
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Seismic Toss
+- Rock Tomb
+- Bulk Up
+- Vital Throw
 
-Cascoon
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Sawk
+Level: 19
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Double Kick
+- Bite
+- Low Kick
+- Bulk Up
 
-Dustox
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Medicham @ Sitrus Berry
+Level: 21
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Brick Break
+- Confusion
+- Meditate
+- Detect
 
 === TRAINER_JEFFREY_1 ===
 Name: JEFFREY
@@ -11296,22 +11320,19 @@ Wurmple
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JOSE ===
-Name: JOSE
-Class: Bug Catcher
-Pic: Bug Catcher
-Gender: Male
-Music: Male
+/* Eien: reuses vanilla JOSE's slot (Route 116). Yunotaki's gym. */
+=== TRAINER_EIEN_YUNOTAKI_GYM_SHIZUKA ===
+Name: SHIZUKA
+Class: Pilgrim
+Pic: Battle Girl
+Gender: Female
+Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Wurmple
-Level: 8
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Nincada
-Level: 8
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Meditite
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DOUG ===
 Name: DOUG
@@ -13998,22 +14019,19 @@ Goldeen
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LEONEL ===
-Name: LEONEL
-Class: Cooltrainer
-Pic: Cooltrainer M
+/* Eien: reuses vanilla LEONEL's slot (Route 120). Yunotaki's gym. */
+=== TRAINER_EIEN_YUNOTAKI_GYM_DAICHI ===
+Name: DAICHI
+Class: Pilgrim
+Pic: Black Belt
 Gender: Male
-Music: Cool
-Items: Hyper Potion
+Music: Intense
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move
 
-Manectric
-Level: 30
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Thunder
-- Quick Attack
-- Thunder Wave
+Makuhita
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CALLIE ===
 Name: CALLIE

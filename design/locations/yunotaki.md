@@ -2,9 +2,9 @@
 
 - **Map(s):** the town reuses vanilla Lavaridge Town's layout, copied as our own with small
   edits (see **Maps** below); its gym, Pokémon Center, Mart, herb shop and inn reuse vanilla
-  interiors. Our own maps and scripts (placeholder constants `MAP_YUNOTAKI`, `MAP_YUNOTAKI_GYM`,
-  `MAP_YUNOTAKI_POKEMON_CENTER_1F`, `MAP_YUNOTAKI_MART`, `MAP_YUNOTAKI_HERB_SHOP`,
-  `MAP_YUNOTAKI_INN`). A Porymap map can replace it any time.
+  interiors. **Built:** `MAP_YUNOTAKI`, `MAP_YUNOTAKI_GYM`, `MAP_YUNOTAKI_POKEMON_CENTER_1F`,
+  `MAP_YUNOTAKI_MART`, `MAP_YUNOTAKI_HERB_SHOP`, `MAP_YUNOTAKI_INN` (`MAPSEC_YUNOTAKI`
+  "YUNOTAKI", `HEAL_LOCATION_YUNOTAKI`). A Porymap map can replace it any time.
 - **Type:** town
 - **Connects to:** south: Route 2's mountain pass ([route-2.md](route-2.md)). `TODO(design)`:
   where the road onward leads. Lavaridge's east exit stays, blocked for now: "The road east is
@@ -84,26 +84,58 @@ Pokémon shuts down every answer.
 | Ibuki | Leader | Throh Lv 19 (Seismic Toss, Rock Tomb, Bulk Up, Vital Throw), Sawk Lv 19 (Double Kick, Bite, Low Kick, Bulk Up), Medicham Lv 21 @ Sitrus Berry (Brick Break, Confusion, Meditate, Detect) | Throh and Sawk are like his disciples; Medicham the meditating ascetic. The Misogi Badge and TM31 Brick Break |
 
 No spare trainer slots are left: these reuse vanilla Hoenn slots, like Shimotsuki's
-(`include/constants/opponents.h`). Ibuki and the pilgrims need sprites: an overworld sprite
-and a battle pic for Ibuki (AI drafts, like Fuyumi's); the pilgrims can share the route's
-pilgrim sprite.
+(`include/constants/opponents.h`): `TRAINER_EIEN_IBUKI` (TAYLOR), `TRAINER_EIEN_YUNOTAKI_GYM_DAICHI`
+(LEONEL), `_SHIZUKA` (JOSE), and Akira's `TRAINER_EIEN_AKIRA_YUNOTAKI_TORCHIC` / `_BULBASAUR` /
+`_FROAKIE` (DAISY, FOSTER, LUIS), picked by `VAR_EIEN_AKIRA_STARTER`.
+
+**Stand-in sprites** (vanilla) until Ibuki's own (AI drafts, like Fuyumi's) and a pilgrim sprite
+exist: Ibuki is a Black Belt (overworld and battle pic), Daichi a Black Belt, Shizuka a Battle
+Girl (overworld `GIRL_3`), the gym guide a Black Belt, Ren `MAN_3`, JIRO a Hiker, the innkeeper
+`WOMAN_5`, the bath attendant and gossip Lavaridge's hot-spring old women.
 
 ## Maps
 
 - **Town:** Lavaridge's layout (20x20, `gTileset_General` + `gTileset_Lavaridge`) copied to our
   own layout, with two edits: a south entrance for Route 2's upper map, and a short waterfall on
-  the west edge by the gym door (general tileset waterfall metatiles, to confirm at build time).
+  the west edge by the gym door (general tileset waterfall metatiles).
   Doors as in Lavaridge: gym (5,15), Pokémon Center (9,6, and its back door at 9,2 from the hot
   spring side), Mart (15,5), herb shop (12,15), inn (the house, 16,15).
-- **Gym:** Dewford's gym layout. **Pokémon Center, Mart, herb shop, inn:** Lavaridge's
-  interiors.
+- **Built:** `data/layouts/Yunotaki/` (`LAYOUT_YUNOTAKI`). The south entrance is x 9-11 on the
+  bottom row; Route 2's upper map doesn't exist yet, so it has no connection. The waterfall is
+  x 0-1, rows 15-18 (general tileset metatiles 187/188 lip, 185 falls, 44/60 splash; the splash
+  tiles are at elevation 3 so Ibuki can stand in them and be talked to); the cliff corner beside
+  it (2,16)-(3,18) is opened to grass. `layout.png` in `design/art/yunotaki/`.
+- **Gym:** Dewford's gym layout (`LAYOUT_DEWFORD_TOWN_GYM`). Its lighting: flash level 6 at the
+  start, 4 after one pilgrim, 2 after both, fully lit once Ibuki is beaten. Daichi stands at
+  Dewford's (2,18), Shizuka at (7,8). **Pokémon Center:** Lavaridge's (no 2F, so the stairs go
+  nowhere; the back door leads to the hot spring, which is only reached that way, as in
+  Lavaridge). **Mart** (vanilla layout; placeholder stock), **herb shop** (Energy Powder,
+  Energy Root, Heal Powder, Revival Herb), **inn** (`LAYOUT_HOUSE3`, Lavaridge's house).
+- JIRO is always in the inn for now (Route 2 isn't built).
 
 ## Flags and vars
 
 | Name | Set when | Checked by |
 | --- | --- | --- |
-| `FLAG_BADGE02_GET` | He beats the gym 2 leader | The badge |
+| `FLAG_BADGE02_GET` | He beats Ibuki | The badge; hides Ibuki under the falls; Ren's scene |
+| `FLAG_RECEIVED_TM_BRICK_BREAK_EIEN` (was `FLAG_UNUSED_0x02A`) | Ibuki gives TM31 | Retrying the TM if the bag was full |
+| `FLAG_BEAT_AKIRA_YUNOTAKI` (was `FLAG_UNUSED_0x02B`) | Akira's battle by the gym door | Hides Akira |
+| `FLAG_MET_REN_YUNOTAKI` (was `FLAG_UNUSED_0x02C`) | Ren's scene ends | Runs it once (`FLAG_TEMP_1` hides him until then, `VAR_TEMP_1` starts it) |
 
 ## Screenshot check
 
-`TODO` once the maps exist.
+Played in the mGBA harness (warped in, a debug Lv 100 Machamp for the battles, with badge 8's
+flag set only so it obeys); shots in `design/art/yunotaki/`:
+
+- `1_ibuki_falls.png`: arriving; Ibuki under the waterfall: "The gym's open. Go in."
+- `2_akira.png`: Akira at the gym door, his battle (Staravia, Machop, his starter), his line,
+  and him stepping aside.
+- `3_gym_dark_daichi.png`: the dark gym; Daichi spots him (Makuhita); the light grows.
+- `4_ibuki_badge_tm.png`: Shizuka's lines; Ibuki's battle (Throh, Medicham, Sawk), his losing
+  line, the lights coming on, the Misogi Badge, TM31 and his Brick Break line.
+- `5_ren.png`: leaving the gym with the badge; Ren: the nod, "Next.", and in he goes.
+- `6_bath_gossip_inn.png`: the bath attendant heals ("Sit. Soak." / "Better."), the bath gossip,
+  the innkeeper, the herb-shop keeper.
+- `7_town_herbs.png`: the kid's rumour, the road east, the town sign, JIRO, the herb shop's stock.
+
+Also checked: the Pokémon Center's nurse, its front and back doors.

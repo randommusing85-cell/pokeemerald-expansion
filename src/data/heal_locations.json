@@ -359,6 +359,14 @@
       "respawn_npc": "LOCALID_SHIMOTSUKI_NURSE"
     },
     {
+      "id": "HEAL_LOCATION_YUNOTAKI",
+      "map": "MAP_YUNOTAKI",
+      "x": 9,
+      "y": 7,
+      "respawn_map": "MAP_YUNOTAKI_POKEMON_CENTER_1F",
+      "respawn_npc": "LOCALID_YUNOTAKI_NURSE"
+    },
+    {
       "id": "HEAL_LOCATION_HAMAKAZE",
       "map": "MAP_HAMAKAZE",
       "x": 5,
