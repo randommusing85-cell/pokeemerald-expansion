@@ -61,6 +61,13 @@ CHARACTERS = [
      "Anime NPC 07: Kalarie (first frames Pokésho), recolored"),
     ("KAEDE_GRANDMOTHER", "kaede_grandmother",
      os.path.join(REPO, "design/art/eien_kaede/drafts/grandparent_b_medium_shrine.png"), HGSS + " (Medium, recolored)"),
+    # Recolors for gym 2 (tools/eien_npcs/ibuki_drafts.py, design/art/eien_ibuki/)
+    ("IBUKI", "ibuki", os.path.join(REPO, "design/art/eien_ibuki/ow_drafts/ibuki_b_blackbelt_tape.png"),
+     RSE + " (Black Belt, recolored)"),
+    ("PILGRIM_M", "pilgrim_m", os.path.join(REPO, "design/art/eien_ibuki/ow_drafts/pilgrim_m_b_ruinmaniac.png"),
+     RSE + " (Ruin Maniac, recolored)"),
+    ("PILGRIM_F", "pilgrim_f", os.path.join(REPO, "design/art/eien_ibuki/ow_drafts/pilgrim_f_a_picnicker.png"),
+     HGSS + " (Picnicker, recolored)"),
 ]
 
 

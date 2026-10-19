@@ -3927,7 +3927,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_EIEN_ROUTE2_PILGRIM_2 ===
 Name: MIKA
 Class: Pilgrim
-Pic: Battle Girl
+Pic: Eien Pilgrim F
 Gender: Female
 Music: Intense
 Double Battle: No
@@ -3946,7 +3946,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_EIEN_ROUTE2_PILGRIM_PAIR ===
 Name: RYO & YUI
 Class: Pilgrim
-Pic: Black Belt
+Pic: Eien Pilgrim M
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -3964,7 +3964,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_EIEN_IBUKI ===
 Name: IBUKI
 Class: Leader
-Pic: Black Belt
+Pic: Eien Ibuki
 Gender: Male
 Music: Male
 Double Battle: No
@@ -8967,7 +8967,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_EIEN_ROUTE2_PILGRIM_1 ===
 Name: KOJI
 Class: Pilgrim
-Pic: Black Belt
+Pic: Eien Pilgrim M
 Gender: Male
 Music: Intense
 Double Battle: No
@@ -11324,7 +11324,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_EIEN_YUNOTAKI_GYM_SHIZUKA ===
 Name: SHIZUKA
 Class: Pilgrim
-Pic: Battle Girl
+Pic: Eien Pilgrim F
 Gender: Female
 Music: Intense
 Double Battle: No
@@ -14023,7 +14023,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_EIEN_YUNOTAKI_GYM_DAICHI ===
 Name: DAICHI
 Class: Pilgrim
-Pic: Black Belt
+Pic: Eien Pilgrim M
 Gender: Male
 Music: Intense
 Double Battle: No

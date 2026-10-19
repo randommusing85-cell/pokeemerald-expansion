@@ -112,7 +112,7 @@ points, Tetsu and Ren come too.
 | # | Town | Leader | Type | Personality | Ace | Level |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Shimotsuki | Fuyumi | Ice | Stern veteran in the gym, softer at home with Akira. Akira's mother; dies at the tournament. | Bergmite (with Spheal) | 13-14 |
-| 2 | Yunotaki | Ibuki (man, 40s) | Fighting | A former League fighter who walked away after a season that ended badly and won't say why. Trains under the hot waterfalls, like Tohoku's mountain ascetics. Quietly sceptical of the League (a seed for the cover-up, not spelled out). | Medicham (with Throh, Sawk) | 19-21 |
+| 2 | Yunotaki | Ibuki (man, 40s) | Fighting | Lean, grey-streaked hair tied back, a scar across one eyebrow; an off-white training gi, a rope belt, prayer beads and faded red wrist tape from his League days. A former League fighter who walked away after a season that ended badly and won't say why. Trains under the hot waterfalls, like Tohoku's mountain ascetics. Quietly sceptical of the League (a seed for the cover-up, not spelled out). | Medicham (with Throh, Sawk) | 19-21 |
 | 3-8 | | `TODO(design)` | | | | |
 
 ## Champion
@@ -171,6 +171,9 @@ Gen 3 style, from the FRLG-style NPC megapack, converted by `tools/eien_npcs/` (
 | Kaede (battle) | `TRAINER_PIC_EIEN_KAEDE`: AI drafts, arms crossed (front) and a 4-frame throw from behind (back, for tag battles) (`design/art/eien_kaede/`) |
 | Chiyo, Kaede's grandmother (battle) | `TRAINER_PIC_EIEN_KAEDE_GRANDMOTHER`: an AI draft with a walking stick; ready if she ever battles (the design doesn't give her a battle yet) |
 | Chiyo, Kaede's grandmother | `OBJ_EVENT_GFX_EIEN_KAEDE_GRANDMOTHER`: the HGSS Medium in shrine colors (white robe, purple hakama) |
+| Ibuki | `OBJ_EVENT_GFX_EIEN_IBUKI`: the RSE Black Belt recolored ([brainstorm-ibuki-sprites.md](brainstorm-ibuki-sprites.md)): the headband turned to tied-back hair, dark with grey; off-white gi, dark brown belt, faded red wrist tape. The same sprite under the falls (`design/art/eien_ibuki/`) |
+| Ibuki (battle) | `TRAINER_PIC_EIEN_IBUKI`: an AI draft, a fighting stance with one open palm forward, hair in a topknot, prayer beads, red wrist tape (Brawly and Fuyumi's pic as references) |
+| Pilgrims (male, female) | `OBJ_EVENT_GFX_EIEN_PILGRIM_M` (the RSE Ruin Maniac recolored) and `_PILGRIM_F` (the HGSS Picnicker recolored): white travel clothes, a wide straw hat, a cloth pack (no staff on the small sprites). The retired-pilgrim gym guide uses the male one. Battle: `TRAINER_PIC_EIEN_PILGRIM_M` (an AI draft: staff with a bell, fist raised); `TRAINER_PIC_EIEN_PILGRIM_F` (an AI draft: a Poké Ball out, the staff on her shoulder) |
 | Celebi | `OBJ_EVENT_GFX_SPECIES(CELEBI)` (engine) |
 | Hamakaze townsfolk | `OBJ_EVENT_GFX_EIEN_FISHERMAN`, `_SAILOR`, `_VILLAGE_WOMAN`, `_SCHOOLBOY` |
 | Shimotsuki townsfolk | `OBJ_EVENT_GFX_EIEN_SNOW_TRAINER`, `_WORKER`, `_POKEFAN_M`, `_SOCIALITE` |

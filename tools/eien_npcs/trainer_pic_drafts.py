@@ -70,16 +70,70 @@ CHARACTERS = {
             "c": "Pose: one hand on her hip, the other raised in front of her with a Poké Ball, a small confident look.",
         },
     },
+    # design/brainstorm-ibuki-sprites.md: the overworld references are recolor drafts
+    # (tools/eien_npcs/ibuki_drafts.py), RPG Maker sheets, so their front frame is 32x48.
+    "ibuki": {
+        "style": "graphics/trainers/front_pics/leader_brawly.png",
+        "style2": "graphics/trainers/front_pics/eien_fuyumi.png",
+        "overworld": "design/art/eien_ibuki/ow_drafts/ibuki_b_blackbelt_tape.png",
+        "frame": (32, 48),
+        "who": (
+            "The character is Ibuki, the Fighting-type gym leader of a mountain hot-spring town: a "
+            "lean man in his 40s, a former League fighter who now trains under hot waterfalls like a "
+            "mountain ascetic. Dark hair with grey streaks, tied back; one old scar across an "
+            "eyebrow; a plain off-white training gi with a dark brown rope belt, a necklace of dark "
+            "wooden prayer beads, and faded red tape wrapped around his wrists. Calm, composed, "
+            "quietly serious, not flashy. The third reference image is another gym leader from the "
+            "same game; match its scale and finish so the two look like a set. "
+        ),
+        "poses": {
+            "a": "Pose: a composed fighting stance, one open palm held forward toward the viewer, the other hand drawn back at his side.",
+            "b": "Pose: a composed fighting stance, one open palm held forward toward the viewer, the other hand drawn back at his side.",
+        },
+    },
+    "pilgrim_m": {
+        "style": "graphics/trainers/front_pics/black_belt.png",
+        "overworld": "design/art/eien_ibuki/ow_drafts/pilgrim_m_b_ruinmaniac.png",
+        "frame": (32, 48),
+        "who": (
+            "The character is a male pilgrim climbing a mountain to train at a waterfall: a young "
+            "man in plain white travel clothes, a wide straw hat, straw sandals, a cloth pack on his "
+            "back, and a wooden staff with a small bell. Earnest and fit. "
+        ),
+        "poses": {
+            "a": "Pose: standing firm, the staff planted upright in one hand, the other fist raised, ready to battle.",
+            "b": "Pose: holding a Poké Ball out toward the viewer, the staff resting against his shoulder.",
+        },
+    },
+    "pilgrim_f": {
+        "style": "graphics/trainers/front_pics/battle_girl.png",
+        "overworld": "design/art/eien_ibuki/ow_drafts/pilgrim_f_a_picnicker.png",
+        "frame": (32, 48),
+        "who": (
+            "The character is a female pilgrim climbing a mountain to train at a waterfall: a young "
+            "woman with dark brown hair, in plain white travel clothes, a wide straw hat, straw "
+            "sandals, a cloth pack on her back, and a wooden staff with a small bell. Calm and "
+            "focused. "
+        ),
+        # Round 2 (c, d): round 1's a and b drew several views at once or left background gaps
+        # between the staff and the figure.
+        "poses": {
+            "c": "Pose: a single front view of one figure. She holds a Poké Ball out toward the viewer with one hand; the staff is strapped flat across her back, close to her body, its ends showing behind her shoulders.",
+            "d": "Pose: a single front view of one figure. Both hands grip the staff, held diagonally and close against her body, ready to battle; no gaps between the staff and her arms.",
+        },
+    },
 }
 
 
-def image_part(path, scale):
+def image_part(path, scale, frame=None):
     src = Image.open(os.path.join(REPO, path))
     img = src.convert("RGBA")
     if src.mode == "P":  # index 0 is the transparent key color
         key = tuple(src.getpalette()[:3])
         img.putdata([(0, 0, 0, 0) if p[:3] == key else p for p in sprite_prep.pixels(img)])
-    if img.width > 64:  # an overworld sheet of 16x32 frames: the first one (facing down)
+    if frame:  # an overworld sheet: its first frame (facing down)
+        img = img.crop((0, 0) + frame)
+    elif img.width > 64:  # an overworld sheet of 16x32 frames: the first one (facing down)
         img = img.crop((0, 0, 16, 32))
     bg = Image.new("RGBA", img.size, (255, 255, 255, 255))
     bg.alpha_composite(img)
@@ -147,7 +201,10 @@ def main():
                 stem = f"{name}_{tag}_{pose}"
                 raw = os.path.join(raw_dir, stem + ".png")
                 if not args.convert_only:
-                    parts = [image_part(char["style"], 4), image_part(char["overworld"], 8)]
+                    frame = char.get("frame")
+                    parts = [image_part(char["style"], 4), image_part(char["overworld"], 8 if not frame else 4, frame)]
+                    if "style2" in char:
+                        parts.append(image_part(char["style2"], 4))
                     try:
                         # Generate before opening the file, so a failed call keeps the old draft
                         data = generate(model, COMMON + char["who"] + pose_text, parts)

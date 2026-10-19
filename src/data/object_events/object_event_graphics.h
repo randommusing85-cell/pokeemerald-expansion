@@ -654,4 +654,7 @@ const u32 gObjectEventPic_EienPokefanM[] = INCGFX_U32("graphics/object_events/pi
 const u32 gObjectEventPic_EienSocialite[] = INCGFX_U32("graphics/object_events/pics/people/eien/socialite.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_EienKaede[] = INCGFX_U32("graphics/object_events/pics/people/eien/kaede.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_EienKaedeGrandmother[] = INCGFX_U32("graphics/object_events/pics/people/eien/kaede_grandmother.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_EienIbuki[] = INCGFX_U32("graphics/object_events/pics/people/eien/ibuki.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_EienPilgrimM[] = INCGFX_U32("graphics/object_events/pics/people/eien/pilgrim_m.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_EienPilgrimF[] = INCGFX_U32("graphics/object_events/pics/people/eien/pilgrim_f.png", ".4bpp", "-mwidth 2 -mheight 4");
 // Eien NPCs END

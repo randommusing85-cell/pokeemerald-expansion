@@ -35,7 +35,7 @@ move into the town doc when settled; this file stays as the record.
   line.
 - **Fitting the layout (r2 1a):** copy Lavaridge's layout and make small edits: cut a south
   entrance for Route 2, and put a short waterfall on the west edge by the gym (general tileset
-  waterfall metatiles, to confirm at build time). Everything else stays.
+  waterfall metatiles, confirmed at build time). Everything else stays.
 - **The inn (r2 2a):** the house becomes the inn; the herb shop stays a herb shop (bitter
   mountain medicine).
 - **The bath's heal (r2 3a):** one of the old women in the bath is the attendant: "Sit. Soak."
