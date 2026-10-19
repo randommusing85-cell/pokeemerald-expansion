@@ -614,6 +614,12 @@ gStdScripts_End::
 	.include "data/maps/Shimotsuki_Mart/scripts.inc"
 	.include "data/maps/Shimotsuki_KaedeShrine/scripts.inc"
 	.include "data/maps/EienRoute2/scripts.inc"
+	.include "data/maps/Yunotaki/scripts.inc"
+	.include "data/maps/Yunotaki_Gym/scripts.inc"
+	.include "data/maps/Yunotaki_PokemonCenter_1F/scripts.inc"
+	.include "data/maps/Yunotaki_Mart/scripts.inc"
+	.include "data/maps/Yunotaki_HerbShop/scripts.inc"
+	.include "data/maps/Yunotaki_Inn/scripts.inc"
 
 .if IS_FRLG
 

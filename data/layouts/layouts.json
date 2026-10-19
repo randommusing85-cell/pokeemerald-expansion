@@ -9378,6 +9378,17 @@
       "border_filepath": "data/layouts/EienRoute2/border.bin",
       "blockdata_filepath": "data/layouts/EienRoute2/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_YUNOTAKI",
+      "name": "Yunotaki_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/Yunotaki/border.bin",
+      "blockdata_filepath": "data/layouts/Yunotaki/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

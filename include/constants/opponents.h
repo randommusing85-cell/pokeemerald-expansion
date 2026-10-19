@@ -886,6 +886,13 @@
 #define TRAINER_EIEN_ROUTE2_CHARCOALER       TRAINER_EDMOND  // Route 109
 #define TRAINER_EIEN_ROUTE2_PILGRIM_2        TRAINER_BRENT   // Route 119
 #define TRAINER_EIEN_ROUTE2_PILGRIM_PAIR     TRAINER_DONALD  // Route 119, a double battle
+// Yunotaki (design/locations/yunotaki.md)
+#define TRAINER_EIEN_IBUKI                   TRAINER_TAYLOR  // Route 119
+#define TRAINER_EIEN_YUNOTAKI_GYM_DAICHI     TRAINER_LEONEL  // Route 120
+#define TRAINER_EIEN_YUNOTAKI_GYM_SHIZUKA    TRAINER_JOSE    // Route 116
+#define TRAINER_EIEN_AKIRA_YUNOTAKI_TORCHIC  TRAINER_DAISY   // Route 103
+#define TRAINER_EIEN_AKIRA_YUNOTAKI_BULBASAUR TRAINER_FOSTER // Route 105
+#define TRAINER_EIEN_AKIRA_YUNOTAKI_FROAKIE  TRAINER_LUIS    // Route 105
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is no space for additional trainers before trainer flag space overflows (Eien has used all of the original 9)
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

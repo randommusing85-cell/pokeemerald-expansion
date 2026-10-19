@@ -61,9 +61,9 @@
 #define FLAG_ITEM_EIEN_ROUTE1_ICE_HEAL  0x27 // Eien: Route 1's Ice Heal, near the shrine path
 #define FLAG_RECEIVED_TM_HAIL_EIEN      0x28 // Eien: Fuyumi gave TM07 Hail (gym 1)
 #define FLAG_RECEIVED_OLD_ROD_EIEN      0x29 // Eien: Tomo gave the Old Rod at Lake Usurai
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
+#define FLAG_RECEIVED_TM_BRICK_BREAK_EIEN 0x2A // Eien: Ibuki gave TM31 Brick Break (gym 2)
+#define FLAG_BEAT_AKIRA_YUNOTAKI        0x2B // Eien: Akira's battle by Yunotaki's gym door
+#define FLAG_MET_REN_YUNOTAKI           0x2C // Eien: Ren passed him at Yunotaki's gym door
 #define FLAG_UNUSED_0x02D    0x2D // Unused Flag
 #define FLAG_UNUSED_0x02E    0x2E // Unused Flag
 #define FLAG_UNUSED_0x02F    0x2F // Unused Flag
