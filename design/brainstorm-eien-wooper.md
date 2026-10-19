@@ -34,10 +34,26 @@ Working notes for the Route 3 variant (`variants.md`, `locations/route-3.md`). D
 - **Research (r1 6b):** seen / battled / caught, plus a journal note when one reaches Lv 20
   outside the tunnel; a Survey member at the tunnel says they found them "in the old seams" when
   they cleared it (a hint at what the Survey digs for).
+- **Eien Quagsire's look (r2 1c):** smooth polished metal, like a Nanbu *tetsubin* (the cast-iron
+  kettle of Iwate's ironware craft), with Quagsire's goofy face kept. Ground/Steel.
+- **Eien Quagsire's stats (r2 2a):** the same shift as Eien Wooper's on vanilla 95 / 85 / 85 / 65
+  / 65 / 35: 95 / 85 / 95 / 55 / 75 / 25 (430).
+- **On evolving (r2 3a):** learns Iron Head.
+- **Wild rates (r2 4b):** the gorge's grass 10%, the cave 30% (day and night alike).
+- **Shiny (r2 5a):** gold ore: a gleaming gold crust instead of iron and copper.
+- **Trubbish's split, first pin (r2 6a):** the Fresh Water is used up on evolving, as with
+  vanilla held-item evolutions.
 
 ## Leaning
 
+- Eien Quagsire's shiny follows Wooper's: gold instead of iron (a gilded kettle). Default, not
+  asked.
+- Abilities carry over to Eien Quagsire (Sturdy / Heavy Metal / Unaware), as vanilla Quagsire
+  keeps Wooper's. Default, not asked.
+
 ## Open questions
+
+- Sprites: Eien Wooper and Eien Quagsire as AI drafts, like the trainer pics (its own pass).
 
 ## Gaps and tensions
 
@@ -49,8 +65,8 @@ Working notes for the Route 3 variant (`variants.md`, `locations/route-3.md`). D
 - **Trubbish's split (user, with r1):** later in the game, Trubbish branches at Garbodor's level
   (Lv 36): holding something clean evolves it into a new Pokémon instead of Garbodor. The clean
   item is Fresh Water (it can be held: it's in the Items pocket; the engine's `IF_HOLD_ITEM`
-  condition supports it on a level-up evolution). `TODO(design)`: where Trubbish is found,
-  the new Pokémon itself (name, type, look, stats; its own brainstorm), whether the Fresh Water
-  is used up on evolving.
+  condition supports it on a level-up evolution). The Fresh Water is used up (r2 6a).
+  `TODO(design)`: where Trubbish is found (a later act), the new Pokémon itself (name, type,
+  look, stats; its own brainstorm).
 
 ## Rejected
