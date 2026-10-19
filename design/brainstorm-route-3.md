@@ -20,11 +20,30 @@ the record.
 
 ## Decided
 
+- **Destination (r1 1a):** down to the coast: a Sea of Japan fishing port (winter waves, wooden
+  boats, drying racks) is the gym 3 town. Nami's Lapras belongs to this sea.
+- **The thaw block (r1 2c):** the road stays washed out; the Eien Survey has made a way round.
+  Helpful and organised, a quiet second sighting.
+- **Story beats (r1 3c):** Yuki's cameo, plus a first sight of the door mountain smoking on the
+  horizon from a ridge. Otherwise quiet.
+- **Shape (r1 4b):** a river gorge with rope bridges and a short cave where the thaw broke the
+  road (two maps); the cave fits the Survey's way round.
+- **Variant (r1 5a):** a new Eien variant on this route as gym 3's answer, like Poochyena and
+  Hoothoot.
+- **Yuki (r1 6a):** midway, she beats a trainer who beat or nearly beat him, then battles him
+  briefly.
+
 ## Leaning
 
 ## Open questions
 
 ## Gaps and tensions
+
+- Gym 3 (leader, type, team) needs its own brainstorm once the type is set; the variant follows
+  the type.
+- Levels after gym 2 aren't set (default proposal: wild Lv 15-20, trainers 18-23).
+- Yuki's sprite and team don't exist yet.
+- "A trainer he struggled with": a game can't force a struggle without a scripted loss.
 
 ## Parked ideas
 
