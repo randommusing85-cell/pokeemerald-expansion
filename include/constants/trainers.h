@@ -528,6 +528,11 @@ enum TrainerClassID
     // Eien: Shimotsuki's gym trainers, locals at their jobs (design/locations/shimotsuki.md)
     TRAINER_CLASS_ICE_FISHER,
     TRAINER_CLASS_SHOVELER,
+    // Eien: Route 2's locals and the pilgrims to Yunotaki's falls (design/locations/route-2.md)
+    TRAINER_CLASS_WOODCUTTER,
+    TRAINER_CLASS_PORTER,
+    TRAINER_CLASS_CHARCOALER,
+    TRAINER_CLASS_PILGRIM,
 
     TRAINER_CLASS_COUNT,
 };

@@ -3911,39 +3911,43 @@ Linoone
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_BRENT ===
-Name: BRENT
-Class: Bug Maniac
-Pic: Bug Maniac
-Gender: Male
-Music: Suspicious
+/* Eien: reuses vanilla BRENT's slot (Route 119). Route 2 (design/locations/route-2.md).
+   TODO(design): the name is a placeholder. */
+=== TRAINER_EIEN_ROUTE2_PILGRIM_2 ===
+Name: MIKA
+Class: Pilgrim
+Pic: Battle Girl
+Gender: Female
+Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Surskit
-Level: 26
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Mankey
+Level: 15
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DONALD ===
-Name: DONALD
-Class: Bug Maniac
-Pic: Bug Maniac
+Machop
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+/* Eien: reuses vanilla DONALD's slot (Route 119). Route 2 (design/locations/route-2.md).
+   TODO(design): the name is a placeholder. */
+=== TRAINER_EIEN_ROUTE2_PILGRIM_PAIR ===
+Name: RYO & YUI
+Class: Pilgrim
+Pic: Black Belt
 Gender: Male
-Music: Suspicious
-Double Battle: No
+Music: Intense
+Double Battle: Yes
 AI: Check Bad Move
 
-Wurmple
-Level: 24
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Mankey
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Silcoon
-Level: 24
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Beautifly
-Level: 24
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Makuhita
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TAYLOR ===
 Name: TAYLOR
@@ -6299,25 +6303,23 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Ice Beam
 - Toxic
 
-=== TRAINER_ANDREW ===
-Name: ANDREW
-Class: Fisherman
-Pic: Fisherman
+/* Eien: reuses vanilla ANDREW's slot (Route 103). Route 2 (design/locations/route-2.md).
+   TODO(design): the name is a placeholder. */
+=== TRAINER_EIEN_ROUTE2_WOODCUTTER ===
+Name: TAKESHI
+Class: Woodcutter
+Pic: Hiker
 Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
-Level: 5
+Pineco
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
-Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Magikarp
-Level: 15
+Timburr
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_IVAN ===
@@ -8936,34 +8938,38 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Charm
 - Helping Hand
 
-=== TRAINER_HUEY ===
-Name: HUEY
-Class: Sailor
-Pic: Sailor
+/* Eien: reuses vanilla HUEY's slot (Route 109). Route 2 (design/locations/route-2.md).
+   TODO(design): the name is a placeholder. */
+=== TRAINER_EIEN_ROUTE2_PILGRIM_1 ===
+Name: KOJI
+Class: Pilgrim
+Pic: Black Belt
 Gender: Male
-Music: Male
+Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Tyrogue
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machop
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-=== TRAINER_EDMOND ===
-Name: EDMOND
-Class: Sailor
-Pic: Sailor
+/* Eien: reuses vanilla EDMOND's slot (Route 109). Route 2 (design/locations/route-2.md).
+   TODO(design): the name is a placeholder. */
+=== TRAINER_EIEN_ROUTE2_CHARCOALER ===
+Name: SABURO
+Class: Charcoaler
+Pic: Kindler
 Gender: Male
-Music: Male
+Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
-Level: 13
+Slugma
+Level: 15
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Hoothoot
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ERNEST_1 ===
@@ -13062,18 +13068,20 @@ Magnemite
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MARCOS ===
-Name: MARCOS
-Class: Guitarist
-Pic: Guitarist
+/* Eien: reuses vanilla MARCOS's slot (Route 103). Route 2 (design/locations/route-2.md).
+   TODO(design): the name is a placeholder. */
+=== TRAINER_EIEN_ROUTE2_PORTER ===
+Name: JIRO
+Class: Porter
+Pic: Ruin Maniac
 Gender: Male
-Music: Intense
+Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Voltorb
-Level: 15
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Machop
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RHETT ===
 Name: RHETT

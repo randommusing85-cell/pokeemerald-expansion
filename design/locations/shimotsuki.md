@@ -62,7 +62,7 @@ their battle pics reuse the Fisherman and Picnicker for now.
 
 | Trainer | Class | Team (levels) | Notes |
 | --- | --- | --- | --- |
-| Gym trainer 1 (TOMO) | Ice Fisher | Snover Lv 9 | A short line about the cold |
+| Gym trainer 1 (TOMO) | Ice Fisher | Snover Lv 9 | A short line about the cold. After the badge he's on Lake Usurai's shore and gives the Old Rod |
 | Gym trainer 2 (SAYA) | Shoveler | Snorunt Lv 10 | A short line about the cold |
 | Fuyumi | Leader | Spheal Lv 13 (Water Gun, Powder Snow, Defense Curl, Rollout), Bergmite Lv 14 (Rock Tomb, Powder Snow, Curse, Harden) | Stern veteran. Water Gun covers Eien Torchic; Rock Tomb covers Eien Torchic and Froakie; Eien Poochyena resists Rock Tomb. The Hoarfrost Badge and TM07 Hail |
 | Akira (practice) | Rival | His starter Lv 14 (the one strong against the player's), Starly Lv 11 | Optional; one trainer entry per starter he took |
@@ -107,6 +107,15 @@ pass joins it at the north-east, by the path round the lake's east side
 - The lake is frozen at the edges with open dark water in the middle, which Lapras swims. On
   the map it's plain water for now (`TODO(art)`: an ice-rim tile). Before gym 1 the path is open
   but nothing happens there.
+- **Fishing:** after the badge, Tomo the Ice Fisher leaves the gym (his object hides on
+  `FLAG_BADGE01_GET`) and stands on the lake's east shore at (17,10), facing the water, and gives
+  the Old Rod once (`FLAG_RECEIVED_OLD_ROD_EIEN`, taken from `FLAG_UNUSED_0x029`; his lines are
+  drafts) ([brainstorm-route-2-trainers-wild.md](../brainstorm-route-2-trainers-wild.md)). The lake's Old Rod table: Magikarp 70%, Goldeen
+  30% (`gEienRoute2` in `src/data/wild_encounters.json`, Lv 8-12, one table for every time of
+  day). The Old Rod has only two slots, fixed at 70% and 30% for every map, so the planned
+  60 / 30 / 10 couldn't land; Spheal waits for a better rod. The Good and Super Rod slots are
+  placeholders (Magikarp, Goldeen, Spheal; Seaking and Sealeo on the Super Rod;
+  `TODO(design)`).
 
 ## Maps
 
@@ -141,6 +150,7 @@ evening use the day table.
 | Area | Day | Night |
 | --- | --- | --- |
 | Kaede's shrine grass | Eien Poochyena 90%, Duskull 10% | Eien Poochyena 60%, Duskull 40% |
+| Lake Usurai, Old Rod | Magikarp 70%, Goldeen 30% | the same |
 
 The Mart's stock is a placeholder (Poké Ball, Potion, Antidote, Paralyze Heal, Awakening,
 Ice Heal, Escape Rope; `TODO(design)`).
@@ -167,3 +177,5 @@ foot); shots in `design/art/shimotsuki/`.
   `23_husband_heals.png` (a white-out before Shimotsuki: back home, healed). `6_badge.png` now
   shows the Hoarfrost Badge.
 - `layout.png`, `lake_path_layout.png`: the layouts.
+- After the Route 2 trainer build: `24_tomo_old_rod.png` (after the badge, Tomo on Lake
+  Usurai's east shore gives the Old Rod).
