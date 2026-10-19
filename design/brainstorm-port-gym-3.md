@@ -36,16 +36,34 @@ stays as the record.
   the optional warm scene follows there on the coast.
 - **Akira (r1 6b):** no battle; he's in the gym's stands watching and says one line afterwards
   about the tournament.
+- **Leader's name (r2 1a):** Akari (灯, "lamp, light").
+- **Team (r2 2a):** three: Magneton Lv 24 with Flash Cannon (Steel, against Rock), Luxio Lv 24
+  with Ice Fang (against Ground and Grass), and the ace Lanturn Lv 27 with its Water moves
+  (against Ground and Rock). One coverage move each, like gyms 1 and 2.
+- **Badge and TM (r2 3b):** the Lantern Badge (chōchin, 提灯; "CHOCHIN" has no long vowel
+  problem, but the badge reads LANTERN BADGE) and TM34 Shock Wave.
+- **Gym trainers (r2 4a):** two of her fleet crew, a squid-boat fisher and a deckhand, with
+  Chinchou, Mareep and Pikachu between them.
+- **The town (r2 5b+c):** a harbour market with drying racks, the squid-boat pier, a lighthouse
+  (not enterable); the fleet's boathouse, where her crew talk about her; a fishing-gear shop
+  that sells the Good Rod (Spheal, held back at Lake Usurai, becomes catchable). Nami's pier at
+  the end.
+- **Weather and time (r2 6c):** a snow-and-thunder storm by day; the squid boats lit at night,
+  the view from the pier (and Nami's warm scene).
 
 ## Leaning
 
 ## Open questions
 
+Nothing open from rounds 1-2. Later: Akira's line, the gym trainers' names and teams, Akari's
+dialogue and sprites, the town's NPC lines, where the road goes next, Ren (a gym-2-only cameo,
+not here unless decided), the Good Rod's tables.
+
 ## Gaps and tensions
 
 - r1 6b: Akira's evolved starter, planned to show at gym 3, now shows first at the tournament
   (or only in his line here). Update the gym 2 note when promoting.
-- Levels (default proposal): gym trainers Lv 22-25, the ace Lv 26-27.
+- Levels: gym trainers Lv 22-25 (default), the team at 24/24/27 (settled by r2 2a).
 
 ## Parked ideas
 
