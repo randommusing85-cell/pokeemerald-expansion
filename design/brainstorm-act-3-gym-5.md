@@ -27,6 +27,20 @@ Working notes. Decisions move into `story-outline.md`, `progression.md`, `charac
 
 ## Decided
 
+- **Where the road picks up (r1 1a):** from Shimotsuki, a new way out (east or north, not taken
+  yet), toward the door mountain's side of the region. Shimotsuki becomes the game's hinge.
+- **Gym 5 (r1 2a):** Fire, in an ironworks town like Morioka's Nanbu ironware: forges, kettles,
+  an old mine. Ties to the Survey's "old seams" thread and Eien Quagsire's *tetsubin* look. The
+  *itako* are saved for the door mountain.
+- **Akira's turn (r1 3c):** on a route before gym 5, he waits for the hero to say goodbye
+  properly and asks him not to follow. A battle. Whether the hero promised Fuyumi to look out
+  for him decides one line.
+- **Yuki's hometown (r1 4a):** right after gym 5, her letter asks for help.
+- **Act 3's world (r1 5c):** both, lightly: a few greyed tiles on routes and more thinnings
+  Tokoyo now openly ropes off; one League official per town repeating the "accident" story.
+- **Gym 5's leader (r1 6a):** a League loyalist who repeats the "accident" line and believes it.
+  Decent, not a villain; a contrast with Ibuki's doubt.
+
 ## Leaning
 
 ## Open questions
