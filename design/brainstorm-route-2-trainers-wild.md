@@ -60,6 +60,8 @@ this file stays as the record.
   Tyrogue 14; charcoal burner Slugma 15, Hoothoot 15; second pilgrim Mankey 15, Machop 16; the
   pair Mankey 16 and Makuhita 17. Vanilla level-up moves. Lake Usurai fishing has one table
   for day and night. Trainer names are placeholders.
+- **Fishing, revised at build time (a):** the Old Rod's two slots are fixed at 70% and 30%, so
+  the lake's Old Rod table is Magikarp 70%, Goldeen 30%; Spheal waits for a better rod.
 
 ## Leaning
 

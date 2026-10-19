@@ -36991,6 +36991,65 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_EIEN_ROUTE2",
+          "base_label": "gEienRoute2",
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 8,
+                "max_level": 12,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 8,
+                "max_level": 12,
+                "species": "SPECIES_GOLDEEN"
+              },
+              {
+                "min_level": 12,
+                "max_level": 18,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 12,
+                "max_level": 18,
+                "species": "SPECIES_GOLDEEN"
+              },
+              {
+                "min_level": 12,
+                "max_level": 18,
+                "species": "SPECIES_SPHEAL"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_GOLDEEN"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_SPHEAL"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 25,
+                "max_level": 35,
+                "species": "SPECIES_SEAKING"
+              },
+              {
+                "min_level": 25,
+                "max_level": 35,
+                "species": "SPECIES_SEALEO"
+              }
+            ]
+          }
         }
       ]
     },

@@ -110,9 +110,12 @@ pass joins it at the north-east, by the path round the lake's east side
 - **Fishing:** after the badge, Tomo the Ice Fisher leaves the gym (his object hides on
   `FLAG_BADGE01_GET`) and stands on the lake's east shore at (17,10), facing the water, and gives
   the Old Rod once (`FLAG_RECEIVED_OLD_ROD_EIEN`, taken from `FLAG_UNUSED_0x029`; his lines are
-  drafts) ([brainstorm-route-2-trainers-wild.md](../brainstorm-route-2-trainers-wild.md)). The lake's Old Rod table: Magikarp 60%, Goldeen
-  30%, Spheal 10%, one table for day and night. The fishing table isn't built yet: the Old Rod has only two slots, fixed at 70% and 30% for
-every map, so 60 / 30 / 10 can't land as written (`TODO(design)`).
+  drafts) ([brainstorm-route-2-trainers-wild.md](../brainstorm-route-2-trainers-wild.md)). The lake's Old Rod table: Magikarp 70%, Goldeen
+  30% (`gEienRoute2` in `src/data/wild_encounters.json`, Lv 8-12, one table for every time of
+  day). The Old Rod has only two slots, fixed at 70% and 30% for every map, so the planned
+  60 / 30 / 10 couldn't land; Spheal waits for a better rod. The Good and Super Rod slots are
+  placeholders (Magikarp, Goldeen, Spheal; Seaking and Sealeo on the Super Rod;
+  `TODO(design)`).
 
 ## Maps
 
@@ -147,7 +150,7 @@ evening use the day table.
 | Area | Day | Night |
 | --- | --- | --- |
 | Kaede's shrine grass | Eien Poochyena 90%, Duskull 10% | Eien Poochyena 60%, Duskull 40% |
-| Lake Usurai, Old Rod | Magikarp 60%, Goldeen 30%, Spheal 10% | the same |
+| Lake Usurai, Old Rod | Magikarp 70%, Goldeen 30% | the same |
 
 The Mart's stock is a placeholder (Poké Ball, Potion, Antidote, Paralyze Heal, Awakening,
 Ice Heal, Escape Rope; `TODO(design)`).

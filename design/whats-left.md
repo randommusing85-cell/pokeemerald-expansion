@@ -17,7 +17,7 @@ milestone (prologue through gym 1):
 | Route 1 + its shrine | [route-1.md](locations/route-1.md) | **Built** on placeholder layouts: trainers, day/night wild tables, items, Haru's notes, the tablet, the warp north to Shimotsuki. Still to do: real music |
 | Shimotsuki (+ gym, Pokémon Center, Mart), Kaede's shrine, Lake Usurai | [shimotsuki.md](locations/shimotsuki.md) | **Built** on placeholder layouts: Akira shows the gym, gym 1 with badge and TM07, Akira's practice (`QUEST_AKIRA_PRACTICE`), Kaede's cameo and her grandmother, Nami's meeting and the end-of-milestone message. Since then: the Hoarfrost Badge, Kaede's shrine wild table (Eien Poochyena, Duskull), the ICE FISHER and SHOVELER classes. Still to do: the tablet text, real music, an ice-rim tile for the lake |
 
-| Route 2's mountain pass + roadside shrine | [route-2.md](locations/route-2.md) | Designed (brainstorm-route-2.md, brainstorm-route-2-trainers-wild.md): two maps, six trainers, wild tables, items. The four classes, the six trainers and Tomo's Old Rod are built. Needs the two maps (Porymap), Eien Hoothoot, the trainers' overworld sprites and lines; the lake's fishing table |
+| Route 2's mountain pass + roadside shrine | [route-2.md](locations/route-2.md) | Designed (brainstorm-route-2.md, brainstorm-route-2-trainers-wild.md): two maps, six trainers, wild tables, items. The four classes, the six trainers, Tomo's Old Rod and the lake's fishing table are built. Needs the two maps (Porymap), Eien Hoothoot, the trainers' overworld sprites and lines |
 | Yunotaki (+ gym 2, Pokémon Center, Mart, inn) | [yunotaki.md](locations/yunotaki.md) | Designed (brainstorm-gym-2.md); needs maps, Ibuki's sprites, the Pilgrim class |
 
 Open gaps found while building Shimotsuki:
