@@ -51,6 +51,30 @@ Working notes. Decisions move into `story-outline.md`, `progression.md`, `charac
 - **The gym (r2 5c):** Lavaridge's gym layout (its sand holes read as steam vents); the Forge
   Badge and TM35 Flamethrower.
 - **Akira's goodbye battle (r2 6a):** his full team at about Lv 36, his evolved starter the ace.
+- **The ironworks town (r3 1a):** Kanaya (金屋, "metalworkers' quarter"). (Tetsu, 鉄, already
+  means "iron", so that word is kept out.)
+- **The heir (r3 2a):** Takumi (匠, "craftsman"): his family's craft is in his name; his loyalty
+  is about inheritance.
+- **Ren's step 1 (r3 3a):** in Kanaya: Ren is there to challenge the gym and asks the hero what he
+  saw. A believer (Takumi) and a doubter in one town.
+- **The old seams (r3 4a):** Kanaya's old mine has fresh Survey digging in a closed-off seam. What
+  they dig for stays `TODO(design)`: a clue, not an answer.
+- **Yuki's hometown (r3 5a):** a farming village a short route beyond Kanaya, between gym 5 and
+  gym 6. Its name and the disaster: her own Act 3 brainstorm.
+- **Route 5's people (r3 6c):** forest folk (charcoal burners, mushroom pickers, a woodcutter),
+  one League official, and one Tokoyo member openly roping off a thinning, who battles him.
+  Wild: Pinsir, Heracross, Teddiursa, Stantler, Hoothoot; Duskull in a greyed patch.
+
+## Defaults (not asked; change any)
+
+- **Levels:** Route 5 wild Lv 30-35, trainers Lv 32-36; Akira ~36; gym 5's trainers 34-36;
+  Takumi Magcargo Lv 35, Bronzong Lv 36, Coalossal Lv 38.
+- **Gym trainers:** two foundry workers (Fire / Steel Pokémon), like the other gyms' two.
+- **Order:** the funeral in Shimotsuki → Route 5 (the forest; Akira's goodbye at its end) →
+  Kanaya (Ren, the mine's seam, gym 5) → Yuki's letter → her village.
+- **Maps:** Route 5, Kanaya (town, gym on Lavaridge's gym layout, Pokémon Center, Mart, the mine),
+  made by the user in Porymap.
+- **Lines:** Takumi's ("an accident", believed), Akira's goodbye, Ren's: drafted at build time.
 
 ## Leaning
 
