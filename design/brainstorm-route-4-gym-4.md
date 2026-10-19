@@ -47,6 +47,26 @@ location docs when settled; this file stays as the record.
 - **Route 4's thinning (r2 6b):** an orchard blossoms and withers in an hour, out of season. The
   Survey ropes it off; one member asks about Celebi a little too closely. The gardener talks
   about it after the badge.
+- **The castle town (r3 1a):** Hanashiro (花城, "flower castle").
+- **The gardener (r3 2a):** Mamoru (守, "to protect"): the trees he keeps.
+- **The route (r3 3a):** "ROUTE 4" on the region map; the routes get named together later.
+- **The Survey member (r3 4b+c):** seen again at the tournament near where the villains move,
+  and the one who reports Celebi to Minato (said or shown later). Name `TODO(design)`.
+- **Gym 4's trainers (r3 5a):** two apprentice gardeners, Grass Pokémon, Lv 27-29.
+- **Route 4's people (r3 6c):** locals in the fields (rice farmers, apple pickers, a scarecrow
+  maker) and tournament-goers on the road (League hopefuls, fans; mixed teams).
+
+## Defaults (not asked; change any)
+
+- **Levels:** Route 4 wild Lv 22-27, trainers Lv 24-28; gym 4's trainers 27-29; Mamoru Cherrim
+  Lv 29, Dipplin Lv 30, Appletun Lv 32.
+- **Route 4's wild:** Hoppip, Oddish, Seedot, Ledyba, Spinarak; Applin rare in the orchard.
+  `TODO(design)`: rates, day and night.
+- **Maps:** Route 4 and Hanashiro (town, gym on Fortree's layout, Pokémon Center, Mart; the
+  castle and its grounds for Act 2) made by the user in Porymap; vanilla layouts can stand in.
+- **Trainers:** about six on Route 4, placeholder names and teams at build time (like Route 3's
+  brainstorm, if wanted).
+- **Field moves:** none needed on Route 4 (still `TODO(design)` in `progression.md`).
 
 ## Leaning
 
