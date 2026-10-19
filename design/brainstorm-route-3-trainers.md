@@ -36,6 +36,26 @@ settled; this file stays as the record.
 - **Akari's crew classes (r1 5a):** two new classes, Squid Fisher and Deckhand.
 - **The crew's teams (r1 6a):** the fisher Chinchou and Mareep, the deckhand Pikachu and
   Magnemite (Lv 22-25). Chinchou warns of Lanturn, Magnemite previews Magneton.
+- **Matagi (r2 1a):** Herdier Lv 20 (his hunting dog), Teddiursa Lv 19 (a bear cub he raised).
+- **Raftsman (r2 2b):** Psyduck Lv 20 (Water Gun), Lotad Lv 20: the river's own Pokémon.
+- **Hiker and Pilgrim (r2 3a):** Hiker Geodude Lv 20, Timburr Lv 21; Pilgrim Meditite Lv 21,
+  Makuhita Lv 20.
+- **Engineer (r2 4b):** Shinx Lv 21, Magnemite Lv 22: previews Luxio and Magneton.
+- **No double battle (r2 5c):** six trainers on the route.
+- **The Ace Trainer's manner (r2 6a):** boastful about the League's money. Draft: "The League
+  covers my travel. You're paying for yours, I guess." Yuki, unsponsored, then beats them.
+
+## Defaults (not asked; change any)
+
+- **Names (placeholders, Route 2 style):** Matagi ISAMU, Raftsman SHIGERU, Hiker NOBORU
+  ("to climb"), Pilgrim AYAME (the female pilgrim sprite), Engineer KENTA, Ace Trainer KAITO;
+  Akari's crew: Squid Fisher GENTA, Deckhand MIO. None clash with the cast.
+- **Sprites:** vanilla stand-ins: the Matagi a Hiker or Ruin Maniac, the Raftsman a Fisherman,
+  the Engineer FRLG's Engineer, the Ace Trainer a vanilla Ace Trainer (male), the crew a
+  Fisherman and a Sailor. The Pilgrim uses `OBJ_EVENT_GFX_EIEN_PILGRIM_F` / `TRAINER_PIC_EIEN_PILGRIM_F`.
+- **Moves:** each Pokémon's level-up moves at its level, except where noted (Psyduck's Water
+  Gun). Levels fit the curve (Route 3 18-23, the Ace Trainer 24-25, gym 3's trainers 22-25).
+- **Lines:** drafted at build time in `dialogue-style.md`'s voice (`TODO(design)`).
 
 ## Leaning
 
