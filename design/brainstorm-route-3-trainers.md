@@ -27,11 +27,24 @@ settled; this file stays as the record.
 
 ## Decided
 
+- **What the teams teach (r1 1c):** in character, but a few carry Water and Fighting moves, so
+  Eien Wooper isn't a free win: the Raftsman's Water, the Hiker's and the Pilgrim's Fighting.
+- **Classes (r1 2a, 3a):** two new classes, Matagi and Raftsman; the Engineer uses FRLG's
+  `TRAINER_CLASS_ENGINEER_FRLG`.
+- **The Ace Trainer (r1 4b):** Kirlia Lv 24, Staravia Lv 24, Machoke Lv 25. Beatable with care;
+  Machoke tests Eien Wooper.
+- **Akari's crew classes (r1 5a):** two new classes, Squid Fisher and Deckhand.
+- **The crew's teams (r1 6a):** the fisher Chinchou and Mareep, the deckhand Pikachu and
+  Magnemite (Lv 22-25). Chinchou warns of Lanturn, Magnemite previews Magneton.
+
 ## Leaning
 
 ## Open questions
 
 ## Gaps and tensions
+
+- The Ace Trainer's team sets the bar Yuki "beats easily": her Act 1 team has to look clearly
+  stronger (her own brainstorm).
 
 ## Parked ideas
 
