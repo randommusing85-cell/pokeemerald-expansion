@@ -25,6 +25,20 @@ location doc when settled; this file stays as the record.
 
 ## Decided
 
+- **The disaster (r1 1d):** on festival night a thinning opens at the rice terraces, and the
+  village's Pokémon walk into it, grey, as if called.
+- **Why she wrote (r1 2a):** Absol sensed it coming; her letter comes before it happens, and he
+  arrives on festival day, in time. A calm scene with her family first.
+- **What he does (r1 3c):** he and Yuki go into the grey to find the village's Pokémon (four or
+  five, a wild battle each to calm them) and bring them back; at the centre, two Tokoyo members
+  who came to measure the thinning rather than close it stand in the way of the last one: a tag
+  battle beside Yuki.
+- **The outcome (r1 4d):** the Pokémon come back and the festival finishes late that night, but
+  the terraces stay grey for the year. Her "next year" line carries both.
+- **Her family (r1 5a):** her parents farm the terraces; a little brother who wants to be a
+  trainer like her.
+- **The village (r1 6a):** Minori (実り, "harvest, ripening").
+
 ## Leaning
 
 ## Open questions
