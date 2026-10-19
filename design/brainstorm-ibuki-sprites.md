@@ -31,10 +31,26 @@ Working notes for gym 2 leader Ibuki's overworld sprite and battle picture. Deci
 - **Pilgrims too (r1 5a):** a shared pilgrim look in the same pass (white travel clothes, straw
   hat, staff): an overworld sprite plus male and female battle pics, matched to Ibuki's.
 - **Under the falls (r1 6a):** the same sprite standing in the splash.
+- **Ibuki's colors (r2 1a):** off-white gi, dark brown belt and prayer beads, faded red wrist
+  tape, dark hair with grey. The red tape is his one color: the League past.
+- **Pilgrims' look (r2 2b):** white travel clothes, a wide straw hat, a wooden staff with a
+  small bell or ring, straw sandals, a cloth pack. Male and female differ in hair and build.
+- **Pilgrim overworld sprites (r2 3b):** two, male and female, matching the two battle pics.
+  The retired-pilgrim gym guide uses the male one.
+- **Battle pic style reference (r2 4b):** Brawly (the vanilla Fighting leader) for Ibuki's
+  framing and pose, with Fuyumi's picked pic as a second reference so the Eien leaders sit
+  together; Black Belt for the male pilgrim, Battle Girl for the female.
+- **Drafts (r2 5a):** as before: 2 models x 2 tries per picture, one contact sheet per
+  character; the user picks.
+- **Defaults (r2):** megapack sheets picked at build time from a contact sheet of candidates;
+  Ibuki and the pilgrims share one NPC palette group if their colors allow; credits (the
+  megapack artists, an AI-assisted note) in `asset-credits.md` when used.
 
 ## Leaning
 
 ## Open questions
+
+Nothing open from rounds 1-2. The picks happen at build time.
 
 ## Gaps and tensions
 
