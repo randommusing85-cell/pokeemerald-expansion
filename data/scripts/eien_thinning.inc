@@ -25,7 +25,8 @@ EienThinning_EventScript_CelebiFlickers::
 EienThinning_EventScript_Close::
 	resetweather
 	doweather
-	fadedefaultbgm
+	fadeinbgm 4 @ resumes the song paused when it opened
+	fadedefaultbgm @ or, if a battle stopped it, plays the map's music again
 	return
 
 EienThinning_Movement_Flicker:

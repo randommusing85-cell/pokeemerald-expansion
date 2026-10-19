@@ -157,8 +157,10 @@ on what other hacks and fan games do.
       hero's and the follower's (Celebi's) palettes are left alone, and up to two more objects
       (Yuki, a partner) with `setvar VAR_0x8004, LOCALID_...` + `callnative
       KeepObjectInColourInThinning`. Objects sharing a palette with a kept one stay in colour
-      too. Closing brings the colour back over a second and the map's weather returns; leaving
-      the map closes it. Shots in `art/thinning/` (prototyped on Lake Usurai: debug menu,
+      too. Coming back from a battle or a menu the field fades in already grey
+      (`FadeInScreen_Thinning`). Closing brings the colour back over a second, the map's weather
+      returns and the music resumes (or restarts, if a battle stopped it); leaving the map closes
+      it. Shots in `art/thinning/` (including the fade back from a battle; prototyped on Lake Usurai: debug menu,
       Scripts 1 open / 2 close / 3 a wild battle inside).
     - **Battles inside** get the thin-place effect automatically while it's open ("The air
       feels thin here…") and a grey battle background (`TintBattleBackgroundForThinning`); the

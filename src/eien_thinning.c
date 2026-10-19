@@ -89,14 +89,10 @@ static u32 GetDrainedPalettes(void)
     return palettes;
 }
 
-static void ApplyThinning(void)
+static void GreyDrainedPalettes(void)
 {
     u32 i, palettes;
 
-    // Don't touch the palettes during a fade (warps, battles, menus) or a weather change
-    if (gPaletteFade.active || gWeatherPtr->palProcessingState != WEATHER_PAL_STATE_IDLE)
-        return;
-    ApplyWeatherColorMapIfIdle(gWeatherPtr->colorMapIndex);
     if (sDrain == 0)
         return;
     palettes = GetDrainedPalettes();
@@ -105,6 +101,35 @@ static void ApplyThinning(void)
         if (palettes & (1 << i))
             GreyPalettes(&gPlttBufferFaded[PLTT_ID(i)], 1, sDrain);
     }
+}
+
+static void ApplyThinning(void)
+{
+    // Don't touch the palettes during a fade (warps, battles, menus) or a weather change
+    if (gPaletteFade.active || gWeatherPtr->palProcessingState != WEATHER_PAL_STATE_IDLE)
+        return;
+    ApplyWeatherColorMapIfIdle(gWeatherPtr->colorMapIndex);
+    GreyDrainedPalettes();
+}
+
+// Coming back to the map while it's open (after a battle or a menu), the screen fades in from the
+// grey palettes, not the normal ones: each step rebuilds them (time of day included), drains
+// them, then blends toward the fade colour, like the vanilla fog and drought fade-ins.
+bool8 FadeInScreen_Thinning(void)
+{
+    if (gWeatherPtr->fadeScreenCounter == 16)
+        return FALSE;
+    gWeatherPtr->fadeScreenCounter++;
+    CpuFastCopy(gPlttBufferUnfaded, gPlttBufferFaded, PLTT_BUFFER_SIZE * 2);
+    UpdateAltBgPalettes(PALETTES_BG);
+    UpdatePalettesWithTime(PALETTES_ALL);
+    GreyDrainedPalettes();
+    if (gWeatherPtr->fadeScreenCounter < 16)
+    {
+        BlendPalettesFine(PALETTES_ALL, gPlttBufferFaded, gPlttBufferFaded, 16 - gWeatherPtr->fadeScreenCounter, gWeatherPtr->fadeDestColor);
+        return TRUE;
+    }
+    return FALSE;
 }
 
 // Eased from 0 to 256 over `steps` (half a cosine wave)

@@ -16,5 +16,6 @@ void Thinning_InitVars(void);
 void Thinning_Main(void);
 void Thinning_InitAll(void);
 bool8 Thinning_Finish(void);
+bool8 FadeInScreen_Thinning(void);
 
 #endif // GUARD_EIEN_THINNING_H
