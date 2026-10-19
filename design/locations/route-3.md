@@ -43,7 +43,7 @@ east:
 
 | NPC / event | Where | Visible when | Says / does |
 | --- | --- | --- | --- |
-| The Ace Trainer | a rope bridge, midway | until Yuki's scene | Blocks the bridge; battles him (see Trainers) |
+| KAITO, the Ace Trainer | a rope bridge, midway | until Yuki's scene | Blocks the bridge; battles him (see Trainers) |
 | Yuki | the same bridge | after his battle with the Ace Trainer | Beats the Ace Trainer, battles him briefly, "see you at the tournament". Starts her chain. `TODO(design)`: her sprite, team and lines |
 | Eien Survey member | the cave entrance | always | "It's safe. We checked." Also says they found the Wooper "in the old seams" when they cleared it (a hint at its evolution; `TODO(design)`: the line) |
 | Survey sign | the cave entrance | always | "Route kept open by the Eien Survey." |
@@ -51,18 +51,25 @@ east:
 
 ## Trainers
 
-Lv 18-23 (default). Names are placeholders when built (`TODO(design)`).
+Lv 18-23; the Ace Trainer 24-25. Decided in
+[brainstorm-route-3-trainers.md](../brainstorm-route-3-trainers.md). The teams stay in character,
+but a few carry Water and Fighting moves, so Eien Wooper (Ground/Steel) isn't a free win. Six
+trainers, no double battle. Names are placeholders (`TODO(design)`).
 
-| Trainer | Class | Notes |
-| --- | --- | --- |
-| Matagi | `TODO(design)` (a new class, or a vanilla stand-in) | One of Tohoku's traditional mountain hunters |
-| Raftsman | `TODO(design)` | Works the river |
-| Hiker | Hiker | |
-| Pilgrim | Pilgrim | Heading down from Yunotaki's falls |
-| Engineer | `TODO(design)` | Fixing the telegraph line along the gorge; previews gym 3's Electric |
-| The Ace Trainer | Ace Trainer (vanilla class) | League-sponsored, arrogant, heading for the tournament. About Lv 25. Yuki's scene follows |
+| Trainer | Class | Team (levels) | Notes |
+| --- | --- | --- | --- |
+| ISAMU | Matagi (new class) | Herdier Lv 20, Teddiursa Lv 19 | One of Tohoku's traditional mountain hunters: his hunting dog, and a bear cub he raised |
+| SHIGERU | Raftsman (new class) | Psyduck Lv 20 (Water Gun), Lotad Lv 20 | Works the river; the river's own Pokémon |
+| NOBORU | Hiker | Geodude Lv 20, Timburr Lv 21 | |
+| AYAME | Pilgrim | Meditite Lv 21, Makuhita Lv 20 | Heading down from Yunotaki's falls |
+| KENTA | Engineer (FRLG's `TRAINER_CLASS_ENGINEER_FRLG`) | Shinx Lv 21, Magnemite Lv 22 | Fixing the telegraph line along the gorge; previews Akari's Luxio and Magneton |
+| KAITO | Ace Trainer (vanilla class) | Kirlia Lv 24, Staravia Lv 24, Machoke Lv 25 | League-sponsored, boastful, heading for the tournament. Machoke tests Eien Wooper. Draft line: "The League covers my travel. You're paying for yours, I guess." Yuki (unsponsored) then beats him easily, so her team must look clearly stronger |
 
-`TODO(design)`: teams.
+Moves are each Pokémon's level-up moves at its level unless noted. **Sprites** (vanilla
+stand-ins): the Matagi a Hiker or Ruin Maniac, the Raftsman a Fisherman, the Engineer FRLG's
+Engineer, KAITO a vanilla Ace Trainer (male); AYAME uses `OBJ_EVENT_GFX_EIEN_PILGRIM_F` /
+`TRAINER_PIC_EIEN_PILGRIM_F`. No spare trainer slots: these alias unreachable vanilla Hoenn
+trainers, like Route 2's. `TODO(design)`: lines (drafted at build time).
 
 ## Wild Pokémon
 

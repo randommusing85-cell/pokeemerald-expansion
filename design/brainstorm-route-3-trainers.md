@@ -1,7 +1,8 @@
 # Brainstorm: Route 3's trainers and Akari's crew
 
 Working notes. Decisions move into `locations/route-3.md` and `locations/isaribi.md` when
-settled; this file stays as the record.
+settled; this file stays as the record. **Promoted** into `locations/route-3.md`,
+`locations/isaribi.md` and `whats-left.md`.
 
 ## Givens (from the docs)
 

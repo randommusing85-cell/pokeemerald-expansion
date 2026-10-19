@@ -52,9 +52,13 @@ Act 1 beat 8 in [story-outline.md](../story-outline.md).
 
 | Trainer | Class | Team (levels) | Notes |
 | --- | --- | --- | --- |
-| Squid-boat fisher | `TODO(design)` | Chinchou, Mareep or Pikachu, Lv 22-25 (default) | Akari's crew. Name `TODO(design)` |
-| Deckhand | `TODO(design)` | the same pool | Akari's crew. Name `TODO(design)` |
+| GENTA | Squid Fisher (new class) | Chinchou Lv 23, Mareep Lv 22 | Akari's crew. Chinchou warns of Lanturn |
+| MIO | Deckhand (new class) | Pikachu Lv 23, Magnemite Lv 24 | Akari's crew. Magnemite previews Magneton |
 | Akari | Leader | Magneton Lv 24 (Flash Cannon), Luxio Lv 24 (Ice Fang), Lanturn Lv 27 (its Water moves) | Each covers a different answer to Electric: Flash Cannon hits Rock, Ice Fang hits Ground and Grass, Lanturn's Water hits Ground and Rock. `TODO(design)`: full movesets, item |
+
+Crew decided in [brainstorm-route-3-trainers.md](../brainstorm-route-3-trainers.md); names are
+placeholders. Sprites (vanilla stand-ins): GENTA a Fisherman, MIO a Sailor. `TODO(design)`:
+their lines.
 
 ## Flags and vars
 
