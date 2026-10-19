@@ -55,6 +55,7 @@ settled; this file stays as the record.
   Fisherman and a Sailor. The Pilgrim uses `OBJ_EVENT_GFX_EIEN_PILGRIM_F` / `TRAINER_PIC_EIEN_PILGRIM_F`.
 - **Moves:** each Pokémon's level-up moves at its level, except where noted (Psyduck's Water
   Gun). Levels fit the curve (Route 3 18-23, the Ace Trainer 24-25, gym 3's trainers 22-25).
+- **Crew levels:** GENTA Chinchou Lv 23, Mareep Lv 22; MIO Pikachu Lv 23, Magnemite Lv 24.
 - **Lines:** drafted at build time in `dialogue-style.md`'s voice (`TODO(design)`).
 
 ## Leaning
