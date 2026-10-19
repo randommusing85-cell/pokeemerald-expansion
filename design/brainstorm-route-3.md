@@ -43,10 +43,27 @@ the record.
 - **Variant family (r2 5a):** Wooper (to Quagsire): a gorge mud-dweller, already Ground. Its
   design gets its own brainstorm, like Hoothoot's.
 - **Levels (r2 6a):** wild Lv 15-20, trainers 18-23, the bridge trainer about 25.
+- **Maps (r3 1a):** Yunotaki → the gorge map (rope bridges, trainers, Yuki) → the Survey's cave
+  (a small cave map) → the port; the cave's exit opens onto the coast and the door mountain.
+- **Trainers (r3 2a+b):** five: a matagi (Tohoku's traditional mountain hunters), a river
+  raftsman, a hiker, a pilgrim heading down, and an engineer fixing the telegraph line along
+  the gorge (previews Electric). Plus the bridge trainer.
+- **The bridge trainer (r3 3b):** an Ace Trainer heading for the tournament, League-sponsored
+  and arrogant; Yuki beating them sets up her "see you at the tournament".
+- **Wild (r3 4b):** the gorge: Eien Wooper, Psyduck, Marill, Lotad, Taillow, and Shinx near the
+  telegraph line (an Electric preview before gym 3). The cave: Zubat, Geodude, Roggenrola.
+- **Eien Wooper (r3 5c):** rarer in the gorge's grass by the river, more common in the cave's
+  muddy pools.
+- **Items and music (r3 6a):** Super Potion, Great Ball, Magnet, a hidden Max Repel in the cave,
+  TM Mud-Slap; Route 120's track on the gorge (placeholder), a cave theme in the tunnel.
 
 ## Leaning
 
 ## Open questions
+
+Nothing open from rounds 1-3. Later, in their own brainstorms: Eien Wooper's design, the port town
+(name, gym 3's leader and team, Nami's battle), Yuki (sprite, team, hometown). Trainer names,
+teams and exact rates at build time.
 
 ## Gaps and tensions
 
