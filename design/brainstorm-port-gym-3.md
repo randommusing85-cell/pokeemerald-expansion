@@ -24,11 +24,28 @@ stays as the record.
 
 ## Decided
 
+- **Town name (r1 1a):** Isaribi (漁火, "fishing fires"): the lamps of the night squid boats strung
+  across the dark sea.
+- **Leader (r1 2c):** the woman who runs the squid-boat fleet, whose lamps her Electric Pokémon
+  light. Practical, loud, well loved; the first leader with a big, warm personality.
+- **Team theme (r1 3d):** a mix: Lanturn the ace (the angler's lamp), with a Magneton (the harbour
+  cranes) and a Shinx-line Pokémon (the storm).
+- **Gym inside (r1 4a):** Mauville's gym (the vanilla Electric gym) reused, its switches and
+  barriers read as lamps switching on.
+- **Nami's battle (r1 5a):** on the port's pier after gym 3, her Lapras in the water behind her;
+  the optional warm scene follows there on the coast.
+- **Akira (r1 6b):** no battle; he's in the gym's stands watching and says one line afterwards
+  about the tournament.
+
 ## Leaning
 
 ## Open questions
 
 ## Gaps and tensions
+
+- r1 6b: Akira's evolved starter, planned to show at gym 3, now shows first at the tournament
+  (or only in his line here). Update the gym 2 note when promoting.
+- Levels (default proposal): gym trainers Lv 22-25, the ace Lv 26-27.
 
 ## Parked ideas
 
