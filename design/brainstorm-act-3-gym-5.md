@@ -40,6 +40,17 @@ Working notes. Decisions move into `story-outline.md`, `progression.md`, `charac
   Tokoyo now openly ropes off; one League official per town repeating the "accident" story.
 - **Gym 5's leader (r1 6a):** a League loyalist who repeats the "accident" line and believes it.
   Decent, not a villain; a contrast with Ibuki's doubt.
+- **Getting to Shimotsuki (r2 1d):** the funeral scene takes him there (a fade); fast travel is
+  decided separately, with field moves.
+- **Route 5 (r2 2a):** east from Shimotsuki through old snowy beech forest (like
+  Shirakami-Sanchi), quiet, with greyed patches in Act 3. Akira waits at its end.
+- **Gym 5's leader (r2 3b):** the young heir of a foundry family, loyal to the League because the
+  League made his family's name. Decent while being wrong.
+- **His team (r2 4c):** Magcargo, Bronzong (a cast-metal bell from the forge), and a Coalossal ace
+  (Rock/Fire, from the mine). Lv 35-38.
+- **The gym (r2 5c):** Lavaridge's gym layout (its sand holes read as steam vents); the Forge
+  Badge and TM35 Flamethrower.
+- **Akira's goodbye battle (r2 6a):** his full team at about Lv 36, his evolved starter the ace.
 
 ## Leaning
 
