@@ -131,8 +131,8 @@ Keep her scenes friendship: rivals who respect each other, no flirting.
 
 | # | When / where | What happens | Points from | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Act 3, the mountain approach | Climbers are lost in the snow after a small slide (one of the fading's signs). Find them with Tetsu. | Helping | Money | No |
-| 2 | Act 3, his hut | He teaches the old paths. | The answer about why the hero is going up | Climbing gear (field-move key item; shortcut only, never a gate) | No |
+| 1 | Act 3, Route 9 ([route-9.md](locations/route-9.md)), between gyms 7 and 8 | Climbers are lost in the snow after a small slide (one of the fading's signs). Find them with Tetsu. | Helping | Money | No |
+| 2 | Act 3, his hut at the edge of Kawara ([kawara.md](locations/kawara.md)), under the mountain | He teaches the old paths. | The answer about why the hero is going up | Climbing gear (field-move key item; shortcut only, never a gate) | No |
 
 ### Nami (warm scenes, not quests)
 
@@ -151,7 +151,7 @@ Her core scenes are fixed (story outline). Optional warm scenes, earned by her p
 | E2 | Research | Act 1 to 3 | The professor's list: study each Eien variant as they appear. Closes when she dies; Haru's step 3 finishes one entry. | Items per entry | After her death |
 | E3 | Research | Act 3, aurora nights (random after Kaede's step 2) | Night-only research steps (lore notes), including wild Eien Mightyena, which appear only on aurora nights at thin places. | Lore | No |
 | E4 | Disaster | Act 1, Hamakaze | The harbor freezes early; fishermen can't go out. `TODO(design)`: what the hero does. | Money | No |
-| E5 | Disaster | Act 2 or 3, `TODO(design)` | A child goes missing near a thin place. | Battle item | No |
+| E5 | Disaster | Act 3, Hanashiro (optional once he has Kumo) | A child goes missing near a thin place. Mamoru's one Act 3 appearance (`TODO(design)`: the thin place, the scene). | Battle item | No |
 | E6 | Disaster | Act 3, Minori (Yuki's hometown) | Yuki's step 2. | (Yuki's) | No |
 | E7 | Lore | Act 1 to 3 | Kaede's tablets (her step 1). Stored as `QUEST_KAEDE_TABLETS`, one step bit per tablet; reading a tablet sets its bit even before she asks, and the quest shows once she opens it. | (Kaede's) | No |
 | E8 | Lore | Act 1 to 3 | Old people in each town tell a folk tale about earlier cycles; each adds a journal page. Scales with the number of towns. | Lore | No |

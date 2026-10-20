@@ -4,8 +4,8 @@
   archive, `MAP_HOSHIMI_GYM`, `MAP_HOSHIMI_POKEMON_CENTER_1F`). The gym's inside reuses Mossdeep's
   gym layout. Vanilla layouts can stand in.
 - **Type:** town (the League's research station and the hamlet around it)
-- **Connects to:** Route 7 ([route-7.md](route-7.md)) down to Minori. `TODO(design)`: onward, toward
-  gyms 7-8.
+- **Connects to:** Route 7 ([route-7.md](route-7.md)) down to Minori. Down: Route 8 to Uminari on the
+  door mountain's peninsula ([route-8.md](route-8.md)).
 
 Decided in [brainstorm-gym-6.md](../brainstorm-gym-6.md). Hoshimi (星見, "star-viewing").
 

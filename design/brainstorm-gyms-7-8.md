@@ -1,7 +1,9 @@
 # Brainstorm: gyms 7 and 8 and the door mountain approach
 
 Working notes. Decisions move into `story-outline.md`, `progression.md`, `characters.md`,
-`side-quests.md` and new location docs when settled; this file stays as the record.
+`side-quests.md` and new location docs when settled; this file stays as the record. **Promoted** into `locations/route-8.md`, `uminari.md`,
+`route-9.md`, `kawara.md`, `hoshimi.md`, `story-outline.md`, `progression.md`, `characters.md`,
+`side-quests.md` and `whats-left.md`.
 
 ## Givens (from the docs)
 

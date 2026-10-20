@@ -147,7 +147,8 @@ Decided in [brainstorm-yuki.md](brainstorm-yuki.md).
 | 4 | Hanashiro | Mamoru (man) | Grass | The castle's head gardener: keeps the cherry trees and moss gardens; quiet and exact; watches the trees for the fading. Survives the tournament disaster, shaken; turns up once in Act 3. ([locations/hanashiro.md](locations/hanashiro.md)) | Appletun (with Cherrim, Dipplin) | 29-32 |
 | 5 | Kanaya | Takumi (man, young) | Fire | The young heir of a foundry family; loyal to the League because the League made his family's name. Repeats the "accident" story and believes it; decent while being wrong. ([locations/kanaya.md](locations/kanaya.md)) | Coalossal (with Magcargo, Bronzong) | 35-38 |
 | 6 | Hoshimi | Tsukiko (woman, older) | Psychic | The League research station's head scientist, an astronomer: precise and tired, decades of aurora readings. Hid the truth because panic would have killed more people than the fading; opens the records once the fading speeds up. ([locations/hoshimi.md](locations/hoshimi.md)) | Xatu (with Solrock, Lunatone) | 42-45 |
-| 7-8 | | `TODO(design)` | | | | |
+| 7 | Uminari | Ushio (woman, older) | Water | Runs the tuna boats; blunt, proud of the port, quietly convinced. Lost her husband to the strait and won't lose her town to the fading, so she sides with Minato. Decent, sure, on the other side. ([locations/uminari.md](locations/uminari.md)) | Kingdra (with Sharpedo, Wailord) | 48-50 |
+| 8 | Kawara | Tome (woman, old) | Ghost | An old blind *itako*: speaks for the dead at the mountain's festival; quiet, unhurried, kind. On no side; knows the old tales are true. Knew Kaede's grandmother Chiyo; has "heard of him from the dead". ([locations/kawara.md](locations/kawara.md)) | Chandelure (with Banette, Dusknoir) | 52-55 |
 
 ## Champion
 
