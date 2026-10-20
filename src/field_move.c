@@ -89,7 +89,7 @@ const struct FieldMoveInfo gFieldMoveInfo[FIELD_MOVES_COUNT] =
         .unlockType = BADGE_UNLOCK,
         .moveID = MOVE_SURF,
         .partyMsgID = PARTY_MSG_CANT_SURF_HERE,
-        .arg = FLAG_TO_BADGE(FLAG_BADGE05_GET),
+        .arg = FLAG_TO_BADGE(FLAG_BADGE03_GET), // Eien: after gym 3 (Akari), with any Water-type
     },
 
     [FIELD_MOVE_FLY] =

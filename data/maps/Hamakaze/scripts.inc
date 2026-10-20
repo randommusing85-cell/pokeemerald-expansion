@@ -7,6 +7,7 @@ Hamakaze_MapScripts::
 	.byte 0
 
 Hamakaze_OnTransition:
+	setflag FLAG_VISITED_HAMAKAZE
 	@ Once Celebi follows him, its map object stays hidden (the follower walks with him)
 	call_if_ge VAR_EIEN_STORY, STORY_ARRIVED, Hamakaze_EventScript_HideCelebi
 	@ Haru's map quest: he catches up at the north exit once there's a starter (VAR_TEMP_3 arms

@@ -71,6 +71,11 @@ other side, loses people he loves, and saves the world at the cost of his memori
 Decided in [brainstorm-mechanics.md](brainstorm-mechanics.md), which also has the research
 on what other hacks and fan games do.
 
+- **Getting around.** No HMs: any Water-type in the party lets him surf (from gym 3 on), and in
+  Act 3 the professor's Altaria flies him from the Town Map. Details in
+  [progression.md](progression.md) (Items and field moves); decided in
+  [brainstorm-fast-travel.md](brainstorm-fast-travel.md).
+
 - **Fan knowledge (the signature mechanic).** He knows Gen 1-5 Pokémon from the games: their
   Pokédex entries and typing are known from the start, and in battle his moves show
   effectiveness hints against them. Eien variants and Gen 6+ species show "???", and the

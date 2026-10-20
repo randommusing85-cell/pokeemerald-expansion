@@ -214,6 +214,7 @@ Debug_EventScript_Script_3::
 	goto EienThinning_EventScript_DebugBattle @ Eien
 
 Debug_EventScript_Script_4::
+	setflag FLAG_RECEIVED_PROFESSOR_ALTARIA @ Eien: fast travel from the Town Map
 	release
 	end
 

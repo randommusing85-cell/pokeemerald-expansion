@@ -240,3 +240,17 @@ Hamakaze_Lab_Text_RouteOneNorth:
 
 Hamakaze_Lab_Text_HaruWaiting:
 	.string "HARU: Go on, you pick first.$"
+
+@ The professor's Altaria (design/progression.md, fast travel): in the lab from Act 1. After her
+@ death Haru gives it to him and it flies him from the Town Map (FLAG_RECEIVED_PROFESSOR_ALTARIA
+@ hides it here). TODO(design): its lines; the gift scene (the lab disaster brainstorm).
+Hamakaze_Lab_EventScript_Altaria::
+	lock
+	playmoncry SPECIES_ALTARIA, CRY_MODE_NORMAL
+	msgbox Hamakaze_Lab_Text_Altaria, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Hamakaze_Lab_Text_Altaria:
+	.string "The professor's Altaria hums softly.$"

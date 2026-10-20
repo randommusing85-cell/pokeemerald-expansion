@@ -83,7 +83,7 @@ The map bookends the chain: the first quest starts it, the last one gives it bac
 | --- | --- | --- | --- | --- | --- |
 | 1 (M1) | Act 1, Shimotsuki, after gym 1 | A practice battle at the town's north edge on his way out (only if you talk to him; his starter Lv 14, Starly Lv 11), then Akira talks about watching League matches with his mum (sets up his turn). | The answer about the League | Battle item | Closes at the tournament |
 | 2 | Act 2, the tournament's day 1 ([hanashiro.md](locations/hanashiro.md)) | Training together in the castle grounds; Fuyumi watches (overlaps her chain). | The answer when Akira doubts himself | none | Closes at the tournament |
-| 3 | Act 3, after he leaves | Optional meeting on the other side. He explains why; no fight unless the player wants one. | The answer (agree he was failed / ask him to come back / just listen) | none | Closes at the League |
+| 3 | Act 3, Shimotsuki, at Fuyumi's grave, on the trip home after the professor's death | Optional meeting on the other side. He explains why; no fight unless the player wants one. | The answer (agree he was failed / ask him to come back / just listen) | none | Closes at the League |
 | 4 | Act 4, before the League | A second meeting. He gives something of his mother's. | The answer | **Keepsake:** `TODO(design)`: an object of Fuyumi's | Closes at the League |
 
 ### Fuyumi (Act 1 to the tournament; missable)
@@ -102,7 +102,7 @@ finale she fights beside him in a tag battle, whatever her points
 | # | When / where | What happens | Points from | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Act 1, her shrine in Shimotsuki, after gym 1 | She asks for rubbings of old shrine tablets around Eien. A collection quest that scales (one tablet per few maps); each rubbing adds a lore page to the journal. Tablets he read before (the Route 1 shrine's) count. | Each tablet brought back | Spell Tag (Ghost boost) | No |
-| 2 | Act 3, her shrine in Shimotsuki, on the first aurora night (story-set: she says come back tonight, he rests at the shrine) | She shows him a folk tale "happening": the stone dogs (Eien Poochyena and Mightyena) wake under the aurora, glow and gather howling at the shrine (`TODO(design)`: the tale's text). He and Kaede fight two of them in a wild double battle, side by side. Afterwards a Froslass drifts down with the aurora and stays with her. She says flatly that the tales say they do this, and asks him whether the tales are true. Adds a research step. | The answer about whether the tales are true | Lore | No |
+| 2 | Act 3, her shrine in Shimotsuki, on the first aurora night, on his way back east after the professor's death (story-set: she says come back tonight, he rests at the shrine) | She shows him a folk tale "happening": the stone dogs (Eien Poochyena and Mightyena) wake under the aurora, glow and gather howling at the shrine (`TODO(design)`: the tale's text). He and Kaede fight two of them in a wild double battle, side by side. Afterwards a Froslass drifts down with the aurora and stays with her. She says flatly that the tales say they do this, and asks him whether the tales are true. Adds a research step. | The answer about whether the tales are true | Lore | No |
 | 3 | Act 3, before the League | She tells what the tales say about the end of a cycle: someone always pays. She tells it flatly, as just a tale; he and the player make the connection. Foreshadows his memories. Her third Pokémon has joined her. | The answer | A charm item from her grandmother (`TODO(design)`: which) | No |
 
 ### Yuki (cameo in Act 1; friend from Act 3)
@@ -125,7 +125,7 @@ Keep her scenes friendship: rivals who respect each other, no flirting.
 | --- | --- | --- | --- | --- | --- |
 | 0 | Act 1, Yunotaki (cameo) | A by-the-book League trainer. He arrives as the hero leaves gym 2 with the badge: a nod, "Next.", and he walks in to challenge Ibuki officially. No battle ([yunotaki.md](locations/yunotaki.md)). | none | none | No |
 | 1 | Act 3, Kanaya ([kanaya.md](locations/kanaya.md)), where he's come to challenge the gym | He's uneasy about the League's story and asks what the hero saw. He quits either way. | Telling him the truth or not | none | No |
-| 2 | Act 3, after he quits | He helps dig through League records about the cycle. | Helping | League TM `TODO(design)` | No |
+| 2 | Act 3, Hoshimi's research station ([hoshimi.md](locations/hoshimi.md)), after he quits | He gets the hero into the station's archive; they read the League's records about the cycle together. | Helping | League TM `TODO(design)` | No |
 
 ### Tetsu (near the door mountain)
 

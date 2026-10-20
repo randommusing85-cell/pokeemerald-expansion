@@ -51,10 +51,10 @@ happens.
 | 1 | Route 5 ([route-5.md](locations/route-5.md)), east out of Shimotsuki | Through old beech forest, greyed in patches; a Tokoyo member openly ropes off a thinning. At the forest's end Akira waits to say goodbye properly and asks him not to follow; they battle (about Lv 36); then he goes to Minato. Fuyumi's promise changes one line. Decided in [brainstorm-act-3-gym-5.md](brainstorm-act-3-gym-5.md). | `TODO` |
 | 1b | Kanaya ([kanaya.md](locations/kanaya.md)) | An ironworks town. Ren asks what he saw at the tournament. Fresh Survey digging in the old mine's sealed seam. Gym 5: Takumi (Fire), a League loyalist who believes the "accident" story; the Forge Badge. | `TODO` |
 | 2 | Route 6, then Minori ([minori.md](locations/minori.md)), Yuki's village | After gym 5 her letter asks for help: her Absol sensed something coming. On festival night a thinning opens at the terraces and the village's Pokémon walk into it; he and Yuki bring them back and beat two Tokoyo members measuring it. The festival ends late; the terraces stay grey for the year. Helping is how they become friends. | `TODO` |
-| 3 | `TODO(design)` | He learns about the cycle and Minato's plan to drain other worlds, his own included. | `TODO` |
-| 4 | `TODO(design)` | Nami tells him she chooses her world over his. | `TODO` |
-| 5 | Kashiwagi's lab | The professor dies in a lab disaster, leaving the research that explains the cycle. | `TODO` |
-| 6 | `TODO(design)` | He learns why Palkia brought him, and that Celebi came from a future where the world ended. | `TODO` |
+| 3 | Route 7, then Hoshimi ([hoshimi.md](locations/hoshimi.md)), the League's research station | Up onto the highland plateau. Ren, who has just quit, gets him into the station's archive: the cycle and the League's cover-up from the League's side, and Tokoyo's plan to drain other worlds, his own included. Gym 6: Tsukiko (Psychic), the astronomer who hid it; he challenges her knowing; she's opening the records now because the fading is speeding up. The Aurora Badge. Decided in [brainstorm-gym-6.md](brainstorm-gym-6.md). | `TODO` |
+| 4 | The road out of Hoshimi | Nami knew he'd find out and comes to tell him herself that she chooses her world over his. Then Haru's letter calls him home: his mother is close to a breakthrough. | `TODO` |
+| 5 | Kashiwagi's lab, Hamakaze | A scene takes him home. The professor dies in a lab disaster while he's there, leaving the research that explains the cycle (`TODO(design)`: the disaster, its own brainstorm). | `TODO` |
+| 6 | Kashiwagi's lab, then Shimotsuki | Her last research, found with Haru (his step 3), says plainly why Palkia brought him; Celebi shows him a glimpse of the ended world it came from. Haru gives him his mother's Altaria, which flies him from the Town Map (fast travel). In Shimotsuki: Akira at Fuyumi's grave (optional, his step 3), then Kaede's first aurora night (her step 2). | `TODO` |
 
 ## Act 4: The League and the end
 

@@ -3,8 +3,8 @@
 - **Map(s):** made in Porymap (placeholder constants `MAP_MINORI`, `MAP_MINORI_YUKI_HOUSE`, the
   terraces; `TODO(design)`: whether it has a Pokémon Center). Vanilla layouts can stand in.
 - **Type:** town (a farming village)
-- **Connects to:** west: Route 6 ([route-6.md](route-6.md)) from Kanaya. `TODO(design)`: onward,
-  toward gym 6.
+- **Connects to:** west: Route 6 ([route-6.md](route-6.md)) from Kanaya. Up: Route 7, the highland
+  plateau, to Hoshimi, gym 6 ([route-7.md](route-7.md), [hoshimi.md](hoshimi.md)).
 
 Decided in [brainstorm-yuki-hometown.md](../brainstorm-yuki-hometown.md). Minori (実り, "harvest, ripening"): Yuki's hometown.
 

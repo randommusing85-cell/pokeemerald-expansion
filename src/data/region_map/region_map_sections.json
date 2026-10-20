@@ -1633,23 +1633,43 @@
     },
     {
       "id": "MAPSEC_HAMAKAZE",
-      "name": "HAMAKAZE"
+      "name": "HAMAKAZE",
+      "x": 4,
+      "y": 11,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_EIEN_ROUTE1",
-      "name": "ROUTE 1"
+      "name": "ROUTE 1",
+      "x": 4,
+      "y": 10,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_SHIMOTSUKI",
-      "name": "SHIMOTSUKI"
+      "name": "SHIMOTSUKI",
+      "x": 4,
+      "y": 9,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_EIEN_ROUTE2",
-      "name": "LAKE USURAI"
+      "name": "LAKE USURAI",
+      "x": 4,
+      "y": 8,
+      "width": 4,
+      "height": 1
     },
     {
       "id": "MAPSEC_YUNOTAKI",
-      "name": "YUNOTAKI"
+      "name": "YUNOTAKI",
+      "x": 5,
+      "y": 3,
+      "width": 1,
+      "height": 1
     }
   ]
 }

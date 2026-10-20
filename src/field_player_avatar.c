@@ -1613,6 +1613,17 @@ enum Gender GetPlayerAvatarGenderByGraphicsId(u16 gfxId)
     }
 }
 
+// Eien: no HMs. Any Water-type (not an egg) can carry him on the water, no move needed
+// (design/progression.md, "Items and field moves").
+bool32 MonCanSurf(struct Pokemon *mon)
+{
+    enum Species species = GetMonData(mon, MON_DATA_SPECIES);
+
+    if (species == SPECIES_NONE || GetMonData(mon, MON_DATA_IS_EGG))
+        return FALSE;
+    return GetSpeciesType(species, 0) == TYPE_WATER || GetSpeciesType(species, 1) == TYPE_WATER;
+}
+
 bool8 PartyHasMonWithSurf(void)
 {
     u8 i;
@@ -1623,7 +1634,7 @@ bool8 PartyHasMonWithSurf(void)
         {
             if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES) == SPECIES_NONE)
                 break;
-            if (MonKnowsMove(&gParties[B_TRAINER_PLAYER][i], MOVE_SURF))
+            if (MonCanSurf(&gParties[B_TRAINER_PLAYER][i])) // Eien: was MonKnowsMove(MOVE_SURF)
                 return TRUE;
         }
     }

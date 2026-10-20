@@ -3,7 +3,7 @@
 ## Route order
 
 Our world (prologue) → Hamakaze → Route 1 → Shimotsuki (gym 1) → Lake Usurai → Route 2 (the
-mountain pass) → Yunotaki (gym 2) → Route 3 (the gorge) → Isaribi (gym 3, Electric) → Route 4 (the rice plain) → Hanashiro (gym 4, Grass) → the tournament (Hanashiro's castle grounds) → Shimotsuki (the funeral) → Route 5 (the beech forest) → Kanaya (gym 5, Fire) → Route 6 → Minori (Yuki's village) →
+mountain pass) → Yunotaki (gym 2) → Route 3 (the gorge) → Isaribi (gym 3, Electric) → Route 4 (the rice plain) → Hanashiro (gym 4, Grass) → the tournament (Hanashiro's castle grounds) → Shimotsuki (the funeral) → Route 5 (the beech forest) → Kanaya (gym 5, Fire) → Route 6 → Minori (Yuki's village) → Route 7 (the plateau) → Hoshimi (gym 6, Psychic) → Hamakaze (the lab) → Shimotsuki (fast travel from here) →
 gyms 5-8 → Pokémon League (Minato's plan interrupts the Elite Four) → door mountain.
 
 ## Badges and gates
@@ -15,7 +15,8 @@ gyms 5-8 → Pokémon League (Minato's plan interrupts the Elite Four) → door 
 | 3 | Akari (Electric), Isaribi | Lantern Badge; Akari also gives TM34 Shock Wave. `TODO(design)`: what it unlocks | `TODO(design)` |
 | 4 | Mamoru (Grass), Hanashiro | Blossom Badge; Mamoru also gives TM19 Giga Drain. `TODO(design)`: what it unlocks | `TODO(design)` |
 | 5 | Takumi (Fire), Kanaya | Forge Badge; Takumi also gives TM35 Flamethrower. `TODO(design)`: what it unlocks | `TODO(design)` |
-| 6-8 | `TODO(design)` | | |
+| 6 | Tsukiko (Psychic), Hoshimi | Aurora Badge; Tsukiko also gives TM29 Psychic. `TODO(design)`: what it unlocks | `TODO(design)` |
+| 7-8 | `TODO(design)` | | |
 
 Every gate is enforced by a flag or var; list it in the location doc that checks it.
 
@@ -35,6 +36,8 @@ Every gate is enforced by a flag or var; list it in the location doc that checks
 | Route 5 (the beech forest) | 30-35 | 32-36 (Akira ~36) | |
 | Gym 5 | | 34-36 | 38 (Coalossal) |
 | Route 6, Minori | 34-38 | 35-38; the Tokoyo pair 37-40 | |
+| Route 7 (the plateau) | 38-42 | 40-43 | |
+| Gym 6 | | 41-43 | 45 (Xatu) |
 
 All levels are proposed defaults; adjust after playtesting.
 
@@ -50,10 +53,33 @@ All levels are proposed defaults; adjust after playtesting.
 - **Town Map:** its own key item, Haru's first quest reward.
 - **Vs. Seeker** for trainer rematches (`I_VS_SEEKER_CHARGING`).
 - No contests or ribbons.
-- `TODO(design)`: field moves and other key items.
-- **Field moves without HMs:** `TODO(design)`: which key item or Pokémon does them.
-- **Fast travel:** `TODO(design)`, decided with field moves. Until then story scenes move him
-  (the funeral takes him from Hanashiro to Shimotsuki).
+- **Field moves: no HMs** (decided in [brainstorm-fast-travel.md](brainstorm-fast-travel.md)). The only field ability is **Surf**: any
+  Water-type in the party lets him surf (no move needed; the vanilla surf blob sprite; Celebi
+  follows over water). It unlocks after gym 3: Akari tells him ("Got a Water-type? Then you've
+  got a boat."), and the journal records it. No Cut, Strength, Rock Smash, Waterfall, Dive or
+  Flash: the world is gated by story and scenes. Tetsu's **climbing gear** (a key item, his
+  step 2) opens shortcuts near the door mountain, never gates. **Built:** `MonCanSurf`
+  (`src/field_player_avatar.c`) replaces "knows Surf" in `PartyHasMonWithSurf` and in
+  `checkfieldmove FIELD_MOVE_SURF`; Surf unlocks with `FLAG_BADGE03_GET` (`src/field_move.c`); the
+  message is "{STR_VAR_1} takes you out on the water." Shots in `art/fast_travel/` (a Squirtle
+  that doesn't know Surf, on Lake Usurai; no prompt without badge 3 or a Water-type).
+- **Fast travel:** in Act 3, after the professor's death, Haru gives him his mother's **Altaria**,
+  which carries him: he flies from the Town Map with R to any town whose Pokémon Center he has
+  visited (the engine's `OW_FLAG_POKE_RIDER`, set to a renamed spare flag; not from caves or
+  indoors). Altaria takes no party slot; Celebi comes along. No fast travel before then: story
+  scenes move him (the funeral takes him from Hanashiro to Shimotsuki; Haru's letter from
+  Hoshimi to Hamakaze). `TODO(design)`: Altaria's name (a nickname of the professor's, or none).
+  **Built:** `FLAG_RECEIVED_PROFESSOR_ALTARIA` (was `FLAG_UNUSED_0x02D`) is `OW_FLAG_POKE_RIDER`;
+  towns become destinations through `FLAG_VISITED_HAMAKAZE` / `_SHIMOTSUKI` / `_YUNOTAKI` (were
+  `FLAG_UNUSED_0x881`-`0x883`, set by each town's map script; new towns need one each, plus a
+  `GetMapsecType` case and a `sMapHealLocations` entry in `src/region_map.c`). Altaria sits in
+  the lab (`LOCALID_LAB_ALTARIA`, hidden once given). The gift scene isn't built (the lab
+  disaster brainstorm); the debug menu's Script 4 sets the flag. **Placeholder map:** the Town
+  Map is still Hoenn's art, so Eien's places borrow Hoenn squares (Hamakaze on Littleroot's,
+  Route 1 on Route 101's, Shimotsuki on Oldale's, Lake Usurai on Route 103's, Yunotaki on
+  Lavaridge's; `src/data/region_map/region_map_layout.h` and the sections' x/y) until the Eien
+  region map exists (`TODO(design)`: the region map; its title and "{REGION}" still say HOENN).
+- `TODO(design)`: other key items.
 - **TMs are reusable.**
 - **DexNav** is on, for searching and chaining wild Pokémon.
 

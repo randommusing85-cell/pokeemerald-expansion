@@ -9,6 +9,7 @@ Shimotsuki_MapScripts::
 	.byte 0
 
 Shimotsuki_OnTransition:
+	setflag FLAG_VISITED_SHIMOTSUKI
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2
 	setflag FLAG_TEMP_3
