@@ -59,6 +59,42 @@ Working notes. Decisions move into `story-outline.md`, `characters.md`, `side-qu
   cross one last time.
 - **The Elite Four's other three (r2 6a):** Dragon, Dark and Steel (Ibuki's Fighting beats Dark and
   Steel).
+- **Time for the goodbyes (r3 1a):** Palkia gives him until dawn: the door stays open one night; he
+  flies around Eien as his memories thin, under the renewed world's first aurora, and comes back at
+  first light.
+- **The tour (r3 2b):** Haru and Makoto (Hamakaze) → Yuki (Minori) → Kaede and Chiyo (Shimotsuki) →
+  Akira at Fuyumi's grave (his line depends on his points) → Tetsu and Ren (Kawara) → Nami last
+  (Lake Usurai, Lapras one last time) → the door at dawn.
+- **The door mountain (r3 3b):** Tobira-yama (扉山, "door mountain"): an old name whose meaning people
+  have forgotten.
+- **The League (r3 4c):** Tokiwa Hall (常盤, "evergreen, unchanging"): quietly ironic, since it hides
+  that everything ends.
+- **The Elite Four (r3 5a):** Dark, a quiet judge-like figure; Steel, an old armour-smith; Dragon, a
+  young woman from the League's founding family, who holds the hall when the door opens so he can
+  go; Ibuki fourth.
+- **Akira's last battle (r3 6c):** his full team at Lv 61, his final-stage Eien starter the ace; with
+  high points he steps aside afterwards to let the hero reach Minato and stays out of it. His
+  choice doesn't change; his last act does. His line ranges from "You came anyway." to "Go on."
+
+## Defaults (not asked; change any)
+
+- **Order of Act 4:** Tokiwa Hall: three Elite Four, Ibuki → the door opens (the thinning across the
+  caldera; the hall goes grey; the Dragon member holds it) → Seiji's door: his confession, he joins
+  → the lake path → Kaede's tag battle (the riverbed of souls) → Tetsu and Ren (points) → Nami
+  (near the summit) → the top: Akira, then the hero and Seiji against Minato; the machine fires;
+  Celebi takes it and dies → Minato walks away → Palkia at the door; the cycle finishes through him;
+  colour returns; until dawn → the goodbye tour by Kumo → the door at first light; the journal's
+  pages go blank as he steps into the light; Kaede sees the tale happen (she's there at dawn) →
+  the hospital.
+- **Seiji after:** steps down and answers for the cover-up; the League goes on without a Champion
+  for now. One line at the door or on the tour (`TODO(design)`).
+- **Celebi's place:** the summit beside the door; afterwards a small stack of stones there (the
+  riverbed's custom), the "where Celebi died" flash in the epilogue.
+- **Levels:** Elite Four Lv 56-60 (Ibuki's ace 60), Nami 60, Kaede's tag-battle foes 58, Akira 61,
+  Minato 63 (with Seiji beside him).
+- **Maps:** Tokiwa Hall (entrance, four rooms, Seiji's room), the caldera lake path, Tobira-yama
+  (the riverbed, the slopes, the summit and the door), made by the user in Porymap; the goodbye
+  tour reuses the existing towns at night.
 
 ## Leaning
 
@@ -66,8 +102,13 @@ Working notes. Decisions move into `story-outline.md`, `characters.md`, `side-qu
 
 ## Gaps and tensions
 
-- r2 2a and 4b: the cycle finishes through him at the door, but the goodbyes come after, across
-  Eien, before Palkia takes him home. Something has to give him that time (r3).
+- "Tokiwa" is also Viridian City's Japanese name (常磐市); English players won't notice, but it's
+  a known Pokémon name. Kept as picked; easy to swap.
+- The Elite Four's names, teams; Seiji's team (he battles beside the hero); Minato's team: a teams
+  brainstorm.
+- The final-stage Eien starters' full sprites (only front drafts exist).
+
+- r2 2a and 4b (the goodbyes after the cycle finishes): settled by r3 1a (until dawn).
 
 ## Parked ideas
 
