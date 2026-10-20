@@ -42,6 +42,36 @@ Working notes. Decisions move into `story-outline.md`, `characters.md`, `side-qu
   time pressure, then the doors.
 - **Afterwards (r1 6a):** that evening at the Kashiwagi house: Makoto, Haru and the hero, little
   said. Haru's step 3 the next day.
+- **The thin place (r2 1a):** under the beach where he woke up: Palkia set him down at a thin
+  place, which is why she studied there and why Celebi found him there. The opening becomes a
+  clue; nothing earlier changes.
+- **Her notes (r2 2c):** Haru reads the key line aloud (his step 3); the full notes go into the
+  journal, one page per topic (the cycle, Palkia's test, Celebi's future, the ending).
+- **Celebi's glimpse (r2 3c):** that night Celebi takes him to the beach where he woke; the glimpse
+  is that beach with no colour and no snow, the sea not moving (the thinning effect on Hamakaze).
+- **Ending a cycle safely (r2 4c), as a principle only:** someone from outside has to carry the
+  change (the world can't remake itself from inside; the outsider forgets), and Arceus has to be
+  let go, not saved: help the cycle finish instead of feeding it, the opposite of Minato. Details:
+  the Act 4 brainstorm.
+- **Altaria's name (r2 5a):** Kumo (雲, "cloud"), the professor's nickname for it.
+- **The lab afterwards (r2 6b):** grey (the thinning's grey tiles) until the epilogue, but
+  enterable; her desk is the one spot still in colour, where Haru's step 3 happens.
+
+## Defaults (not asked; change any)
+
+- **Order:** Haru's letter (Hoshimi) → Hamakaze, a calm scene with the professor and Makoto (she
+  shows him the readings; Kumo on its beam) → the next day in the lab, the thinning opens → she
+  sends him and Haru out with the notes and Kumo; Haru turns back, he pulls him out; the walk out
+  through the greying lab → outside, quiet → evening at the house (Makoto runs from the house when
+  it happens) → that night, Celebi and the beach: the glimpse → next day, Haru's step 3 at her
+  desk in the grey lab, the key line, the journal pages → Haru gives him Kumo (fast travel) →
+  Shimotsuki.
+- **The League:** silent this time (no statement); people in Hamakaze talk about "the lab
+  accident". `TODO(design)`: if the League should say something.
+- **The thin place under the beach** joins the game bible's list of thin places (a scene place,
+  not a battle-effect map unless the design adds it).
+- **Lines:** the professor's last words and Haru's are drafted at build time, in
+  `dialogue-style.md`'s voice (short, plain; no speech).
 
 ## Leaning
 
