@@ -24,6 +24,20 @@ Working notes. Decisions move into `story-outline.md`, `progression.md`, `charac
 
 ## Decided
 
+- **Where (r1 1a):** both on the door mountain's peninsula (like Shimokita): a fishing port at the
+  cape (gym 7) and the town at the mountain's foot (gym 8). The map narrows toward the end.
+- **Types (r1 2a):** gym 7 Water, a tuna port on a rough strait (like Ōma); gym 8 Ghost, the temple
+  town at the mountain's foot, led by an *itako* (Kaede uses Ghosts too, but isn't a leader).
+- **The leaders (r1 3a):** gym 7's harbour master sides with Minato: saving this world is worth
+  draining others; decent, sure, on the other side. Gym 8's *itako* is on no side and knows the
+  old tales are true.
+- **Tetsu (r1 4a):** between gyms 7 and 8: the slide and the lost climbers on the road to the
+  mountain town, then his hut (the climbing gear's shortcuts help on the way to gym 8).
+- **The League (r1 5a):** on the peninsula too, across the caldera from the door mountain: Act 4
+  runs straight from the League to the mountain, and the League sits in sight of the door.
+- **E5 (r1 6c):** back in Hanashiro: a child missing near a thin place; Mamoru's one Act 3
+  appearance; fast travel put to use.
+
 ## Leaning
 
 ## Open questions
