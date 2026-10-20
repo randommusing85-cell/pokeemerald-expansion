@@ -51,12 +51,40 @@ Working notes. Decisions move into `story-outline.md`, `progression.md`, `charac
 - **Beat 6 (r2 6d):** after the lab disaster, the professor's last research (found with Haru, his
   step 3) says plainly why Palkia brought him; Celebi shows him a glimpse of the ended world it came
   from.
+- **The station (r3 1a):** Hoshimi (星見, "star-viewing").
+- **The astronomer (r3 2a):** Tsukiko (月子, "moon child").
+- **The route (r3 3a):** "ROUTE 7" on the region map; the routes get named together later.
+- **Kaede's aurora night (r3 4b):** after the lab, on the way back east: grieving, he stops at her
+  shrine in Shimotsuki; her flat telling of the tale about cycles lands after the professor's death.
+- **Back east (r3 5a):** fast travel unlocks after Hamakaze, given by Haru (a rail pass, or a
+  Pokémon that can now Fly him). Details: a fast-travel brainstorm.
+- **Akira's optional meeting (r3 6b):** in Shimotsuki, at his mother's grave, on the trip home.
+
+## Defaults (not asked; change any)
+
+- **The order of Act 3 from Minori:** Route 7 (the plateau) → Hoshimi: Ren gets him into the
+  records (the cycle, the cover-up, Tokoyo's plan) → gym 6 (Tsukiko) → on the road out, Nami tells
+  him she chooses her world → Haru's letter calls him home → Hamakaze: the lab disaster, the
+  professor dies; her last research and Celebi's glimpse (why Palkia brought him, Celebi's ended
+  world); Haru's step 3 → fast travel → Shimotsuki: Akira at Fuyumi's grave (optional), Kaede's
+  aurora night → gyms 7-8.
+- **Levels:** Route 7 wild Lv 38-42, trainers Lv 40-43; gym 6's trainers 41-43; Tsukiko Solrock
+  Lv 42, Lunatone Lv 42, Xatu Lv 45.
+- **Gym trainers:** two station researchers (Psychic Pokémon), like the other gyms' two.
+- **Maps:** Route 7, Hoshimi (the station, its archive, gym on Mossdeep's layout, Pokémon Center),
+  made by the user in Porymap.
+- **Route 7's people and wild:** `TODO(design)` (a trainers-and-wild brainstorm, as for Route 3).
 
 ## Leaning
 
 ## Open questions
 
 ## Gaps and tensions
+
+- The professor's lab disaster (what it is, how it happens): its own brainstorm.
+- Fast travel (and field moves): its own brainstorm, now needed.
+- E5 (a missing child near a thin place) still unplaced.
+- Gyms 7-8 and the door mountain approach (Tetsu).
 
 ## Parked ideas
 
