@@ -1,7 +1,9 @@
 # Brainstorm: gym 6 and the road beyond Minori
 
 Working notes. Decisions move into `story-outline.md`, `progression.md`, `characters.md`,
-`side-quests.md` and new location docs when settled; this file stays as the record.
+`side-quests.md` and new location docs when settled; this file stays as the record. **Promoted** into `locations/route-7.md`,
+`locations/hoshimi.md`, `minori.md`, `story-outline.md`, `progression.md`, `characters.md`,
+`side-quests.md` and `whats-left.md`.
 
 ## Givens (from the docs)
 

@@ -142,7 +142,8 @@ Decided in [brainstorm-yuki.md](brainstorm-yuki.md).
 | 3 | Isaribi | Akari (woman) | Electric | Runs the squid-boat fleet; her Electric Pokémon light its lamps. Practical, loud, well loved: the first leader with a big, warm personality. ([locations/isaribi.md](locations/isaribi.md)) | Lanturn (with Magneton, Luxio) | 24-27 |
 | 4 | Hanashiro | Mamoru (man) | Grass | The castle's head gardener: keeps the cherry trees and moss gardens; quiet and exact; watches the trees for the fading. Survives the tournament disaster, shaken; turns up once in Act 3. ([locations/hanashiro.md](locations/hanashiro.md)) | Appletun (with Cherrim, Dipplin) | 29-32 |
 | 5 | Kanaya | Takumi (man, young) | Fire | The young heir of a foundry family; loyal to the League because the League made his family's name. Repeats the "accident" story and believes it; decent while being wrong. ([locations/kanaya.md](locations/kanaya.md)) | Coalossal (with Magcargo, Bronzong) | 35-38 |
-| 6-8 | | `TODO(design)` | | | | |
+| 6 | Hoshimi | Tsukiko (woman, older) | Psychic | The League research station's head scientist, an astronomer: precise and tired, decades of aurora readings. Hid the truth because panic would have killed more people than the fading; opens the records once the fading speeds up. ([locations/hoshimi.md](locations/hoshimi.md)) | Xatu (with Solrock, Lunatone) | 42-45 |
+| 7-8 | | `TODO(design)` | | | | |
 
 ## Champion
 

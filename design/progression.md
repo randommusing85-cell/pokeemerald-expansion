@@ -3,7 +3,7 @@
 ## Route order
 
 Our world (prologue) → Hamakaze → Route 1 → Shimotsuki (gym 1) → Lake Usurai → Route 2 (the
-mountain pass) → Yunotaki (gym 2) → Route 3 (the gorge) → Isaribi (gym 3, Electric) → Route 4 (the rice plain) → Hanashiro (gym 4, Grass) → the tournament (Hanashiro's castle grounds) → Shimotsuki (the funeral) → Route 5 (the beech forest) → Kanaya (gym 5, Fire) → Route 6 → Minori (Yuki's village) →
+mountain pass) → Yunotaki (gym 2) → Route 3 (the gorge) → Isaribi (gym 3, Electric) → Route 4 (the rice plain) → Hanashiro (gym 4, Grass) → the tournament (Hanashiro's castle grounds) → Shimotsuki (the funeral) → Route 5 (the beech forest) → Kanaya (gym 5, Fire) → Route 6 → Minori (Yuki's village) → Route 7 (the plateau) → Hoshimi (gym 6, Psychic) → Hamakaze (the lab) → Shimotsuki (fast travel from here) →
 gyms 5-8 → Pokémon League (Minato's plan interrupts the Elite Four) → door mountain.
 
 ## Badges and gates
@@ -15,7 +15,8 @@ gyms 5-8 → Pokémon League (Minato's plan interrupts the Elite Four) → door 
 | 3 | Akari (Electric), Isaribi | Lantern Badge; Akari also gives TM34 Shock Wave. `TODO(design)`: what it unlocks | `TODO(design)` |
 | 4 | Mamoru (Grass), Hanashiro | Blossom Badge; Mamoru also gives TM19 Giga Drain. `TODO(design)`: what it unlocks | `TODO(design)` |
 | 5 | Takumi (Fire), Kanaya | Forge Badge; Takumi also gives TM35 Flamethrower. `TODO(design)`: what it unlocks | `TODO(design)` |
-| 6-8 | `TODO(design)` | | |
+| 6 | Tsukiko (Psychic), Hoshimi | Aurora Badge; Tsukiko also gives TM29 Psychic. `TODO(design)`: what it unlocks | `TODO(design)` |
+| 7-8 | `TODO(design)` | | |
 
 Every gate is enforced by a flag or var; list it in the location doc that checks it.
 
@@ -35,6 +36,8 @@ Every gate is enforced by a flag or var; list it in the location doc that checks
 | Route 5 (the beech forest) | 30-35 | 32-36 (Akira ~36) | |
 | Gym 5 | | 34-36 | 38 (Coalossal) |
 | Route 6, Minori | 34-38 | 35-38; the Tokoyo pair 37-40 | |
+| Route 7 (the plateau) | 38-42 | 40-43 | |
+| Gym 6 | | 41-43 | 45 (Xatu) |
 
 All levels are proposed defaults; adjust after playtesting.
 
@@ -52,8 +55,10 @@ All levels are proposed defaults; adjust after playtesting.
 - No contests or ribbons.
 - `TODO(design)`: field moves and other key items.
 - **Field moves without HMs:** `TODO(design)`: which key item or Pokémon does them.
-- **Fast travel:** `TODO(design)`, decided with field moves. Until then story scenes move him
-  (the funeral takes him from Hanashiro to Shimotsuki).
+- **Fast travel:** unlocks in Act 3 after the professor's death: Haru gives it (a rail pass, or a
+  Pokémon that can now Fly him; `TODO(design)`: its own brainstorm, with field moves). Until then
+  story scenes move him (the funeral takes him from Hanashiro to Shimotsuki; Haru's letter from
+  Hoshimi to Hamakaze).
 - **TMs are reusable.**
 - **DexNav** is on, for searching and chaining wild Pokémon.
 
