@@ -1,7 +1,9 @@
 # Brainstorm: the Eien region map
 
 Working notes. Decisions move into `game-bible.md` (The region) and `progression.md`, and the
-built map into `src/data/region_map/`, when settled; this file stays as the record.
+built map into `src/data/region_map/`, when settled; this file stays as the record. **Promoted** into
+`game-bible.md`, `progression.md`, `story-outline.md`, `locations/isaribi.md`, `route-3.md` and
+`whats-left.md`.
 
 ## Givens (from the docs and the engine)
 

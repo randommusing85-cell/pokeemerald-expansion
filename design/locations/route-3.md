@@ -11,7 +11,7 @@ Decided in [brainstorm-route-3.md](../brainstorm-route-3.md).
 
 ## Purpose
 
-The road down from the mountains to the Sea of Japan coast, after gym 2. A quieter route: Yuki's
+The road down from the mountains to the northern coast, after gym 2. A quieter route: Yuki's
 cameo, the Eien Survey seen again (helpful and organised), and the first sight of the door
 mountain. The next Eien variant, Eien Wooper (Ground/Steel), lives here: the answer to gym 3, which is
 Electric.

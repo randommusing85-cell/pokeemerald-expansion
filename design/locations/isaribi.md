@@ -12,7 +12,7 @@ fires"): the lamps of the night squid boats strung across the dark sea.
 
 ## Purpose
 
-Gym 3 (Electric), on the Sea of Japan coast at the foot of Route 3's gorge. The first coastal town
+Gym 3 (Electric), on the northern sea's coast at the foot of Route 3's gorge. The first coastal town
 since Hamakaze, and Nami's battle. Eien Wooper (Ground/Steel, immune to Electric), caught on Route 3, is the answer.
 
 ## Look

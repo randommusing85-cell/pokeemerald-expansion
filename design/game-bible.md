@@ -9,12 +9,23 @@ other side, loses people he loves, and saves the world at the cost of his memori
 ## The region
 
 - **Name:** Eien (永遠, "eternity").
-- **Inspiration:** northern Honshu's Sea of Japan coast (Tohoku, Aomori).
+- **Inspiration:** northern Honshu's snow country and coasts (Tohoku, Aomori). Eien's compass is
+  its own: inspired by Aomori, not a copy of it.
 - **Geography:** snow country and coast: fishing towns (e.g. Hamakaze), snowy inland towns
   (e.g. Shimotsuki), old shrines, and a volcanic mountain where the worlds are thin (modeled on
   Osorezan): Tobira-yama (扉山, "door mountain", an old name whose meaning people have forgotten),
   with the League, Tokiwa Hall (常盤, "evergreen, unchanging"), on its caldera lake.
-  `TODO(design)`: map layout, route count.
+- **Map:** a ring around a central range of mountains (decided in
+  [brainstorm-region-map.md](brainstorm-region-map.md), with the full sketch and cells). Hamakaze
+  in the south-west corner, sea on two sides; the western column north through Route 1,
+  Shimotsuki, Lake Usurai and the pass to Yunotaki; the northern band along the northern sea
+  (Route 3, Isaribi, the rice plain, Hanashiro); the southern band east from Shimotsuki (Route 5,
+  Kanaya, Route 6, Minori) climbing to Hoshimi on its plateau; the axe-shaped peninsula in the
+  north-east (Uminari on the strait, Kawara, the caldera lake, Tobira-yama, Tokiwa Hall). A line
+  from Hanashiro to Hoshimi closes the ring, travelled only by Kumo. Two surf spots: an islet off
+  Hamakaze and a sea cave by Isaribi (content `TODO(design)`). Nine routes so far.
+- **The Town Map** shows this map, titled "EIEN" (`TODO`: build: a scripted placeholder in the region
+  map's own tiles first, AI art later).
 - **Look and feel:** cold and sparse, long winters, aurora skies. Must feel distinct from
   Sinnoh (which is Hokkaido-based and Palkia's home region). Needs a community snow tileset
   (the engine has none).

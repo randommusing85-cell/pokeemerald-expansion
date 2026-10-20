@@ -86,7 +86,8 @@ All levels are proposed defaults; adjust after playtesting.
   Map is still Hoenn's art, so Eien's places borrow Hoenn squares (Hamakaze on Littleroot's,
   Route 1 on Route 101's, Shimotsuki on Oldale's, Lake Usurai on Route 103's, Yunotaki on
   Lavaridge's; `src/data/region_map/region_map_layout.h` and the sections' x/y) until the Eien
-  region map exists (`TODO(design)`: the region map; its title and "{REGION}" still say HOENN).
+  region map is built (designed in [brainstorm-region-map.md](brainstorm-region-map.md): Hamakaze moves
+  to (3,13), Shimotsuki to (3,10), Yunotaki to (3,4); the title and "{REGION}" become EIEN).
 - `TODO(design)`: other key items.
 - **TMs are reusable.**
 - **DexNav** is on, for searching and chaining wild Pokémon.
