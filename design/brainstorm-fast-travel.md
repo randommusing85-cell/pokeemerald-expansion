@@ -24,6 +24,18 @@ docs when settled; this file stays as the record.
 
 ## Decided
 
+- **Fast travel (r1 1a):** the professor's own flying Pokémon carries him: Haru gives it after her
+  death. He flies from Haru's Town Map (the engine's `OW_FLAG_POKE_RIDER`); the Pokémon takes no
+  party slot.
+- **Field moves (r1 2c):** a Pokémon of the right type in the party does it; no move needed, no HMs.
+  A small engine change.
+- **Which (r1 3a):** Surf only, plus Tetsu's climbing gear for shortcuts.
+- **When (r1 4a):** surfing unlocks after gym 3 (Akari's fleet, the coast): the sea and Spheal's
+  waters open before the tournament.
+- **Shimotsuki's east exit (r1 5b):** a League checkpoint ("closed for thinning danger"), lifted
+  when the guards are pulled away after the tournament.
+- **No fast travel before Act 3 (r1 6a).**
+
 ## Leaning
 
 ## Open questions
