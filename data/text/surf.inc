@@ -3,7 +3,8 @@ gText_WantToUseSurf::
 	.string "Would you like to SURF?$"
 
 gText_PlayerUsedSurf::
-	.string "{STR_VAR_1} used SURF!$"
+	.string "{STR_VAR_1} takes you out\n"
+	.string "on the water.$"
 
 Text_CurrentTooFast::
 	.string "The current is much too fast!\n"

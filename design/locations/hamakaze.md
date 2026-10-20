@@ -28,7 +28,7 @@ Act 1 beats 1-3 in [story-outline.md](../story-outline.md).
 | Fisherman | beach (4,15) | always | Flavor line |
 | Villager | town (9,11), wanders | always | Points to the Kashiwagi house, later the lab |
 | Professor Kashiwagi | lab | | Offers the three starters |
-| The professor's Altaria | lab (on a beam or by the window) | from Act 1 | Her Pokémon; you can talk to it (`TODO(design)`: its lines/cry). After her death Haru gives it to him: it flies him (fast travel, [progression.md](../progression.md)) |
+| The professor's Altaria | lab, on the back desk (10,2) | from Act 1 until it's given | Her Pokémon. Built (`LOCALID_LAB_ALTARIA`): its cry and "The professor's Altaria hums softly." (`TODO(design)`: its lines). After her death Haru gives it to him: it flies him (fast travel, [progression.md](../progression.md)) |
 | Makoto, Kashiwagi's husband | house | | Runs the household that takes him in. Heals the team after a white-out: "Back again? Sit. I'll see to them." |
 | Haru Kashiwagi | house / lab | | First friend; takes the third starter |
 | Akira | lab | | Takes the starter strong against the player's; battles right after |

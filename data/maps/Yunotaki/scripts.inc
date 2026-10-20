@@ -9,6 +9,7 @@ Yunotaki_MapScripts::
 	.byte 0
 
 Yunotaki_OnTransition:
+	setflag FLAG_VISITED_YUNOTAKI
 	setflag FLAG_TEMP_1
 	setvar VAR_TEMP_1, 0
 	goto_if_unset FLAG_BADGE02_GET, Yunotaki_OnTransitionEnd

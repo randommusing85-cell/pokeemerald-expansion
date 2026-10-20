@@ -58,14 +58,27 @@ All levels are proposed defaults; adjust after playtesting.
   follows over water). It unlocks after gym 3: Akari tells him ("Got a Water-type? Then you've
   got a boat."), and the journal records it. No Cut, Strength, Rock Smash, Waterfall, Dive or
   Flash: the world is gated by story and scenes. Tetsu's **climbing gear** (a key item, his
-  step 2) opens shortcuts near the door mountain, never gates. Built as a small engine change
-  where the field checks for a Surf user (`TODO`: build).
+  step 2) opens shortcuts near the door mountain, never gates. **Built:** `MonCanSurf`
+  (`src/field_player_avatar.c`) replaces "knows Surf" in `PartyHasMonWithSurf` and in
+  `checkfieldmove FIELD_MOVE_SURF`; Surf unlocks with `FLAG_BADGE03_GET` (`src/field_move.c`); the
+  message is "{STR_VAR_1} takes you out on the water." Shots in `art/fast_travel/` (a Squirtle
+  that doesn't know Surf, on Lake Usurai; no prompt without badge 3 or a Water-type).
 - **Fast travel:** in Act 3, after the professor's death, Haru gives him his mother's **Altaria**,
   which carries him: he flies from the Town Map with R to any town whose Pokémon Center he has
   visited (the engine's `OW_FLAG_POKE_RIDER`, set to a renamed spare flag; not from caves or
   indoors). Altaria takes no party slot; Celebi comes along. No fast travel before then: story
   scenes move him (the funeral takes him from Hanashiro to Shimotsuki; Haru's letter from
   Hoshimi to Hamakaze). `TODO(design)`: Altaria's name (a nickname of the professor's, or none).
+  **Built:** `FLAG_RECEIVED_PROFESSOR_ALTARIA` (was `FLAG_UNUSED_0x02D`) is `OW_FLAG_POKE_RIDER`;
+  towns become destinations through `FLAG_VISITED_HAMAKAZE` / `_SHIMOTSUKI` / `_YUNOTAKI` (were
+  `FLAG_UNUSED_0x881`-`0x883`, set by each town's map script; new towns need one each, plus a
+  `GetMapsecType` case and a `sMapHealLocations` entry in `src/region_map.c`). Altaria sits in
+  the lab (`LOCALID_LAB_ALTARIA`, hidden once given). The gift scene isn't built (the lab
+  disaster brainstorm); the debug menu's Script 4 sets the flag. **Placeholder map:** the Town
+  Map is still Hoenn's art, so Eien's places borrow Hoenn squares (Hamakaze on Littleroot's,
+  Route 1 on Route 101's, Shimotsuki on Oldale's, Lake Usurai on Route 103's, Yunotaki on
+  Lavaridge's; `src/data/region_map/region_map_layout.h` and the sections' x/y) until the Eien
+  region map exists (`TODO(design)`: the region map; its title and "{REGION}" still say HOENN).
 - `TODO(design)`: other key items.
 - **TMs are reusable.**
 - **DexNav** is on, for searching and chaining wild Pokémon.
