@@ -45,12 +45,29 @@ Working notes. Decisions move into `story-outline.md`, `characters.md`, `side-qu
   Tokoyo's people back; r2).
 - **Celebi (r1 6a):** Minato's machine fires to pull the hero (an outsider, the bridge between
   worlds) through the door, and Celebi takes it. Plain, physical, no speech.
+- **The climb (r2 1a):** the caldera lake path → Kaede's tag battle against two Tokoyo members at
+  the riverbed of souls → Tetsu's path and Ren holding the side trail (if their points are high) →
+  Nami's battle near the summit → the top: Akira, then Minato. Haru and Yuki go up with Seiji and
+  stand at the top.
+- **After Minato (r2 2a):** Palkia appears at the door. He walks into the light; the cycle finishes
+  through him; Arceus renews (felt, not shown: the colour coming back); his memories of Eien start
+  to go.
+- **Minato (r2 3b):** lives and walks away, unrepentant, in silence.
+- **The goodbyes (r2 4b):** a short walk through Eien: Kumo flies him to each friend's place in turn
+  (Haru's house, Minori, Kaede's shrine, Nami's coast...), then back to the door.
+- **Nami's goodbye (r2 5b):** at Lake Usurai, where they met: frozen, quiet. She lends him Lapras to
+  cross one last time.
+- **The Elite Four's other three (r2 6a):** Dragon, Dark and Steel (Ibuki's Fighting beats Dark and
+  Steel).
 
 ## Leaning
 
 ## Open questions
 
 ## Gaps and tensions
+
+- r2 2a and 4b: the cycle finishes through him at the door, but the goodbyes come after, across
+  Eien, before Palkia takes him home. Something has to give him that time (r3).
 
 ## Parked ideas
 
