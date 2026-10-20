@@ -110,6 +110,8 @@ struct JournalResearch
 // Eien Poochyena evolves at this level, but only in a shrine area (design/variants.md). The
 // first time he opens the journal with one at this level or above, he notes it didn't evolve.
 #define EIEN_POOCHYENA_EVO_LEVEL 18
+// Eien Wooper evolves at this level, but only in the Route 3 mine tunnel; the same kind of note.
+#define EIEN_WOOPER_EVO_LEVEL 20
 
 static const u8 *const sResearchTierNames[RESEARCH_TIER_COUNT] =
 {
@@ -133,6 +135,20 @@ static const struct JournalResearch sJournalResearch[] =
         },
         .noteFlag = FLAG_JOURNAL_POOCHYENA_NO_EVO,
         .note = COMPOUND_STRING("Lv 18, and it didn't evolve."),
+    },
+    {
+        .quest = QUEST_RESEARCH_WOOPER, // TODO(design): who asks for it (its mission)
+        .species = SPECIES_WOOPER_EIEN,
+        .name = COMPOUND_STRING("Eien Wooper"),
+        .notes = {
+            // TODO(design): the tier lines (drafts)
+            [RESEARCH_TIER_SEEN] = COMPOUND_STRING("Crusted with ore, like the rock."),
+            [RESEARCH_TIER_BATTLED] = COMPOUND_STRING("Ground and Steel!"),
+            [RESEARCH_TIER_CAUGHT] = COMPOUND_STRING("Cold and heavy, like iron."),
+            [RESEARCH_TIER_LORE] = NULL,
+        },
+        .noteFlag = FLAG_JOURNAL_WOOPER_NO_EVO,
+        .note = COMPOUND_STRING("Lv 20, and it didn't evolve."),
     },
 };
 

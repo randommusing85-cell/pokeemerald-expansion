@@ -671,6 +671,7 @@ static const u16 sWooperFormSpeciesIdTable[] = {
 #if P_PALDEAN_FORMS
     SPECIES_WOOPER_PALDEA,
 #endif
+    SPECIES_WOOPER_EIEN, // Eien: eien_families.h
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_WOOPER

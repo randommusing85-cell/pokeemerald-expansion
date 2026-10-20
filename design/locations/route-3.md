@@ -100,7 +100,7 @@ finished before gym 3.
 | Name | Set when | Checked by |
 | --- | --- | --- |
 | `TODO` | Yuki's scene | Her chain (`side-quests.md`) |
-| `TODO` (a journal-note flag) | An Eien Wooper reaches Lv 20 outside the cave | Its research entry's note |
+| `FLAG_JOURNAL_WOOPER_NO_EVO` | An Eien Wooper reaches Lv 20 outside the cave (the journal sees one at Lv 20+) | Its research entry's note |
 
 ## Screenshot check
 

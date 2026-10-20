@@ -606,3 +606,148 @@
         .formSpeciesIdTable = sFrogadierFormSpeciesIdTable,
     },
 #endif //P_FAMILY_FROAKIE
+
+#if P_FAMILY_WOOPER
+    [SPECIES_WOOPER_EIEN] =
+    {
+        .baseHP        = 55,
+        .baseAttack    = 45,
+        .baseDefense   = 55,
+        .baseSpeed     = 5,
+        .baseSpAttack  = 15,
+        .baseSpDefense = 35,
+        .types = MON_TYPES(TYPE_GROUND, TYPE_STEEL),
+        .catchRate = 255,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 42 : 52,
+        .evYield_HP = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
+        .abilities = { ABILITY_STURDY, ABILITY_HEAVY_METAL, ABILITY_UNAWARE },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Wooper"),
+        .cryId = CRY_WOOPER,
+        .natDexNum = NATIONAL_DEX_WOOPER,
+        // TODO(design): category, size and dex entry (placeholders, like the other Eien forms' drafts).
+        .categoryName = _("Ore Fish"),
+        .height = 4,
+        .weight = 85,
+        .description = COMPOUND_STRING(
+            "It lives in the muddy pools of old mine\n"
+            "tunnels. Iron and copper ore crusts its\n"
+            "skin, and its gills are stiff frills\n"
+            "that glint like metal."),
+        .pokemonScale = 479,
+        .pokemonOffset = 21,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        // The vanilla sprites in ore palettes until its own art is picked (variants.md)
+        .frontPic = gMonFrontPic_Wooper,
+        .frontPicSize = MON_COORDS_SIZE(40, 32),
+        .frontPicYOffset = 16,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+        ),
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Wooper,
+        .backPicSize = MON_COORDS_SIZE(64, 40),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 15 : 12,
+        .backAnimId = BACK_ANIM_V_STRETCH,
+        .palette = sMonPalette_WooperEien,
+        .shinyPalette = sMonShinyPalette_WooperEien,
+        .iconSprite = gMonIcon_Wooper,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
+        SHADOW(1, -2, SHADOW_SIZE_S)
+        FOOTPRINT(Wooper)
+        OVERWORLD(
+            sPicTable_Wooper,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Wooper,
+            gShinyOverworldPalette_Wooper
+        )
+        .levelUpLearnset = sWooperEienLevelUpLearnset,
+        .teachableLearnset = sWooperTeachableLearnset,
+        .eggMoveLearnset = sWooperEggMoveLearnset,
+        .formSpeciesIdTable = sWooperFormSpeciesIdTable,
+        // Evolves at Lv 20+ only in the mine tunnel (variants.md): an IF_IN_MAP entry for
+        // MAP_EIEN_ROUTE3_CAVE. TODO: add it once the map exists (Porymap); until then it doesn't
+        // evolve, and the journal notes it.
+    },
+
+    [SPECIES_QUAGSIRE_EIEN] =
+    {
+        .baseHP        = 95,
+        .baseAttack    = 85,
+        .baseDefense   = 95,
+        .baseSpeed     = 25,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_GROUND, TYPE_STEEL),
+        .catchRate = 90,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 151 : 137,
+        .evYield_HP = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
+        .abilities = { ABILITY_STURDY, ABILITY_HEAVY_METAL, ABILITY_UNAWARE },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Quagsire"),
+        .cryId = CRY_QUAGSIRE,
+        .natDexNum = NATIONAL_DEX_QUAGSIRE,
+        // TODO(design): category, size and dex entry (placeholders, like the other Eien forms' drafts).
+        .categoryName = _("Ore Fish"),
+        .height = 14,
+        .weight = 750,
+        .description = COMPOUND_STRING(
+            "Its body is smooth and dark, like a\n"
+            "polished iron kettle. It sits in the\n"
+            "mine's pools for days with its mouth\n"
+            "open, as calm as ever."),
+        .pokemonScale = 256,
+        .pokemonOffset = 4,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        // The vanilla sprites in ore palettes until its own art is picked (variants.md)
+        .frontPic = gMonFrontPic_Quagsire,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 7 : 5,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 32),
+            ANIMCMD_FRAME(0, 20),
+        ),
+        .frontAnimId = ANIM_H_STRETCH,
+        .backPic = gMonBackPic_Quagsire,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 5,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = sMonPalette_QuagsireEien,
+        .shinyPalette = sMonShinyPalette_QuagsireEien,
+        .iconSprite = gMonIcon_Quagsire,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 8, SHADOW_SIZE_M)
+        FOOTPRINT(Quagsire)
+        OVERWORLD(
+            sPicTable_Quagsire,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Quagsire,
+            gShinyOverworldPalette_Quagsire
+        )
+        .levelUpLearnset = sQuagsireEienLevelUpLearnset,
+        .teachableLearnset = sQuagsireTeachableLearnset,
+        .formSpeciesIdTable = sQuagsireFormSpeciesIdTable,
+    },
+#endif //P_FAMILY_WOOPER

@@ -364,6 +364,9 @@ void UpdateJournalNotes(void)
         if (GetMonData(mon, MON_DATA_SPECIES_OR_EGG) == SPECIES_POOCHYENA_EIEN
          && GetMonData(mon, MON_DATA_LEVEL) >= EIEN_POOCHYENA_EVO_LEVEL)
             FlagSet(FLAG_JOURNAL_POOCHYENA_NO_EVO);
+        if (GetMonData(mon, MON_DATA_SPECIES_OR_EGG) == SPECIES_WOOPER_EIEN
+         && GetMonData(mon, MON_DATA_LEVEL) >= EIEN_WOOPER_EVO_LEVEL)
+            FlagSet(FLAG_JOURNAL_WOOPER_NO_EVO);
     }
 }
 

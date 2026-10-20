@@ -65,7 +65,7 @@
 #define FLAG_BEAT_AKIRA_YUNOTAKI        0x2B // Eien: Akira's battle by Yunotaki's gym door
 #define FLAG_MET_REN_YUNOTAKI           0x2C // Eien: Ren passed him at Yunotaki's gym door
 #define FLAG_RECEIVED_PROFESSOR_ALTARIA 0x2D // Eien: Haru gives his mother's Altaria; flying from the Town Map (OW_FLAG_POKE_RIDER)
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
+#define FLAG_JOURNAL_WOOPER_NO_EVO 0x2E // Eien: the journal noted an Eien Wooper at Lv 20+ that didn't evolve
 #define FLAG_UNUSED_0x02F    0x2F // Unused Flag
 #define FLAG_UNUSED_0x030    0x30 // Unused Flag
 #define FLAG_UNUSED_0x031    0x31 // Unused Flag
