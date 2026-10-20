@@ -40,6 +40,17 @@ Working notes. Decisions move into `story-outline.md`, `progression.md`, `charac
   never do).
 - **Route 7 (r1 6a):** up into the highlands: a plateau of moor and wind, the station's domes on the
   skyline, the aurora visible by day.
+- **The head scientist (r2 1a):** an older woman, an astronomer: precise and tired, decades of
+  aurora readings. She hid it because panic would have killed more people than the fading.
+- **Her team (r2 2a):** Solrock, Lunatone and a Xatu ace (in the games Xatu watches the sun and is
+  said to see past and future). Lv 42-45.
+- **The gym (r2 3a):** Mossdeep's gym layout (the vanilla Psychic gym: spin tiles, switches).
+- **Badge and TM (r2 4a):** the Aurora Badge, TM29 Psychic.
+- **The order (r2 5b):** records first: Ren gets him into the archive before the gym; he challenges
+  her knowing what she hid, and she answers for it afterwards.
+- **Beat 6 (r2 6d):** after the lab disaster, the professor's last research (found with Haru, his
+  step 3) says plainly why Palkia brought him; Celebi shows him a glimpse of the ended world it came
+  from.
 
 ## Leaning
 
