@@ -3589,6 +3589,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sQuagsireLevelUpLearnset,
         .teachableLearnset = sQuagsireTeachableLearnset,
+        .formSpeciesIdTable = sQuagsireFormSpeciesIdTable, // Eien: eien_forms_data.h
     },
 
 #if P_PALDEAN_FORMS

@@ -173,24 +173,33 @@ the middle stages don't evolve further yet.
 
 Decided in [brainstorm-eien-hoothoot.md](brainstorm-eien-hoothoot.md).
 
-- **Eien Wooper** (designed, not built): 55 / 45 / 55 / 15 / 35 / 5 (55 / 45 / 45 / 25 / 25 /
+- **Eien Wooper** (built, without its evolution: see below): 55 / 45 / 55 / 15 / 35 / 5 (55 / 45 / 45 / 25 / 25 /
   15), 210: balanced bulk. Abilities Sturdy / Heavy Metal / Unaware (hidden). New moves:
   Mud-Slap (1, replacing Water Gun), Metal Claw (16, replacing Slam); Mud Shot (8) as vanilla;
   otherwise vanilla. Against Akari: Lanturn's Water hits it 2x, Ice Fang is neutral, Flash
   Cannon is resisted.
 - **Evolves** into Eien Quagsire by leveling up to 20+ in the mine tunnel only
-  (`MAP_EIEN_ROUTE3_CAVE`, an `IF_IN_MAP` entry). The journal notes one that reaches Lv 20
-  outside the tunnel, like Eien Poochyena's note (its own flag). A Survey member at the tunnel
+  (`MAP_EIEN_ROUTE3_CAVE`, an `IF_IN_MAP` entry). `TODO`: the entry is added once the map exists
+  (Porymap); until then Eien Wooper doesn't evolve. The journal notes one that reaches Lv 20
+  outside the tunnel, like Eien Poochyena's note (`FLAG_JOURNAL_WOOPER_NO_EVO`). A Survey member at the tunnel
   says they found them "in the old seams" when they cleared it: a hint at the rule, and at
   what the Survey digs for (`TODO(design)`: that payoff).
 - **Eien Quagsire:** 95 / 85 / 95 / 55 / 75 / 25 (95 / 85 / 85 / 65 / 65 / 35), 430: the same
   shift. Same abilities. Learns Iron Head on evolving. Look: smooth polished metal, like a Nanbu
   *tetsubin* (the cast-iron kettle of Iwate's ironware craft), with Quagsire's goofy face kept.
-- **Research:** seen / battled / caught, like the others.
+- **Research:** seen / battled / caught, like the others (`QUEST_RESEARCH_WOOPER`; tiers are
+  tracked from the start). `TODO(design)`: who asks for it (its journal mission), and the tier
+  lines (drafts in `src/data/eien_journal.h`).
 - **Shiny:** gold ore, a gleaming gold crust instead of iron and copper; Eien Quagsire a gilded
   kettle.
-- **Sprites:** AI drafts through `tools/eien_species/`. `TODO(design)`: both dex entries
-  (drafted at build time).
+- **Sprites:** AI drafts through `tools/eien_species/` (not yet made). For now both reuse the
+  vanilla sprites in placeholder palettes (`placeholder_palettes.py`): iron grey with a copper
+  warmth, gold for the shinies. The icons are vanilla. `TODO(design)`: both dex entries,
+  categories ("Ore Fish" is a placeholder) and sizes (vanilla's for now; drafts in
+  `eien_families.h`).
+- **Built:** `SPECIES_WOOPER_EIEN` / `SPECIES_QUAGSIRE_EIEN` (`eien_families.h`, learnsets and
+  palettes in `eien_forms_data.h`); tests in `test/eien_journal.c` and
+  `test/battle/eien_research.c`.
 
 Decided in [brainstorm-eien-wooper.md](brainstorm-eien-wooper.md).
 

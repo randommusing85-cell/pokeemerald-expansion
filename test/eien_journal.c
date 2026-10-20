@@ -87,3 +87,46 @@ TEST("(Eien species) the Eien middle stages keep their Eien typing")
     EXPECT_EQ(GetSpeciesType(species, 0), type1);
     EXPECT_EQ(GetSpeciesType(species, 1), type2);
 }
+
+TEST("(Eien journal) the Wooper note needs an Eien Wooper at Lv 20+ in the party")
+{
+    u32 species, level;
+
+    PARAMETRIZE { species = SPECIES_WOOPER_EIEN; level = 19; }
+    PARAMETRIZE { species = SPECIES_WOOPER_EIEN; level = 20; }
+    PARAMETRIZE { species = SPECIES_WOOPER;      level = 30; }
+
+    ZeroPlayerPartyMons();
+    FlagClear(FLAG_JOURNAL_WOOPER_NO_EVO);
+    VarSet(VAR_TEMP_0, species);
+    VarSet(VAR_TEMP_1, level);
+    RUN_OVERWORLD_SCRIPT(givemon VAR_TEMP_0, VAR_TEMP_1;);
+    UpdateJournalNotes();
+    EXPECT_EQ(FlagGet(FLAG_JOURNAL_WOOPER_NO_EVO), species == SPECIES_WOOPER_EIEN && level >= 20);
+}
+
+// Eien Wooper evolves only in the Route 3 mine tunnel, which isn't built yet (design/variants.md).
+TEST("(Eien species) Eien Wooper doesn't evolve outside the mine tunnel")
+{
+    u32 map;
+    struct Pokemon mon;
+
+    PARAMETRIZE { map = MAP_EIEN_ROUTE2; }
+    PARAMETRIZE { map = MAP_YUNOTAKI; }
+
+    gSaveBlock1Ptr->location.mapGroup = MAP_GROUP(map);
+    gSaveBlock1Ptr->location.mapNum = MAP_NUM(map);
+    CreateMon(&mon, SPECIES_WOOPER_EIEN, 30, 0, OTID_STRUCT_PRESET(0));
+    EXPECT_EQ(GetEvolutionTargetSpecies(&mon, EVO_MODE_NORMAL, ITEM_NONE, NULL, NULL, CHECK_EVO), SPECIES_NONE);
+}
+
+TEST("(Eien species) Eien Wooper and Quagsire are Ground/Steel")
+{
+    u32 species;
+
+    PARAMETRIZE { species = SPECIES_WOOPER_EIEN; }
+    PARAMETRIZE { species = SPECIES_QUAGSIRE_EIEN; }
+
+    EXPECT_EQ(GetSpeciesType(species, 0), TYPE_GROUND);
+    EXPECT_EQ(GetSpeciesType(species, 1), TYPE_STEEL);
+}
