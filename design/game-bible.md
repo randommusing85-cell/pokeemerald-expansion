@@ -24,8 +24,8 @@ other side, loses people he loves, and saves the world at the cost of his memori
   north-east (Uminari on the strait, Kawara, the caldera lake, Tobira-yama, Tokiwa Hall). A line
   from Hanashiro to Hoshimi closes the ring, travelled only by Kumo. Two surf spots: an islet off
   Hamakaze and a sea cave by Isaribi (content `TODO(design)`). Nine routes so far.
-- **The Town Map** shows this map, titled "EIEN" (`TODO`: build: a scripted placeholder in the region
-  map's own tiles first, AI art later).
+- **The Town Map** shows this map, titled "EIEN": built as a scripted placeholder
+  (`tools/eien_region_map/make_map.py`, shots in `art/region_map/`); AI art later.
 - **Look and feel:** cold and sparse, long winters, aurora skies. Must feel distinct from
   Sinnoh (which is Hokkaido-based and Palkia's home region). Needs a community snow tileset
   (the engine has none).

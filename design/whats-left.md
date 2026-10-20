@@ -54,7 +54,7 @@ Open gaps found while building Shimotsuki:
   look (named: the Eien Survey, true name Tokoyo); Tetsu's and Ren's placement.
 - **Progression:** gym leaders 2-8, the level curve past gym 1, badge gates, field moves
   without HMs (`progression.md`).
-- **Region map:** designed (brainstorm-region-map.md, game-bible.md); to build: the scripted placeholder Town Map, fly spots in their real cells, "EIEN" on screen.
+- **Region map:** the placeholder Town Map is built (`tools/eien_region_map/`, "EIEN" on screen, fly spots in their real cells). Still to do: AI art; sections for each new town as it's built.
 - **Species:** the evolved starters, Eien Hoothoot and Eien Wooper are designed (`variants.md`), not built; Trubbish's Fresh Water split is planned (its new Pokémon needs a brainstorm); more Eien variants (5-10 total planned);
   Eien Mightyena's dex entry.
 - **Quests:** point thresholds, the letter trigger rule, remaining chains' details

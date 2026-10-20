@@ -82,12 +82,12 @@ All levels are proposed defaults; adjust after playtesting.
   `FLAG_UNUSED_0x881`-`0x883`, set by each town's map script; new towns need one each, plus a
   `GetMapsecType` case and a `sMapHealLocations` entry in `src/region_map.c`). Altaria sits in
   the lab (`LOCALID_LAB_ALTARIA`, hidden once given). The gift scene isn't built (the lab
-  disaster brainstorm); the debug menu's Script 4 sets the flag. **Placeholder map:** the Town
-  Map is still Hoenn's art, so Eien's places borrow Hoenn squares (Hamakaze on Littleroot's,
-  Route 1 on Route 101's, Shimotsuki on Oldale's, Lake Usurai on Route 103's, Yunotaki on
-  Lavaridge's; `src/data/region_map/region_map_layout.h` and the sections' x/y) until the Eien
-  region map is built (designed in [brainstorm-region-map.md](brainstorm-region-map.md): Hamakaze moves
-  to (3,13), Shimotsuki to (3,10), Yunotaki to (3,4); the title and "{REGION}" become EIEN).
+  disaster brainstorm); the debug menu's Script 4 sets the flag. **The Town Map** is the Eien region map (designed in
+  [brainstorm-region-map.md](brainstorm-region-map.md)): a scripted placeholder drawn by
+  `tools/eien_region_map/make_map.py` (snow land, grey peaks, road bands, the vanilla town dots;
+  shots in `art/region_map/`), titled "EIEN". Hamakaze is at (3,13), Shimotsuki (3,10), Yunotaki
+  (3,4); a new town needs its cell in the script's `EIEN_SECTIONS` (then rerun it), a visited flag,
+  a `GetMapsecType` case and a `sMapHealLocations` entry. AI art later.
 - `TODO(design)`: other key items.
 - **TMs are reusable.**
 - **DexNav** is on, for searching and chaining wild Pokémon.

@@ -1,7 +1,8 @@
 # Brainstorm: the Eien region map
 
 Working notes. Decisions move into `game-bible.md` (The region) and `progression.md`, and the
-built map into `src/data/region_map/`, when settled; this file stays as the record. **Promoted** into
+built map into `src/data/region_map/`, when settled; this file stays as the record. **Built** as a placeholder
+(`tools/eien_region_map/make_map.py`; shots in `art/region_map/`). **Promoted** into
 `game-bible.md`, `progression.md`, `story-outline.md`, `locations/isaribi.md`, `route-3.md` and
 `whats-left.md`.
 
