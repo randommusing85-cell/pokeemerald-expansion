@@ -36,7 +36,8 @@ Act 3 beats 3-4 in [story-outline.md](../story-outline.md).
 3. **Nami, on the road out:** she knew he'd find out and came to tell him herself that she chooses
    her world over his. `TODO(design)`: the scene, her lines.
 4. **Haru's letter** calls him home: his mother is close to a breakthrough. A scene takes him to
-   Hamakaze ([hamakaze.md](hamakaze.md)).
+   Hamakaze ([hamakaze.md](hamakaze.md)). After her death Haru gives him her Altaria: fast travel
+   from then on.
 
 ## NPCs and events
 

@@ -53,12 +53,20 @@ All levels are proposed defaults; adjust after playtesting.
 - **Town Map:** its own key item, Haru's first quest reward.
 - **Vs. Seeker** for trainer rematches (`I_VS_SEEKER_CHARGING`).
 - No contests or ribbons.
-- `TODO(design)`: field moves and other key items.
-- **Field moves without HMs:** `TODO(design)`: which key item or Pokémon does them.
-- **Fast travel:** unlocks in Act 3 after the professor's death: Haru gives it (a rail pass, or a
-  Pokémon that can now Fly him; `TODO(design)`: its own brainstorm, with field moves). Until then
-  story scenes move him (the funeral takes him from Hanashiro to Shimotsuki; Haru's letter from
-  Hoshimi to Hamakaze).
+- **Field moves: no HMs** (decided in [brainstorm-fast-travel.md](brainstorm-fast-travel.md)). The only field ability is **Surf**: any
+  Water-type in the party lets him surf (no move needed; the vanilla surf blob sprite; Celebi
+  follows over water). It unlocks after gym 3: Akari tells him ("Got a Water-type? Then you've
+  got a boat."), and the journal records it. No Cut, Strength, Rock Smash, Waterfall, Dive or
+  Flash: the world is gated by story and scenes. Tetsu's **climbing gear** (a key item, his
+  step 2) opens shortcuts near the door mountain, never gates. Built as a small engine change
+  where the field checks for a Surf user (`TODO`: build).
+- **Fast travel:** in Act 3, after the professor's death, Haru gives him his mother's **Altaria**,
+  which carries him: he flies from the Town Map with R to any town whose Pokémon Center he has
+  visited (the engine's `OW_FLAG_POKE_RIDER`, set to a renamed spare flag; not from caves or
+  indoors). Altaria takes no party slot; Celebi comes along. No fast travel before then: story
+  scenes move him (the funeral takes him from Hanashiro to Shimotsuki; Haru's letter from
+  Hoshimi to Hamakaze). `TODO(design)`: Altaria's name (a nickname of the professor's, or none).
+- `TODO(design)`: other key items.
 - **TMs are reusable.**
 - **DexNav** is on, for searching and chaining wild Pokémon.
 

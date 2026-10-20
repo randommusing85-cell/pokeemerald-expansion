@@ -1,7 +1,9 @@
 # Brainstorm: fast travel and field moves
 
 Working notes. Decisions move into `progression.md`, `game-bible.md` (Mechanics) and the location
-docs when settled; this file stays as the record.
+docs when settled; this file stays as the record. **Promoted** into `progression.md`, `game-bible.md`,
+`story-outline.md`, `locations/shimotsuki.md`, `hamakaze.md`, `isaribi.md`, `hoshimi.md` and
+`whats-left.md`.
 
 ## Givens (from the docs and the engine)
 

@@ -30,7 +30,8 @@ Act 1 beat 8 in [story-outline.md](../story-outline.md).
   lamps. Practical, loud, well loved: the first leader with a big, warm personality. The gym
   reuses Mauville's switch-and-barrier puzzle, read as lamps switching on. Winning gives the
   Lantern Badge (after chōchin, 提灯, paper lanterns, a nod to the Torchic line) and TM34 Shock
-  Wave.
+  Wave. Then she tells him about surfing: "Got a Water-type? Then you've got a boat." From here
+  any Water-type in the party lets him surf ([progression.md](../progression.md)).
 - **Akira** watches from the gym's stands; no battle. One line afterwards about the tournament
   (`TODO(design)`: the line). His evolved starter first shows at the tournament.
 - **Nami** battles him on the pier after gym 3, her Lapras in the water behind her. Her optional

@@ -54,7 +54,7 @@ happens.
 | 3 | Route 7, then Hoshimi ([hoshimi.md](locations/hoshimi.md)), the League's research station | Up onto the highland plateau. Ren, who has just quit, gets him into the station's archive: the cycle and the League's cover-up from the League's side, and Tokoyo's plan to drain other worlds, his own included. Gym 6: Tsukiko (Psychic), the astronomer who hid it; he challenges her knowing; she's opening the records now because the fading is speeding up. The Aurora Badge. Decided in [brainstorm-gym-6.md](brainstorm-gym-6.md). | `TODO` |
 | 4 | The road out of Hoshimi | Nami knew he'd find out and comes to tell him herself that she chooses her world over his. Then Haru's letter calls him home: his mother is close to a breakthrough. | `TODO` |
 | 5 | Kashiwagi's lab, Hamakaze | A scene takes him home. The professor dies in a lab disaster while he's there, leaving the research that explains the cycle (`TODO(design)`: the disaster, its own brainstorm). | `TODO` |
-| 6 | Kashiwagi's lab, then Shimotsuki | Her last research, found with Haru (his step 3), says plainly why Palkia brought him; Celebi shows him a glimpse of the ended world it came from. Haru gives him fast travel (`TODO(design)`: how). In Shimotsuki: Akira at Fuyumi's grave (optional, his step 3), then Kaede's first aurora night (her step 2). | `TODO` |
+| 6 | Kashiwagi's lab, then Shimotsuki | Her last research, found with Haru (his step 3), says plainly why Palkia brought him; Celebi shows him a glimpse of the ended world it came from. Haru gives him his mother's Altaria, which flies him from the Town Map (fast travel). In Shimotsuki: Akira at Fuyumi's grave (optional, his step 3), then Kaede's first aurora night (her step 2). | `TODO` |
 
 ## Act 4: The League and the end
 
