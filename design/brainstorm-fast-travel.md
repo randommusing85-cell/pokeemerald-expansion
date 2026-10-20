@@ -35,6 +35,29 @@ docs when settled; this file stays as the record.
 - **Shimotsuki's east exit (r1 5b):** a League checkpoint ("closed for thinning danger"), lifted
   when the guards are pulled away after the tournament.
 - **No fast travel before Act 3 (r1 6a).**
+- **The professor's Pokémon (r2 1a):** Altaria: soft cloud wings, gentle and calm, at home in snow
+  country; carries him like a cloud.
+- **Surf rule (r2 2a):** any Water-type in the party.
+- **Learning it (r2 3a):** Akari tells him after gym 3 ("Got a Water-type? Then you've got a
+  boat."), plus a journal entry.
+- **Altaria before Act 3 (r2 4a):** in the professor's lab from Act 1 (on a beam or by the window);
+  you can talk to it.
+- **Sprite (r2 5a):** the vanilla surf blob.
+- **Celebi (r2 6a):** comes along over water and after a flight (the follower NPC's water
+  permission is already set).
+
+## Defaults (not asked; change any)
+
+- **Flight destinations:** the vanilla rule: towns whose Pokémon Center (heal location) he has
+  visited, from the Town Map with R. Not from caves or indoors.
+- **Build shape:** set `OW_FLAG_POKE_RIDER` to a renamed spare flag (set when Haru gives Altaria);
+  surfing by type is a small change where the field checks for a Surf user (party has a
+  Water-type instead of a Pokémon knowing Surf), keeping the vanilla surf animation and blob.
+  Surf prompts name the Water-type. Diving, Waterfall and the other HMs stay unused.
+- **The checkpoint:** one League guard at Shimotsuki's east exit until the tournament
+  (`TODO(design)`: lines; the flag that lifts it).
+- **Altaria's name:** `TODO(design)` (a nickname of the professor's, or none), with the lab
+  disaster brainstorm.
 
 ## Leaning
 
