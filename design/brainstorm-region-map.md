@@ -26,6 +26,20 @@ built map into `src/data/region_map/`, when settled; this file stays as the reco
 
 ## Decided
 
+- **Shape (r1 1b):** two bands going east (north: Yunotaki → Isaribi → Hanashiro; south: Shimotsuki →
+  Kanaya → Minori → Hoshimi) with the peninsula to the north-east, closed into a ring around a
+  central range of mountains by a road from Hanashiro down to Hoshimi's plateau, opened late.
+- **Compass (r1 2a):** Eien's compass is its own: Isaribi's sea is "the northern sea" (or a bay);
+  the docs drop "Sea of Japan". Inspired by Aomori, not a copy.
+- **Hamakaze (r1 3b):** the south-west corner, sea on two sides: the game starts in a corner and
+  works outward; the beach where he woke has a wide sea view.
+- **The peninsula (r1 4a):** axe-shaped, north-east, like Shimokita: Uminari on its northern tip by
+  the strait, Kawara inland, the caldera lake beside Tobira-yama, Tokiwa Hall on the far shore.
+- **Art (r1 5a):** a clean placeholder now, drawn by a script from the layout in the region map's
+  own tiles; AI-drafted art later, once the layout is proven in game.
+- **Optional places (r1 6a):** two small surf-only spots (an island off Hamakaze, a sea cave by
+  Isaribi); their content `TODO(design)`.
+
 ## Leaning
 
 ## Open questions
