@@ -31,6 +31,21 @@ Working notes. Decisions move into `story-outline.md`, `characters.md`, `side-qu
 
 ## Decided
 
+- **The plan starts (r1 1a):** the door opens: a thinning spreads from the mountain across the
+  caldera into the League mid-run; the screen drains, the battle hall goes grey, the Elite Four stop.
+  (Akira can still arrive in it.)
+- **The Elite Four (r1 2b):** three new members, and Ibuki as the fourth: he returns to the League
+  he walked away from because it needs him now. The other three kept simple.
+- **When the run breaks (r1 3b):** after the fourth, at Seiji's door: the Champion's battle becomes
+  his confession. He never becomes Champion.
+- **Nami (r1 4a):** on the mountain, on Minato's side: their last battle on the way up. She never
+  changes her mind; after the battle she's still there.
+- **The final battles (r1 5b):** in a row: the hero against Akira one on one (the rival's ending),
+  then the hero and Seiji against Minato (the Champion's turn). Haru and Yuki are there (holding
+  Tokoyo's people back; r2).
+- **Celebi (r1 6a):** Minato's machine fires to pull the hero (an outsider, the bridge between
+  worlds) through the door, and Celebi takes it. Plain, physical, no speech.
+
 ## Leaning
 
 ## Open questions
