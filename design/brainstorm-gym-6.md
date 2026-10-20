@@ -26,6 +26,21 @@ Working notes. Decisions move into `story-outline.md`, `progression.md`, `charac
 
 ## Decided
 
+- **Gym 6 (r1 1a):** Psychic, at a League research station: an observatory where the League's
+  scientists study the aurora and the fading. Where the truth is kept, and where beat 3 happens.
+- **How he learns the truth (r1 2a):** Ren, who has just quit, gets him into the League's records
+  (Ren's step 2). They read it together: the cycle and its cover-up from the League's side, and
+  Tokoyo's plan as the League understands it.
+- **Nami's choice (r1 3b):** on the road just after the reveal: she knew he'd find out and came to
+  say it herself.
+- **The professor (r1 4a):** Haru's letter calls him home (she's close to a breakthrough); a scene
+  takes him to Hamakaze; the lab disaster happens while he's there.
+- **Gym 6's leader (r1 5c):** the station's head scientist: hid the truth for years and now opens
+  the records because the fading is speeding up. Someone who changes their mind (the villains
+  never do).
+- **Route 7 (r1 6a):** up into the highlands: a plateau of moor and wind, the station's domes on the
+  skyline, the aurora visible by day.
+
 ## Leaning
 
 ## Open questions
