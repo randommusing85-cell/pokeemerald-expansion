@@ -84,7 +84,7 @@ The map bookends the chain: the first quest starts it, the last one gives it bac
 | 1 (M1) | Act 1, Shimotsuki, after gym 1 | A practice battle at the town's north edge on his way out (only if you talk to him; his starter Lv 14, Starly Lv 11), then Akira talks about watching League matches with his mum (sets up his turn). | The answer about the League | Battle item | Closes at the tournament |
 | 2 | Act 2, the tournament's day 1 ([hanashiro.md](locations/hanashiro.md)) | Training together in the castle grounds; Fuyumi watches (overlaps her chain). | The answer when Akira doubts himself | none | Closes at the tournament |
 | 3 | Act 3, Shimotsuki, at Fuyumi's grave, on the trip home after the professor's death | Optional meeting on the other side. He explains why; no fight unless the player wants one. | The answer (agree he was failed / ask him to come back / just listen) | none | Closes at the League |
-| 4 | Act 4, before the League | A second meeting. He gives something of his mother's. | The answer | **Keepsake:** `TODO(design)`: an object of Fuyumi's | Closes at the League |
+| 4 | Act 4, before the League (with a last word at Fuyumi's grave on the goodbye night) | A second meeting. He gives something of his mother's. | The answer | **Keepsake:** `TODO(design)`: an object of Fuyumi's | Closes at the League |
 
 ### Fuyumi (Act 1 to the tournament; missable)
 

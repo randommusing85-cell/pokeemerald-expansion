@@ -1,7 +1,9 @@
 # Brainstorm: Act 4 (the League and the end)
 
 Working notes. Decisions move into `story-outline.md`, `characters.md`, `side-quests.md`,
-`progression.md` and new location docs when settled; this file stays as the record.
+`progression.md` and new location docs when settled; this file stays as the record. **Promoted** into `story-outline.md`, `characters.md`,
+`side-quests.md`, `progression.md`, `game-bible.md`, `locations/tokiwa-hall.md`, `tobira-yama.md`
+and `whats-left.md`.
 
 ## Givens (from the docs)
 

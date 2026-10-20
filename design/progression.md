@@ -4,7 +4,7 @@
 
 Our world (prologue) → Hamakaze → Route 1 → Shimotsuki (gym 1) → Lake Usurai → Route 2 (the
 mountain pass) → Yunotaki (gym 2) → Route 3 (the gorge) → Isaribi (gym 3, Electric) → Route 4 (the rice plain) → Hanashiro (gym 4, Grass) → the tournament (Hanashiro's castle grounds) → Shimotsuki (the funeral) → Route 5 (the beech forest) → Kanaya (gym 5, Fire) → Route 6 → Minori (Yuki's village) → Route 7 (the plateau) → Hoshimi (gym 6, Psychic) → Hamakaze (the lab) → Shimotsuki (fast travel from here) → Route 8 → Uminari (gym 7, Water) → Route 9 → Kawara (gym 8, Ghost) →
-gyms 5-8 → Pokémon League (Minato's plan interrupts the Elite Four) → door mountain.
+gyms 5-8 → Tokiwa Hall, the League (the door opens after the fourth Elite Four member) → Tobira-yama, the door mountain → the goodbye night across Eien → home.
 
 ## Badges and gates
 
@@ -43,6 +43,8 @@ Every gate is enforced by a flag or var; list it in the location doc that checks
 | Gym 7 | | 47-49 | 50 (Kingdra) |
 | Route 9 | 48-51 | 50-52 | |
 | Gym 8 | | 51-53 | 55 (Chandelure) |
+| Tokiwa Hall (Elite Four) | | 56-60 (Ibuki's ace 60) | |
+| Tobira-yama | | Kaede's tag foes 58, Nami 60, Akira 61, Minato 63 (with Seiji beside him) | |
 
 All levels are proposed defaults; adjust after playtesting.
 

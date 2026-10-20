@@ -11,7 +11,9 @@ other side, loses people he loves, and saves the world at the cost of his memori
 - **Name:** Eien (永遠, "eternity").
 - **Inspiration:** northern Honshu's Sea of Japan coast (Tohoku, Aomori).
 - **Geography:** snow country and coast: fishing towns (e.g. Hamakaze), snowy inland towns
-  (e.g. Shimotsuki), old shrines, and a volcanic mountain
+  (e.g. Shimotsuki), old shrines, and a volcanic mountain, Tobira-yama (扉山, "door mountain", an
+  old name whose meaning people have forgotten), with the League, Tokiwa Hall (常盤, "evergreen,
+  unchanging"), on its caldera lake,
   where the worlds are thin (modeled on Osorezan). `TODO(design)`: map layout, route count.
 - **Look and feel:** cold and sparse, long winters, aurora skies. Must feel distinct from
   Sinnoh (which is Hokkaido-based and Palkia's home region). Needs a community snow tileset

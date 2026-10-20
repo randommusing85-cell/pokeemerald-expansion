@@ -62,11 +62,11 @@ happens.
 
 | # | Where | What happens | Sets (flag/var) |
 | --- | --- | --- | --- |
-| 1 | Pokémon League | Partway through the Elite Four, Minato's plan starts. | `TODO` |
-| 2 | League | Seiji admits the cover-up and joins him. | `TODO` |
-| 3 | Door mountain | On the way up, Kaede fights beside him in a tag battle against two of Minato's people (Tetsu and Ren hold off others if their points are high). With Seiji, Haru and Yuki he fights Minato and Akira. Celebi dies protecting him. | `TODO` |
-| 4 | Door mountain | He helps the cycle finish safely; Arceus renews. The journal's pages go blank. Kaede sees it: the tale she has always told, happening. | `TODO` |
-| 5 | `TODO(design)` | He says goodbye to his friends. Palkia sends him home. | `TODO` |
+| 1 | Tokiwa Hall, the League ([tokiwa-hall.md](locations/tokiwa-hall.md)), on the caldera lake beside Tobira-yama | The Bell Badge opens it. Three new Elite Four (Dark, Steel, Dragon), then Ibuki, back at the League he walked away from because it needs him now. Then the door opens: a thinning spreads from the mountain across the caldera into the hall; the screen drains, the hall goes grey, the Elite Four stop. The Dragon member holds the hall so he can go. Decided in [brainstorm-act-4.md](brainstorm-act-4.md). | `TODO` |
+| 2 | Tokiwa Hall, Seiji's room | At Seiji's door the Champion's battle becomes his confession: he ordered the cover-up. He joins him. He never becomes Champion. | `TODO` |
+| 3 | Tobira-yama, the door mountain ([tobira-yama.md](locations/tobira-yama.md)) | The caldera lake path → Kaede fights beside him in a tag battle against two Tokoyo members at the riverbed of souls → Tetsu's path and Ren holding the side trail (if their points are high) → Nami's last battle near the summit, on Minato's side; she never changes her mind. Haru and Yuki go up with Seiji. | `TODO` |
+| 4 | Tobira-yama, the summit | Akira, one on one (the rival's ending; with high points he steps aside afterwards and stays out of it). Then he and Seiji fight Minato. Minato's machine fires to pull him (an outsider, the bridge between worlds) through the door, and Celebi takes it and dies: plain, physical, no speech. Minato walks away, unrepentant, in silence. Palkia appears at the door: he walks into the light, the cycle finishes through him, Arceus renews (the colour coming back), his memories start to go. Palkia gives him until dawn. | `TODO` |
+| 5 | Across Eien, at night, then the door at dawn | Under the renewed world's first aurora Kumo flies him to each friend in turn: Haru and Makoto (Hamakaze), Yuki (Minori), Kaede and Chiyo (Shimotsuki), Akira at Fuyumi's grave (his line depends on his points), Tetsu and Ren (Kawara), and Nami last, at Lake Usurai where they met: she lends him Lapras to cross one last time. At first light he steps into the door's light; the journal's pages go blank; Kaede sees the tale she has always told happen. Palkia sends him home. |
 
 ## Ending
 

@@ -27,7 +27,9 @@ Claude at the user's request; change freely.
   names him the winner the same day (his semi-final finished), which feels hollow. The League plays her
   death down, and a few towns later Akira decides the "good" side can't protect anyone and
   joins Minato openly: at the end of Route 5 he waits to say goodbye properly, asks the hero not
-  to follow, and battles him one last time on his side of the map. He fights against the hero at the end.
+  to follow, and battles him one last time on his side of the map. At Tobira-yama's summit they
+  battle one on one (his full team, Lv 61); with high points he steps aside afterwards and stays
+  out of the fight with Minato. On the goodbye night, a last word at Fuyumi's grave. He fights against the hero at the end.
 - **Team:** takes the starter strong against the player's (see [variants.md](variants.md)).
 - **Battles:** first battle at Kashiwagi's lab right after picking starters. Meets the player
   again in Shimotsuki and shows him his mother's gym. `TODO(design)`: later battles.
@@ -52,7 +54,9 @@ Claude at the user's request; change freely.
   milestone); they battle later.
 - A committed believer in Minato's cause. He learns she's with them at the tournament.
   She knows Minato's plan drains the hero's world and honestly chooses her world over his.
-  She never changes her mind; they choose each other anyway.
+  She never changes her mind; they choose each other anyway. Their last battle is near
+  Tobira-yama's summit, she still on Minato's side; their goodbye is at Lake Usurai, where they
+  met: she lends him Lapras to cross one last time.
 - **Relationship points** add optional warm scenes (the coast, Lapras) and change her lines;
   the core romance scenes always play.
 - Her mentor Hashimoto dies in the tournament disaster.
@@ -153,7 +157,21 @@ Decided in [brainstorm-yuki.md](brainstorm-yuki.md).
 ## Champion
 
 - **Seiji** (man). Ordered the League's cover-up of the cycle. When Minato's plan starts
-  partway through the Elite Four, he admits it and fights beside the hero, Haru and Yuki.
+  (the door opens after the fourth Elite Four member), his Champion's battle becomes his
+  confession; he joins the hero and fights beside him against Minato at the summit (Haru and Yuki
+  go up with them). Afterwards he steps down and answers for the cover-up (`TODO(design)`: his
+  line). The hero never becomes Champion.
+
+## Elite Four (Tokiwa Hall)
+
+Decided in [brainstorm-act-4.md](brainstorm-act-4.md). Names, teams `TODO(design)`.
+
+| # | Type | Who |
+| --- | --- | --- |
+| 1-3 | Dark | A quiet judge-like figure |
+| 1-3 | Steel | An old armour-smith |
+| 1-3 | Dragon | A young woman from the League's founding family; holds the hall when the door opens so he can go |
+| 4 | Fighting | Ibuki (gym 2), back at the League he walked away from because it needs him now |
 
 ## Factions / villains
 
@@ -167,7 +185,9 @@ Decided in [brainstorm-yuki.md](brainstorm-yuki.md).
   through Palkia's door, to sustain Arceus.
 - **Look:** `TODO(design)`. Placeholder: field gear (headlamps, measuring poles, notebooks); they
   look like researchers, which is why nobody finds them suspicious.
-- **Leader:** **Minato** (man). Believes he can stop the cycle. Lives; the final villain. First seen
+- **Leader:** **Minato** (man). Believes he can stop the cycle. Lives; the final villain: at the
+  summit his machine fires to pull the hero through the door and kills Celebi instead; beaten, he
+  walks away, unrepentant, in silence. First seen
   at the tournament, after the disaster: calm, grieving Hashimoto, unapologetic: "We are Tokoyo."
 - **Lieutenant:** **Hashimoto** (older man), Nami's mentor. Dies in the tournament disaster:
   seeing Tokoyo's test is out of control, he joins Fuyumi holding the thinning back, and both die.
