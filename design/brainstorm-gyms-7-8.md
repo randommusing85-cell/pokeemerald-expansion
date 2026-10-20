@@ -48,12 +48,42 @@ Working notes. Decisions move into `story-outline.md`, `progression.md`, `charac
 - **Gym 8's team (r2 5a):** Banette (dolls left at the temple), Dusknoir, and a Chandelure ace
   (lanterns for the dead), Lv 52-55; Petalburg's gym reused (its rooms as the temple's halls).
 - **Gym 8's badge (r2 6a):** the Bell Badge, TM30 Shadow Ball.
+- **The cape port (r3 1a):** Uminari (海鳴り, "the rumble of the sea").
+- **The mountain town (r3 2a):** Kawara (河原, "riverbed"), after Osorezan's riverbed of souls, where
+  stones are stacked for the dead.
+- **The leaders (r3 3a):** gym 7 Ushio (潮, "tide"); gym 8 Tome (留, "to stay": she stays for the
+  dead).
+- **The roads (r3 4a):** Route 8 down from Hoshimi's plateau to Uminari on the coast; Route 9 from
+  Uminari inland (Tetsu's slide) to Kawara.
+- **Tetsu's hut (r3 5b):** at the edge of Kawara, under the mountain: the gate to the climb in
+  Act 4. The slide (his step 1) is on Route 9.
+- **The League (r3 6a):** seen from Kawara: a white building on the far shore of the caldera lake
+  (like Usori lake at Osorezan), the door mountain beside it.
+
+## Defaults (not asked; change any)
+
+- **Order of Act 3's end:** (after Shimotsuki) fast travel back to Hoshimi → Route 8 → Uminari
+  (gym 7, Ushio) → Route 9: the slide, the lost climbers with Tetsu (his step 1) → Kawara: Tetsu's
+  hut (his step 2, the climbing gear) → gym 8 (Tome) → the League in view. Optional any time once
+  he has Kumo: Hanashiro's E5 with Mamoru; Kaede's step 3 in Shimotsuki "before the League".
+- **Levels:** Route 8 wild Lv 44-47, trainers 46-48; gym 7's trainers 47-49; Ushio Sharpedo 48,
+  Wailord 48, Kingdra 50. Route 9 wild Lv 48-51, trainers 50-52; gym 8's trainers 51-53; Tome
+  Banette 52, Dusknoir 53, Chandelure 55.
+- **Gym trainers:** two each: Ushio's tuna-boat crew; Tome's temple attendants.
+- **Maps:** Route 8, Uminari (town, gym on Sootopolis's layout, Pokémon Center), Route 9, Kawara
+  (town, temple, gym on Petalburg's layout, Pokémon Center, Tetsu's hut), made by the user in
+  Porymap.
+- **Lines:** drafted at build time (`TODO(design)`), Ushio's reason and Tome's hint included.
 
 ## Leaning
 
 ## Open questions
 
 ## Gaps and tensions
+
+- Route 8 and 9's trainers and wild Pokémon: a later brainstorm.
+- The League itself (the Elite Four, Seiji, the interruption) and the climb: the Act 4 brainstorm.
+- Uminari and Kawara need FLAG_VISITED_* flags and region-map spots for fast travel when built.
 
 ## Parked ideas
 
