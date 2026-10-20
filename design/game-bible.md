@@ -9,10 +9,23 @@ other side, loses people he loves, and saves the world at the cost of his memori
 ## The region
 
 - **Name:** Eien (永遠, "eternity").
-- **Inspiration:** northern Honshu's Sea of Japan coast (Tohoku, Aomori).
+- **Inspiration:** northern Honshu's snow country and coasts (Tohoku, Aomori). Eien's compass is
+  its own: inspired by Aomori, not a copy of it.
 - **Geography:** snow country and coast: fishing towns (e.g. Hamakaze), snowy inland towns
-  (e.g. Shimotsuki), old shrines, and a volcanic mountain
-  where the worlds are thin (modeled on Osorezan). `TODO(design)`: map layout, route count.
+  (e.g. Shimotsuki), old shrines, and a volcanic mountain where the worlds are thin (modeled on
+  Osorezan): Tobira-yama (扉山, "door mountain", an old name whose meaning people have forgotten),
+  with the League, Tokiwa Hall (常盤, "evergreen, unchanging"), on its caldera lake.
+- **Map:** a ring around a central range of mountains (decided in
+  [brainstorm-region-map.md](brainstorm-region-map.md), with the full sketch and cells). Hamakaze
+  in the south-west corner, sea on two sides; the western column north through Route 1,
+  Shimotsuki, Lake Usurai and the pass to Yunotaki; the northern band along the northern sea
+  (Route 3, Isaribi, the rice plain, Hanashiro); the southern band east from Shimotsuki (Route 5,
+  Kanaya, Route 6, Minori) climbing to Hoshimi on its plateau; the axe-shaped peninsula in the
+  north-east (Uminari on the strait, Kawara, the caldera lake, Tobira-yama, Tokiwa Hall). A line
+  from Hanashiro to Hoshimi closes the ring, travelled only by Kumo. Two surf spots: an islet off
+  Hamakaze and a sea cave by Isaribi (content `TODO(design)`). Nine routes so far.
+- **The Town Map** shows this map, titled "EIEN": built as a scripted placeholder
+  (`tools/eien_region_map/make_map.py`, shots in `art/region_map/`); AI art later.
 - **Look and feel:** cold and sparse, long winters, aurora skies. Must feel distinct from
   Sinnoh (which is Hokkaido-based and Palkia's home region). Needs a community snow tileset
   (the engine has none).
@@ -115,7 +128,9 @@ on what other hacks and fan games do.
   scale. Quests tied to people who die or leave can be missed for good; the epilogue gives
   them back as memories. See [side-quests.md](side-quests.md).
 - **Eien weather and terrain.** Snow on most routes (the engine's snow), an aurora on clear
-  nights, and "thin places" at shrines and the mountain. Decided in
+  nights, and "thin places" at shrines and the mountain (and one under Hamakaze's beach, where
+  Palkia set him down: a story place for the professor's experiment and Celebi's glimpse, not a
+  battle-effect map). Decided in
   [brainstorm-weather-terrain.md](brainstorm-weather-terrain.md):
   - **Thin place:** its own permanent battle effect, not a terrain: Ghost and Psychic moves do
     30% more damage, for both sides. It leaves the terrain slot free, so normal terrains still

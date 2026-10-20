@@ -73,7 +73,7 @@ still open are `TODO(design)`.
 | --- | --- | --- | --- | --- | --- |
 | 1 (M1) | Act 1, Hamakaze (he stops him at the north exit, after the starters) | Haru is drawing a map of Eien for the newcomer and asks him to note three places on Route 1 (the coast, the snowy fields, the shrine). The coast and fields are noted on walking in; the shrine by examining the torii. Teaches the missions tab. | Finishing it; an answer about where he's "really" from | Town Map, which Haru brings him on Route 2's mountain pass ([route-2.md](locations/route-2.md)) | No |
 | 2 | Act 1, before the tournament | Haru feels behind his friends. A training battle, then a tag battle together against two trainers who've been bothering him. | The answer after the loss or win | Battle item | No |
-| 3 | Act 3, Kashiwagi's lab, after the professor dies | Haru is sorting his mother's notes. Help him find her last field notes; they finish a research entry she started. | Staying to help; the answer about grief | **Keepsake:** Haru's map from step 1, finished | No |
+| 3 | Act 3, the day after the professor dies, at her desk in the grey lab (the one spot still in colour) | Haru is sorting his mother's notes. Help him find her last field notes; they finish a research entry she started. He reads her key line aloud; her notes go into the journal. Then he gives the hero Kumo, her Altaria (fast travel). | Staying to help; the answer about grief | **Keepsake:** Haru's map from step 1, finished | No |
 
 The map bookends the chain: the first quest starts it, the last one gives it back.
 
@@ -84,7 +84,7 @@ The map bookends the chain: the first quest starts it, the last one gives it bac
 | 1 (M1) | Act 1, Shimotsuki, after gym 1 | A practice battle at the town's north edge on his way out (only if you talk to him; his starter Lv 14, Starly Lv 11), then Akira talks about watching League matches with his mum (sets up his turn). | The answer about the League | Battle item | Closes at the tournament |
 | 2 | Act 2, the tournament's day 1 ([hanashiro.md](locations/hanashiro.md)) | Training together in the castle grounds; Fuyumi watches (overlaps her chain). | The answer when Akira doubts himself | none | Closes at the tournament |
 | 3 | Act 3, Shimotsuki, at Fuyumi's grave, on the trip home after the professor's death | Optional meeting on the other side. He explains why; no fight unless the player wants one. | The answer (agree he was failed / ask him to come back / just listen) | none | Closes at the League |
-| 4 | Act 4, before the League | A second meeting. He gives something of his mother's. | The answer | **Keepsake:** `TODO(design)`: an object of Fuyumi's | Closes at the League |
+| 4 | Act 4, before the League (with a last word at Fuyumi's grave on the goodbye night) | A second meeting. He gives something of his mother's. | The answer | **Keepsake:** `TODO(design)`: an object of Fuyumi's | Closes at the League |
 
 ### Fuyumi (Act 1 to the tournament; missable)
 
@@ -131,8 +131,8 @@ Keep her scenes friendship: rivals who respect each other, no flirting.
 
 | # | When / where | What happens | Points from | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Act 3, the mountain approach | Climbers are lost in the snow after a small slide (one of the fading's signs). Find them with Tetsu. | Helping | Money | No |
-| 2 | Act 3, his hut | He teaches the old paths. | The answer about why the hero is going up | Climbing gear (field-move key item; shortcut only, never a gate) | No |
+| 1 | Act 3, Route 9 ([route-9.md](locations/route-9.md)), between gyms 7 and 8 | Climbers are lost in the snow after a small slide (one of the fading's signs). Find them with Tetsu. | Helping | Money | No |
+| 2 | Act 3, his hut at the edge of Kawara ([kawara.md](locations/kawara.md)), under the mountain | He teaches the old paths. | The answer about why the hero is going up | Climbing gear (field-move key item; shortcut only, never a gate) | No |
 
 ### Nami (warm scenes, not quests)
 
@@ -151,7 +151,7 @@ Her core scenes are fixed (story outline). Optional warm scenes, earned by her p
 | E2 | Research | Act 1 to 3 | The professor's list: study each Eien variant as they appear. Closes when she dies; Haru's step 3 finishes one entry. | Items per entry | After her death |
 | E3 | Research | Act 3, aurora nights (random after Kaede's step 2) | Night-only research steps (lore notes), including wild Eien Mightyena, which appear only on aurora nights at thin places. | Lore | No |
 | E4 | Disaster | Act 1, Hamakaze | The harbor freezes early; fishermen can't go out. `TODO(design)`: what the hero does. | Money | No |
-| E5 | Disaster | Act 2 or 3, `TODO(design)` | A child goes missing near a thin place. | Battle item | No |
+| E5 | Disaster | Act 3, Hanashiro (optional once he has Kumo) | A child goes missing near a thin place. Mamoru's one Act 3 appearance (`TODO(design)`: the thin place, the scene). | Battle item | No |
 | E6 | Disaster | Act 3, Minori (Yuki's hometown) | Yuki's step 2. | (Yuki's) | No |
 | E7 | Lore | Act 1 to 3 | Kaede's tablets (her step 1). Stored as `QUEST_KAEDE_TABLETS`, one step bit per tablet; reading a tablet sets its bit even before she asks, and the quest shows once she opens it. | (Kaede's) | No |
 | E8 | Lore | Act 1 to 3 | Old people in each town tell a folk tale about earlier cycles; each adds a journal page. Scales with the number of towns. | Lore | No |

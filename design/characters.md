@@ -27,7 +27,9 @@ Claude at the user's request; change freely.
   names him the winner the same day (his semi-final finished), which feels hollow. The League plays her
   death down, and a few towns later Akira decides the "good" side can't protect anyone and
   joins Minato openly: at the end of Route 5 he waits to say goodbye properly, asks the hero not
-  to follow, and battles him one last time on his side of the map. He fights against the hero at the end.
+  to follow, and battles him one last time on his side of the map. At Tobira-yama's summit they
+  battle one on one (his full team, Lv 61); with high points he steps aside afterwards and stays
+  out of the fight with Minato. On the goodbye night, a last word at Fuyumi's grave. He fights against the hero at the end.
 - **Team:** takes the starter strong against the player's (see [variants.md](variants.md)).
 - **Battles:** first battle at Kashiwagi's lab right after picking starters. Meets the player
   again in Shimotsuki and shows him his mother's gym. `TODO(design)`: later battles.
@@ -38,7 +40,11 @@ Claude at the user's request; change freely.
 ## Professor
 
 - **Professor Kashiwagi** (woman). Researches the cycle. Her family takes the hero in.
-- Dies in Act 3 in a lab disaster, leaving the research that explains the cycle.
+- Dies in Act 3 in a lab disaster, leaving the research that explains the cycle: her own
+  experiment on the thin place under Hamakaze's beach opens a thinning in the lab; she sends the
+  hero and Haru out with her notes and her Altaria, **Kumo** (雲, "cloud"), and stays to shut the
+  instruments down. Her notes say why Palkia brought him and how a cycle can end safely. Decided
+  in [brainstorm-lab-disaster.md](brainstorm-lab-disaster.md).
 - Her husband, **Makoto** (誠, "sincerity"), runs the household.
 
 ## Love interest
@@ -48,7 +54,9 @@ Claude at the user's request; change freely.
   milestone); they battle later.
 - A committed believer in Minato's cause. He learns she's with them at the tournament.
   She knows Minato's plan drains the hero's world and honestly chooses her world over his.
-  She never changes her mind; they choose each other anyway.
+  She never changes her mind; they choose each other anyway. Their last battle is near
+  Tobira-yama's summit, she still on Minato's side; their goodbye is at Lake Usurai, where they
+  met: she lends him Lapras to cross one last time.
 - **Relationship points** add optional warm scenes (the coast, Lapras) and change her lines;
   the core romance scenes always play.
 - Her mentor Hashimoto dies in the tournament disaster.
@@ -143,12 +151,27 @@ Decided in [brainstorm-yuki.md](brainstorm-yuki.md).
 | 4 | Hanashiro | Mamoru (man) | Grass | The castle's head gardener: keeps the cherry trees and moss gardens; quiet and exact; watches the trees for the fading. Survives the tournament disaster, shaken; turns up once in Act 3. ([locations/hanashiro.md](locations/hanashiro.md)) | Appletun (with Cherrim, Dipplin) | 29-32 |
 | 5 | Kanaya | Takumi (man, young) | Fire | The young heir of a foundry family; loyal to the League because the League made his family's name. Repeats the "accident" story and believes it; decent while being wrong. ([locations/kanaya.md](locations/kanaya.md)) | Coalossal (with Magcargo, Bronzong) | 35-38 |
 | 6 | Hoshimi | Tsukiko (woman, older) | Psychic | The League research station's head scientist, an astronomer: precise and tired, decades of aurora readings. Hid the truth because panic would have killed more people than the fading; opens the records once the fading speeds up. ([locations/hoshimi.md](locations/hoshimi.md)) | Xatu (with Solrock, Lunatone) | 42-45 |
-| 7-8 | | `TODO(design)` | | | | |
+| 7 | Uminari | Ushio (woman, older) | Water | Runs the tuna boats; blunt, proud of the port, quietly convinced. Lost her husband to the strait and won't lose her town to the fading, so she sides with Minato. Decent, sure, on the other side. ([locations/uminari.md](locations/uminari.md)) | Kingdra (with Sharpedo, Wailord) | 48-50 |
+| 8 | Kawara | Tome (woman, old) | Ghost | An old blind *itako*: speaks for the dead at the mountain's festival; quiet, unhurried, kind. On no side; knows the old tales are true. Knew Kaede's grandmother Chiyo; has "heard of him from the dead". ([locations/kawara.md](locations/kawara.md)) | Chandelure (with Banette, Dusknoir) | 52-55 |
 
 ## Champion
 
 - **Seiji** (man). Ordered the League's cover-up of the cycle. When Minato's plan starts
-  partway through the Elite Four, he admits it and fights beside the hero, Haru and Yuki.
+  (the door opens after the fourth Elite Four member), his Champion's battle becomes his
+  confession; he joins the hero and fights beside him against Minato at the summit (Haru and Yuki
+  go up with them). Afterwards he steps down and answers for the cover-up (`TODO(design)`: his
+  line). The hero never becomes Champion.
+
+## Elite Four (Tokiwa Hall)
+
+Decided in [brainstorm-act-4.md](brainstorm-act-4.md). Names, teams `TODO(design)`.
+
+| # | Type | Who |
+| --- | --- | --- |
+| 1-3 | Dark | A quiet judge-like figure |
+| 1-3 | Steel | An old armour-smith |
+| 1-3 | Dragon | A young woman from the League's founding family; holds the hall when the door opens so he can go |
+| 4 | Fighting | Ibuki (gym 2), back at the League he walked away from because it needs him now |
 
 ## Factions / villains
 
@@ -162,7 +185,9 @@ Decided in [brainstorm-yuki.md](brainstorm-yuki.md).
   through Palkia's door, to sustain Arceus.
 - **Look:** `TODO(design)`. Placeholder: field gear (headlamps, measuring poles, notebooks); they
   look like researchers, which is why nobody finds them suspicious.
-- **Leader:** **Minato** (man). Believes he can stop the cycle. Lives; the final villain. First seen
+- **Leader:** **Minato** (man). Believes he can stop the cycle. Lives; the final villain: at the
+  summit his machine fires to pull the hero through the door and kills Celebi instead; beaten, he
+  walks away, unrepentant, in silence. First seen
   at the tournament, after the disaster: calm, grieving Hashimoto, unapologetic: "We are Tokoyo."
 - **Lieutenant:** **Hashimoto** (older man), Nami's mentor. Dies in the tournament disaster:
   seeing Tokoyo's test is out of control, he joins Fuyumi holding the thinning back, and both die.

@@ -20,6 +20,19 @@ A coastal fishing village ("sea wind"), snowy. Tilesets: `gTileset_General` + `g
 
 Act 1 beats 1-3 in [story-outline.md](../story-outline.md).
 
+**Act 3 (beats 5-6): the lab disaster** ([brainstorm-lab-disaster.md](../brainstorm-lab-disaster.md)).
+Haru's letter brings him home. A calm evening; the next day the professor's experiment on the
+**thin place under the beach where he woke** (Palkia set him down there; that's why she studied
+it and why Celebi found him there) opens a thinning in the lab (`WEATHER_THINNING`). She sends him
+and Haru out with her notes and Kumo, her Altaria, and stays; Haru turns back and he pulls him
+out; he walks out through the greying lab (a few turns of time pressure). That evening at the
+house: Makoto (he ran over from the house when it happened), Haru and him. That night Celebi takes
+him to the beach: the glimpse (the beach with no colour, no snow, the sea not moving). Next day
+Haru's step 3 at her desk. **Afterwards the lab stays grey** (the thinning's grey tiles) until the
+epilogue, but enterable, her desk the one spot in colour. The League says nothing this time;
+townsfolk talk about "the lab accident" (`TODO(design)`: whether the League should speak). Lines
+`TODO(design)` (short and plain; no speech).
+
 ## NPCs and events
 
 | NPC / event | Position (x,y) | Visible when | Says / does |
@@ -28,7 +41,7 @@ Act 1 beats 1-3 in [story-outline.md](../story-outline.md).
 | Fisherman | beach (4,15) | always | Flavor line |
 | Villager | town (9,11), wanders | always | Points to the Kashiwagi house, later the lab |
 | Professor Kashiwagi | lab | | Offers the three starters |
-| The professor's Altaria | lab, on the back desk (10,2) | from Act 1 until it's given | Her Pokémon. Built (`LOCALID_LAB_ALTARIA`): its cry and "The professor's Altaria hums softly." (`TODO(design)`: its lines). After her death Haru gives it to him: it flies him (fast travel, [progression.md](../progression.md)) |
+| The professor's Altaria, Kumo | lab, on the back desk (10,2) | from Act 1 until it's given | Her Pokémon (雲, "cloud", her nickname for it). Built (`LOCALID_LAB_ALTARIA`): its cry and "The professor's Altaria hums softly." (`TODO`: name it Kumo in the line; `TODO(design)`: its lines). After her death Haru gives it to him: it flies him (fast travel, [progression.md](../progression.md)) |
 | Makoto, Kashiwagi's husband | house | | Runs the household that takes him in. Heals the team after a white-out: "Back again? Sit. I'll see to them." |
 | Haru Kashiwagi | house / lab | | First friend; takes the third starter |
 | Akira | lab | | Takes the starter strong against the player's; battles right after |
