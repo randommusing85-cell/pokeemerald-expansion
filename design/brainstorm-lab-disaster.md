@@ -29,11 +29,28 @@ Working notes. Decisions move into `story-outline.md`, `characters.md`, `side-qu
 
 ## Decided
 
+- **The cause (r1 1a):** her own experiment. To prove other worlds exist she tunes her instruments
+  to a thin place under Hamakaze's shore, and a thinning opens in the lab. No villain: the cost of
+  knowing. (The tournament was Tokoyo's disaster; this one is no one's fault.)
+- **The breakthrough (r1 2c):** both why he's here (proof of Palkia's door, its test, Celebi's
+  future) and how a cycle can end safely (what he does at the door mountain in Act 4). Her death
+  hands him his past and his task.
+- **Her death (r1 3a):** she sends him and Haru out with her notes and Altaria, and stays to shut
+  the instruments down. The lab goes grey, then quiet.
+- **Haru (r1 4c):** there; he wants to go back in, and the hero pulls him out.
+- **The player (r1 5a):** walks out of the greying lab, the thinning effect on, a few turns of
+  time pressure, then the doors.
+- **Afterwards (r1 6a):** that evening at the Kashiwagi house: Makoto, Haru and the hero, little
+  said. Haru's step 3 the next day.
+
 ## Leaning
 
 ## Open questions
 
 ## Gaps and tensions
+
+- r1 1a adds a thin place under Hamakaze's shore (thin places so far: the shrines and the door
+  mountain). It needs to sit in the game bible's list, and maybe a hint earlier (Act 1).
 
 ## Parked ideas
 
