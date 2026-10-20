@@ -37,6 +37,17 @@ Working notes. Decisions move into `story-outline.md`, `progression.md`, `charac
   runs straight from the League to the mountain, and the League sits in sight of the door.
 - **E5 (r1 6c):** back in Hanashiro: a child missing near a thin place; Mamoru's one Act 3
   appearance; fast travel put to use.
+- **Gym 7's leader (r2 1a):** a grizzled woman who runs the tuna boats: blunt, proud of the port,
+  quietly convinced. She lost her husband to the strait and won't lose her town to the fading.
+- **Gym 7's team (r2 2a):** Sharpedo, Wailord and a Kingdra ace, Lv 48-50; Sootopolis's gym reused
+  (its ice floor read as slick, icy decks).
+- **Gym 7's badge (r2 3a):** the Tide Badge, TM03 Water Pulse.
+- **Gym 8's leader (r2 4c):** an old blind *itako*, as they traditionally are: speaks for the dead at
+  the mountain's festival; quiet, unhurried, kind; has "heard of him from the dead" (a hint only).
+  She knew Kaede's grandmother Chiyo: an old tie between the two keepers of the tales.
+- **Gym 8's team (r2 5a):** Banette (dolls left at the temple), Dusknoir, and a Chandelure ace
+  (lanterns for the dead), Lv 52-55; Petalburg's gym reused (its rooms as the temple's halls).
+- **Gym 8's badge (r2 6a):** the Bell Badge, TM30 Shadow Ball.
 
 ## Leaning
 
