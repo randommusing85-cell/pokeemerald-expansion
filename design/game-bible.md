@@ -115,7 +115,9 @@ on what other hacks and fan games do.
   scale. Quests tied to people who die or leave can be missed for good; the epilogue gives
   them back as memories. See [side-quests.md](side-quests.md).
 - **Eien weather and terrain.** Snow on most routes (the engine's snow), an aurora on clear
-  nights, and "thin places" at shrines and the mountain. Decided in
+  nights, and "thin places" at shrines and the mountain (and one under Hamakaze's beach, where
+  Palkia set him down: a story place for the professor's experiment and Celebi's glimpse, not a
+  battle-effect map). Decided in
   [brainstorm-weather-terrain.md](brainstorm-weather-terrain.md):
   - **Thin place:** its own permanent battle effect, not a terrain: Ghost and Psychic moves do
     30% more damage, for both sides. It leaves the terrain slot free, so normal terrains still

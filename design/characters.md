@@ -38,7 +38,11 @@ Claude at the user's request; change freely.
 ## Professor
 
 - **Professor Kashiwagi** (woman). Researches the cycle. Her family takes the hero in.
-- Dies in Act 3 in a lab disaster, leaving the research that explains the cycle.
+- Dies in Act 3 in a lab disaster, leaving the research that explains the cycle: her own
+  experiment on the thin place under Hamakaze's beach opens a thinning in the lab; she sends the
+  hero and Haru out with her notes and her Altaria, **Kumo** (雲, "cloud"), and stays to shut the
+  instruments down. Her notes say why Palkia brought him and how a cycle can end safely. Decided
+  in [brainstorm-lab-disaster.md](brainstorm-lab-disaster.md).
 - Her husband, **Makoto** (誠, "sincerity"), runs the household.
 
 ## Love interest

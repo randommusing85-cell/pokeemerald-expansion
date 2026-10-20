@@ -1,7 +1,8 @@
 # Brainstorm: the professor's lab disaster
 
 Working notes. Decisions move into `story-outline.md`, `characters.md`, `side-quests.md` and
-`locations/hamakaze.md` when settled; this file stays as the record.
+`locations/hamakaze.md` when settled; this file stays as the record. **Promoted** into `story-outline.md`, `characters.md`,
+`side-quests.md`, `locations/hamakaze.md`, `game-bible.md`, `progression.md` and `whats-left.md`.
 
 ## Givens (from the docs)
 

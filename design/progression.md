@@ -63,12 +63,13 @@ All levels are proposed defaults; adjust after playtesting.
   `checkfieldmove FIELD_MOVE_SURF`; Surf unlocks with `FLAG_BADGE03_GET` (`src/field_move.c`); the
   message is "{STR_VAR_1} takes you out on the water." Shots in `art/fast_travel/` (a Squirtle
   that doesn't know Surf, on Lake Usurai; no prompt without badge 3 or a Water-type).
-- **Fast travel:** in Act 3, after the professor's death, Haru gives him his mother's **Altaria**,
+- **Fast travel:** in Act 3, after the professor's death, Haru gives him his mother's **Altaria,
+  Kumo** (雲, "cloud", her nickname for it),
   which carries him: he flies from the Town Map with R to any town whose Pokémon Center he has
   visited (the engine's `OW_FLAG_POKE_RIDER`, set to a renamed spare flag; not from caves or
   indoors). Altaria takes no party slot; Celebi comes along. No fast travel before then: story
   scenes move him (the funeral takes him from Hanashiro to Shimotsuki; Haru's letter from
-  Hoshimi to Hamakaze). `TODO(design)`: Altaria's name (a nickname of the professor's, or none).
+  Hoshimi to Hamakaze).
   **Built:** `FLAG_RECEIVED_PROFESSOR_ALTARIA` (was `FLAG_UNUSED_0x02D`) is `OW_FLAG_POKE_RIDER`;
   towns become destinations through `FLAG_VISITED_HAMAKAZE` / `_SHIMOTSUKI` / `_YUNOTAKI` (were
   `FLAG_UNUSED_0x881`-`0x883`, set by each town's map script; new towns need one each, plus a
