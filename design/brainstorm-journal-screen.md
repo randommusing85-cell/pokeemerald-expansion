@@ -72,3 +72,19 @@ _(none yet)_
 ## Rejected
 
 _(none yet)_
+
+## Research detail scrolling (2026-10-21)
+
+- Keep Up/Down for species selection and Left/Right or L/R for tabs. Hold A and press
+  Up/Down to scroll the selected species' notes one wrapped line at a time. B still closes.
+- The right page keeps its title fixed, displays six complete text lines, and shows an
+  `A+↑/↓: scroll` hint below overflowing entries. Hidden tiers stay `?`; scrolling reveals
+  only already-unlocked text and existing hint notes.
+- Stop at both ends. Selecting another species, changing tabs or reopening the journal
+  resets the detail scroll. Scrolling does not alter quests, research tiers or save data.
+- Check with `tests/screens/eien_research_scroll.txt`: full Poochyena notes and its level
+  hint, a short unknown Hoothoot entry, bounds, selection/tab resets and return to the field.
+- Verified screenshots: [top](art/journal_scroll/top.png),
+  [bottom](art/journal_scroll/bottom.png), [locked entry](art/journal_scroll/locked.png).
+  Eight wrapped Poochyena lines scroll to the complete Lv 18 hint; the locked entry reveals
+  no research text. Build and the research/arrival harness checks passed on `cfed829a`.

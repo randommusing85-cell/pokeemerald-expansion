@@ -1,0 +1,66 @@
+# Research viewport check, cfed829a default Emerald layout.
+# SaveBlock1.flags=0x1270, eienQuests=0x3CD0 (apcs-gnu layout).
+# JournalState researchScroll=0x6F4, researchLines=0x6F6; update on struct changes.
+include ../../tools/mgba_harness/scripts/new_game.txt
+warp MAP_HAMAKAZE 2
+press B 60
+wait 120
+warp MAP_HAMAKAZE_KASHIWAGI_HOUSE 0
+press B 180
+wait 120
+# Received journal, cover seen, Poochyena level hint; research open and first 3 tiers.
+write8 [@gSaveBlock1Ptr]+0x1274 19
+write8 [@gSaveBlock1Ptr]+0x3CD1 29
+# Badge 1 reveals Hoothoot, initially unseen (second entry).
+write8 [@gSaveBlock1Ptr]+0x137C 128
+press START
+wait 90
+press DOWN
+press A
+wait 180
+press RIGHT
+wait 60
+shot 01_research_top
+assert8 [@sJournal] 1 research tab
+assert8 [@sJournal]+1 0 selected first species
+assert16 [@sJournal]+0x6F4 0 scroll starts at top
+assert16 [@sJournal]+0x6F6 8 eight wrapped research lines
+hold A+DOWN 180
+wait 60
+shot 02_research_bottom
+assert16 [@sJournal]+0x6F4 2 bottom scroll exposes final two lines
+hold A+DOWN 60
+assert16 [@sJournal]+0x6F4 2 lower bound stays fixed
+assert8 [@sJournal]+1 0 scrolling keeps selected species
+hold A+UP 180
+wait 60
+assert16 [@sJournal]+0x6F4 0 upper bound
+shot 03_back_to_top
+press A+DOWN
+press DOWN
+wait 30
+assert8 [@sJournal]+1 1 selected second species
+assert16 [@sJournal]+0x6F4 0 selection resets scrolling
+shot 04_locked_entry
+hold A+DOWN 60
+assert16 [@sJournal]+0x6F4 0 short locked entry cannot scroll
+press UP
+press A+DOWN
+press RIGHT
+press LEFT
+assert16 [@sJournal]+0x6F4 0 tab change resets scrolling
+press A+DOWN
+assert16 [@sJournal]+0x6F4 1 scroll before closing
+press B
+wait 120
+press A
+wait 180
+assert8 [@sJournal] 1 reopening remembers research tab
+assert16 [@sJournal]+0x6F4 0 reopening resets scroll
+shot 05_reopened
+press B
+wait 120
+press B
+wait 60
+warp MAP_HAMAKAZE 2
+shot 06_return_to_field
