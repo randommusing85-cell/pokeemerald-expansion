@@ -253,7 +253,7 @@ Decided in [brainstorm-eien-wooper.md](brainstorm-eien-wooper.md).
 
 Decided in [brainstorm-eien-variant-4.md](brainstorm-eien-variant-4.md).
 
-- **Eien Stantler** (designed, not built): 73 / 105 / 67 / 70 / 65 / 85 (73 / 95 / 62 / 85 / 65
+- **Eien Stantler** (built: `SPECIES_STANTLER_EIEN` / `SPECIES_WYRDEER_EIEN`): 73 / 105 / 67 / 70 / 65 / 85 (73 / 95 / 62 / 85 / 65
   / 85), 465: a physical Dark attacker. Abilities Intimidate / Frisk / Cursed Body (hidden). New
   moves: Bite (1, replacing Tackle), Shadow Sneak (16, replacing Sand Attack), Crunch (37,
   replacing Zen Headbutt); it keeps Astonish, Hypnosis and Confuse Ray; otherwise vanilla.
@@ -269,8 +269,11 @@ Decided in [brainstorm-eien-variant-4.md](brainstorm-eien-variant-4.md).
 - **Research:** seen / battled / caught on the professor's list (side-quests E2), shown after
   gym 5's badge.
 - **Shiny:** a snow-white winter coat (the real serow's winter look), for both stages.
-- **Sprites:** AI drafts through `tools/eien_species/`. `TODO(design)`: both dex entries
-  (drafted at build time).
+- **Sprites:** picked AI drafts ([art/eien_stantler_drafts.md](art/eien_stantler_drafts.md)): a
+  charcoal coat, a cream face mask and grey hollow orbs; Eien Wyrdeer frosted, with a long grey
+  beard. Idle frames, backs, icons (the Eien icon palette) and winter-coat shinies.
+  `TODO(design)`: both dex entries, the research tier lines and the hint's wording (drafts in the
+  code; the hint shows at Lv 38).
 - **First seen** at Minori's festival thinning ([minori.md](locations/minori.md)): a grey serow
   stands on a terrace edge watching, the only thing not walking into the grey, then leaves.
 - **Variants still to come:** one for gym 7 (Water) and one for gym 8 (Ghost), plus Trubbish's

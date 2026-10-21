@@ -108,7 +108,14 @@ static const u16 sMonShinyPalette_LedybaEien[] = INCGFX_U16("graphics/pokemon/ei
 static const u16 sMonPalette_LedianEien[] = INCGFX_U16("graphics/pokemon/eien/ledian/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_LedianEien[] = INCGFX_U16("graphics/pokemon/eien/ledian/shiny.pal", ".gbapal");
 
-// Eien Stantler and Wyrdeer: the vanilla sprites in faded palettes until their drafts are picked.
+// Eien Stantler and Wyrdeer: the picked AI fronts, idle frames, backs and winter-coat shinies
+// (convert_art.py, design/art/eien_stantler_drafts.md); icons in the Eien icon palette.
+static const u32 sMonFrontPic_StantlerEien[] = INCGFX_U32("graphics/pokemon/eien/stantler/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_StantlerEien[] = INCGFX_U32("graphics/pokemon/eien/stantler/back.png", ".4bpp.smol");
+static const u8 sMonIcon_StantlerEien[] = INCGFX_U8("graphics/pokemon/eien/stantler/icon.png", ".4bpp");
+static const u32 sMonFrontPic_WyrdeerEien[] = INCGFX_U32("graphics/pokemon/eien/wyrdeer/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_WyrdeerEien[] = INCGFX_U32("graphics/pokemon/eien/wyrdeer/back.png", ".4bpp.smol");
+static const u8 sMonIcon_WyrdeerEien[] = INCGFX_U8("graphics/pokemon/eien/wyrdeer/icon.png", ".4bpp");
 static const u16 sMonPalette_StantlerEien[] = INCGFX_U16("graphics/pokemon/eien/stantler/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_StantlerEien[] = INCGFX_U16("graphics/pokemon/eien/stantler/shiny.pal", ".gbapal");
 static const u16 sMonPalette_WyrdeerEien[] = INCGFX_U16("graphics/pokemon/eien/wyrdeer/normal.pal", ".gbapal");

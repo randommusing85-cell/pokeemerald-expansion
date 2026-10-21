@@ -1319,23 +1319,23 @@
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        // The vanilla sprites in faded palettes until its own art is picked (variants.md)
-        .frontPic = gMonFrontPic_Stantler,
-        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 64) : MON_COORDS_SIZE(48, 64),
+        // Its own sprites, framed like the vanilla (non-GBA-style) ones
+        .frontPic = sMonFrontPic_StantlerEien,
+        .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 15),
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Stantler,
-        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 64) : MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 3 : 1,
+        .backPic = sMonBackPic_StantlerEien,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = sMonPalette_StantlerEien,
         .shinyPalette = sMonShinyPalette_StantlerEien,
-        .iconSprite = gMonIcon_Stantler,
-        .iconPalIndex = 2,
+        .iconSprite = sMonIcon_StantlerEien,
+        .iconPalIndex = 6,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(3, 13, SHADOW_SIZE_M)
         FOOTPRINT(Stantler)
@@ -1396,20 +1396,24 @@
         .pokemonOffset = 2,
         .trainerScale = 286,
         .trainerOffset = 1,
-        // The vanilla sprites in faded palettes until its own art is picked (variants.md)
-        .frontPic = gMonFrontPic_Wyrdeer,
+        // Its own sprites, framed like the vanilla (non-GBA-style) ones
+        .frontPic = sMonFrontPic_WyrdeerEien,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Wyrdeer,
+        // Two frames, unlike vanilla Wyrdeer's single one: the idle frame is drafted like the others'
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+        ),
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = sMonBackPic_WyrdeerEien,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        //.backAnimId = BACK_ANIM_NONE,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = sMonPalette_WyrdeerEien,
         .shinyPalette = sMonShinyPalette_WyrdeerEien,
-        .iconSprite = gMonIcon_Wyrdeer,
-        .iconPalIndex = 2,
+        .iconSprite = sMonIcon_WyrdeerEien,
+        .iconPalIndex = 6,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 13, SHADOW_SIZE_M)
         FOOTPRINT(Wyrdeer)
