@@ -75,6 +75,8 @@ BACK_PICKS = {
     "noctowl": "back_gemini3pro_a.png",
     "blaziken": "back_gemini31flash_a.png",
     "greninja": "back_gemini3pro_a.png",
+    "ledyba": "back_gemini3pro_a.png",
+    "ledian": "back_gemini31flash_a.png",
     # (Venusaur's drafts redrew a full body filling the frame: it keeps the placeholder back)
 }
 # species: chosen shiny palette in design/art/eien_<species>/shiny_drafts/ (shiny_drafts.py).
@@ -95,6 +97,8 @@ SHINY_PICKS = {
     "blaziken": "night_lantern.pal",
     "venusaur": "twilight.pal",
     "greninja": "midnight.pal",
+    "ledyba": "firefly_green.pal",
+    "ledian": "firefly_green.pal",
 }
 # species: chosen front frame 2 (idle) in design/art/eien_<species>/frame2_drafts/, indexed with
 # the form's palette (design/art/eien_starters_drafts.md, "Frame 2 (idle)"). Species without
@@ -115,6 +119,8 @@ FRAME2_PICKS = {
     "blaziken": "frame2_gemini3pro_a.png",
     "venusaur": "frame2_gemini3pro_b.png",
     "greninja": "frame2_gemini3pro_a.png",
+    "ledyba": "frame2_gemini3pro_b.png",
+    "ledian": "frame2_gemini3pro_a.png",
 }
 SHINY_HUE = 0.5
 

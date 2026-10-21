@@ -2,8 +2,11 @@
 
 Front drafts for the two Bug/Fire forms in `variants.md` (ember fireflies of the summer rice
 paddies: glowing ember spots, an abdomen lit like a coal; Eien Ledian's light brightened into a
-lantern-like glow on its back). Nothing here is picked yet; the game uses the vanilla sprites in
-placeholder ember palettes.
+lantern-like glow on its back).
+
+**Picked and in the game:** Eien Ledyba `gemini3pro_a`, Eien Ledian `gemini31flash_a`, with their
+idle frames, backs, icons and firefly-green shinies (below). In-game shots: `eien_ledyba/summary.png`,
+`eien_ledyba/battle_back.png`, `eien_ledyba/party_icon.png`, `eien_ledian/summary.png`.
 
 Contact sheets (vanilla first, then each converted draft, at 2x):
 [`eien_ledyba_contact_sheet.png`](eien_ledyba_contact_sheet.png),
@@ -46,3 +49,20 @@ a warm amber shell with a real firefly's light.
   3 Pro c (amber fireflies with real lights).
 - After a pick: frame 2, back, icon and the shiny (a real firefly's pale green light), as for the
   other forms, then credit in `asset-credits.md`.
+
+## After the pick
+
+- **Fronts:** both converted cleanly and keep vanilla's framing; sizes and offsets are fixed
+  (the non-GBA-style ones), as for the other forms.
+- **Backs** (`stage_drafts.py back`,
+  [`eien_ledyba_back_contact_sheet.png`](eien_ledyba_back_contact_sheet.png)): Ledyba
+  `gemini3pro_a` (glowing ember spots on the shell), Ledian `gemini31flash_a` (orange with
+  glowing spots, over the shoulder).
+- **Idle frames** ([`eien_ledyba_frame2_contact_sheet.png`](eien_ledyba_frame2_contact_sheet.png)):
+  Ledyba `gemini3pro_b` (wings open, like vanilla's), Ledian `gemini3pro_a`.
+- **Icons** ([`eien_ledyba_icon_contact_sheet.png`](eien_ledyba_icon_contact_sheet.png), previewed
+  in the Eien palette, which has no reds): Ledyba `gemini31flash_a`, Ledian `gemini3pro_a`, indexed
+  with vanilla icon palette 0 (reds, oranges, yellow). Frame 2 is frame 1 moved down 1px.
+- **Shinies** (`shiny_drafts.py`): `firefly_green`, the ember glow turned a real firefly's pale
+  yellow-green, the shells kept.
+- The overworld (follower) sprites are still vanilla's.

@@ -228,7 +228,7 @@ Decided in [brainstorm-eien-hoothoot.md](brainstorm-eien-hoothoot.md); the build
 
 Decided in [brainstorm-eien-wooper.md](brainstorm-eien-wooper.md).
 
-- **Eien Ledyba** (designed, not built): 40 / 20 / 30 / 70 / 50 / 55 (40 / 20 / 30 / 40 / 80 /
+- **Eien Ledyba** (built: `SPECIES_LEDYBA_EIEN` / `SPECIES_LEDIAN_EIEN`): 40 / 20 / 30 / 70 / 50 / 55 (40 / 20 / 30 / 40 / 80 /
   55), 265: a special attacker. Abilities Flame Body / Swarm / Illuminate (hidden; in Gen 9 it
   stops accuracy drops and ignores evasion). New moves: Ember (1, replacing Tackle),
   Will-O-Wisp (12, replacing Safeguard), Flame Wheel (15, replacing Mach Punch); otherwise
@@ -242,8 +242,10 @@ Decided in [brainstorm-eien-wooper.md](brainstorm-eien-wooper.md).
 - **Research:** seen / battled / caught on the professor's list (side-quests E2), shown after
   gym 3's badge.
 - **Shiny:** a real firefly's pale green light instead of ember orange, for both stages.
-- **Sprites:** AI drafts through `tools/eien_species/`. `TODO(design)`: both dex entries
-  (drafted at build time).
+- **Sprites:** picked AI drafts ([art/eien_ledyba_drafts.md](art/eien_ledyba_drafts.md)): a dark
+  red shell with glowing ember spots and a coal-lit abdomen; Eien Ledian orange-red with a bright
+  glow on its back. Idle frames, backs, icons (vanilla icon palette 0) and firefly-green shinies.
+  `TODO(design)`: both dex entries and the research tier lines (drafts in the code).
 - **Variants still to come (r1 4b):** one for each remaining gym a variant answers well, about
   three more after Eien Ledyba, plus Trubbish's split (within the planned 5-10).
 
