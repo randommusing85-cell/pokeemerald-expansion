@@ -56,15 +56,35 @@ location doc) when settled; this file stays as the record.
   - A journal note for its evolution rule.
   - The shiny is a snow-white winter coat.
 
+- **Evolution rule (r3 1a):** into Eien Wyrdeer after using Shadow Sneak 20 times (the engine's
+  `IF_USED_MOVE_X_TIMES`, as vanilla Wyrdeer does with Psyshield Bash), as if it learns to slip
+  between worlds. The journal note hints at it (draft: "It slips into shadow when it moves.").
+- **Eien Wyrdeer's look (r3 2a):** the old serow.
+  - Bigger, with a heavier, frosted coat.
+  - Antlers branching like dead winter wood, with wider hollow grey orbs.
+  - A long grey mist of a beard.
+- **Eien Wyrdeer's stats (r3 3a):** the same shift on vanilla Wyrdeer (103 / 105 / 72 / 105 / 75
+  / 65): 103 / 115 / 77 / 90 / 75 / 65, 525. The same abilities.
+- **Evolution move (r3 4a):** Phantom Force.
+- **The glimpse at Minori (r3 5b):** during the festival thinning, a grey serow stands on a terrace
+  edge watching, the only thing not walking into it, then leaves. It's an overworld object, not
+  a battle.
+
 ## Leaning
 
 ## Open questions
 
-Round 3 (asked): Eien Wyrdeer's evolution rule, look, stats and evolution move, and the glimpse
-at Minori.
+- Routes 6 and 7's wild tables (rates); Route 6's terrace slot is rare.
+- The serow's overworld sprite for the Minori glimpse (vanilla Stantler's recoloured, or its
+  follower sprite).
+- Both dex entries and the research tier lines, drafted at build time.
+- When the user wants it: the journal note's wording.
 
 ## Gaps and tensions
 
+- r3 1a: the journal note can't easily say "used 20 times" as a level would; it's a hint line
+  shown once Eien Stantler reaches some level without evolving (the build sets the level, about
+  Lv 38).
 - Vanilla Stantler: 73 / 95 / 62 / 85 / 65 / 85 (HP / Atk / Def / SpA / SpD / Spe), 465;
   Intimidate / Frisk / Sap Sipper. Learnset: Tackle 1, Leer 3, Astonish 7, Hypnosis 10, Stomp 13,
   Sand Attack 16, Take Down 21, Confuse Ray 23, Calm Mind 27, Role Play 32, Zen Headbutt 37.
