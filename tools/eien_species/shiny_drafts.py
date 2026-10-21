@@ -87,6 +87,19 @@ CONCEPTS = {
         # gold leaf on iron: the highlights and hobnails gold, the body iron
         "gold_leaf": [((12, 13, 14, 15), 46, 0.85, 0.08), ((9, 10), 44, 0.6, 0.05)],
     },
+    "hoothoot": {
+        # aurora mist (variants.md): green mist wings, violet where the mist meets the body
+        "aurora": [((11, 12, 13), 150, 0.5, 0.0), ((10,), 280, 0.3, 0.0)],
+        # the same mist on a violet-grey body
+        "aurora_dusk": [((11, 12, 13), 150, 0.5, 0.0), ((10,), 280, 0.3, 0.0),
+                        ((3, 4, 5, 6, 7, 8, 9), 275, 0.22, 0.0)],
+    },
+    "noctowl": {
+        # aurora mist: veils green at the hems, violet near the body
+        "aurora": [((12, 13), 150, 0.5, 0.0), ((10, 11), 278, 0.35, 0.0)],
+        "aurora_dusk": [((12, 13), 150, 0.5, 0.0), ((10, 11), 278, 0.35, 0.0),
+                        ((3, 4, 5, 6, 7, 8, 9), 275, 0.22, 0.0)],
+    },
 }
 
 
