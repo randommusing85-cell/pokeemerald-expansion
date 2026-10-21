@@ -643,8 +643,7 @@
         .pokemonOffset = 21,
         .trainerScale = 256,
         .trainerOffset = 0,
-        // The vanilla sprites in ore palettes until its own art is picked (variants.md)
-        .frontPic = gMonFrontPic_Wooper,
+        .frontPic = sMonFrontPic_WooperEien,
         .frontPicSize = MON_COORDS_SIZE(40, 32),
         .frontPicYOffset = 16,
         .frontAnimFrames = ANIM_FRAMES(
@@ -653,14 +652,14 @@
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Wooper,
+        .backPic = sMonBackPic_WooperEien,
         .backPicSize = MON_COORDS_SIZE(64, 40),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 15 : 12,
+        .backPicYOffset = 12, // Its own back, framed like the vanilla (non-GBA-style) one
         .backAnimId = BACK_ANIM_V_STRETCH,
         .palette = sMonPalette_WooperEien,
         .shinyPalette = sMonShinyPalette_WooperEien,
-        .iconSprite = gMonIcon_Wooper,
-        .iconPalIndex = 0,
+        .iconSprite = sMonIcon_WooperEien,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(1, -2, SHADOW_SIZE_S)
         FOOTPRINT(Wooper)
@@ -717,23 +716,23 @@
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        // The vanilla sprites in ore palettes until its own art is picked (variants.md)
-        .frontPic = gMonFrontPic_Quagsire,
-        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(64, 56),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 7 : 5,
+        // Its own sprites, framed like the vanilla (non-GBA-style) ones
+        .frontPic = sMonFrontPic_QuagsireEien,
+        .frontPicSize = MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = 5,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 32),
             ANIMCMD_FRAME(0, 20),
         ),
         .frontAnimId = ANIM_H_STRETCH,
-        .backPic = gMonBackPic_Quagsire,
-        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(64, 56),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 5,
+        .backPic = sMonBackPic_QuagsireEien,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = sMonPalette_QuagsireEien,
         .shinyPalette = sMonShinyPalette_QuagsireEien,
-        .iconSprite = gMonIcon_Quagsire,
-        .iconPalIndex = 0,
+        .iconSprite = sMonIcon_QuagsireEien,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 8, SHADOW_SIZE_M)
         FOOTPRINT(Quagsire)

@@ -43,6 +43,9 @@ PICKS = {
     "combusken": ("front_gemini3pro_a.png", "front_gemini3pro_a.pal"),
     "ivysaur": ("front_gemini3pro_b.png", "front_gemini3pro_b.pal"),
     "frogadier": ("front_gemini3pro_a.png", "front_gemini3pro_a.pal"),
+    # design/art/eien_wooper_drafts.md (Wooper's re-sampled finer, with its smile redrawn)
+    "wooper": ("front_gemini3pro_b.png", "front_gemini3pro_b.pal"),
+    "quagsire": ("front_gemini3pro_a.png", "front_gemini3pro_a.pal"),
 }
 # species: chosen back draft in design/art/eien_<species>/back_drafts/, already indexed with
 # the form's palette (design/art/eien_starters_drafts.md, "Back sprites"). Species without one
@@ -56,6 +59,8 @@ BACK_PICKS = {
     "combusken": "back_gemini31flash_b.png",
     "ivysaur": "back_gemini31flash_a.png",
     "frogadier": "back_gemini3pro_a.png",
+    "wooper": "back_gemini3pro_b.png",
+    "quagsire": "back_gemini3pro_b.png",
 }
 # species: chosen shiny palette in design/art/eien_<species>/shiny_drafts/ (shiny_drafts.py).
 # Species without one get an automatic hue shift.
@@ -68,6 +73,8 @@ SHINY_PICKS = {
     "combusken": "night_lantern.pal",
     "ivysaur": "twilight.pal",
     "frogadier": "midnight.pal",
+    "wooper": "gold_crust.pal",
+    "quagsire": "gilded.pal",
 }
 # species: chosen front frame 2 (idle) in design/art/eien_<species>/frame2_drafts/, indexed with
 # the form's palette (design/art/eien_starters_drafts.md, "Frame 2 (idle)"). Species without
@@ -81,6 +88,8 @@ FRAME2_PICKS = {
     "combusken": "frame2_gemini3pro_a.png",
     "ivysaur": "frame2_gemini31flash_a.png",
     "frogadier": "frame2_gemini3pro_a.png",
+    "wooper": "frame2_gemini31flash_a.png",
+    "quagsire": "frame2_gemini3pro_a.png",
 }
 SHINY_HUE = 0.5
 

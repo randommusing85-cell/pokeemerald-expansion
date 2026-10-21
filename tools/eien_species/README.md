@@ -18,10 +18,9 @@ original sprites with placeholder palettes:
                                                # -> graphics/pokemon/eien/<species>/ (front, back, palette, shiny)
   tools/eien_species/shiny_drafts.py           # shiny recolor concepts and their contact sheet
   tools/eien_species/placeholder_palettes.py   # the rest: recolored original palettes
-                                               # (SHINY_FROM_NORMAL: shinies recolored from the
-                                               # normal palette, e.g. Eien Wooper's gold ore)
   tools/eien_species/make_icons.py             # icons, and the Eien icon palette (pal6.pal)
   tools/eien_species/evolved_drafts.py         # AI front drafts for the evolved starters
+  tools/eien_species/variant_drafts.py         # AI front drafts for other variants (concepts)
                                                # -> design/art/eien_<species>/drafts/, contact sheet
 
 The Eien icon palette is a seventh icon palette: `graphics/pokemon/icon_palettes/pal6.pal`,

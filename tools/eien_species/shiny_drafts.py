@@ -74,6 +74,19 @@ CONCEPTS = {
         "midnight": [((3, 4, 5, 7, 10), 228, 0.55, -0.3)],
         "golden_ice": [((3, 4, 5, 7, 10), 45, 0.55, 0.0)],
     },
+    "wooper": {
+        # gold ore (variants.md): the copper flecks turn bright gold on the dark slate body
+        "gold_flecks": [((4, 5, 8, 9, 12, 13, 15), 46, 0.85, 0.05)],
+        # a gold crust all over: dark gold body, bright gold flecks, pale gold fins
+        "gold_crust": [((2, 3, 7), 40, 0.45, 0.12), ((4, 5, 8, 9, 12, 13, 15), 48, 0.9, 0.08),
+                       ((6, 10, 11), 50, 0.4, 0.05)],
+    },
+    "quagsire": {
+        # a gilded kettle (variants.md): the whole body gold, the outline kept dark
+        "gilded": [((3, 4, 7, 8, 11, 12, 13, 14, 15), 44, 0.7, 0.18), ((5, 6, 9, 10), 38, 0.6, 0.12)],
+        # gold leaf on iron: the highlights and hobnails gold, the body iron
+        "gold_leaf": [((12, 13, 14, 15), 46, 0.85, 0.08), ((9, 10), 44, 0.6, 0.05)],
+    },
 }
 
 
