@@ -74,6 +74,16 @@ CONCEPTS = {
         "midnight": [((3, 4, 5, 7, 10), 228, 0.55, -0.3)],
         "golden_ice": [((3, 4, 5, 7, 10), 45, 0.55, 0.0)],
     },
+    # the finals carry their line's shiny theme (night lantern, twilight, midnight)
+    "blaziken": {
+        "night_lantern": [((5, 7, 10, 13, 14), 225, 0.18, -0.12), ((2, 4, 8, 11), 285, 0.7, 0.0)],
+    },
+    "venusaur": {
+        "twilight": [((2, 3, 6, 9), 265, 0.35, 0.0), ((5, 8, 10, 11), 70, 0.6, 0.0)],
+    },
+    "greninja": {
+        "midnight": [((3, 5, 6, 8, 10), 228, 0.55, -0.3)],
+    },
     "wooper": {
         # gold ore (variants.md): the copper flecks turn bright gold on the dark slate body
         "gold_flecks": [((4, 5, 8, 9, 12, 13, 15), 46, 0.85, 0.05)],

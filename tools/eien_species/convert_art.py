@@ -49,6 +49,10 @@ PICKS = {
     # design/art/eien_hoothoot_drafts.md
     "hoothoot": ("front_gemini3pro_a.png", "front_gemini3pro_a.pal"),
     "noctowl": ("front_gemini3pro_a.png", "front_gemini3pro_a.pal"),
+    # the finals (design/art/eien_evolved_drafts.md)
+    "blaziken": ("front_gemini3pro_r2_b.png", "front_gemini3pro_r2_b.pal"),
+    "venusaur": ("front_gemini31flash_a.png", "front_gemini31flash_a.pal"),
+    "greninja": ("front_gemini3pro_a.png", "front_gemini3pro_a.pal"),
 }
 # species: chosen back draft in design/art/eien_<species>/back_drafts/, already indexed with
 # the form's palette (design/art/eien_starters_drafts.md, "Back sprites"). Species without one
