@@ -282,7 +282,7 @@ Decided in [brainstorm-eien-variant-4.md](brainstorm-eien-variant-4.md).
 
 Decided in [brainstorm-eien-variant-5.md](brainstorm-eien-variant-5.md).
 
-- **Eien Wingull** (designed, not built): 40 / 30 / 30 / 70 / 30 / 70 (40 / 30 / 30 / 55 / 30 /
+- **Eien Wingull** (built): 40 / 30 / 30 / 70 / 30 / 70 (40 / 30 / 30 / 55 / 30 /
   85), 270: a fast special attacker. Abilities Static / Keen Eye / Drizzle (hidden): in its own
   rain, Thunder never misses. New moves: Thunder Shock (1, replacing Water Gun), Focus Energy (10,
   replacing Supersonic; a default so its evolution rule is reachable without a held item), Shock
@@ -297,8 +297,11 @@ Decided in [brainstorm-eien-variant-5.md](brainstorm-eien-variant-5.md).
 - **Research:** seen / battled / caught on the professor's list (side-quests E2), shown after
   gym 6's badge.
 - **Shiny:** a night-storm gull, a dark body with violet lightning, for both stages.
-- **Sprites:** AI drafts through `tools/eien_species/`. `TODO(design)`: both dex entries
-  (drafted at build time).
+- **Sprites:** picked AI drafts ([art/eien_wingull_drafts.md](art/eien_wingull_drafts.md)):
+  white with slate wings and yellow zigzag wingtips; Eien Pelipper's yellow bill holds a dark
+  thundercloud. Idle frames, backs, icons (vanilla icon palettes 0 and 2) and night-storm
+  shinies. `TODO(design)`: both dex entries, the research tier lines and the hint's wording
+  (drafts in the code; the hint shows at Lv 25).
 - **First seen** on Route 8's way down ([route-8.md](locations/route-8.md)): a flock riding a
   storm front above the cliffs, as overworld objects, before the grass.
 - Drizzle also powers Ushio's Water moves if she moves in its rain: a trade-off for the player.

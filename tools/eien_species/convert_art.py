@@ -85,6 +85,8 @@ BACK_PICKS = {
     "ledian": "back_gemini31flash_a.png",
     "stantler": "back_gemini3pro_a.png",
     "wyrdeer": "back_gemini3pro_a.png",
+    "wingull": "back_gemini3pro_b.png",
+    "pelipper": "back_gemini31flash_b.png",
     # (Venusaur's drafts redrew a full body filling the frame: it keeps the placeholder back)
 }
 # species: chosen shiny palette in design/art/eien_<species>/shiny_drafts/ (shiny_drafts.py).
@@ -109,6 +111,8 @@ SHINY_PICKS = {
     "ledian": "firefly_green.pal",
     "stantler": "winter_coat.pal",
     "wyrdeer": "winter_coat.pal",
+    "wingull": "night_storm.pal",
+    "pelipper": "night_storm.pal",
 }
 # species: chosen front frame 2 (idle) in design/art/eien_<species>/frame2_drafts/, indexed with
 # the form's palette (design/art/eien_starters_drafts.md, "Frame 2 (idle)"). Species without
@@ -133,6 +137,8 @@ FRAME2_PICKS = {
     "ledian": "frame2_gemini3pro_a.png",
     "stantler": "frame2_gemini3pro_a.png",
     "wyrdeer": "frame2_gemini3pro_a.png",
+    "wingull": "frame2_gemini3pro_b.png",
+    "pelipper": "frame2_gemini3pro_a.png",
 }
 SHINY_HUE = 0.5
 

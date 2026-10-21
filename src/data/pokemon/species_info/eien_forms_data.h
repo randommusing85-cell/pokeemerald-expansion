@@ -121,7 +121,14 @@ static const u16 sMonShinyPalette_StantlerEien[] = INCGFX_U16("graphics/pokemon/
 static const u16 sMonPalette_WyrdeerEien[] = INCGFX_U16("graphics/pokemon/eien/wyrdeer/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_WyrdeerEien[] = INCGFX_U16("graphics/pokemon/eien/wyrdeer/shiny.pal", ".gbapal");
 
-// Eien Wingull and Pelipper: the vanilla sprites in storm palettes until their drafts are picked.
+// Eien Wingull and Pelipper: the picked AI fronts, idle frames, backs and night-storm shinies
+// (convert_art.py, design/art/eien_wingull_drafts.md); icons in vanilla icon palettes 0 and 2.
+static const u32 sMonFrontPic_WingullEien[] = INCGFX_U32("graphics/pokemon/eien/wingull/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_WingullEien[] = INCGFX_U32("graphics/pokemon/eien/wingull/back.png", ".4bpp.smol");
+static const u8 sMonIcon_WingullEien[] = INCGFX_U8("graphics/pokemon/eien/wingull/icon.png", ".4bpp");
+static const u32 sMonFrontPic_PelipperEien[] = INCGFX_U32("graphics/pokemon/eien/pelipper/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_PelipperEien[] = INCGFX_U32("graphics/pokemon/eien/pelipper/back.png", ".4bpp.smol");
+static const u8 sMonIcon_PelipperEien[] = INCGFX_U8("graphics/pokemon/eien/pelipper/icon.png", ".4bpp");
 static const u16 sMonPalette_WingullEien[] = INCGFX_U16("graphics/pokemon/eien/wingull/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_WingullEien[] = INCGFX_U16("graphics/pokemon/eien/wingull/shiny.pal", ".gbapal");
 static const u16 sMonPalette_PelipperEien[] = INCGFX_U16("graphics/pokemon/eien/pelipper/normal.pal", ".gbapal");

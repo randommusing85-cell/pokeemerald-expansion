@@ -2,8 +2,11 @@
 
 Front drafts for the two Electric/Flying forms in `variants.md` (storm gulls of the sea cliffs:
 white with storm-grey wings and lightning-streaked wingtips; Eien Pelipper's big bill holds a
-crackling thundercloud instead of water). Nothing here is picked yet; the game uses the vanilla
-sprites in placeholder storm palettes.
+crackling thundercloud instead of water).
+
+**Picked and in the game:** Eien Wingull `gemini3pro_a`, Eien Pelipper `gemini3pro_a`, with their
+idle frames, backs, icons and night-storm shinies (below). In-game shots: `eien_wingull/summary.png`,
+`eien_wingull/battle_back.png`, `eien_wingull/party_icon.png`, `eien_pelipper/summary.png`.
 
 Contact sheets (vanilla first, then each converted draft, at 2x):
 [`eien_wingull_contact_sheet.png`](eien_wingull_contact_sheet.png),
@@ -46,3 +49,23 @@ fading to near-black tips with thin lightning lines.
   bolt).
 - After a pick: frame 2, back, icon and the night-storm shiny (a dark body with violet
   lightning), as for the other forms, then credit in `asset-credits.md`.
+
+## After the pick
+
+- **Fronts:** both converted cleanly and keep vanilla's framing. Sizes and offsets are fixed (the
+  non-GBA-style ones), as for the other forms.
+- **Backs** (`stage_drafts.py back`,
+  [`eien_wingull_back_contact_sheet.png`](eien_wingull_back_contact_sheet.png)): Wingull
+  `gemini3pro_b` (slate wings with yellow tips, like its front; 3 Pro a came out white),
+  Pelipper `gemini31flash_b` (vanilla's back pose with the big pale wing; 3 Pro b turned to face
+  forward and 3 Pro a gave it a brown chest).
+- **Idle frames** ([`eien_wingull_frame2_contact_sheet.png`](eien_wingull_frame2_contact_sheet.png)):
+  Wingull `gemini3pro_b` (3 Pro a curled into a ball), Pelipper `gemini3pro_a`.
+- **Icons** ([`eien_wingull_icon_contact_sheet.png`](eien_wingull_icon_contact_sheet.png)): the
+  drafts were noisy, so frame 1 of Wingull `gemini3pro_a` and Pelipper `gemini31flash_b` was
+  indexed with only the greys, white and yellows of vanilla icon palettes 0 and 2, stray pixels
+  removed; frame 2 is frame 1 moved down 1px.
+- **Shinies** (`shiny_drafts.py`): `night_storm`, the white body turned dark slate and the
+  lightning violet. Eien Wingull's beak shares the lightning's yellows and turns violet too;
+  Eien Pelipper's bill stays yellow.
+- The overworld (follower) sprites are still vanilla's (the Route 8 flock needs one: `TODO`).
