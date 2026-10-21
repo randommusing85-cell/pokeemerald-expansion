@@ -68,6 +68,28 @@ SPECIES = {
         "c": "Evaporating mist: the veils are solid near the body and fade downward, ending in a "
              "few loose scattered mist pixels at their hems, as if evaporating.",
     }),
+    "ledyba": ("Ledyba", (
+        "Eien Ledyba is Bug/Fire, an ember firefly of summer rice paddies in northern Japan: its "
+        "spots are glowing embers and its abdomen glows orange like a hot coal. Warm, clearly a "
+        "fire Pokemon, still clearly Ledyba."), {
+        "a": "Red-brown shell with bright orange-yellow ember spots that glow, a glowing orange "
+             "abdomen; dark limbs.",
+        "b": "Charcoal-black shell like burnt wood, its spots glowing ember cracks, and an "
+             "abdomen like a coal glowing orange through the dark.",
+        "c": "Warm amber shell with small glowing ember spots, and a big softly glowing "
+             "yellow-orange firefly light at the tip of its abdomen, like a real firefly's.",
+    }),
+    "ledian": ("Ledian", (
+        "Eien Ledian is Bug/Fire, the evolution of an ember firefly of summer rice paddies: its "
+        "light has brightened into a warm lantern-like glow on its back, its spots are glowing "
+        "embers. A firefly, not a paper lantern. Still clearly Ledian."), {
+        "a": "Red-brown shell with bright ember spots, and its back glowing warm orange like a "
+             "lantern through the shell.",
+        "b": "Charcoal-black shell like burnt wood with glowing ember cracks, and a bright orange "
+             "glow from its back and abdomen.",
+        "c": "Warm amber shell with small ember spots and a big softly glowing yellow-orange "
+             "firefly light on its back.",
+    }),
 }
 
 PROMPT = (

@@ -67,7 +67,7 @@
 #define FLAG_RECEIVED_PROFESSOR_ALTARIA 0x2D // Eien: Haru gives his mother's Altaria; flying from the Town Map (OW_FLAG_POKE_RIDER)
 #define FLAG_JOURNAL_WOOPER_NO_EVO 0x2E // Eien: the journal noted an Eien Wooper at Lv 20+ that didn't evolve
 #define FLAG_JOURNAL_HOOTHOOT_NO_EVO 0x2F // Eien: the journal noted an Eien Hoothoot at Lv 20+ that didn't evolve
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
+#define FLAG_JOURNAL_LEDYBA_NO_EVO 0x30 // Eien: the journal noted an Eien Ledyba at Lv 18+ that didn't evolve
 #define FLAG_UNUSED_0x031    0x31 // Unused Flag
 #define FLAG_UNUSED_0x032    0x32 // Unused Flag
 #define FLAG_UNUSED_0x033    0x33 // Unused Flag

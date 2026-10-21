@@ -128,6 +128,7 @@ Hamakaze_Lab_EventScript_AfterBattle::
 	@ The rest of her list (side-quests E2): each shows in the journal after its region's badge
 	setquest QUEST_RESEARCH_HOOTHOOT, QUEST_STATE_OPEN
 	setquest QUEST_RESEARCH_WOOPER, QUEST_STATE_OPEN
+	setquest QUEST_RESEARCH_LEDYBA, QUEST_STATE_OPEN
 	msgbox Hamakaze_Lab_Text_RouteOneNorth, MSGBOX_DEFAULT
 	release
 	end

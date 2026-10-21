@@ -2,6 +2,8 @@
 #include "eien_journal.h"
 #include "eien_quests.h"
 #include "event_data.h"
+#include "field_weather.h"
+#include "constants/weather.h"
 #include "pokemon.h"
 #include "test/overworld_script.h"
 #include "test/test.h"
@@ -182,6 +184,7 @@ TEST("(Eien journal) the professor's list shows each entry after its region's ba
 
     PARAMETRIZE { quest = QUEST_RESEARCH_HOOTHOOT; badge = FLAG_BADGE01_GET; }
     PARAMETRIZE { quest = QUEST_RESEARCH_WOOPER;   badge = FLAG_BADGE02_GET; }
+    PARAMETRIZE { quest = QUEST_RESEARCH_LEDYBA;   badge = FLAG_BADGE03_GET; }
 
     SetQuestState(quest, QUEST_STATE_NONE);
     FlagClear(badge);
@@ -228,4 +231,51 @@ TEST("(Eien species) the Eien finals keep their Eien typing")
 
     EXPECT_EQ(GetSpeciesType(species, 0), type1);
     EXPECT_EQ(GetSpeciesType(species, 1), type2);
+}
+
+TEST("(Eien journal) the Ledyba note needs an Eien Ledyba at Lv 18+ in the party")
+{
+    u32 species, level;
+
+    PARAMETRIZE { species = SPECIES_LEDYBA_EIEN; level = 17; }
+    PARAMETRIZE { species = SPECIES_LEDYBA_EIEN; level = 18; }
+    PARAMETRIZE { species = SPECIES_LEDYBA;      level = 30; }
+
+    ZeroPlayerPartyMons();
+    FlagClear(FLAG_JOURNAL_LEDYBA_NO_EVO);
+    VarSet(VAR_TEMP_0, species);
+    VarSet(VAR_TEMP_1, level);
+    RUN_OVERWORLD_SCRIPT(givemon VAR_TEMP_0, VAR_TEMP_1;);
+    UpdateJournalNotes();
+    EXPECT_EQ(FlagGet(FLAG_JOURNAL_LEDYBA_NO_EVO), species == SPECIES_LEDYBA_EIEN && level >= 18);
+}
+
+// Eien Ledyba evolves at Lv 18+ only while it's raining (design/variants.md).
+TEST("(Eien species) Eien Ledyba evolves at Lv 18 only in the rain")
+{
+    u32 weather, level, evolves;
+    struct Pokemon mon;
+
+    PARAMETRIZE { weather = WEATHER_RAIN;               level = 18; evolves = TRUE; }
+    PARAMETRIZE { weather = WEATHER_RAIN_THUNDERSTORM;  level = 20; evolves = TRUE; }
+    PARAMETRIZE { weather = WEATHER_RAIN;               level = 17; evolves = FALSE; }
+    PARAMETRIZE { weather = WEATHER_NONE;               level = 18; evolves = FALSE; }
+    PARAMETRIZE { weather = WEATHER_SNOW;               level = 18; evolves = FALSE; }
+
+    gWeatherPtr->currWeather = weather;
+    CreateMon(&mon, SPECIES_LEDYBA_EIEN, level, 0, OTID_STRUCT_PRESET(0));
+    EXPECT_EQ(GetEvolutionTargetSpecies(&mon, EVO_MODE_NORMAL, ITEM_NONE, NULL, NULL, CHECK_EVO),
+              evolves ? SPECIES_LEDIAN_EIEN : SPECIES_NONE);
+    gWeatherPtr->currWeather = WEATHER_NONE;
+}
+
+TEST("(Eien species) Eien Ledyba and Ledian are Bug/Fire")
+{
+    u32 species;
+
+    PARAMETRIZE { species = SPECIES_LEDYBA_EIEN; }
+    PARAMETRIZE { species = SPECIES_LEDIAN_EIEN; }
+
+    EXPECT_EQ(GetSpeciesType(species, 0), TYPE_BUG);
+    EXPECT_EQ(GetSpeciesType(species, 1), TYPE_FIRE);
 }
