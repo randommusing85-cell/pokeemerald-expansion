@@ -43,6 +43,9 @@ PICKS = {
     "combusken": ("front_gemini3pro_a.png", "front_gemini3pro_a.pal"),
     "ivysaur": ("front_gemini3pro_b.png", "front_gemini3pro_b.pal"),
     "frogadier": ("front_gemini3pro_a.png", "front_gemini3pro_a.pal"),
+    # design/art/eien_wooper_drafts.md (Wooper's re-sampled finer, with its smile redrawn)
+    "wooper": ("front_gemini3pro_b.png", "front_gemini3pro_b.pal"),
+    "quagsire": ("front_gemini3pro_a.png", "front_gemini3pro_a.pal"),
 }
 # species: chosen back draft in design/art/eien_<species>/back_drafts/, already indexed with
 # the form's palette (design/art/eien_starters_drafts.md, "Back sprites"). Species without one
