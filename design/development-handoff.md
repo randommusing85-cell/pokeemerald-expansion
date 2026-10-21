@@ -1,5 +1,46 @@
 # Development handoff: Claude + Codex
 
+## Active direction: port to RPG Maker XP + Pokémon Essentials
+
+User decision, 2026-10-21: Eien is moving to RPG Maker XP with Pokémon Essentials v21.1. The user already owns RPG Maker XP. This decision supersedes the ROM implementation tasks below; those sections remain historical reference.
+
+- Claude: continue Hamakaze dialogue, prologue text and engine-independent story design. Write scene triggers and outcomes without GBA text escapes. Use your brainstorm skill for the anime style and Higgsfield for movie cutscene production, as previously requested.
+- Codex: own the Essentials setup, Ruby/event implementation and validation. Rebuild maps in RPG Maker XP; Porymap files and C/event scripts are references, not directly importable project files.
+- Preserve the GBA repository and drafts #29/#31 as reference. No automatic merge, closure or deletion is part of this decision.
+- First port milestone: fresh game → bedroom → Hamakaze → starter selection/battle, then save/load. Reimplement journal/follower systems incrementally. Prototype video playback, skipping and return to gameplay before producing a full cinematic.
+- Keep ordinary story beats as traditional in-engine Pokémon scenes. Movies remain reserved for important scenes. Existing GBA delivery constraints in cutscenes.md are historical, not requirements for the new target.
+
+### Setup status
+
+Official tagged v21.1 scripts downloaded to Codex workspace at /workspace/pokemon-essentials-v21.1-source, commit ea7b5d56d2436591160983c4e641a2ceee2d875a. This is NOT a runnable Essentials project: the upstream GitHub repository excludes graphics, audio and runtime files. No Windows/RPG Maker playtest has run.
+
+The full author-linked package and hotfix are verified below, but MediaFire download is blocked by this workspace's network proxy (HTTP 403). Obtain these on the user's Windows machine, extract the full package into a separate Eien project folder, and install the hotfix folder under Plugins. Keep a clean baseline copy before customization. Do not replace the package scripts with current upstream master.
+
+- [Official release](https://www.eeveeexpo.com/essentials/)
+- [Full v21.1 package](https://www.mediafire.com/file/7o3yjnuxniojmad/Pokemon_Essentials_v21.1_2023-07-30.zip/file)
+- [Official v21.1 hotfix instructions](https://www.eeveeexpo.com/resources/1376/)
+- [Hotfix download](https://www.mediafire.com/file/znhw2jk5judt3ga/v21.1_Hotfixes.zip/file)
+- [Upstream README explaining omitted files](https://github.com/Maruno17/pokemon-essentials/blob/v21.1/README.md)
+
+### Resource guide review
+
+[User-supplied beginner guide](https://www.reddit.com/r/PokemonRMXP/comments/1s1lfp0/a_beginners_quick_start_resource_guide_for_rpg/) reviewed, along with the author release pages and selected linked resources.
+
+| Resource | Use for Eien / review limits |
+| --- | --- |
+| [Thundaga](https://www.youtube.com/thundaga) | Setup and event/mapping tutorials; compare examples against v21.1. Videos not watched during this review. |
+| [Route mapping tutorial](https://www.reddit.com/r/PokemonRMXP/comments/1ldtb5h/tutorial_mapping_routes_in_rpg_maker_xp_for/) | Candidate reference when blocking out Hamakaze/Route 1. Text page inspected; slideshow images not inspected. |
+| [Graphics collection](https://docs.google.com/spreadsheets/d/1Wu-nl64WyZXKwz88CfKz4CalXolD9e0Y-I57mEEEc80/edit) | Index inspected. Select a consistent tileset family and record each creator's terms and credits; listing is not blanket permission. |
+| [Eevee Expo](https://eeveeexpo.com/) and [PokeCommunity](https://www.pokecommunity.com/) | Engine support and candidate plugins. Check exact v21.1 compatibility before adoption. |
+| [World builder](https://kewaydex.notion.site/Ultimate-Pok-mon-Game-World-Builder-11b438d594a280d7939cd2f6e4310be2) | Returned 404 in review; existing design docs remain our planning source. |
+| [Custom Pokédex tool](https://littlerootdreams.com/custom_pokedex.html) | Timed out; functionality unverified. Existing species designs can be mapped into Essentials PBS data. |
+| Type-chart spreadsheet, FrogMegadrive videos, Spriters Resource and sound collections | Listed by the guide; not individually evaluated. Defer until needed for a concrete implementation or asset task. |
+| Pokémon Studio | Separate alternative ecosystem; do not mix its setup with this Essentials port. |
+
+Next dependency: make the complete extracted package available in the development workspace, then verify an untouched project boots in RPG Maker XP before adding Eien content.
+
+---
+
 Updated 2026-10-21. Remote baseline verified: `cfed829a7b` (PR #27 merged).
 Read this at session start; update it with actual outcomes and the next owner at handoff.
 
