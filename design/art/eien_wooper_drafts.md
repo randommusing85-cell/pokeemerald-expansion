@@ -71,7 +71,8 @@ sprites and palettes in `eien_<species>/drafts/converted/`.
 - **Icons** ([`eien_wooper_icon_contact_sheet.png`](eien_wooper_icon_contact_sheet.png), previewed
   in the Eien icon palette): the Eien palette has no dark slate or copper, so both were indexed
   with vanilla icon palette 3 instead (dark blue, greys, copper): Wooper `gemini3pro_b`, Quagsire
-  `gemini31flash_b` with frame 2 as frame 1 moved down 1px (`make_icons.py`, `ICON_READY`).
+  `gemini31flash_b`. In both, frame 2 is frame 1 moved down 1px (Wooper's drawn frame 2 sat 12px
+  higher, so its icon jumped) (`make_icons.py`, `ICON_READY`).
 - **Shinies** (`shiny_drafts.py`, in `eien_shiny_contact_sheet.png`): Wooper `gold_crust` (a gold
   crust all over, as `variants.md` says) over `gold_flecks`; Quagsire `gilded` (the gilded kettle)
   over `gold_leaf`.
