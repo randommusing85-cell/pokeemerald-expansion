@@ -38,17 +38,37 @@ stays as the record.
 
 ## Decided
 
+- **Akira's final (r1 1c):**
+  - At the tournament his starter is still the middle stage ("evolved" means that).
+  - The hero first meets Akira's final in their Route 5 goodbye battle, at about Lv 36.
+  - The story outline's tournament line changes to match.
+- **Names (r1 2a):** "Eien" plus the vanilla name for all three, like every other variant. Own
+  names stay open, for whenever the user wants them.
+- **Signature moves (r1 3b):** an existing rare move each, learned by level, not by TM:
+  - Eien Blaziken: Infernal Parade (Ghost, can burn: a festival float's procession).
+  - Eien Venusaur: Lumina Crash (Psychic, light).
+  - Eien Greninja: Triple Axel (Ice).
+  - All three moves exist in the engine.
+- **Art (r1 4a):** re-draft Eien Blaziken with a stronger brief: a paper lantern body over a
+  visible frame, lit from inside, with a painted warrior face. Venusaur and Greninja are picked
+  from the existing concept drafts.
+- **Build (r1 5c):** data and art together, as with Eien Hoothoot. The drafts generate while the
+  species data and the Lv 36 evolutions are built.
+
 ## Leaning
+
+- The signature moves' levels: a few levels after evolving, Lv 42 for all three (a default, not
+  asked).
 
 ## Open questions
 
-Round 1 (asked): names, Akira's final against the Lv 36 evolution, signature moves, Blaziken's
-art, the build's scope.
+- The picks: Venusaur and Greninja from the existing concepts, and Blaziken from its re-draft.
+- The finals' dex entries: drafted at build time, marked `TODO(design)`.
 
 ## Gaps and tensions
 
-- Lv 36 against the tournament: Akira's final would be "first seen" around Lv 34, before the
-  hero's starter can reach it.
+- Lv 36 against the tournament: settled by r1 1c (story-outline.md's tournament line needs the
+  edit).
 - Six forms' full art is the biggest art job so far (three of them, after the middle stages).
 
 ## Parked ideas
