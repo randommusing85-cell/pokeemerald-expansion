@@ -63,8 +63,14 @@ static const u16 sMonShinyPalette_WooperEien[] = INCGFX_U16("graphics/pokemon/ei
 static const u16 sMonPalette_QuagsireEien[] = INCGFX_U16("graphics/pokemon/eien/quagsire/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_QuagsireEien[] = INCGFX_U16("graphics/pokemon/eien/quagsire/shiny.pal", ".gbapal");
 
-// Eien Hoothoot and Noctowl: the vanilla sprites in faded mist palettes (placeholder_palettes.py)
-// until their AI drafts are picked.
+// Eien Hoothoot and Noctowl: the picked AI fronts, idle frames, backs and aurora shinies
+// (convert_art.py, design/art/eien_hoothoot_drafts.md); icons in vanilla icon palette 2.
+static const u32 sMonFrontPic_HoothootEien[] = INCGFX_U32("graphics/pokemon/eien/hoothoot/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_HoothootEien[] = INCGFX_U32("graphics/pokemon/eien/hoothoot/back.png", ".4bpp.smol");
+static const u8 sMonIcon_HoothootEien[] = INCGFX_U8("graphics/pokemon/eien/hoothoot/icon.png", ".4bpp");
+static const u32 sMonFrontPic_NoctowlEien[] = INCGFX_U32("graphics/pokemon/eien/noctowl/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_NoctowlEien[] = INCGFX_U32("graphics/pokemon/eien/noctowl/back.png", ".4bpp.smol");
+static const u8 sMonIcon_NoctowlEien[] = INCGFX_U8("graphics/pokemon/eien/noctowl/icon.png", ".4bpp");
 static const u16 sMonPalette_HoothootEien[] = INCGFX_U16("graphics/pokemon/eien/hoothoot/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_HoothootEien[] = INCGFX_U16("graphics/pokemon/eien/hoothoot/shiny.pal", ".gbapal");
 static const u16 sMonPalette_NoctowlEien[] = INCGFX_U16("graphics/pokemon/eien/noctowl/normal.pal", ".gbapal");

@@ -172,11 +172,14 @@ the middle stages don't evolve further yet.
 - **Research:** seen / battled / caught, like Eien Poochyena's: an entry on the professor's
   list (side-quests E2), shown once the hero has gym 1's badge.
 - **Shiny:** aurora mist, green-violet instead of grey, for both stages.
-- **Sprites:** AI drafts through `tools/eien_species/` (`variant_drafts.py`): one round with
-  three mist treatments (pale solid mist; dithered mist, see-through to the background; mist
-  that fades to loose pixels at the tips), picked from the contact sheet. Eien Noctowl's veils
-  hang down behind it into the space below the wings, a shroud inside 64x64. Built in one PR
-  with the data: the art goes in once picked.
+- **Sprites:** picked AI drafts ([art/eien_hoothoot_drafts.md](art/eien_hoothoot_drafts.md)),
+  from one round with three mist treatments: both picks are the pale solid mist (lavender mist
+  wings, no outline, around a solid face with icy glowing eyes; Eien Noctowl's veils hang down
+  both sides to its feet). With idle frames, backs, icons (vanilla icon palette 2) and aurora
+  shinies (green mist on a violet-grey body). `TODO(design)`: both dex entries (drafts in
+  `eien_families.h`) and the research tier lines (drafts in `src/data/eien_journal.h`).
+- **Built:** `SPECIES_HOOTHOOT_EIEN` / `SPECIES_NOCTOWL_EIEN`; tests in `test/eien_journal.c` and
+  `test/battle/eien_research.c`.
   `TODO(design)`: both dex entries (drafted at build time).
 
 Decided in [brainstorm-eien-hoothoot.md](brainstorm-eien-hoothoot.md); the build in

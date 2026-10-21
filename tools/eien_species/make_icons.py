@@ -49,6 +49,9 @@ ICON_READY = {
     # copper); Quagsire's frame 2 is frame 1 moved down 1px
     "wooper": ("icon_gemini3pro_b_pal3.png", 3),
     "quagsire": ("icon_gemini31flash_b_pal3.png", 3),
+    # indexed with vanilla icon palette 2 (greys and violet); frame 2 is frame 1 moved down 1px
+    "hoothoot": ("icon_gemini31flash_a_pal2.png", 2),
+    "noctowl": ("icon_gemini3pro_a_pal2.png", 2),
 }
 
 
