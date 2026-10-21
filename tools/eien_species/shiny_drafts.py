@@ -84,6 +84,13 @@ CONCEPTS = {
     "greninja": {
         "midnight": [((3, 5, 6, 8, 10), 228, 0.55, -0.3)],
     },
+    # a real firefly's pale green light instead of ember orange (variants.md)
+    "ledyba": {
+        "firefly_green": [((9, 10, 11, 12, 13, 14), 78, 0.8, 0.05)],
+    },
+    "ledian": {
+        "firefly_green": [((10, 12, 13, 14, 15), 78, 0.8, 0.05), ((11,), 80, 0.6, 0.0)],
+    },
     "wooper": {
         # gold ore (variants.md): the copper flecks turn bright gold on the dark slate body
         "gold_flecks": [((4, 5, 8, 9, 12, 13, 15), 46, 0.85, 0.05)],
