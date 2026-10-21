@@ -1,8 +1,11 @@
 # Eien Wooper and Eien Quagsire: AI draft front sprites
 
 Front drafts for the two Ground/Steel forms in `variants.md` (a mine Wooper crusted with iron and
-copper ore; a Quagsire like a polished Nanbu *tetsubin* kettle). Nothing here is picked yet; the
-game still uses the vanilla sprites in placeholder ore palettes.
+copper ore; a Quagsire like a polished Nanbu *tetsubin* kettle).
+
+**Picked and in the game:** Eien Wooper `gemini3pro_b`, Eien Quagsire `gemini3pro_a`, with their
+idle frames, backs, icons and gold shinies (below). In-game shots: `eien_wooper/summary.png`,
+`eien_wooper/battle_back.png`, `eien_wooper/party_icon.png`, `eien_quagsire/summary.png`.
 
 Contact sheets (vanilla first, then each converted draft, at 2x):
 [`eien_wooper_contact_sheet.png`](eien_wooper_contact_sheet.png),
@@ -45,9 +48,31 @@ sprites and palettes in `eien_<species>/drafts/converted/`.
 - All twelve kept the pose and framing and fit 64x64 without scaling.
 - Wooper's drafts have a pocket of white between the body and the tail that the background
   removal can't reach (it only clears background touching the edge). It's invisible on the white
-  contact sheet; the picked draft needs it cleared to transparent (most visible in
-  `gemini3pro_a`, `gemini31flash_a` and `gemini31flash_b`).
+  contact sheet (`gemini3pro_a`, `gemini31flash_a` and `gemini31flash_b`; the picked
+  `gemini3pro_b` doesn't have one).
 - Pairing: Wooper b with Quagsire a or c keeps the dark iron and copper line; Wooper c pairs
   with Quagsire b (brown ore to rust).
 - After a pick: frame 2, back, icon and the gold shiny, as for the other forms
   (`stage_drafts.py`, `shiny_drafts.py`, `make_icons.py`), then credit in `asset-credits.md`.
+
+## After the pick
+
+- **Front conversion:** Wooper's draft was drawn on a finer grid than 64x64, and the normal
+  conversion lost its smile and outline. Its front was re-sampled at 128x128 and folded 2x2 (a
+  block with two or more near-black pixels stays black, otherwise its most common color), and the
+  smile redrawn by hand (`eien_wooper/converted/front_gemini3pro_b.png`). Quagsire's normal
+  conversion was kept.
+- **Backs** (`stage_drafts.py back`, contact sheet
+  [`eien_wooper_back_contact_sheet.png`](eien_wooper_back_contact_sheet.png)): Wooper
+  `gemini3pro_b` (slate with copper flecks), Quagsire `gemini3pro_b` (hobnails down its back).
+- **Idle frames** ([`eien_wooper_frame2_contact_sheet.png`](eien_wooper_frame2_contact_sheet.png)):
+  Wooper `gemini31flash_a` (mouth open, like vanilla's frame 2), Quagsire `gemini3pro_a` (arms
+  folded, mouth open).
+- **Icons** ([`eien_wooper_icon_contact_sheet.png`](eien_wooper_icon_contact_sheet.png), previewed
+  in the Eien icon palette): the Eien palette has no dark slate or copper, so both were indexed
+  with vanilla icon palette 3 instead (dark blue, greys, copper): Wooper `gemini3pro_b`, Quagsire
+  `gemini31flash_b` with frame 2 as frame 1 moved down 1px (`make_icons.py`, `ICON_READY`).
+- **Shinies** (`shiny_drafts.py`, in `eien_shiny_contact_sheet.png`): Wooper `gold_crust` (a gold
+  crust all over, as `variants.md` says) over `gold_flecks`; Quagsire `gilded` (the gilded kettle)
+  over `gold_leaf`.
+- The overworld (follower) sprites are still vanilla's, like the other Eien forms'.

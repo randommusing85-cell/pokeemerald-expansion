@@ -192,9 +192,10 @@ Decided in [brainstorm-eien-hoothoot.md](brainstorm-eien-hoothoot.md).
   lines (drafts in `src/data/eien_journal.h`).
 - **Shiny:** gold ore, a gleaming gold crust instead of iron and copper; Eien Quagsire a gilded
   kettle.
-- **Sprites:** AI front drafts in [art/eien_wooper_drafts.md](art/eien_wooper_drafts.md) (`variant_drafts.py`), not picked yet. For now both reuse the
-  vanilla sprites in placeholder palettes (`placeholder_palettes.py`): iron grey with a copper
-  warmth, gold for the shinies. The icons are vanilla. `TODO(design)`: both dex entries,
+- **Sprites:** picked AI drafts ([art/eien_wooper_drafts.md](art/eien_wooper_drafts.md)): Eien
+  Wooper dark wet slate with copper flecks and iron fins, Eien Quagsire a near-black hobnailed
+  tetsubin; with idle frames, backs, icons (vanilla icon palette 3) and gold shinies (a gold
+  crust; a gilded kettle). `TODO(design)`: both dex entries,
   categories ("Ore Fish" is a placeholder) and sizes (vanilla's for now; drafts in
   `eien_families.h`).
 - **Built:** `SPECIES_WOOPER_EIEN` / `SPECIES_QUAGSIRE_EIEN` (`eien_families.h`, learnsets and

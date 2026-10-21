@@ -45,6 +45,10 @@ ICON_RECOLOR = {
 ICON_READY = {
     "poochyena": ("icon_gemini3pro_a.png", 5),
     "mightyena": ("icon_gemini3pro_a.png", 5),
+    # sampled from the raw drafts and indexed with vanilla icon palette 3 (dark blue, greys,
+    # copper); Quagsire's frame 2 is frame 1 moved down 1px
+    "wooper": ("icon_gemini3pro_b_pal3.png", 3),
+    "quagsire": ("icon_gemini31flash_b_pal3.png", 3),
 }
 
 

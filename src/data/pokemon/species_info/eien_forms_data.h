@@ -50,8 +50,14 @@ static const u16 sMonShinyPalette_PoochyenaEien[] = INCGFX_U16("graphics/pokemon
 static const u16 sMonPalette_MightyenaEien[] = INCGFX_U16("graphics/pokemon/eien/mightyena/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_MightyenaEien[] = INCGFX_U16("graphics/pokemon/eien/mightyena/shiny.pal", ".gbapal");
 
-// Eien Wooper and Quagsire: the vanilla sprites in ore palettes (placeholder_palettes.py) until
-// their AI drafts are picked.
+// Eien Wooper and Quagsire: the picked AI fronts, idle frames, backs and gold shinies
+// (convert_art.py, design/art/eien_wooper_drafts.md); icons in vanilla icon palette 3.
+static const u32 sMonFrontPic_WooperEien[] = INCGFX_U32("graphics/pokemon/eien/wooper/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_WooperEien[] = INCGFX_U32("graphics/pokemon/eien/wooper/back.png", ".4bpp.smol");
+static const u8 sMonIcon_WooperEien[] = INCGFX_U8("graphics/pokemon/eien/wooper/icon.png", ".4bpp");
+static const u32 sMonFrontPic_QuagsireEien[] = INCGFX_U32("graphics/pokemon/eien/quagsire/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_QuagsireEien[] = INCGFX_U32("graphics/pokemon/eien/quagsire/back.png", ".4bpp.smol");
+static const u8 sMonIcon_QuagsireEien[] = INCGFX_U8("graphics/pokemon/eien/quagsire/icon.png", ".4bpp");
 static const u16 sMonPalette_WooperEien[] = INCGFX_U16("graphics/pokemon/eien/wooper/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_WooperEien[] = INCGFX_U16("graphics/pokemon/eien/wooper/shiny.pal", ".gbapal");
 static const u16 sMonPalette_QuagsireEien[] = INCGFX_U16("graphics/pokemon/eien/quagsire/normal.pal", ".gbapal");

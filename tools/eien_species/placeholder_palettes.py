@@ -29,11 +29,6 @@ LOOKS = {
     "quagsire": (-0.48, 0.28, -0.04), # the same ore, polished
 }
 
-# Shinies drawn from the normal palette instead of the original shiny: (hue, sat, light) as above.
-SHINY_FROM_NORMAL = {
-    "wooper": (-0.45, 0.95, 0.04),    # gold ore (variants.md)
-    "quagsire": (-0.45, 0.95, 0.04),  # a gilded kettle
-}
 
 
 def read_jasc(path):
@@ -60,12 +55,9 @@ def main():
         if species in PICKS:
             continue
         for name in ("normal.pal", "shiny.pal"):
-            source, use = name, look
-            if name == "shiny.pal" and species in SHINY_FROM_NORMAL:
-                source, use = "normal.pal", SHINY_FROM_NORMAL[species]
-            palette = read_jasc(os.path.join(REPO, "graphics/pokemon", species, source))
+            palette = read_jasc(os.path.join(REPO, "graphics/pokemon", species, name))
             # Index 0 is transparency: keep it.
-            out = [palette[0]] + [shift(c, *use) for c in palette[1:]]
+            out = [palette[0]] + [shift(c, *look) for c in palette[1:]]
             write_jasc(os.path.join(REPO, "graphics/pokemon/eien", species, name), out)
         print(f"{species}: graphics/pokemon/eien/{species}/normal.pal, shiny.pal")
 
