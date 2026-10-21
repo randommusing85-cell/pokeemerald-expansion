@@ -60,7 +60,8 @@ The journal's text for each quest (title, giver, hint, log lines, the line shown
 closed) and the relationship line per person live in `src/data/eien_journal.h`; the screen
 is `src/eien_journal.c`. Research quests store their tiers as bits of the step (seen,
 battled, caught, lore); an entry on the professor's list shows in the journal only once its
-region's badge is held (E2). The relationship thresholds there are placeholders until the design
+region's badge is held (E2; `IsQuestShownInJournal`, checked in
+`design/art/eien_hoothoot/professors_list.png`). The relationship thresholds there are placeholders until the design
 sets them.
 
 ## Chains
