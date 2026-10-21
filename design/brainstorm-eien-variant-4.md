@@ -43,18 +43,46 @@ location doc) when settled; this file stays as the record.
   Eien Wooper to the mine.
 - **How many more (r1 4b):** one variant for each remaining gym a variant answers well, about
   three more after this one, plus Trubbish's split. That keeps within the planned 5-10.
+- **The orchard scene (r2 1c):** unaffected. The orchard greys around them while the fireflies
+  keep glowing, the only colour left in the scene, which hints that some Pokémon resist the
+  fading. On the GBA this uses the thinning's "kept objects" (two at most): a firefly takes one.
+- **Look (r2 2a):** ember fireflies.
+  - Eien Ledyba's spots are glowing embers and its abdomen glows orange like a coal.
+  - Eien Ledian's light brightens into a lantern-like glow on its back. It's still a firefly,
+    distinct from the paper lanterns of Torchic's line.
+- **Stats (r2 3a):** special attackers.
+  - Eien Ledyba: 40 / 20 / 30 / 70 / 50 / 55 (HP / Atk / Def / SpA / SpD / Spe), 265.
+  - Eien Ledian: 55 / 35 / 50 / 95 / 80 / 75, 390.
+- **Abilities and moves (r2 4c):**
+  - Abilities: Flame Body / Swarm / Illuminate (hidden). In Gen 9, Illuminate stops its
+    accuracy from being lowered and ignores the target's evasion; the config is
+    `B_ILLUMINATE_EFFECT GEN_LATEST`.
+  - Moves: Ember at 1 (replacing Tackle), Will-O-Wisp at 12 (replacing Safeguard), Flame Wheel
+    at 15 (replacing Mach Punch); otherwise vanilla.
+- **Evolution (r2 5b):** into Eien Ledian at Lv 18+ while it's raining. The engine's
+  `IF_WEATHER` condition supports this; Route 4 needs rain some of the time.
+- **Research, note and shiny (r2 6, defaults):**
+  - Research: seen / battled / caught on the professor's list, shown after gym 3's badge.
+  - A journal note when one reaches Lv 18 without evolving.
+  - Shiny: a real firefly's pale green light instead of ember orange.
 
 ## Leaning
 
+- Eien Ledian keeps Eien Ledyba's abilities (a default, as with the other variants).
+
 ## Open questions
 
-Round 2 (asked): its look, stats, abilities, early moves, evolution rule, and how it appears in
-the orchard scene without being touched by the fading.
+- Route 4's weather: how the rain comes and goes (a weather cycle on the map, or rain on some
+  visits). This belongs to Route 4's build.
+- Both dex entries, drafted at build time.
+- The sprites: AI drafts through `tools/eien_species/`, as for the others.
 
 ## Gaps and tensions
 
-- r1 1c + 3b: it's seen first in the orchard thinning but isn't touched by the fading. It needs a
-  reason to be there (drawn to the light? fleeing it?).
+- r1 1c + 3b: settled by r2 1c (unaffected: it keeps its colour in the greyed orchard).
+- r2 1c: the orchard scene's kept objects are the hero's partner and at most two others. A
+  firefly takes one, so Yuki or a Survey member can't also stay in colour there.
+- r2 5b: Route 4 needs rain. Its doc gives no weather yet.
 - Vanilla Ledyba: 40 / 20 / 30 / 40 / 80 / 55 (HP / Atk / Def / SpA / SpD / Spe), 265; Swarm /
   Early Bird / Rattled; Tackle 1, Supersonic 5, Swift 8, screens 12, Mach Punch 15, Roost 19,
   Struggle Bug 22; Ledian at Lv 18: 55 / 35 / 50 / 55 / 110 / 85, 390, Iron Fist hidden.
