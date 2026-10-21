@@ -1,11 +1,29 @@
 # CLAUDE.md
 
+## Active migration decision (2026-10-21)
+
+The user has decided to port Eien to RPG Maker XP + Pokémon Essentials v21.1.
+Read the active migration section in `design/development-handoff.md` first.
+This repository now serves as the GBA implementation and design reference. The ROM-specific
+instructions below apply only when maintaining that reference; they do not govern the new
+Essentials project. Pause new GBA implementation unless the user requests it. Claude owns
+engine-independent dialogue/story and the anime-style brainstorm; Codex owns the port.
+Continue using Higgsfield for important movie cutscenes and in-engine scenes for ordinary beats.
+
 This is a Pokémon ROM hack with a new region and an original story, built on
 [pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion) (a fork of it).
 The engine is upstream's; the region, story, maps, characters and dialogue are ours.
 
 ## Design comes first
 
+- Collaboration: Claude leads brainstorming and story design; Codex leads implementation,
+  builds and validation. Read `design/development-handoff.md` at session start and update it
+  at handoff with changes, checks, blockers and the next task. Cinematic proposals live in
+  `design/cutscenes.md`; proposals are not settled story decisions.
+- User direction (2026-10-21): use your brainstorm skill to develop the anime visual style
+  for important movie cutscenes, and use Higgsfield to produce those cutscenes. Follow the
+  brief in `design/cutscenes.md`. If the skill or Higgsfield is unavailable in your session,
+  report that concrete blocker rather than claiming it ran. Codex owns engine integration.
 - The design lives in `design/`. Read `design/README.md`, then the docs relevant to the task
   (the game bible, the location doc for the map you're touching, the story outline for scenes).
 - Design lands in the docs **before** code. If a request adds or changes story, characters,
