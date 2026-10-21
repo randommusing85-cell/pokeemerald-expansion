@@ -15,13 +15,20 @@ The way down from the highland plateau onto the door mountain's peninsula, after
 
 From moor down to the sea cliffs above a rough strait. `TODO(design)`: tilesets, music.
 
+**On the way down:** a flock of Eien Wingull rides a storm front above the cliffs, as overworld
+objects, before the player reaches their grass: the first sighting (`TODO`: the overworld sprite,
+vanilla Wingull's recoloured).
+
 ## Trainers
 
 Lv 46-48 (default). `TODO(design)`: classes, names, teams (a trainers-and-wild brainstorm).
 
 ## Wild Pokémon
 
-Lv 44-47 (default). `TODO(design)`: species, rates.
+Lv 44-47 (default). `TODO(design)`: species, rates. Eien Wingull (Electric/Flying storm gulls) is
+common in the grass by the cliff edge at the route's end, more common in rain; Eien Pelipper is
+likely wild here too at these levels ([variants.md](../variants.md)). It's the route's notable
+Pokémon, the answer to gym 7 (Water).
 
 ## Screenshot check
 

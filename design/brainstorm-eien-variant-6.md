@@ -1,7 +1,9 @@
 # Brainstorm: the sixth Eien variant
 
 Working notes for the Eien variant after Eien Stantler, the answer to gym 7. Decisions move into
-`variants.md` (and the location doc) when settled; this file stays as the record.
+`variants.md` (and the location doc) when settled; this file stays as the record. **Promoted** into
+`variants.md`, `locations/route-8.md` and `whats-left.md`; Focus Energy at Lv 10 (replacing
+Supersonic) was the proposed default for the crit rule, taken since the user didn't object.
 
 ## Givens (from the docs)
 
