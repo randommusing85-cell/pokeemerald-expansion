@@ -35,6 +35,14 @@ Cheerful and teasing; ribs him, laughs off a loss, serious in battle. Drafts:
 > You didn't lose by much. I'd have lost to him, last year.
 > (`TODO(design)`: a variant for when he beat KAITO.)
 
+### Haru
+
+Eager and friendly; talks a little fast, teases without edge, and wants to be useful.
+Loves his map.
+
+> I'm drawing a map of Eien. For you. You don't know where anything is yet.
+> Thanks! Don't get lost. It's one road.
+
 ### _[Rival]_
 
 _[description]_
