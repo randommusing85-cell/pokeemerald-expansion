@@ -45,18 +45,31 @@ the record.
 - **Eien Noctowl's veils (r1 5b):** hanging down behind it into the space below the wings, a
   shroud shape inside 64x64.
 
+- **Unseen entries (r2 1a):** "???" as the title, and a hint naming the place ("Something on
+  Route 2.").
+- **When entries show (r2 2b):** the professor gives the whole list at the lab, but each entry
+  only shows in the journal once the hero reaches its region: Hoothoot after gym 1, Wooper
+  after gym 2 (the badge flags decide; no new flags).
+- **Research rewards (r2 3d):** left for E2's own brainstorm. Hoothoot's research is built
+  without rewards, like Poochyena's.
+- **Build order (r2 4b):** the data and the professor's list, plus the draft round, together.
+  The art goes into the same PR once picked.
+
 ## Leaning
 
 ## Open questions
 
-Round 2 (asked): what an unseen entry shows, when entries join the list, how research rewards
-are claimed, and the build order.
+- The drafts' picks (after the draft round).
+- Both dex entries and the research tier lines: drafted at build time, marked `TODO(design)`.
+- E2's rewards (its own brainstorm).
 
 ## Gaps and tensions
 
 - The research detail page holds four tiers plus one note per species, so a second species'
   note doesn't crowd Poochyena's page. The "may need to scroll" worry in `variants.md` looks
   settled (to check at build).
+- E2 closes when the professor dies: closing it must close every open research entry, not just
+  Poochyena's (for her death scene's build).
 - The roadside tablet's hint for the night rule belongs to the Route 2 maps' build, not this one.
 
 ## Parked ideas
