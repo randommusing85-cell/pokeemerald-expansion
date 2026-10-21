@@ -212,15 +212,15 @@ static const struct JournalResearch sJournalResearch[] =
         .species = SPECIES_WINGULL_EIEN,
         .name = COMPOUND_STRING("Eien Wingull"),
         .notes = {
-            // TODO(design): the tier lines (drafts)
-            [RESEARCH_TIER_SEEN] = COMPOUND_STRING("Gulls riding the storm in."),
-            [RESEARCH_TIER_BATTLED] = COMPOUND_STRING("Electric and Flying!"),
-            [RESEARCH_TIER_CAUGHT] = COMPOUND_STRING("Its feathers crackle."),
+            // The right page holds eight rows: two per line, two for the note.
+            [RESEARCH_TIER_SEEN] = COMPOUND_STRING("Gulls in the storm."),
+            [RESEARCH_TIER_BATTLED] = COMPOUND_STRING("An Electric gull!"),
+            [RESEARCH_TIER_CAUGHT] = COMPOUND_STRING("Prickles, like static."),
             [RESEARCH_TIER_LORE] = NULL,
         },
         .noteFlag = FLAG_JOURNAL_WINGULL_NO_EVO,
-        // TODO(design): the hint's wording (variants.md)
-        .note = COMPOUND_STRING("It's waiting for the right strike."),
+        // The rule is 3 critical hits in one battle; the hero thinks in game terms.
+        .note = COMPOUND_STRING("Lv 25. It sparks when it crits."),
         .shownFlag = FLAG_BADGE06_GET,
     },
 };

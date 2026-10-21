@@ -289,8 +289,7 @@ Decided in [brainstorm-eien-variant-5.md](brainstorm-eien-variant-5.md).
   Wave (20, replacing Water Pulse); otherwise vanilla.
 - **Evolves** into Eien Pelipper after landing 3 critical hits in one battle ("struck by
   lightning"; the engine's `IF_CRITICAL_HITS_GE`, as Galarian Farfetch'd uses). The journal hints
-  at it once one reaches Lv 25 without evolving (`TODO(design)`: the line; draft "It's waiting
-  for the right strike.").
+  at it once one reaches Lv 25 without evolving (the line is under Journal below).
 - **Eien Pelipper:** 60 / 50 / 85 / 110 / 70 / 65 (60 / 50 / 100 / 95 / 70 / 65), 440: Def moved
   into SpA. The same abilities. Learns Thunder on evolving. Look: its big bill holds a crackling
   thundercloud instead of water.
@@ -300,8 +299,15 @@ Decided in [brainstorm-eien-variant-5.md](brainstorm-eien-variant-5.md).
 - **Sprites:** picked AI drafts ([art/eien_wingull_drafts.md](art/eien_wingull_drafts.md)):
   white with slate wings and yellow zigzag wingtips; Eien Pelipper's yellow bill holds a dark
   thundercloud. Idle frames, backs, icons (vanilla icon palettes 0 and 2) and night-storm
-  shinies. `TODO(design)`: both dex entries, the research tier lines and the hint's wording
-  (drafts in the code; the hint shows at Lv 25).
+  shinies.
+- **Dex entries.** Eien Wingull: "It flies ahead of storms over the strait, its wingtips
+  sparking. When a flock comes in, the boats in the port turn for home." Eien Pelipper: "Its
+  bill holds a thundercloud, not water. People on the strait say it is a Wingull that was struck
+  by lightning and kept it."
+- **Journal.** Research lines: seen "Gulls in the storm.", battled "An Electric gull!", caught
+  "Prickles, like static." The hint, shown at Lv 25 without evolving: "Lv 25. It sparks when it
+  crits." (he thinks in game terms). The research page holds eight rows, two per line, so the
+  lines stay this short (shot: `art/eien_wingull/journal.png`).
 - **First seen** on Route 8's way down ([route-8.md](locations/route-8.md)): a flock riding a
   storm front above the cliffs, as overworld objects, before the grass.
 - Drizzle also powers Ushio's Water moves if she moves in its rain: a trade-off for the player.

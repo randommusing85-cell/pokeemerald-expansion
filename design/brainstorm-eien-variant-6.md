@@ -62,7 +62,7 @@ Supersonic) was the proposed default for the crit rule, taken since the user did
 - Route 8's wild table: Eien Wingull common at the cliffs, more in rain; Eien Pelipper likely
   wild too at Lv 44-47.
 - The flock's overworld sprite for the first sighting (vanilla Wingull's recoloured).
-- Both dex entries and the research tier lines, drafted at build time.
+- ~~Both dex entries and the research tier lines~~: written, in `variants.md`.
 
 ## Gaps and tensions
 

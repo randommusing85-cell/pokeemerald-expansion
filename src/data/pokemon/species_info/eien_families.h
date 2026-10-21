@@ -1457,14 +1457,14 @@
         .speciesName = _("Wingull"),
         .cryId = CRY_WINGULL,
         .natDexNum = NATIONAL_DEX_WINGULL,
-        // TODO(design): category, size and dex entry (placeholders, like the other Eien forms' drafts).
         .categoryName = _("Storm Gull"),
         .height = 6,
         .weight = 95,
         .description = COMPOUND_STRING(
-            "It rides the winds ahead of a storm over\n"
-            "the strait. Fishermen who see a flock of\n"
-            "them turn their boats for home."),
+            "It flies ahead of storms over the\n"
+            "strait, its wingtips sparking. When a\n"
+            "flock comes in, the boats in the port\n"
+            "turn for home."),
         .pokemonScale = 295,
         .pokemonOffset = -2,
         .trainerScale = 256,
@@ -1536,14 +1536,14 @@
         .speciesName = _("Pelipper"),
         .cryId = CRY_PELIPPER,
         .natDexNum = NATIONAL_DEX_PELIPPER,
-        // TODO(design): category, size and dex entry (placeholders, like the other Eien forms' drafts).
         .categoryName = _("Storm Gull"),
         .height = 12,
         .weight = 280,
         .description = COMPOUND_STRING(
-            "Its bill holds a thundercloud instead\n"
-            "of water. When it opens its mouth, the\n"
-            "air crackles, and lightning follows."),
+            "Its bill holds a thundercloud, not\n"
+            "water. People on the strait say it is\n"
+            "a Wingull that was struck by lightning\n"
+            "and kept it."),
         .pokemonScale = 288,
         .pokemonOffset = 1,
         .trainerScale = 256,
