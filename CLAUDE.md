@@ -1,5 +1,15 @@
 # CLAUDE.md
 
+## Active migration decision (2026-10-21)
+
+The user has decided to port Eien to RPG Maker XP + Pokémon Essentials v21.1.
+Read the active migration section in `design/development-handoff.md` first.
+This repository now serves as the GBA implementation and design reference. The ROM-specific
+instructions below apply only when maintaining that reference; they do not govern the new
+Essentials project. Pause new GBA implementation unless the user requests it. Claude owns
+engine-independent dialogue/story and the anime-style brainstorm; Codex owns the port.
+Continue using Higgsfield for important movie cutscenes and in-engine scenes for ordinary beats.
+
 This is a Pokémon ROM hack with a new region and an original story, built on
 [pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion) (a fork of it).
 The engine is upstream's; the region, story, maps, characters and dialogue are ours.
