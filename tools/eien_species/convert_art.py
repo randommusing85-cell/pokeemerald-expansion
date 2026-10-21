@@ -59,6 +59,9 @@ PICKS = {
     # design/art/eien_stantler_drafts.md
     "stantler": ("front_gemini3pro_a.png", "front_gemini3pro_a.pal"),
     "wyrdeer": ("front_gemini3pro_a.png", "front_gemini3pro_a.pal"),
+    # design/art/eien_wingull_drafts.md
+    "wingull": ("front_gemini3pro_a.png", "front_gemini3pro_a.pal"),
+    "pelipper": ("front_gemini3pro_a.png", "front_gemini3pro_a.pal"),
 }
 # species: chosen back draft in design/art/eien_<species>/back_drafts/, already indexed with
 # the form's palette (design/art/eien_starters_drafts.md, "Back sprites"). Species without one
