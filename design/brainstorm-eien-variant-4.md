@@ -35,13 +35,29 @@ location doc) when settled; this file stays as the record.
 
 ## Decided
 
+- **Role (r1 1c):** it answers gym 4 (Grass), and it's first seen in Route 4's orchard thinning
+  scene.
+- **Species (r1 2a):** Ledyba / Ledian as Bug/Fire: fireflies (*hotaru*) over the summer rice
+  paddies. Ledyba is already on Route 4's list.
+- **Fading (r1 3b):** not touched by the fading; adapted to the plain and its paddies, like
+  Eien Wooper to the mine.
+- **How many more (r1 4b):** one variant for each remaining gym a variant answers well, about
+  three more after this one, plus Trubbish's split. That keeps within the planned 5-10.
+
 ## Leaning
 
 ## Open questions
 
-Round 1 (asked): its role, the species, the type, fading or not, and how many variants are left.
+Round 2 (asked): its look, stats, abilities, early moves, evolution rule, and how it appears in
+the orchard scene without being touched by the fading.
 
 ## Gaps and tensions
+
+- r1 1c + 3b: it's seen first in the orchard thinning but isn't touched by the fading. It needs a
+  reason to be there (drawn to the light? fleeing it?).
+- Vanilla Ledyba: 40 / 20 / 30 / 40 / 80 / 55 (HP / Atk / Def / SpA / SpD / Spe), 265; Swarm /
+  Early Bird / Rattled; Tackle 1, Supersonic 5, Swift 8, screens 12, Mach Punch 15, Roost 19,
+  Struggle Bug 22; Ledian at Lv 18: 55 / 35 / 50 / 55 / 110 / 85, 390, Iron Fist hidden.
 
 - The pattern so far is "one variant per route, answering the next gym". Breaking it for one
   variant could be refreshing, or confusing.
