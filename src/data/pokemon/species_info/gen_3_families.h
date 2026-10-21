@@ -2587,6 +2587,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sWingullLevelUpLearnset,
         .teachableLearnset = sWingullTeachableLearnset,
         .eggMoveLearnset = sWingullEggMoveLearnset,
+        .formSpeciesIdTable = sWingullFormSpeciesIdTable, // Eien: eien_forms_data.h
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_PELIPPER}),
     },
 
@@ -2673,6 +2674,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sPelipperLevelUpLearnset,
         .teachableLearnset = sPelipperTeachableLearnset,
+        .formSpeciesIdTable = sPelipperFormSpeciesIdTable, // Eien: eien_forms_data.h
     },
 #endif //P_FAMILY_WINGULL
 

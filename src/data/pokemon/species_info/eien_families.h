@@ -1432,3 +1432,161 @@
     },
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_STANTLER
+
+#if P_FAMILY_WINGULL
+    [SPECIES_WINGULL_EIEN] =
+    {
+        .baseHP        = 40,
+        .baseAttack    = 30,
+        .baseDefense   = 30,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 30,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FLYING),
+        .catchRate = 190,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 54 : 64,
+        .evYield_Speed = 1,
+        .itemCommon = ITEM_PRETTY_FEATHER,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FLYING),
+        .abilities = { ABILITY_STATIC, ABILITY_KEEN_EYE, ABILITY_DRIZZLE },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Wingull"),
+        .cryId = CRY_WINGULL,
+        .natDexNum = NATIONAL_DEX_WINGULL,
+        .categoryName = _("Storm Gull"),
+        .height = 6,
+        .weight = 95,
+        .description = COMPOUND_STRING(
+            "It flies ahead of storms over the\n"
+            "strait, its wingtips sparking. When a\n"
+            "flock comes in, the boats in the port\n"
+            "turn for home."),
+        .pokemonScale = 295,
+        .pokemonOffset = -2,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        // Its own sprites, framed like the vanilla (non-GBA-style) ones
+        .frontPic = sMonFrontPic_WingullEien,
+        .frontPicSize = MON_COORDS_SIZE(64, 48),
+        .frontPicYOffset = 11,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 17),
+            ANIMCMD_FRAME(1, 23),
+            ANIMCMD_FRAME(0, 13),
+        ),
+        .frontAnimId = ANIM_H_PIVOT,
+        .enemyMonElevation = 15,
+        .backPic = sMonBackPic_WingullEien,
+        .backPicSize = MON_COORDS_SIZE(64, 40),
+        .backPicYOffset = 13,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        .palette = sMonPalette_WingullEien,
+        .shinyPalette = sMonShinyPalette_WingullEien,
+        .iconSprite = sMonIcon_WingullEien,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-2, 15, SHADOW_SIZE_S)
+        FOOTPRINT(Wingull)
+        OVERWORLD(
+            sPicTable_Wingull,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_Wingull,
+            gShinyOverworldPalette_Wingull
+        )
+        .levelUpLearnset = sWingullEienLevelUpLearnset,
+        .teachableLearnset = sWingullTeachableLearnset,
+        .eggMoveLearnset = sWingullEggMoveLearnset,
+        .formSpeciesIdTable = sWingullFormSpeciesIdTable,
+        // Evolves after landing 3 critical hits in one battle (variants.md): "struck by lightning",
+        // as Galarian Farfetch'd does.
+        .evolutions = EVOLUTION({EVO_BATTLE_END, 0, SPECIES_PELIPPER_EIEN, CONDITIONS({IF_CRITICAL_HITS_GE, 3})}),
+    },    [SPECIES_PELIPPER_EIEN] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 50,
+        .baseDefense   = 85,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FLYING),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_7
+        .expYield = 154,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 151,
+    #else
+        .expYield = 164,
+    #endif
+        .evYield_Defense = 2,
+        .itemCommon = ITEM_PRETTY_FEATHER,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FLYING),
+        .abilities = { ABILITY_STATIC, ABILITY_KEEN_EYE, ABILITY_DRIZZLE },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Pelipper"),
+        .cryId = CRY_PELIPPER,
+        .natDexNum = NATIONAL_DEX_PELIPPER,
+        .categoryName = _("Storm Gull"),
+        .height = 12,
+        .weight = 280,
+        .description = COMPOUND_STRING(
+            "Its bill holds a thundercloud, not\n"
+            "water. People on the strait say it is\n"
+            "a Wingull that was struck by lightning\n"
+            "and kept it."),
+        .pokemonScale = 288,
+        .pokemonOffset = 1,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        // Its own sprites, framed like the vanilla (non-GBA-style) ones
+        .frontPic = sMonFrontPic_PelipperEien,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 2,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+        ),
+        .frontAnimId = ANIM_V_SLIDE_WOBBLE,
+        .enemyMonElevation = 8,
+        .backPic = sMonBackPic_PelipperEien,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 6,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        .palette = sMonPalette_PelipperEien,
+        .shinyPalette = sMonShinyPalette_PelipperEien,
+        .iconSprite = sMonIcon_PelipperEien,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-1, 17, SHADOW_SIZE_M)
+        FOOTPRINT(Pelipper)
+        OVERWORLD(
+            sPicTable_Pelipper,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_Pelipper,
+            gShinyOverworldPalette_Pelipper
+        )
+        .levelUpLearnset = sPelipperEienLevelUpLearnset,
+        .teachableLearnset = sPelipperTeachableLearnset,
+        .formSpeciesIdTable = sPelipperFormSpeciesIdTable,
+    },
+#endif //P_FAMILY_WINGULL

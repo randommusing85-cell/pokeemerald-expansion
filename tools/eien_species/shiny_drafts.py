@@ -98,6 +98,13 @@ CONCEPTS = {
     "wyrdeer": {
         "winter_coat": [((2, 4, 6, 7, 9, 10), 210, 0.12, 0.55)],
     },
+    # a night-storm gull: a dark body with violet lightning (variants.md)
+    "wingull": {
+        "night_storm": [((7, 15), 230, 0.2, -0.55), ((5, 6, 8, 10, 11, 13, 14), 280, 0.85, 0.0)],
+    },
+    "pelipper": {
+        "night_storm": [((8, 10, 15), 230, 0.2, -0.55), ((14,), 280, 0.85, 0.0)],
+    },
     "wooper": {
         # gold ore (variants.md): the copper flecks turn bright gold on the dark slate body
         "gold_flecks": [((4, 5, 8, 9, 12, 13, 15), 46, 0.85, 0.05)],

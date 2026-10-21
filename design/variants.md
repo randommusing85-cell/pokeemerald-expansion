@@ -132,6 +132,7 @@ Lv 18 evolutions (tests in `test/eien_journal.c`), with their sprites.
 | Hoothoot | Ghost/Flying | A half-faded owl of the night pass: its wings and tail fade into mist, only the face and glowing eyes are solid. Touched by the fading. Immune to Fighting moves; beats the Fighting gym. | Route 2's upper map, the vents near Yunotaki (10% by day, 30% at night) |
 | Ledyba | Bug/Fire | Ember fireflies (*hotaru*) of the summer rice paddies: glowing ember spots, an abdomen lit like a coal. Not touched by the fading: in the orchard thinning they keep glowing while the trees grey around them. The answer to gym 4 (Grass) | Route 4 ([route-4.md](locations/route-4.md)), the plain |
 | Stantler | Dark/Ghost | A faded Japanese serow (*kamoshika*) of the high country: a shaggy dark-grey coat, a pale face mask, its antler orbs dim, hollow grey, like holes in the world. Touched by the fading. The answer to gym 6 (Psychic) | Route 6 near Minori's terraces (rare), Route 7's plateau (common) |
+| Wingull | Electric/Flying | Storm gulls of the sea cliffs above the strait: white with storm-grey wings and lightning-streaked wingtips; Eien Pelipper's bill holds a crackling thundercloud. Not touched by the fading. The answer to gym 7 (Water) | Route 8's sea cliffs (common, more in rain) |
 | Wooper | Ground/Steel | A mine Wooper of the old tunnel's pools: its skin crusted with iron and copper ore, its gills glinting metal frills. Adapted to the mine, not touched by the fading. Immune to Electric; the answer to gym 3 | Route 3 ([route-3.md](locations/route-3.md)): the gorge's grass 10%, the cave 30% |
 
 - **Eien Poochyena:** 35 / 55 / 50 / 25 / 30 / 25 (35 / 55 / 35 / 30 / 30 / 35), 220.
@@ -280,6 +281,38 @@ Decided in [brainstorm-eien-variant-4.md](brainstorm-eien-variant-4.md).
   split. Route 5's forest has none (Eien Wooper already answers gym 5).
 
 Decided in [brainstorm-eien-variant-5.md](brainstorm-eien-variant-5.md).
+
+- **Eien Wingull** (built): 40 / 30 / 30 / 70 / 30 / 70 (40 / 30 / 30 / 55 / 30 /
+  85), 270: a fast special attacker. Abilities Static / Keen Eye / Drizzle (hidden): in its own
+  rain, Thunder never misses. New moves: Thunder Shock (1, replacing Water Gun), Focus Energy (10,
+  replacing Supersonic; a default so its evolution rule is reachable without a held item), Shock
+  Wave (20, replacing Water Pulse); otherwise vanilla.
+- **Evolves** into Eien Pelipper after landing 3 critical hits in one battle ("struck by
+  lightning"; the engine's `IF_CRITICAL_HITS_GE`, as Galarian Farfetch'd uses). The journal hints
+  at it once one reaches Lv 25 without evolving (the line is under Journal below).
+- **Eien Pelipper:** 60 / 50 / 85 / 110 / 70 / 65 (60 / 50 / 100 / 95 / 70 / 65), 440: Def moved
+  into SpA. The same abilities. Learns Thunder on evolving. Look: its big bill holds a crackling
+  thundercloud instead of water.
+- **Research:** seen / battled / caught on the professor's list (side-quests E2), shown after
+  gym 6's badge.
+- **Shiny:** a night-storm gull, a dark body with violet lightning, for both stages.
+- **Sprites:** picked AI drafts ([art/eien_wingull_drafts.md](art/eien_wingull_drafts.md)):
+  white with slate wings and yellow zigzag wingtips; Eien Pelipper's yellow bill holds a dark
+  thundercloud. Idle frames, backs, icons (vanilla icon palettes 0 and 2) and night-storm
+  shinies.
+- **Dex entries.** Eien Wingull: "It flies ahead of storms over the strait, its wingtips
+  sparking. When a flock comes in, the boats in the port turn for home." Eien Pelipper: "Its
+  bill holds a thundercloud, not water. People on the strait say it is a Wingull that was struck
+  by lightning and kept it."
+- **Journal.** Research lines: seen "Gulls in the storm.", battled "An Electric gull!", caught
+  "Prickles, like static." The hint, shown at Lv 25 without evolving: "Lv 25. It sparks when it
+  crits." (he thinks in game terms). The research page holds eight rows, two per line, so the
+  lines stay this short (shot: `art/eien_wingull/journal.png`).
+- **First seen** on Route 8's way down ([route-8.md](locations/route-8.md)): a flock riding a
+  storm front above the cliffs, as overworld objects, before the grass.
+- Drizzle also powers Ushio's Water moves if she moves in its rain: a trade-off for the player.
+
+Decided in [brainstorm-eien-variant-6.md](brainstorm-eien-variant-6.md).
 
 ### Planned: Trubbish's split
 

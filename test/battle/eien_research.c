@@ -150,3 +150,19 @@ WILD_BATTLE_TEST("Eien Stantler: using Shadow Sneak counts toward its evolution"
         EXPECT_EQ(GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_EVOLUTION_TRACKER), move == MOVE_SHADOW_SNEAK);
     }
 }
+
+WILD_BATTLE_TEST("Eien research: catching an Eien Wingull marks it seen, battled and caught")
+{
+    GIVEN {
+        SetQuestStep(QUEST_RESEARCH_WINGULL, 0);
+        WITH_CONFIG(B_MISSING_BADGE_CATCH_MALUS, GEN_7);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WINGULL_EIEN);
+    } WHEN {
+        TURN { USE_ITEM(player, ITEM_MASTER_BALL); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_SPECIAL, B_ANIM_BALL_THROW, player);
+    } THEN {
+        EXPECT_EQ(GetQuestStep(QUEST_RESEARCH_WINGULL), SEEN | BATTLED | CAUGHT);
+    }
+}

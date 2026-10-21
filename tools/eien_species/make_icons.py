@@ -65,6 +65,10 @@ ICON_READY = {
     # already indexed with the Eien icon palette (dark greys, white); frame 2 is frame 1 moved down 1px
     "stantler": ("icon_gemini3pro_a_hop.png", 6),
     "wyrdeer": ("icon_gemini3pro_a_hop.png", 6),
+    # indexed with the greys, white and yellows of vanilla icon palettes 0 and 2; frame 2 is frame 1
+    # moved down 1px
+    "wingull": ("icon_gemini3pro_a_pal0.png", 0),
+    "pelipper": ("icon_gemini31flash_b_pal2.png", 2),
 }
 
 

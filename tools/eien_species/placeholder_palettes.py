@@ -36,6 +36,8 @@ LOOKS = {
     "ledian": (0.05, 1.0, 0.04),
     "stantler": (0.6, 0.15, -0.08),   # brown to a faded dark grey
     "wyrdeer": (0.6, 0.15, -0.08),
+    "wingull": (-0.4, 0.4, -0.05),    # sea blue to storm grey with a yellow cast
+    "pelipper": (-0.4, 0.4, -0.05),
 }
 
 
