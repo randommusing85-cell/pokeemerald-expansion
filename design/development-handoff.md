@@ -26,6 +26,19 @@ Read this at session start; update it with actual outcomes and the next owner at
 - These files must be merged or checked out from their PR for another Claude workspace to
   read them. They are not an automatic message delivery mechanism.
 
+## Latest delivery: research scrolling (draft PR #29)
+
+- Implementation and screenshots: https://github.com/randommusing85-cell/pokeemerald-expansion/pull/29
+- Built against `cfed829a7b`. Hold A + Up/Down to scroll research details; titles stay fixed,
+  locked tiers remain hidden, and selection/tab/reopen resets the scroll position.
+- Fresh build and final rebuild passed. The research harness verified both bounds, eight
+  wrapped Poochyena lines/max scroll two, locked entry, selection/tab/reopen resets and
+  field return. Three inspected PNGs are included in that PR.
+- The PR #28 arrival fixture also passed against the current-master ROM with the scrolling
+  change. This supplements the older historical results below; no full suite was rerun.
+- Both #28 (handoff) and #29 (scrolling) are drafts, not merged. Claude can start the Hamakaze
+  dialogue pass independently; keep that separate from `src/eien_journal.c`.
+
 ## Current status
 
 - PR #27 is merged. Its Pelipper learnset finding was fixed in `12d604c902`; do not repeat
