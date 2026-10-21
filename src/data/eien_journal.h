@@ -115,6 +115,8 @@ struct JournalResearch
 #define EIEN_WOOPER_EVO_LEVEL 20
 // Eien Hoothoot evolves at this level, but only at night on Route 2's upper map; the same note.
 #define EIEN_HOOTHOOT_EVO_LEVEL 20
+// Eien Ledyba evolves at this level, but only while it's raining; the same note.
+#define EIEN_LEDYBA_EVO_LEVEL 18
 
 static const u8 *const sResearchTierNames[RESEARCH_TIER_COUNT] =
 {
@@ -168,6 +170,21 @@ static const struct JournalResearch sJournalResearch[] =
         .noteFlag = FLAG_JOURNAL_WOOPER_NO_EVO,
         .note = COMPOUND_STRING("Lv 20, and it didn't evolve."),
         .shownFlag = FLAG_BADGE02_GET,
+    },
+    {
+        .quest = QUEST_RESEARCH_LEDYBA,
+        .species = SPECIES_LEDYBA_EIEN,
+        .name = COMPOUND_STRING("Eien Ledyba"),
+        .notes = {
+            // TODO(design): the tier lines (drafts)
+            [RESEARCH_TIER_SEEN] = COMPOUND_STRING("Spots that glow like embers."),
+            [RESEARCH_TIER_BATTLED] = COMPOUND_STRING("Bug and Fire!"),
+            [RESEARCH_TIER_CAUGHT] = COMPOUND_STRING("Warm to hold, like a coal."),
+            [RESEARCH_TIER_LORE] = NULL,
+        },
+        .noteFlag = FLAG_JOURNAL_LEDYBA_NO_EVO,
+        .note = COMPOUND_STRING("Lv 18, and it didn't evolve."),
+        .shownFlag = FLAG_BADGE03_GET,
     },
 };
 
@@ -252,6 +269,20 @@ static const struct JournalMission sJournalMissions[] =
         .title = COMPOUND_STRING("Eien Wooper"),
         .giver = COMPOUND_STRING("Professor"),
         .hint = COMPOUND_STRING("Something on Route 3."),
+        .log = {
+            [RESEARCH_TIER_SEEN] = COMPOUND_STRING("Saw one."),
+            [RESEARCH_TIER_BATTLED] = COMPOUND_STRING("Battled one."),
+            [RESEARCH_TIER_CAUGHT] = COMPOUND_STRING("Caught one."),
+        },
+        .closedLine = COMPOUND_STRING("She's gone. Too late now."),
+    },
+    {
+        .quest = QUEST_RESEARCH_LEDYBA,
+        .group = JOURNAL_GROUP_EIEN,
+        .stepIsBits = TRUE,
+        .title = COMPOUND_STRING("Eien Ledyba"),
+        .giver = COMPOUND_STRING("Professor"),
+        .hint = COMPOUND_STRING("Something on Route 4."),
         .log = {
             [RESEARCH_TIER_SEEN] = COMPOUND_STRING("Saw one."),
             [RESEARCH_TIER_BATTLED] = COMPOUND_STRING("Battled one."),

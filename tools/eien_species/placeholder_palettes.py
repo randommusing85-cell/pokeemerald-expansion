@@ -32,6 +32,8 @@ LOOKS = {
     "blaziken": (0.58, 0.55, 0.06),   # the finals take their first stage's look until picked
     "venusaur": (0.12, 0.75, 0.05),
     "greninja": (-0.03, 0.45, 0.12),
+    "ledyba": (0.05, 1.0, 0.04),      # red to an ember orange
+    "ledian": (0.05, 1.0, 0.04),
 }
 
 

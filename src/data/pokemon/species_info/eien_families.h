@@ -1136,3 +1136,149 @@
         .formSpeciesIdTable = sGreninjaFormSpeciesIdTable,
     },
 #endif //P_FAMILY_FROAKIE
+
+#if P_FAMILY_LEDYBA
+    [SPECIES_LEDYBA_EIEN] =
+    {
+        .baseHP        = 40,
+        .baseAttack    = 20,
+        .baseDefense   = 30,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 50,
+        .types = MON_TYPES(TYPE_BUG, TYPE_FIRE),
+        .catchRate = 255,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 53 : 54,
+        .evYield_SpAttack = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_FLAME_BODY, ABILITY_SWARM, ABILITY_ILLUMINATE },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Ledyba"),
+        .cryId = CRY_LEDYBA,
+        .natDexNum = NATIONAL_DEX_LEDYBA,
+        // TODO(design): category, size and dex entry (placeholders, like the other Eien forms' drafts).
+        .categoryName = _("Firefly"),
+        .height = 10,
+        .weight = 108,
+        .description = COMPOUND_STRING(
+            "It lives over summer rice paddies. Its\n"
+            "spots glow like embers, and on warm\n"
+            "nights the fields fill with their small,\n"
+            "drifting lights."),
+        .pokemonScale = 256,
+        .pokemonOffset = 4,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        // Its own sprites, framed like the vanilla (non-GBA-style) ones
+        .frontPic = sMonFrontPic_LedybaEien,
+        .frontPicSize = MON_COORDS_SIZE(48, 48),
+        .frontPicYOffset = 10,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_JUMPS_SMALL,
+        .backPic = sMonBackPic_LedybaEien,
+        .backPicSize = MON_COORDS_SIZE(56, 48),
+        .backPicYOffset = 8,
+        .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
+        .palette = sMonPalette_LedybaEien,
+        .shinyPalette = sMonShinyPalette_LedybaEien,
+        .iconSprite = sMonIcon_LedybaEien,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(2, 4, SHADOW_SIZE_M)
+        FOOTPRINT(Ledyba)
+        OVERWORLD(
+            sPicTable_Ledyba,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_BUG,
+            sAnimTable_Following,
+            gOverworldPalette_Ledyba,
+            gShinyOverworldPalette_Ledyba
+        )
+        .levelUpLearnset = sLedybaEienLevelUpLearnset,
+        .teachableLearnset = sLedybaTeachableLearnset,
+        .eggMoveLearnset = sLedybaEggMoveLearnset,
+        .formSpeciesIdTable = sLedybaFormSpeciesIdTable,
+        // Evolves at Lv 18+ while it's raining (variants.md): fireflies come out after rain.
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_LEDIAN_EIEN, CONDITIONS({IF_WEATHER, WEATHER_RAIN})}),
+    },    [SPECIES_LEDIAN_EIEN] =
+    {
+        .baseHP        = 55,
+        .baseAttack    = 35,
+        .baseDefense   = 50,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_BUG, TYPE_FIRE),
+        .catchRate = 90,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 137 : 134,
+        .evYield_SpAttack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_FLAME_BODY, ABILITY_SWARM, ABILITY_ILLUMINATE },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Ledian"),
+        .cryId = CRY_LEDIAN,
+        .natDexNum = NATIONAL_DEX_LEDIAN,
+        // TODO(design): category, size and dex entry (placeholders, like the other Eien forms' drafts).
+        .categoryName = _("Firefly"),
+        .height = 14,
+        .weight = 356,
+        .description = COMPOUND_STRING(
+            "The light on its back glows like a\n"
+            "lantern. Farmers say a field it visits\n"
+            "will have a good harvest, and leave\n"
+            "their lamps dark so it will stay."),
+        .pokemonScale = 256,
+        .pokemonOffset = 2,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        // Its own sprites, framed like the vanilla (non-GBA-style) ones
+        .frontPic = sMonFrontPic_LedianEien,
+        .frontPicSize = MON_COORDS_SIZE(48, 56),
+        .frontPicYOffset = 6,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 25),
+            ANIMCMD_FRAME(0, 25),
+            ANIMCMD_FRAME(1, 25),
+            ANIMCMD_FRAME(0, 25),
+        ),
+        .frontAnimId = ANIM_V_SLIDE_WOBBLE,
+        .enemyMonElevation = 10,
+        .backPic = sMonBackPic_LedianEien,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 3,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        .palette = sMonPalette_LedianEien,
+        .shinyPalette = sMonShinyPalette_LedianEien,
+        .iconSprite = sMonIcon_LedianEien,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 15, SHADOW_SIZE_S)
+        FOOTPRINT(Ledian)
+        OVERWORLD(
+            sPicTable_Ledian,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Ledian,
+            gShinyOverworldPalette_Ledian
+        )
+        .levelUpLearnset = sLedianEienLevelUpLearnset,
+        .teachableLearnset = sLedianTeachableLearnset,
+        .formSpeciesIdTable = sLedianFormSpeciesIdTable,
+    },
+#endif //P_FAMILY_LEDYBA

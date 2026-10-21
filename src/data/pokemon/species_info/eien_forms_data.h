@@ -95,6 +95,19 @@ static const u16 sMonShinyPalette_VenusaurEien[] = INCGFX_U16("graphics/pokemon/
 static const u16 sMonPalette_GreninjaEien[] = INCGFX_U16("graphics/pokemon/eien/greninja/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_GreninjaEien[] = INCGFX_U16("graphics/pokemon/eien/greninja/shiny.pal", ".gbapal");
 
+// Eien Ledyba and Ledian: the picked AI fronts, idle frames, backs and firefly-green shinies
+// (convert_art.py, design/art/eien_ledyba_drafts.md); icons in vanilla icon palette 0.
+static const u32 sMonFrontPic_LedybaEien[] = INCGFX_U32("graphics/pokemon/eien/ledyba/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_LedybaEien[] = INCGFX_U32("graphics/pokemon/eien/ledyba/back.png", ".4bpp.smol");
+static const u8 sMonIcon_LedybaEien[] = INCGFX_U8("graphics/pokemon/eien/ledyba/icon.png", ".4bpp");
+static const u32 sMonFrontPic_LedianEien[] = INCGFX_U32("graphics/pokemon/eien/ledian/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_LedianEien[] = INCGFX_U32("graphics/pokemon/eien/ledian/back.png", ".4bpp.smol");
+static const u8 sMonIcon_LedianEien[] = INCGFX_U8("graphics/pokemon/eien/ledian/icon.png", ".4bpp");
+static const u16 sMonPalette_LedybaEien[] = INCGFX_U16("graphics/pokemon/eien/ledyba/normal.pal", ".gbapal");
+static const u16 sMonShinyPalette_LedybaEien[] = INCGFX_U16("graphics/pokemon/eien/ledyba/shiny.pal", ".gbapal");
+static const u16 sMonPalette_LedianEien[] = INCGFX_U16("graphics/pokemon/eien/ledian/normal.pal", ".gbapal");
+static const u16 sMonShinyPalette_LedianEien[] = INCGFX_U16("graphics/pokemon/eien/ledian/shiny.pal", ".gbapal");
+
 // Level-up learnsets: the original's, plus the new-type moves in variants.md.
 static const struct LevelUpMove sTorchicEienLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
@@ -356,6 +369,44 @@ static const struct LevelUpMove sGreninjaEienLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+static const struct LevelUpMove sLedybaEienLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_EMBER),
+    LEVEL_UP_MOVE( 5, MOVE_SUPERSONIC),
+    LEVEL_UP_MOVE( 8, MOVE_SWIFT),
+    LEVEL_UP_MOVE(12, MOVE_LIGHT_SCREEN),
+    LEVEL_UP_MOVE(12, MOVE_REFLECT),
+    LEVEL_UP_MOVE(12, MOVE_WILL_O_WISP),
+    LEVEL_UP_MOVE(15, MOVE_FLAME_WHEEL),
+    LEVEL_UP_MOVE(19, MOVE_ROOST),
+    LEVEL_UP_MOVE(22, MOVE_STRUGGLE_BUG),
+    LEVEL_UP_MOVE(26, MOVE_BATON_PASS),
+    LEVEL_UP_MOVE(29, MOVE_AGILITY),
+    LEVEL_UP_MOVE(33, MOVE_BUG_BUZZ),
+    LEVEL_UP_MOVE(36, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(40, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sLedianEienLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_EMBER),
+    LEVEL_UP_MOVE( 1, MOVE_SUPERSONIC),
+    LEVEL_UP_MOVE( 1, MOVE_SWIFT),
+    LEVEL_UP_MOVE( 5, MOVE_SUPERSONIC),
+    LEVEL_UP_MOVE( 8, MOVE_SWIFT),
+    LEVEL_UP_MOVE(12, MOVE_LIGHT_SCREEN),
+    LEVEL_UP_MOVE(12, MOVE_REFLECT),
+    LEVEL_UP_MOVE(12, MOVE_WILL_O_WISP),
+    LEVEL_UP_MOVE(15, MOVE_FLAME_WHEEL),
+    LEVEL_UP_MOVE(20, MOVE_ROOST),
+    LEVEL_UP_MOVE(24, MOVE_STRUGGLE_BUG),
+    LEVEL_UP_MOVE(29, MOVE_BATON_PASS),
+    LEVEL_UP_MOVE(33, MOVE_AGILITY),
+    LEVEL_UP_MOVE(38, MOVE_BUG_BUZZ),
+    LEVEL_UP_MOVE(42, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(47, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_END
+};
+
 static const struct LevelUpMove sWooperEienLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
@@ -446,3 +497,5 @@ static const u16 sFrogadierFormSpeciesIdTable[] = { SPECIES_FROGADIER, SPECIES_F
 static const u16 sQuagsireFormSpeciesIdTable[] = { SPECIES_QUAGSIRE, SPECIES_QUAGSIRE_EIEN, FORM_SPECIES_END };
 static const u16 sHoothootFormSpeciesIdTable[] = { SPECIES_HOOTHOOT, SPECIES_HOOTHOOT_EIEN, FORM_SPECIES_END };
 static const u16 sNoctowlFormSpeciesIdTable[] = { SPECIES_NOCTOWL, SPECIES_NOCTOWL_EIEN, FORM_SPECIES_END };
+static const u16 sLedybaFormSpeciesIdTable[] = { SPECIES_LEDYBA, SPECIES_LEDYBA_EIEN, FORM_SPECIES_END };
+static const u16 sLedianFormSpeciesIdTable[] = { SPECIES_LEDIAN, SPECIES_LEDIAN_EIEN, FORM_SPECIES_END };

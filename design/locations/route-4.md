@@ -37,6 +37,7 @@ Act 1 beat 9 in [story-outline.md](../story-outline.md).
 | The orchard | by the road | the thinning scene | Blossoms and withers: the shared thinning look ([game-bible.md](../game-bible.md), Eien weather and terrain); the screen drain while it happens, then grey tiles (withered, grey trunks) until the epilogue |
 | Eien Survey members | the orchard | during the scene | Rope it off |
 | The Survey member | the orchard | during the scene | Asks about Celebi too closely (`TODO(design)`) |
+| Eien Ledyba | the orchard | during the scene | A few ember fireflies keep glowing while the orchard greys around them: the first sighting of Eien Ledyba ([variants.md](../variants.md)). On the GBA one firefly is a kept object of the thinning (two at most: the scene's other one is free) |
 
 ## Trainers
 
@@ -46,11 +47,13 @@ teams). `TODO(design)`: classes, names, teams (a trainers brainstorm like Route 
 
 ## Wild Pokémon
 
-Lv 22-27 (default). `TODO(design)`: rates, day and night tables.
+Lv 22-27 (default). `TODO(design)`: rates, day and night tables; the weather. Eien Ledyba
+evolves only while it's raining, so the plain needs rain some of the time (`TODO(design)`: a
+weather cycle on the map, or rain on some visits).
 
 | Area | Pokémon |
 | --- | --- |
-| The plain | Hoppip, Oddish, Seedot, Ledyba, Spinarak |
+| The plain | Hoppip, Oddish, Seedot, Eien Ledyba (in place of Ledyba), Spinarak |
 | The orchard | the same, with Applin (rare) |
 
 ## Items

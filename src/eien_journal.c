@@ -390,6 +390,17 @@ void UpdateJournalNotes(void)
 {
     u32 i;
 
+    // The professor's list (E2) is given at the lab with Poochyena's research. Entries added to
+    // the list later (new variants) open here too, for saves made after that scene.
+    if (GetQuestState(QUEST_RESEARCH_POOCHYENA) != QUEST_STATE_NONE)
+    {
+        for (i = 0; i < ARRAY_COUNT(sJournalResearch); i++)
+        {
+            if (GetQuestState(sJournalResearch[i].quest) == QUEST_STATE_NONE)
+                SetQuestState(sJournalResearch[i].quest, QUEST_STATE_OPEN);
+        }
+    }
+
     for (i = 0; i < PARTY_SIZE; i++)
     {
         struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][i];
@@ -403,6 +414,9 @@ void UpdateJournalNotes(void)
         if (GetMonData(mon, MON_DATA_SPECIES_OR_EGG) == SPECIES_HOOTHOOT_EIEN
          && GetMonData(mon, MON_DATA_LEVEL) >= EIEN_HOOTHOOT_EVO_LEVEL)
             FlagSet(FLAG_JOURNAL_HOOTHOOT_NO_EVO);
+        if (GetMonData(mon, MON_DATA_SPECIES_OR_EGG) == SPECIES_LEDYBA_EIEN
+         && GetMonData(mon, MON_DATA_LEVEL) >= EIEN_LEDYBA_EVO_LEVEL)
+            FlagSet(FLAG_JOURNAL_LEDYBA_NO_EVO);
     }
 }
 

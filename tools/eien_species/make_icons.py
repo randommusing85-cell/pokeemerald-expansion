@@ -59,6 +59,9 @@ ICON_READY = {
     # indexed with vanilla icon palette 2 (greys and violet); frame 2 is frame 1 moved down 1px
     "hoothoot": ("icon_gemini31flash_a_pal2.png", 2),
     "noctowl": ("icon_gemini3pro_a_pal2.png", 2),
+    # indexed with vanilla icon palette 0 (reds and oranges); frame 2 is frame 1 moved down 1px
+    "ledyba": ("icon_gemini31flash_a_pal0.png", 0),
+    "ledian": ("icon_gemini3pro_a_pal0.png", 0),
 }
 
 
