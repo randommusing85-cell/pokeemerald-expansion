@@ -29,14 +29,28 @@ location doc) when settled; this file stays as the record.
 
 ## Decided
 
+- **Gym (r1 1b):** it answers gym 6 (Tsukiko, Psychic), on Route 6 or 7. Route 5's forest is
+  left without a variant: Eien Wooper already answers gym 5.
+- **Species (r1 2d):** Stantler as a Japanese serow (*kamoshika*) of the high country, a
+  protected Tohoku animal, Dark/Ghost.
+- **Fading (r1 3a):** touched by the fading. That makes three touched, two not.
+- **The last variants (r1 4a):** this one (gym 6), then one for gym 7 and one for gym 8, plus
+  Trubbish's split.
+
 ## Leaning
 
 ## Open questions
 
-Round 1 (asked): which gym it answers, the species, fading or not, how far apart the last
-variants sit.
+Round 2 (asked): the route, the evolution (Stantler has none in Gen 1-5), the look, stats,
+abilities and early moves.
 
 ## Gaps and tensions
+
+- Vanilla Stantler: 73 / 95 / 62 / 85 / 65 / 85 (HP / Atk / Def / SpA / SpD / Spe), 465;
+  Intimidate / Frisk / Sap Sipper. Learnset: Tackle 1, Leer 3, Astonish 7, Hypnosis 10, Stomp 13,
+  Sand Attack 16, Take Down 21, Confuse Ray 23, Calm Mind 27, Role Play 32, Zen Headbutt 37.
+- In this engine, Stantler evolves into Wyrdeer (Gen 8, Normal/Psychic, 525) after using
+  Psyshield Bash 20 times. The hero doesn't know Gen 6+, so Wyrdeer is "???" to him.
 
 - Eien Wooper (Ground/Steel) already hits gym 5's Magcargo and Coalossal 4x with Ground. A gym 5
   variant would overlap it, unless it's a different answer (Water, Fighting) or Wooper's
