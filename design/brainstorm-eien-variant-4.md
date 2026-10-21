@@ -1,7 +1,8 @@
 # Brainstorm: the next Eien variant
 
 Working notes for the fourth non-starter Eien variant. Decisions move into `variants.md` (and the
-location doc) when settled; this file stays as the record.
+location doc) when settled; this file stays as the record. **Promoted** into `variants.md`,
+`locations/route-4.md` and `whats-left.md`.
 
 ## Givens (from the docs)
 

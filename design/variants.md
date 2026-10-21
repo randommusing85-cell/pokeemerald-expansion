@@ -130,6 +130,7 @@ Lv 18 evolutions (tests in `test/eien_journal.c`), with their sprites.
 | --- | --- | --- | --- |
 | Poochyena | Rock/Dark | A stone shrine guardian dog (komainu), touched by the fading. Beats the Ice gym. | Route 1 (common, ~20%) |
 | Hoothoot | Ghost/Flying | A half-faded owl of the night pass: its wings and tail fade into mist, only the face and glowing eyes are solid. Touched by the fading. Immune to Fighting moves; beats the Fighting gym. | Route 2's upper map, the vents near Yunotaki (10% by day, 30% at night) |
+| Ledyba | Bug/Fire | Ember fireflies (*hotaru*) of the summer rice paddies: glowing ember spots, an abdomen lit like a coal. Not touched by the fading: in the orchard thinning they keep glowing while the trees grey around them. The answer to gym 4 (Grass) | Route 4 ([route-4.md](locations/route-4.md)), the plain |
 | Wooper | Ground/Steel | A mine Wooper of the old tunnel's pools: its skin crusted with iron and copper ore, its gills glinting metal frills. Adapted to the mine, not touched by the fading. Immune to Electric; the answer to gym 3 | Route 3 ([route-3.md](locations/route-3.md)): the gorge's grass 10%, the cave 30% |
 
 - **Eien Poochyena:** 35 / 55 / 50 / 25 / 30 / 25 (35 / 55 / 35 / 30 / 30 / 35), 220.
@@ -226,6 +227,27 @@ Decided in [brainstorm-eien-hoothoot.md](brainstorm-eien-hoothoot.md); the build
   `test/battle/eien_research.c`.
 
 Decided in [brainstorm-eien-wooper.md](brainstorm-eien-wooper.md).
+
+- **Eien Ledyba** (designed, not built): 40 / 20 / 30 / 70 / 50 / 55 (40 / 20 / 30 / 40 / 80 /
+  55), 265: a special attacker. Abilities Flame Body / Swarm / Illuminate (hidden; in Gen 9 it
+  stops accuracy drops and ignores evasion). New moves: Ember (1, replacing Tackle),
+  Will-O-Wisp (12, replacing Safeguard), Flame Wheel (15, replacing Mach Punch); otherwise
+  vanilla.
+- **Evolves** into Eien Ledian by leveling up to 18+ while it's raining (`IF_WEATHER`; Route 4
+  gets rain some of the time, `TODO(design)`: how). The journal notes one that reaches Lv 18
+  without evolving (its own flag).
+- **Eien Ledian:** 55 / 35 / 50 / 95 / 80 / 75 (55 / 35 / 50 / 55 / 110 / 85), 390. The same
+  abilities. Look: its light brightens into a lantern-like glow on its back (a firefly, not the
+  paper lanterns of Torchic's line).
+- **Research:** seen / battled / caught on the professor's list (side-quests E2), shown after
+  gym 3's badge.
+- **Shiny:** a real firefly's pale green light instead of ember orange, for both stages.
+- **Sprites:** AI drafts through `tools/eien_species/`. `TODO(design)`: both dex entries
+  (drafted at build time).
+- **Variants still to come (r1 4b):** one for each remaining gym a variant answers well, about
+  three more after Eien Ledyba, plus Trubbish's split (within the planned 5-10).
+
+Decided in [brainstorm-eien-variant-4.md](brainstorm-eien-variant-4.md).
 
 ### Planned: Trubbish's split
 
