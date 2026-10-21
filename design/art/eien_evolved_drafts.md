@@ -4,7 +4,9 @@ Front drafts for the six evolved forms in `variants.md` ("Evolved stages").
 
 **Picked and in the game:** Eien Combusken `gemini3pro_a`, Eien Ivysaur `gemini3pro_b`, Eien
 Frogadier `gemini3pro_a`, with their idle frames, backs, shinies and icons (below). The finals'
-drafts are concept checks only; nothing is picked for them yet.
+drafts were concept checks; the finals are now picked and in the game too: Eien Blaziken
+`gemini3pro_r2_b` (round 2, below), Eien Venusaur `gemini31flash_a`, Eien Greninja `gemini3pro_a`
+("The finals' other sprites", below).
 
 Contact sheet: [`eien_evolved_contact_sheet.png`](eien_evolved_contact_sheet.png) (vanilla first,
 then each converted draft, at 2x).
@@ -56,6 +58,21 @@ its white background removed and cut to 15 colors (`tools/sprite_prep`). Raw out
 | `gemini3pro_b` | **Suggested.** Paper-lantern panels lit by blue flames from inside: the clearest "float". |
 | `gemini31flash_b` | Grey and ghostly; little paper or float. |
 
+### Eien Blaziken, round 2 (the paper lantern float)
+
+The first concepts read as a ghost-flame fighter, not a float (`brainstorm-eien-starters-finals.md`),
+so Blaziken was re-drafted with `tools/eien_species/final_redrafts.py`: a stronger brief (white
+washi paper over a visible dark frame, lit from inside by a pale blue-violet flame, a painted
+warrior face in black, red and blue) and the picked Eien Combusken front as the colour reference.
+Contact sheet: [`eien_blaziken_r2_contact_sheet.png`](eien_blaziken_r2_contact_sheet.png).
+
+| Draft | Notes |
+| --- | --- |
+| `gemini3pro_r2_a` | Blue-white paper with dark frame lines across the body and a red and black painted face: the frame shows most, but it's cool, more ghost than lantern. |
+| `gemini3pro_r2_b` | **Suggested.** Warm cream paper glowing as if lit from inside, a painted face, blue ghost flames at the wrists and legs: the clearest lit lantern float. |
+| `gemini31flash_r2_a` | Grey-white with a blue-painted face mask; the frame lines are faint. |
+| `gemini31flash_r2_b` | Peach paper and a red-painted face; soft and low in contrast at 1x. |
+
 ### Eien Venusaur (aurora streaming up), front-only concept check
 
 | Draft | Notes |
@@ -90,3 +107,21 @@ framing and motion plus the picked front, two models, two tries each. Contact sh
 
 In-game shots in each `eien_<species>/` folder: `evolution.png`, `evolution_move.png`,
 `party_icon.png`, `battle_back.png`. Credited in `design/asset-credits.md`.
+
+## The finals' other sprites
+
+Made like the middle stages' (`stage_drafts.py`), contact sheets
+`eien_finals_back_contact_sheet.png`, `eien_finals_frame2_contact_sheet.png`,
+`eien_finals_icon_contact_sheet.png`. In-game shots: `eien_blaziken/summary.png`,
+`eien_blaziken/battle_back.png`, `eien_blaziken/party_icon.png` (all three icons),
+`eien_venusaur/summary.png`, `eien_greninja/summary.png`.
+
+| | Blaziken | Venusaur | Greninja |
+| --- | --- | --- | --- |
+| Back (picked) | `31flash_a`, vanilla's over-the-shoulder framing with a ghost flame at the wrist | none: the drafts redrew a full body filling the frame, so it keeps the placeholder (the vanilla back recolored from the front) | `3pro_a`, the straw cape and hat from behind |
+| Idle frame (picked) | `3pro_a` | `3pro_b` | `3pro_a` |
+| Shiny | night lantern (violet ghost flames) | twilight (purple body, gold-green aurora) | midnight (a dark navy body) |
+| Icon | the vanilla icons recolored into the Eien icon palette, like the middle stages' (the drafts filled the whole 32x32 cell and were noisy) | same | same |
+
+The frames are vanilla's, except Venusaur's front, whose aurora reaches the top of the frame
+(Y offset 0). The overworld (follower) sprites are still vanilla's.

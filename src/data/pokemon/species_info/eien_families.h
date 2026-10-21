@@ -463,6 +463,7 @@
         .levelUpLearnset = sCombuskenEienLevelUpLearnset,
         .teachableLearnset = sCombuskenTeachableLearnset,
         .formSpeciesIdTable = sCombuskenFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_BLAZIKEN_EIEN}),
     },
 #endif //P_FAMILY_TORCHIC
 
@@ -535,6 +536,7 @@
         .levelUpLearnset = sIvysaurEienLevelUpLearnset,
         .teachableLearnset = sIvysaurTeachableLearnset,
         .formSpeciesIdTable = sIvysaurFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_VENUSAUR_EIEN}),
     },
 #endif //P_FAMILY_BULBASAUR
 
@@ -604,6 +606,7 @@
         .levelUpLearnset = sFrogadierEienLevelUpLearnset,
         .teachableLearnset = sFrogadierTeachableLearnset,
         .formSpeciesIdTable = sFrogadierFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_GRENINJA_EIEN}),
     },
 #endif //P_FAMILY_FROAKIE
 
@@ -911,3 +914,225 @@
         .formSpeciesIdTable = sNoctowlFormSpeciesIdTable,
     },
 #endif //P_FAMILY_HOOTHOOT
+
+#if P_FAMILY_TORCHIC
+    [SPECIES_BLAZIKEN_EIEN] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 105,
+        .baseDefense   = 70,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_GHOST),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 265,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 239,
+    #else
+        .expYield = 209,
+    #endif
+        .evYield_SpAttack = 3,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_CURSED_BODY },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Blaziken"),
+        .cryId = CRY_BLAZIKEN,
+        .natDexNum = NATIONAL_DEX_BLAZIKEN,
+        // TODO(design): category, size and dex entry (placeholders, like the other Eien forms' drafts).
+        .categoryName = _("Float"),
+        .height = 19,
+        .weight = 520,
+        .description = COMPOUND_STRING(
+            "It is a festival float of a warrior, paper\n"
+            "stretched over a frame and lit from inside\n"
+            "by a pale flame. Its painted face glares\n"
+            "at anything that comes near."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 301,
+        .trainerOffset = 4,
+        // Its own sprites, framed like the vanilla (non-GBA-style) ones
+        .frontPic = sMonFrontPic_BlazikenEien,
+        .frontPicSize = MON_COORDS_SIZE(56, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 1),
+            ANIMCMD_FRAME(1, 25),
+            ANIMCMD_FRAME(0, 7),
+            ANIMCMD_FRAME(1, 7),
+            ANIMCMD_FRAME(0, 7),
+        ),
+        .frontAnimId = ANIM_H_SHAKE,
+        .backPic = sMonBackPic_BlazikenEien,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
+        .palette = sMonPalette_BlazikenEien,
+        .shinyPalette = sMonShinyPalette_BlazikenEien,
+        .iconSprite = sMonIcon_BlazikenEien,
+        .iconPalIndex = 6,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(4, 8, SHADOW_SIZE_M)
+        FOOTPRINT(Blaziken)
+        OVERWORLD(
+            sPicTable_Blaziken,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Blaziken,
+            gShinyOverworldPalette_Blaziken
+        )
+        .levelUpLearnset = sBlazikenEienLevelUpLearnset,
+        .teachableLearnset = sBlazikenTeachableLearnset,
+        .formSpeciesIdTable = sBlazikenFormSpeciesIdTable,
+    },
+#endif //P_FAMILY_TORCHIC
+
+#if P_FAMILY_BULBASAUR
+    [SPECIES_VENUSAUR_EIEN] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 73,
+        .baseDefense   = 83,
+        .baseSpeed     = 74,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 105,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_PSYCHIC),
+        .catchRate = 45,
+        .expYield = VENUSAUR_EXP_YIELD,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 1,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
+        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_FOREWARN },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Venusaur"),
+        .cryId = CRY_VENUSAUR,
+        .natDexNum = NATIONAL_DEX_VENUSAUR,
+        // TODO(design): category, size and dex entry (placeholders, like the other Eien forms' drafts).
+        .categoryName = _("Aurora"),
+        .height = 20,
+        .weight = 1000,
+        .description = COMPOUND_STRING(
+            "Its great flower has opened all the way.\n"
+            "On clear winter nights an aurora streams\n"
+            "up from it into the sky, and the people\n"
+            "who see it stand quiet for a while."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 388,
+        .trainerOffset = 6,
+        // Its own sprites, framed like the vanilla (non-GBA-style) ones
+        .frontPic = sMonFrontPic_VenusaurEien,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0, // the aurora reaches the top of the frame
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 25),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_ROTATE_UP_SLAM_DOWN,
+        .backPic = sMonBackPic_VenusaurEien,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 10,
+        .backAnimId = BACK_ANIM_H_SHAKE,
+        .palette = sMonPalette_VenusaurEien,
+        .shinyPalette = sMonShinyPalette_VenusaurEien,
+        .iconSprite = sMonIcon_VenusaurEien,
+        .iconPalIndex = 6,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(2, 6, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Venusaur)
+        OVERWORLD(
+            sPicTable_Venusaur,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Venusaur,
+            gShinyOverworldPalette_Venusaur
+        )
+        .levelUpLearnset = sVenusaurEienLevelUpLearnset,
+        .teachableLearnset = sVenusaurTeachableLearnset,
+        .formSpeciesIdTable = sVenusaurFormSpeciesIdTable,
+    },
+#endif //P_FAMILY_BULBASAUR
+
+#if P_FAMILY_FROAKIE
+    [SPECIES_GRENINJA_EIEN] =
+    {
+        .baseHP        = 72,
+        .baseAttack    = 95,
+        .baseDefense   = 67,
+        .baseSpeed     = 112,
+        .baseSpAttack  = 103,
+        .baseSpDefense = 81,
+        .types = MON_TYPES(TYPE_WATER, TYPE_ICE),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 265 : 239,
+        .evYield_Speed = 3,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
+        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_SNOW_CLOAK },
+        .bodyColor = BODY_COLOR_WHITE,
+        .noFlip = TRUE,
+        .speciesName = _("Greninja"),
+        .cryId = CRY_GRENINJA,
+        .natDexNum = NATIONAL_DEX_GRENINJA,
+        // TODO(design): category, size and dex entry (placeholders, like the other Eien forms' drafts).
+        .categoryName = _("Guardian"),
+        .height = 15,
+        .weight = 400,
+        .description = COMPOUND_STRING(
+            "It keeps watch over the snowy passes\n"
+            "in a straw hat and cape. Travelers lost\n"
+            "in blizzards say it led them out, then\n"
+            "was gone."),
+        .pokemonScale = 268,
+        .pokemonOffset = 2,
+        .trainerScale = 271,
+        .trainerOffset = 0,
+        // Its own sprites, framed like the vanilla (non-GBA-style) ones
+        .frontPic = sMonFrontPic_GreninjaEien,
+        .frontPicSize = MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = 7,
+        .frontAnimFrames = sAnims_Greninja,
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = sMonBackPic_GreninjaEien,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 11,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = sMonPalette_GreninjaEien,
+        .shinyPalette = sMonShinyPalette_GreninjaEien,
+        .iconSprite = sMonIcon_GreninjaEien,
+        .iconPalIndex = 6,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(4, 6, SHADOW_SIZE_L)
+        FOOTPRINT(Greninja)
+        OVERWORLD(
+            sPicTable_Greninja,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following_Asym,
+            gOverworldPalette_Greninja,
+            gShinyOverworldPalette_Greninja
+        )
+        .levelUpLearnset = sGreninjaEienLevelUpLearnset,
+        .teachableLearnset = sGreninjaTeachableLearnset,
+        .formSpeciesIdTable = sGreninjaFormSpeciesIdTable,
+    },
+#endif //P_FAMILY_FROAKIE

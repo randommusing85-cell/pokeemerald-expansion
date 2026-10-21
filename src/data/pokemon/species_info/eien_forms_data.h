@@ -76,6 +76,25 @@ static const u16 sMonShinyPalette_HoothootEien[] = INCGFX_U16("graphics/pokemon/
 static const u16 sMonPalette_NoctowlEien[] = INCGFX_U16("graphics/pokemon/eien/noctowl/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_NoctowlEien[] = INCGFX_U16("graphics/pokemon/eien/noctowl/shiny.pal", ".gbapal");
 
+// The finals: the picked AI fronts and idle frames, backs (Venusaur's is the vanilla back recolored)
+// and the lines' shinies (convert_art.py, design/art/eien_evolved_drafts.md); icons recolored into
+// the Eien icon palette like the middle stages' (make_icons.py).
+static const u32 sMonFrontPic_BlazikenEien[] = INCGFX_U32("graphics/pokemon/eien/blaziken/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_BlazikenEien[] = INCGFX_U32("graphics/pokemon/eien/blaziken/back.png", ".4bpp.smol");
+static const u8 sMonIcon_BlazikenEien[] = INCGFX_U8("graphics/pokemon/eien/blaziken/icon.png", ".4bpp");
+static const u32 sMonFrontPic_VenusaurEien[] = INCGFX_U32("graphics/pokemon/eien/venusaur/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_VenusaurEien[] = INCGFX_U32("graphics/pokemon/eien/venusaur/back.png", ".4bpp.smol");
+static const u8 sMonIcon_VenusaurEien[] = INCGFX_U8("graphics/pokemon/eien/venusaur/icon.png", ".4bpp");
+static const u32 sMonFrontPic_GreninjaEien[] = INCGFX_U32("graphics/pokemon/eien/greninja/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_GreninjaEien[] = INCGFX_U32("graphics/pokemon/eien/greninja/back.png", ".4bpp.smol");
+static const u8 sMonIcon_GreninjaEien[] = INCGFX_U8("graphics/pokemon/eien/greninja/icon.png", ".4bpp");
+static const u16 sMonPalette_BlazikenEien[] = INCGFX_U16("graphics/pokemon/eien/blaziken/normal.pal", ".gbapal");
+static const u16 sMonShinyPalette_BlazikenEien[] = INCGFX_U16("graphics/pokemon/eien/blaziken/shiny.pal", ".gbapal");
+static const u16 sMonPalette_VenusaurEien[] = INCGFX_U16("graphics/pokemon/eien/venusaur/normal.pal", ".gbapal");
+static const u16 sMonShinyPalette_VenusaurEien[] = INCGFX_U16("graphics/pokemon/eien/venusaur/shiny.pal", ".gbapal");
+static const u16 sMonPalette_GreninjaEien[] = INCGFX_U16("graphics/pokemon/eien/greninja/normal.pal", ".gbapal");
+static const u16 sMonShinyPalette_GreninjaEien[] = INCGFX_U16("graphics/pokemon/eien/greninja/shiny.pal", ".gbapal");
+
 // Level-up learnsets: the original's, plus the new-type moves in variants.md.
 static const struct LevelUpMove sTorchicEienLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
@@ -252,6 +271,88 @@ static const struct LevelUpMove sFrogadierEienLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_BOUNCE),
     LEVEL_UP_MOVE(50, MOVE_DOUBLE_TEAM),
     LEVEL_UP_MOVE(56, MOVE_HYDRO_PUMP),
+    LEVEL_UP_END
+};
+
+// The finals (brainstorm-eien-starters-finals.md): the evolution move at 0, the line's new moves
+// carried, a signature move at Lv 42; otherwise vanilla.
+static const struct LevelUpMove sBlazikenEienLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_SHADOW_BALL),
+    LEVEL_UP_MOVE( 1, MOVE_BLAZE_KICK),
+    LEVEL_UP_MOVE( 1, MOVE_FIERY_DANCE),
+    LEVEL_UP_MOVE( 1, MOVE_FIRE_PUNCH),
+    LEVEL_UP_MOVE( 1, MOVE_EMBER),
+    LEVEL_UP_MOVE( 1, MOVE_FLAMETHROWER),
+    LEVEL_UP_MOVE( 1, MOVE_FEATHER_DANCE),
+    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
+    LEVEL_UP_MOVE( 1, MOVE_GROWL),
+    LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE( 5, MOVE_ASTONISH),
+    LEVEL_UP_MOVE( 9, MOVE_FLAME_CHARGE),
+    LEVEL_UP_MOVE(12, MOVE_DETECT),
+    LEVEL_UP_MOVE(14, MOVE_WILL_O_WISP),
+    LEVEL_UP_MOVE(15, MOVE_SAND_ATTACK),
+    LEVEL_UP_MOVE(20, MOVE_AERIAL_ACE),
+    LEVEL_UP_MOVE(25, MOVE_SLASH),
+    LEVEL_UP_MOVE(30, MOVE_BOUNCE),
+    LEVEL_UP_MOVE(35, MOVE_FOCUS_ENERGY),
+    LEVEL_UP_MOVE(42, MOVE_INFERNAL_PARADE),
+    LEVEL_UP_MOVE(42, MOVE_BULK_UP),
+    LEVEL_UP_MOVE(49, MOVE_REVERSAL),
+    LEVEL_UP_MOVE(56, MOVE_FLARE_BLITZ),
+    LEVEL_UP_MOVE(63, MOVE_BRAVE_BIRD),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sVenusaurEienLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE( 1, MOVE_PETAL_BLIZZARD),
+    LEVEL_UP_MOVE( 1, MOVE_PSYBEAM),
+    LEVEL_UP_MOVE( 1, MOVE_GROWTH),
+    LEVEL_UP_MOVE( 1, MOVE_PETAL_DANCE),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_GROWL),
+    LEVEL_UP_MOVE( 7, MOVE_CONFUSION),
+    LEVEL_UP_MOVE( 9, MOVE_LEECH_SEED),
+    LEVEL_UP_MOVE(10, MOVE_VINE_WHIP),
+    LEVEL_UP_MOVE(12, MOVE_RAZOR_LEAF),
+    LEVEL_UP_MOVE(15, MOVE_SLEEP_POWDER),
+    LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
+    LEVEL_UP_MOVE(20, MOVE_SEED_BOMB),
+    LEVEL_UP_MOVE(25, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(30, MOVE_SWEET_SCENT),
+    LEVEL_UP_MOVE(37, MOVE_SYNTHESIS),
+    LEVEL_UP_MOVE(42, MOVE_LUMINA_CRASH),
+    LEVEL_UP_MOVE(44, MOVE_WORRY_SEED),
+    LEVEL_UP_MOVE(51, MOVE_POWER_WHIP),
+    LEVEL_UP_MOVE(58, MOVE_SOLAR_BEAM),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sGreninjaEienLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_FREEZE_DRY),
+    LEVEL_UP_MOVE( 1, MOVE_WATER_SHURIKEN),
+    LEVEL_UP_MOVE( 1, MOVE_ICY_WIND),
+    LEVEL_UP_MOVE( 1, MOVE_NIGHT_SLASH),
+    LEVEL_UP_MOVE( 1, MOVE_ROLE_PLAY),
+    LEVEL_UP_MOVE( 1, MOVE_HAZE),
+    LEVEL_UP_MOVE( 1, MOVE_POUND),
+    LEVEL_UP_MOVE( 1, MOVE_GROWL),
+    LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE( 5, MOVE_POWDER_SNOW),
+    LEVEL_UP_MOVE( 5, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE(10, MOVE_LICK),
+    LEVEL_UP_MOVE(14, MOVE_WATER_PULSE),
+    LEVEL_UP_MOVE(15, MOVE_ICE_SHARD),
+    LEVEL_UP_MOVE(19, MOVE_SMOKESCREEN),
+    LEVEL_UP_MOVE(23, MOVE_SHADOW_SNEAK),
+    LEVEL_UP_MOVE(28, MOVE_SPIKES),
+    LEVEL_UP_MOVE(33, MOVE_AERIAL_ACE),
+    LEVEL_UP_MOVE(42, MOVE_TRIPLE_AXEL),
+    LEVEL_UP_MOVE(42, MOVE_SUBSTITUTE),
+    LEVEL_UP_MOVE(49, MOVE_EXTRASENSORY),
+    LEVEL_UP_MOVE(56, MOVE_DOUBLE_TEAM),
+    LEVEL_UP_MOVE(68, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
 

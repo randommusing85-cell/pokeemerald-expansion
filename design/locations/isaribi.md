@@ -33,7 +33,7 @@ Act 1 beat 8 in [story-outline.md](../story-outline.md).
   Wave. Then she tells him about surfing: "Got a Water-type? Then you've got a boat." From here
   any Water-type in the party lets him surf ([progression.md](../progression.md)).
 - **Akira** watches from the gym's stands; no battle. One line afterwards about the tournament
-  (`TODO(design)`: the line). His evolved starter first shows at the tournament.
+  (`TODO(design)`: the line). His evolved starter (the middle stage) first shows at the tournament; its final on Route 5.
 - **Nami** battles him on the pier after gym 3, her Lapras in the water behind her. Her optional
   warm scene ("the coast with her Lapras, after they battle", [side-quests.md](../side-quests.md))
   follows there; at night, with the squid boats lit.

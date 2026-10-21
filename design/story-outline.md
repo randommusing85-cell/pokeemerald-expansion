@@ -37,7 +37,7 @@ happens.
 | --- | --- | --- | --- |
 | 1 | Hanashiro, the castle grounds, day 1 | The opening. Round 1: KAITO (the bridge rematch, about Lv 30). The chain steps: Yuki's spar, training with Akira while Fuyumi watches, and Fuyumi asking him to look out for Akira. | `TODO` |
 | 2 | Hanashiro, the inn, night 1 | A last quiet scene for Fuyumi, Akira and him. | `TODO` |
-| 3 | The castle grounds, day 2 | Round 2: Yuki (Lv 32). The semi-final: Nami (Lv 34). On the next field Akira's evolved starter wins his semi-final (first seen here). | `TODO` |
+| 3 | The castle grounds, day 2 | Round 2: Yuki (Lv 32). The semi-final: Nami (Lv 34). On the next field Akira's evolved starter (its middle stage, first seen here) wins his semi-final. | `TODO` |
 | 4 | The castle grounds, day 2 | Mid-semi-final a signal goes up; Nami stops ("I'm sorry. Not now.") and runs. Tokoyo has opened a thinning on purpose under the castle (a thin place) to test a small version of the door-mountain machine; it gets away from them. They didn't mean to kill anyone. Celebi flickers and drops, as at Lake Usurai. Hinata, in Tokoyo's gear, leads the crowd out. | `TODO` |
 | 5 | The grounds, the passage under the castle | He fights through two or three Tokoyo members (the Route 4 member among them, Lv 30-33) to reach the stands. | `TODO` |
 | 6 | The stands | He arrives as Fuyumi (with her Ice Pokémon) and Hashimoto hold the thinning back side by side so the stands can empty: two people on opposite sides. Both die, plainly and briefly. Akira sees it. He's too late. | `TODO` |

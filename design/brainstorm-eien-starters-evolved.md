@@ -67,6 +67,7 @@ design earns one; the parked signature moves.
 
 ## Parked ideas
 
-- A signature move per starter's final stage (from the species brainstorm).
+- A signature move per starter's final stage (from the species brainstorm). Settled in
+  `brainstorm-eien-starters-finals.md`: existing rare moves at Lv 42.
 
 ## Rejected

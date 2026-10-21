@@ -200,3 +200,32 @@ TEST("(Eien journal) Poochyena's research shows as soon as it's open")
     SetQuestState(QUEST_RESEARCH_POOCHYENA, QUEST_STATE_OPEN);
     EXPECT(IsQuestShownInJournal(QUEST_RESEARCH_POOCHYENA));
 }
+
+// The Eien middle stages evolve at Lv 36 into their Eien finals (design/variants.md).
+TEST("(Eien species) the Eien middle stages evolve at Lv 36 into their Eien finals")
+{
+    u32 species, evolved, level;
+    struct Pokemon mon;
+
+    PARAMETRIZE { species = SPECIES_COMBUSKEN_EIEN; evolved = SPECIES_BLAZIKEN_EIEN; level = 36; }
+    PARAMETRIZE { species = SPECIES_IVYSAUR_EIEN;   evolved = SPECIES_VENUSAUR_EIEN; level = 36; }
+    PARAMETRIZE { species = SPECIES_FROGADIER_EIEN; evolved = SPECIES_GRENINJA_EIEN; level = 36; }
+    PARAMETRIZE { species = SPECIES_COMBUSKEN_EIEN; evolved = SPECIES_NONE;          level = 35; }
+    PARAMETRIZE { species = SPECIES_IVYSAUR_EIEN;   evolved = SPECIES_NONE;          level = 35; }
+    PARAMETRIZE { species = SPECIES_FROGADIER_EIEN; evolved = SPECIES_NONE;          level = 35; }
+
+    CreateMon(&mon, species, level, 0, OTID_STRUCT_PRESET(0));
+    EXPECT_EQ(GetEvolutionTargetSpecies(&mon, EVO_MODE_NORMAL, ITEM_NONE, NULL, NULL, CHECK_EVO), evolved);
+}
+
+TEST("(Eien species) the Eien finals keep their Eien typing")
+{
+    u32 species, type1, type2;
+
+    PARAMETRIZE { species = SPECIES_BLAZIKEN_EIEN; type1 = TYPE_FIRE;  type2 = TYPE_GHOST; }
+    PARAMETRIZE { species = SPECIES_VENUSAUR_EIEN; type1 = TYPE_GRASS; type2 = TYPE_PSYCHIC; }
+    PARAMETRIZE { species = SPECIES_GRENINJA_EIEN; type1 = TYPE_WATER; type2 = TYPE_ICE; }
+
+    EXPECT_EQ(GetSpeciesType(species, 0), type1);
+    EXPECT_EQ(GetSpeciesType(species, 1), type2);
+}

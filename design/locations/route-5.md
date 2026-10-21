@@ -25,7 +25,7 @@ Act 3 beat 1 in [story-outline.md](../story-outline.md).
 
 - **A Tokoyo member** openly ropes off a thinning and battles him: Tokoyo is seen openly now.
 - **Akira's goodbye** at the forest's end: he waits for the hero to say goodbye properly and asks
-  him not to follow. A battle (his full team, about Lv 36, his evolved starter the ace). Then he
+  him not to follow. A battle (his full team, about Lv 36, his starter the ace, now in its final form: the first time the hero sees an Eien final). Then he
   goes to Minato. If the hero promised Fuyumi (her step 2) to look out for him, one line changes.
   `TODO(design)`: his lines.
 
