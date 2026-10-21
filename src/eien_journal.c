@@ -6,6 +6,7 @@
 // paper, ruled lines, a spine and tabs); final art can replace it without changing the rest.
 //
 // Controls: Up/Down move, Left/Right or L/R switch tabs, B closes.
+// Hold A + Up/Down to scroll a research entry without changing the selected species.
 
 #include "global.h"
 #include "eien_journal.h"
@@ -99,6 +100,8 @@ enum
 #define TAB_TOP(tab)    (2 + (tab) * 5)
 #define TAB_HEIGHT      4
 #define TEXT_BUFFER     600
+#define RESEARCH_ROWS   6    // keep the title and bottom control hint fixed
+#define RESEARCH_HINT_Y (LIST_TOP + RESEARCH_ROWS * ROW_HEIGHT + 8)
 
 struct JournalRow
 {
@@ -119,6 +122,8 @@ struct JournalState
     struct JournalRow rows[MAX_ROWS];
     u8 text[TEXT_BUFFER];
     u8 wrapped[TEXT_BUFFER];
+    u16 researchScroll;
+    u16 researchLines;
 };
 
 static EWRAM_DATA struct JournalState *sJournal = NULL;
@@ -148,6 +153,7 @@ static const u8 sText_TierUnknown[] = _(": ?");
 static const u8 sText_ColonSpace[] = _(": ");
 static const u8 sText_EienGroup[] = _("Things I'm looking into around Eien.");
 static const u8 sText_LetterWaiting[] = _("A letter came. They want to see me.");
+static const u8 sText_ResearchScroll[] = _("A+{UP_ARROW}/{DOWN_ARROW}: scroll");
 static const u8 sText_NoLineYet[] = _("We've only just met.");
 
 static const u8 sTextColors[][3] =
@@ -553,11 +559,40 @@ static const u8 *GetPersonLine(u32 person)
     return sText_NoLineYet;
 }
 
+// Render complete visible lines only. Negative text coordinates wrap in the printer,
+// so skip off-page lines rather than drawing a long paragraph above/below the window.
+static u32 PrintResearchParagraph(u32 line, const u8 *text, u32 color)
+{
+    u8 *start, *end;
+
+    StringExpandPlaceholders(sJournal->wrapped, text);
+    BreakStringNaive(sJournal->wrapped, RIGHT_PAGE_W * 8 - 8, TEXT_BUFFER, FONT_NORMAL, HIDE_SCROLL_PROMPT);
+    start = sJournal->wrapped;
+    do
+    {
+        u8 terminator;
+
+        end = start;
+        while (*end != EOS && *end != CHAR_NEWLINE && *end != CHAR_PROMPT_SCROLL)
+            end++;
+        terminator = *end;
+        *end = EOS;
+        if (line >= sJournal->researchScroll && line < sJournal->researchScroll + RESEARCH_ROWS)
+            AddTextPrinterParameterized4(WIN_RIGHT, FONT_NORMAL, 4,
+                LIST_TOP + (line - sJournal->researchScroll) * ROW_HEIGHT, 0, 0,
+                sTextColors[color], TEXT_SKIP_DRAW, start);
+        *end = terminator;
+        line++;
+        start = end + 1;
+    } while (*end != EOS);
+    return line;
+}
+
 static void DrawResearchDetail(u32 i)
 {
     const struct JournalResearch *research = &sJournalResearch[i];
     u32 step = GetQuestStep(research->quest);
-    u32 tier, y = LIST_TOP;
+    u32 tier, line = 0;
 
     PrintTitle((step & (1 << RESEARCH_TIER_SEEN)) ? research->name : sText_Unknown);
     for (tier = 0; tier < RESEARCH_TIER_COUNT; tier++)
@@ -569,17 +604,21 @@ static void DrawResearchDetail(u32 i)
             StringCopy(sJournal->text, sResearchTierNames[tier]);
             StringAppend(sJournal->text, sText_ColonSpace);
             StringAppend(sJournal->text, research->notes[tier]);
-            y = PrintParagraph(y, sJournal->text, COLOR_INK);
+            line = PrintResearchParagraph(line, sJournal->text, COLOR_INK);
         }
         else
         {
             StringCopy(sJournal->text, sResearchTierNames[tier]);
             StringAppend(sJournal->text, sText_TierUnknown);
-            y = PrintParagraph(y, sJournal->text, COLOR_GREY);
+            line = PrintResearchParagraph(line, sJournal->text, COLOR_GREY);
         }
     }
     if (research->note != NULL && FlagGet(research->noteFlag))
-        PrintParagraph(y, research->note, COLOR_INK);
+        line = PrintResearchParagraph(line, research->note, COLOR_INK);
+    sJournal->researchLines = line;
+    if (line > RESEARCH_ROWS)
+        AddTextPrinterParameterized3(WIN_RIGHT, FONT_SMALL, 4, RESEARCH_HINT_Y,
+                                     sTextColors[COLOR_BLUE], TEXT_SKIP_DRAW, sText_ResearchScroll);
 }
 
 static void DrawMissionDetail(u32 i)
@@ -675,6 +714,7 @@ static void SetTab(u32 tab)
     sLastTab = tab;
     BuildRows();
     sJournal->scroll = 0;
+    sJournal->researchScroll = 0;
     // The Story tab opens on "What's next".
     sJournal->cursor = (tab == TAB_STORY && sJournal->rowCount > 1) ? 1 : 0;
     DrawBackground();
@@ -782,11 +822,24 @@ static void MoveCursor(s32 delta)
         return;
     PlaySE(SE_SELECT);
     sJournal->cursor = cursor;
+    sJournal->researchScroll = 0;
     if (sJournal->cursor < sJournal->scroll)
         sJournal->scroll = sJournal->cursor;
     else if (sJournal->cursor >= sJournal->scroll + LIST_ROWS)
         sJournal->scroll = sJournal->cursor - LIST_ROWS + 1;
     DrawList();
+    DrawDetail();
+}
+
+static void ScrollResearch(s32 delta)
+{
+    s32 scroll = sJournal->researchScroll + delta;
+    s32 maxScroll = sJournal->researchLines > RESEARCH_ROWS ? sJournal->researchLines - RESEARCH_ROWS : 0;
+
+    if (scroll < 0 || scroll > maxScroll)
+        return;
+    sJournal->researchScroll = scroll;
+    PlaySE(SE_SELECT);
     DrawDetail();
 }
 
@@ -797,6 +850,14 @@ static void Task_JournalInput(u8 taskId)
         PlaySE(SE_SELECT);
         BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
         gTasks[taskId].func = Task_JournalFadeOut;
+    }
+    else if (JOY_HELD(A_BUTTON) && JOY_REPEAT(DPAD_UP | DPAD_DOWN)
+          && sJournal->rows[sJournal->cursor].kind == ROW_RESEARCH)
+    {
+        if (JOY_REPEAT(DPAD_UP))
+            ScrollResearch(-1);
+        else if (JOY_REPEAT(DPAD_DOWN))
+            ScrollResearch(1);
     }
     else if (JOY_REPEAT(DPAD_UP))
     {
