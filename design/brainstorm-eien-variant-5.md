@@ -37,12 +37,31 @@ location doc) when settled; this file stays as the record.
 - **The last variants (r1 4a):** this one (gym 6), then one for gym 7 and one for gym 8, plus
   Trubbish's split.
 
+- **Route (r2 1c):** both. It's rare on Route 6 near the terraces, where the hero first glimpses
+  it around Minori's festival thinning, and common on Route 7's plateau, before the gym.
+- **Evolution (r2 2b):** Eien Wyrdeer, the engine's Wyrdeer (Gen 8, 525) as its evolved form,
+  Dark/Ghost too, with an Eien rule instead of vanilla's (using Psyshield Bash 20 times). It's
+  "???" to the hero, and it needs no new name.
+- **Look (r2 3a):** a faded serow.
+  - A shaggy dark-grey coat and a pale face mask (real serow have pale faces).
+  - Its antler orbs are dim, hollow grey, like holes in the world.
+- **Stats (r2 4a):** a physical Dark attacker. Eien Stantler is 73 / 105 / 67 / 70 / 65 / 85
+  (HP / Atk / Def / SpA / SpD / Spe), 465.
+- **Abilities and moves (r2 5a):**
+  - Abilities: Intimidate / Frisk / Cursed Body (hidden).
+  - Moves: Bite (1, replacing Tackle), Shadow Sneak (16, replacing Sand Attack), Crunch (37,
+    replacing Zen Headbutt). It keeps Astonish, Hypnosis and Confuse Ray.
+- **Defaults (r2 6):**
+  - Research on the professor's list, shown after gym 5's badge.
+  - A journal note for its evolution rule.
+  - The shiny is a snow-white winter coat.
+
 ## Leaning
 
 ## Open questions
 
-Round 2 (asked): the route, the evolution (Stantler has none in Gen 1-5), the look, stats,
-abilities and early moves.
+Round 3 (asked): Eien Wyrdeer's evolution rule, look, stats and evolution move, and the glimpse
+at Minori.
 
 ## Gaps and tensions
 
