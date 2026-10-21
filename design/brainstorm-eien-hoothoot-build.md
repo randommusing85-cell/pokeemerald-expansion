@@ -33,12 +33,24 @@ the record.
 
 ## Decided
 
+- **Evolution (r1 1a):** like Eien Wooper's, no evolution entry until `MAP_EIEN_ROUTE2_UPPER`
+  exists. The journal's Lv 20 note covers the meantime.
+- **Where to catch it (r1 2a):** nowhere yet. Species data only, tested through the debug menu,
+  until the pass maps are built.
+- **Research opener (r1 3a):** the professor's list. She opens every variant's research in the
+  lab at the start (where she opens Poochyena's now); unseen ones show as "???" until met. This
+  also gives Eien Wooper its opener.
+- **Sprites (r1 4d):** one draft round with three mist concepts: pale solid mist, dithered mist,
+  and mist that fades to loose pixels at the tips. Picked from the contact sheet.
+- **Eien Noctowl's veils (r1 5b):** hanging down behind it into the space below the wings, a
+  shroud shape inside 64x64.
+
 ## Leaning
 
 ## Open questions
 
-Round 1 (asked): the evolution without its map, where to catch it meanwhile, who opens the
-research, the sprites' mist treatment, how Eien Noctowl's veils fit the frame.
+Round 2 (asked): what an unseen entry shows, when entries join the list, how research rewards
+are claimed, and the build order.
 
 ## Gaps and tensions
 
