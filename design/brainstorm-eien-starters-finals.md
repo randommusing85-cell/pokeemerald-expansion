@@ -3,7 +3,8 @@
 Working notes for Eien Blaziken, Eien Venusaur and Eien Greninja. Their concept, stats and
 evolution moves are settled (`variants.md`, `brainstorm-eien-starters-evolved.md`); these are the
 questions left before they're built. Decisions move into `variants.md` when settled; this file
-stays as the record.
+stays as the record. **Promoted** into `variants.md`, `story-outline.md`, `locations/hanashiro.md`,
+`locations/route-5.md` and `locations/isaribi.md`.
 
 ## Givens (from the docs)
 

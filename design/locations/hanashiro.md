@@ -66,7 +66,7 @@ The gym is Fortree's layout: its turnstiles read as orchard gates.
 | Yuki | Absol and her team, about Lv 32 (three or four) | Round 2, day 2. `TODO(design)`: the rest of her team |
 | Nami | Lapras and her team, about Lv 34 (three or four) | The semi-final; broken off. `TODO(design)`: her team |
 | Tokoyo members (2 + the Route 4 member) | Lv 30-33 | During the disaster. `TODO(design)`: teams |
-| Akira | His evolved starter and team | Wins his semi-final on the next field (seen, not fought). `TODO(design)`: his opponent (a League trainer; Ren is a possible tie-in) |
+| Akira | His evolved starter (the middle stage; its final first shows on Route 5) and team | Wins his semi-final on the next field (seen, not fought). `TODO(design)`: his opponent (a League trainer; Ren is a possible tie-in) |
 
 ## Flags and vars
 

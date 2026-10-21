@@ -86,6 +86,17 @@ the middle stages don't evolve further yet.
   palette (`make_icons.py`), since the icon drafts came out noisy. Checked in game: evolution,
   party icon, battle back (shots in `art/eien_combusken/`, `eien_ivysaur/`, `eien_frogadier/`).
 - **Finals:** front-only concept drafts in the same contact sheet (`art/eien_evolved_contact_sheet.png`).
+  Decided for the build in [brainstorm-eien-starters-finals.md](brainstorm-eien-starters-finals.md):
+  - **Art:** Eien Venusaur and Eien Greninja are picked from those concepts. Eien Blaziken gets a
+    re-draft with a stronger brief: a paper lantern body over a visible frame, lit from inside,
+    with a painted warrior face.
+  - **Build:** data and art together, as with Eien Hoothoot.
+  - **Signature moves:** an existing rare move each, learned at Lv 42 (not by TM): Eien Blaziken
+    Infernal Parade (a festival float's procession), Eien Venusaur Lumina Crash, Eien Greninja
+    Triple Axel.
+  - **Names:** "Eien" plus the vanilla name, like every other variant; own names stay open.
+  - **Akira:** at the tournament his starter is still the middle stage. The hero first sees an
+    Eien final in their Route 5 goodbye battle (about Lv 36).
 
 | Form | Look | Stats (total) | Evolution move |
 | --- | --- | --- | --- |
@@ -110,8 +121,8 @@ the middle stages don't evolve further yet.
   the lantern floats, paper feathers glowing; Eien Ivysaur (Aurora Bud) turns its half-open bud
   to the sky; Eien Frogadier (Snow Scout) walks the drifts in its straw cape and vanishes when
   travelers look back. The text is in `src/data/pokemon/species_info/eien_families.h`.
-- `TODO(design)`: the finals' dex entries; final-form names if a design earns one; a signature move per
-  final stage (parked).
+- `TODO(design)`: the finals' dex entries (drafted at build time); final-form names if a design
+  earns one.
 
 ## Others
 
