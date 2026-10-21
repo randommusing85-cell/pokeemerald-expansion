@@ -24,13 +24,30 @@ Working notes for the Eien variant after Eien Stantler, the answer to gym 7. Dec
 
 ## Decided
 
+- **Species (r1 1b):** Wingull / Pelipper as Electric/Flying: storm gulls of the sea cliffs,
+  riding the lightning over the strait. They hit Sharpedo and Wailord hard and Kingdra
+  neutrally. Electric/Flying is a type no variant has yet.
+- **Fading (r1 2a):** not touched; a creature of the strait's storms. That makes three touched,
+  three not.
+- **Where (r1 3a):** in the grass by the cliff edge at Route 8's end; common, more common in rain.
+- **First sighting (r1 4b):** on the way down, a flock riding a storm front above the cliffs, as
+  overworld objects, before the player reaches the grass.
+
 ## Leaning
 
 ## Open questions
 
-Round 1 (asked): the species and type, fading or not, where it lives on the route, how it's met.
+Round 2 (asked): the look, stats, abilities, early moves, the evolution rule.
 
 ## Gaps and tensions
+
+- The evolution rule shouldn't repeat Eien Ledyba's rain rule.
+- Vanilla Wingull: 40 / 30 / 30 / 55 / 30 / 85 (HP / Atk / Def / SpA / SpD / Spe), 270; Keen Eye /
+  Hydration / Rain Dish; Growl and Water Gun 1, Quick Attack 5, Supersonic 10, Wing Attack 15,
+  Water Pulse 20; Pelipper at Lv 25: 60 / 50 / 100 / 95 / 70 / 65, 440, Keen Eye / Drizzle /
+  Rain Dish.
+- Route 8 is Lv 44-47, far above Wingull's Lv 25 evolution, so Eien Pelipper is likely wild there
+  too.
 
 - Kingdra is only weak to Dragon and Fairy. A Grass or Electric variant hits Sharpedo and
   Wailord hard but Kingdra only neutrally.
