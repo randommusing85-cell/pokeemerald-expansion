@@ -957,9 +957,9 @@
         .pokemonOffset = 0,
         .trainerScale = 301,
         .trainerOffset = 4,
-        // The vanilla sprites in its line's palette until its own art is picked (variants.md)
-        .frontPic = gMonFrontPic_Blaziken,
-        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 64) : MON_COORDS_SIZE(56, 64),
+        // Its own sprites, framed like the vanilla (non-GBA-style) ones
+        .frontPic = sMonFrontPic_BlazikenEien,
+        .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 1),
@@ -969,14 +969,14 @@
             ANIMCMD_FRAME(0, 7),
         ),
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Blaziken,
+        .backPic = sMonBackPic_BlazikenEien,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = sMonPalette_BlazikenEien,
         .shinyPalette = sMonShinyPalette_BlazikenEien,
-        .iconSprite = gMonIcon_Blaziken,
-        .iconPalIndex = 0,
+        .iconSprite = sMonIcon_BlazikenEien,
+        .iconPalIndex = 6,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(4, 8, SHADOW_SIZE_M)
         FOOTPRINT(Blaziken)
@@ -1032,24 +1032,24 @@
         .pokemonOffset = 0,
         .trainerScale = 388,
         .trainerOffset = 6,
-        // The vanilla sprites in its line's palette until its own art is picked (variants.md)
-        .frontPic = gMonFrontPic_Venusaur,
+        // Its own sprites, framed like the vanilla (non-GBA-style) ones
+        .frontPic = sMonFrontPic_VenusaurEien,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 3,
+        .frontPicYOffset = 0, // the aurora reaches the top of the frame
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 10),
             ANIMCMD_FRAME(1, 25),
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_ROTATE_UP_SLAM_DOWN,
-        .backPic = gMonBackPic_Venusaur,
-        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 48),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 7 : 10,
+        .backPic = sMonBackPic_VenusaurEien,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = sMonPalette_VenusaurEien,
         .shinyPalette = sMonShinyPalette_VenusaurEien,
-        .iconSprite = gMonIcon_Venusaur,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 4,
+        .iconSprite = sMonIcon_VenusaurEien,
+        .iconPalIndex = 6,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 6, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Venusaur)
@@ -1097,28 +1097,28 @@
         .height = 15,
         .weight = 400,
         .description = COMPOUND_STRING(
-            "It keeps watch over the snowbound mountain\n"
-            "passes in a straw hat and cape. Travelers\n"
-            "lost in a blizzard say it led them out,\n"
-            "then was gone."),
+            "It keeps watch over the snowy passes\n"
+            "in a straw hat and cape. Travelers lost\n"
+            "in blizzards say it led them out, then\n"
+            "was gone."),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
         .trainerOffset = 0,
-        // The vanilla sprites in its line's palette until its own art is picked (variants.md)
-        .frontPic = gMonFrontPic_Greninja,
+        // Its own sprites, framed like the vanilla (non-GBA-style) ones
+        .frontPic = sMonFrontPic_GreninjaEien,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 7,
         .frontAnimFrames = sAnims_Greninja,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Greninja,
+        .backPic = sMonBackPic_GreninjaEien,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
         .palette = sMonPalette_GreninjaEien,
         .shinyPalette = sMonShinyPalette_GreninjaEien,
-        .iconSprite = gMonIcon_Greninja,
-        .iconPalIndex = 0,
+        .iconSprite = sMonIcon_GreninjaEien,
+        .iconPalIndex = 6,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(4, 6, SHADOW_SIZE_L)
         FOOTPRINT(Greninja)

@@ -4,7 +4,9 @@ Front drafts for the six evolved forms in `variants.md` ("Evolved stages").
 
 **Picked and in the game:** Eien Combusken `gemini3pro_a`, Eien Ivysaur `gemini3pro_b`, Eien
 Frogadier `gemini3pro_a`, with their idle frames, backs, shinies and icons (below). The finals'
-drafts are concept checks only; nothing is picked for them yet.
+drafts were concept checks; the finals are now picked and in the game too: Eien Blaziken
+`gemini3pro_r2_b` (round 2, below), Eien Venusaur `gemini31flash_a`, Eien Greninja `gemini3pro_a`
+("The finals' other sprites", below).
 
 Contact sheet: [`eien_evolved_contact_sheet.png`](eien_evolved_contact_sheet.png) (vanilla first,
 then each converted draft, at 2x).
@@ -105,3 +107,21 @@ framing and motion plus the picked front, two models, two tries each. Contact sh
 
 In-game shots in each `eien_<species>/` folder: `evolution.png`, `evolution_move.png`,
 `party_icon.png`, `battle_back.png`. Credited in `design/asset-credits.md`.
+
+## The finals' other sprites
+
+Made like the middle stages' (`stage_drafts.py`), contact sheets
+`eien_finals_back_contact_sheet.png`, `eien_finals_frame2_contact_sheet.png`,
+`eien_finals_icon_contact_sheet.png`. In-game shots: `eien_blaziken/summary.png`,
+`eien_blaziken/battle_back.png`, `eien_blaziken/party_icon.png` (all three icons),
+`eien_venusaur/summary.png`, `eien_greninja/summary.png`.
+
+| | Blaziken | Venusaur | Greninja |
+| --- | --- | --- | --- |
+| Back (picked) | `31flash_a`, vanilla's over-the-shoulder framing with a ghost flame at the wrist | none: the drafts redrew a full body filling the frame, so it keeps the placeholder (the vanilla back recolored from the front) | `3pro_a`, the straw cape and hat from behind |
+| Idle frame (picked) | `3pro_a` | `3pro_b` | `3pro_a` |
+| Shiny | night lantern (violet ghost flames) | twilight (purple body, gold-green aurora) | midnight (a dark navy body) |
+| Icon | the vanilla icons recolored into the Eien icon palette, like the middle stages' (the drafts filled the whole 32x32 cell and were noisy) | same | same |
+
+The frames are vanilla's, except Venusaur's front, whose aurora reaches the top of the frame
+(Y offset 0). The overworld (follower) sprites are still vanilla's.

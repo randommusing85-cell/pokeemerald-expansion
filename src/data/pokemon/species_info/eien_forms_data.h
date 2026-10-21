@@ -76,7 +76,18 @@ static const u16 sMonShinyPalette_HoothootEien[] = INCGFX_U16("graphics/pokemon/
 static const u16 sMonPalette_NoctowlEien[] = INCGFX_U16("graphics/pokemon/eien/noctowl/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_NoctowlEien[] = INCGFX_U16("graphics/pokemon/eien/noctowl/shiny.pal", ".gbapal");
 
-// The finals: the vanilla sprites in their line's placeholder palette until their art is picked.
+// The finals: the picked AI fronts and idle frames, backs (Venusaur's is the vanilla back recolored)
+// and the lines' shinies (convert_art.py, design/art/eien_evolved_drafts.md); icons recolored into
+// the Eien icon palette like the middle stages' (make_icons.py).
+static const u32 sMonFrontPic_BlazikenEien[] = INCGFX_U32("graphics/pokemon/eien/blaziken/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_BlazikenEien[] = INCGFX_U32("graphics/pokemon/eien/blaziken/back.png", ".4bpp.smol");
+static const u8 sMonIcon_BlazikenEien[] = INCGFX_U8("graphics/pokemon/eien/blaziken/icon.png", ".4bpp");
+static const u32 sMonFrontPic_VenusaurEien[] = INCGFX_U32("graphics/pokemon/eien/venusaur/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_VenusaurEien[] = INCGFX_U32("graphics/pokemon/eien/venusaur/back.png", ".4bpp.smol");
+static const u8 sMonIcon_VenusaurEien[] = INCGFX_U8("graphics/pokemon/eien/venusaur/icon.png", ".4bpp");
+static const u32 sMonFrontPic_GreninjaEien[] = INCGFX_U32("graphics/pokemon/eien/greninja/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_GreninjaEien[] = INCGFX_U32("graphics/pokemon/eien/greninja/back.png", ".4bpp.smol");
+static const u8 sMonIcon_GreninjaEien[] = INCGFX_U8("graphics/pokemon/eien/greninja/icon.png", ".4bpp");
 static const u16 sMonPalette_BlazikenEien[] = INCGFX_U16("graphics/pokemon/eien/blaziken/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_BlazikenEien[] = INCGFX_U16("graphics/pokemon/eien/blaziken/shiny.pal", ".gbapal");
 static const u16 sMonPalette_VenusaurEien[] = INCGFX_U16("graphics/pokemon/eien/venusaur/normal.pal", ".gbapal");
