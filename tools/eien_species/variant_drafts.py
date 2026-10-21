@@ -90,6 +90,30 @@ SPECIES = {
         "c": "Warm amber shell with small ember spots and a big softly glowing yellow-orange "
              "firefly light on its back.",
     }),
+    "stantler": ("Stantler", (
+        "Eien Stantler is Dark/Ghost, a Japanese serow (kamoshika) of snowy northern Japanese "
+        "mountains, touched by the fading of the world: a shaggy dark-grey coat and a pale face "
+        "mask like a real serow's, and the orbs in its antlers dim, hollow and grey, like holes "
+        "in the world. Still clearly Stantler."), {
+        "a": "Dark charcoal-grey shaggy coat, a cream-white face mask, the antler orbs flat grey "
+             "hollows with a dark centre.",
+        "b": "Blue-grey shaggy coat with darker legs, a pale grey face mask, the antler orbs pale "
+             "grey and see-through, as if empty.",
+        "c": "Dark grey-brown shaggy coat, a white face mask and throat, the antler orbs black "
+             "voids rimmed with faint violet.",
+    }),
+    "wyrdeer": ("Wyrdeer", (
+        "Eien Wyrdeer is Dark/Ghost, the evolution of a faded Japanese serow: an old serow, "
+        "bigger, its shaggy coat heavier and frosted with snow, its antlers branching like dead "
+        "winter wood with wider hollow grey orbs, and a long grey beard like mist. A pale face "
+        "mask. Still clearly Wyrdeer."), {
+        "a": "Dark charcoal-grey frosted coat, a cream-white face mask, flat grey hollow orbs, a "
+             "pale grey mist beard.",
+        "b": "Blue-grey frosted coat, a pale grey face mask, see-through grey orbs, a beard of "
+             "grey mist fading at the ends.",
+        "c": "Dark grey-brown frosted coat, a white face mask, black void orbs rimmed with faint "
+             "violet, a long grey mist beard.",
+    }),
 }
 
 PROMPT = (
@@ -114,7 +138,10 @@ def main():
 
     for species in args.species or list(SPECIES):
         name, brief, concepts = SPECIES[species]
-        original = frame1(f"graphics/pokemon/{species}/anim_front.png", f"graphics/pokemon/{species}/normal.pal")
+        front = f"graphics/pokemon/{species}/anim_front.png"
+        if not os.path.exists(os.path.join(REPO, front)):
+            front = f"graphics/pokemon/{species}/front.png"  # single-frame species (Wyrdeer)
+        original = frame1(front, f"graphics/pokemon/{species}/normal.pal")
         base = os.path.join(REPO, "design", "art", f"eien_{species}", "drafts")
         raw_dir, out_dir = os.path.join(base, "raw"), os.path.join(base, "converted")
         os.makedirs(raw_dir, exist_ok=True)

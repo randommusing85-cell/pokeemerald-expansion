@@ -117,6 +117,9 @@ struct JournalResearch
 #define EIEN_HOOTHOOT_EVO_LEVEL 20
 // Eien Ledyba evolves at this level, but only while it's raining; the same note.
 #define EIEN_LEDYBA_EVO_LEVEL 18
+// Eien Stantler evolves by using Shadow Sneak 20 times, not by level: its hint shows once one
+// reaches this level without evolving (variants.md).
+#define EIEN_STANTLER_HINT_LEVEL 38
 
 static const u8 *const sResearchTierNames[RESEARCH_TIER_COUNT] =
 {
@@ -185,6 +188,22 @@ static const struct JournalResearch sJournalResearch[] =
         .noteFlag = FLAG_JOURNAL_LEDYBA_NO_EVO,
         .note = COMPOUND_STRING("Lv 18, and it didn't evolve."),
         .shownFlag = FLAG_BADGE03_GET,
+    },
+    {
+        .quest = QUEST_RESEARCH_STANTLER,
+        .species = SPECIES_STANTLER_EIEN,
+        .name = COMPOUND_STRING("Eien Stantler"),
+        .notes = {
+            // TODO(design): the tier lines (drafts)
+            [RESEARCH_TIER_SEEN] = COMPOUND_STRING("Its antler orbs are empty, grey."),
+            [RESEARCH_TIER_BATTLED] = COMPOUND_STRING("Dark and Ghost!"),
+            [RESEARCH_TIER_CAUGHT] = COMPOUND_STRING("It won't look me in the eye."),
+            [RESEARCH_TIER_LORE] = NULL,
+        },
+        .noteFlag = FLAG_JOURNAL_STANTLER_NO_EVO,
+        // TODO(design): the hint's wording (variants.md)
+        .note = COMPOUND_STRING("It slips into shadow when it moves."),
+        .shownFlag = FLAG_BADGE05_GET,
     },
 };
 
@@ -283,6 +302,20 @@ static const struct JournalMission sJournalMissions[] =
         .title = COMPOUND_STRING("Eien Ledyba"),
         .giver = COMPOUND_STRING("Professor"),
         .hint = COMPOUND_STRING("Something on Route 4."),
+        .log = {
+            [RESEARCH_TIER_SEEN] = COMPOUND_STRING("Saw one."),
+            [RESEARCH_TIER_BATTLED] = COMPOUND_STRING("Battled one."),
+            [RESEARCH_TIER_CAUGHT] = COMPOUND_STRING("Caught one."),
+        },
+        .closedLine = COMPOUND_STRING("She's gone. Too late now."),
+    },
+    {
+        .quest = QUEST_RESEARCH_STANTLER,
+        .group = JOURNAL_GROUP_EIEN,
+        .stepIsBits = TRUE,
+        .title = COMPOUND_STRING("Eien Stantler"),
+        .giver = COMPOUND_STRING("Professor"),
+        .hint = COMPOUND_STRING("Something on Route 7."),
         .log = {
             [RESEARCH_TIER_SEEN] = COMPOUND_STRING("Saw one."),
             [RESEARCH_TIER_BATTLED] = COMPOUND_STRING("Battled one."),

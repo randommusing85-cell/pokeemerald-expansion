@@ -116,3 +116,37 @@ WILD_BATTLE_TEST("Eien research: catching an Eien Ledyba marks it seen, battled 
         EXPECT_EQ(GetQuestStep(QUEST_RESEARCH_LEDYBA), SEEN | BATTLED | CAUGHT);
     }
 }
+
+WILD_BATTLE_TEST("Eien research: catching an Eien Stantler marks it seen, battled and caught")
+{
+    GIVEN {
+        SetQuestStep(QUEST_RESEARCH_STANTLER, 0);
+        WITH_CONFIG(B_MISSING_BADGE_CATCH_MALUS, GEN_7);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_STANTLER_EIEN);
+    } WHEN {
+        TURN { USE_ITEM(player, ITEM_MASTER_BALL); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_SPECIAL, B_ANIM_BALL_THROW, player);
+    } THEN {
+        EXPECT_EQ(GetQuestStep(QUEST_RESEARCH_STANTLER), SEEN | BATTLED | CAUGHT);
+    }
+}
+
+// Eien Stantler's evolution counts its Shadow Sneak uses (design/variants.md); other moves don't.
+WILD_BATTLE_TEST("Eien Stantler: using Shadow Sneak counts toward its evolution")
+{
+    u32 move;
+
+    PARAMETRIZE { move = MOVE_SHADOW_SNEAK; }
+    PARAMETRIZE { move = MOVE_BITE; }
+
+    GIVEN {
+        PLAYER(SPECIES_STANTLER_EIEN) { Moves(MOVE_SHADOW_SNEAK, MOVE_BITE); }
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(player, move); }
+    } THEN {
+        EXPECT_EQ(GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_EVOLUTION_TRACKER), move == MOVE_SHADOW_SNEAK);
+    }
+}

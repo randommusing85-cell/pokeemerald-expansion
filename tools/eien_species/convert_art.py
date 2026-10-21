@@ -149,7 +149,10 @@ def main():
         # the fronts don't share fall back to the placeholder recolor snapped to the palette.
         back = Image.open(os.path.join(REPO, "graphics", "pokemon", species, "back.png"))
         old = sprite_prep.read_jasc(os.path.join(REPO, "graphics", "pokemon", species, "normal.pal"))
-        original_front = Image.open(os.path.join(REPO, "graphics", "pokemon", species, "anim_front.png")).crop((0, 0, 64, 64))
+        vanilla_front = os.path.join(REPO, "graphics", "pokemon", species, "anim_front.png")
+        if not os.path.exists(vanilla_front):
+            vanilla_front = os.path.join(REPO, "graphics", "pokemon", species, "front.png")  # single-frame species
+        original_front = Image.open(vanilla_front).crop((0, 0, 64, 64))
         votes = {}
         for a, b in zip(original_front.getdata(), front.getdata()):
             if a and b:

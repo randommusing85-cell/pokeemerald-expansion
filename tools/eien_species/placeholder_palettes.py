@@ -34,6 +34,8 @@ LOOKS = {
     "greninja": (-0.03, 0.45, 0.12),
     "ledyba": (0.05, 1.0, 0.04),      # red to an ember orange
     "ledian": (0.05, 1.0, 0.04),
+    "stantler": (0.6, 0.15, -0.08),   # brown to a faded dark grey
+    "wyrdeer": (0.6, 0.15, -0.08),
 }
 
 

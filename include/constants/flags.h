@@ -68,7 +68,7 @@
 #define FLAG_JOURNAL_WOOPER_NO_EVO 0x2E // Eien: the journal noted an Eien Wooper at Lv 20+ that didn't evolve
 #define FLAG_JOURNAL_HOOTHOOT_NO_EVO 0x2F // Eien: the journal noted an Eien Hoothoot at Lv 20+ that didn't evolve
 #define FLAG_JOURNAL_LEDYBA_NO_EVO 0x30 // Eien: the journal noted an Eien Ledyba at Lv 18+ that didn't evolve
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
+#define FLAG_JOURNAL_STANTLER_NO_EVO 0x31 // Eien: the journal noted an Eien Stantler at Lv 38+ that hadn't evolved
 #define FLAG_UNUSED_0x032    0x32 // Unused Flag
 #define FLAG_UNUSED_0x033    0x33 // Unused Flag
 #define FLAG_UNUSED_0x034    0x34 // Unused Flag

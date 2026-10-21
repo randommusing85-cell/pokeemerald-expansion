@@ -1282,3 +1282,149 @@
         .formSpeciesIdTable = sLedianFormSpeciesIdTable,
     },
 #endif //P_FAMILY_LEDYBA
+
+#if P_FAMILY_STANTLER
+    [SPECIES_STANTLER_EIEN] =
+    {
+        .baseHP        = 73,
+        .baseAttack    = 105,
+        .baseDefense   = 67,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_DARK, TYPE_GHOST),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 163 : 165,
+        .evYield_Attack = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_FRISK, ABILITY_CURSED_BODY },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Stantler"),
+        .cryId = CRY_STANTLER,
+        .natDexNum = NATIONAL_DEX_STANTLER,
+        // TODO(design): category, size and dex entry (placeholders, like the other Eien forms' drafts).
+        .categoryName = _("Serow"),
+        .height = 14,
+        .weight = 712,
+        .description = COMPOUND_STRING(
+            "It lives on snowy high plateaus. The\n"
+            "orbs in its antlers have gone grey\n"
+            "and hollow. People say that looking\n"
+            "into them is like looking at nothing."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        // The vanilla sprites in faded palettes until its own art is picked (variants.md)
+        .frontPic = gMonFrontPic_Stantler,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 64) : MON_COORDS_SIZE(48, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+        ),
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Stantler,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 64) : MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 3 : 1,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = sMonPalette_StantlerEien,
+        .shinyPalette = sMonShinyPalette_StantlerEien,
+        .iconSprite = gMonIcon_Stantler,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(3, 13, SHADOW_SIZE_M)
+        FOOTPRINT(Stantler)
+        OVERWORLD(
+            sPicTable_Stantler,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Stantler,
+            gShinyOverworldPalette_Stantler
+        )
+        .levelUpLearnset = sStantlerEienLevelUpLearnset,
+        .teachableLearnset = sStantlerTeachableLearnset,
+        .eggMoveLearnset = sStantlerEggMoveLearnset,
+        .formSpeciesIdTable = sStantlerFormSpeciesIdTable,
+    #if P_GEN_8_CROSS_EVOS
+        // Evolves after using Shadow Sneak 20 times (variants.md), as vanilla Wyrdeer does with
+        // Psyshield Bash: it learns to slip between worlds.
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_WYRDEER_EIEN, CONDITIONS({IF_USED_MOVE_X_TIMES, MOVE_SHADOW_SNEAK, 20})}),
+    #endif
+    },
+
+#if P_GEN_8_CROSS_EVOS
+    [SPECIES_WYRDEER_EIEN] =
+    {
+        .baseHP        = 103,
+        .baseAttack    = 115,
+        .baseDefense   = 77,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_DARK, TYPE_GHOST),
+        .catchRate = 45,
+        .expYield = 263,
+        .evYield_Attack = 1,
+        .evYield_SpAttack = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_FRISK, ABILITY_CURSED_BODY },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Wyrdeer"),
+        .cryId = CRY_WYRDEER,
+        .natDexNum = NATIONAL_DEX_WYRDEER,
+        // TODO(design): category, size and dex entry (placeholders, like the other Eien forms' drafts).
+        .categoryName = _("Old Serow"),
+        .height = 18,
+        .weight = 951,
+        .description = COMPOUND_STRING(
+            "An old serow of the snowbound heights.\n"
+            "Its antlers have grown like dead winter\n"
+            "wood, and its beard trails away like\n"
+            "mist. It is seen less every year."),
+        .pokemonScale = 267,
+        .pokemonOffset = 2,
+        .trainerScale = 286,
+        .trainerOffset = 1,
+        // The vanilla sprites in faded palettes until its own art is picked (variants.md)
+        .frontPic = gMonFrontPic_Wyrdeer,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Wyrdeer,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = sMonPalette_WyrdeerEien,
+        .shinyPalette = sMonShinyPalette_WyrdeerEien,
+        .iconSprite = gMonIcon_Wyrdeer,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-1, 13, SHADOW_SIZE_M)
+        FOOTPRINT(Wyrdeer)
+        OVERWORLD(
+            sPicTable_Wyrdeer,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Wyrdeer,
+            gShinyOverworldPalette_Wyrdeer
+        )
+        .levelUpLearnset = sWyrdeerEienLevelUpLearnset,
+        .teachableLearnset = sWyrdeerTeachableLearnset,
+        .formSpeciesIdTable = sWyrdeerFormSpeciesIdTable,
+    },
+#endif //P_GEN_8_CROSS_EVOS
+#endif //P_FAMILY_STANTLER

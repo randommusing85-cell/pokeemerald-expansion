@@ -112,7 +112,13 @@ def references(kind, species):
     if kind == "back":
         first = colored(f"{vanilla}/back.png", f"{vanilla}/normal.pal")
     elif kind == "frame2":
-        sheet = colored(f"{vanilla}/anim_front.png", f"{vanilla}/normal.pal")
+        if os.path.exists(os.path.join(REPO, vanilla, "anim_front.png")):
+            sheet = colored(f"{vanilla}/anim_front.png", f"{vanilla}/normal.pal")
+        else:  # a single-frame species (Wyrdeer): both reference frames are the one front
+            single = colored(f"{vanilla}/front.png", f"{vanilla}/normal.pal")
+            sheet = Image.new("RGB", (64, 128), (255, 255, 255))
+            sheet.paste(single.crop((0, 0, 64, 64)), (0, 0))
+            sheet.paste(single.crop((0, 0, 64, 64)), (0, 64))
         first = Image.new("RGB", (128, 64), (255, 255, 255))
         first.paste(sheet.crop((0, 0, 64, 64)), (0, 0))
         first.paste(sheet.crop((0, 64, 64, 128)), (64, 0))

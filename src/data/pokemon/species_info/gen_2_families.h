@@ -7779,6 +7779,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sStantlerLevelUpLearnset,
         .teachableLearnset = sStantlerTeachableLearnset,
         .eggMoveLearnset = sStantlerEggMoveLearnset,
+        .formSpeciesIdTable = sStantlerFormSpeciesIdTable, // Eien: eien_forms_data.h
     #if P_GEN_8_CROSS_EVOS
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_WYRDEER, CONDITIONS({IF_USED_MOVE_X_TIMES, MOVE_PSYSHIELD_BASH, 20})}),
     #endif
@@ -7847,6 +7848,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sWyrdeerLevelUpLearnset,
         .teachableLearnset = sWyrdeerTeachableLearnset,
+        .formSpeciesIdTable = sWyrdeerFormSpeciesIdTable, // Eien: eien_forms_data.h
     },
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_STANTLER
