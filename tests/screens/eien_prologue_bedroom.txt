@@ -1,0 +1,54 @@
+# Map-only smoke check: no scene dialogue or normal new-game routing yet.
+# The empty map spawns player object 0. ObjectEvent currentCoords at +0x10/+0x12
+# include MAP_OFFSET=7. Assert that assumption before using the coordinates.
+include ../../tools/mgba_harness/scripts/new_game.txt
+warp MAP_EIEN_PROLOGUE_BEDROOM 0
+wait 120
+assert8 @gPlayerAvatar+5 0 player object slot
+assert16 @gObjectEvents+0x10 10 entry x=3
+assert16 @gObjectEvents+0x12 10 entry y=3
+assert16 [@gSaveBlock1Ptr]+0x1438 0 no story progress on entry
+shot 01_room
+hold UP 60
+wait 30
+assert16 @gObjectEvents+0x10 10 console approach x=3
+assert16 @gObjectEvents+0x12 9 console approach y=2
+shot 02_console
+press A
+wait 60
+# The unresolved console script must return without consuming story progress.
+assert16 [@gSaveBlock1Ptr]+0x1438 0 console does not advance story
+hold RIGHT 16
+wait 30
+assert16 @gObjectEvents+0x10 11 TV approach x=4
+press UP
+press A
+wait 60
+# Walking afterward verifies the inherited TV did not open a dialogue/menu.
+hold RIGHT 150
+hold UP 60
+wait 30
+assert16 @gObjectEvents+0x10 15 east boundary x=8
+assert16 @gObjectEvents+0x12 9 sealed north wall stops at y=2
+press A
+wait 60
+shot 03_wall
+# Probe a reused rug metatile while a debug save says it is in a Secret Base.
+# vars start 0x139C: CURRENT_SECRET_BASE=0x4054, HIGH_TV_FLAGS=0x40EF.
+hold DOWN 32
+wait 30
+hold LEFT 16
+wait 30
+assert16 @gObjectEvents+0x10 14 rug approach x=7
+assert16 @gObjectEvents+0x12 11 rug approach y=4
+write16 [@gSaveBlock1Ptr]+0x1444 1
+write16 [@gSaveBlock1Ptr]+0x157A 0
+press A
+wait 60
+assert16 [@gSaveBlock1Ptr]+0x157A 0 no Secret Base decoration bookkeeping
+write16 [@gSaveBlock1Ptr]+0x1444 0
+warp MAP_HAMAKAZE 2
+press B 60
+wait 120
+assert16 [@gSaveBlock1Ptr]+0x1438 1 existing Eien arrival still runs
+shot 04_hamakaze
