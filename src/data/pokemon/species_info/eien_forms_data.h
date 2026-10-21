@@ -121,6 +121,12 @@ static const u16 sMonShinyPalette_StantlerEien[] = INCGFX_U16("graphics/pokemon/
 static const u16 sMonPalette_WyrdeerEien[] = INCGFX_U16("graphics/pokemon/eien/wyrdeer/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_WyrdeerEien[] = INCGFX_U16("graphics/pokemon/eien/wyrdeer/shiny.pal", ".gbapal");
 
+// Eien Wingull and Pelipper: the vanilla sprites in storm palettes until their drafts are picked.
+static const u16 sMonPalette_WingullEien[] = INCGFX_U16("graphics/pokemon/eien/wingull/normal.pal", ".gbapal");
+static const u16 sMonShinyPalette_WingullEien[] = INCGFX_U16("graphics/pokemon/eien/wingull/shiny.pal", ".gbapal");
+static const u16 sMonPalette_PelipperEien[] = INCGFX_U16("graphics/pokemon/eien/pelipper/normal.pal", ".gbapal");
+static const u16 sMonShinyPalette_PelipperEien[] = INCGFX_U16("graphics/pokemon/eien/pelipper/shiny.pal", ".gbapal");
+
 // Level-up learnsets: the original's, plus the new-type moves in variants.md.
 static const struct LevelUpMove sTorchicEienLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
@@ -456,6 +462,43 @@ static const struct LevelUpMove sWyrdeerEienLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+static const struct LevelUpMove sWingullEienLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_GROWL),
+    LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
+    LEVEL_UP_MOVE( 5, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE(10, MOVE_FOCUS_ENERGY),
+    LEVEL_UP_MOVE(15, MOVE_WING_ATTACK),
+    LEVEL_UP_MOVE(20, MOVE_SHOCK_WAVE),
+    LEVEL_UP_MOVE(26, MOVE_AGILITY),
+    LEVEL_UP_MOVE(30, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(35, MOVE_MIST),
+    LEVEL_UP_MOVE(40, MOVE_ROOST),
+    LEVEL_UP_MOVE(45, MOVE_HURRICANE),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPelipperEienLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_THUNDER),
+    LEVEL_UP_MOVE( 1, MOVE_GROWL),
+    LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
+    LEVEL_UP_MOVE( 1, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
+    LEVEL_UP_MOVE( 1, MOVE_TAILWIND),
+    LEVEL_UP_MOVE( 1, MOVE_AGILITY),
+    LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE( 1, MOVE_PROTECT),
+    LEVEL_UP_MOVE(15, MOVE_WING_ATTACK),
+    LEVEL_UP_MOVE(20, MOVE_SHOCK_WAVE),
+    LEVEL_UP_MOVE(28, MOVE_STOCKPILE),
+    LEVEL_UP_MOVE(28, MOVE_SPIT_UP),
+    LEVEL_UP_MOVE(28, MOVE_SWALLOW),
+    LEVEL_UP_MOVE(34, MOVE_FLING),
+    LEVEL_UP_MOVE(41, MOVE_MIST),
+    LEVEL_UP_MOVE(48, MOVE_ROOST),
+    LEVEL_UP_MOVE(55, MOVE_HURRICANE),
+    LEVEL_UP_END
+};
+
 static const struct LevelUpMove sWooperEienLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
@@ -550,3 +593,5 @@ static const u16 sLedybaFormSpeciesIdTable[] = { SPECIES_LEDYBA, SPECIES_LEDYBA_
 static const u16 sLedianFormSpeciesIdTable[] = { SPECIES_LEDIAN, SPECIES_LEDIAN_EIEN, FORM_SPECIES_END };
 static const u16 sStantlerFormSpeciesIdTable[] = { SPECIES_STANTLER, SPECIES_STANTLER_EIEN, FORM_SPECIES_END };
 static const u16 sWyrdeerFormSpeciesIdTable[] = { SPECIES_WYRDEER, SPECIES_WYRDEER_EIEN, FORM_SPECIES_END };
+static const u16 sWingullFormSpeciesIdTable[] = { SPECIES_WINGULL, SPECIES_WINGULL_EIEN, FORM_SPECIES_END };
+static const u16 sPelipperFormSpeciesIdTable[] = { SPECIES_PELIPPER, SPECIES_PELIPPER_EIEN, FORM_SPECIES_END };

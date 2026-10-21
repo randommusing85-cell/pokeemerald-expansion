@@ -114,6 +114,28 @@ SPECIES = {
         "c": "Dark grey-brown frosted coat, a white face mask, black void orbs rimmed with faint "
              "violet, a long grey mist beard.",
     }),
+    "wingull": ("Wingull", (
+        "Eien Wingull is Electric/Flying, a storm gull of northern sea cliffs that rides the "
+        "lightning over a rough strait: a white gull with storm-grey wings, its wingtips streaked "
+        "with yellow lightning. Still clearly Wingull."), {
+        "a": "White body, slate-grey wings, bright yellow zigzag lightning streaks at the "
+             "wingtips, a yellow beak.",
+        "b": "White body, dark storm-grey wings with a few small yellow sparks along their edges, "
+             "a pale yellow beak with a darker tip.",
+        "c": "White body, blue-grey wings fading to near-black tips that crackle with thin yellow "
+             "lightning lines.",
+    }),
+    "pelipper": ("Pelipper", (
+        "Eien Pelipper is Electric/Flying, the evolution of a storm gull: its big bill holds a "
+        "crackling thundercloud instead of water, and its wings are storm-grey with lightning at "
+        "the tips. Still clearly Pelipper."), {
+        "a": "White body, slate-grey wings with yellow lightning streaks, a big yellow bill whose "
+             "pouch is a dark grey thundercloud with small yellow sparks.",
+        "b": "White body, dark storm-grey wings, the bill's pouch a swirling dark blue-grey cloud "
+             "with a yellow bolt across it.",
+        "c": "White body, blue-grey wings with near-black tips, the bill's pouch glowing pale "
+             "yellow from lightning inside a grey cloud.",
+    }),
 }
 
 PROMPT = (

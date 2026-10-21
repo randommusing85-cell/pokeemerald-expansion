@@ -1,6 +1,7 @@
 #include "global.h"
 #include "eien_journal.h"
 #include "eien_quests.h"
+#include "battle.h"
 #include "event_data.h"
 #include "field_weather.h"
 #include "constants/weather.h"
@@ -186,6 +187,7 @@ TEST("(Eien journal) the professor's list shows each entry after its region's ba
     PARAMETRIZE { quest = QUEST_RESEARCH_WOOPER;   badge = FLAG_BADGE02_GET; }
     PARAMETRIZE { quest = QUEST_RESEARCH_LEDYBA;   badge = FLAG_BADGE03_GET; }
     PARAMETRIZE { quest = QUEST_RESEARCH_STANTLER; badge = FLAG_BADGE05_GET; }
+    PARAMETRIZE { quest = QUEST_RESEARCH_WINGULL;  badge = FLAG_BADGE06_GET; }
 
     SetQuestState(quest, QUEST_STATE_NONE);
     FlagClear(badge);
@@ -340,4 +342,49 @@ TEST("(Eien species) Eien Stantler and Wyrdeer are Dark/Ghost")
 
     EXPECT_EQ(GetSpeciesType(species, 0), TYPE_DARK);
     EXPECT_EQ(GetSpeciesType(species, 1), TYPE_GHOST);
+}
+
+TEST("(Eien journal) the Wingull hint needs an Eien Wingull at Lv 25+ in the party")
+{
+    u32 species, level;
+
+    PARAMETRIZE { species = SPECIES_WINGULL_EIEN; level = 24; }
+    PARAMETRIZE { species = SPECIES_WINGULL_EIEN; level = 25; }
+    PARAMETRIZE { species = SPECIES_WINGULL;      level = 30; }
+
+    ZeroPlayerPartyMons();
+    FlagClear(FLAG_JOURNAL_WINGULL_NO_EVO);
+    VarSet(VAR_TEMP_0, species);
+    VarSet(VAR_TEMP_1, level);
+    RUN_OVERWORLD_SCRIPT(givemon VAR_TEMP_0, VAR_TEMP_1;);
+    UpdateJournalNotes();
+    EXPECT_EQ(FlagGet(FLAG_JOURNAL_WINGULL_NO_EVO), species == SPECIES_WINGULL_EIEN && level >= 25);
+}
+
+// Eien Wingull evolves after landing 3 critical hits in one battle (design/variants.md). For
+// EVO_MODE_BATTLE_SPECIAL the item argument is the party slot, whose crits are in gPartyCriticalHits.
+TEST("(Eien species) Eien Wingull evolves after 3 critical hits in one battle")
+{
+    u32 crits, evolves;
+    struct Pokemon mon;
+
+    PARAMETRIZE { crits = 3; evolves = TRUE; }
+    PARAMETRIZE { crits = 2; evolves = FALSE; }
+
+    gPartyCriticalHits[0] = crits;
+    CreateMon(&mon, SPECIES_WINGULL_EIEN, 30, 0, OTID_STRUCT_PRESET(0));
+    EXPECT_EQ(GetEvolutionTargetSpecies(&mon, EVO_MODE_BATTLE_SPECIAL, 0, NULL, NULL, CHECK_EVO),
+              evolves ? SPECIES_PELIPPER_EIEN : SPECIES_NONE);
+    gPartyCriticalHits[0] = 0;
+}
+
+TEST("(Eien species) Eien Wingull and Pelipper are Electric/Flying")
+{
+    u32 species;
+
+    PARAMETRIZE { species = SPECIES_WINGULL_EIEN; }
+    PARAMETRIZE { species = SPECIES_PELIPPER_EIEN; }
+
+    EXPECT_EQ(GetSpeciesType(species, 0), TYPE_ELECTRIC);
+    EXPECT_EQ(GetSpeciesType(species, 1), TYPE_FLYING);
 }

@@ -25,7 +25,8 @@
 #define QUEST_RESEARCH_HOOTHOOT    5  // E2: the professor's list, Eien Hoothoot (shown after gym 1)
 #define QUEST_RESEARCH_LEDYBA      6  // E2: the professor's list, Eien Ledyba (shown after gym 3)
 #define QUEST_RESEARCH_STANTLER    7  // E2: the professor's list, Eien Stantler (shown after gym 5)
-#define QUEST_COUNT                8
+#define QUEST_RESEARCH_WINGULL     8  // E2: the professor's list, Eien Wingull (shown after gym 6)
+#define QUEST_COUNT                9
 
 // QUEST_KAEDE_TABLETS step bits. Reading a tablet sets its bit even before Kaede opens the
 // quest. A step has 6 bits; more tablets than that need a second quest entry.

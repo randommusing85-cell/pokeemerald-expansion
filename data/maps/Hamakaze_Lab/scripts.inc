@@ -130,6 +130,7 @@ Hamakaze_Lab_EventScript_AfterBattle::
 	setquest QUEST_RESEARCH_WOOPER, QUEST_STATE_OPEN
 	setquest QUEST_RESEARCH_LEDYBA, QUEST_STATE_OPEN
 	setquest QUEST_RESEARCH_STANTLER, QUEST_STATE_OPEN
+	setquest QUEST_RESEARCH_WINGULL, QUEST_STATE_OPEN
 	msgbox Hamakaze_Lab_Text_RouteOneNorth, MSGBOX_DEFAULT
 	release
 	end

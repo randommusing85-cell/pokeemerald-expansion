@@ -1432,3 +1432,161 @@
     },
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_STANTLER
+
+#if P_FAMILY_WINGULL
+    [SPECIES_WINGULL_EIEN] =
+    {
+        .baseHP        = 40,
+        .baseAttack    = 30,
+        .baseDefense   = 30,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 30,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FLYING),
+        .catchRate = 190,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 54 : 64,
+        .evYield_Speed = 1,
+        .itemCommon = ITEM_PRETTY_FEATHER,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FLYING),
+        .abilities = { ABILITY_STATIC, ABILITY_KEEN_EYE, ABILITY_DRIZZLE },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Wingull"),
+        .cryId = CRY_WINGULL,
+        .natDexNum = NATIONAL_DEX_WINGULL,
+        // TODO(design): category, size and dex entry (placeholders, like the other Eien forms' drafts).
+        .categoryName = _("Storm Gull"),
+        .height = 6,
+        .weight = 95,
+        .description = COMPOUND_STRING(
+            "It rides the winds ahead of a storm over\n"
+            "the strait. Fishermen who see a flock of\n"
+            "them turn their boats for home."),
+        .pokemonScale = 295,
+        .pokemonOffset = -2,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        // The vanilla sprites in storm palettes until its own art is picked (variants.md)
+        .frontPic = gMonFrontPic_Wingull,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 32) : MON_COORDS_SIZE(64, 48),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 24 : 11,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 17),
+            ANIMCMD_FRAME(1, 23),
+            ANIMCMD_FRAME(0, 13),
+        ),
+        .frontAnimId = ANIM_H_PIVOT,
+        .enemyMonElevation = P_GBA_STYLE_SPECIES_GFX ? 16 : 15,
+        .backPic = gMonBackPic_Wingull,
+        .backPicSize = MON_COORDS_SIZE(64, 40),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 14 : 13,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        .palette = sMonPalette_WingullEien,
+        .shinyPalette = sMonShinyPalette_WingullEien,
+        .iconSprite = gMonIcon_Wingull,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-2, 15, SHADOW_SIZE_S)
+        FOOTPRINT(Wingull)
+        OVERWORLD(
+            sPicTable_Wingull,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_Wingull,
+            gShinyOverworldPalette_Wingull
+        )
+        .levelUpLearnset = sWingullEienLevelUpLearnset,
+        .teachableLearnset = sWingullTeachableLearnset,
+        .eggMoveLearnset = sWingullEggMoveLearnset,
+        .formSpeciesIdTable = sWingullFormSpeciesIdTable,
+        // Evolves after landing 3 critical hits in one battle (variants.md): "struck by lightning",
+        // as Galarian Farfetch'd does.
+        .evolutions = EVOLUTION({EVO_BATTLE_END, 0, SPECIES_PELIPPER_EIEN, CONDITIONS({IF_CRITICAL_HITS_GE, 3})}),
+    },    [SPECIES_PELIPPER_EIEN] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 50,
+        .baseDefense   = 85,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FLYING),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_7
+        .expYield = 154,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 151,
+    #else
+        .expYield = 164,
+    #endif
+        .evYield_Defense = 2,
+        .itemCommon = ITEM_PRETTY_FEATHER,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FLYING),
+        .abilities = { ABILITY_STATIC, ABILITY_KEEN_EYE, ABILITY_DRIZZLE },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Pelipper"),
+        .cryId = CRY_PELIPPER,
+        .natDexNum = NATIONAL_DEX_PELIPPER,
+        // TODO(design): category, size and dex entry (placeholders, like the other Eien forms' drafts).
+        .categoryName = _("Storm Gull"),
+        .height = 12,
+        .weight = 280,
+        .description = COMPOUND_STRING(
+            "Its bill holds a thundercloud instead\n"
+            "of water. When it opens its mouth, the\n"
+            "air crackles, and lightning follows."),
+        .pokemonScale = 288,
+        .pokemonOffset = 1,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        // The vanilla sprites in storm palettes until its own art is picked (variants.md)
+        .frontPic = gMonFrontPic_Pelipper,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 2,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+        ),
+        .frontAnimId = ANIM_V_SLIDE_WOBBLE,
+        .enemyMonElevation = 8,
+        .backPic = gMonBackPic_Pelipper,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 6,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        .palette = sMonPalette_PelipperEien,
+        .shinyPalette = sMonShinyPalette_PelipperEien,
+        .iconSprite = gMonIcon_Pelipper,
+        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-1, 17, SHADOW_SIZE_M)
+        FOOTPRINT(Pelipper)
+        OVERWORLD(
+            sPicTable_Pelipper,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_Pelipper,
+            gShinyOverworldPalette_Pelipper
+        )
+        .levelUpLearnset = sPelipperEienLevelUpLearnset,
+        .teachableLearnset = sPelipperTeachableLearnset,
+        .formSpeciesIdTable = sPelipperFormSpeciesIdTable,
+    },
+#endif //P_FAMILY_WINGULL
