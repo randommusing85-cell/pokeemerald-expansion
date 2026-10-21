@@ -279,3 +279,20 @@ TEST("(Eien species) Eien Ledyba and Ledian are Bug/Fire")
     EXPECT_EQ(GetSpeciesType(species, 0), TYPE_BUG);
     EXPECT_EQ(GetSpeciesType(species, 1), TYPE_FIRE);
 }
+
+// A save made after the lab scene still gets research entries added to the list later.
+TEST("(Eien journal) list entries added later open once the professor's list was given")
+{
+    u32 given;
+
+    PARAMETRIZE { given = TRUE; }
+    PARAMETRIZE { given = FALSE; }
+
+    ZeroPlayerPartyMons();
+    SetQuestState(QUEST_RESEARCH_POOCHYENA, given ? QUEST_STATE_OPEN : QUEST_STATE_NONE);
+    SetQuestState(QUEST_RESEARCH_LEDYBA, QUEST_STATE_NONE);
+    SetQuestState(QUEST_RESEARCH_HOOTHOOT, QUEST_STATE_DONE);
+    UpdateJournalNotes();
+    EXPECT_EQ(GetQuestState(QUEST_RESEARCH_LEDYBA), given ? QUEST_STATE_OPEN : QUEST_STATE_NONE);
+    EXPECT_EQ(GetQuestState(QUEST_RESEARCH_HOOTHOOT), QUEST_STATE_DONE);
+}
