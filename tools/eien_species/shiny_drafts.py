@@ -91,6 +91,13 @@ CONCEPTS = {
     "ledian": {
         "firefly_green": [((10, 12, 13, 14, 15), 78, 0.8, 0.05), ((11,), 80, 0.6, 0.0)],
     },
+    # a snow-white winter coat, the real serow's winter look (variants.md)
+    "stantler": {
+        "winter_coat": [((2, 3, 4, 5, 6), 210, 0.12, 0.6)],
+    },
+    "wyrdeer": {
+        "winter_coat": [((2, 4, 6, 7, 9, 10), 210, 0.12, 0.55)],
+    },
     "wooper": {
         # gold ore (variants.md): the copper flecks turn bright gold on the dark slate body
         "gold_flecks": [((4, 5, 8, 9, 12, 13, 15), 46, 0.85, 0.05)],

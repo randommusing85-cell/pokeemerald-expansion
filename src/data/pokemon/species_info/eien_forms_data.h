@@ -108,6 +108,19 @@ static const u16 sMonShinyPalette_LedybaEien[] = INCGFX_U16("graphics/pokemon/ei
 static const u16 sMonPalette_LedianEien[] = INCGFX_U16("graphics/pokemon/eien/ledian/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_LedianEien[] = INCGFX_U16("graphics/pokemon/eien/ledian/shiny.pal", ".gbapal");
 
+// Eien Stantler and Wyrdeer: the picked AI fronts, idle frames, backs and winter-coat shinies
+// (convert_art.py, design/art/eien_stantler_drafts.md); icons in the Eien icon palette.
+static const u32 sMonFrontPic_StantlerEien[] = INCGFX_U32("graphics/pokemon/eien/stantler/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_StantlerEien[] = INCGFX_U32("graphics/pokemon/eien/stantler/back.png", ".4bpp.smol");
+static const u8 sMonIcon_StantlerEien[] = INCGFX_U8("graphics/pokemon/eien/stantler/icon.png", ".4bpp");
+static const u32 sMonFrontPic_WyrdeerEien[] = INCGFX_U32("graphics/pokemon/eien/wyrdeer/anim_front.png", ".4bpp.smol");
+static const u32 sMonBackPic_WyrdeerEien[] = INCGFX_U32("graphics/pokemon/eien/wyrdeer/back.png", ".4bpp.smol");
+static const u8 sMonIcon_WyrdeerEien[] = INCGFX_U8("graphics/pokemon/eien/wyrdeer/icon.png", ".4bpp");
+static const u16 sMonPalette_StantlerEien[] = INCGFX_U16("graphics/pokemon/eien/stantler/normal.pal", ".gbapal");
+static const u16 sMonShinyPalette_StantlerEien[] = INCGFX_U16("graphics/pokemon/eien/stantler/shiny.pal", ".gbapal");
+static const u16 sMonPalette_WyrdeerEien[] = INCGFX_U16("graphics/pokemon/eien/wyrdeer/normal.pal", ".gbapal");
+static const u16 sMonShinyPalette_WyrdeerEien[] = INCGFX_U16("graphics/pokemon/eien/wyrdeer/shiny.pal", ".gbapal");
+
 // Level-up learnsets: the original's, plus the new-type moves in variants.md.
 static const struct LevelUpMove sTorchicEienLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
@@ -407,6 +420,42 @@ static const struct LevelUpMove sLedianEienLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+static const struct LevelUpMove sStantlerEienLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_BITE),
+    LEVEL_UP_MOVE( 3, MOVE_LEER),
+    LEVEL_UP_MOVE( 7, MOVE_ASTONISH),
+    LEVEL_UP_MOVE(10, MOVE_HYPNOSIS),
+    LEVEL_UP_MOVE(13, MOVE_STOMP),
+    LEVEL_UP_MOVE(16, MOVE_SHADOW_SNEAK),
+    LEVEL_UP_MOVE(21, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(23, MOVE_CONFUSE_RAY),
+    LEVEL_UP_MOVE(27, MOVE_CALM_MIND),
+    LEVEL_UP_MOVE(32, MOVE_ROLE_PLAY),
+    LEVEL_UP_MOVE(37, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(49, MOVE_IMPRISON),
+    LEVEL_UP_MOVE(55, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sWyrdeerEienLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_PHANTOM_FORCE),
+    LEVEL_UP_MOVE( 1, MOVE_BITE),
+    LEVEL_UP_MOVE( 3, MOVE_LEER),
+    LEVEL_UP_MOVE( 7, MOVE_ASTONISH),
+    LEVEL_UP_MOVE(10, MOVE_HYPNOSIS),
+    LEVEL_UP_MOVE(13, MOVE_STOMP),
+    LEVEL_UP_MOVE(16, MOVE_SHADOW_SNEAK),
+    LEVEL_UP_MOVE(21, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(23, MOVE_CONFUSE_RAY),
+    LEVEL_UP_MOVE(27, MOVE_CALM_MIND),
+    LEVEL_UP_MOVE(32, MOVE_ROLE_PLAY),
+    LEVEL_UP_MOVE(37, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(49, MOVE_IMPRISON),
+    LEVEL_UP_MOVE(55, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(62, MOVE_MEGAHORN),
+    LEVEL_UP_END
+};
+
 static const struct LevelUpMove sWooperEienLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
@@ -499,3 +548,5 @@ static const u16 sHoothootFormSpeciesIdTable[] = { SPECIES_HOOTHOOT, SPECIES_HOO
 static const u16 sNoctowlFormSpeciesIdTable[] = { SPECIES_NOCTOWL, SPECIES_NOCTOWL_EIEN, FORM_SPECIES_END };
 static const u16 sLedybaFormSpeciesIdTable[] = { SPECIES_LEDYBA, SPECIES_LEDYBA_EIEN, FORM_SPECIES_END };
 static const u16 sLedianFormSpeciesIdTable[] = { SPECIES_LEDIAN, SPECIES_LEDIAN_EIEN, FORM_SPECIES_END };
+static const u16 sStantlerFormSpeciesIdTable[] = { SPECIES_STANTLER, SPECIES_STANTLER_EIEN, FORM_SPECIES_END };
+static const u16 sWyrdeerFormSpeciesIdTable[] = { SPECIES_WYRDEER, SPECIES_WYRDEER_EIEN, FORM_SPECIES_END };

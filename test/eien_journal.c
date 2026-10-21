@@ -185,6 +185,7 @@ TEST("(Eien journal) the professor's list shows each entry after its region's ba
     PARAMETRIZE { quest = QUEST_RESEARCH_HOOTHOOT; badge = FLAG_BADGE01_GET; }
     PARAMETRIZE { quest = QUEST_RESEARCH_WOOPER;   badge = FLAG_BADGE02_GET; }
     PARAMETRIZE { quest = QUEST_RESEARCH_LEDYBA;   badge = FLAG_BADGE03_GET; }
+    PARAMETRIZE { quest = QUEST_RESEARCH_STANTLER; badge = FLAG_BADGE05_GET; }
 
     SetQuestState(quest, QUEST_STATE_NONE);
     FlagClear(badge);
@@ -295,4 +296,48 @@ TEST("(Eien journal) list entries added later open once the professor's list was
     UpdateJournalNotes();
     EXPECT_EQ(GetQuestState(QUEST_RESEARCH_LEDYBA), given ? QUEST_STATE_OPEN : QUEST_STATE_NONE);
     EXPECT_EQ(GetQuestState(QUEST_RESEARCH_HOOTHOOT), QUEST_STATE_DONE);
+}
+
+TEST("(Eien journal) the Stantler hint needs an Eien Stantler at Lv 38+ in the party")
+{
+    u32 species, level;
+
+    PARAMETRIZE { species = SPECIES_STANTLER_EIEN; level = 37; }
+    PARAMETRIZE { species = SPECIES_STANTLER_EIEN; level = 38; }
+    PARAMETRIZE { species = SPECIES_STANTLER;      level = 50; }
+
+    ZeroPlayerPartyMons();
+    FlagClear(FLAG_JOURNAL_STANTLER_NO_EVO);
+    VarSet(VAR_TEMP_0, species);
+    VarSet(VAR_TEMP_1, level);
+    RUN_OVERWORLD_SCRIPT(givemon VAR_TEMP_0, VAR_TEMP_1;);
+    UpdateJournalNotes();
+    EXPECT_EQ(FlagGet(FLAG_JOURNAL_STANTLER_NO_EVO), species == SPECIES_STANTLER_EIEN && level >= 38);
+}
+
+// Eien Stantler evolves after using Shadow Sneak 20 times (design/variants.md).
+TEST("(Eien species) Eien Stantler evolves after using Shadow Sneak 20 times")
+{
+    u32 uses, evolves;
+    struct Pokemon mon;
+
+    // The tracker counts Shadow Sneak uses in battle (test/battle/eien_research.c)
+    PARAMETRIZE { uses = 20; evolves = TRUE; }
+    PARAMETRIZE { uses = 19; evolves = FALSE; }
+
+    CreateMon(&mon, SPECIES_STANTLER_EIEN, 40, 0, OTID_STRUCT_PRESET(0));
+    SetMonData(&mon, MON_DATA_EVOLUTION_TRACKER, &uses);
+    EXPECT_EQ(GetEvolutionTargetSpecies(&mon, EVO_MODE_NORMAL, ITEM_NONE, NULL, NULL, CHECK_EVO),
+              evolves ? SPECIES_WYRDEER_EIEN : SPECIES_NONE);
+}
+
+TEST("(Eien species) Eien Stantler and Wyrdeer are Dark/Ghost")
+{
+    u32 species;
+
+    PARAMETRIZE { species = SPECIES_STANTLER_EIEN; }
+    PARAMETRIZE { species = SPECIES_WYRDEER_EIEN; }
+
+    EXPECT_EQ(GetSpeciesType(species, 0), TYPE_DARK);
+    EXPECT_EQ(GetSpeciesType(species, 1), TYPE_GHOST);
 }

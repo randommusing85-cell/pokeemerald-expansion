@@ -131,6 +131,7 @@ Lv 18 evolutions (tests in `test/eien_journal.c`), with their sprites.
 | Poochyena | Rock/Dark | A stone shrine guardian dog (komainu), touched by the fading. Beats the Ice gym. | Route 1 (common, ~20%) |
 | Hoothoot | Ghost/Flying | A half-faded owl of the night pass: its wings and tail fade into mist, only the face and glowing eyes are solid. Touched by the fading. Immune to Fighting moves; beats the Fighting gym. | Route 2's upper map, the vents near Yunotaki (10% by day, 30% at night) |
 | Ledyba | Bug/Fire | Ember fireflies (*hotaru*) of the summer rice paddies: glowing ember spots, an abdomen lit like a coal. Not touched by the fading: in the orchard thinning they keep glowing while the trees grey around them. The answer to gym 4 (Grass) | Route 4 ([route-4.md](locations/route-4.md)), the plain |
+| Stantler | Dark/Ghost | A faded Japanese serow (*kamoshika*) of the high country: a shaggy dark-grey coat, a pale face mask, its antler orbs dim, hollow grey, like holes in the world. Touched by the fading. The answer to gym 6 (Psychic) | Route 6 near Minori's terraces (rare), Route 7's plateau (common) |
 | Wooper | Ground/Steel | A mine Wooper of the old tunnel's pools: its skin crusted with iron and copper ore, its gills glinting metal frills. Adapted to the mine, not touched by the fading. Immune to Electric; the answer to gym 3 | Route 3 ([route-3.md](locations/route-3.md)): the gorge's grass 10%, the cave 30% |
 
 - **Eien Poochyena:** 35 / 55 / 50 / 25 / 30 / 25 (35 / 55 / 35 / 30 / 30 / 35), 220.
@@ -247,9 +248,38 @@ Decided in [brainstorm-eien-wooper.md](brainstorm-eien-wooper.md).
   glow on its back. Idle frames, backs, icons (vanilla icon palette 0) and firefly-green shinies.
   `TODO(design)`: both dex entries and the research tier lines (drafts in the code).
 - **Variants still to come (r1 4b):** one for each remaining gym a variant answers well, about
-  three more after Eien Ledyba, plus Trubbish's split (within the planned 5-10).
+  three more after Eien Ledyba, plus Trubbish's split (within the planned 5-10). Settled after
+  it: gyms 6, 7 and 8 (Eien Stantler is gym 6's).
 
 Decided in [brainstorm-eien-variant-4.md](brainstorm-eien-variant-4.md).
+
+- **Eien Stantler** (built: `SPECIES_STANTLER_EIEN` / `SPECIES_WYRDEER_EIEN`): 73 / 105 / 67 / 70 / 65 / 85 (73 / 95 / 62 / 85 / 65
+  / 85), 465: a physical Dark attacker. Abilities Intimidate / Frisk / Cursed Body (hidden). New
+  moves: Bite (1, replacing Tackle), Shadow Sneak (16, replacing Sand Attack), Crunch (37,
+  replacing Zen Headbutt); it keeps Astonish, Hypnosis and Confuse Ray; otherwise vanilla.
+- **Evolves** into Eien Wyrdeer after using Shadow Sneak 20 times (`IF_USED_MOVE_X_TIMES`, as
+  vanilla Wyrdeer does with Psyshield Bash), as if it learns to slip between worlds. Wyrdeer is
+  Gen 8, so it's "???" to the hero. The journal hints at the rule once an Eien Stantler reaches
+  about Lv 38 without evolving (`TODO(design)`: the line; draft "It slips into shadow when it
+  moves.").
+- **Eien Wyrdeer:** 103 / 115 / 77 / 90 / 75 / 65 (103 / 105 / 72 / 105 / 75 / 65), 525: the same
+  shift. The same abilities. Learns Phantom Force on evolving. Look: the old serow, bigger, the
+  coat heavier and frosted, antlers branching like dead winter wood with wider hollow orbs, a
+  long grey mist of a beard.
+- **Research:** seen / battled / caught on the professor's list (side-quests E2), shown after
+  gym 5's badge.
+- **Shiny:** a snow-white winter coat (the real serow's winter look), for both stages.
+- **Sprites:** picked AI drafts ([art/eien_stantler_drafts.md](art/eien_stantler_drafts.md)): a
+  charcoal coat, a cream face mask and grey hollow orbs; Eien Wyrdeer frosted, with a long grey
+  beard. Idle frames, backs, icons (the Eien icon palette) and winter-coat shinies.
+  `TODO(design)`: both dex entries, the research tier lines and the hint's wording (drafts in the
+  code; the hint shows at Lv 38).
+- **First seen** at Minori's festival thinning ([minori.md](locations/minori.md)): a grey serow
+  stands on a terrace edge watching, the only thing not walking into the grey, then leaves.
+- **Variants still to come:** one for gym 7 (Water) and one for gym 8 (Ghost), plus Trubbish's
+  split. Route 5's forest has none (Eien Wooper already answers gym 5).
+
+Decided in [brainstorm-eien-variant-5.md](brainstorm-eien-variant-5.md).
 
 ### Planned: Trubbish's split
 

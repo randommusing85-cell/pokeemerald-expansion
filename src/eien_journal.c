@@ -417,6 +417,9 @@ void UpdateJournalNotes(void)
         if (GetMonData(mon, MON_DATA_SPECIES_OR_EGG) == SPECIES_LEDYBA_EIEN
          && GetMonData(mon, MON_DATA_LEVEL) >= EIEN_LEDYBA_EVO_LEVEL)
             FlagSet(FLAG_JOURNAL_LEDYBA_NO_EVO);
+        if (GetMonData(mon, MON_DATA_SPECIES_OR_EGG) == SPECIES_STANTLER_EIEN
+         && GetMonData(mon, MON_DATA_LEVEL) >= EIEN_STANTLER_HINT_LEVEL)
+            FlagSet(FLAG_JOURNAL_STANTLER_NO_EVO);
     }
 }
 

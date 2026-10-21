@@ -34,7 +34,7 @@ MODELS = {"gemini3pro": "gemini-3-pro-image", "gemini31flash": "gemini-3.1-flash
 TRIES = ("a", "b")
 EIEN_ICON_PALETTE = "graphics/pokemon/icon_palettes/pal6.pal"
 # the vanilla icons' palettes (their species' iconPalIndex), to color the reference icon
-VANILLA_ICON_PALETTE = {"combusken": 0, "ivysaur": 4, "frogadier": 0, "hoothoot": 2, "noctowl": 2, "blaziken": 0, "venusaur": 4, "greninja": 0, "ledyba": 0, "ledian": 0}
+VANILLA_ICON_PALETTE = {"combusken": 0, "ivysaur": 4, "frogadier": 0, "hoothoot": 2, "noctowl": 2, "blaziken": 0, "venusaur": 4, "greninja": 0, "ledyba": 0, "ledian": 0, "stantler": 2, "wyrdeer": 2}
 
 STYLE = (
     "Style: Gen 4/5 Pokemon sprite pixel art enlarged 8x (crisp square pixels, no anti-aliasing, "
@@ -112,7 +112,13 @@ def references(kind, species):
     if kind == "back":
         first = colored(f"{vanilla}/back.png", f"{vanilla}/normal.pal")
     elif kind == "frame2":
-        sheet = colored(f"{vanilla}/anim_front.png", f"{vanilla}/normal.pal")
+        if os.path.exists(os.path.join(REPO, vanilla, "anim_front.png")):
+            sheet = colored(f"{vanilla}/anim_front.png", f"{vanilla}/normal.pal")
+        else:  # a single-frame species (Wyrdeer): both reference frames are the one front
+            single = colored(f"{vanilla}/front.png", f"{vanilla}/normal.pal")
+            sheet = Image.new("RGB", (64, 128), (255, 255, 255))
+            sheet.paste(single.crop((0, 0, 64, 64)), (0, 0))
+            sheet.paste(single.crop((0, 0, 64, 64)), (0, 64))
         first = Image.new("RGB", (128, 64), (255, 255, 255))
         first.paste(sheet.crop((0, 0, 64, 64)), (0, 0))
         first.paste(sheet.crop((0, 64, 64, 128)), (64, 0))

@@ -54,6 +54,7 @@ Act 3 beat 2 in [story-outline.md](../story-outline.md).
 | Her little brother | their house | always | Wants to be a trainer; gets a Pokémon after (`TODO(design)`: name) |
 | The village's Pokémon | the grey | the thinning | Farm Pokémon, grey (Mareep, Miltank, Skiddo, Lillipup, Hoppip; `TODO(design)`) |
 | Tokoyo pair | the grey's centre | the thinning | The tag battle (`TODO(design)`: names, teams) |
+| A grey serow (Eien Stantler) | a terrace edge | the thinning | Watches, the only thing not walking into the grey, then leaves: the first sighting of Eien Stantler ([variants.md](../variants.md)). An overworld object, not a battle (`TODO`: its overworld sprite) |
 
 ## Trainers
 

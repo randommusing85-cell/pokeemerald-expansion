@@ -56,6 +56,9 @@ PICKS = {
     # design/art/eien_ledyba_drafts.md
     "ledyba": ("front_gemini3pro_a.png", "front_gemini3pro_a.pal"),
     "ledian": ("front_gemini31flash_a.png", "front_gemini31flash_a.pal"),
+    # design/art/eien_stantler_drafts.md
+    "stantler": ("front_gemini3pro_a.png", "front_gemini3pro_a.pal"),
+    "wyrdeer": ("front_gemini3pro_a.png", "front_gemini3pro_a.pal"),
 }
 # species: chosen back draft in design/art/eien_<species>/back_drafts/, already indexed with
 # the form's palette (design/art/eien_starters_drafts.md, "Back sprites"). Species without one
@@ -77,6 +80,8 @@ BACK_PICKS = {
     "greninja": "back_gemini3pro_a.png",
     "ledyba": "back_gemini3pro_a.png",
     "ledian": "back_gemini31flash_a.png",
+    "stantler": "back_gemini3pro_a.png",
+    "wyrdeer": "back_gemini3pro_a.png",
     # (Venusaur's drafts redrew a full body filling the frame: it keeps the placeholder back)
 }
 # species: chosen shiny palette in design/art/eien_<species>/shiny_drafts/ (shiny_drafts.py).
@@ -99,6 +104,8 @@ SHINY_PICKS = {
     "greninja": "midnight.pal",
     "ledyba": "firefly_green.pal",
     "ledian": "firefly_green.pal",
+    "stantler": "winter_coat.pal",
+    "wyrdeer": "winter_coat.pal",
 }
 # species: chosen front frame 2 (idle) in design/art/eien_<species>/frame2_drafts/, indexed with
 # the form's palette (design/art/eien_starters_drafts.md, "Frame 2 (idle)"). Species without
@@ -121,6 +128,8 @@ FRAME2_PICKS = {
     "greninja": "frame2_gemini3pro_a.png",
     "ledyba": "frame2_gemini3pro_b.png",
     "ledian": "frame2_gemini3pro_a.png",
+    "stantler": "frame2_gemini3pro_a.png",
+    "wyrdeer": "frame2_gemini3pro_a.png",
 }
 SHINY_HUE = 0.5
 
@@ -149,7 +158,10 @@ def main():
         # the fronts don't share fall back to the placeholder recolor snapped to the palette.
         back = Image.open(os.path.join(REPO, "graphics", "pokemon", species, "back.png"))
         old = sprite_prep.read_jasc(os.path.join(REPO, "graphics", "pokemon", species, "normal.pal"))
-        original_front = Image.open(os.path.join(REPO, "graphics", "pokemon", species, "anim_front.png")).crop((0, 0, 64, 64))
+        vanilla_front = os.path.join(REPO, "graphics", "pokemon", species, "anim_front.png")
+        if not os.path.exists(vanilla_front):
+            vanilla_front = os.path.join(REPO, "graphics", "pokemon", species, "front.png")  # single-frame species
+        original_front = Image.open(vanilla_front).crop((0, 0, 64, 64))
         votes = {}
         for a, b in zip(original_front.getdata(), front.getdata()):
             if a and b:
