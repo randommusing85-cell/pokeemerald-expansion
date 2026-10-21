@@ -34,7 +34,7 @@ MODELS = {"gemini3pro": "gemini-3-pro-image", "gemini31flash": "gemini-3.1-flash
 TRIES = ("a", "b")
 EIEN_ICON_PALETTE = "graphics/pokemon/icon_palettes/pal6.pal"
 # the vanilla icons' palettes (their species' iconPalIndex), to color the reference icon
-VANILLA_ICON_PALETTE = {"combusken": 0, "ivysaur": 4, "frogadier": 0, "hoothoot": 2, "noctowl": 2, "blaziken": 0, "venusaur": 4, "greninja": 0, "ledyba": 0, "ledian": 0}
+VANILLA_ICON_PALETTE = {"combusken": 0, "ivysaur": 4, "frogadier": 0, "hoothoot": 2, "noctowl": 2, "blaziken": 0, "venusaur": 4, "greninja": 0, "ledyba": 0, "ledian": 0, "stantler": 2, "wyrdeer": 2}
 
 STYLE = (
     "Style: Gen 4/5 Pokemon sprite pixel art enlarged 8x (crisp square pixels, no anti-aliasing, "
