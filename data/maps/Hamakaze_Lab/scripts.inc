@@ -125,6 +125,9 @@ Hamakaze_Lab_EventScript_AfterBattle::
 	msgbox Hamakaze_Lab_Text_Research, MSGBOX_DEFAULT
 	giveitem ITEM_POKE_BALL, 5
 	setquest QUEST_RESEARCH_POOCHYENA, QUEST_STATE_OPEN
+	@ The rest of her list (side-quests E2): each shows in the journal after its region's badge
+	setquest QUEST_RESEARCH_HOOTHOOT, QUEST_STATE_OPEN
+	setquest QUEST_RESEARCH_WOOPER, QUEST_STATE_OPEN
 	msgbox Hamakaze_Lab_Text_RouteOneNorth, MSGBOX_DEFAULT
 	release
 	end
@@ -232,6 +235,8 @@ Hamakaze_Lab_Text_Research:
 	.string "that isn't like the others.\p"
 	.string "See one, battle one, and catch one\n"
 	.string "if you can. Write it all down.\p"
+	.string "There are others further on.\n"
+	.string "I've put them on a list for you.\p"
 	.string "These will help.$"
 
 Hamakaze_Lab_Text_RouteOneNorth:

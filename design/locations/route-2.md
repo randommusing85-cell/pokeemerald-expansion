@@ -88,7 +88,8 @@ slots (`include/constants/opponents.h`).
 
 Day and night tables on each map (`OW_TIME_OF_DAY_ENCOUNTERS`; morning and evening use the day
 table). Eien Hoothoot is only on the upper map, the route's one notable Pokémon
-([variants.md](../variants.md)); it evolves at Lv 20+ at night on the upper map only. Rates
+([variants.md](../variants.md)); it evolves at Lv 20+ at night on the upper map only (that
+evolution entry and its wild slots are added when the upper map is built). Rates
 will land near these numbers on the GBA's fixed slots.
 
 | Map | Day | Night |

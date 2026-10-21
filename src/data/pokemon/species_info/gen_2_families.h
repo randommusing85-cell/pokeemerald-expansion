@@ -1071,6 +1071,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sHoothootLevelUpLearnset,
         .teachableLearnset = sHoothootTeachableLearnset,
         .eggMoveLearnset = sHoothootEggMoveLearnset,
+        .formSpeciesIdTable = sHoothootFormSpeciesIdTable, // Eien: eien_forms_data.h
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_NOCTOWL}),
     },
 
@@ -1144,6 +1145,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sNoctowlLevelUpLearnset,
         .teachableLearnset = sNoctowlTeachableLearnset,
+        .formSpeciesIdTable = sNoctowlFormSpeciesIdTable, // Eien: eien_forms_data.h
     },
 #endif //P_FAMILY_HOOTHOOT
 

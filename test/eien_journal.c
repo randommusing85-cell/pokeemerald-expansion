@@ -1,5 +1,6 @@
 #include "global.h"
 #include "eien_journal.h"
+#include "eien_quests.h"
 #include "event_data.h"
 #include "pokemon.h"
 #include "test/overworld_script.h"
@@ -129,4 +130,73 @@ TEST("(Eien species) Eien Wooper and Quagsire are Ground/Steel")
 
     EXPECT_EQ(GetSpeciesType(species, 0), TYPE_GROUND);
     EXPECT_EQ(GetSpeciesType(species, 1), TYPE_STEEL);
+}
+
+TEST("(Eien journal) the Hoothoot note needs an Eien Hoothoot at Lv 20+ in the party")
+{
+    u32 species, level;
+
+    PARAMETRIZE { species = SPECIES_HOOTHOOT_EIEN; level = 19; }
+    PARAMETRIZE { species = SPECIES_HOOTHOOT_EIEN; level = 20; }
+    PARAMETRIZE { species = SPECIES_HOOTHOOT;      level = 30; }
+
+    ZeroPlayerPartyMons();
+    FlagClear(FLAG_JOURNAL_HOOTHOOT_NO_EVO);
+    VarSet(VAR_TEMP_0, species);
+    VarSet(VAR_TEMP_1, level);
+    RUN_OVERWORLD_SCRIPT(givemon VAR_TEMP_0, VAR_TEMP_1;);
+    UpdateJournalNotes();
+    EXPECT_EQ(FlagGet(FLAG_JOURNAL_HOOTHOOT_NO_EVO), species == SPECIES_HOOTHOOT_EIEN && level >= 20);
+}
+
+// Eien Hoothoot evolves only at night on Route 2's upper map, which isn't built yet (variants.md).
+TEST("(Eien species) Eien Hoothoot doesn't evolve yet")
+{
+    u32 map;
+    struct Pokemon mon;
+
+    PARAMETRIZE { map = MAP_EIEN_ROUTE2; }
+    PARAMETRIZE { map = MAP_YUNOTAKI; }
+
+    gSaveBlock1Ptr->location.mapGroup = MAP_GROUP(map);
+    gSaveBlock1Ptr->location.mapNum = MAP_NUM(map);
+    CreateMon(&mon, SPECIES_HOOTHOOT_EIEN, 30, 0, OTID_STRUCT_PRESET(0));
+    EXPECT_EQ(GetEvolutionTargetSpecies(&mon, EVO_MODE_NORMAL, ITEM_NONE, NULL, NULL, CHECK_EVO), SPECIES_NONE);
+}
+
+TEST("(Eien species) Eien Hoothoot and Noctowl are Ghost/Flying")
+{
+    u32 species;
+
+    PARAMETRIZE { species = SPECIES_HOOTHOOT_EIEN; }
+    PARAMETRIZE { species = SPECIES_NOCTOWL_EIEN; }
+
+    EXPECT_EQ(GetSpeciesType(species, 0), TYPE_GHOST);
+    EXPECT_EQ(GetSpeciesType(species, 1), TYPE_FLYING);
+}
+
+// The professor's list (side-quests E2): each entry shows once its region's badge is held.
+TEST("(Eien journal) the professor's list shows each entry after its region's badge")
+{
+    u32 quest, badge;
+
+    PARAMETRIZE { quest = QUEST_RESEARCH_HOOTHOOT; badge = FLAG_BADGE01_GET; }
+    PARAMETRIZE { quest = QUEST_RESEARCH_WOOPER;   badge = FLAG_BADGE02_GET; }
+
+    SetQuestState(quest, QUEST_STATE_NONE);
+    FlagClear(badge);
+    EXPECT(!IsQuestShownInJournal(quest));
+    SetQuestState(quest, QUEST_STATE_OPEN);
+    EXPECT(!IsQuestShownInJournal(quest));
+    FlagSet(badge);
+    EXPECT(IsQuestShownInJournal(quest));
+    FlagClear(badge);
+}
+
+TEST("(Eien journal) Poochyena's research shows as soon as it's open")
+{
+    SetQuestState(QUEST_RESEARCH_POOCHYENA, QUEST_STATE_NONE);
+    EXPECT(!IsQuestShownInJournal(QUEST_RESEARCH_POOCHYENA));
+    SetQuestState(QUEST_RESEARCH_POOCHYENA, QUEST_STATE_OPEN);
+    EXPECT(IsQuestShownInJournal(QUEST_RESEARCH_POOCHYENA));
 }

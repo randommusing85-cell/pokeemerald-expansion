@@ -59,7 +59,9 @@ Tests: `make check TESTS="(Eien quests)"` (`test/eien_quests.c`).
 The journal's text for each quest (title, giver, hint, log lines, the line shown when it's
 closed) and the relationship line per person live in `src/data/eien_journal.h`; the screen
 is `src/eien_journal.c`. Research quests store their tiers as bits of the step (seen,
-battled, caught, lore). The relationship thresholds there are placeholders until the design
+battled, caught, lore); an entry on the professor's list shows in the journal only once its
+region's badge is held (E2; `IsQuestShownInJournal`, checked in
+`design/art/eien_hoothoot/professors_list.png`). The relationship thresholds there are placeholders until the design
 sets them.
 
 ## Chains
@@ -148,7 +150,7 @@ Her core scenes are fixed (story outline). Optional warm scenes, earned by her p
 | # | Kind | When / where | What happens | Reward | Missable |
 | --- | --- | --- | --- | --- | --- |
 | E1 (M1) | Research | Act 1, Hamakaze lab, then Route 1 | After Akira's battle the professor asks him to study Eien Poochyena (see, battle, catch) and gives Poké Balls ([route-1.md](locations/route-1.md)). | Poké Balls | No |
-| E2 | Research | Act 1 to 3 | The professor's list: study each Eien variant as they appear. Closes when she dies; Haru's step 3 finishes one entry. | Items per entry | After her death |
+| E2 | Research | Act 1 to 3 | The professor's list: study each Eien variant as they appear. She gives the whole list at the lab, with E1 (one research quest per variant, all opened there). Each entry shows in the journal once the hero reaches its region (Eien Hoothoot after gym 1's badge, Eien Wooper after gym 2's); until he meets one it reads "???" with a hint naming the place ("Something on Route 2."). Closes when she dies (closing every open research entry); Haru's step 3 finishes one entry. | Items per entry (`TODO(design)`: how they're given; E2's own brainstorm) | After her death |
 | E3 | Research | Act 3, aurora nights (random after Kaede's step 2) | Night-only research steps (lore notes), including wild Eien Mightyena, which appear only on aurora nights at thin places. | Lore | No |
 | E4 | Disaster | Act 1, Hamakaze | The harbor freezes early; fishermen can't go out. `TODO(design)`: what the hero does. | Money | No |
 | E5 | Disaster | Act 3, Hanashiro (optional once he has Kumo) | A child goes missing near a thin place. Mamoru's one Act 3 appearance (`TODO(design)`: the thin place, the scene). | Battle item | No |
