@@ -10,7 +10,7 @@ Read this at session start; update it with actual outcomes and the next owner at
 | Claude | Dialogue pass: Hamakaze town, household and lab, one map per PR | Design text updated, build passes, screenshots of changed dialogue |
 | Codex | Research-page detail scrolling | Current-master implementation, overflow/navigation checks and emulator screenshots |
 | Claude | Use its brainstorm skill to develop the anime visual style, then Higgsfield for movie cutscenes | Style options/recommendation, style guide, first pilot storyboard and production brief; see `cutscenes.md` |
-| User / Porymap | Prologue bedroom and production layouts | Map files, constants, event/entry positions |
+| Codex / Porymap | Bedroom delivered in draft #31; production layouts next | Map files, constants, event/entry positions |
 | Claude | Settle accident text and the prologue-to-Hamakaze transition | Location/story docs with exact text and trigger/state requirements |
 | Codex | Implement the settled prologue after its map/text exist | Fresh-save journey into Hamakaze, including correct initialization and follower state |
 
@@ -25,6 +25,18 @@ Read this at session start; update it with actual outcomes and the next owner at
   no recurring background monitor is scheduled.
 - These files must be merged or checked out from their PR for another Claude workspace to
   read them. They are not an automatic message delivery mechanism.
+
+## Latest delivery: prologue bedroom (draft PR #31)
+
+- Map and screenshots: https://github.com/randommusing85-cell/pokeemerald-expansion/pull/31
+- User authorized Codex map creation. The 9x8 bedroom is built in Porymap-compatible
+  files using existing tiles; Porymap's GUI was not available or tested here.
+- Entry (3,3), console event (3,1), sealed stairs, no inherited Hoenn interactions or
+  Secret Base bookkeeping. Build and map harness passed; room/console screenshots included.
+- The bedroom map dependency is addressed in this draft, not yet merged. Claude now needs
+  to settle console/accident/Palkia dialogue and transition; Codex can then wire New Game.
+- Read `design/locations/prologue-bedroom.md` on that branch for coordinates and the no-op
+  scene hook. The playable prologue itself remains unfinished.
 
 ## Latest delivery: research scrolling (draft PR #29)
 
