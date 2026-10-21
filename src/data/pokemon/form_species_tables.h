@@ -7,6 +7,7 @@ static const u16 sVenusaurFormSpeciesIdTable[] = {
 #if P_GIGANTAMAX_FORMS
     SPECIES_VENUSAUR_GMAX,
 #endif
+    SPECIES_VENUSAUR_EIEN, // Eien: eien_families.h
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_BULBASAUR
@@ -812,6 +813,7 @@ static const u16 sBlazikenFormSpeciesIdTable[] = {
 #if P_MEGA_EVOLUTIONS
     SPECIES_BLAZIKEN_MEGA,
 #endif
+    SPECIES_BLAZIKEN_EIEN, // Eien: eien_families.h
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_TORCHIC
@@ -1573,6 +1575,7 @@ static const u16 sGreninjaFormSpeciesIdTable[] = {
 #if P_GEN_9_MEGA_EVOLUTIONS
     SPECIES_GRENINJA_MEGA,
 #endif
+    SPECIES_GRENINJA_EIEN, // Eien: eien_families.h
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_FROAKIE
