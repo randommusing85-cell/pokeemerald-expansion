@@ -494,6 +494,7 @@ static const struct LevelUpMove sPelipperEienLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_AGILITY),
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_PROTECT),
+    LEVEL_UP_MOVE( 1, MOVE_SOAK),
     LEVEL_UP_MOVE(15, MOVE_WING_ATTACK),
     LEVEL_UP_MOVE(20, MOVE_SHOCK_WAVE),
     LEVEL_UP_MOVE(28, MOVE_STOCKPILE),
@@ -503,6 +504,7 @@ static const struct LevelUpMove sPelipperEienLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_MIST),
     LEVEL_UP_MOVE(48, MOVE_ROOST),
     LEVEL_UP_MOVE(55, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(62, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
 
