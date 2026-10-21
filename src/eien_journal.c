@@ -276,6 +276,39 @@ static bool32 IsLorePageVisible(u32 i)
         && GetQuestStep(sJournalLore[i].quest) >= sJournalLore[i].minStep;
 }
 
+static s32 GetResearchIndex(u32 quest)
+{
+    u32 i;
+
+    for (i = 0; i < ARRAY_COUNT(sJournalResearch); i++)
+    {
+        if (sJournalResearch[i].quest == quest)
+            return i;
+    }
+    return -1;
+}
+
+// A quest shows in the journal once it's started; an entry on the professor's list (E2) also
+// waits for its region's badge.
+bool32 IsQuestShownInJournal(u32 quest)
+{
+    s32 research = GetResearchIndex(quest);
+
+    if (GetQuestState(quest) == QUEST_STATE_NONE)
+        return FALSE;
+    return research < 0 || sJournalResearch[research].shownFlag == 0 || FlagGet(sJournalResearch[research].shownFlag);
+}
+
+// A research mission is titled "???" until he's seen one
+static const u8 *GetMissionTitle(u32 i)
+{
+    s32 research = GetResearchIndex(sJournalMissions[i].quest);
+
+    if (research >= 0 && !(GetQuestStep(sJournalMissions[i].quest) & (1 << RESEARCH_TIER_SEEN)))
+        return sText_Unknown;
+    return sJournalMissions[i].title;
+}
+
 static bool32 IsGroupVisible(u32 group)
 {
     u32 i;
@@ -284,7 +317,7 @@ static bool32 IsGroupVisible(u32 group)
         return TRUE;
     for (i = 0; i < ARRAY_COUNT(sJournalMissions); i++)
     {
-        if (sJournalMissions[i].group == group && GetQuestState(sJournalMissions[i].quest) != QUEST_STATE_NONE)
+        if (sJournalMissions[i].group == group && IsQuestShownInJournal(sJournalMissions[i].quest))
             return TRUE;
     }
     return FALSE;
@@ -322,7 +355,7 @@ static void BuildRows(void)
         {
             u32 quest = sJournalResearch[i].quest;
 
-            if (GetQuestState(quest) == QUEST_STATE_NONE)
+            if (!IsQuestShownInJournal(quest))
                 continue;
             if (GetQuestStep(quest) & (1 << RESEARCH_TIER_SEEN))
                 AddRow(ROW_RESEARCH, i, sJournalResearch[i].name, COLOR_INK, FALSE, FALSE);
@@ -341,9 +374,9 @@ static void BuildRows(void)
             {
                 u32 state = GetQuestState(sJournalMissions[i].quest);
 
-                if (sJournalMissions[i].group != group || state == QUEST_STATE_NONE)
+                if (sJournalMissions[i].group != group || !IsQuestShownInJournal(sJournalMissions[i].quest))
                     continue;
-                AddRow(ROW_MISSION, i, sJournalMissions[i].title,
+                AddRow(ROW_MISSION, i, GetMissionTitle(i),
                        state == QUEST_STATE_CLOSED ? COLOR_GREY : COLOR_INK, TRUE, FALSE);
             }
         }
@@ -367,6 +400,9 @@ void UpdateJournalNotes(void)
         if (GetMonData(mon, MON_DATA_SPECIES_OR_EGG) == SPECIES_WOOPER_EIEN
          && GetMonData(mon, MON_DATA_LEVEL) >= EIEN_WOOPER_EVO_LEVEL)
             FlagSet(FLAG_JOURNAL_WOOPER_NO_EVO);
+        if (GetMonData(mon, MON_DATA_SPECIES_OR_EGG) == SPECIES_HOOTHOOT_EIEN
+         && GetMonData(mon, MON_DATA_LEVEL) >= EIEN_HOOTHOOT_EVO_LEVEL)
+            FlagSet(FLAG_JOURNAL_HOOTHOOT_NO_EVO);
     }
 }
 
@@ -535,7 +571,7 @@ static void DrawMissionDetail(u32 i)
 
     const u8 *stateText;
 
-    PrintTitle(mission->title);
+    PrintTitle(GetMissionTitle(i));
     // Who gave it on the left, its state on the right.
     if (state == QUEST_STATE_CLOSED)
         stateText = sText_Closed;

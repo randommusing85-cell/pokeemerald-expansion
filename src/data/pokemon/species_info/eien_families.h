@@ -750,3 +750,164 @@
         .formSpeciesIdTable = sQuagsireFormSpeciesIdTable,
     },
 #endif //P_FAMILY_WOOPER
+
+#if P_FAMILY_HOOTHOOT
+    [SPECIES_HOOTHOOT_EIEN] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 30,
+        .baseDefense   = 26,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 36,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_FLYING),
+        .catchRate = 255,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 52 : 58,
+        .evYield_SpAttack = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_INSOMNIA, ABILITY_FRISK, ABILITY_CURSED_BODY },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Hoothoot"),
+        .cryId = CRY_HOOTHOOT,
+        .natDexNum = NATIONAL_DEX_HOOTHOOT,
+        // TODO(design): category, size and dex entry (placeholders, like the other Eien forms' drafts).
+        .categoryName = _("Owl"),
+        .height = 7,
+        .weight = 212,
+        .description = COMPOUND_STRING(
+            "It lives on cold mountain passes. Its\n"
+            "wings and tail fade into mist, and on\n"
+            "dark nights only its face and its pale\n"
+            "eyes can be seen."),
+        .pokemonScale = 380,
+        .pokemonOffset = -2,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        // The vanilla sprites in mist palettes until its own art is picked (variants.md)
+        .frontPic = gMonFrontPic_Hoothoot,
+        .frontPicSize = MON_COORDS_SIZE(40, 40),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 13 : 12,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 7),
+            ANIMCMD_FRAME(0, 7),
+            ANIMCMD_FRAME(1, 7),
+            ANIMCMD_FRAME(0, 7),
+            ANIMCMD_FRAME(1, 7),
+            ANIMCMD_FRAME(0, 7),
+            ANIMCMD_FRAME(1, 7),
+            ANIMCMD_FRAME(0, 7),
+            ANIMCMD_FRAME(1, 7),
+            ANIMCMD_FRAME(0, 7),
+            ANIMCMD_FRAME(1, 7),
+            ANIMCMD_FRAME(0, 7),
+        ),
+        .frontAnimId = ANIM_V_SLIDE_SLOW,
+        .backPic = gMonBackPic_Hoothoot,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(56, 64),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 4,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        .palette = sMonPalette_HoothootEien,
+        .shinyPalette = sMonShinyPalette_HoothootEien,
+        .iconSprite = gMonIcon_Hoothoot,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 2, SHADOW_SIZE_S)
+        FOOTPRINT(Hoothoot)
+        OVERWORLD(
+            sPicTable_Hoothoot,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Hoothoot,
+            gShinyOverworldPalette_Hoothoot
+        )
+        .isSkyBattleBanned = B_SKY_BATTLE_STRICT_ELIGIBILITY,
+        .levelUpLearnset = sHoothootEienLevelUpLearnset,
+        .teachableLearnset = sHoothootTeachableLearnset,
+        .eggMoveLearnset = sHoothootEggMoveLearnset,
+        .formSpeciesIdTable = sHoothootFormSpeciesIdTable,
+        // Evolves at Lv 20+ at night on Route 2's upper map only (variants.md): an entry with
+        // IF_TIME (night) and IF_IN_MAP MAP_EIEN_ROUTE2_UPPER. TODO: add it once the map exists
+        // (Porymap); until then it doesn't evolve, and the journal notes it.
+    },
+
+    [SPECIES_NOCTOWL_EIEN] =
+    {
+        .baseHP        = 90,
+        .baseAttack    = 50,
+        .baseDefense   = 46,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 76,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_FLYING),
+        .catchRate = 90,
+    #if P_UPDATED_EXP_YIELDS >= GEN_7
+        .expYield = 158,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 155,
+    #else
+        .expYield = 162,
+    #endif
+        .evYield_SpAttack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_INSOMNIA, ABILITY_FRISK, ABILITY_CURSED_BODY },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Noctowl"),
+        .cryId = CRY_NOCTOWL,
+        .natDexNum = NATIONAL_DEX_NOCTOWL,
+        // TODO(design): category, size and dex entry (placeholders, like the other Eien forms' drafts).
+        .categoryName = _("Owl"),
+        .height = 16,
+        .weight = 408,
+        .description = COMPOUND_STRING(
+            "Its faded wings hang behind it in long\n"
+            "veils of mist, like a shroud. It flies\n"
+            "the mountain passes at night without\n"
+            "making a sound."),
+        .pokemonScale = 278,
+        .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        // The vanilla sprites in mist palettes until its own art is picked (variants.md)
+        .frontPic = gMonFrontPic_Noctowl,
+        .frontPicSize = MON_COORDS_SIZE(40, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 3 : 2,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 40),
+            ANIMCMD_FRAME(0, 20),
+        ),
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_Noctowl,
+        .backPicSize = MON_COORDS_SIZE(48, 64),
+        .backPicYOffset = 3,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = sMonPalette_NoctowlEien,
+        .shinyPalette = sMonShinyPalette_NoctowlEien,
+        .iconSprite = gMonIcon_Noctowl,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-2, 10, SHADOW_SIZE_S)
+        FOOTPRINT(Noctowl)
+        OVERWORLD(
+            sPicTable_Noctowl,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_Noctowl,
+            gShinyOverworldPalette_Noctowl
+        )
+        .levelUpLearnset = sNoctowlEienLevelUpLearnset,
+        .teachableLearnset = sNoctowlTeachableLearnset,
+        .formSpeciesIdTable = sNoctowlFormSpeciesIdTable,
+    },
+#endif //P_FAMILY_HOOTHOOT

@@ -21,8 +21,9 @@
 #define QUEST_RESEARCH_POOCHYENA   1  // E1: the professor's Eien Poochyena research
 #define QUEST_AKIRA_PRACTICE       2  // Akira 1: a practice battle in Shimotsuki
 #define QUEST_KAEDE_TABLETS        3  // E7 / Kaede 1: shrine tablets read; one step bit per tablet
-#define QUEST_RESEARCH_WOOPER      4  // The Eien Wooper research (TODO(design): who asks)
-#define QUEST_COUNT                5
+#define QUEST_RESEARCH_WOOPER      4  // E2: the professor's list, Eien Wooper (shown after gym 2)
+#define QUEST_RESEARCH_HOOTHOOT    5  // E2: the professor's list, Eien Hoothoot (shown after gym 1)
+#define QUEST_COUNT                6
 
 // QUEST_KAEDE_TABLETS step bits. Reading a tablet sets its bit even before Kaede opens the
 // quest. A step has 6 bits; more tablets than that need a second quest entry.

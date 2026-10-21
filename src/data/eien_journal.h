@@ -105,6 +105,7 @@ struct JournalResearch
     const u8 *notes[RESEARCH_TIER_COUNT];
     u16 noteFlag;    // Once set, `note` is shown below the tiers
     const u8 *note;
+    u16 shownFlag;   // The professor's list (side-quests E2): shown once this badge flag is set (0: always)
 };
 
 // Eien Poochyena evolves at this level, but only in a shrine area (design/variants.md). The
@@ -112,6 +113,8 @@ struct JournalResearch
 #define EIEN_POOCHYENA_EVO_LEVEL 18
 // Eien Wooper evolves at this level, but only in the Route 3 mine tunnel; the same kind of note.
 #define EIEN_WOOPER_EVO_LEVEL 20
+// Eien Hoothoot evolves at this level, but only at night on Route 2's upper map; the same note.
+#define EIEN_HOOTHOOT_EVO_LEVEL 20
 
 static const u8 *const sResearchTierNames[RESEARCH_TIER_COUNT] =
 {
@@ -137,7 +140,22 @@ static const struct JournalResearch sJournalResearch[] =
         .note = COMPOUND_STRING("Lv 18, and it didn't evolve."),
     },
     {
-        .quest = QUEST_RESEARCH_WOOPER, // TODO(design): who asks for it (its mission)
+        .quest = QUEST_RESEARCH_HOOTHOOT,
+        .species = SPECIES_HOOTHOOT_EIEN,
+        .name = COMPOUND_STRING("Eien Hoothoot"),
+        .notes = {
+            // TODO(design): the tier lines (drafts)
+            [RESEARCH_TIER_SEEN] = COMPOUND_STRING("An owl you can see through."),
+            [RESEARCH_TIER_BATTLED] = COMPOUND_STRING("Ghost and Flying!"),
+            [RESEARCH_TIER_CAUGHT] = COMPOUND_STRING("Its wings feel like cold air."),
+            [RESEARCH_TIER_LORE] = NULL,
+        },
+        .noteFlag = FLAG_JOURNAL_HOOTHOOT_NO_EVO,
+        .note = COMPOUND_STRING("Lv 20, and it didn't evolve."),
+        .shownFlag = FLAG_BADGE01_GET,
+    },
+    {
+        .quest = QUEST_RESEARCH_WOOPER,
         .species = SPECIES_WOOPER_EIEN,
         .name = COMPOUND_STRING("Eien Wooper"),
         .notes = {
@@ -149,6 +167,7 @@ static const struct JournalResearch sJournalResearch[] =
         },
         .noteFlag = FLAG_JOURNAL_WOOPER_NO_EVO,
         .note = COMPOUND_STRING("Lv 20, and it didn't evolve."),
+        .shownFlag = FLAG_BADGE02_GET,
     },
 };
 
@@ -204,6 +223,35 @@ static const struct JournalMission sJournalMissions[] =
         .title = COMPOUND_STRING("Eien Poochyena"),
         .giver = COMPOUND_STRING("Professor"),
         .hint = COMPOUND_STRING("See, battle and catch one on Route 1."),
+        .log = {
+            [RESEARCH_TIER_SEEN] = COMPOUND_STRING("Saw one."),
+            [RESEARCH_TIER_BATTLED] = COMPOUND_STRING("Battled one."),
+            [RESEARCH_TIER_CAUGHT] = COMPOUND_STRING("Caught one."),
+        },
+        .closedLine = COMPOUND_STRING("She's gone. Too late now."),
+    },
+    // The rest of the professor's list (E2): titled "???" until he's seen one
+    {
+        .quest = QUEST_RESEARCH_HOOTHOOT,
+        .group = JOURNAL_GROUP_EIEN,
+        .stepIsBits = TRUE,
+        .title = COMPOUND_STRING("Eien Hoothoot"),
+        .giver = COMPOUND_STRING("Professor"),
+        .hint = COMPOUND_STRING("Something on Route 2."),
+        .log = {
+            [RESEARCH_TIER_SEEN] = COMPOUND_STRING("Saw one."),
+            [RESEARCH_TIER_BATTLED] = COMPOUND_STRING("Battled one."),
+            [RESEARCH_TIER_CAUGHT] = COMPOUND_STRING("Caught one."),
+        },
+        .closedLine = COMPOUND_STRING("She's gone. Too late now."),
+    },
+    {
+        .quest = QUEST_RESEARCH_WOOPER,
+        .group = JOURNAL_GROUP_EIEN,
+        .stepIsBits = TRUE,
+        .title = COMPOUND_STRING("Eien Wooper"),
+        .giver = COMPOUND_STRING("Professor"),
+        .hint = COMPOUND_STRING("Something on Route 3."),
         .log = {
             [RESEARCH_TIER_SEEN] = COMPOUND_STRING("Saw one."),
             [RESEARCH_TIER_BATTLED] = COMPOUND_STRING("Battled one."),

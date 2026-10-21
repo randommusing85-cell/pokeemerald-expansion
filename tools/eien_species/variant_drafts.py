@@ -45,6 +45,29 @@ SPECIES = {
         "c": "Polished iron: smooth dark iron with a strong highlight, faint copper ore veins on "
              "its arms and tail, as if Eien Wooper's crust had been polished smooth.",
     }),
+    "hoothoot": ("Hoothoot", (
+        "Eien Hoothoot is Ghost/Flying, a half-faded owl of a snowy night mountain pass, touched "
+        "by the fading of the world: its wings and tail fade into grey mist, and only its face "
+        "and glowing pale eyes are solid. Its colors are cold greys and grey-violet."), {
+        "a": "Pale solid mist: the wings and tail are drawn in pale grey-lavender with no dark "
+             "outline, soft and flat, so they look faded next to the solid, outlined face.",
+        "b": "Dithered mist: the wing and tail edges break into a checkerboard of mist pixels and "
+             "empty background pixels, so the background shows through them.",
+        "c": "Evaporating mist: the wings and tail are solid near the body and fade outward, "
+             "ending in a few loose scattered mist pixels at the tips, as if evaporating.",
+    }),
+    "noctowl": ("Noctowl", (
+        "Eien Noctowl is Ghost/Flying, the evolution of a half-faded owl: bigger and more "
+        "spectral, its faded wings stretched into long veils of grey mist that hang down behind "
+        "it into the empty space below the wings, like a funeral shroud, still inside the frame. "
+        "Only its face and glowing pale eyes are solid. Cold greys and grey-violet."), {
+        "a": "Pale solid mist: the veils are drawn in pale grey-lavender with no dark outline, "
+             "soft and flat, next to the solid, outlined face and body.",
+        "b": "Dithered mist: the veils break into a checkerboard of mist pixels and empty "
+             "background pixels toward their edges, so the background shows through them.",
+        "c": "Evaporating mist: the veils are solid near the body and fade downward, ending in a "
+             "few loose scattered mist pixels at their hems, as if evaporating.",
+    }),
 }
 
 PROMPT = (

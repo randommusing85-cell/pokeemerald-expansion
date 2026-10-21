@@ -63,6 +63,13 @@ static const u16 sMonShinyPalette_WooperEien[] = INCGFX_U16("graphics/pokemon/ei
 static const u16 sMonPalette_QuagsireEien[] = INCGFX_U16("graphics/pokemon/eien/quagsire/normal.pal", ".gbapal");
 static const u16 sMonShinyPalette_QuagsireEien[] = INCGFX_U16("graphics/pokemon/eien/quagsire/shiny.pal", ".gbapal");
 
+// Eien Hoothoot and Noctowl: the vanilla sprites in faded mist palettes (placeholder_palettes.py)
+// until their AI drafts are picked.
+static const u16 sMonPalette_HoothootEien[] = INCGFX_U16("graphics/pokemon/eien/hoothoot/normal.pal", ".gbapal");
+static const u16 sMonShinyPalette_HoothootEien[] = INCGFX_U16("graphics/pokemon/eien/hoothoot/shiny.pal", ".gbapal");
+static const u16 sMonPalette_NoctowlEien[] = INCGFX_U16("graphics/pokemon/eien/noctowl/normal.pal", ".gbapal");
+static const u16 sMonShinyPalette_NoctowlEien[] = INCGFX_U16("graphics/pokemon/eien/noctowl/shiny.pal", ".gbapal");
+
 // Level-up learnsets: the original's, plus the new-type moves in variants.md.
 static const struct LevelUpMove sTorchicEienLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
@@ -277,6 +284,48 @@ static const struct LevelUpMove sQuagsireEienLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+static const struct LevelUpMove sHoothootEienLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_GROWL),
+    LEVEL_UP_MOVE( 1, MOVE_PECK),
+    LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
+    LEVEL_UP_MOVE( 3, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 6, MOVE_GUST),
+    LEVEL_UP_MOVE( 9, MOVE_CONFUSION),
+    LEVEL_UP_MOVE(12, MOVE_REFLECT),
+    LEVEL_UP_MOVE(15, MOVE_OMINOUS_WIND),
+    LEVEL_UP_MOVE(18, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(21, MOVE_EXTRASENSORY),
+    LEVEL_UP_MOVE(24, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(27, MOVE_UPROAR),
+    LEVEL_UP_MOVE(30, MOVE_ROOST),
+    LEVEL_UP_MOVE(33, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(36, MOVE_HYPNOSIS),
+    LEVEL_UP_MOVE(39, MOVE_DREAM_EATER),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sNoctowlEienLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_HEX),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_GROWL),
+    LEVEL_UP_MOVE( 1, MOVE_PECK),
+    LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
+    LEVEL_UP_MOVE( 1, MOVE_SKY_ATTACK),
+    LEVEL_UP_MOVE( 1, MOVE_GUST),
+    LEVEL_UP_MOVE( 9, MOVE_CONFUSION),
+    LEVEL_UP_MOVE(12, MOVE_REFLECT),
+    LEVEL_UP_MOVE(15, MOVE_OMINOUS_WIND),
+    LEVEL_UP_MOVE(18, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(23, MOVE_EXTRASENSORY),
+    LEVEL_UP_MOVE(28, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(33, MOVE_UPROAR),
+    LEVEL_UP_MOVE(38, MOVE_ROOST),
+    LEVEL_UP_MOVE(43, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(48, MOVE_HYPNOSIS),
+    LEVEL_UP_MOVE(53, MOVE_DREAM_EATER),
+    LEVEL_UP_END
+};
+
 // Form tables: the original species and its Eien form.
 static const u16 sTorchicFormSpeciesIdTable[] = { SPECIES_TORCHIC, SPECIES_TORCHIC_EIEN, FORM_SPECIES_END };
 static const u16 sBulbasaurFormSpeciesIdTable[] = { SPECIES_BULBASAUR, SPECIES_BULBASAUR_EIEN, FORM_SPECIES_END };
@@ -288,3 +337,5 @@ static const u16 sIvysaurFormSpeciesIdTable[] = { SPECIES_IVYSAUR, SPECIES_IVYSA
 static const u16 sFrogadierFormSpeciesIdTable[] = { SPECIES_FROGADIER, SPECIES_FROGADIER_EIEN, FORM_SPECIES_END };
 // (Eien Wooper is in sWooperFormSpeciesIdTable, form_species_tables.h, with Paldean Wooper.)
 static const u16 sQuagsireFormSpeciesIdTable[] = { SPECIES_QUAGSIRE, SPECIES_QUAGSIRE_EIEN, FORM_SPECIES_END };
+static const u16 sHoothootFormSpeciesIdTable[] = { SPECIES_HOOTHOOT, SPECIES_HOOTHOOT_EIEN, FORM_SPECIES_END };
+static const u16 sNoctowlFormSpeciesIdTable[] = { SPECIES_NOCTOWL, SPECIES_NOCTOWL_EIEN, FORM_SPECIES_END };

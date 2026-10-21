@@ -27,6 +27,8 @@ LOOKS = {
     "frogadier": (-0.03, 0.45, 0.12),
     "wooper": (-0.48, 0.28, -0.04),   # blue to ore: iron grey with a copper warmth
     "quagsire": (-0.48, 0.28, -0.04), # the same ore, polished
+    "hoothoot": (0.62, 0.22, 0.06),   # brown to a faded grey-violet mist
+    "noctowl": (0.62, 0.22, 0.06),
 }
 
 
