@@ -159,19 +159,28 @@ the middle stages don't evolve further yet.
   moves: Astonish (1), Gust (6, replacing Echoed Voice), Ominous Wind (15, replacing Defog);
   otherwise vanilla (Confusion 9, Reflect 12, Air Slash 18).
 - **Evolves** into Eien Noctowl by leveling up to 20+ at night on its home pass (Route 2's
-  upper map only): an evolution entry with both the time (`IF_TIME`) and map conditions. The
+  upper map only): an evolution entry with both the time (`IF_TIME`) and map conditions.
+  Like Eien Wooper's, the entry waits until `MAP_EIEN_ROUTE2_UPPER` exists (Porymap); until
+  then it doesn't evolve, and the journal's note covers it. Until the pass maps are built it
+  isn't caught anywhere (species data only, tested through the debug menu). The
   journal notes one that reaches Lv 20 without evolving, like Eien Poochyena's note (it needs
-  its own flag, and the research page may need to scroll). The roadside tablet on the pass
+  its own flag; each species has its own research page, so it doesn't crowd Poochyena's). The roadside tablet on the pass
   can hint at the rule (`TODO(design)`: its text).
 - **Eien Noctowl:** 90 / 50 / 46 / 110 / 76 / 80 (100 / 50 / 50 / 86 / 96 / 70), 452: the same
   shift. Same abilities. Learns Hex on evolving. Look: shrouded, the faded wings stretched into
   long trailing veils that drift behind it like a funeral shroud.
-- **Research:** seen / battled / caught, like Eien Poochyena's (side-quests E2).
+- **Research:** seen / battled / caught, like Eien Poochyena's: an entry on the professor's
+  list (side-quests E2), shown once the hero has gym 1's badge.
 - **Shiny:** aurora mist, green-violet instead of grey, for both stages.
-- **Sprites:** AI drafts through `tools/eien_species/`, like Eien Poochyena's.
+- **Sprites:** AI drafts through `tools/eien_species/` (`variant_drafts.py`): one round with
+  three mist treatments (pale solid mist; dithered mist, see-through to the background; mist
+  that fades to loose pixels at the tips), picked from the contact sheet. Eien Noctowl's veils
+  hang down behind it into the space below the wings, a shroud inside 64x64. Built in one PR
+  with the data: the art goes in once picked.
   `TODO(design)`: both dex entries (drafted at build time).
 
-Decided in [brainstorm-eien-hoothoot.md](brainstorm-eien-hoothoot.md).
+Decided in [brainstorm-eien-hoothoot.md](brainstorm-eien-hoothoot.md); the build in
+[brainstorm-eien-hoothoot-build.md](brainstorm-eien-hoothoot-build.md).
 
 - **Eien Wooper** (built, without its evolution: see below): 55 / 45 / 55 / 15 / 35 / 5 (55 / 45 / 45 / 25 / 25 /
   15), 210: balanced bulk. Abilities Sturdy / Heavy Metal / Unaware (hidden). New moves:
@@ -188,8 +197,8 @@ Decided in [brainstorm-eien-hoothoot.md](brainstorm-eien-hoothoot.md).
   shift. Same abilities. Learns Iron Head on evolving. Look: smooth polished metal, like a Nanbu
   *tetsubin* (the cast-iron kettle of Iwate's ironware craft), with Quagsire's goofy face kept.
 - **Research:** seen / battled / caught, like the others (`QUEST_RESEARCH_WOOPER`; tiers are
-  tracked from the start). `TODO(design)`: who asks for it (its journal mission), and the tier
-  lines (drafts in `src/data/eien_journal.h`).
+  tracked from the start), on the professor's list (side-quests E2), shown once the hero has
+  gym 2's badge. `TODO(design)`: the tier lines (drafts in `src/data/eien_journal.h`).
 - **Shiny:** gold ore, a gleaming gold crust instead of iron and copper; Eien Quagsire a gilded
   kettle.
 - **Sprites:** picked AI drafts ([art/eien_wooper_drafts.md](art/eien_wooper_drafts.md)): Eien

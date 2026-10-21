@@ -3,7 +3,8 @@
 Working notes for building Eien Hoothoot and Eien Noctowl. The design is settled
 (`variants.md`, `brainstorm-eien-hoothoot.md`); these are the questions the build raises.
 Decisions move into `variants.md` (and `locations/route-2.md`) when settled; this file stays as
-the record.
+the record. **Promoted** into `variants.md`, `side-quests.md` (E2), `locations/route-2.md` and
+`whats-left.md`.
 
 ## Givens (from the docs)
 
