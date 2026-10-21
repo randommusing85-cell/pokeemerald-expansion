@@ -22,6 +22,7 @@ docs: when the design changes, the doc changes in the same commit.
 **Vertical slice: prologue through gym 1.** Everything outside this scope waits.
 
 - [ ] Prologue: bedroom in our world, the accident, Palkia ([prologue](locations/prologue-bedroom.md))
+      Bedroom map built; opening scene and New Game routing still pending.
 - [x] Engine: remove the boy/girl choice, keep the naming screen (`EIEN_HERO_ALWAYS_MALE` in
       `include/config/general.h`)
 - [x] Hamakaze: he wakes in Eien, Celebi follows him, the Kashiwagi household, Haru, the
