@@ -25,7 +25,8 @@ Route 3).
 
 ## Wild Pokémon
 
-Lv 38-42 (default). `TODO(design)`: species, rates.
+Lv 38-42 (default). `TODO(design)`: species, rates. Eien Stantler (Dark/Ghost, a faded serow) is
+common on the plateau, the last road before gym 6 (Psychic) ([variants.md](../variants.md)).
 
 ## Screenshot check
 

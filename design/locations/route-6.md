@@ -19,7 +19,8 @@ A few, Lv 35-38 (default). `TODO(design)`: classes, names, teams (rice farmers f
 
 ## Wild Pokémon
 
-`TODO(design)`: species, rates (Lv 34-37 by default).
+`TODO(design)`: species, rates (Lv 34-37 by default). Eien Stantler is rare here, near the
+terraces ([variants.md](../variants.md)); it's common on Route 7.
 
 ## Screenshot check
 

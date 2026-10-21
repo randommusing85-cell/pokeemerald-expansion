@@ -1,7 +1,8 @@
 # Brainstorm: the fifth Eien variant
 
 Working notes for the Eien variant after Eien Ledyba. Decisions move into `variants.md` (and the
-location doc) when settled; this file stays as the record.
+location doc) when settled; this file stays as the record. **Promoted** into `variants.md`,
+`locations/route-6.md`, `route-7.md`, `minori.md` and `whats-left.md`.
 
 ## Givens (from the docs)
 
