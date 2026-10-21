@@ -6,6 +6,14 @@ The engine is upstream's; the region, story, maps, characters and dialogue are o
 
 ## Design comes first
 
+- Collaboration: Claude leads brainstorming and story design; Codex leads implementation,
+  builds and validation. Read `design/development-handoff.md` at session start and update it
+  at handoff with changes, checks, blockers and the next task. Cinematic proposals live in
+  `design/cutscenes.md`; proposals are not settled story decisions.
+- User direction (2026-10-21): use your brainstorm skill to develop the anime visual style
+  for important movie cutscenes, and use Higgsfield to produce those cutscenes. Follow the
+  brief in `design/cutscenes.md`. If the skill or Higgsfield is unavailable in your session,
+  report that concrete blocker rather than claiming it ran. Codex owns engine integration.
 - The design lives in `design/`. Read `design/README.md`, then the docs relevant to the task
   (the game bible, the location doc for the map you're touching, the story outline for scenes).
 - Design lands in the docs **before** code. If a request adds or changes story, characters,

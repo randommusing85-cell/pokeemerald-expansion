@@ -87,6 +87,11 @@ The bundled scripts use exact frame counts for the stock intro. If you change th
 
 ## Regression baselines
 
+Eien's repository-owned scene checks are documented in
+[`tests/screens/README.md`](../../tests/screens/README.md). Start with
+`python3 tools/mgba_harness/run.py tests/screens/eien_arrival.txt` for the arrival,
+household and journal smoke check.
+
 ```sh
 tools/mgba_harness/run.py tests/screens/town.txt --baseline tests/screens/town --update-baseline   # record
 tools/mgba_harness/run.py tests/screens/town.txt --baseline tests/screens/town                     # check
