@@ -43,18 +43,29 @@ Loves his map.
 > I'm drawing a map of Eien. For you. You don't know where anything is yet.
 > Thanks! Don't get lost. It's one road.
 
-### _[Rival]_
+### Akira
 
-_[description]_
+Cheerful, quick to grin, sure of himself without meanness; talks about his mum's gym and the
+League. Loses lightly.
 
-> _[example line]_
-> _[example line]_
+> New kid! I'm Akira. You pick first. I'll win with any of them.
+> Aw. You're good.
+> Come find me. I'll show you the gym. Mum runs it.
 
-### _[Professor]_
+### Professor Kashiwagi
 
-_[description]_
+Warm and quick, a note-taker; questions come out like observations, and she doesn't fuss.
 
-> _[example line]_
+> You're half frozen. Come in. Sit by the stove.
+> Write things down while they're fresh. I always do.
+
+### Makoto
+
+Few words, all practical; he feeds people before he asks them anything.
+
+> The beach, in this? Where have you come from?
+> …All right. Eat first.
+> Back again? Sit. I'll see to them.
 
 ## Examples: before and after
 

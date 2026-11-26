@@ -41,7 +41,7 @@ townsfolk talk about "the lab accident" (`TODO(design)`: whether the League shou
 | Fisherman | beach (4,15) | always | "Ice in the harbour already. Too early. Nothing's biting." (the early freeze, side-quest E4) |
 | Villager | town (9,11), wanders | always | Points to the Kashiwagi house, then the lab, then the road to Shimotsuki ("Wear something.") |
 | Professor Kashiwagi | lab | | Offers the three starters |
-| The professor's Altaria, Kumo | lab, on the back desk (10,2) | from Act 1 until it's given | Her Pokémon (雲, "cloud", her nickname for it). Built (`LOCALID_LAB_ALTARIA`): its cry and "The professor's Altaria hums softly." (`TODO`: name it Kumo in the line; `TODO(design)`: its lines). After her death Haru gives it to him: it flies him (fast travel, [progression.md](../progression.md)) |
+| The professor's Altaria, Kumo | lab, on the back desk (10,2) | from Act 1 until it's given | Her Pokémon (雲, "cloud", her nickname for it). Built (`LOCALID_LAB_ALTARIA`): its cry and "The professor's Altaria hums softly." (final line under Dialogue). After her death Haru gives it to him: it flies him (fast travel, [progression.md](../progression.md)) |
 | Makoto, Kashiwagi's husband | house | | Runs the household that takes him in. Heals the team after a white-out: "Back again? Sit. I'll see to them." |
 | Haru Kashiwagi | house / lab | | First friend; takes the third starter |
 | Akira | lab | | Takes the starter strong against the player's; battles right after |
@@ -66,14 +66,143 @@ townsfolk talk about "the lab accident" (`TODO(design)`: whether the League shou
    catches up with his half-drawn map and asks him to note three places on Route 1. Opens
    `QUEST_HARU_MAP`.
 
-The town map's lines (waking, Celebi, Haru's map, the fisherman, the villager) are final
-(dialogue pass, 2026-10-21; Haru's voice is in [dialogue-style.md](../dialogue-style.md)). The
-house's and the lab's lines are still drafts (`TODO(design)` in their scripts). Choices made
-here that the docs didn't settle, all easy to change:
-- The professor hands him the notebook ("write down whatever you remember").
+All three maps' lines are final and listed under **Dialogue (final)** below, which is the
+source of truth for the Essentials port. In the GBA reference build only the town map's script
+carries them (PR #30); the house's and the lab's scripts still hold the older drafts. Choices
+made here that the docs didn't settle, all easy to change:
+- The professor hands him the notebook ("Write things down while they're fresh. I always do.").
+- Haru is the one who notices Celebi ("You've got a Celebi. A real one."): people here know what
+  a Celebi is, which the Survey's interest in it later relies on. The adults don't remark on it.
 - Akira's lab level: 5, like the starters.
 - Who is where after each beat: the professor is at the lab from `STORY_TAKEN_IN` on; Haru is at
   the lab during the starter scene and home again after.
+
+## Dialogue (final)
+
+Final lines for Hamakaze's three maps (dialogue pass, 2026-10-21 and 2026-11-26), written
+without engine text codes: each line below is one text box, and a `/` starts the next box by
+the same speaker. *Hero* lines are his thoughts (shown in brackets in the GBA build), except
+the journal page. `(player)` and `(species)` are filled in by the game. Stage directions are
+in square brackets. Voices: [dialogue-style.md](../dialogue-style.md).
+
+### Town
+
+**Waking.** Trigger: he arrives on the beach for the first time (story state Prologue). Runs
+once, no input but advancing text. Outcome: Celebi follows him; story state Arrived.
+
+- *Hero:* …Cold. / Sand. Snow on the sand. / This isn't my room.
+- [Celebi drifts down beside him. He turns to it. Celebi's cry.]
+- *Hero:* Is that… a Celebi? / In the games you get one at a shrine. If you're lucky.
+- [Celebi starts following him.]
+- *Hero:* It's following me. / Houses, up the beach. Someone there will know where this is.
+
+**Talking to Celebi** (any time; its cry first, then one line by story state):
+
+- Arrived: Celebi floats toward the houses up the beach.
+- Taken in: Celebi keeps looking at the yellow building.
+- Got a starter: Celebi looks north, past the trees.
+
+**Fisherman** (beach): Ice in the harbour already. Too early. Nothing's biting.
+
+**Villager** (wanders near the houses), by story state:
+
+- Arrived: You're not from here. / Try the blue house. The Kashiwagis take in all sorts.
+- Taken in: The yellow one's the lab. She's always in there.
+- Got a starter: Off to Shimotsuki? It's colder up there. Wear something.
+
+**Haru's map.** Trigger: he walks to the north exit after getting his starter, while Haru's
+map quest hasn't started. Haru runs up behind him. Runs once. Outcome: Haru's map quest opens
+(three places to note on Route 1).
+
+- HARU: Wait up!
+- [He turns round; Haru reaches him.]
+- HARU: I'm drawing a map of Eien. For you. You don't know where anything is yet. / Route 1's
+  just north. Look at three places for me: the coast, the fields, and the shrine. / Write them
+  in your journal. I'll copy them in.
+- [The quest opens.]
+- HARU: Thanks! Don't get lost. It's one road.
+- [Haru goes back toward the house.]
+
+### The Kashiwagi house
+
+**Taken in.** Trigger: he enters the house in story state Arrived. Runs once. Present: the
+professor, Makoto, Haru. Outcome: he has the journal (it appears in the menu); story state
+Taken in; from now on the professor is at the lab, and so is Haru until the starters are picked.
+
+- [He steps in. The professor turns to him.]
+- PROFESSOR: You're half frozen. Come in. Sit by the stove.
+- [Makoto turns to him.]
+- MAKOTO: The beach, in this? Where have you come from?
+- *Hero:* Another world. / I can't say that.
+- MAKOTO: …All right. Eat first. / You can stay till you're on your feet.
+- PROFESSOR: I'm Professor Kashiwagi. I study Pokémon here. / This is Makoto. And that's our
+  son, Haru.
+- [Haru turns to him.]
+- HARU: You've got a Celebi. A real one. / Sorry. Hi. I'm Haru. I'll show you round.
+- PROFESSOR: Here, a notebook. / Write things down while they're fresh. I always do.
+- [Item fanfare.] (player) got a notebook.
+- *Hero:* I'll start with what I'm sure of.
+- *The journal's first page:* My name is (player). I'm from another world. If I start
+  forgetting, read this.
+- [System hint:] The journal is in the menu.
+- PROFESSOR: When you've warmed up, come by the lab. The yellow one. / I've got something for you.
+
+**Talking to them afterwards:**
+
+- Makoto: Sit anywhere. It's warm by the stove.
+- Haru (home again once the starters are picked): Mine's still shy. Yours already looks tough.
+
+**After a white-out** (before he has reached Shimotsuki's Pokémon Center): he's back in the
+house, facing Makoto, who heals the team.
+
+- MAKOTO: Back again? Sit. I'll see to them.
+
+### The lab
+
+**The starters.** Trigger: he enters the lab in story state Taken in. Present: the professor at
+her desk, Haru and Akira either side of three Poké Balls (Eien Torchic, Bulbasaur, Froakie,
+Lv 5). He walks up to the balls; then the player picks one by examining it.
+
+- PROFESSOR: There you are. / Three Pokémon from Eien. You'll have seen their cousins. Not these.
+- *Hero:* Torchic. Bulbasaur. Not the colours I know. / The third one I've never seen.
+- [Akira turns to him.]
+- AKIRA: New kid! I'm Akira. / You pick first. I'll win with any of them.
+- PROFESSOR: Whichever you like.
+- [The player examines a ball: its picture shows.] Take (species)? [Yes / No. No: nothing
+  happens; he can look at another.]
+- [Yes. Item fanfare.] (player) received (species)! [The usual nickname question.]
+- AKIRA: Then this one. It's strong against yours. Sorry!
+- [Akira's ball is taken: the starter strong against the player's.]
+- HARU: Then this one's mine. Hello, you.
+- [The last ball is taken.]
+- AKIRA: Quick battle? Let's try them!
+
+**The battle with Akira** follows at once (his starter, Lv 5). Losing is fine: the team is
+healed either way and the scene goes on.
+
+- Akira, beaten: Aw. You're good.
+- Akira, if he wins: Yes! …It was close, though.
+
+**After the battle.** Outcome: story state Got a starter; the house becomes his white-out
+point; the professor's research opens (Eien Poochyena, and the rest of her list, each shown
+later); he gets 5 Poké Balls.
+
+- AKIRA: I'm heading home. That's Shimotsuki, up Route 1. / Come find me. I'll show you the
+  gym. Mum runs it.
+- [Akira leaves.]
+- PROFESSOR: One more thing. / Route 1 has a Poochyena that isn't like any in the books. / See
+  one. Battle one. Catch one, if you can. Write it down. / There are more like it further on.
+  I've made you a list. / These will help.
+- [He gets 5 Poké Balls. The research quests open.]
+- PROFESSOR: Route 1's north of town. Take your time. Write things down.
+
+**Talking to them in the lab:**
+
+- The professor, before he has picked: Whichever you like.
+- The professor, afterwards: Route 1's north of town. Take your time. Write things down.
+- Haru, before he has picked: Go on. You first.
+- Akira, before he has picked: New kid! I'm Akira. / You pick first. I'll win with any of them.
+- Kumo, her Altaria, on the back desk (its cry): The professor's Altaria, Kumo, hums to itself.
 
 ## Trainers
 
