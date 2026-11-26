@@ -26,9 +26,11 @@ The engine is upstream's; the region, story, maps, characters and dialogue are o
 
 ## Maps and scripts
 
-- New maps are created in **Porymap** by the user; it writes `data/maps/<Map>/map.json`, the
-  layout and the header entries. Don't hand-write new map JSON or layouts unless asked.
-  Filling in a map's events, warps, connections and `scripts.inc` is normal work.
+- The user authorized Codex to create maps on 2026-10-21, starting with the prologue bedroom.
+  Prefer **Porymap** when available. When its GUI is unavailable, direct edits to its map
+  JSON/layout formats are authorized; register the map/layout, preserve existing IDs, and
+  build and screenshot-check the result. State whether the GUI was actually used.
+  Filling in events, warps, connections and `scripts.inc` remains normal work.
 - Map scripts are in `data/maps/<Map>/scripts.inc`; shared scripts in `data/scripts/`.
 - Story state uses named flags and vars. Take spare ones by renaming `FLAG_UNUSED_0x...`
   in `include/constants/flags.h` / `VAR_UNUSED_0x...` in `include/constants/vars.h` to a

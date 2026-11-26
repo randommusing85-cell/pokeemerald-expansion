@@ -620,6 +620,7 @@ gStdScripts_End::
 	.include "data/maps/Yunotaki_Mart/scripts.inc"
 	.include "data/maps/Yunotaki_HerbShop/scripts.inc"
 	.include "data/maps/Yunotaki_Inn/scripts.inc"
+	.include "data/maps/EienPrologueBedroom/scripts.inc"
 
 .if IS_FRLG
 
