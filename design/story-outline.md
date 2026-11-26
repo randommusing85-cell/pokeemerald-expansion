@@ -9,7 +9,7 @@ journal writes an entry for each beat reached (`src/data/eien_journal.h`).
 
 | # | Where | What happens | Sets (flag/var) |
 | --- | --- | --- | --- |
-| 1 | His bedroom (our world) | He's playing a Pokémon game. The accident happens in text on a black screen; Palkia catches him. | `TODO` |
+| 1 | His bedroom (our world) | He's playing a Pokémon game. The screen cuts to black mid-game: the accident is never shown or named. Palkia catches him (the arrival movie, [cutscene-arrival.md](cutscene-arrival.md)). | Story state Prologue until he wakes |
 
 ## Act 1: Arrival (gyms 1-4)
 
