@@ -96,7 +96,9 @@ Hamakaze_Movement_HaruBack:
 	walk_down
 	step_end
 
+@ The villager points him on: the house, then the lab, then the road to Shimotsuki.
 Hamakaze_EventScript_Woman::
+	goto_if_ge VAR_EIEN_STORY, STORY_GOT_STARTER, Hamakaze_EventScript_WomanRoad
 	goto_if_ge VAR_EIEN_STORY, STORY_TAKEN_IN, Hamakaze_EventScript_WomanLab
 	msgbox Hamakaze_Text_WomanKashiwagi, MSGBOX_NPC
 	end
@@ -105,45 +107,56 @@ Hamakaze_EventScript_WomanLab::
 	msgbox Hamakaze_Text_WomanLab, MSGBOX_NPC
 	end
 
-@ TODO(design): the scene's exact lines (these are drafts in the style guide's voice).
+Hamakaze_EventScript_WomanRoad::
+	msgbox Hamakaze_Text_WomanRoad, MSGBOX_NPC
+	end
+
+@ Final lines (design/dialogue-style.md; the hero thinks in brackets, in game terms).
 Hamakaze_Text_Cold:
-	.string "(…Cold. Sand, and snow on it.)\p"
+	.string "(…Cold.)\p"
+	.string "(Sand. Snow on the sand.)\p"
 	.string "(This isn't my room.)$"
 
 Hamakaze_Text_ACelebi:
 	.string "(Is that… a Celebi?)\p"
-	.string "(In the games you only ever see one\n"
-	.string "at a shrine. If you're lucky.)$"
+	.string "(In the games you get one at a\n"
+	.string "shrine. If you're lucky.)$"
 
 Hamakaze_Text_ItsFollowingMe:
 	.string "(It's following me.)\p"
-	.string "(There are houses up the beach.\n"
-	.string "Maybe someone there can help.)$"
+	.string "(Houses, up the beach. Someone\n"
+	.string "there will know where this is.)$"
 
 Hamakaze_Text_HaruWait:
 	.string "HARU: Wait up!$"
 
 Hamakaze_Text_HaruMap:
 	.string "HARU: I'm drawing a map of Eien.\n"
-	.string "For you, since you're new here.\p"
-	.string "Can you look at three places on\n"
-	.string "Route 1 for me?\p"
-	.string "The coast, the snowy fields,\n"
-	.string "and the shrine.\p"
-	.string "Just write them in your journal.$"
+	.string "For you. You don't know where\l"
+	.string "anything is yet.\p"
+	.string "Route 1's just north. Look at three\n"
+	.string "places for me: the coast, the\l"
+	.string "fields, and the shrine.\p"
+	.string "Write them in your journal. I'll\n"
+	.string "copy them in.$"
 
 Hamakaze_Text_HaruThanks:
-	.string "HARU: Thanks! See you later.$"
+	.string "HARU: Thanks! Don't get lost.\n"
+	.string "It's one road.$"
 
 Hamakaze_Text_Fisherman:
-	.string "Sea's too cold to fish today.\n"
-	.string "Nothing's biting.$"
+	.string "Ice in the harbour already.\n"
+	.string "Too early. Nothing's biting.$"
 
 Hamakaze_Text_WomanKashiwagi:
-	.string "You're not from Hamakaze.\p"
-	.string "The Kashiwagis live in the blue house.\n"
-	.string "They'll look after you.$"
+	.string "You're not from here.\p"
+	.string "Try the blue house. The Kashiwagis\n"
+	.string "take in all sorts.$"
 
 Hamakaze_Text_WomanLab:
-	.string "The yellow building is Professor\n"
-	.string "Kashiwagi's lab.$"
+	.string "The yellow one's the lab.\n"
+	.string "She's always in there.$"
+
+Hamakaze_Text_WomanRoad:
+	.string "Off to Shimotsuki? It's colder\n"
+	.string "up there. Wear something.$"

@@ -38,8 +38,8 @@ townsfolk talk about "the lab accident" (`TODO(design)`: whether the League shou
 | NPC / event | Position (x,y) | Visible when | Says / does |
 | --- | --- | --- | --- |
 | Celebi | beach (13,11), then follows | from the start | Drifts down beside him on the beach and follows him (follower NPC). Talking to it gives a hint about where to go next (`data/scripts/eien_celebi.inc`) |
-| Fisherman | beach (4,15) | always | Flavor line |
-| Villager | town (9,11), wanders | always | Points to the Kashiwagi house, later the lab |
+| Fisherman | beach (4,15) | always | "Ice in the harbour already. Too early. Nothing's biting." (the early freeze, side-quest E4) |
+| Villager | town (9,11), wanders | always | Points to the Kashiwagi house, then the lab, then the road to Shimotsuki ("Wear something.") |
 | Professor Kashiwagi | lab | | Offers the three starters |
 | The professor's Altaria, Kumo | lab, on the back desk (10,2) | from Act 1 until it's given | Her Pokémon (雲, "cloud", her nickname for it). Built (`LOCALID_LAB_ALTARIA`): its cry and "The professor's Altaria hums softly." (`TODO`: name it Kumo in the line; `TODO(design)`: its lines). After her death Haru gives it to him: it flies him (fast travel, [progression.md](../progression.md)) |
 | Makoto, Kashiwagi's husband | house | | Runs the household that takes him in. Heals the team after a white-out: "Back again? Sit. I'll see to them." |
@@ -66,7 +66,9 @@ townsfolk talk about "the lab accident" (`TODO(design)`: whether the League shou
    catches up with his half-drawn map and asks him to note three places on Route 1. Opens
    `QUEST_HARU_MAP`.
 
-All lines are drafts in the style guide's voice (`TODO(design)` in the scripts). Choices made
+The town map's lines (waking, Celebi, Haru's map, the fisherman, the villager) are final
+(dialogue pass, 2026-10-21; Haru's voice is in [dialogue-style.md](../dialogue-style.md)). The
+house's and the lab's lines are still drafts (`TODO(design)` in their scripts). Choices made
 here that the docs didn't settle, all easy to change:
 - The professor hands him the notebook ("write down whatever you remember").
 - Akira's lab level: 5, like the starters.
@@ -128,4 +130,6 @@ Pokémon Center sets it to Shimotsuki from then on. The black-screen text is the
 Played through with the harness (new game, warp to the beach): waking and Celebi, the walk
 to the house with Celebi following, the house scene and the journal's first page, the lab,
 picking Bulbasaur, Akira taking Torchic and Haru Froakie, the battle (lost on purpose: healed,
-scene continues). Shots in `design/art/hamakaze/`.
+scene continues). Shots in `design/art/hamakaze/`. The dialogue pass (2026-10-21) re-shot the
+waking pages and Haru's map ask (`6_wake_cold.png` to `10_haru_map_places.png`); every page fits
+the box. The fisherman's and villager's lines are shorter than those and were checked by width.
