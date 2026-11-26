@@ -58,27 +58,47 @@ Round 1 (user, 2026-11-26: `1a, 2b+d, 3b, 4a, 5a, 6a`):
 - **Pilot (6a):** Palkia's catch and the arrival on Hamakaze's beach. It needs the accident
   settled first (round 2).
 
+Round 2 (user, 2026-11-26: `1a, 2a, 3a, 4b, 5a, 6c`), promoted into
+[cutscene-arrival.md](cutscene-arrival.md):
+
+- **The accident (1a):** never shown or named. The screen cuts to black mid-game, one sound,
+  then nothing.
+- **Palkia (2a):** wordless and barely seen: a vast shape, its pearl light, a hand closing.
+- **Start and end (3a):** the movie starts on the black screen after the bedroom's last text and
+  ends on his closed eyes on the beach; the game picks up at "…Cold."
+- **Length and skipping (4b):** about 30 seconds, always skippable.
+- **Frame (5a):** 4:3 full screen.
+- **Sound (6c):** sound design only inside the movie; Hamakaze's town theme starts as he wakes
+  (sea ambience until the game has one).
+
 ## Leaning
 
-- The one warm accent of the arrival scene: Celebi's green (it's the first living colour he
-  sees in Eien). A default, proposed in round 2.
+- The arrival's accent is Palkia's pearl light (pale pink-violet), and the beach shots have no
+  accent at all. Celebi's green, proposed earlier, can't be it: with 3a Celebi isn't in the
+  movie, so its green stays the first living colour of the game itself. A default; say if you'd
+  rather have a green mote enter the last shot.
+- The bedroom's lines and the mid-word cut ("One more gym and then I'll sl") are drafts for the
+  user to change freely.
 
 ## Open questions
 
-- Round 2 (below): the accident; Palkia; where the movie starts and ends; length and
-  skipping; frame shape; sound.
-- Later: reference sheets (the hero, Celebi, Palkia in this style); the shot list and the
-  Higgsfield brief; music for the game as a whole; the later cutscenes.
+- Whether the player's name is asked before the bedroom (Essentials' default).
+- Later: music for the game as a whole; which later scenes get movies and their shot lists
+  (the lake crossing, the tournament, Celebi's death and the renewal, the hospital).
 
 ## Gaps and tensions
 
 - No anime-form references exist yet: the characters are pixel sprites and AI battle pics.
   Reference sheets are a production step after the direction is picked.
 - Music and sound: nothing is decided for the game either (placeholder tracks).
-- The accident and Palkia's lines are `TODO(design)` in `locations/prologue-bedroom.md`; the
-  arrival pilot needs them.
+- `locations/prologue-bedroom.md` is being rewritten in Codex's draft PR #31; the settled
+  prologue text lives in `cutscene-arrival.md` so the two don't collide. Link them when #31
+  lands.
 
 ## Parked ideas
+
+- In the fall (shot 2), draw him in ink only, the paint returning when Palkia's light reaches
+  him. Parked: the ink-only look is reserved for the fading, and he isn't fading, he's dying.
 
 ## Rejected
 

@@ -16,6 +16,7 @@ docs: when the design changes, the doc changes in the same commit.
 | [asset-credits.md](asset-credits.md) | Every community asset used, with its author |
 | [asset-candidates.md](asset-candidates.md) | Community assets we might use, not yet checked |
 | [whats-left.md](whats-left.md) | Handoff: what's left to build, grouped by what blocks it |
+| [cutscene-arrival.md](cutscene-arrival.md) | The prologue and the arrival movie (pilot): bedroom text, storyboard, Higgsfield brief, house style for movie cutscenes |
 
 ## Current milestone
 
