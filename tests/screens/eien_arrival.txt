@@ -1,0 +1,48 @@
+# Fresh-save Eien smoke check; see README.md for scope and memory-layout assumptions.
+# B advances dialogue without repeatedly talking to nearby NPCs after the scene ends.
+include ../../tools/mgba_harness/scripts/new_game.txt
+warp MAP_HAMAKAZE 2
+wait 90
+shot 01_waking
+press B 60
+wait 120
+shot 02_celebi
+assert16 [@gSaveBlock1Ptr]+0x1438 1 STORY_ARRIVED
+assert8 [@gSaveBlock3Ptr] 1 Celebi follower active after arrival
+assert32 [@gSaveBlock3Ptr]+0xC @EienCelebi_EventScript_Talk Celebi hint script installed
+warp MAP_HAMAKAZE_KASHIWAGI_HOUSE 0
+wait 240
+shot 03_house
+press B 180
+wait 120
+shot 04_taken_in
+assert16 [@gSaveBlock1Ptr]+0x1438 2 STORY_TAKEN_IN
+# Journal flag byte: FLAG_RECEIVED_JOURNAL=0x20, before opening its cover.
+assert8 [@gSaveBlock1Ptr]+0x1274 1 journal received
+assert32 [@gSaveBlock3Ptr]+0xC @EienCelebi_EventScript_Talk Celebi hint script preserved
+press START
+wait 90
+shot 05_journal_menu
+press DOWN
+press A
+wait 180
+shot 06_journal_cover
+assert8 [@gSaveBlock1Ptr]+0x1274 3 journal received and cover seen
+press B
+wait 120
+press B
+wait 60
+# Revisit the beach: the arrival scene must not reset story progression.
+warp MAP_HAMAKAZE 2
+wait 120
+assert16 [@gSaveBlock1Ptr]+0x1438 2 arrival does not replay
+assert32 [@gSaveBlock3Ptr]+0xC @EienCelebi_EventScript_Talk Celebi persists after return
+hold LEFT 32
+wait 90
+assert8 [@gSaveBlock3Ptr] 1 Celebi follower active after walking
+shot 07_return_to_beach
+# A successful debug warp also checks that the previous scene released input.
+warp MAP_HAMAKAZE_KASHIWAGI_HOUSE 0
+wait 120
+assert16 [@gSaveBlock1Ptr]+0x1438 2 household scene does not replay
+shot 08_return_to_house
